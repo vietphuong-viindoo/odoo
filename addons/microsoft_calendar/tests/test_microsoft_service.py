@@ -39,7 +39,7 @@ class TestMicrosoftService(TransactionCase):
             "/v1.0/me/calendarView/delta",
             {
                 'startDateTime': fields.Datetime.subtract(fields.Datetime.now(), years=2).strftime("%Y-%m-%dT00:00:00Z"),
-                'endDateTime': fields.Datetime.add(fields.Datetime.now(), years=3).strftime("%Y-%m-%dT00:00:00Z"),
+                'endDateTime': fields.Datetime.add(fields.Datetime.now(), years=2).strftime("%Y-%m-%dT00:00:00Z"),
             },
             {**self.header, 'Prefer': self.header_prefer},
             method="GET", timeout=DEFAULT_TIMEOUT,
@@ -225,7 +225,7 @@ class TestMicrosoftService(TransactionCase):
             "/v1.0/me/events/123/instances",
             {
                 'startDateTime': fields.Datetime.subtract(fields.Datetime.now(), years=2).strftime("%Y-%m-%dT00:00:00Z"),
-                'endDateTime': fields.Datetime.add(fields.Datetime.now(), years=3).strftime("%Y-%m-%dT00:00:00Z"),
+                'endDateTime': fields.Datetime.add(fields.Datetime.now(), years=2).strftime("%Y-%m-%dT00:00:00Z"),
             },
             {**self.header, 'Prefer': self.header_prefer},
             method='GET', timeout=DEFAULT_TIMEOUT,
