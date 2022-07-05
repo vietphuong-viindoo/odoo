@@ -1949,7 +1949,7 @@ msgstr ""
 #. module: project
 #: model:ir.model.fields.selection,name:project.selection__project_project__privacy_visibility__followers
 msgid "Invited internal users"
-msgstr "Tài khoản nội bộ đã mời"
+msgstr "Người dùng nội bộ được mời"
 
 #. module: project
 #: model:ir.model.fields.selection,name:project.selection__project_project__privacy_visibility__portal
