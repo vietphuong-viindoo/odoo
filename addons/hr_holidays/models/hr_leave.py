@@ -374,6 +374,8 @@ class HolidaysRequest(models.Model):
                         leave_number_of_units = leave[leave_unit]
                         if allocation['max_leaves'] >= allocation_taken_number_of_units + leave_number_of_units:
                             found_allocation = allocation['id']
+                            if leave.state in ('confirm', 'validate', 'validate1'):
+                                allocation['taken_leaves'] |= leave
                             break
                 leave.holiday_allocation_id = self.env['hr.leave.allocation'].browse(found_allocation) if found_allocation else False
             else:
