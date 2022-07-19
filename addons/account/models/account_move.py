@@ -1370,10 +1370,10 @@ class AccountMove(models.Model):
     @api.depends('commercial_partner_id', 'move_type')
     def _compute_bank_partner_id(self):
         for move in self:
-            if move.is_outbound():
-                move.bank_partner_id = move.commercial_partner_id
-            else:
+            if move.is_inbound():
                 move.bank_partner_id = move.company_id.partner_id
+            else:
+                move.bank_partner_id = move.commercial_partner_id
 
     @api.model
     def _get_invoice_in_payment_state(self):
@@ -4925,7 +4925,7 @@ class AccountMoveLine(models.Model):
 
         # ==== Create entries for cash basis taxes ====
 
-        is_cash_basis_needed = account.user_type_id.type in ('receivable', 'payable')
+        is_cash_basis_needed = account.company_id.tax_exigibility and account.user_type_id.type in ('receivable', 'payable')
         if is_cash_basis_needed and not self._context.get('move_reverse_cancel'):
             tax_cash_basis_moves = partials._create_tax_cash_basis_moves()
             results['tax_cash_basis_moves'] = tax_cash_basis_moves
