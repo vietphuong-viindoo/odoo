@@ -22,9 +22,10 @@
 # Lilach Gilliam <lilach@apprcase.com>, 2021
 # david danilov, 2021
 # Jonathan Spier, 2021
-# Sagi Ahiel, 2022
 # Netta Waizer, 2022
 # Lilach Gilliam <lilach.gilliam@gmail.com>, 2022
+# Roy Sayag, 2022
+# Sagi Ahiel, 2022
 # NoaFarkash, 2022
 # 
 msgid ""
@@ -890,13 +891,13 @@ msgstr "מוצרים זמינים "
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_quant__available_quantity
 msgid "Available Quantity"
-msgstr ""
+msgstr "כמות זמינה"
 
 #. module: stock
 #: code:addons/stock/models/product.py:0
 #, python-format
 msgid "Available quantity should be set to zero before changing type"
-msgstr ""
+msgstr "יש להגדיר את הכמות הזמינה לאפס לפני שינוי סוג"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_move__backorder_id
@@ -1144,7 +1145,7 @@ msgstr ""
 #: code:addons/stock/models/stock_picking.py:0
 #, python-format
 msgid "Changing the operation type of this record is forbidden at this point."
-msgstr ""
+msgstr "שינוי סוג הפעולה של רשומה זו אסור בשלב זה."
 
 #. module: stock
 #: code:addons/stock/models/stock_move_line.py:0
@@ -1668,7 +1669,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:stock.field_stock_move__date
 #: model_terms:ir.ui.view,arch_db:stock.view_move_form
 msgid "Date Scheduled"
-msgstr ""
+msgstr "תאריך מתוכנן"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_product_replenish__date_planned
@@ -1794,7 +1795,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:stock.field_stock_move__delay_alert_date
 #: model:ir.model.fields,field_description:stock.field_stock_picking__delay_alert_date
 msgid "Delay Alert Date"
-msgstr ""
+msgstr "עיכוב תאריך התראה"
 
 #. module: stock
 #: code:addons/stock/models/stock_rule.py:0
@@ -4594,7 +4595,7 @@ msgstr ""
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_picking_internal_search
 msgid "Planning Issues"
-msgstr ""
+msgstr "בעיות בתכנון"
 
 #. module: stock
 #: code:addons/stock/models/stock_picking.py:0
@@ -4630,7 +4631,7 @@ msgstr "מילוי פעולות מפורטות מראש"
 #: code:addons/stock/static/src/xml/popover_widget.xml:0
 #, python-format
 msgid "Preceding operations"
-msgstr ""
+msgstr "פעולות קודמות"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse_orderpoint__route_id
@@ -6603,7 +6604,7 @@ msgstr "הכמות רכש יעוגלו עד מספר זה. אם זה 0 שישמ�
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.stock_warn_insufficient_qty_form_view
 msgid "The product is not available in sufficient quantity"
-msgstr ""
+msgstr "המוצר אינו זמין בכמות מספקת"
 
 #. module: stock
 #: code:addons/stock/models/stock_move_line.py:0
@@ -6907,7 +6908,7 @@ msgstr "לביצוע"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.stock_reorder_report_search
 msgid "To Reorder"
-msgstr ""
+msgstr "להזמין"
 
 #. module: stock
 #. openerp-web
@@ -7950,6 +7951,8 @@ msgid ""
 "You have not recorded <i>done</i> quantities yet, by clicking on "
 "<i>apply</i> Odoo will process all the quantities."
 msgstr ""
+"עדיין לא נרשמו כמויות שבוצעו, ע\"י לחיצה על \"החל\" אודו ימלא באופן אוטומטי "
+"את כמויות הדרישה"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_backorder_confirmation
