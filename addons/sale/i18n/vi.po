@@ -11,19 +11,19 @@
 # fanha99 <fanha99@hotmail.com>, 2020
 # Trinh Tran Thi Phuong <trinhttp@trobz.com>, 2020
 # Dung Nguyen Thi <dungnt@trobz.com>, 2020
-# Duy BQ <duybq86@gmail.com>, 2020
 # Manh Vu <vuducmanh96vp@gmail.com>, 2020
-# thanhnguyen.icsc <thanhnguyen.icsc@gmail.com>, 2021
+# Nancy Momoland <thanhnguyen.icsc@gmail.com>, 2021
 # Trần Hà <tranthuha13590@gmail.com>, 2021
 # Vo Thanh Thuy, 2021
-#
+# Duy BQ <duybq86@gmail.com>, 2022
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-27 14:12+0000\n"
 "PO-Revision-Date: 2020-09-07 08:17+0000\n"
-"Last-Translator: Vo Thanh Thuy, 2021\n"
+"Last-Translator: Duy BQ <duybq86@gmail.com>, 2022\n"
 "Language-Team: Vietnamese (https://www.transifex.com/odoo/teams/41243/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -294,7 +294,7 @@ msgid ""
 msgstr ""
 "<div style=\"margin: 0px; padding: 0px;\">\n"
 "    <p style=\"margin: 0px; padding: 0px; font-size: 12px;\">\n"
-"        Hello,\n"
+"        Xin chào,\n"
 "        <br/><br/>\n"
 "        % set transaction = object.get_portal_last_transaction()\n"
 "        Đơn <strong>${object.name}</strong> có giá trị <strong>${format_amount(object.amount_total, object.currency_id)}</strong>\n"
@@ -308,16 +308,16 @@ msgstr ""
 "            % endif\n"
 "        % endif\n"
 "        <br/><br/>\n"
-"        Đừng ngần ngại liên hệ với chúng tối nếu bạn có bất kỳ câu hỏi gì.\n"
+"        Đừng ngần ngại liên hệ với chúng tôi nếu bạn có bất kỳ câu hỏi nào.\n"
 "        <br/><br/>\n"
 "    </p>\n"
 "% if object.website_id:\n"
 "    <div style=\"margin: 0px; padding: 0px;\">\n"
 "        <table width=\"100%\" style=\"color: #454748; font-size: 12px; border-collapse: collapse;\">\n"
 "            <tr style=\"border-bottom: 2px solid #dee2e6;\">\n"
-"                <td style=\"width: 150px;\"><strong>Products</strong></td>\n"
+"                <td style=\"width: 150px;\"><strong>Sản phẩm</strong></td>\n"
 "                <td/>\n"
-"                <td width=\"15%\" align=\"center\"><strong>Quantity</strong></td>\n"
+"                <td width=\"15%\" align=\"center\"><strong>Số lượng</strong></td>\n"
 "                <td width=\"20%\" align=\"right\"><strong>\n"
 "                % if object.user_id.has_group('account.group_show_line_subtotals_tax_excluded'):\n"
 "                    Không gồm thuế GTGT\n"
@@ -1005,8 +1005,8 @@ msgid ""
 "An order is to upsell when delivered quantities are above initially\n"
 "                ordered quantities, and the invoicing policy is based on ordered quantities."
 msgstr ""
-"An order is to upsell when delivered quantities are above initially\n"
-"                ordered quantities, and the invoicing policy is based on ordered quantities."
+"Một đơn hàng chờ bổ sung khi số lượng giao lớn hơn số lượng ban đầu\n"
+"                đã đặt hàng, và chính sách tính hóa đơn dựa theo số lượng của Đơn đặt hàng."
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_report_all_channels_sales__analytic_account_id
@@ -1149,7 +1149,7 @@ msgstr "Hủy"
 #: code:addons/sale/models/sale.py:0
 #, python-format
 msgid "Cancel Sales Order"
-msgstr "Cancel Sales Order"
+msgstr "Hủy đơn hàng"
 
 #. module: sale
 #: model:ir.model.fields.selection,name:sale.selection__sale_order__state__cancel
@@ -1494,7 +1494,7 @@ msgstr "Tuỳ chỉnh bố cục và cách thức hiển thị báo giá của b
 #: code:addons/sale/static/src/js/tours/sale.js:0
 #, python-format
 msgid "Customize your quotes and orders."
-msgstr "Customize your quotes and orders."
+msgstr "Tùy chỉnh báo giá và đơn hàng của bạn."
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_res_config_settings__module_delivery_dhl
@@ -1783,7 +1783,7 @@ msgstr "Báo giá dự thảo"
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.sale_order_cancel_view_form
 msgid "Draft invoices for this order will be cancelled."
-msgstr "Draft invoices for this order will be cancelled."
+msgstr "Hóa đơn dự thảo cho Đơn hàng này sẽ bị hủy bỏ."
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_res_config_settings__module_delivery_easypost
@@ -2613,7 +2613,7 @@ msgstr "Không tìm thấy Đơn bán nào phải xuất hoá đơn"
 #. module: sale
 #: model_terms:ir.actions.act_window,help:sale.action_orders_upselling
 msgid "No orders to upsell found."
-msgstr "No orders to upsell found."
+msgstr "Không tìm thấy đơn hàng chờ bổ sung."
 
 #. module: sale
 #. openerp-web
@@ -2776,7 +2776,7 @@ msgstr "Đơn bán #"
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.sale_onboarding_order_confirmation_step
 msgid "Order Confirmation"
-msgstr "Order Confirmation"
+msgstr "Đơn hàng xác nhận"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_advance_payment_inv__count
@@ -2837,7 +2837,7 @@ msgstr "Đơn chờ Xuất Hoá đơn"
 #: code:addons/sale/models/sale.py:0
 #, python-format
 msgid "Ordered Quantity: %(old_qty)s -> %(new_qty)s"
-msgstr "Ordered Quantity: %(old_qty)s -> %(new_qty)s"
+msgstr "Số lượng đặt hàng: %(old_qty)s -> %(new_qty)s"
 
 #. module: sale
 #: model:ir.model.fields,help:sale.field_product_product__invoice_policy
@@ -3474,7 +3474,7 @@ msgstr "Đơn Bán"
 #. module: sale
 #: model:ir.model,name:sale.model_sale_order_cancel
 msgid "Sales Order Cancel"
-msgstr "Sales Order Cancel"
+msgstr "Hủy đơn hàng"
 
 #. module: sale
 #: model:mail.message.subtype,name:sale.mt_order_confirmed
@@ -3643,7 +3643,8 @@ msgstr "Chọn một sản phẩm, hoặc tạo tốc hành một sản phẩm."
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.res_config_settings_view_form
 msgid "Select product attributes and optional products from the sales order"
-msgstr "Select product attributes and optional products from the sales order"
+msgstr ""
+"Chọn một thuột tính sản phẩm và tùy chọn sản phẩm thêm từ Đơn bán hàng"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.res_config_settings_view_form
@@ -4485,7 +4486,7 @@ msgstr "Hợp lệ đến"
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.sale_order_portal_template
 msgid "Validate Order"
-msgstr "Xác nhận báo giá"
+msgstr "Xác nhận đơn hàng"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.res_config_settings_view_form
@@ -4595,6 +4596,17 @@ msgstr ""
 "thức thanh toán."
 
 #. module: sale
+#: code:addons/sale/models/product_product.py:0
+#: code:addons/sale/models/product_template.py:0
+#, python-format
+msgid ""
+"You cannot change the product's type because it is already used in sales "
+"orders."
+msgstr ""
+"Bạn không thể thay đổi loại của sản phẩm bởi vì nó đã được sử dụng trong Các"
+" đơn bán hàng."
+
+#. module: sale
 #: code:addons/sale/models/sale.py:0
 #, python-format
 msgid ""
@@ -4676,4 +4688,3 @@ msgstr "đơn bán"
 #: model:ir.model.fields,help:sale.field_sale_order__amount_by_group
 msgid "type: [(name, amount, base, formated amount, formated base)]"
 msgstr "loại: [(tên, tổng, giá tính thuế, tổng đã định dạng, giá tính thuế đã định dạng)]"
-
