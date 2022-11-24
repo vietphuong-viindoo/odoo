@@ -1375,8 +1375,8 @@ msgid ""
 "Creation date of draft/sent orders,\n"
 "Confirmation date of confirmed orders."
 msgstr ""
-"Creation date of draft/sent orders,\n"
-"Confirmation date of confirmed orders."
+"Ngày tạo/gửi đơn hàng,\n"
+"Ngày xác nhận của đơn hàng."
 
 #. module: sale
 #: model:ir.model.fields.selection,name:sale.selection__sale_payment_acquirer_onboarding_wizard__payment_method__stripe
@@ -1698,7 +1698,7 @@ msgstr "Kiểu Hiển thị"
 #: code:addons/sale/static/src/js/sale_order_view.js:0
 #, python-format
 msgid "Do you want to apply this discount to all order lines?"
-msgstr "Do you want to apply this discount to all order lines?"
+msgstr "Bạn muốn áp dụng chiếc khấu này cho tất cả các dòng?"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.res_config_settings_view_form
@@ -2826,7 +2826,7 @@ msgstr "Bán Gia tăng"
 #: code:addons/sale/controllers/portal.py:0
 #, python-format
 msgid "Order signed by %s"
-msgstr "Đơn đặt hàng được ký bởi %s"
+msgstr "Đơn hàng được ký bởi %s"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.crm_team_salesteams_view_kanban
@@ -4085,7 +4085,7 @@ msgstr ""
 #: code:addons/sale/models/sale.py:0
 #, python-format
 msgid "The ordered quantity has been updated."
-msgstr "The ordered quantity has been updated."
+msgstr "Số lượng đặt hàng đã được cập nhật."
 
 #. module: sale
 #: model:ir.model.fields,help:sale.field_sale_order__reference
@@ -4300,8 +4300,8 @@ msgid ""
 "To speed up order confirmation, we can activate electronic signatures or "
 "payments."
 msgstr ""
-"To speed up order confirmation, we can activate electronic signatures or "
-"payments."
+"Để tăng tốc độ xác nhận đơn hàng, bạn có thể kích hoạt ký điện tử hoặc thanh"
+" toán điện tử."
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.view_sales_order_filter
@@ -4546,7 +4546,7 @@ msgstr "Lịch sử thông tin liên lạc website"
 #: code:addons/sale/static/src/js/tours/sale.js:0
 #, python-format
 msgid "Write <b>your own email address</b> here in order to test the flow."
-msgstr "Ghi <b>địa chỉ email của chính bạn</b> ở đây để kiểm thử chu trình."
+msgstr "Viết <b>địa chỉ email của chính bạn</b> ở đây để kiểm thử chu trình."
 
 #. module: sale
 #. openerp-web
