@@ -23,7 +23,7 @@ msgstr ""
 #. module: project_hr_expense
 #: model:ir.model.fields,field_description:project_hr_expense.field_project_project__expenses_count
 msgid "# Expenses"
-msgstr "# Chi phí"
+msgstr "SL Chi tiêu"
 
 #. module: project_hr_expense
 #: model_terms:ir.ui.view,arch_db:project_hr_expense.project_project_view_form
@@ -33,7 +33,7 @@ msgid ""
 "                        </span>"
 msgstr ""
 "<span class=\"o_stat_text\">\n"
-"                            Chi phí\n"
+"                            Chi tiêu\n"
 "                        </span>"
 
 #. module: project_hr_expense
@@ -41,7 +41,7 @@ msgstr ""
 #: code:addons/project_hr_expense/models/project.py:0
 #, python-format
 msgid "Expenses"
-msgstr "Chi phí"
+msgstr "Chi tiêu"
 
 #. module: project_hr_expense
 #: model:ir.model,name:project_hr_expense.model_project_project

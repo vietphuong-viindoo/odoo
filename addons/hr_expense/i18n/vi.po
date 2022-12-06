@@ -34,7 +34,7 @@ msgstr ""
 msgid ""
 "%(user)s confirms this expense is not a duplicate with similar expense."
 msgstr ""
-"%(user)s xác nhận chi phí này không phải bản trùng lặp của chi phí tương tự."
+"%(user)s xác nhận chi tiêu này không phải bản trùng lặp của chi tiêu tương tự."
 
 #. module: hr_expense
 #: model:ir.actions.report,print_report_name:hr_expense.action_report_hr_expense_sheet
@@ -274,13 +274,13 @@ msgstr "Một tài khoản Chi tiêu được mong đợi"
 #: code:addons/hr_expense/static/src/js/expense_form_view.js:0
 #, python-format
 msgid "An expense of same category, amount and date already exists."
-msgstr "Một chi phí thuộc cùng danh mục, số tiền và ngày tháng đã tồn tại."
+msgstr "Một chi tiêu thuộc cùng danh mục, số tiền và ngày tháng đã tồn tại."
 
 #. module: hr_expense
 #: code:addons/hr_expense/models/hr_expense.py:0
 #, python-format
 msgid "An expense report must contain only lines from the same company."
-msgstr "Báo cáo chi phí chỉ được chứa các dòng từ cùng một công ty."
+msgstr "Báo cáo chi tiêu chỉ được chứa các dòng từ cùng một công ty."
 
 #. module: hr_expense
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense__analytic_account_id
@@ -319,7 +319,7 @@ msgstr "Phê duyệt Bảng kê"
 #: model_terms:ir.actions.act_window,help:hr_expense.action_hr_expense_sheet_all_to_approve
 msgid "Approve the new expense reports submitted by the employees you manage."
 msgstr ""
-"Phê duyệt những bảng kê chi phí đã được trình lên bởi những nhân viên bạn "
+"Phê duyệt những bảng kê chi tiêu đã được trình lên bởi những nhân viên bạn "
 "quản lý"
 
 #. module: hr_expense
@@ -582,7 +582,7 @@ msgid ""
 "picture of your receipt and let Odoo digitalizes it for you. The OCR and "
 "Artificial Intelligence will fill the data automatically."
 msgstr ""
-"Đừng giữ hóa đơn chi phí trong túi áo. Chỉ cần chụp một bức ảnh và để Odoo "
+"Đừng giữ hóa đơn chi tiêu trong túi áo. Chỉ cần chụp một bức ảnh và để Odoo "
 "số hóa giúp bạn. OCR và trí tuệ nhân tạo sẽ tự động điền dữ liệu."
 
 #. module: hr_expense
@@ -605,7 +605,7 @@ msgstr "Dự thảo"
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense__duplicate_expense_ids
 #, python-format
 msgid "Duplicate Expense"
-msgstr "Chi phí trùng lặp"
+msgstr "Chi tiêu trùng lặp"
 
 #. module: hr_expense
 #: model:ir.model,name:hr_expense.model_hr_employee
@@ -652,7 +652,7 @@ msgstr "Phê duyệt Chi tiêu"
 #. module: hr_expense
 #: model:ir.model,name:hr_expense.model_hr_expense_approve_duplicate
 msgid "Expense Approve Duplicate"
-msgstr "Duyệt Chi phí Trùng lặp"
+msgstr "Trùng lặp Duyệt Chi tiêu"
 
 #. module: hr_expense
 #: model_terms:ir.ui.view,arch_db:hr_expense.view_employee_tree_inherit_expense
@@ -668,7 +668,7 @@ msgstr "Ngày Chi tiêu"
 #. module: hr_expense
 #: model_terms:ir.ui.view,arch_db:hr_expense.res_config_settings_view_form
 msgid "Expense Digitalization (OCR)"
-msgstr "Số hóa Chi phí (OCR)"
+msgstr "Số hóa Chi tiêu (OCR)"
 
 #. module: hr_expense
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense_sheet__journal_id
@@ -752,12 +752,12 @@ msgstr "Kê khai Chi tiêu chờ Duyệt"
 #. module: hr_expense
 #: model_terms:ir.ui.view,arch_db:hr_expense.hr_expense_approve_duplicate_view_form
 msgid "Expense Validate Duplicate"
-msgstr "Xác nhận Chi phí Trùng lặp"
+msgstr "Xác nhận Chi tiêu Trùng lặp"
 
 #. module: hr_expense
 #: model_terms:ir.actions.act_window,help:hr_expense.hr_expense_product
 msgid "Expense products can be reinvoiced to your customers."
-msgstr "Sản phẩm chi phí có thể được xuất lại hóa đơn cho khách hàng."
+msgstr "Sản phẩm chi tiêu có thể được xuất lại hóa đơn cho khách hàng."
 
 #. module: hr_expense
 #: model_terms:ir.ui.view,arch_db:hr_expense.hr_expense_refuse_wizard_view_form
@@ -784,7 +784,7 @@ msgstr "Kê khai chi tiêu bị từ chối"
 msgid ""
 "Expense reports regroup all the expenses incurred during a specific event."
 msgstr ""
-"Báo cáo chi phí nhóm lại tất cả chi phí phát sinh trong một sự kiện cụ thể."
+"Báo cáo chi tiêu nhóm lại tất cả chi tiêu phát sinh trong một sự kiện cụ thể."
 
 #. module: hr_expense
 #: model:ir.model.fields,help:hr_expense.field_account_move_line__expense_id
@@ -910,7 +910,7 @@ msgstr "Thông tin chung"
 #: code:addons/hr_expense/models/hr_expense.py:0
 #, python-format
 msgid "Generated Expenses"
-msgstr "Chi phí đã tạo"
+msgstr "Chi tiêu đã tạo"
 
 #. module: hr_expense
 #: model_terms:ir.actions.act_window,help:hr_expense.hr_expense_actions_my_all
@@ -1027,7 +1027,7 @@ msgstr "currency_id khác với company_currency_id"
 #. module: hr_expense
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense__product_has_cost
 msgid "Is product with non zero cost selected"
-msgstr "Sản phẩm có chi phí khác 0 được chọn"
+msgstr "Là sản phẩm có chi phí khác không được chọn"
 
 #. module: hr_expense
 #: model:ir.model,name:hr_expense.model_account_journal
@@ -1223,24 +1223,24 @@ msgstr "Chưa có dữ liệu nào!"
 #. module: hr_expense
 #: model_terms:ir.actions.act_window,help:hr_expense.hr_expense_product
 msgid "No expense products found. Let's create one!"
-msgstr "Không tìm thấy sản phẩm chi phí nào. Hãy tạo một sản phẩm!"
+msgstr "Không tìm thấy sản phẩm chi tiêu nào. Hãy tạo một sản phẩm!"
 
 #. module: hr_expense
 #: model_terms:ir.actions.act_window,help:hr_expense.action_hr_expense_sheet_my_all
 msgid "No expense report found. Let's create one!"
-msgstr "Không tìm thấy báo cáo chi phí nào. Hãy tạo một báo cáo!"
+msgstr "Không tìm thấy báo cáo chi tiêu nào. Hãy tạo một báo cáo!"
 
 #. module: hr_expense
 #: model_terms:ir.actions.act_window,help:hr_expense.action_hr_expense_sheet_all_to_approve
 #: model_terms:ir.actions.act_window,help:hr_expense.action_hr_expense_sheet_all_to_pay
 #: model_terms:ir.actions.act_window,help:hr_expense.action_hr_expense_sheet_all_to_post
 msgid "No expense reports found"
-msgstr "Không tìm thấy báo cáo chi phí"
+msgstr "Không tìm thấy báo cáo chi tiêu"
 
 #. module: hr_expense
 #: model_terms:ir.actions.act_window,help:hr_expense.action_hr_expense_sheet_all
 msgid "No expense reports found. Let's create one!"
-msgstr "Không tìm thấy báo cáo chi phí. Hãy tạo báo cáo!"
+msgstr "Không tìm thấy báo cáo chi tiêu. Hãy tạo báo cáo!"
 
 #. module: hr_expense
 #: model:ir.model.fields.selection,name:hr_expense.selection__hr_expense_sheet__payment_state__not_paid
@@ -1335,7 +1335,7 @@ msgstr "Chỉ có quản lý và cán bộ nhân sự mới có thể phê duy�
 #: model:product.product,name:hr_expense.other_expense_product
 #: model:product.template,name:hr_expense.other_expense_product_product_template
 msgid "Other expenses"
-msgstr "Chi phí khác"
+msgstr "Chi tiêu khác"
 
 #. module: hr_expense
 #: model:ir.model.fields.selection,name:hr_expense.selection__hr_expense__state__done
@@ -1379,7 +1379,7 @@ msgid ""
 "Please configure Default Expense account for Category expense: "
 "`property_account_expense_categ_id`."
 msgstr ""
-"Hãy đặt cấu hình tài khoản Chi phí mặc định cho Danh mục chi phí: "
+"Hãy đặt cấu hình tài khoản Chi tiêu mặc định cho Danh mục chi tiêu: "
 "`property_account_expense_categ_id`."
 
 #. module: hr_expense
@@ -1529,12 +1529,12 @@ msgstr "Thanh toán"
 #. module: hr_expense
 #: model:ir.model.fields,field_description:hr_expense.field_res_config_settings__module_hr_payroll_expense
 msgid "Reimburse Expenses in Payslip"
-msgstr "Bồi hoàn Chi phí trong Phiếu lương"
+msgstr "Bồi hoàn Chi tiêu trong Phiếu lương"
 
 #. module: hr_expense
 #: model_terms:ir.ui.view,arch_db:hr_expense.res_config_settings_view_form
 msgid "Reimburse expenses in payslips"
-msgstr "Bồi hoàn Chi phí trong Phiếu lương"
+msgstr "Bồi hoàn Chi tiêu trong Phiếu lương"
 
 #. module: hr_expense
 #: model_terms:ir.ui.view,arch_db:hr_expense.res_config_settings_view_form
@@ -1547,7 +1547,7 @@ msgid ""
 "Reimburse the employees who incurred these costs or simply register the "
 "corresponding payments."
 msgstr ""
-"Bồi hoàn cho nhân viên đã phát sinh chi phí này hoặc chỉ cần ghi nhận thanh "
+"Bồi hoàn cho nhân viên đã phát sinh chi tiêu này hoặc chỉ cần ghi nhận thanh "
 "toán tương ứng."
 
 #. module: hr_expense
@@ -1638,7 +1638,7 @@ msgid ""
 "Select the user responsible for approving \"Expenses\" of this employee.\n"
 "If empty, the approval is done by an Administrator or Approver (determined in settings/users)."
 msgstr ""
-"Chọn người dùng phụ trách phê duyệt \"Chi phí\" của nhân viên này.\n"
+"Chọn người dùng phụ trách phê duyệt \"Chi tiêu\" của nhân viên này.\n"
 "Nếu để trống, phê duyệt được thực hiện bởi Quản trị viên hoặc Người phê duyệt (được xác định trong cài đặt/người dùng)."
 
 #. module: hr_expense
@@ -1648,7 +1648,7 @@ msgid ""
 "Selected Unit of Measure for expense %(expense)s does not belong to the same"
 " category as the Unit of Measure of product %(product)s."
 msgstr ""
-"Đơn vị đo được chọn cho chi phí %(expense)s không thuộc về cùng một danh mục"
+"Đơn vị đo được chọn cho chi tiêu %(expense)s không thuộc về cùng một danh mục"
 " như đơn vị đo của sản phẩm %(product)s."
 
 #. module: hr_expense
@@ -1661,15 +1661,15 @@ msgid ""
 "subject to set it on the expense too."
 msgstr ""
 "Gửi email tới bí danh email này cùng với hóa đơn trong tệp đính kèm để tạo "
-"chi phí chỉ bằng một lần bấm. Nếu từ đầu tiên trong tiêu đề thư có chứa tham"
+"chi tiêu chỉ bằng một lần bấm. Nếu từ đầu tiên trong tiêu đề thư có chứa tham"
 " chiếu nội bộ của danh mục hoặc tên danh mục, danh mục tương ứng sẽ tự động "
-"được đặt. Gõ khoản tiền chi phí trong tiêu đề thư để nhập thông tin đó trong"
-" chi phí."
+"được đặt. Gõ khoản tiền chi tiêu trong tiêu đề thư để nhập thông tin đó trong"
+" chi tiêu."
 
 #. module: hr_expense
 #: model:ir.model.fields,field_description:hr_expense.field_res_config_settings__module_hr_expense_extract
 msgid "Send bills to OCR to generate expenses"
-msgstr "Gửi hóa đơn tới OCR để tạo chi phí"
+msgstr "Gửi hóa đơn tới OCR để tạo chi tiêu"
 
 #. module: hr_expense
 #: model:ir.actions.act_window,name:hr_expense.action_hr_expense_configuration
@@ -1699,13 +1699,13 @@ msgstr "Hiển thị tất cả dữ liệu có ngày xử lý tiếp theo trư�
 msgid ""
 "Snap pictures of your receipts and let Odoo<br> automatically create "
 "expenses for you."
-msgstr "Chụp ảnh hóa đơn và để Odoo<br> tự động tạo chi phí giúp bạn."
+msgstr "Chụp ảnh hóa đơn và để Odoo<br> tự động tạo chi tiêu giúp bạn."
 
 #. module: hr_expense
 #: code:addons/hr_expense/models/hr_expense.py:0
 #, python-format
 msgid "Specify expense journal to generate accounting entries."
-msgstr "Xác định sổ nhật ký chi phí để tạo các bút toán kế toán."
+msgstr "Xác định sổ nhật ký chi tiêu để tạo các bút toán kế toán."
 
 #. module: hr_expense
 #: model:ir.model.fields,help:hr_expense.field_product_product__can_be_expensed
@@ -1789,7 +1789,7 @@ msgstr ""
 #: code:addons/hr_expense/models/hr_expense.py:0
 #, python-format
 msgid "The expense reports were successfully approved."
-msgstr "Báo cáo chi phí đã được phê duyệt thành công."
+msgstr "Báo cáo chi tiêu đã được phê duyệt thành công."
 
 #. module: hr_expense
 #: model_terms:ir.ui.view,arch_db:hr_expense.hr_expense_template_register
@@ -1798,7 +1798,7 @@ msgid ""
 " You'll have to set the category manually on the expense."
 msgstr ""
 "Từ đầu tiên trong tiêu đề email không tương ứng với bất kỳ mã danh mục nào. "
-"Bạn sẽ phải đặt danh mục thủ công trong chi phí."
+"Bạn sẽ phải đặt danh mục thủ công trong chi tiêu."
 
 #. module: hr_expense
 #: model_terms:ir.ui.view,arch_db:hr_expense.hr_expense_approve_duplicate_view_form
@@ -1807,14 +1807,14 @@ msgid ""
 "than some expenses of this report. Please verify this report does not "
 "contain duplicates."
 msgstr ""
-"Chi phí được duyệt sau đây có nhân viên, số tiền và danh mục giống với một "
-"vài chi phí trong báo cáo này. Hãy xác nhận báo cáo này không chứa chi phí "
+"Chi tiêu được duyệt sau đây có nhân viên, số tiền và danh mục giống với một "
+"vài chi tiêu trong báo cáo này. Hãy xác nhận báo cáo này không chứa chi tiêu "
 "trùng lặp."
 
 #. module: hr_expense
 #: model:ir.model.constraint,message:hr_expense.constraint_hr_expense_sheet_journal_id_required_posted
 msgid "The journal must be set on posted expense"
-msgstr "Phải xác định sổ cho chi phí đã vào sổ"
+msgstr "Phải xác định sổ cho chi tiêu đã vào sổ"
 
 #. module: hr_expense
 #: model:ir.model.fields,help:hr_expense.field_hr_expense_sheet__journal_id
@@ -1836,7 +1836,7 @@ msgstr ""
 #: code:addons/hr_expense/models/hr_expense.py:0
 #, python-format
 msgid "There are no expense reports to approve."
-msgstr "Không có báo cáo chi phí cần phê duyệt."
+msgstr "Không có báo cáo chi tiêu cần phê duyệt."
 
 #. module: hr_expense
 #: model:digest.tip,name:hr_expense.digest_tip_hr_expense_0
@@ -1966,7 +1966,7 @@ msgstr "Người dùng"
 #. module: hr_expense
 #: model:ir.actions.act_window,name:hr_expense.hr_expense_approve_duplicate_action
 msgid "Validate Duplicate Expenses"
-msgstr "Xác nhận chi phí trùng lặp"
+msgstr "Xác nhận chi tiêu trùng lặp"
 
 #. module: hr_expense
 #: model_terms:ir.ui.view,arch_db:hr_expense.view_hr_expense_sheet_form
@@ -1976,7 +1976,7 @@ msgstr "Xem Đính kèm"
 #. module: hr_expense
 #: model_terms:ir.ui.view,arch_db:hr_expense.hr_expense_template_register
 msgid "View Expense"
-msgstr "Xem Chi phí"
+msgstr "Xem Chi tiêu"
 
 #. module: hr_expense
 #: model_terms:ir.ui.view,arch_db:hr_expense.hr_expense_view_form
@@ -2012,22 +2012,22 @@ msgid ""
 "company at fixed cost like allowances for mileage, per diem, accomodation or"
 " meal."
 msgstr ""
-"Khi chi phí của sản phẩm chi phí khác 0, thì người dùng sử dụng sản phẩm này"
-" không thể thay đổi số tiền của chi phí, mà chỉ có thể đổi số lượng. Sử dụng"
-" chi phí khác 0 cho các danh mục chi phí do công ty tài trợ theo chi phí cố "
+"Khi chi tiêu của sản phẩm chi tiêu khác 0, thì người dùng sử dụng sản phẩm này"
+" không thể thay đổi số tiền của chi tiêu, mà chỉ có thể đổi số lượng. Sử dụng"
+" chi tiêu khác 0 cho các danh mục chi tiêu do công ty tài trợ theo chi tiêu cố "
 "định như phụ cấp cho số dặm bay, công tác phí, chỗ ở hoặc bữa ăn."
 
 #. module: hr_expense
 #: code:addons/hr_expense/models/hr_expense.py:0
 #, python-format
 msgid "You are not authorized to edit the reference of this expense report."
-msgstr "Bạn không được cấp quyền sửa tham chiếu của báo cáo chi phí này."
+msgstr "Bạn không được cấp quyền sửa tham chiếu của báo cáo chi tiêu này."
 
 #. module: hr_expense
 #: code:addons/hr_expense/models/hr_expense.py:0
 #, python-format
 msgid "You are not authorized to edit this expense report."
-msgstr "Bạn không được cấp quyền sửa báo cáo chi phí này."
+msgstr "Bạn không được cấp quyền sửa báo cáo chi tiêu này."
 
 #. module: hr_expense
 #: code:addons/hr_expense/models/hr_expense.py:0
@@ -2064,7 +2064,7 @@ msgstr "Bạn chỉ có thể phê duyệt Chi tiêu bộ phận của bạn"
 #: code:addons/hr_expense/models/hr_expense.py:0
 #, python-format
 msgid "You can't mix sample expenses and regular ones"
-msgstr "Bạn không thể kết hợp chi phí mẫu và chi phí thông thường"
+msgstr "Bạn không thể kết hợp chi tiêu mẫu và chi tiêu thông thường"
 
 #. module: hr_expense
 #: code:addons/hr_expense/models/hr_expense.py:0
@@ -2117,7 +2117,7 @@ msgid ""
 "You need to have at least one category that can be expensed in your database"
 " to proceed!"
 msgstr ""
-"Bạn cần có ít nhất một danh mục có thể tạo chi phí trong cơ sở dữ liệu để "
+"Bạn cần có ít nhất một danh mục có thể tạo chi tiêu trong cơ sở dữ liệu để "
 "tiếp tục!"
 
 #. module: hr_expense

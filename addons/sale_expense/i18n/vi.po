@@ -23,7 +23,7 @@ msgstr ""
 #. module: sale_expense
 #: model:ir.model.fields,field_description:sale_expense.field_sale_order__expense_count
 msgid "# of Expenses"
-msgstr "# chi phí"
+msgstr "SL Chi tiêu"
 
 #. module: sale_expense
 #: model:ir.model.fields,field_description:sale_expense.field_hr_expense__analytic_account_id
@@ -43,14 +43,14 @@ msgstr "Khách hàng để xuất lại hóa đơn"
 #. module: sale_expense
 #: model:ir.model,name:sale_expense.model_hr_expense
 msgid "Expense"
-msgstr "Chi phí"
+msgstr "Chi tiêu"
 
 #. module: sale_expense
 #: model:ir.actions.act_window,name:sale_expense.hr_expense_action_from_sale_order
 #: model:ir.model.fields,field_description:sale_expense.field_sale_order__expense_ids
 #: model_terms:ir.ui.view,arch_db:sale_expense.sale_order_form_view_inherit
 msgid "Expenses"
-msgstr "Chi phí"
+msgstr "Chi tiêu"
 
 #. module: sale_expense
 #: model:ir.model.fields,help:sale_expense.field_hr_expense__sale_order_id
@@ -58,7 +58,7 @@ msgid ""
 "If the category has an expense policy, it will be reinvoiced on this sales "
 "order"
 msgstr ""
-"Nếu danh mục có chính sách chi phí, danh mục sẽ được xuất lại hóa đơn trong "
+"Nếu danh mục có chính sách chi tiêu, danh mục sẽ được xuất lại hóa đơn trong "
 "đơn bán hàng này"
 
 #. module: sale_expense
@@ -79,4 +79,4 @@ msgstr "Mẫu sản phẩm"
 #. module: sale_expense
 #: model:ir.model,name:sale_expense.model_sale_order
 msgid "Sales Order"
-msgstr "Đơn bán hàng"
+msgstr "Đơn bán"
