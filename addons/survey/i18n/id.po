@@ -1149,7 +1149,7 @@ msgstr ""
 #. module: survey
 #: model_terms:ir.ui.view,arch_db:survey.survey_page_statistics_header
 msgid "Chart"
-msgstr ""
+msgstr "Bagan"
 
 #. module: survey
 #: model:ir.model.fields,help:survey.field_survey_survey__is_attempts_limited
@@ -1809,7 +1809,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:survey.user_input_session_manage_content
 #: model_terms:ir.ui.view,arch_db:survey.user_input_session_open
 msgid "Go to"
-msgstr ""
+msgstr "Pergi ke"
 
 #. module: survey
 #: model:survey.question.answer,value:survey.survey_demo_quiz_p5_q1_sug1
@@ -4709,4 +4709,4 @@ msgstr ""
 #. module: survey
 #: model_terms:ir.ui.view,arch_db:survey.survey_403_page
 msgid "this page"
-msgstr ""
+msgstr "halaman ini"
