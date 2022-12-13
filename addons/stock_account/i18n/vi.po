@@ -866,7 +866,7 @@ msgid ""
 "                unless there is a specific valuation account set on the destination location. This is the default value for all products in this category.\n"
 "                It can also directly be set on each product."
 msgstr ""
-"Khi thực hiện định giá hàng tồn kho tự động, các mục nhật ký đối tác cho tất cả các dịch chuyển kho xuất ra sẽ được ghi nhận trong tài khoản này,\n"
+"Khi thực hiện định giá hàng tồn kho tự động, các phát sinh kế toán đối ứng cho tất cả các dịch chuyển kho xuất ra sẽ được ghi nhận trong tài khoản này,\n"
 "                trừ khi có một tài khoản định giá cụ thể được đặt trên vị trí đích. Đây là giá trị mặc định cho tất cả các sản phẩm trong danh mục này.\n"
 "                Nó cũng có thể được đặt trực tiếp trên mỗi sản phẩm."
 

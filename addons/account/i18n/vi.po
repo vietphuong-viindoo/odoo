@@ -1679,8 +1679,8 @@ msgid ""
 "Account that will be set on lines created in cash basis journal entry and "
 "used to keep track of the tax base amount."
 msgstr ""
-"Tài khoản sẽ được đặt trên các dòng được tạo trong mục nhật ký cơ sở tiền "
-"mặt và được sử dụng để theo dõi số tiền thuế chính."
+"Tài khoản sẽ được đặt trên các dòng được tạo trong bút toán cơ sở dòng tiền "
+"và được sử dụng để theo dõi số tiền thuế chính."
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_fiscal_position_account__account_dest_id
@@ -14030,7 +14030,7 @@ msgid ""
 "To be consistent, the journal entry must always have exactly one journal item involving the bank/cash account."
 msgstr ""
 "Bút toán %s đã chuyển qua trạng thái không hợp lệ vì có liên quan tới dòng sao kê của nó.\n"
-"Để nhất quán, nhật ký bút toán phải luôn có chính xác một mục nhật ký liên quan đến tài khoản ngân hàng / tiền mặt.."
+"Để nhất quán, bút toán phải luôn có chính xác một phát sinh liên quan đến tài khoản ngân hàng / tiền mặt.."
 
 #. module: account
 #: model:ir.model.fields,help:account.field_res_company__account_opening_move_id
