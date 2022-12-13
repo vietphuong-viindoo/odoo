@@ -33050,7 +33050,7 @@ msgstr "tên"
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_attachment_form
 msgid "on"
-msgstr "trên"
+msgstr "vào"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__ir_model_fields__ttype__one2many
