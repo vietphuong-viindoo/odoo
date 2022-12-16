@@ -81,7 +81,7 @@ msgstr "Đơn bán"
 #. module: website_event_sale
 #: model:ir.model,name:website_event_sale.model_sale_order_line
 msgid "Sales Order Line"
-msgstr "Chi tiết Đơn Bán"
+msgstr "Chi tiết Đơn bán"
 
 #. module: website_event_sale
 #: code:addons/website_event_sale/models/sale_order.py:0

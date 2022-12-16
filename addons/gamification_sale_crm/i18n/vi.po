@@ -59,7 +59,7 @@ msgstr "SL đơn bán mới"
 #. module: gamification_sale_crm
 #: model:gamification.goal.definition,name:gamification_sale_crm.definition_crm_nbr_paid_sale_order
 msgid "Paid Sales Orders"
-msgstr "SL Đơn Bán đã Thanh toán"
+msgstr "SL Đơn bán đã Thanh toán"
 
 #. module: gamification_sale_crm
 #: model:gamification.challenge.line,name:gamification_sale_crm.line_crm_marketing2
@@ -81,7 +81,7 @@ msgstr "Tổng đã xuất hoá đơn"
 #. module: gamification_sale_crm
 #: model:gamification.goal.definition,name:gamification_sale_crm.definition_crm_tot_paid_sale_order
 msgid "Total Paid Sales Orders"
-msgstr "Tổng Đơn Bán đã thanh toán"
+msgstr "Tổng Đơn bán đã thanh toán"
 
 #. module: gamification_sale_crm
 #: model:gamification.challenge.line,definition_suffix:gamification_sale_crm.line_crm_marketing2

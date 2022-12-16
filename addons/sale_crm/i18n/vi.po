@@ -179,7 +179,7 @@ msgstr "Phân tích Bán hàng"
 #. module: sale_crm
 #: model:ir.model,name:sale_crm.model_sale_order
 msgid "Sales Order"
-msgstr "Đơn Bán"
+msgstr "Đơn bán"
 
 #. module: sale_crm
 #: model:ir.model,name:sale_crm.model_crm_team

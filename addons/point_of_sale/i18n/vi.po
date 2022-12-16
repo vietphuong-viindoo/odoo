@@ -4342,7 +4342,7 @@ msgstr "Chi tiết Đơn hàng bán lẻ"
 #: model_terms:ir.ui.view,arch_db:point_of_sale.view_pos_order_search
 #: model_terms:ir.ui.view,arch_db:point_of_sale.view_pos_pos_form
 msgid "Point of Sale Orders"
-msgstr "Đơn Bán Điểm Bán lẻ"
+msgstr "Đơn bán Điểm Bán lẻ"
 
 #. module: point_of_sale
 #: model:ir.model,name:point_of_sale.model_report_pos_order

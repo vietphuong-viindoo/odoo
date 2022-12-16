@@ -152,7 +152,7 @@ msgstr "Cung ứng"
 #. module: sale_purchase
 #: model:ir.model.fields,field_description:sale_purchase.field_purchase_order_line__sale_order_id
 msgid "Sale Order"
-msgstr "Đơn Bán"
+msgstr "Đơn bán"
 
 #. module: sale_purchase
 #: model:ir.model,name:sale_purchase.model_sale_order
@@ -162,7 +162,7 @@ msgstr "Đơn bán hàng"
 #. module: sale_purchase
 #: model:ir.model,name:sale_purchase.model_sale_order_line
 msgid "Sales Order Line"
-msgstr "Chi tiết Đơn Bán"
+msgstr "Chi tiết Đơn bán"
 
 #. module: sale_purchase
 #: code:addons/sale_purchase/models/purchase_order.py:0

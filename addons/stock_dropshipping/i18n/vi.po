@@ -69,7 +69,7 @@ msgstr "Đơn bán hàng"
 #. module: stock_dropshipping
 #: model:ir.model,name:stock_dropshipping.model_sale_order_line
 msgid "Sales Order Line"
-msgstr "Chi tiết Đơn Bán"
+msgstr "Chi tiết Đơn bán"
 
 #. module: stock_dropshipping
 #: model:ir.model,name:stock_dropshipping.model_stock_rule

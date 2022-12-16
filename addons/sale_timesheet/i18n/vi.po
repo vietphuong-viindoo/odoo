@@ -410,18 +410,18 @@ msgstr "Tạo Đơn bán từ dự án"
 #: model_terms:ir.ui.view,arch_db:sale_timesheet.project_project_view_form
 #, python-format
 msgid "Create Sales Order"
-msgstr "Tạo Đơn Bán"
+msgstr "Tạo Đơn bán"
 
 #. module: sale_timesheet
 #: model_terms:ir.ui.view,arch_db:sale_timesheet.project_create_invoice_view_form
 msgid "Create Sales Order from Project"
-msgstr "Tạo Đơn Bán từ Dự án"
+msgstr "Tạo Đơn bán từ Dự án"
 
 #. module: sale_timesheet
 #: model:ir.actions.act_window,name:sale_timesheet.project_project_action_multi_create_sale_order
 #: model_terms:ir.ui.view,arch_db:sale_timesheet.project_create_sale_order_view_form
 msgid "Create a Sales Order"
-msgstr "Tạo một Đơn Bán"
+msgstr "Tạo một Đơn bán"
 
 #. module: sale_timesheet
 #: model:ir.model.fields,field_description:sale_timesheet.field_project_create_invoice__create_uid
@@ -1073,7 +1073,7 @@ msgstr ""
 #. module: sale_timesheet
 #: model:ir.model.fields,field_description:sale_timesheet.field_project_profitability_report__sale_order_id
 msgid "Sale Order"
-msgstr "Đơn Bán"
+msgstr "Đơn bán"
 
 #. module: sale_timesheet
 #: model:ir.model.fields,field_description:sale_timesheet.field_project_task__so_analytic_account_id
@@ -1083,7 +1083,7 @@ msgstr "Tài khoản quản trị đơn hàng"
 #. module: sale_timesheet
 #: model:ir.model.fields,field_description:sale_timesheet.field_project_sale_line_employee_map__sale_line_id
 msgid "Sale Order Item"
-msgstr "Dòng Đơn Bán"
+msgstr "Dòng Đơn bán"
 
 #. module: sale_timesheet
 #: model:ir.model.fields,field_description:sale_timesheet.field_project_profitability_report__sale_line_id
@@ -1108,12 +1108,12 @@ msgstr "Hoá đơn thanh toán tạm ứng"
 #: model_terms:ir.ui.view,arch_db:sale_timesheet.project_project_view_kanban_inherit_sale_timesheet
 #, python-format
 msgid "Sales Order"
-msgstr "Đơn Bán"
+msgstr "Đơn bán"
 
 #. module: sale_timesheet
 #: model:ir.model.fields,field_description:sale_timesheet.field_project_profitability_report__order_confirmation_date
 msgid "Sales Order Confirmation Date"
-msgstr "Ngày Xác nhận Đơn Bán"
+msgstr "Ngày Xác nhận Đơn bán"
 
 #. module: sale_timesheet
 #: code:addons/sale_timesheet/controllers/portal.py:0
@@ -1123,12 +1123,12 @@ msgstr "Ngày Xác nhận Đơn Bán"
 #: model_terms:ir.ui.view,arch_db:sale_timesheet.timesheet_view_search
 #, python-format
 msgid "Sales Order Item"
-msgstr "Dòng trên Đơn Bán"
+msgstr "Dòng trên Đơn bán"
 
 #. module: sale_timesheet
 #: model:ir.model,name:sale_timesheet.model_sale_order_line
 msgid "Sales Order Line"
-msgstr "Chi tiết Đơn Bán"
+msgstr "Chi tiết Đơn bán"
 
 #. module: sale_timesheet
 #: code:addons/sale_timesheet/models/product.py:0

@@ -2782,12 +2782,12 @@ msgstr "Báo cáo Phân tích Bán"
 #. module: website_sale
 #: model:ir.model,name:website_sale.model_sale_order
 msgid "Sales Order"
-msgstr "Đơn Bán"
+msgstr "Đơn bán"
 
 #. module: website_sale
 #: model:ir.model,name:website_sale.model_sale_order_line
 msgid "Sales Order Line"
-msgstr "Chi tiết Đơn Bán"
+msgstr "Chi tiết Đơn bán"
 
 #. module: website_sale
 #: model:mail.template,name:website_sale.mail_template_sale_cart_recovery
@@ -2849,7 +2849,7 @@ msgstr "Mẫu"
 #. module: website_sale
 #: model_terms:ir.ui.view,arch_db:website_sale.view_sales_order_filter_ecommerce_abondand
 msgid "Search Abandoned Sales Orders"
-msgstr "Tìm Đơn Bán bị Bỏ rơi"
+msgstr "Tìm Đơn bán bị Bỏ rơi"
 
 #. module: website_sale
 #. openerp-web

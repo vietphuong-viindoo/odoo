@@ -266,7 +266,7 @@ msgstr "Dòng đơn hàng điểm bán hàng"
 #. module: pos_sale
 #: model:ir.model,name:pos_sale.model_pos_order
 msgid "Point of Sale Orders"
-msgstr "Đơn Bán Điểm bán lẻ"
+msgstr "Đơn bán Điểm bán lẻ"
 
 #. module: pos_sale
 #: model:ir.model,name:pos_sale.model_pos_session

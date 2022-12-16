@@ -46,9 +46,9 @@ msgstr "Báo cáo Phân tích Bán"
 #. module: sale_margin
 #: model:ir.model,name:sale_margin.model_sale_order
 msgid "Sales Order"
-msgstr "Đơn Bán"
+msgstr "Đơn bán"
 
 #. module: sale_margin
 #: model:ir.model,name:sale_margin.model_sale_order_line
 msgid "Sales Order Line"
-msgstr "Chi tiết Đơn Bán"
+msgstr "Chi tiết Đơn bán"
