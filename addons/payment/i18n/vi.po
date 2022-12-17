@@ -1959,7 +1959,8 @@ msgstr ""
 msgid ""
 "The transaction with reference %(ref)s for %(amount)s encountered an error "
 "(%(acq_name)s)."
-msgstr ""
+msgstr "Giao dịch có tham chiếu %(ref)s với số tiền %(amount)s gặp lỗi"
+"(%(acq_name)s)."
 
 #. module: payment
 #: code:addons/payment/models/payment_transaction.py:0
@@ -1967,7 +1968,8 @@ msgstr ""
 msgid ""
 "The transaction with reference %(ref)s for %(amount)s has been authorized "
 "(%(acq_name)s)."
-msgstr ""
+msgstr "Giao dịch có tham chiếu %(ref)s với số tiền %(amount)s đã được ủy quyền"
+"(%(acq_name)s)."
 
 #. module: payment
 #: code:addons/payment/models/payment_transaction.py:0
@@ -1975,7 +1977,8 @@ msgstr ""
 msgid ""
 "The transaction with reference %(ref)s for %(amount)s has been confirmed "
 "(%(acq_name)s)."
-msgstr ""
+msgstr "Giao dịch có tham chiếu %(ref)s với số tiền %(amount)s đã được xác nhận"
+"(%(acq_name)s)."
 
 #. module: payment
 #: code:addons/payment/models/payment_transaction.py:0
@@ -1983,7 +1986,8 @@ msgstr ""
 msgid ""
 "The transaction with reference %(ref)s for %(amount)s is canceled "
 "(%(acq_name)s)."
-msgstr ""
+msgstr "Giao dịch có tham chiếu %(ref)s với số tiền %(amount)s bị hủy bỏ"
+"(%(acq_name)s)."
 
 #. module: payment
 #: code:addons/payment/models/payment_transaction.py:0
@@ -1991,7 +1995,8 @@ msgstr ""
 msgid ""
 "The transaction with reference %(ref)s for %(amount)s is pending "
 "(%(acq_name)s)."
-msgstr ""
+msgstr "Giao dịch có tham chiếu %(ref)s với số tiền %(amount)s đang chờ xử lý"
+"(%(acq_name)s)."
 
 #. module: payment
 #: code:addons/payment/wizards/payment_link_wizard.py:0
