@@ -1260,6 +1260,14 @@ msgstr ""
 "                relacionados con el día a día de la empresa."
 
 #. module: account
+#: code:addons/account/models/account_move.py:0
+#, python-format
+msgid "A line of this move is using a deprecated account, you cannot post it."
+msgstr ""
+"Una línea de este movimiento utiliza una cuenta obsoleta, no puede "
+"publicarla."
+
+#. module: account
 #: code:addons/account/models/account_payment.py:0
 #, python-format
 msgid "A payment must always belongs to a bank or cash journal."
@@ -14332,6 +14340,14 @@ msgstr "El pago que creó este asiento"
 #: model:ir.model.fields,help:account.field_account_payment_register__source_currency_id
 msgid "The payment's currency."
 msgstr "Divisa del pago."
+
+#. module: account
+#: code:addons/account/models/product.py:0
+#, python-format
+msgid ""
+"The product \"%s\" is used in invoices. You cannot change its Unit of "
+"Measure."
+msgstr ""
 
 #. module: account
 #: code:addons/account/models/account_move.py:0

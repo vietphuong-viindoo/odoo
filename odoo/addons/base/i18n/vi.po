@@ -12,6 +12,7 @@
 # Hoàng Đình Hiếu, 2022
 # Thin Tran <trvathin@gmail.com>, 2022
 # Nancy Momoland <thanhnguyen.icsc@gmail.com>, 2022
+# Thi Huong Nguyen, 2022
 # 
 msgid ""
 msgstr ""
@@ -19,7 +20,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-24 09:03+0000\n"
 "PO-Revision-Date: 2021-09-14 12:18+0000\n"
-"Last-Translator: Nancy Momoland <thanhnguyen.icsc@gmail.com>, 2022\n"
+"Last-Translator: Thi Huong Nguyen, 2022\n"
 "Language-Team: Vietnamese (https://www.transifex.com/odoo/teams/41243/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -476,7 +477,7 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"Module này thêm một tuỳ chỉnh Đội bán hàng vào Điểm bán hàng. Điều này cho phép bạn xem và quản lý điểm bán hàng một cách dễ dàng hơn.\n"
+"Mô-đun này thêm một tuỳ chỉnh Đội bán hàng vào Điểm bán hàng. Điều này cho phép bạn xem và quản lý điểm bán hàng một cách dễ dàng hơn.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_pos_restaurant
@@ -856,7 +857,7 @@ msgid ""
 "        Bridge module for website_sale / sale_product_configurator"
 msgstr ""
 "\n"
-"        Module cầu nối cho website_sale / sale_product_configurator"
+"        Mô-đun cầu nối cho website_sale / sale_product_configurator"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_sale_stock_product_configurator
@@ -865,7 +866,7 @@ msgid ""
 "        Bridge module for website_sale_stock / sale_product_configurator"
 msgstr ""
 "\n"
-"        Module cầu nối cho website_sale_stock / sale_product_configurator"
+"        Mô-đun cầu nối cho website_sale_stock / sale_product_configurator"
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_sale_product_configurator
@@ -1429,7 +1430,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"        Module này triển khai reCaptchaV3 để bạn có thể chặn spam đối với các form gửi dữ liệu công cộng trên website của bạn.\n"
+"        Mô-đun này triển khai reCaptchaV3 để bạn có thể chặn spam đối với các form gửi dữ liệu công cộng trên website của bạn.\n"
 "    "
 
 #. module: base
@@ -3419,7 +3420,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"Module cầu nối cho Dự án và Enterprise\n"
+"Mô-đun cầu nối cho Dự án và Enterprise\n"
 "    "
 
 #. module: base
@@ -3994,6 +3995,17 @@ msgid ""
 "- Základní fiskální pozice pro českou legislativu\n"
 "    "
 msgstr ""
+"\n"
+"Sơ đồ kế toán và bản địa hóa dành cho Séc. Với Sơ đồ tài khoản có thuế và các vị trí tài chính cơ bản.\n"
+"\n"
+"Tento modul definuje:\n"
+"\n"
+"- Českou účetní osnovu za rok 2020\n"
+"\n"
+"- Základní sazby pro DPH z prodeje a nákupu\n"
+"\n"
+"- Základní fiskální pozice pro českou legislativu\n"
+"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_mass_mailing_themes
@@ -4971,6 +4983,28 @@ msgid ""
 "correctly when the cn2an library is installed. (e.g. with pip3 install cn2an)\n"
 "    "
 msgstr ""
+"\n"
+"Bao gồm các dữ liệu sau dành cho bản địa hóa Trung Quốc\n"
+"========================================================\n"
+"\n"
+"Loại Tài khoản/科目类型\n"
+"\n"
+"Dữ liệu Nhà nước/省份数据\n"
+"\n"
+"    科目类型\\会计科目表模板\\增值税\\辅助核算类别\\管理会计凭证簿\\财务会计凭证簿\n"
+"\n"
+"    添加中文省份数据\n"
+"\n"
+"    增加小企业会计科目表\n"
+"\n"
+"    修改小企业会计科目表\n"
+"\n"
+"    修改小企业会计税率\n"
+"\n"
+"Chúng tôi đã thêm tùy chọn in voucher, cũng sẽ\n"
+"in số tiền bằng chữ (ký tự tiếng Trung đặc biệt cho số)\n"
+"một cách chính xác khi thư viện cn2an được cài đặt. (ví dụ: với pip3 cài đặt cn2an)\n"
+"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_cn_city
@@ -6916,6 +6950,21 @@ msgid ""
 "    \n"
 "    "
 msgstr ""
+"\n"
+"Sơ đồ kế toán và nội địa hóa dành cho Slovakia: Sơ đồ tài khoản 2020, thuế suất GTGT cơ bản + \n"
+"vị trí tài chính.\n"
+"\n"
+"Tento modul definuje:\n"
+"• Slovenskú účtovú osnovu za rok 2020\n"
+"\n"
+"• Základné sadzby pre DPH z predaja a nákupu\n"
+"\n"
+"• Základné fiškálne pozície pre slovenskú legislatívu\n"
+"\n"
+" \n"
+"Pre viac informácií kontaktujte info@26house.com alebo navštívte https://www.26house.com.\n"
+"    \n"
+"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_es
@@ -7328,7 +7377,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"Đây là mô-đun cơ sở để quản lý Đơn vị tính.\n"
+"Đây là mô-đun cơ sở để quản lý Đơn đo lường.\n"
 "========================================================================\n"
 "    "
 
@@ -9874,7 +9923,7 @@ msgstr "<i class=\"fa fa-times\" title=\"Close the onboarding panel\"/>"
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_users_form_simple_modif
 msgid "<i title=\"Documentation\" class=\"fa fa-fw o_button_icon fa-info-circle\"/>"
-msgstr ""
+msgstr "<i title=\"Tài liệu\" class=\"fa fa-fw o_button_icon fa-info-circle\"/>"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.onboarding_container
@@ -10392,7 +10441,7 @@ msgstr "Một mô-đun để kiểm tra mã Odoo với nhiều linters khác nha
 #. module: base
 #: model:ir.module.module,description:base.module_test_impex
 msgid "A module to test import/export."
-msgstr "Một module để chạy thử import/export."
+msgstr "Một mô-đun để chạy thử import/export."
 
 #. module: base
 #: model:ir.module.module,description:base.module_test_populate
@@ -10402,7 +10451,7 @@ msgstr "A module to test populate."
 #. module: base
 #: model:ir.module.module,description:base.module_test_new_api
 msgid "A module to test the API."
-msgstr "Một module để chạy thử API."
+msgstr "Một mô-đun để chạy thử API."
 
 #. module: base
 #: model:ir.module.module,description:base.module_test_rpc
@@ -10412,7 +10461,7 @@ msgstr "Một mô-đun để kiểm tra các truy vấn RPC."
 #. module: base
 #: model:ir.module.module,description:base.module_test_uninstall
 msgid "A module to test the uninstall feature."
-msgstr "Một module để chạy thử gỡ tính năng."
+msgstr "Một mô-đun để chạy thử gỡ tính năng."
 
 #. module: base
 #: model:ir.module.module,description:base.module_test_translation_import
@@ -13456,6 +13505,13 @@ msgid ""
 "(San Francisco) in its entirety and does not include any costs relating to "
 "the legislation of the country in which the client is located."
 msgstr ""
+"Một số quốc gia áp dụng khấu lưu tại nguồn đối với số lượng hóa đơn, theo "
+"luật nội bộ của họ. Mọi khoản khấu trừ tại nguồn sẽ được khách hàng thanh "
+"toán cho cơ quan thuế. Trong mọi trường hợp, Công ty của tôi (San Francisco)"
+" không được tham gia vào các chi phí liên quan đến luật pháp của một quốc "
+"gia. Do đó, toàn bộ số tiền của hóa đơn sẽ do Công ty của tôi (San "
+"Francisco) thanh toán toàn bộ và không bao gồm bất kỳ chi phí nào liên quan "
+"đến luật pháp của quốc gia nơi khách hàng cư trú."
 
 #. module: base
 #: model:res.country,name:base.td
@@ -15674,7 +15730,7 @@ msgid ""
 "Disabling this option will also uninstall the following modules \n"
 "%s"
 msgstr ""
-"Tắt lựa chọn này sẽ đồng thời tự động gỡ cài đặt các module sau \n"
+"Tắt lựa chọn này sẽ đồng thời tự động gỡ cài đặt Các mô-đun sau \n"
 "%s"
 
 #. module: base
@@ -19470,6 +19526,10 @@ msgid ""
 "registered office within 8 days of the delivery of the goods or the "
 "provision of the services."
 msgstr ""
+"Để được chấp nhận, Công ty của tôi (San Francisco) phải được thông báo về "
+"bất kỳ khiếu nại nào bằng thư được gửi theo phương thức chuyển phát có ghi "
+"nhận đến văn phòng đã đăng ký của công ty trong vòng 8 ngày kể từ ngày giao "
+"hàng hoặc cung cấp dịch vụ."
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_iap
@@ -22334,7 +22394,7 @@ msgid ""
 "                            the uninstallation procedure on a duplicate database to guarantee that\n"
 "                            it works and then doing it on your production database."
 msgstr ""
-"Việc gỡ cài đặt một module thì không phải lúc nào cũng nhất quán về dữ liệu và đôi khi có thể có trục trặc,\n"
+"Việc gỡ cài đặt một mô-đun thì không phải lúc nào cũng nhất quán về dữ liệu và đôi khi có thể có trục trặc,\n"
 "                            một số dữ liệu có thể bị xóa, cơ sở dữ liệu có thể ở trạng thái không ổn định,\n"
 "                            hệ thống có thể bị treo, v.v. Mặc dù điều này hiếm khi xảy ra, chúng tôi đề nghị\n"
 "                            bạn kiểm thử quá trình gỡ bỏ này ở một bản sao để chắc chắn rằng mọi thứ hoạt động\n"
@@ -26691,7 +26751,7 @@ msgstr "Đã phát hiện đệ quy."
 #: code:addons/base/models/ir_module.py:0
 #, python-format
 msgid "Recursion error in modules dependencies !"
-msgstr "Lỗi đệ quy trong cấu trúc phụ thuộc của các module!"
+msgstr "Lỗi đệ quy trong cấu trúc phụ thuộc của các mô-đun!"
 
 #. module: base
 #: code:addons/base/models/ir_actions.py:0
@@ -29402,7 +29462,7 @@ msgid ""
 "choose to restart some wizards manually from this menu."
 msgstr ""
 "Các trình hướng dẫn cấu hình được sử dụng để giúp bạn định cấu hình phiên "
-"bản mới của Odoo. Chúng được khởi chạy trong quá trình cài đặt các mô-đun "
+"bản mới của Odoo. Chúng được khởi chạy trong quá trình cài đặt Các mô-đun "
 "mới, nhưng bạn có thể chọn khởi động lại một số trình hướng dẫn thủ công từ "
 "menu này."
 
@@ -30055,7 +30115,7 @@ msgid ""
 "and keep track of application submissions easily. It comes as an add-on of "
 "*Recruitment* app."
 msgstr ""
-"Module này cho phép xuất bản các chức vụ có sẵn của bạn trên trang web của "
+"Mô-đun này cho phép xuất bản các chức vụ có sẵn của bạn trên trang web của "
 "bạn và theo dõi các ứng dụng nộp đơn dễ dàng. Nó đến như là một add-on của *"
 " ứng dụng tuyển dụng *."
 
@@ -30215,7 +30275,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:base.view_base_module_upgrade
 msgid "This module will trigger the uninstallation of below modules."
 msgstr ""
-"Gỡ cài đặt Module này sẽ gây ra gỡ cài đặt các module phụ thuộc sau đây."
+"Gỡ cài đặt Mô-đun này sẽ gây ra gỡ cài đặt Các mô-đun phụ thuộc sau đây."
 
 #. module: base
 #: code:addons/base/models/ir_model.py:0
@@ -31850,6 +31910,10 @@ msgid ""
 "enhancing solutions through the use of advanced software for our clients "
 "worldwide. At Lumber Inc we bring operational experience combined..."
 msgstr ""
+"Chúng tôi là một công ty tư vấn chiến lược và tư vấn công nghệ, sáng tạo các"
+" giải pháp nâng cao giá trị thông qua việc sử dụng phần mềm tiên tiến cho "
+"khách hàng trên toàn thế giới. Tại Lumber Inc, chúng tôi kết hợp kinh nghiệm"
+" vận hành..."
 
 #. module: base
 #: model_terms:res.partner,website_description:base.res_partner_18
@@ -32411,7 +32475,7 @@ msgid ""
 msgstr ""
 "Bạn không thể gỡ bỏ tài khoản người dùng admin vì nó được sử dụng nội bộ "
 "trong mã nguồn Odoo và được sử dụng cho các mục đích kỹ thuật khác (cập "
-"nhật, cài module, v.v.)"
+"nhật, cài mô-đun, v.v.)"
 
 #. module: base
 #: code:addons/base/models/report_paperformat.py:0
@@ -32573,7 +32637,7 @@ msgid ""
 "But the latter module is not available in your system."
 msgstr ""
 "Bạn đang cố thử cài đặt module '%s' mà no phụ thuộc vào module '%s'.\n"
-"Nhưng module này lại không có sẵn trong hệ thống của bạn."
+"Nhưng Mô-đun này lại không có sẵn trong hệ thống của bạn."
 
 #. module: base
 #: code:addons/base/models/ir_module.py:0
@@ -32582,8 +32646,8 @@ msgid ""
 "You try to upgrade the module %s that depends on the module: %s.\n"
 "But this module is not available in your system."
 msgstr ""
-"Bạn đang cố gắng nâng cấp module %s phụ thuộc vào module: %s.\n"
-"Nhưng module này hiện tại không có trong hệ thống của bạn."
+"Bạn đang cố gắng nâng cấp mô-đun %s phụ thuộc vào mô-đun: %s.\n"
+"Nhưng mô-đun này hiện tại không có trong hệ thống của bạn."
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_users_simple_form
