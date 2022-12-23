@@ -1013,7 +1013,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sale.field_sale_order__analytic_account_id
 #: model:ir.model.fields,field_description:sale.field_sale_report__analytic_account_id
 msgid "Analytic Account"
-msgstr "Tài khoản quản trị"
+msgstr "Tài khoản KT quản trị"
 
 #. module: sale
 #: model:ir.model.fields.selection,name:sale.selection__sale_order_line__qty_delivered_method__analytic
@@ -2474,7 +2474,7 @@ msgid ""
 "Timesheets on contract: Invoice based on the tracked hours on the related timesheet.\n"
 "Create a task and track hours: Create a task on the sales order validation and track the work hours."
 msgstr ""
-"Đặt số lượng thứ tự theo cách thủ công: Hoá đơn dựa trên số lượng được nhập theo cách thủ công, mà không cần tạo tài khoản phân tích.\n"
+"Đặt số lượng thứ tự theo cách thủ công: Hoá đơn dựa trên số lượng được nhập theo cách thủ công, mà không cần tạo tài khoản KT quản trị.\n"
 "Hợp đồng chấm công: Hoá đơn dựa trên số giờ được theo dõi trên bảng chấm công có liên quan.\n"
 "Tạo một nhiệm vụ và theo dõi giờ: Tạo một nhiệm vụ trên xác nhận đơn đặt hàng bán hàng và theo dõi giờ làm việc."
 
@@ -3988,7 +3988,7 @@ msgid ""
 "The Sales Order %s linked to the Analytic Account %s is cancelled. You "
 "cannot register an expense on a cancelled Sales Order."
 msgstr ""
-"Đơn Bán %s liên kết với Tài khoản Quản trị %s bị huỷ. Bạn không thể ghi nhận"
+"Đơn Bán %s liên kết với Tài khoản KT quản trị %s bị huỷ. Bạn không thể ghi nhận"
 " một chi phí cho một Đơn Bán bị Huỷ."
 
 #. module: sale
@@ -3999,9 +3999,9 @@ msgid ""
 "You cannot register an expense on a locked Sales Order. Please create a new "
 "SO linked to this Analytic Account."
 msgstr ""
-"Đơn bán %s mà liên kết đến Tài khoản Quản trị %s hiện đang bị khoá. Bạn "
+"Đơn bán %s mà liên kết đến Tài khoản KT quản trị %s hiện đang bị khoá. Bạn "
 "không thể ghi nhận chi phí đối với một Đơn Bán bị khoá. Vui lòng tạo một đơn"
-" mới và liên kết đến Tài khoản Quản trị này."
+" mới và liên kết đến Tài khoản KT quản trị này."
 
 #. module: sale
 #: code:addons/sale/models/account_move.py:0
@@ -4010,13 +4010,13 @@ msgid ""
 "The Sales Order %s linked to the Analytic Account %s must be validated "
 "before registering expenses."
 msgstr ""
-"Đơn Bán %s mà liên kết với Tài khoản Quản trị %s phải được xác nhận trước "
+"Đơn Bán %s mà liên kết với Tài khoản KT quản trị %s phải được xác nhận trước "
 "khi có thể ghi nhận chi phí."
 
 #. module: sale
 #: model:ir.model.fields,help:sale.field_sale_order__analytic_account_id
 msgid "The analytic account related to a sales order."
-msgstr "Tài khoản quản trị liên quan tới một Đơn bán"
+msgstr "Tài khoản KT quản trị liên quan tới một Đơn bán"
 
 #. module: sale
 #: code:addons/sale/models/sale.py:0

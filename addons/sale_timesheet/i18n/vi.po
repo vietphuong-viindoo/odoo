@@ -182,7 +182,7 @@ msgid ""
 "analytic account of the project."
 msgstr ""
 "Tất cả doanh thu mà không thông qua chấm công và có liên kết với tài "
-"khoản quản trị của dự án."
+"khoản KT quản trị của dự án."
 
 #. module: sale_timesheet
 #: code:addons/sale_timesheet/models/project.py:0
@@ -253,7 +253,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sale_timesheet.field_project_profitability_report__analytic_account_id
 #: model:ir.model.fields,field_description:sale_timesheet.field_project_task__analytic_account_id
 msgid "Analytic Account"
-msgstr "Tài khoản quản trị"
+msgstr "Tài khoản KT quản trị"
 
 #. module: sale_timesheet
 #: model:ir.model,name:sale_timesheet.model_account_analytic_line
@@ -268,7 +268,7 @@ msgstr "Phát sinh KT Quản trị"
 #. module: sale_timesheet
 #: model_terms:ir.ui.view,arch_db:sale_timesheet.timesheet_plan
 msgid "Any cost linked to the Analytic Account of the Project."
-msgstr "Bất cứ chi phí nào mà được liên kết với Tài khoản quản trị của Dự án."
+msgstr "Bất cứ chi phí nào mà được liên kết với Tài khoản KT quản trị của Dự án."
 
 #. module: sale_timesheet
 #: code:addons/sale_timesheet/wizard/project_create_sale_order.py:0
@@ -383,7 +383,7 @@ msgid ""
 " Analytic Account of the Project was set on the Expense)."
 msgstr ""
 "Chi phí từ các chi tiêu đã được tái lập hoá đơn cho khách hàng của bạn (với điều kiện"
-" Tài khoản Phân tích của Dự án được thiết lập trên Chi tiêu)."
+" Tài khoản KT quản trị của Dự án được thiết lập trên Chi tiêu)."
 
 #. module: sale_timesheet
 #: code:addons/sale_timesheet/models/project_overview.py:0
@@ -888,7 +888,7 @@ msgid ""
 "Timesheets on contract: Invoice based on the tracked hours on the related timesheet.\n"
 "Create a task and track hours: Create a task on the sales order validation and track the work hours."
 msgstr ""
-"Đặt số lượng thứ tự theo cách thủ công: Hoá đơn dựa trên số lượng được nhập theo cách thủ công, mà không cần tạo tài khoản phân tích.\n"
+"Đặt số lượng thứ tự theo cách thủ công: Hoá đơn dựa trên số lượng được nhập theo cách thủ công, mà không cần tạo tài khoản KT quản trị .\n"
 "Hợp đồng chấm công: Hoá đơn dựa trên số giờ được theo dõi trên bảng chấm công có liên quan.\n"
 "Tạo một nhiệm vụ và theo dõi giờ: Tạo một nhiệm vụ trên xác nhận đơn đặt hàng bán hàng và theo dõi giờ làm việc."
 
@@ -1398,13 +1398,13 @@ msgid ""
 "The Sales Order cannot be created because you did not enter some employees that entered timesheets on this project. Please list all the relevant employees before creating the Sales Order.\n"
 "Missing employee(s): %s"
 msgstr ""
-"Không thể tạo một Đơn bán bở vì bạn chưa nhập các nhân viên mà đã chấm công liên quan đến dự án này. Vui lnogf liệt kê tất cả các nhân viên liên quan trước khi tạo mới Đơn bán.\n"
+"Không thể tạo một Đơn bán bở vì bạn chưa nhập các nhân viên mà đã chấm công liên quan đến dự án này. Vui lòng liệt kê tất cả các nhân viên liên quan trước khi tạo mới Đơn bán.\n"
 "Các Nhân viên còn thiếu: %s"
 
 #. module: sale_timesheet
 #: model:ir.model.fields,help:sale_timesheet.field_project_task__analytic_account_id
 msgid "The analytic account related to a sales order."
-msgstr "Tài khoản quản trị liên quan tới một đơn hàng"
+msgstr "Tài khoản KT quản trị liên quan tới một đơn hàng"
 
 #. module: sale_timesheet
 #: model:ir.model.fields,help:sale_timesheet.field_project_create_sale_order__pricing_type
