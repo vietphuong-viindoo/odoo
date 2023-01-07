@@ -12,19 +12,19 @@
 # Dao Nguyen <trucdao.uel@gmail.com>, 2020
 # Phuc Tran Thanh <phuctran.odoo@gmail.com>, 2020
 # Tien Nguyen <tienkt05@gmail.com>, 2020
-# thanhnguyen.icsc <thanhnguyen.icsc@gmail.com>, 2021
 # Trần Hà <tranthuha13590@gmail.com>, 2021
-# Duy BQ <duybq86@gmail.com>, 2021
 # Hoàng Tiến Dũng, 2021
 # Vo Thanh Thuy, 2022
-#
+# Nancy Momoland <thanhnguyen.icsc@gmail.com>, 2022
+# Duy BQ <duybq86@gmail.com>, 2022
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-29 15:48+0000\n"
 "PO-Revision-Date: 2020-09-07 08:14+0000\n"
-"Last-Translator: Vo Thanh Thuy, 2022\n"
+"Last-Translator: Duy BQ <duybq86@gmail.com>, 2022\n"
 "Language-Team: Vietnamese (https://www.transifex.com/odoo/teams/41243/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2157,6 +2157,14 @@ msgid "It has already been unblocked."
 msgstr "Nó đã được bỏ khoá rồi."
 
 #. module: mrp
+#: code:addons/mrp/models/mrp_workorder.py:0
+#, python-format
+msgid ""
+"It is not possible to unplan one single Work Order. You should unplan the "
+"Manufacturing Order instead in order to unplan all the linked operations."
+msgstr ""
+
+#. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_production__is_planned
 msgid "Its Operations are Planned"
 msgstr "Its Operations are Planned"
@@ -2826,6 +2834,14 @@ msgstr ""
 "Lưu ý rằng xưởng được lưu trữ: '%s' vẫn được liên kết với định mức vật tư "
 "đang hoạt động, điều đó có nghĩa là vẫn có thể lập kế hoạch hoạt động cho "
 "xưởng. Để phòng tránh trường hợp này, xóa xưởng sẽ được đề xuất. "
+
+#. module: mrp
+#: code:addons/mrp/models/product.py:0 code:addons/mrp/models/product.py:0
+#, python-format
+msgid ""
+"Note that product(s): '%s' is/are still linked to active Bill of Materials, "
+"which means that the product can still be used on it/them."
+msgstr ""
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_bom__message_needaction_counter
@@ -3821,6 +3837,12 @@ msgid "Sequence stock after manufacturing"
 msgstr "Thứ tự kho sau sản xuất"
 
 #. module: mrp
+#: code:addons/mrp/models/mrp_production.py:0
+#, python-format
+msgid "Serial number (%s) has already been produced."
+msgstr ""
+
+#. module: mrp
 #: model:ir.model.fields.selection,name:mrp.selection__mrp_routing_workcenter__time_mode__manual
 msgid "Set duration manually"
 msgstr "Đặt thời lượng thủ công"
@@ -4197,6 +4219,12 @@ msgstr ""
 "phẩm."
 
 #. module: mrp
+#: code:addons/mrp/models/mrp_workcenter.py:0
+#, python-format
+msgid "The Workorder (%s) cannot be started twice!"
+msgstr ""
+
+#. module: mrp
 #: code:addons/mrp/models/mrp_bom.py:0
 #, python-format
 msgid ""
@@ -4248,6 +4276,15 @@ msgstr ""
 "bắt đầu, vui lòng sửa lỗi này để lưu hoạt động sản xuất."
 
 #. module: mrp
+#: code:addons/mrp/models/mrp_bom.py:0
+#, python-format
+msgid ""
+"The product has already been used at least once, editing its structure may "
+"lead to undesirable behaviours. You should rather archive the product and "
+"create a new one with a new bill of materials."
+msgstr ""
+
+#. module: mrp
 #: code:addons/mrp/models/mrp_production.py:0
 #: model:ir.model.constraint,message:mrp.constraint_mrp_bom_qty_positive
 #: model:ir.model.constraint,message:mrp.constraint_mrp_production_qty_positive
@@ -4279,6 +4316,14 @@ msgid ""
 msgstr ""
 "The serial number %(number)s used for component %(component)s has already "
 "been consumed"
+
+#. module: mrp
+#: code:addons/mrp/models/mrp_unbuild.py:0
+#, python-format
+msgid ""
+"The selected serial number does not correspond to the one used in the "
+"manufacturing order, please select another one."
+msgstr ""
 
 #. module: mrp
 #: code:addons/mrp/models/mrp_bom.py:0
@@ -4525,7 +4570,7 @@ msgstr "Tổng Hoạt động Đang chạy"
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.view_stock_move_operations_raw
 msgid "Total To Consume"
-msgstr "Total To Consume"
+msgstr "Tổng số lượng đã dùng"
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_production_workorder_form_view_inherit

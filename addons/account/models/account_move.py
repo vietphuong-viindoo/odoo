@@ -1486,7 +1486,15 @@ class AccountMove(models.Model):
             if new_pmt_state == 'paid' and move.move_type in ('in_invoice', 'out_invoice', 'entry'):
                 reverse_type = move.move_type == 'in_invoice' and 'in_refund' or move.move_type == 'out_invoice' and 'out_refund' or 'entry'
                 reverse_moves = self.env['account.move'].search([('reversed_entry_id', '=', move.id), ('state', '=', 'posted'), ('move_type', '=', reverse_type)])
-                caba_moves = self.env['account.move'].search([('tax_cash_basis_move_id', 'in', move.ids + reverse_moves.ids), ('state', '=', 'posted')])
+                if self.env.company.tax_exigibility:
+                    domain = [
+                        ('tax_cash_basis_move_id', 'in', move.ids + reverse_moves.ids),
+                        ('state', '=', 'posted'),
+                        ('move_type', '=', 'entry')
+                    ]
+                    caba_moves = self.env['account.move'].search(domain)
+                else:
+                    caba_moves = self.env['account.move']
 
                 # We only set 'reversed' state in cas of 1 to 1 full reconciliation with a reverse entry; otherwise, we use the regular 'paid' state
                 # We ignore potentials cash basis moves reconciled because the transition account of the tax is reconcilable
@@ -2677,6 +2685,9 @@ class AccountMove(models.Model):
             if move.is_invoice(include_receipts=True) and float_compare(move.amount_total, 0.0, precision_rounding=move.currency_id.rounding) < 0:
                 raise UserError(_("You cannot validate an invoice with a negative total amount. You should create a credit note instead. Use the action menu to transform it into a credit note or refund."))
 
+            if move.line_ids.account_id.filtered(lambda account: account.deprecated):
+                raise UserError(_("A line of this move is using a deprecated account, you cannot post it."))
+
             # Handle case when the invoice_date is not set. In that case, the invoice_date is set at today and then,
             # lines are recomputed accordingly.
             # /!\ 'check_move_validity' must be there since the dynamic lines will be recomputed outside the 'onchange'
@@ -3009,7 +3020,7 @@ class AccountMove(models.Model):
     def _compute_display_qr_code(self):
         for record in self:
             record.display_qr_code = (
-                record.move_type in ('out_invoice', 'out_receipt')
+                record.move_type in ('out_invoice', 'out_receipt', 'in_invoice', 'in_receipt')
                 and record.company_id.qr_code
             )
 
@@ -3286,7 +3297,7 @@ class AccountMoveLine(models.Model):
         string="Originator Tax Distribution Line", ondelete='restrict', readonly=True,
         check_company=True,
         help="Tax distribution line that caused the creation of this move line, if any")
-    tax_tag_ids = fields.Many2many(string="Tags", comodel_name='account.account.tag', ondelete='restrict',
+    tax_tag_ids = fields.Many2many(string="Tags", comodel_name='account.account.tag', ondelete='restrict', context={'active_test': False},
         help="Tags assigned to this line by the tax creating it, if any. It determines its impact on financial reports.", tracking=True)
     tax_audit = fields.Char(string="Tax Audit String", compute="_compute_tax_audit", store=True,
         help="Computed field, listing the tax grids impacted by this line, and the amount it applies to each of them.")
@@ -4873,7 +4884,7 @@ class AccountMoveLine(models.Model):
             if not journal.company_id.income_currency_exchange_account_id.id:
                 raise UserError(_("You should configure the 'Gain Exchange Rate Account' in your company settings, to manage automatically the booking of accounting entries related to differences between exchange rates."))
 
-            exchange_diff_move_vals['date'] = max(exchange_diff_move_vals['date'], company._get_user_fiscal_lock_date())
+            exchange_diff_move_vals['date'] = max(exchange_diff_move_vals['date'], company._get_user_fiscal_lock_date() + timedelta(days=1))
 
             exchange_move = self.env['account.move'].create(exchange_diff_move_vals)
             exchange_move.line_ids.write({'tax_exigible': True}) # Enforce exigibility in case some cash basis adjustments were made in this exchange difference
