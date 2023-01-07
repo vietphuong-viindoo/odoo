@@ -1259,6 +1259,9 @@ export function isMediaElement(node) {
             (node.classList.contains('o_image') || node.classList.contains('media_iframe_video')))
     );
 }
+export function isVoidElement(node) {
+    return isMediaElement(node) || node.tagName === 'HR';
+}
 
 export function containsUnremovable(node) {
     if (!node) {
@@ -1826,8 +1829,11 @@ export function setTagName(el, newTagName) {
     while (el.firstChild) {
         n.append(el.firstChild);
     }
-    if (el.tagName === 'LI') {
+    const closestLi = el.closest('li');
+    if (el.tagName === 'LI' && newTagName !== 'p') {
         el.append(n);
+    } else if (closestLi && newTagName === 'p') {
+        closestLi.replaceChildren(...n.childNodes);
     } else {
         el.parentNode.replaceChild(n, el);
     }
