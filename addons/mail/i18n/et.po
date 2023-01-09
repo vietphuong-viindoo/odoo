@@ -19,8 +19,9 @@
 # Martin Trigaux, 2022
 # Eneli Õigus <enelioigus@gmail.com>, 2022
 # Rivo Zängov <eraser@eraser.ee>, 2022
-# Jana Jaakson, 2022
 # Leaanika Randmets, 2022
+# Jana Jaakson, 2022
+# Anna, 2022
 # 
 msgid ""
 msgstr ""
@@ -28,7 +29,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-24 08:19+0000\n"
 "PO-Revision-Date: 2021-09-14 12:23+0000\n"
-"Last-Translator: Leaanika Randmets, 2022\n"
+"Last-Translator: Anna, 2022\n"
 "Language-Team: Estonian (https://www.transifex.com/odoo/teams/41243/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -597,6 +598,8 @@ msgid ""
 "Actions may trigger specific behavior like opening calendar view or "
 "automatically mark as done when a document is uploaded"
 msgstr ""
+"Toimingud võivad käivitada teatud tegevuse, näiteks kalendrivaate avamine "
+"või dokumendi üleslaadimisel automaatselt tehtuks märkimine"
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_message_subtype__default
@@ -660,7 +663,7 @@ msgstr "Tegevuse erandlik kohendus"
 #. module: mail
 #: model:ir.model,name:mail.model_mail_activity_mixin
 msgid "Activity Mixin"
-msgstr ""
+msgstr "Erinevad tegevused"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.mail_activity_type_view_form
@@ -1294,7 +1297,7 @@ msgstr "Saab muuta sisu"
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_activity__can_write
 msgid "Can Write"
-msgstr ""
+msgstr "Saab kirjutada"
 
 #. module: mail
 #: code:addons/mail/models/mail_notification.py:0
@@ -3004,7 +3007,7 @@ msgstr "Grupid"
 #: model_terms:ir.ui.view,arch_db:mail.mail_guest_view_tree
 #, python-format
 msgid "Guest"
-msgstr ""
+msgstr "Külaline"
 
 #. module: mail
 #: code:addons/mail/models/mail_guest.py:0
@@ -3640,7 +3643,7 @@ msgstr ""
 #: code:addons/mail/static/src/components/rtc_controller/rtc_controller.xml:0
 #, python-format
 msgid "Join Video Call"
-msgstr ""
+msgstr "Liitu videokõnega"
 
 #. module: mail
 #: model:ir.actions.act_window,name:mail.mail_channel_action_view
@@ -4352,7 +4355,7 @@ msgstr ""
 #. module: mail
 #: model:ir.model.fields.selection,name:mail.selection__mail_mail__failure_type__mail_email_missing
 msgid "Missing email"
-msgstr ""
+msgstr "Puudub email"
 
 #. module: mail
 #: model:ir.model.fields.selection,name:mail.selection__mail_notification__failure_type__mail_email_missing
@@ -5898,7 +5901,7 @@ msgstr ""
 #: code:addons/mail/static/src/xml/thread.xml:0
 #, python-format
 msgid "Rotate"
-msgstr ""
+msgstr "Pööra"
 
 #. module: mail
 #. openerp-web
@@ -7497,7 +7500,7 @@ msgstr "nädala järel"
 #: code:addons/mail/static/src/components/welcome_view/welcome_view.xml:0
 #, python-format
 msgid "What's your name?"
-msgstr ""
+msgstr "Mis on sinu nimi?"
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_compose_message__sub_model_object_field
@@ -7807,7 +7810,7 @@ msgstr ""
 #: code:addons/mail/static/src/xml/thread.xml:0
 #, python-format
 msgid "Zoom In"
-msgstr ""
+msgstr "Suurenda"
 
 #. module: mail
 #. openerp-web
@@ -7822,7 +7825,7 @@ msgstr ""
 #: code:addons/mail/static/src/xml/thread.xml:0
 #, python-format
 msgid "Zoom Out"
-msgstr ""
+msgstr "Vähenda"
 
 #. module: mail
 #. openerp-web

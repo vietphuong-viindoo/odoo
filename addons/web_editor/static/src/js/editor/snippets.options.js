@@ -2267,6 +2267,8 @@ const RangeUserValueWidget = UnitUserValueWidget.extend({
         }
         this._setInputAttributes(min, max, step);
         this.containerEl.appendChild(this.input);
+
+        this._onInputChange = _.debounce(this._onInputChange, 100);
     },
 
     //--------------------------------------------------------------------------
@@ -2582,18 +2584,6 @@ const Many2oneUserValueWidget = SelectUserValueWidget.extend({
      * @private
      */
     async _search(needle) {
-        this._userValueWidgets = this._userValueWidgets.filter(widget => !widget.isDestroyed());
-        // Remove select options
-        this._userValueWidgets
-            .filter(widget => {
-                return widget instanceof ButtonUserValueWidget &&
-                    widget.el.parentElement.matches('we-selection-items');
-            }).forEach(button => {
-                if (button.isPreviewed()) {
-                    button.notifyValueChange('reset');
-                }
-                button.destroy();
-            });
         const recTuples = await this._rpc({
             model: this.options.model,
             method: 'name_search',
@@ -2609,6 +2599,18 @@ const Many2oneUserValueWidget = SelectUserValueWidget.extend({
             method: 'read',
             args: [recTuples.map(([id, _name]) => id), this.options.fields],
         });
+        // Remove select options.
+        this._userValueWidgets.filter(widget => {
+            return widget instanceof ButtonUserValueWidget &&
+                !widget.isDestroyed() &&
+                widget.el.parentElement.matches('we-selection-items');
+        }).forEach(button => {
+            if (button.isPreviewed()) {
+                button.notifyValueChange('reset');
+            }
+            button.destroy();
+        });
+        this._userValueWidgets = this._userValueWidgets.filter(widget => !widget.isDestroyed());
         records.forEach(record => {
             this.displayNameCache[record.id] = record.display_name;
         });
@@ -2745,6 +2747,11 @@ const Many2oneUserValueWidget = SelectUserValueWidget.extend({
             return;
         }
         if (widget && widget === this.createButton) {
+            // When the create button is clicked, make sure the text
+            // value is restored from the actual input element because
+            // it might have been removed when hovering existing tags.
+            // TODO review this, there is probably better to do
+            this.createInput._value = this.createInput.el.querySelector('input').value;
             if (!this.createInput._value) {
                 ev.stopPropagation();
             }
@@ -4587,17 +4594,6 @@ registry.Box = SnippetOptionWidget.extend({
 
 
 registry.layout_column = SnippetOptionWidget.extend({
-    /**
-     * @override
-     */
-    start: function () {
-        // Needs to be done manually for now because _computeWidgetVisibility
-        // doesn't go through this option for buttons inside of a select.
-        // TODO: improve this.
-        this.$el.find('we-button[data-name="zero_cols_opt"]')
-            .toggleClass('d-none', !this.$target.is('.s_allow_columns'));
-        return this._super(...arguments);
-    },
 
     //--------------------------------------------------------------------------
     // Options
@@ -4639,6 +4635,20 @@ registry.layout_column = SnippetOptionWidget.extend({
     _computeWidgetState: function (methodName, params) {
         if (methodName === 'selectCount') {
             return this.$('> .row').children().length;
+        }
+        return this._super(...arguments);
+    },
+    /**
+     * @override
+     */
+    _computeWidgetVisibility(widgetName, params) {
+        if (widgetName === 'zero_cols_opt') {
+            // Note: "s_allow_columns" indicates containers which may have
+            // bare content (without columns) and are allowed to have columns.
+            // By extension, we only show the "None" option on elements that
+            // were marked as such as they were allowed to have bare content in
+            // the first place.
+            return this.$target.is('.s_allow_columns');
         }
         return this._super(...arguments);
     },
@@ -4753,11 +4763,19 @@ registry.SnippetMove = SnippetOptionWidget.extend({
         }
         if (!this.$target.is(this.data.noScroll)
                 && (params.name === 'move_up_opt' || params.name === 'move_down_opt')) {
-            scrollTo(this.$target[0], {
-                extraOffset: 50,
-                easing: 'linear',
-                duration: 550,
-            });
+            const mainScrollingEl = $().getScrollingElement()[0];
+            const elTop = this.$target[0].getBoundingClientRect().top;
+            const heightDiff = mainScrollingEl.offsetHeight - this.$target[0].offsetHeight;
+            const bottomHidden = heightDiff < elTop;
+            const hidden = elTop < 0 || bottomHidden;
+            if (hidden) {
+                scrollTo(this.$target[0], {
+                    extraOffset: 50,
+                    forcedOffset: bottomHidden ? heightDiff - 50 : undefined,
+                    easing: 'linear',
+                    duration: 500,
+                });
+            }
         }
     },
 });
@@ -6133,6 +6151,17 @@ registry.BackgroundShape = SnippetOptionWidget.extend({
     /**
      * @override
      */
+    onBuilt() {
+        this._patchShape(this.$target[0]);
+    },
+
+    //--------------------------------------------------------------------------
+    // Public
+    //--------------------------------------------------------------------------
+
+    /**
+     * @override
+     */
     updateUI() {
         if (this.rerender) {
             this.rerender = false;
@@ -6515,6 +6544,22 @@ registry.BackgroundShape = SnippetOptionWidget.extend({
         return _.pick(colors, defaultKeys);
     },
     /**
+     * @todo remove me in master, needed to patch errors on set-up shapes in
+     * themes.
+     *
+     * @param {HTMLElement} el
+     * @returns {Object}
+     */
+    _patchShape(el) {
+        const shapeData = this._getShapeData(el);
+        // Wrong shape data for s_picture in kea theme
+        if (shapeData.shape === 'web_editor/Origins/Wavy_03') {
+            shapeData.shape = 'web_editor/Wavy/03';
+            el.dataset.oeShapeData = JSON.stringify(shapeData);
+        }
+        return shapeData;
+    },
+    /**
      * Toggles whether there is a shape or not, to be called from bg toggler.
      *
      * @private
@@ -6529,7 +6574,8 @@ registry.BackgroundShape = SnippetOptionWidget.extend({
             const possibleShapes = shapeWidget.getMethodsParams('shape').possibleValues;
             let shapeToSelect;
             if (previousSibling) {
-                const previousShape = this._getShapeData(previousSibling).shape;
+                const shapeData = this._patchShape(previousSibling);
+                const previousShape = shapeData.shape;
                 shapeToSelect = possibleShapes.find((shape, i) => {
                     return possibleShapes[i - 1] === previousShape;
                 });

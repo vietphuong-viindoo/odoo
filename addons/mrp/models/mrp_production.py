@@ -1028,12 +1028,11 @@ class MrpProduction(models.Model):
                 continue
             new_qty = float_round((self.qty_producing - self.qty_produced) * move.unit_factor, precision_rounding=move.product_uom.rounding)
             move.move_line_ids.filtered(lambda ml: ml.state not in ('done', 'cancel')).qty_done = 0
-            move.move_line_ids = move._set_quantity_done_prepare_vals(new_qty)
+            move._set_quantity_done(new_qty)
 
     def _update_raw_moves(self, factor):
         self.ensure_one()
         update_info = []
-        move_to_unlink = self.env['stock.move']
         moves_to_assign = self.env['stock.move']
         for move in self.move_raw_ids.filtered(lambda m: m.state not in ('done', 'cancel')):
             old_qty = move.product_uom_qty
@@ -1045,13 +1044,7 @@ class MrpProduction(models.Model):
                         or (move.reservation_date and move.reservation_date <= fields.Date.today()):
                     moves_to_assign |= move
                 update_info.append((move, old_qty, new_qty))
-            else:
-                if move.quantity_done > 0:
-                    raise UserError(_('Lines need to be deleted, but can not as you still have some quantities to consume in them. '))
-                move._action_cancel()
-                move_to_unlink |= move
         moves_to_assign._action_assign()
-        move_to_unlink.unlink()
         return update_info
 
     def _get_ready_to_produce_state(self):
