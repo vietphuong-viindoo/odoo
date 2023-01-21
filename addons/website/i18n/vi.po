@@ -10697,12 +10697,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:website.field_website_visitor__page_ids
 #: model_terms:ir.ui.view,arch_db:website.website_visitor_view_kanban
 msgid "Visited Pages"
-msgstr "Trang đã xem"
+msgstr "Lượt xem trang"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website_visitor__website_track_ids
 msgid "Visited Pages History"
-msgstr "Lịch sử các trang đã truy cập"
+msgstr "Lịch sử truy cập các trang"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website_track__visitor_id

@@ -3429,18 +3429,18 @@ msgstr "Hiển thị ở website hiện tại"
 #. module: website_sale
 #: model:ir.model,name:website_sale.model_website_track
 msgid "Visited Pages"
-msgstr "Trang đã xem"
+msgstr "Lượt xem trang"
 
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_website_visitor__product_ids
 #: model_terms:ir.ui.view,arch_db:website_sale.website_sale_visitor_view_kanban
 msgid "Visited Products"
-msgstr "Sản phẩm đã xem"
+msgstr "Lượt xem Sản phẩm"
 
 #. module: website_sale
 #: model_terms:ir.ui.view,arch_db:website_sale.website_sale_visitor_page_view_graph
 msgid "Visitor Product Views"
-msgstr "Lượt khách xem sản phẩm"
+msgstr "Lượt xem sản phẩm"
 
 #. module: website_sale
 #: model_terms:ir.ui.view,arch_db:website_sale.website_sale_visitor_page_view_tree
