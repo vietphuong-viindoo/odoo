@@ -188,11 +188,11 @@ class ProductProduct(models.Model):
             'unit_cost': self.standard_price,
             'quantity': quantity,
         }
-        if self.cost_method in ('average', 'fifo'):
+        if self.product_tmpl_id.cost_method in ('average', 'fifo'):
             fifo_vals = self._run_fifo(abs(quantity), company)
             vals['remaining_qty'] = fifo_vals.get('remaining_qty')
             # In case of AVCO, fix rounding issue of standard price when needed.
-            if self.cost_method == 'average':
+            if self.product_tmpl_id.cost_method == 'average':
                 rounding_error = currency.round(self.standard_price * self.quantity_svl - self.value_svl)
                 if rounding_error:
                     # If it is bigger than the (smallest number of the currency * quantity) / 2,
@@ -204,7 +204,7 @@ class ProductProduct(models.Model):
                             float_repr(rounding_error, precision_digits=currency.decimal_places),
                             currency.symbol
                         )
-            if self.cost_method == 'fifo':
+            if self.product_tmpl_id.cost_method == 'fifo':
                 vals.update(fifo_vals)
         return vals
 
@@ -669,46 +669,25 @@ class ProductProduct(models.Model):
         # if True, consider the incoming moves
         is_returned = self.env.context.get('is_returned', False)
 
-        returned_quantities = defaultdict(float)
-        for move in stock_moves:
-            if move.origin_returned_move_id:
-                returned_quantities[move.origin_returned_move_id.id] += abs(sum(move.sudo().stock_valuation_layer_ids.mapped('quantity')))
         candidates = stock_moves\
             .sudo()\
             .filtered(lambda m: is_returned == bool(m.origin_returned_move_id and sum(m.stock_valuation_layer_ids.mapped('quantity')) >= 0))\
             .mapped('stock_valuation_layer_ids')\
             .sorted()
-        qty_to_take_on_candidates = qty_to_invoice
-        tmp_value = 0  # to accumulate the value taken on the candidates
-        for candidate in candidates:
-            if not candidate.quantity:
-                continue
-            candidate_quantity = abs(candidate.quantity)
-            if candidate.stock_move_id.id in returned_quantities:
-                candidate_quantity -= returned_quantities[candidate.stock_move_id.id]
-            if float_is_zero(candidate_quantity, precision_rounding=candidate.uom_id.rounding):
-                continue  # correction entries
-            if not float_is_zero(qty_invoiced, precision_rounding=candidate.uom_id.rounding):
-                qty_ignored = min(qty_invoiced, candidate_quantity)
-                qty_invoiced -= qty_ignored
-                candidate_quantity -= qty_ignored
-                if float_is_zero(candidate_quantity, precision_rounding=candidate.uom_id.rounding):
-                    continue
-            qty_taken_on_candidate = min(qty_to_take_on_candidates, candidate_quantity)
 
-            qty_to_take_on_candidates -= qty_taken_on_candidate
-            tmp_value += qty_taken_on_candidate * \
-                ((candidate.value + sum(candidate.stock_valuation_layer_ids.mapped('value'))) / candidate.quantity)
-            if float_is_zero(qty_to_take_on_candidates, precision_rounding=candidate.uom_id.rounding):
-                break
+        value_invoiced = self.env.context.get('value_invoiced', 0)
+        if 'value_invoiced' in self.env.context:
+            qty_valued, valuation = candidates._consume_all(qty_invoiced, value_invoiced, qty_to_invoice)
+        else:
+            qty_valued, valuation = candidates._consume_specific_qty(qty_invoiced, qty_to_invoice)
 
         # If there's still quantity to invoice but we're out of candidates, we chose the standard
         # price to estimate the anglo saxon price unit.
-        if not float_is_zero(qty_to_take_on_candidates, precision_rounding=self.uom_id.rounding):
-            negative_stock_value = self.standard_price * qty_to_take_on_candidates
-            tmp_value += negative_stock_value
+        missing = qty_to_invoice - qty_valued
+        if float_compare(missing, 0, precision_rounding=self.uom_id.rounding) > 0:
+            valuation += self.standard_price * missing
 
-        return tmp_value / qty_to_invoice
+        return valuation / qty_to_invoice
 
 
 class ProductCategory(models.Model):

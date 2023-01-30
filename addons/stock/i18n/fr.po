@@ -60,7 +60,7 @@
 # qdelcourte <delcourte.quentin@hotmail.com>, 2021
 # Thomas Deleval <thd@odoo.com>, 2021
 # Cécile Collart <cco@odoo.com>, 2022
-# Jolien De Paepe, 2022
+# Jolien De Paepe, 2023
 # 
 msgid ""
 msgstr ""
@@ -68,7 +68,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-16 09:00+0000\n"
 "PO-Revision-Date: 2020-09-07 08:19+0000\n"
-"Last-Translator: Jolien De Paepe, 2022\n"
+"Last-Translator: Jolien De Paepe, 2023\n"
 "Language-Team: French (https://www.transifex.com/odoo/teams/41243/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -3223,6 +3223,15 @@ msgstr "Opérateur du domaine non valide: %s"
 #, python-format
 msgid "Invalid domain right operand %s"
 msgstr "Opérande droit du domaine non valide: %s"
+
+#. module: stock
+#: code:addons/stock/models/product.py:0
+#, python-format
+msgid ""
+"Invalid rule's configuration, the following rule causes an endless loop: %s"
+msgstr ""
+"Configuration de règles non valide, la règle suivante entraîne une boucle "
+"infinie : %s"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_quant__inventory_quantity
@@ -7108,6 +7117,16 @@ msgstr ""
 "produit et à en créer un nouveau à la place."
 
 #. module: stock
+#: code:addons/stock/models/product.py:0
+#, python-format
+msgid ""
+"This product's company cannot be changed as long as there are quantities of "
+"it belonging to another company."
+msgstr ""
+"La société de ce produit ne peut être modifiée tant qu'il existe des "
+"quantités de ce produit appartenant à une autre société."
+
+#. module: stock
 #: model:ir.model.fields,help:stock.field_stock_change_product_qty__new_quantity
 msgid ""
 "This quantity is expressed in the Default Unit of Measure of the product."
@@ -8270,6 +8289,12 @@ msgid "You cannot unreserve a stock move that has been set to 'Done'."
 msgstr ""
 "Vous ne pouvez pas décommander un mouvement de stock dont l'état est "
 "\"Terminé."
+
+#. module: stock
+#: code:addons/stock/models/stock_move.py:0
+#, python-format
+msgid "You cannot change a cancelled stock move, create a new line instead."
+msgstr ""
 
 #. module: stock
 #: code:addons/stock/models/stock_move_line.py:0

@@ -165,12 +165,12 @@ msgstr "日付"
 #. module: website_form
 #: model_terms:ir.ui.view,arch_db:website_form.s_website_form_options
 msgid "Date &amp; Time"
-msgstr ""
+msgstr "日時"
 
 #. module: website_form
 #: model_terms:ir.ui.view,arch_db:website_form.s_website_form_options
 msgid "Decimal Number"
-msgstr ""
+msgstr "小数"
 
 #. module: website_form
 #: model_terms:ir.ui.view,arch_db:website_form.s_website_form_options
@@ -187,7 +187,7 @@ msgstr "表示名"
 #. module: website_form
 #: model_terms:ir.ui.view,arch_db:website_form.s_website_form_options
 msgid "Edit Message"
-msgstr ""
+msgstr "メッセージを編集"
 
 #. module: website_form
 #: model_terms:ir.ui.view,arch_db:website_form.s_website_form_options
@@ -243,7 +243,7 @@ msgstr "非表示"
 #. module: website_form
 #: model_terms:ir.ui.view,arch_db:website_form.s_website_form_options
 msgid "Hide"
-msgstr ""
+msgstr "非表示"
 
 #. module: website_form
 #: model_terms:ir.ui.view,arch_db:website_form.s_website_form_options
@@ -262,12 +262,12 @@ msgstr "ID"
 #: code:addons/website_form/static/src/xml/website_form_editor.xml:0
 #, python-format
 msgid "In the meantime we invite you to visit our"
-msgstr ""
+msgstr "その間におすすめします:"
 
 #. module: website_form
 #: model_terms:ir.ui.view,arch_db:website_form.s_website_form_options
 msgid "Input Aligned"
-msgstr ""
+msgstr "インプット揃え"
 
 #. module: website_form
 #: model_terms:ir.ui.view,arch_db:website_form.s_website_form_options
@@ -277,7 +277,7 @@ msgstr ""
 #. module: website_form
 #: model_terms:ir.ui.view,arch_db:website_form.s_website_form_options
 msgid "Input Type"
-msgstr ""
+msgstr "入力タイプ"
 
 #. module: website_form
 #: model_terms:ir.ui.view,arch_db:website_form.s_website_form_options
@@ -297,7 +297,7 @@ msgstr "フォームアクションのラベル"
 #. module: website_form
 #: model_terms:ir.ui.view,arch_db:website_form.s_website_form_options
 msgid "Labels Width"
-msgstr ""
+msgstr "ラベルの幅"
 
 #. module: website_form
 #: model:ir.model.fields,field_description:website_form.field_ir_model____last_update
@@ -314,17 +314,17 @@ msgstr "左側"
 #. module: website_form
 #: model_terms:ir.ui.view,arch_db:website_form.s_website_form_options
 msgid "Long Text"
-msgstr ""
+msgstr "長いテキスト"
 
 #. module: website_form
 #: model_terms:ir.ui.view,arch_db:website_form.s_website_form_options
 msgid "Mark Text"
-msgstr ""
+msgstr "テキストをマック"
 
 #. module: website_form
 #: model_terms:ir.ui.view,arch_db:website_form.s_website_form_options
 msgid "Marked Fields"
-msgstr ""
+msgstr "マックされたフィールド"
 
 #. module: website_form
 #: code:addons/website_form/controllers/main.py:0

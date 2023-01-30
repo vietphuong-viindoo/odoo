@@ -56,6 +56,8 @@ msgstr "\"sihtkoha URL\" ei saa olla tühi."
 #, python-format
 msgid "\"URL to\" cannot contain parameter %s which is not used in \"URL from\"."
 msgstr ""
+"\"URL to\" ei saa sisaldada parameetrit %s mida ei kasutata parameetris "
+"\"URL from\"."
 
 #. module: website
 #: code:addons/website/models/website_rewrite.py:0
@@ -68,6 +70,8 @@ msgstr "URL on kehtetu: %s"
 #, python-format
 msgid "\"URL to\" must contain parameter %s used in \"URL from\"."
 msgstr ""
+"\"URL to\" peab sisaldama parameetrit %s mida kasutatakse parameetris \"URL "
+"from\"."
 
 #. module: website
 #: code:addons/website/models/website_rewrite.py:0
@@ -491,14 +495,10 @@ msgstr "<b>Liigutage</b> seda nuppu veeru suuruse muutmiseks."
 #: model_terms:ir.ui.view,arch_db:website.view_edit_robots
 msgid ""
 "<br/><br/>\n"
-"                    Example of rule:<br/>\n"
-"                    <code class=\"ml-4\">Disallow: /web/login</code><br/>\n"
-"                    <code class=\"ml-4\">Allow: *</code>"
+"                    Example of rule:<br/>"
 msgstr ""
 "<br/><br/>\n"
-"                    Reegli erand:<br/>\n"
-"                    <code class=\"ml-4\">Ära luba: /web/login</code><br/>\n"
-"                    <code class=\"ml-4\">Luba: *</code>"
+"                    Reegli näide:<br/>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_carousel
