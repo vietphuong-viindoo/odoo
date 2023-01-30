@@ -95,13 +95,20 @@ class StockPicking(models.Model):
             ['picking_id', 'product_id', 'product_uom_id', 'qty_done'],
             lazy=False, orderby='qty_done asc'
         )
+        products_by_id = {
+            product_res['id']: (product_res['uom_id'][0], product_res['weight'])
+            for product_res in
+            self.env['product.product'].with_context(active_test=False).search_read(
+                [('id', 'in', list(set(grp["product_id"][0] for grp in res_groups)))], ['uom_id', 'weight'])
+        }
         for res_group in res_groups:
-            product_id = self.env['product.product'].browse(res_group['product_id'][0])
+            uom_id, weight = products_by_id[res_group['product_id'][0]]
+            uom = self.env['uom.uom'].browse(uom_id)
             product_uom_id = self.env['uom.uom'].browse(res_group['product_uom_id'][0])
             picking_weights[res_group['picking_id'][0]] += (
                 res_group['__count']
-                * product_uom_id._compute_quantity(res_group['qty_done'], product_id.uom_id)
-                * product_id.weight
+                * product_uom_id._compute_quantity(res_group['qty_done'], uom)
+                * weight
             )
         for picking in self:
             picking.weight_bulk = picking_weights[picking.id]
@@ -212,7 +219,8 @@ class StockPicking(models.Model):
     def send_to_shipper(self):
         self.ensure_one()
         res = self.carrier_id.send_shipping(self)[0]
-        if self.carrier_id.free_over and self.sale_id and self.sale_id._compute_amount_total_without_delivery() >= self.carrier_id.amount:
+        amount_without_delivery = self.sale_id._compute_amount_total_without_delivery()
+        if self.carrier_id.free_over and self.sale_id and self.carrier_id._compute_currency(self.sale_id, amount_without_delivery, 'pricelist_to_company') >= self.carrier_id.amount:
             res['exact_price'] = 0.0
         self.carrier_price = res['exact_price'] * (1.0 + (self.carrier_id.margin / 100.0))
         if res['tracking_number']:
