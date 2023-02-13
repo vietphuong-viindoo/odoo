@@ -6995,7 +6995,7 @@ msgstr "Precis färdig"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_tax_adjustments_wizard__reason
 msgid "Justification"
-msgstr ""
+msgstr "Motivering"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_journal__kanban_dashboard
@@ -13255,6 +13255,12 @@ msgstr "Obetalda fakturor"
 #: model_terms:ir.ui.view,arch_db:account.view_account_move_line_filter
 msgid "Unposted"
 msgstr "Ej bokförda"
+
+#. module: account
+#: code:addons/account/models/company.py:0
+#, python-format
+msgid "Unposted Entries"
+msgstr ""
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_move_filter
