@@ -124,7 +124,7 @@ msgstr "Tạo bởi"
 #. module: crm_iap_lead_website
 #: model:ir.model.fields,field_description:crm_iap_lead_website.field_crm_reveal_rule__create_date
 msgid "Created on"
-msgstr "Được tạo vào"
+msgstr "Ngày tạo"
 
 #. module: crm_iap_lead_website
 #: model:ir.model.fields,field_description:crm_iap_lead_website.field_crm_reveal_rule__lead_for

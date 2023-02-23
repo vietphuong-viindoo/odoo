@@ -146,7 +146,7 @@ msgstr "Tạo bởi"
 #. module: auth_totp_mail_enforce
 #: model:ir.model.fields,field_description:auth_totp_mail_enforce.field_auth_totp_rate_limit_log__create_date
 msgid "Created on"
-msgstr "Được tạo vào "
+msgstr "Ngày tạo"
 
 #. module: auth_totp_mail_enforce
 #: model:ir.model.fields,field_description:auth_totp_mail_enforce.field_auth_totp_rate_limit_log__display_name
