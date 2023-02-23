@@ -1,13 +1,13 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* payment
-# 
+#
 # Translators:
 # Thin Tran <trvathin@gmail.com>, 2022
 # Nancy Momoland <thanhnguyen.icsc@gmail.com>, 2022
 # Martin Trigaux, 2022
 # Thi Huong Nguyen, 2023
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0+e\n"
@@ -16,10 +16,10 @@ msgstr ""
 "PO-Revision-Date: 2022-09-22 05:53+0000\n"
 "Last-Translator: Thi Huong Nguyen, 2023\n"
 "Language-Team: Vietnamese (https://www.transifex.com/odoo/teams/41243/vi/)\n"
+"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: payment
@@ -35,7 +35,7 @@ msgstr "<b>Số tiền:</b>"
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.pay
 msgid "<b>Reference:</b>"
-msgstr "<b>Mã:</b>"
+msgstr "<b>Tham chiếu:</b>"
 
 #. module: payment
 #. odoo-python
@@ -45,13 +45,13 @@ msgid ""
 "<h3>Please make a payment to: </h3><ul><li>Bank: %s</li><li>Account Number: "
 "%s</li><li>Account Holder: %s</li></ul>"
 msgstr ""
-"<h3>Please make a payment to: </h3><ul><li>Bank: %s</li><li>Account Number: "
-"%s</li><li>Account Holder: %s</li></ul>"
+"<h3>Vui lòng thực hiện việc thanh toán đến: </h3><ul><li>Ngân hàng: "
+"%s</li><li>Số tài khoản: %s</li><li>Chủ tài khoản: %s</li></ul>"
 
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.confirm
 msgid "<i class=\"fa fa-arrow-circle-right\"/> Back to My Account"
-msgstr "<i class=\"fa fa-arrow-circle-right\"/> Trở về tài khoản của tôi"
+msgstr "<i class=\"fa fa-arrow-circle-right\"/> Trở về Tài khoản của tôi"
 
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.portal_breadcrumb
@@ -61,7 +61,7 @@ msgstr "<i class=\"fa fa-home\" role=\"img\" title=\"Trang chủ\" aria-label=\"
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.manage
 msgid "<i class=\"fa fa-trash\"/> Delete"
-msgstr "<i class=\"fa fa-trash\"/> Xóa"
+msgstr "<i class=\"fa fa-trash\"/> Xoá"
 
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.view_partners_form_payment_defaultcreditcard
@@ -93,8 +93,8 @@ msgid ""
 "<span>Start selling directly without an account; an email will be sent by "
 "Paypal to create your new account and collect your payments.</span>"
 msgstr ""
-"<span>Start selling directly without an account; an email will be sent by "
-"Paypal to create your new account and collect your payments.</span>"
+"<span>Bắt đầu bán hàng mà không cần tài khoản; một email sẽ được gửi tới "
+"Paypal để tạo tài khoản mới cho bạn và nhận thanh toán của bạn.</span>"
 
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.pay
@@ -123,8 +123,8 @@ msgid ""
 "<strong>Warning</strong> Make sure your are logged in as the right partner "
 "before making this payment."
 msgstr ""
-"<strong>Cảnh báo</strong> Bảo đảm bạn đã đăng nhập với tư cách đối tác đúng "
-"trước khi thực hiện thanh toán này."
+"<strong>Cảnh báo</strong> Hãy chắc chắn rằng bạn đã đăng nhập đúng tài khoản"
+" trước khi thực hiện thanh toán."
 
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.pay
@@ -199,12 +199,12 @@ msgstr "Kích hoạt"
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_token__active
 msgid "Active"
-msgstr "Đang hoạt động"
+msgstr "Có hiệu lực"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_provider__fees_active
 msgid "Add Extra Fees"
-msgstr "Thêm phí bổ sung"
+msgstr "Thêm Phí bổ sung"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_transaction__partner_address
@@ -248,7 +248,7 @@ msgstr "Tổng tiền"
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_link_wizard__amount_max
 msgid "Amount Max"
-msgstr "Amount Max"
+msgstr "Số tiền tối đa"
 
 #. module: payment
 #. odoo-javascript
@@ -271,7 +271,7 @@ msgstr "Áp dụng"
 #: model_terms:ir.ui.view,arch_db:payment.payment_token_form
 #: model_terms:ir.ui.view,arch_db:payment.payment_token_search
 msgid "Archived"
-msgstr "Đã lưu"
+msgstr "Đã lưu trữ"
 
 #. module: payment
 #. odoo-javascript
@@ -297,7 +297,7 @@ msgstr ""
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_provider__auth_msg
 msgid "Authorize Message"
-msgstr "Authorize Message"
+msgstr "Tin nhắn ủy quyền"
 
 #. module: payment
 #: model:payment.provider,name:payment.payment_provider_authorize
@@ -307,7 +307,7 @@ msgstr "Authorize.net"
 #. module: payment
 #: model:ir.model.fields.selection,name:payment.selection__payment_transaction__state__authorized
 msgid "Authorized"
-msgstr "Cơ chế ủy quyền"
+msgstr "Đã ủy quyền"
 
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.payment_provider_form
@@ -384,7 +384,7 @@ msgstr "Tin nhắn đã hủy"
 #: code:addons/payment/static/src/xml/payment_post_processing.xml:0
 #, python-format
 msgid "Cancelled payments"
-msgstr "Đã hủy thanh toán"
+msgstr "Thanh toán bị Huỷ"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_provider__capture_manually
@@ -450,7 +450,7 @@ msgstr "Màu sắc"
 #. module: payment
 #: model_terms:payment.provider,pending_msg:payment.payment_provider_transfer
 msgid "Communication"
-msgstr "Thông tin giao dịch"
+msgstr "Liên lạc"
 
 #. module: payment
 #: model:ir.model,name:payment.model_res_company
@@ -478,7 +478,7 @@ msgstr "Cấu hình"
 #: code:addons/payment/static/src/js/manage_form.js:0
 #, python-format
 msgid "Confirm Deletion"
-msgstr "Xác nhận xóa"
+msgstr "Xác nhận Xóa"
 
 #. module: payment
 #: model:ir.model.fields.selection,name:payment.selection__payment_transaction__state__done
@@ -488,12 +488,12 @@ msgstr "Đã được xác nhận"
 #. module: payment
 #: model:ir.model,name:payment.model_res_partner
 msgid "Contact"
-msgstr "Danh bạ"
+msgstr "Liên hệ"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_provider__module_id
 msgid "Corresponding Module"
-msgstr "Module tương ứng"
+msgstr "Mô-đun tương ứng"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_provider__available_country_ids
@@ -544,7 +544,7 @@ msgstr "Được tạo bởi"
 #: model:ir.model.fields,field_description:payment.field_payment_token__create_date
 #: model:ir.model.fields,field_description:payment.field_payment_transaction__create_date
 msgid "Created on"
-msgstr "Được tạo vào"
+msgstr "Thời điểm tạo"
 
 #. module: payment
 #. odoo-python
@@ -576,7 +576,7 @@ msgstr ""
 #. module: payment
 #: model:payment.provider,display_as:payment.payment_provider_adyen
 msgid "Credit Card (powered by Adyen)"
-msgstr "Credit Card (powered by Adyen)"
+msgstr "Thẻ tín dụng (xử lý bởi Adyen)"
 
 #. module: payment
 #: model:payment.provider,display_as:payment.payment_provider_asiapay
@@ -586,12 +586,12 @@ msgstr ""
 #. module: payment
 #: model:payment.provider,display_as:payment.payment_provider_authorize
 msgid "Credit Card (powered by Authorize)"
-msgstr "Credit Card (powered by Authorize)"
+msgstr "Thẻ tín dụng (xử lý bởi Authorize)"
 
 #. module: payment
 #: model:payment.provider,display_as:payment.payment_provider_buckaroo
 msgid "Credit Card (powered by Buckaroo)"
-msgstr "Credit Card (powered by Buckaroo)"
+msgstr "Thẻ tín dụng (xử lý bởi Buckaroo)"
 
 #. module: payment
 #: model:payment.provider,display_as:payment.payment_provider_mercado_pago
@@ -601,7 +601,7 @@ msgstr ""
 #. module: payment
 #: model:payment.provider,display_as:payment.payment_provider_sips
 msgid "Credit Card (powered by Sips)"
-msgstr "Credit Card (powered by Sips)"
+msgstr "Thẻ tín dụng (xử lý bởi Sips)"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_link_wizard__currency_id
@@ -669,7 +669,7 @@ msgstr "Hoàn thành"
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_provider__done_msg
 msgid "Done Message"
-msgstr "Hoàn tất tin nhắn"
+msgstr "Thông điệp hoàn thành"
 
 #. module: payment
 #: model:ir.model.fields.selection,name:payment.selection__payment_transaction__state__draft
@@ -687,7 +687,7 @@ msgstr "Email"
 #. module: payment
 #: model:ir.model.fields.selection,name:payment.selection__payment_provider__state__enabled
 msgid "Enabled"
-msgstr "Enabled"
+msgstr "Đã kích hoạt"
 
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.payment_provider_kanban
@@ -758,12 +758,12 @@ msgstr "Full Only"
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.payment_link_wizard_view_form
 msgid "Generate Payment Link"
-msgstr "Generate Payment Link"
+msgstr "Tạo một Thanh toán"
 
 #. module: payment
 #: model:ir.model,name:payment.model_payment_link_wizard
 msgid "Generate Sales Payment Link"
-msgstr "Generate Sales Payment Link"
+msgstr "Tạo một Link Thanh toán bán hàng"
 
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.payment_provider_search
@@ -795,12 +795,12 @@ msgstr "Thông điệp trợ giúp"
 #. module: payment
 #: model:ir.model.fields.selection,name:payment.selection__payment_provider_onboarding_wizard__paypal_user_type__new_user
 msgid "I don't have a Paypal account"
-msgstr "I don't have a Paypal account"
+msgstr "Tôi không có tài khoản Paypal"
 
 #. module: payment
 #: model:ir.model.fields.selection,name:payment.selection__payment_provider_onboarding_wizard__paypal_user_type__existing_user
 msgid "I have a Paypal account"
-msgstr "I have a Paypal account"
+msgstr "Tôi có tài khoản Paypal"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_icon__id
@@ -830,7 +830,9 @@ msgstr ""
 #: code:addons/payment/static/src/xml/payment_post_processing.xml:0
 #, python-format
 msgid "If the payment hasn't been confirmed you can contact us."
-msgstr "If the payment hasn't been confirmed you can contact us."
+msgstr ""
+"Nếu khoản thanh toán vẫn chưa được xác nhận, bạn có thể liên hệ với chúng "
+"tôi."
 
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.payment_methods
@@ -848,7 +850,7 @@ msgstr "Hình ảnh"
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_icon__image_payment_form
 msgid "Image displayed on the payment form"
-msgstr "Hình ảnh hiển thị trên thanh toán từ"
+msgstr "Hình ảnh hiển thị trên form Thanh toán"
 
 #. module: payment
 #: model:ir.model.fields,help:payment.field_payment_provider__state
@@ -920,7 +922,7 @@ msgstr "Ngôn ngữ"
 #: model:ir.model.fields,field_description:payment.field_payment_token____last_update
 #: model:ir.model.fields,field_description:payment.field_payment_transaction____last_update
 msgid "Last Modified on"
-msgstr "Sửa lần cuối vào"
+msgstr "Sửa lần cuối"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_transaction__last_state_change
@@ -935,7 +937,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:payment.field_payment_token__write_uid
 #: model:ir.model.fields,field_description:payment.field_payment_transaction__write_uid
 msgid "Last Updated by"
-msgstr "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_icon__write_date
@@ -945,7 +947,7 @@ msgstr "Last Updated by"
 #: model:ir.model.fields,field_description:payment.field_payment_token__write_date
 #: model:ir.model.fields,field_description:payment.field_payment_transaction__write_date
 msgid "Last Updated on"
-msgstr "Cập nhật lần cuối vào"
+msgstr "Cập nhật lần cuối"
 
 #. module: payment
 #. odoo-python
@@ -959,7 +961,7 @@ msgstr ""
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.pay_meth_link
 msgid "Manage payment methods"
-msgstr "Manage payment methods"
+msgstr "Quản lý Phương thức Thanh toán"
 
 #. module: payment
 #: model:ir.model.fields.selection,name:payment.selection__res_company__payment_onboarding_payment_method__manual
@@ -990,12 +992,12 @@ msgstr "ID tài khoản người bán"
 #: model:ir.model.fields,field_description:payment.field_payment_transaction__state_message
 #: model_terms:ir.ui.view,arch_db:payment.payment_transaction_form
 msgid "Message"
-msgstr "Thông báo"
+msgstr "Thông điệp"
 
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.payment_provider_form
 msgid "Messages"
-msgstr "Thông báo"
+msgstr "Thông điệp"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_provider_onboarding_wizard__manual_name
@@ -1063,7 +1065,7 @@ msgstr ""
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_provider__module_to_buy
 msgid "Odoo Enterprise Module"
-msgstr "Module Odoo cho doanh nghiệp"
+msgstr "Mô-đun Odoo cho doanh nghiệp"
 
 #. module: payment
 #: model:ir.model.fields.selection,name:payment.selection__payment_transaction__operation__offline
@@ -1134,7 +1136,7 @@ msgstr "Khác"
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_provider_onboarding_wizard__paypal_pdt_token
 msgid "PDT Identity Token"
-msgstr "PDT Identity Token"
+msgstr "Mã token nhận dạng PDT"
 
 #. module: payment
 #: model:ir.model.fields.selection,name:payment.selection__payment_provider__support_refund__partial
@@ -1152,7 +1154,7 @@ msgstr "Đối tác"
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_transaction__partner_name
 msgid "Partner Name"
-msgstr "Tên đối tác"
+msgstr "Tên Đối tác"
 
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.checkout
@@ -1174,12 +1176,12 @@ msgstr "Chi tiết thanh toán"
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.payment_provider_form
 msgid "Payment Followup"
-msgstr "Payment Followup"
+msgstr "Bám sát Thanh toán"
 
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.payment_provider_form
 msgid "Payment Form"
-msgstr "Payment Form"
+msgstr "Form Thanh toán"
 
 #. module: payment
 #: model:ir.model,name:payment.model_payment_icon
@@ -1195,12 +1197,12 @@ msgstr "Biểu tượng thanh toán"
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_provider_onboarding_wizard__manual_post_msg
 msgid "Payment Instructions"
-msgstr "Hướng dẫn thanh toán"
+msgstr "Hướng dẫn Thanh toán"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_link_wizard__link
 msgid "Payment Link"
-msgstr "Payment Link"
+msgstr "Link Thanh toán"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_provider_onboarding_wizard__payment_method
@@ -1226,7 +1228,7 @@ msgstr ""
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_link_wizard__description
 msgid "Payment Ref"
-msgstr "Payment Ref"
+msgstr "Dẫn chiếu Thanh toán"
 
 #. module: payment
 #: model:ir.model,name:payment.model_payment_token
@@ -1253,7 +1255,7 @@ msgstr "Mã thanh toán"
 #. module: payment
 #: model:ir.model,name:payment.model_payment_transaction
 msgid "Payment Transaction"
-msgstr "Giao dịch thanh toán"
+msgstr "Giao dịch Thanh toán"
 
 #. module: payment
 #: model:ir.actions.act_window,name:payment.action_payment_transaction
@@ -1261,7 +1263,7 @@ msgstr "Giao dịch thanh toán"
 #: model_terms:ir.ui.view,arch_db:payment.payment_transaction_form
 #: model_terms:ir.ui.view,arch_db:payment.payment_transaction_list
 msgid "Payment Transactions"
-msgstr "Giao dịch thanh toán"
+msgstr "Giao dịch Thanh toán"
 
 #. module: payment
 #: model:ir.actions.act_window,name:payment.action_payment_transaction_linked_to_token
@@ -1317,7 +1319,7 @@ msgstr "Đang chờ"
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_provider__pending_msg
 msgid "Pending Message"
-msgstr "Thông báo treo"
+msgstr "Thông điệp Treo"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_transaction__partner_phone
@@ -1343,7 +1345,7 @@ msgstr "Hãy chỉ chọn một tùy chọn thanh toán."
 #: code:addons/payment/wizards/payment_link_wizard.py:0
 #, python-format
 msgid "Please set an amount smaller than %s."
-msgstr "Please set an amount smaller than %s."
+msgstr "Vui lòng thiết lập một giá trị nhỏ hơn %s."
 
 #. module: payment
 #: model_terms:payment.provider,pending_msg:payment.payment_provider_transfer
@@ -1365,7 +1367,7 @@ msgstr "Vui lòng đợi ..."
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.confirm
 msgid "Processed by"
-msgstr "Xử lý bởi"
+msgstr "Được Xử lý bởi"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_token__provider_id
@@ -1426,12 +1428,12 @@ msgstr "Chuyển hướng biểu mẫu"
 #: model:ir.model.fields,field_description:payment.field_payment_transaction__reference
 #: model_terms:ir.ui.view,arch_db:payment.confirm
 msgid "Reference"
-msgstr "Mã phiếu"
+msgstr "Tham chiếu"
 
 #. module: payment
 #: model:ir.model.constraint,message:payment.constraint_payment_transaction_reference_uniq
 msgid "Reference must be unique!"
-msgstr "Mã cần phải duy nhất!"
+msgstr "Tham chiếu phải là duy nhất!"
 
 #. module: payment
 #. odoo-python
@@ -1500,7 +1502,7 @@ msgstr "Trình tự"
 #: code:addons/payment/static/src/js/payment_form_mixin.js:0
 #, python-format
 msgid "Server Error"
-msgstr "Lỗi máy chủ"
+msgstr "Lỗi Máy Chủ"
 
 #. module: payment
 #. odoo-javascript
@@ -1581,7 +1583,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:payment.field_payment_transaction__state
 #: model_terms:ir.ui.view,arch_db:payment.payment_transaction_search
 msgid "Status"
-msgstr "Trạng thái"
+msgstr "Tình trạng"
 
 #. module: payment
 #: model:ir.model.fields.selection,name:payment.selection__res_company__payment_onboarding_payment_method__stripe
@@ -1790,7 +1792,7 @@ msgstr ""
 #: code:addons/payment/wizards/payment_link_wizard.py:0
 #, python-format
 msgid "The value of the payment amount must be positive."
-msgstr "The value of the payment amount must be positive."
+msgstr "Giá trị thanh toán phải là số dương."
 
 #. module: payment
 #: model_terms:ir.actions.act_window,help:payment.action_payment_transaction
@@ -1927,7 +1929,7 @@ msgstr "Phí quốc tế (tính theo phần trăm)"
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_token__verified
 msgid "Verified"
-msgstr "Đã xác thực"
+msgstr "Đã thẩm định"
 
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.payment_transaction_form
@@ -1990,7 +1992,7 @@ msgstr ""
 #: code:addons/payment/static/src/js/post_processing.js:0
 #, python-format
 msgid "We are processing your payment, please wait ..."
-msgstr "We are processing your payment, please wait ..."
+msgstr "Chúng tôi đang xử lý khoản thanh toán của bạn, vui lòng chờ..."
 
 #. module: payment
 #. odoo-javascript
@@ -2071,14 +2073,14 @@ msgstr "Bạn sẽ được thông báo khi thanh toán được xác nhận đ�
 #: code:addons/payment/static/src/xml/payment_post_processing.xml:0
 #, python-format
 msgid "Your order has been processed."
-msgstr "Đơn đặt hàng của bạn đã được xử lý."
+msgstr "Đơn của bạn đã được xử lý."
 
 #. module: payment
 #. odoo-javascript
 #: code:addons/payment/static/src/xml/payment_post_processing.xml:0
 #, python-format
 msgid "Your order is being processed, please wait ..."
-msgstr "Đơn đặt hàng của bạn đang được xử lý, vui lòng chờ ..."
+msgstr "Đơn của bạn đang được xử lý, vui lòng chờ ..."
 
 #. module: payment
 #. odoo-python
@@ -2122,7 +2124,7 @@ msgstr "Thanh toán của bạn đã được chứng thực."
 #: model_terms:payment.provider,cancel_msg:payment.payment_provider_transfer
 #, python-format
 msgid "Your payment has been cancelled."
-msgstr "Your payment has been cancelled."
+msgstr "Khoản thanh toán của bạn đã bị hủy."
 
 #. module: payment
 #. odoo-javascript
@@ -2152,7 +2154,8 @@ msgstr "Thanh toán của bạn đã nhận nhưng cần xác nhận thủ công
 msgid ""
 "Your payment has been successfully processed but is waiting for approval."
 msgstr ""
-"Your payment has been successfully processed but is waiting for approval."
+"Khoản thanh toán của bạn đã được xử lý thành công nhưng vẫn đang đợi phê "
+"duyệt."
 
 #. module: payment
 #. odoo-python
@@ -2174,7 +2177,7 @@ msgstr ""
 #: model_terms:payment.provider,done_msg:payment.payment_provider_transfer
 #, python-format
 msgid "Your payment has been successfully processed. Thank you!"
-msgstr "Your payment has been successfully processed. Thank you!"
+msgstr "Khoản thanh toán của bạn đã được xử lý thành công. Xin cảm ơn!"
 
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.transaction_status

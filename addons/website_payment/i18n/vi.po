@@ -1,12 +1,12 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* website_payment
-# 
+#
 # Translators:
 # Martin Trigaux, 2022
 # NGUYỄN HỮU DŨNG, 2022
 # Nancy Momoland <thanhnguyen.icsc@gmail.com>, 2022
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0beta\n"
@@ -15,10 +15,10 @@ msgstr ""
 "PO-Revision-Date: 2022-09-22 05:56+0000\n"
 "Last-Translator: Nancy Momoland <thanhnguyen.icsc@gmail.com>, 2022\n"
 "Language-Team: Vietnamese (https://www.transifex.com/odoo/teams/41243/vi/)\n"
+"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: website_payment
@@ -32,7 +32,7 @@ msgid ""
 msgstr ""
 ".\n"
 "                        <br/>\n"
-"                        Rất cảm ơn sự quan tâm hỗ trợ của bạn dành cho chúng tôi.\n"
+"                        Chúng tôi đánh giá cao sự ủng hộ của bạn cho tổ chức của chúng tôi.\n"
 "                        <br/>\n"
 "                        Trân trọng."
 
@@ -122,7 +122,7 @@ msgstr "Thêm tùy chọn điền trước mới"
 #: code:addons/website_payment/static/src/snippets/s_donation/options.xml:0
 #, python-format
 msgid "Amount"
-msgstr "Tổng tiền"
+msgstr "Khoản"
 
 #. module: website_payment
 #: model_terms:ir.ui.view,arch_db:website_payment.payment_checkout

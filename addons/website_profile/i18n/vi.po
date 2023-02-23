@@ -1,10 +1,10 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* website_profile
-# 
+#
 # Translators:
 # Martin Trigaux, 2022
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0beta\n"
@@ -13,10 +13,10 @@ msgstr ""
 "PO-Revision-Date: 2022-09-22 05:57+0000\n"
 "Last-Translator: Martin Trigaux, 2022\n"
 "Language-Team: Vietnamese (https://www.transifex.com/odoo/teams/41243/vi/)\n"
+"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: website_profile
@@ -38,7 +38,7 @@ msgid ""
 "will make you reach new ranks."
 msgstr ""
 ". Thu thập điểm trên diễn đàn hoặc nền tảng học trực tuyến eLearning. Những "
-"điểm này sẽ giúp bạn đạt thứ hạng mới. "
+"điểm này sẽ giúp bạn đạt cấp bậc mới. "
 
 #. module: website_profile
 #: model_terms:ir.ui.view,arch_db:website_profile.users_page_content
@@ -372,7 +372,7 @@ msgstr "Mọi lúc"
 #: model_terms:ir.ui.view,arch_db:website_profile.rank_badge_main
 #: model_terms:ir.ui.view,arch_db:website_profile.user_profile_content
 msgid "Badges"
-msgstr "Huy chương"
+msgstr "Huy hiệu"
 
 #. module: website_profile
 #: model_terms:ir.ui.view,arch_db:website_profile.badge_content
@@ -453,12 +453,12 @@ msgstr "Được đăng"
 #. module: website_profile
 #: model_terms:ir.ui.view,arch_db:website_profile.rank_badge_main
 msgid "Keep learning with"
-msgstr "Tiếp tục học với "
+msgstr "Tiếp tục học với"
 
 #. module: website_profile
 #: model:ir.model.fields,field_description:website_profile.field_website__karma_profile_min
 msgid "Minimal karma to see other user's profile"
-msgstr "Karma tối thiểu để xem hồ sơ người dùng khác"
+msgstr "Karma tối thiểu để thấy hồ sơ của người khác."
 
 #. module: website_profile
 #: model_terms:ir.ui.view,arch_db:website_profile.user_profile_sub_nav
@@ -478,7 +478,7 @@ msgstr "Điều hướng"
 #. module: website_profile
 #: model_terms:ir.ui.view,arch_db:website_profile.user_profile_content
 msgid "Next rank:"
-msgstr "Hạng kế tiếp:"
+msgstr "Cấp bậc kế tiếp:"
 
 #. module: website_profile
 #: model_terms:ir.ui.view,arch_db:website_profile.users_page_main
@@ -512,7 +512,7 @@ msgstr "Huy hiệu thứ hạng"
 #. module: website_profile
 #: model_terms:ir.ui.view,arch_db:website_profile.rank_badge_main
 msgid "Ranks"
-msgstr "Ranks"
+msgstr "Thứ hạng"
 
 #. module: website_profile
 #: model_terms:ir.ui.view,arch_db:website_profile.private_profile
@@ -527,12 +527,12 @@ msgstr "Tìm kiếm"
 #. module: website_profile
 #: model_terms:ir.ui.view,arch_db:website_profile.user_profile_sub_nav
 msgid "Search courses"
-msgstr "Tìm khóa học"
+msgstr "Tìm khoá học"
 
 #. module: website_profile
 #: model_terms:ir.ui.view,arch_db:website_profile.user_profile_sub_nav
 msgid "Search users"
-msgstr "Tìm kiếm người dùng"
+msgstr "Tìm người dùng"
 
 #. module: website_profile
 #: model:mail.template,description:website_profile.validation_email

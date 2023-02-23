@@ -1,10 +1,10 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* pos_hr
-# 
+#
 # Translators:
 # Martin Trigaux, 2022
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0beta\n"
@@ -13,10 +13,10 @@ msgstr ""
 "PO-Revision-Date: 2022-09-22 05:54+0000\n"
 "Last-Translator: Martin Trigaux, 2022\n"
 "Language-Team: Vietnamese (https://www.transifex.com/odoo/teams/41243/vi/)\n"
+"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: pos_hr
@@ -56,19 +56,19 @@ msgstr "Nhân viên"
 #: code:addons/pos_hr/models/hr_employee.py:0
 #, python-format
 msgid "Employee: %s - PoS Config(s): %s \n"
-msgstr "Employee: %s - PoS Config(s): %s \n"
+msgstr "Nhân viên: %s - Các điểm Bán lẻ(s): %s \n"
 
 #. module: pos_hr
 #: model:ir.model.fields,field_description:pos_hr.field_pos_config__employee_ids
 #: model:ir.model.fields,field_description:pos_hr.field_res_config_settings__pos_employee_ids
 msgid "Employees with access"
-msgstr "Employees with access"
+msgstr "Nhân viên được cấp quyền truy cập"
 
 #. module: pos_hr
 #: model:ir.model.fields,help:pos_hr.field_pos_config__employee_ids
 #: model:ir.model.fields,help:pos_hr.field_res_config_settings__pos_employee_ids
 msgid "If left empty, all employees can log in to the PoS session"
-msgstr "If left empty, all employees can log in to the PoS session"
+msgstr "Nếu để trống, tất cả nhân viên có thể đăng nhập vào phiên PoS"
 
 #. module: pos_hr
 #. openerp-web
@@ -82,7 +82,7 @@ msgstr "Mật khẩu Không hợp lệ"
 #: code:addons/pos_hr/static/src/xml/LoginScreen.xml:0
 #, python-format
 msgid "Log in to"
-msgstr "Log in to"
+msgstr "Đăng nhập vào"
 
 #. module: pos_hr
 #. openerp-web
@@ -125,14 +125,14 @@ msgstr "Phiên bán hàng"
 #: code:addons/pos_hr/static/src/xml/LoginScreen.xml:0
 #, python-format
 msgid "Scan your badge"
-msgstr "Quét thẻ"
+msgstr "Quét Thẻ"
 
 #. module: pos_hr
 #. openerp-web
 #: code:addons/pos_hr/static/src/xml/LoginScreen.xml:0
 #, python-format
 msgid "Select Cashier"
-msgstr "Select Cashier"
+msgstr "Chọn Thu ngân"
 
 #. module: pos_hr
 #: code:addons/pos_hr/models/hr_employee.py:0
@@ -141,8 +141,8 @@ msgid ""
 "You cannot delete an employee that may be used in an active PoS session, "
 "close the session(s) first: \n"
 msgstr ""
-"You cannot delete an employee that may be used in an active PoS session, "
-"close the session(s) first: \n"
+"Bạn không thể xóa một nhân viên mà đang đăng nhập vào một phiên PoS, hãy "
+"đóng (các) phiên trước: \n"
 
 #. module: pos_hr
 #. openerp-web

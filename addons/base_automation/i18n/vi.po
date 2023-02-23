@@ -1,11 +1,11 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* base_automation
-# 
+#
 # Translators:
 # Martin Trigaux, 2022
 # Thi Huong Nguyen, 2023
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.5alpha1\n"
@@ -14,10 +14,10 @@ msgstr ""
 "PO-Revision-Date: 2022-09-22 05:45+0000\n"
 "Last-Translator: Thi Huong Nguyen, 2023\n"
 "Language-Team: Vietnamese (https://www.transifex.com/odoo/teams/41243/vi/)\n"
+"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: base_automation
@@ -67,7 +67,7 @@ msgstr "Kiểu Hành động"
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__active
 msgid "Active"
-msgstr "Đang hoạt động"
+msgstr "Có hiệu lực"
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__activity_type_id
@@ -82,7 +82,7 @@ msgstr "Kiểu tài khoản hoạt động"
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__partner_ids
 msgid "Add Followers"
-msgstr "Thêm Người theo dõi"
+msgstr "Thêm theo dõi"
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__filter_domain
@@ -92,7 +92,7 @@ msgstr "Áp dụng cho"
 #. module: base_automation
 #: model_terms:ir.ui.view,arch_db:base_automation.view_base_automation_search
 msgid "Archived"
-msgstr "Đã lưu"
+msgstr "Đã lưu trữ"
 
 #. module: base_automation
 #: model:ir.model,name:base_automation.model_base_automation
@@ -121,7 +121,7 @@ msgstr "Khả dụng ở Website"
 #: model:ir.cron,cron_name:base_automation.ir_cron_data_base_automation_check
 #: model:ir.cron,name:base_automation.ir_cron_data_base_automation_check
 msgid "Base Action Rule: check and execute"
-msgstr "Quy tắc thực thi cơ bản: kiểm tra và thực thi"
+msgstr "Quy tắc thực thi cơ sở: kiểm tra và thực thi"
 
 #. module: base_automation
 #: model:ir.model.fields.selection,name:base_automation.selection__base_automation__trigger__on_change
@@ -141,12 +141,12 @@ msgstr "Trước khi cập nhật miền"
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__binding_model_id
 msgid "Binding Model"
-msgstr "Binding Model"
+msgstr "Mô hình gắn kết "
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__binding_type
 msgid "Binding Type"
-msgstr "Binding Type"
+msgstr "Loại gắn kết"
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__binding_view_types
@@ -164,8 +164,8 @@ msgid ""
 "Child server actions that will be executed. Note that the last return "
 "returned action value will be used as global return value."
 msgstr ""
-"Child server actions that will be executed. Note that the last return "
-"returned action value will be used as global return value."
+"Hành động máy chủ con sẽ không được thực thi. Lưu ý rằng giá trị tác vụ được"
+" trả lại cuối cùng sẽ được sử dụng làm giá trị trả lại toàn cục. "
 
 #. module: base_automation
 #: model:ir.model.fields,help:base_automation.field_base_automation__sms_method
@@ -193,7 +193,7 @@ msgstr "Được tạo bởi"
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__create_date
 msgid "Created on"
-msgstr "Được tạo vào"
+msgstr "Thời điểm tạo"
 
 #. module: base_automation
 #: model:ir.model.fields.selection,name:base_automation.selection__base_automation__trg_date_range_type__day
@@ -223,7 +223,7 @@ msgstr "Dạng trì hoãn"
 #: code:addons/base_automation/static/src/xml/base_automation_error_dialog.xml:0
 #, python-format
 msgid "Disable Action"
-msgstr "Disable Action"
+msgstr "Tắt tác vụ"
 
 #. module: base_automation
 #. openerp-web
@@ -260,12 +260,12 @@ msgstr "Loại thời hạn"
 #: code:addons/base_automation/static/src/xml/base_automation_error_dialog.xml:0
 #, python-format
 msgid "Edit action"
-msgstr "Edit action"
+msgstr "Sửa tác vụ"
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__template_id
 msgid "Email Template"
-msgstr "Mẫu email"
+msgstr "Mẫu Email"
 
 #. module: base_automation
 #: code:addons/base_automation/models/base_automation.py:0
@@ -278,7 +278,7 @@ msgstr ""
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__xml_id
 msgid "External ID"
-msgstr "External ID"
+msgstr "ID ngoài"
 
 #. module: base_automation
 #: model:ir.model.fields,help:base_automation.field_base_automation__on_change_field_ids
@@ -331,7 +331,7 @@ msgstr "Nếu có, điều kiện này phải được thỏa mãn trước khi 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation____last_update
 msgid "Last Modified on"
-msgstr "Sửa lần cuối vào"
+msgstr "Sửa lần cuối"
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__last_run
@@ -341,12 +341,12 @@ msgstr "Chạy gần nhất"
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__write_uid
 msgid "Last Updated by"
-msgstr "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__write_date
 msgid "Last Updated on"
-msgstr "Cập nhật lần cuối vào"
+msgstr "Cập nhật lần cuối"
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__least_delay_msg
@@ -366,7 +366,7 @@ msgstr "Phút"
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__model_id
 msgid "Model"
-msgstr "Model"
+msgstr "Đối tượng"
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__model_name
@@ -379,13 +379,13 @@ msgid ""
 "Model for record creation / update. Set this field only to specify a "
 "different model than the base model."
 msgstr ""
-"Model for record creation / update. Set this field only to specify a "
-"different model than the base model."
+"Mô hình để tạo / cập nhật hồ sơ. Chỉ đặt trường này để chỉ định mô hình khác"
+" với mô hình cơ sở. "
 
 #. module: base_automation
 #: model:ir.model.fields,help:base_automation.field_base_automation__model_id
 msgid "Model on which the server action runs."
-msgstr "Đối tượng chạy trên máy chủ."
+msgstr "Model mà thực hiện chạy trên máy chủ"
 
 #. module: base_automation
 #: model:ir.model.fields.selection,name:base_automation.selection__base_automation__trg_date_range_type__month
@@ -455,7 +455,7 @@ msgstr "Mã Python"
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__activity_user_id
 msgid "Responsible"
-msgstr "Phụ trách"
+msgstr "Người phụ trách"
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__sms_template_id
@@ -475,17 +475,17 @@ msgstr ""
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__sequence
 msgid "Sequence"
-msgstr "Trình tự"
+msgstr "Thứ tự"
 
 #. module: base_automation
 #: model:ir.model,name:base_automation.model_ir_actions_server
 msgid "Server Action"
-msgstr "Hành động phía Máy chủ"
+msgstr "Hoạt động máy chủ"
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__action_server_id
 msgid "Server Actions"
-msgstr "Hành động Phía máy chủ"
+msgstr "Hành động trên máy chủ"
 
 #. module: base_automation
 #: model:ir.model.fields,help:base_automation.field_base_automation__binding_model_id
@@ -513,12 +513,12 @@ msgstr "Tổng kết"
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__crud_model_id
 msgid "Target Model"
-msgstr "Model mục tiêu"
+msgstr "Đối tượng Mục tiêu"
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__crud_model_name
 msgid "Target Model Name"
-msgstr "Target Model Name"
+msgstr "Tên mô hình mục tiêu"
 
 #. module: base_automation
 #: code:addons/base_automation/models/base_automation.py:0
@@ -626,7 +626,7 @@ msgid ""
 msgstr ""
 "Sử dụng các hành động tự động để tự động kích hoạt các hành động cho\n"
 "                 màn hình khác nhau. Ví dụ: một khách hàng tiềm năng được tạo bởi một người dùng cụ thể có thể\n"
-"                 được tự động đặt thành Nhóm bán hàng cụ thể hoặc một\n"
+"                 được tự động đặt thành Đội bán hàng cụ thể hoặc một\n"
 "                 cơ hội vẫn còn tình trạng chờ xử lý sau 14 ngày\n"
 "                 kích hoạt một email nhắc nhở tự động."
 
@@ -638,7 +638,7 @@ msgstr "Tên trường"
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__fields_lines
 msgid "Value Mapping"
-msgstr "Ánh xạ giá trị"
+msgstr "Giá trị tương ứng"
 
 #. module: base_automation
 #: code:addons/base_automation/models/base_automation.py:0
@@ -693,8 +693,8 @@ msgid ""
 "Write Python code that the action will execute. Some variables are available"
 " for use; help about python expression is given in the help tab."
 msgstr ""
-"Write Python code that the action will execute. Some variables are available"
-" for use; help about python expression is given in the help tab."
+"Viết mã Python mà tác vụ sẽ thực thi. Có thể sử dụng một số biến có sẵn; trợ"
+" giúp về biểu thức python được cung cấp trong tab trợ giúp. "
 
 #. module: base_automation
 #. openerp-web
@@ -702,15 +702,15 @@ msgstr ""
 #, python-format
 msgid ""
 "You can ask an administrator to disable or correct this automated action."
-msgstr ""
-"You can ask an administrator to disable or correct this automated action."
+msgstr "Bạn có thể yêu cầu quản trị viên tắt hoặc sửa tác vụ tự động hóa này."
 
 #. module: base_automation
 #. openerp-web
 #: code:addons/base_automation/static/src/xml/base_automation_error_dialog.xml:0
 #, python-format
 msgid "You can disable this automated action or edit it to solve the issue."
-msgstr "You can disable this automated action or edit it to solve the issue."
+msgstr ""
+"Bạn có thể tắt tác vụ tự động hóa hoặc chỉnh sửa để giải quyết vấn đề này."
 
 #. module: base_automation
 #: code:addons/base_automation/models/base_automation.py:0
