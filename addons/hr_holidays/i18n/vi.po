@@ -1091,7 +1091,7 @@ msgstr "Cấp phát"
 #. module: hr_holidays
 #: model_terms:ir.ui.view,arch_db:hr_holidays.edit_holiday_status_form
 msgid "Allow To Attach Supporting Document"
-msgstr ""
+msgstr "Cho phép đính kèm tài liệu hỗ trợ"
 
 #. module: hr_holidays
 #: model:ir.model.fields,help:hr_holidays.field_hr_leave_allocation__holiday_type
@@ -4272,7 +4272,7 @@ msgstr "Lúa mì"
 #. module: hr_holidays
 #: model:ir.model.fields.selection,name:hr_holidays.selection__hr_leave_type__time_type__other
 msgid "Worked Time"
-msgstr ""
+msgstr "Thời gian làm việc"
 
 #. module: hr_holidays
 #: model:ir.model.fields,field_description:hr_holidays.field_hr_leave_stress_day__resource_calendar_id
@@ -4311,6 +4311,9 @@ msgid ""
 "\n"
 "              No Limit: Time Off requests can be taken without any prior allocation."
 msgstr ""
+"Có: Yêu cầu nghỉ cần phải có một cấp phát hợp lệ.\n"
+"\n"
+"              Không giới hạn: Yêu cầu nghỉ có thể được thực hiện mà không cần cấp phát trước."
 
 #. module: hr_holidays
 #. odoo-python
