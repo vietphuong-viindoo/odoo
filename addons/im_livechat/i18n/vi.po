@@ -1,7 +1,7 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* im_livechat
-#
+# 
 # Translators:
 # Trần Hà <tranthuha13590@gmail.com>, 2021
 # fanha99 <fanha99@hotmail.com>, 2021
@@ -12,15 +12,15 @@
 # Duy BQ <duybq86@gmail.com>, 2021
 # Vo Thanh Thuy, 2022
 # Martin Trigaux, 2022
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-13 04:01+0000\n"
-"PO-Revision-Date: 2022-08-13 04:01+0000\n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"POT-Creation-Date: 2022-08-24 01:53+0000\n"
+"PO-Revision-Date: 2021-09-14 12:23+0000\n"
+"Last-Translator: Martin Trigaux, 2022\n"
+"Language-Team: Vietnamese (https://www.transifex.com/odoo/teams/41243/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -655,7 +655,7 @@ msgstr "Nhóm theo..."
 #: model:im_livechat.channel,button_text:im_livechat.im_livechat_channel_data
 #, python-format
 msgid "Have a Question? Chat with us."
-msgstr "Chat tư vấn trực tuyến"
+msgstr "Bạn có câu hỏi? Hãy chat với chúng tôi."
 
 #. module: im_livechat
 #: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel__header_background_color
@@ -665,7 +665,7 @@ msgstr "Màu nền Header"
 #. module: im_livechat
 #: model:im_livechat.channel,default_message:im_livechat.im_livechat_channel_data
 msgid "Hello, how may I help you?"
-msgstr "Xin chào, Tôi có thể giúp gì cho bạn"
+msgstr "Xin chào, Tôi có thể giúp gì cho bạn?"
 
 #. module: im_livechat
 #: model:ir.model.fields.selection,name:im_livechat.selection__im_livechat_channel_rule__action__hide_button
@@ -686,6 +686,7 @@ msgstr "Giờ của Ngày bắt đầu phiên"
 
 #. module: im_livechat
 #. openerp-web
+#: code:addons/im_livechat/models/im_livechat_channel.py:0
 #: code:addons/im_livechat/static/src/legacy/public_livechat.js:0
 #, python-format
 msgid "How may I help you?"
