@@ -2664,7 +2664,7 @@ msgstr ""
 #: code:addons/project/report/project_task_burndown_chart_report.py:0
 #, python-format
 msgid "Invalid aggregation function %r."
-msgstr "Hàm tổng hợp không hợp lệ% r."
+msgstr "Hàm tổng hợp không hợp lệ %r."
 
 #. module: project
 #. odoo-python
@@ -2672,28 +2672,28 @@ msgstr "Hàm tổng hợp không hợp lệ% r."
 #: code:addons/project/report/project_task_burndown_chart_report.py:0
 #, python-format
 msgid "Invalid field %r on model %r"
-msgstr ""
+msgstr "Trường %r không hợp lệ ở model %r"
 
 #. module: project
 #. odoo-python
 #: code:addons/project/report/project_task_burndown_chart_report.py:0
 #, python-format
 msgid "Invalid field specification %r."
-msgstr "Đặc tả trường không hợp lệ% r."
+msgstr "Đặc tả trường không hợp lệ %r."
 
 #. module: project
 #. odoo-python
 #: code:addons/project/models/project.py:0
 #, python-format
 msgid "Invalid operator: %s"
-msgstr ""
+msgstr "Toán tử không hợp lệ: %s"
 
 #. module: project
 #. odoo-python
 #: code:addons/project/models/project.py:0
 #, python-format
 msgid "Invalid value: %s"
-msgstr ""
+msgstr "Giá trị không hợp lệ: %s"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.project_share_wizard_view_form

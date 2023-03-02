@@ -1828,9 +1828,12 @@ var SnippetsMenu = Widget.extend({
         this.$el = this.window.$(this.$el);
         this.$el.data('snippetMenu', this);
 
+        this.folded = !!this.options.foldSnippets;
+
         this.customizePanel = document.createElement('div');
         this.customizePanel.classList.add('o_we_customize_panel', 'd-none');
-        this._addToolbar();
+        // adds toolbar if not folded
+        this.setFolded(this.folded);
         this._checkEditorToolbarVisibilityCallback = this._checkEditorToolbarVisibility.bind(this);
         $(this.options.wysiwyg.odooEditor.document.body).on('click', this._checkEditorToolbarVisibilityCallback);
 
@@ -2054,6 +2057,15 @@ var SnippetsMenu = Widget.extend({
      * - Remove the 'contentEditable' attributes
      */
     cleanForSave: async function () {
+        // Wait for snippet post-drop code here, since sometimes we save very
+        // quickly after a snippet drop during automated testing, which breaks
+        // some options code (executed while destroying the editor).
+        // TODO we should find a better way, by better locking the drag and drop
+        // code inside the edition mutex... which unfortunately cannot be done
+        // given the state of the code, as internal operations of that drag and
+        // drop code need to use the mutex themselves.
+        await this.postSnippetDropPromise;
+
         // First disable the snippet selection, calling options onBlur, closing
         // widgets, etc. Then wait for full resolution of the mutex as widgets
         // may have triggered some final edition requests that need to be
@@ -2104,6 +2116,17 @@ var SnippetsMenu = Widget.extend({
         }, { shadow: true });
         cacheSnippetTemplate[this.options.snippets] = this._defLoadSnippets;
         return this._defLoadSnippets;
+    },
+    /**
+     * Visually hide or display this snippet menu
+     * @param {boolean} foldState
+     */
+    setFolded: function (foldState = true) {
+        this.el.classList.toggle('d-none', foldState);
+        this.el.ownerDocument.body.classList.toggle('editor_has_snippets', !foldState);
+        this.folded = !!foldState;
+        // "add" toolbar to set it inside the snippet menu/in the body
+        this._addToolbar();
     },
     /**
      * Get the editable area.
@@ -2157,6 +2180,10 @@ var SnippetsMenu = Widget.extend({
      * @returns {Promise}
      */
     callPostSnippetDrop: async function ($target) {
+        this.postSnippetDropPromise = new Promise(resolve => {
+            this._postSnippetDropResolver = resolve;
+        });
+
         // First call the onBuilt of all options of each item in the snippet
         // (and so build their editor instance first).
         await this._callForEachChildSnippet($target, function (editor, $snippet) {
@@ -2180,6 +2207,8 @@ var SnippetsMenu = Widget.extend({
         // Lastly, ensure that the snippets or its related parts are added to
         // the invisible DOM list if needed.
         await this._updateInvisibleDOM();
+
+        this._postSnippetDropResolver();
     },
     /**
      * Public implementation of _execWithLoadingEffect.
@@ -2532,13 +2561,20 @@ var SnippetsMenu = Widget.extend({
                 }
 
                 return editorToEnable;
-            }).then(editor => {
+            }).then(async editor => {
                 // If a link was clicked, the linktools should be focused after
                 // the right panel is shown to the user.
-                if (this._currentTab === this.tabs.OPTIONS
-                        && this.options.wysiwyg.linkTools
-                        && !this.options.wysiwyg.linkTools.noFocusUrl) {
-                    this.options.wysiwyg.linkTools.focusUrl();
+                // TODO: this should be reviewed to be done another way: we
+                // should avoid focusing something here while it is being
+                // rendered elsewhere.
+                const linkTools = this.options.wysiwyg.linkTools;
+                if (linkTools && this._currentTab === this.tabs.OPTIONS
+                        && !linkTools.noFocusUrl) {
+                    // Wait for `linkTools` potential in-progress rendering
+                    // before focusing the URL input on `snippetsMenu` (this
+                    // prevents race condition for automated testing).
+                    await linkTools.renderingPromise;
+                    linkTools.focusUrl();
                 }
                 return editor;
             });
@@ -2882,7 +2918,7 @@ var SnippetsMenu = Widget.extend({
         this._disableUndroppableSnippets();
 
         this.$el.addClass('o_loaded');
-        $(this.el.ownerDocument.body).addClass('editor_has_snippets');
+        $(this.el.ownerDocument.body).toggleClass('editor_has_snippets', !this.folded);
     },
     /**
      * Eases patching the XML definition for snippets and options in stable
@@ -3344,7 +3380,10 @@ var SnippetsMenu = Widget.extend({
 
         this._currentTab = tab || this.tabs.BLOCKS;
 
-        this._$toolbarContainer[0].remove();
+        if (this._$toolbarContainer) {
+            this._$toolbarContainer[0].remove();
+        }
+        this._$toolbarContainer = null;
         if (content) {
             while (this.customizePanel.firstChild) {
                 this.customizePanel.removeChild(this.customizePanel.firstChild);
@@ -4062,6 +4101,10 @@ var SnippetsMenu = Widget.extend({
         this._filterSnippets('');
     },
     _addToolbar(toolbarMode = "text") {
+        if (this.folded) {
+            this._addToolbarToOriginalPosition();
+            return;
+        }
         let titleText = _t("Inline Text");
         switch (toolbarMode) {
             case "image":
@@ -4076,26 +4119,37 @@ var SnippetsMenu = Widget.extend({
         }
 
         this.options.wysiwyg.toolbar.el.classList.remove('oe-floating');
+        if (!this._$toolbarContainer) {
+            // Create toolbar custom container.
+            this._$toolbarContainer = $('<WE-CUSTOMIZEBLOCK-OPTIONS id="o_we_editor_toolbar_container"/>');
+            const $title = $("<we-title><span>" + titleText + "</span></we-title>");
+            this._$toolbarContainer.append($title);
+            this._$toolbarContainer.append(this.options.wysiwyg.toolbar.$el);
+            $(this.customizePanel).append(this._$toolbarContainer);
 
-        // Create toolbar custom container.
-        this._$toolbarContainer = $('<WE-CUSTOMIZEBLOCK-OPTIONS id="o_we_editor_toolbar_container"/>');
-        const $title = $("<we-title><span>" + titleText + "</span></we-title>");
+            // Create table-options custom container.
 
-        this._$toolbarContainer.append($title);
-        this._$toolbarContainer.append(this.options.wysiwyg.toolbar.$el);
-        $(this.customizePanel).append(this._$toolbarContainer);
-
-        // Create table-options custom container.
-        const $customizeTableBlock = $(QWeb.render('web_editor.toolbar.table-options'));
-        this.options.wysiwyg.odooEditor.bindExecCommand($customizeTableBlock[0]);
-
-        $(this.customizePanel).append($customizeTableBlock);
-
-        this._$removeFormatButton = this._$removeFormatButton || this.options.wysiwyg.toolbar.$el.find('#removeFormat');
-        $title.append(this._$removeFormatButton);
-        this.options.wysiwyg.toolbar.$el.find('#table').remove();
+            const $customizeTableBlock = $(QWeb.render('web_editor.toolbar.table-options'));
+            this.options.wysiwyg.odooEditor.bindExecCommand($customizeTableBlock[0]);
+            $(this.customizePanel).append($customizeTableBlock);
+            this._$removeFormatButton = this.options.wysiwyg.toolbar.$el.find('#removeFormat');
+            $title.append(this._$removeFormatButton);
+            this._$toolbarContainer.append(this.options.wysiwyg.toolbar.$el);
+        }
+        this.options.wysiwyg.toolbar.$el.find('#table')[0].classList.add('d-none');
 
         this._checkEditorToolbarVisibility();
+    },
+    _addToolbarToOriginalPosition: function () {
+        const toolbar = this.options.wysiwyg.toolbar.el;
+        toolbar.classList.add('oe-floating');
+        toolbar.querySelector('#table').classList.remove('d-none');
+        if (this.options.wysiwyg.odooEditor.isMobile) {
+            const editorEditable = this.options.wysiwyg.odooEditor.editable;
+            editorEditable.before(toolbar);
+        } else if (this.options.autohideToolbar) {
+            document.body.appendChild(toolbar);
+        }
     },
     /**
      * Update editor UI visibility based on the current range.
