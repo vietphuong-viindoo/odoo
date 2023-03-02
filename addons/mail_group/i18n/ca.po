@@ -662,7 +662,7 @@ msgstr "Acció no vàlida per a la generació Enllaç (%s)"
 #: code:addons/mail_group/models/mail_group_moderation.py:0
 #, python-format
 msgid "Invalid email address %r"
-msgstr "Adreça de correu% r no vàlida"
+msgstr "Adreça de correu %r no vàlida"
 
 #. module: mail_group
 #: model_terms:ir.ui.view,arch_db:mail_group.invalid_token_subscription

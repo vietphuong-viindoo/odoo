@@ -19167,7 +19167,7 @@ msgstr ""
 #: code:addons/fields.py:0
 #, python-format
 msgid "No inverse field %r found for %r"
-msgstr "% r এর জন্য কোনও বিপরীত ক্ষেত্র % r পাওয়া যায়নি"
+msgstr "%r এর জন্য কোনও বিপরীত ক্ষেত্র %r পাওয়া যায়নি"
 
 #. module: base
 #: code:addons/base/wizard/base_update_translations.py:0
