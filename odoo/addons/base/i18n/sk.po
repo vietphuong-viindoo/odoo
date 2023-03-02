@@ -11479,7 +11479,7 @@ msgstr "Zrušiť Aktualizáciu"
 #: code:addons/models.py:0
 #, python-format
 msgid "Cannot aggregate field %r."
-msgstr "Nie je možné agregovať pole% r."
+msgstr "Nie je možné agregovať pole %r."
 
 #. module: base
 #: code:addons/base/models/ir_fields.py:0
@@ -17936,7 +17936,7 @@ msgstr ""
 #: code:addons/base/models/ir_actions.py:0
 #, python-format
 msgid "Invalid model name %r in action definition."
-msgstr "Neplatný názov modelu% r v definícii akcie."
+msgstr "Neplatný názov modelu %r v definícii akcie."
 
 #. module: base
 #: code:addons/template_inheritance.py:0
@@ -20691,7 +20691,7 @@ msgstr ""
 #: code:addons/base/models/ir_actions.py:0
 #, python-format
 msgid "No spaces allowed in view_mode: %r"
-msgstr "V view_mode nie sú povolené žiadne medzery:% r"
+msgstr "V view_mode nie sú povolené žiadne medzery: %r"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_model_data__noupdate

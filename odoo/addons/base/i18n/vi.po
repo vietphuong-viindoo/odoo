@@ -20588,7 +20588,7 @@ msgstr "Tham số 'group by' không hợp lệ"
 #: code:addons/models.py:0
 #, python-format
 msgid "Invalid aggregation function %r."
-msgstr "Hàm tổng hợp không hợp lệ% r."
+msgstr "Hàm tổng hợp không hợp lệ %r."
 
 #. module: base
 #: code:addons/base/models/ir_ui_view.py:0
@@ -20628,7 +20628,7 @@ msgstr "Trường không hợp lệ %s.%s"
 #: code:addons/models.py:0
 #, python-format
 msgid "Invalid field specification %r."
-msgstr "Đặc tả trường không hợp lệ% r."
+msgstr "Đặc tả trường không hợp lệ %r."
 
 #. module: base
 #: model:ir.model.constraint,message:base.constraint_ir_ui_view_inheritance_mode

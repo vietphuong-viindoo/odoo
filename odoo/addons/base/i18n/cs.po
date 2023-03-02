@@ -19563,7 +19563,7 @@ msgstr "Neplatný parametr 'skupina podle'"
 #: code:addons/models.py:0
 #, python-format
 msgid "Invalid aggregation function %r."
-msgstr "Neplatná agregační funkce% r."
+msgstr "Neplatná agregační funkce %r."
 
 #. module: base
 #: code:addons/base/models/ir_ui_view.py:0
@@ -22448,7 +22448,7 @@ msgstr "Nenalezeno žádné nastavení"
 #: code:addons/base/models/ir_actions.py:0
 #, python-format
 msgid "No spaces allowed in view_mode: %r"
-msgstr "V režime view_mode nie sú povolené žiadne medzery:% r"
+msgstr "V režime view_mode nie sú povolené žiadne medzery: %r"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_model_data__noupdate
@@ -29236,7 +29236,7 @@ msgstr "Další krok závisí na formátu souboru:"
 #: code:addons/base/models/ir_model.py:0
 #, python-format
 msgid "The ondelete policy %r is not valid for field %r"
-msgstr "Zásada ondelete% r není platná pro pole% r"
+msgstr "Zásada ondelete %r není platná pro pole %r"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_model_fields_form
