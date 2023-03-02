@@ -4763,7 +4763,7 @@ msgstr "Adreça de correu electrònic no vàlida"
 #: code:addons/mail/models/mail_blacklist.py:0
 #, python-format
 msgid "Invalid email address %r"
-msgstr "Adreça de correu% r no vàlida"
+msgstr "Adreça de correu %r no vàlida"
 
 #. module: mail
 #. odoo-python
@@ -18786,14 +18786,14 @@ msgstr "fluctua"
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "flushed"
-msgstr "buidat"
+msgstr "enrogit"
 
 #. module: mail
 #. odoo-javascript
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "flushed face"
-msgstr "cara esborrada"
+msgstr "cara acolorida"
 
 #. module: mail
 #. odoo-javascript
@@ -18842,7 +18842,7 @@ msgstr "boira"
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "foggy"
-msgstr "boira"
+msgstr "boirós"
 
 #. module: mail
 #. odoo-javascript

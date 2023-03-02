@@ -2636,7 +2636,7 @@ msgstr ""
 #: code:addons/project/report/project_task_burndown_chart_report.py:0
 #, python-format
 msgid "Invalid aggregation function %r."
-msgstr "Neplatná agregační funkce% r."
+msgstr "Neplatná agregační funkce %r."
 
 #. module: project
 #. odoo-python

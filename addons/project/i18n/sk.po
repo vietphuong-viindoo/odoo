@@ -1251,7 +1251,7 @@ msgstr "Zrušené"
 #: code:addons/project/report/project_task_burndown_chart_report.py:0
 #, python-format
 msgid "Cannot aggregate field %r."
-msgstr "Nie je možné agregovať pole% r."
+msgstr "Nie je možné agregovať pole %r."
 
 #. module: project
 #: model:ir.model.fields,help:project.field_project_task__partner_is_company
