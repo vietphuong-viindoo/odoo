@@ -94,7 +94,7 @@ msgstr "Chi phí bổ sung"
 #. module: stock_landed_costs
 #: model:ir.model.fields,field_description:stock_landed_costs.field_stock_valuation_adjustment_lines__additional_landed_cost
 msgid "Additional Landed Cost"
-msgstr "Landed Cost Bổ sung"
+msgstr "Chi phí về kho bổ sung"
 
 #. module: stock_landed_costs
 #: model:ir.model.fields,field_description:stock_landed_costs.field_stock_landed_cost__target_model
@@ -110,7 +110,7 @@ msgstr "Số lượng đính kèm"
 #: model:ir.model.fields.selection,name:stock_landed_costs.selection__product_template__split_method_landed_cost__by_current_cost_price
 #: model:ir.model.fields.selection,name:stock_landed_costs.selection__stock_landed_cost_lines__split_method__by_current_cost_price
 msgid "By Current Cost"
-msgstr "Theo Giá vốn Hiện tại (tính đến lúc phân bổ landed cost)"
+msgstr "Theo Giá vốn Hiện tại (tính đến lúc phân bổ chi phí về kho)"
 
 #. module: stock_landed_costs
 #: model:ir.model.fields.selection,name:stock_landed_costs.selection__product_template__split_method_landed_cost__by_quantity
@@ -188,7 +188,7 @@ msgid ""
 "Cost and adjustments lines do not match. You should maybe recompute the "
 "landed costs."
 msgstr ""
-"Chi phí và các dòng phân bổ không khớp. Bạn nên tính toán lại landed cost."
+"Chi phí và các dòng phân bổ không khớp. Bạn nên tính toán lại chi phí về kho."
 
 #. module: stock_landed_costs
 #: model_terms:ir.ui.view,arch_db:stock_landed_costs.account_view_move_form_inherited
@@ -283,13 +283,15 @@ msgid ""
 "By Quantity : Cost will be divided according to product's quantity.\n"
 "By Current cost : Cost will be divided according to product's current cost.\n"
 "By Weight : Cost will be divided depending on its weight.\n"
-"By Volume : Cost will be divided depending on its volume."
+"By Volume : Cost will be divided depending on its volume.\n"
+"By Product Salary Rate' : Cost will be divided depending on its product costs ratio."
 msgstr ""
-"Bằng: Chi phí sẽ được chia đều.\n"
-"Theo Số lượng: Chi phí sẽ được chia theo số lượng sản phẩm.\n"
-"Theo chi phí hiện hành: Chi phí sẽ được chia theo chi phí sản phẩm tính đến hiện tại.\n"
-"Theo Khối lượng: Chi phí sẽ được chia phụ thuộc vào khối lượng hàng hoá.\n"
-"Theo Dung tích: Chi phí sẽ được chia theo dùng tích hàng hoá."
+"Bằng nhau : Chi phí sẽ được chia đều.\n"
+"Theo số lượng : Chi phí sẽ được chia theo số lượng của sản phẩm.\n"
+"Theo chi phí hiện tại : Chi phí sẽ được chia theo chi phí hiện tại của sản phẩm.\n"
+"Theo Trọng lượng : Chi phí sẽ được chia tùy thuộc vào trọng lượng của nó.\n"
+"Theo Khối lượng : Chi phí sẽ được chia tùy thuộc vào khối lượng của nó.\n"
+"Theo tỷ lệ lương sản phẩm' : Chi phí sẽ được phân chia tùy thuộc vào tỷ lệ chi phí sản phẩm."
 
 #. module: stock_landed_costs
 #: model:ir.model.fields,field_description:stock_landed_costs.field_stock_landed_cost__message_follower_ids
@@ -364,7 +366,7 @@ msgstr "Là người theo dõi"
 #. module: stock_landed_costs
 #: model:ir.model.fields,field_description:stock_landed_costs.field_account_move_line__is_landed_costs_line
 msgid "Is Landed Costs Line"
-msgstr "Is Landed Costs Line"
+msgstr "Là dòng chi phí về kho"
 
 #. module: stock_landed_costs
 #: model:ir.model.fields,field_description:stock_landed_costs.field_product_product__landed_cost_ok
@@ -420,12 +422,12 @@ msgstr "Chi phí Về kho"
 #: model:ir.model.fields,field_description:stock_landed_costs.field_account_move__landed_costs_visible
 #: model:ir.model.fields,field_description:stock_landed_costs.field_account_payment__landed_costs_visible
 msgid "Landed Costs Visible"
-msgstr "Landed Costs Visible"
+msgstr "Chi phí về kho có thể thấy"
 
 #. module: stock_landed_costs
 #: model:mail.message.subtype,description:stock_landed_costs.mt_stock_landed_cost_open
 msgid "Landed cost validated"
-msgstr "Landed cost được xác nhận"
+msgstr "Chi phí về kho được xác nhận"
 
 #. module: stock_landed_costs
 #: model:ir.model.fields,field_description:stock_landed_costs.field_stock_landed_cost____last_update
@@ -495,7 +497,7 @@ msgstr "Mới"
 #. module: stock_landed_costs
 #: model:ir.model.fields,field_description:stock_landed_costs.field_stock_valuation_adjustment_lines__final_cost
 msgid "New Value"
-msgstr "New Value"
+msgstr "Giá trị mới"
 
 #. module: stock_landed_costs
 #: model:ir.model.fields,field_description:stock_landed_costs.field_stock_landed_cost__activity_calendar_event_id
@@ -546,7 +548,7 @@ msgstr "Số thông điệp chưa đọc"
 #: code:addons/stock_landed_costs/models/stock_landed_cost.py:0
 #, python-format
 msgid "Only draft landed costs can be validated"
-msgstr "Chỉ có các landed cost dự thảo mới có thể được xác nhận"
+msgstr "Chỉ có các chi phí về kho dự thảo mới có thể được xác nhận"
 
 #. module: stock_landed_costs
 #: model:ir.model.fields,field_description:stock_landed_costs.field_stock_valuation_adjustment_lines__former_cost
@@ -568,7 +570,7 @@ msgstr "Vui lòng cấu hình tài khoản chi phí kho cho sản phẩm: %s."
 #: code:addons/stock_landed_costs/models/stock_landed_cost.py:0
 #, python-format
 msgid "Please define %s on which those additional costs should apply."
-msgstr "Please define %s on which those additional costs should apply."
+msgstr "Vui lòng xác định %s sẽ áp dụng các chi phí bổ sung đó."
 
 #. module: stock_landed_costs
 #: model:ir.model.fields.selection,name:stock_landed_costs.selection__stock_landed_cost__state__done
@@ -594,7 +596,7 @@ msgstr "Loại sản phẩm"
 #. module: stock_landed_costs
 #: model:ir.model,name:stock_landed_costs.model_purchase_order_line
 msgid "Purchase Order Line"
-msgstr "Chi tiết mua hàng"
+msgstr "Dòng hàng Đơn Mua"
 
 #. module: stock_landed_costs
 #: model:ir.model.fields,field_description:stock_landed_costs.field_stock_valuation_adjustment_lines__quantity
@@ -652,7 +654,7 @@ msgstr "Phí nhập kho"
 #. module: stock_landed_costs
 #: model:ir.model,name:stock_landed_costs.model_stock_landed_cost_lines
 msgid "Stock Landed Cost Line"
-msgstr "Stock Landed Cost Line"
+msgstr "Chi tiết Phí về kho"
 
 #. module: stock_landed_costs
 #: model:ir.model.fields,field_description:stock_landed_costs.field_stock_valuation_adjustment_lines__move_id
@@ -719,7 +721,7 @@ msgstr "Định giá"
 #. module: stock_landed_costs
 #: model:ir.model,name:stock_landed_costs.model_stock_valuation_adjustment_lines
 msgid "Valuation Adjustment Lines"
-msgstr "Valuation Adjustment Lines"
+msgstr "Chi tiết Điều chỉnh Giá trị Kho"
 
 #. module: stock_landed_costs
 #: model:ir.model.fields,field_description:stock_landed_costs.field_stock_landed_cost__valuation_adjustment_lines
@@ -758,7 +760,8 @@ msgstr "Khối lượng"
 msgid ""
 "You cannot apply landed costs on the chosen %s(s). Landed costs can only be "
 "applied for products with FIFO or average costing method."
-msgstr ""
+msgstr "Bạn không thể áp dụng chi phí về kho cho %s(s) đã chọn. Chi phí về kho chỉ có thể "
+"áp dụng cho sản phẩm theo FIFO hoặc phương pháp tính giá thành bình quân."
 
 #. module: stock_landed_costs
 #: code:addons/stock_landed_costs/models/product.py:0
@@ -767,3 +770,5 @@ msgid ""
 "You cannot change the product type or disable landed cost option because the"
 " product is used in an account move line."
 msgstr ""
+"Bạn không thể thay đổi loại sản phẩm hoặc bỏ qua tùy chọn chi phí về kho vì "
+"sản phẩm được sử dụng trong mỗi dòng phát sinh kế toán."
