@@ -849,7 +849,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"        Báo cáo kế toán cho US\n"
+"        Báo cáo kế toán cho Mỹ\n"
 "    "
 
 #. module: base
@@ -19562,7 +19562,7 @@ msgstr "Xuất"
 #. module: base
 #: model:ir.model,name:base.model_ir_exports_line
 msgid "Exports Line"
-msgstr "Chi tiết Xuất"
+msgstr "Dòng Xuất"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_server_object_lines__value
