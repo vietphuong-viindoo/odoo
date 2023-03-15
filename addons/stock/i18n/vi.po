@@ -1615,7 +1615,7 @@ msgstr "Tính toán phí giao hàng và giao bằng FedEx"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
 msgid "Compute shipping costs and ship with Sendcloud"
-msgstr ""
+msgstr "Tính toán phí giao hàng và giao bằng Sendcloud"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
@@ -2954,7 +2954,7 @@ msgstr "Mô tả dự báo"
 #: model_terms:ir.ui.view,arch_db:stock.view_picking_form
 #: model_terms:ir.ui.view,arch_db:stock.view_warehouse_orderpoint_tree_editable
 msgid "Forecast Report"
-msgstr ""
+msgstr "Báo cáo dự báo"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_product_product__virtual_available
@@ -7217,7 +7217,7 @@ msgstr "Xuất kho và giao hàng (2 bước)"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_res_config_settings__module_delivery_sendcloud
 msgid "Sendcloud Connector"
-msgstr ""
+msgstr "Kết nối Sendcloud"
 
 #. module: stock
 #: model:mail.template,description:stock.mail_template_data_delivery_confirmation
@@ -7857,7 +7857,7 @@ msgstr "Báo cáo quy tắc dự trữ"
 #. module: stock
 #: model:ir.model,name:stock.model_stock_replenishment_info
 msgid "Stock supplier replenishment information"
-msgstr ""
+msgstr "Thông tin nhà cung cấp bổ sung tồn kho"
 
 #. module: stock
 #: model:ir.model,name:stock.model_stock_replenishment_option
@@ -9915,6 +9915,13 @@ msgstr "Bạn chỉ có thể trả hàng từ hoạt động giao nhận đã H
 #, python-format
 msgid "You may only return one picking at a time."
 msgstr "Chỉ có thể thể trả hàng từ một phiếu giao nhận tại một thời điểm."
+
+#. module: stock
+#. odoo-python
+#: code:addons/stock/model/stock_picking.py:0
+#, python-format
+msgid " You might want to update the locations of this transfer's operations "
+msgstr ""
 
 #. module: stock
 #. odoo-python
