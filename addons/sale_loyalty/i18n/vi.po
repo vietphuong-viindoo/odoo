@@ -111,7 +111,7 @@ msgstr "Không tìm thấy phiếu giảm giá khi cố gắng thêm phần thư
 #. module: sale_loyalty
 #: model_terms:ir.ui.view,arch_db:sale_loyalty.sale_loyalty_reward_wizard_view_form
 msgid "Coupons & Loyalty"
-msgstr "Phiếu giảm giá & Khách hàng thân thiết"
+msgstr "Phiếu thưởng & khách hàng thân thiết"
 
 #. module: sale_loyalty
 #: model:ir.model.fields,field_description:sale_loyalty.field_sale_loyalty_coupon_wizard__create_uid
@@ -250,7 +250,7 @@ msgstr "Chương trình khách hàng thân thiết"
 #. module: sale_loyalty
 #: model:ir.model,name:sale_loyalty.model_loyalty_reward
 msgid "Loyalty Reward"
-msgstr "Phần thưởng chương trình khách hàng thân thiết"
+msgstr "Phần thưởng CT KH thân thiết"
 
 #. module: sale_loyalty
 #: model:ir.model.fields,field_description:sale_loyalty.field_sale_order__applied_coupon_ids
@@ -383,7 +383,7 @@ msgstr "Đơn bán hàng"
 #. module: sale_loyalty
 #: model:ir.model,name:sale_loyalty.model_sale_order_line
 msgid "Sales Order Line"
-msgstr "Mục đơn bán hàng"
+msgstr "Chi tiết đơn hàng"
 
 #. module: sale_loyalty
 #: model:ir.model.fields,field_description:sale_loyalty.field_sale_loyalty_reward_wizard__selected_product_id
@@ -521,5 +521,5 @@ msgid ""
 "You will find below your gift cards code. An email has been sent with it. "
 "You can use it starting right now."
 msgstr ""
-"Phía dưới là mã thẻ quà tặng của bạn. Email chứa mã thẻ đã được gửi tới bạn "
-"và bạn có thể sử dụng ngay bây giờ. "
+"Phía dưới là mã thẻ quà tặng của bạn. Một email chứa mã thẻ đã được gửi. Bạn"
+" có thể sử dụng ngay bây giờ. "
