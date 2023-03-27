@@ -1,7 +1,7 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* product
-#
+# 
 # Translators:
 # Thang Duong Bao <nothingctrl@gmail.com>, 2021
 # Roy Le <roy.le@viindoo.com>, 2021
@@ -15,7 +15,7 @@
 # Dung Nguyen Thi <dungnt@trobz.com>, 2021
 # Thin Tran <trvathin@gmail.com>, 2022
 # Vo Thanh Thuy, 2022
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
@@ -2490,11 +2490,11 @@ msgstr ""
 #. module: product
 #: model:ir.model.fields,help:product.field_product_pricelist_item__price_surcharge
 msgid ""
-"Specify the fixed amount to add or substract(if negative) to the amount "
+"Specify the fixed amount to add or subtract(if negative) to the amount "
 "calculated with the discount."
 msgstr ""
-"Xác định số tiền cố định để cộng thêm hoặc trừ đi (số âm) số tiền được tính "
-"toán với chiết khấu"
+"Xác định số tiền cố định để cộng thêm hoặc trừ đi (nếu âm) số tiền được tính "
+"toán với chiết khấu."
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_pricelist_item__price_max_margin

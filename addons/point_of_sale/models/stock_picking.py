@@ -11,8 +11,8 @@ from collections import defaultdict
 class StockPicking(models.Model):
     _inherit='stock.picking'
 
-    pos_session_id = fields.Many2one('pos.session')
-    pos_order_id = fields.Many2one('pos.order')
+    pos_session_id = fields.Many2one('pos.session', index=True)
+    pos_order_id = fields.Many2one('pos.order', index=True)
 
     def _prepare_picking_vals(self, partner, picking_type, location_id, location_dest_id):
         return {
@@ -251,7 +251,8 @@ class StockMove(models.Model):
                                 )
                             ml_vals.update({
                                 'lot_id': existing_lot.id,
-                                'location_id': quant.location_id.id or move.location_id.id
+                                'location_id': quant.location_id.id or move.location_id.id,
+                                'owner_id': quant.owner_id.id or False,
                             })
                         else:
                             ml_vals.update({'lot_name': lot.lot_name})
