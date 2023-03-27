@@ -5,16 +5,14 @@
 # Translators:
 # Martin Trigaux, 2022
 # NGUYỄN HỮU DŨNG, 2022
-# Duy BQ <duybq86@gmail.com>, 2022
 # Nancy Momoland <thanhnguyen.icsc@gmail.com>, 2022
-# Thin Tran <trvathin@gmail.com>, 2022
 # Thi Huong Nguyen, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-02 10:34+0000\n"
+"POT-Creation-Date: 2023-03-10 09:48+0000\n"
 "PO-Revision-Date: 2022-09-22 05:54+0000\n"
 "Last-Translator: Thi Huong Nguyen, 2023\n"
 "Language-Team: Vietnamese (https://www.transifex.com/odoo/teams/41243/vi/)\n"
@@ -43,13 +41,6 @@ msgstr "SL dòng"
 #: model:ir.model.fields,field_description:sale.field_payment_transaction__sale_order_ids_nbr
 msgid "# of Sales Orders"
 msgstr "SL Đơn bán"
-
-#. module: sale
-#. odoo-python
-#: code:addons/sale/models/sale_order.py:0
-#, python-format
-msgid "%(amount)s due %(date)s"
-msgstr "%(amount)s đến hạn %(date)s"
 
 #. module: sale
 #. odoo-python
@@ -1872,6 +1863,13 @@ msgstr ""
 #: model:ir.model.fields,field_description:sale.field_sale_order__validity_date
 msgid "Expiration"
 msgstr "Hết hạn"
+
+#. module: sale
+#. odoo-python
+#: code:addons/sale/models/sale_order.py:0
+#, python-format
+msgid "Expires on %(date)s"
+msgstr "Hết hạn vào %(date)s"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.view_order_product_search
@@ -4275,14 +4273,14 @@ msgid ""
 "There is nothing to invoice!\n"
 "\n"
 "Reason(s) of this behavior could be:\n"
-"- You should deliver your products before invoicing them: Click on the \"truck\" icon (top-right of your screen) and follow instructions.\n"
+"- You should deliver your products before invoicing them.\n"
 "- You should modify the invoicing policy of your product: Open the product, go to the \"Sales\" tab and modify invoicing policy from \"delivered quantities\" to \"ordered quantities\". For Services, you should modify the Service Invoicing Policy to 'Prepaid'."
 msgstr ""
 "Không có gì để xuất hóa đơn!\n"
 "\n"
 "(Các) lý do của hành vi này có thể là:\n"
-"- Bạn nên giao sản phẩm trước khi xuất hóa đơn:            Nhấp vào biểu tượng \"xe tải\" (trên cùng bên phải màn hình) và làm theo hướng dẫn.\n"
-"- Bạn nên sửa đổi chính sách xuất hóa đơn cho sản phẩm: Mở sản phẩm, đi tới tab \"Bán hàng\" và sửa đổi chính sách lập hóa đơn từ \"số lượng đã giao\" thành \"số lượng đặt hàng\". Đối với dịch vụ, bạn nên sửa đổi chính sách xuất hóa đơn dịch vụ thành 'Trả trước'."
+"- Bạn nên giao sản phẩm trước khi xuất hóa đơn.\n"
+"- Bạn nên sửa đổi chính sách xuất hóa đơn cho sản phẩm: Mở sản phẩm, đi tới tab \"Bán hàng\" và sửa đổi chính sách xuất hóa đơn từ \"số lượng đã giao\" thành \"số lượng đã đặt\". Đối với Dịch vụ, bạn nên sửa đổi Chính sách xuất hóa đơn dịch vụ thành 'Trả trước'."
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.res_config_settings_view_form
@@ -4871,6 +4869,9 @@ msgid ""
 "== 'pending') and 'Pending Order' or 'Order' }} (Ref {{ object.name or 'n/a'"
 " }})"
 msgstr ""
+"{{ object.company_id.name }} {{ (object.get_portal_last_transaction().state "
+"== 'pending') and 'Đơn đang chờ' or 'Đơn hàng' }} (Mã {{ object.name or"
+" 'không có' }})"
 
 #. module: sale
 #: model:mail.template,subject:sale.email_template_edi_sale
@@ -4879,6 +4880,9 @@ msgid ""
 "(ctx.get('proforma') and 'Proforma' or 'Quotation') or 'Order' }} (Ref {{ "
 "object.name or 'n/a' }})"
 msgstr ""
+"{{ object.company_id.name }} {{ object.state in ('draft', 'sent') and "
+"(ctx.get('proforma') and 'Hóa đơn chiếu lệ' or 'Báo giá') or 'Đơn hàng' }} "
+"(Mã {{ object.name or 'n/a' }})"
 
 #. module: sale
 #: model:mail.template,subject:sale.mail_template_sale_cancellation
@@ -4886,3 +4890,5 @@ msgid ""
 "{{ object.company_id.name }} {{ object.type_name }} Cancelled (Ref {{ "
 "object.name or 'n/a' }})"
 msgstr ""
+"{{ object.company_id.name }} {{ object.type_name }} Đã hủy (Mã {{ "
+"object.name or 'không có' }})"
