@@ -1,7 +1,7 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* hr
-#
+# 
 # Translators:
 # Thin Tran <trvathin@gmail.com>, 2022
 # Thanh Nguyễn Văn, 2022
@@ -11,7 +11,7 @@
 # Martin Trigaux, 2022
 # Nancy Momoland <thanhnguyen.icsc@gmail.com>, 2022
 # Thi Huong Nguyen, 2023
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0+e\n"
@@ -20,10 +20,10 @@ msgstr ""
 "PO-Revision-Date: 2022-09-22 05:46+0000\n"
 "Last-Translator: Thi Huong Nguyen, 2023\n"
 "Language-Team: Vietnamese (https://www.transifex.com/odoo/teams/41243/vi/)\n"
-"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
+"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: hr
@@ -87,7 +87,7 @@ msgstr ""
 #: model_terms:hr.job,website_description:hr.job_marketing
 #: model_terms:hr.job,website_description:hr.job_trainee
 msgid "12 days / year, including <br>6 of your choice."
-msgstr "12 ngày/năm, bao gồm <br/>6 ngày tự chọn."
+msgstr "12 ngày / năm, bao gồm <br/>6 ngày tự chọn."
 
 #. module: hr
 #: model_terms:hr.job,job_details:hr.job_ceo
@@ -3170,10 +3170,8 @@ msgstr "Người dùng"
 #. odoo-python
 #: code:addons/hr/models/hr_plan_activity_type.py:0
 #, python-format
-msgid "User of coach of employee %s is not set."
-msgstr ""
-"Người dùng liên kết với người huấn luyện của nhân viên %s chưa được thiết "
-"lập."
+msgid "The user of %s's coach is not set."
+msgstr "Tài khoản người dùng của người huấn luyện %s chưa được thiết lập."
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__user_partner_id
