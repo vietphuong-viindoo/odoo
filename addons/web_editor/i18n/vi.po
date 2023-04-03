@@ -3,7 +3,6 @@
 # 	* web_editor
 # 
 # Translators:
-# Martin Trigaux, 2021
 # fanha99 <fanha99@hotmail.com>, 2021
 # Minh Nguyen <ndminh210994@gmail.com>, 2021
 # Trinh Tran Thi Phuong <trinhttp@trobz.com>, 2021
@@ -12,9 +11,10 @@
 # Trần Hà <tranthuha13590@gmail.com>, 2022
 # Hoang Loc Le Huu <loclhh@gmail.com>, 2022
 # Vo Thanh Thuy, 2022
-# Nancy Momoland <thanhnguyen.icsc@gmail.com>, 2022
 # Thin Tran <trvathin@gmail.com>, 2022
 # Thi Huong Nguyen, 2022
+# Martin Trigaux, 2023
+# Nancy Momoland <thanhnguyen.icsc@gmail.com>, 2023
 # 
 msgid ""
 msgstr ""
@@ -22,7 +22,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-10 08:53+0000\n"
 "PO-Revision-Date: 2021-09-14 12:27+0000\n"
-"Last-Translator: Thi Huong Nguyen, 2022\n"
+"Last-Translator: Nancy Momoland <thanhnguyen.icsc@gmail.com>, 2023\n"
 "Language-Team: Vietnamese (https://www.transifex.com/odoo/teams/41243/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -839,7 +839,7 @@ msgstr "Hủy bỏ"
 #. module: web_editor
 #: model_terms:ir.ui.view,arch_db:web_editor.snippets
 msgid "Discard record"
-msgstr ""
+msgstr "Hủy bản ghi"
 
 #. module: web_editor
 #: model:ir.model.fields,field_description:web_editor.field_web_editor_converter_test_sub__display_name
@@ -971,6 +971,13 @@ msgstr "Nhúng hình ảnh vào tài liệu."
 #, python-format
 msgid "Embed the youtube video in the document."
 msgstr "Nhúng video YouTube vào tài liệu"
+
+#. module: web_editor
+#. openerp-web
+#: code:addons/web_editor/static/src/odoo-editor/src/OdooEditor.js:0
+#, python-format
+msgid "Empty quote"
+msgstr ""
 
 #. module: web_editor
 #. openerp-web
@@ -1202,6 +1209,27 @@ msgstr ""
 #: code:addons/web_editor/static/src/odoo-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Heading 3"
+msgstr ""
+
+#. module: web_editor
+#. openerp-web
+#: code:addons/web_editor/static/src/odoo-editor/src/OdooEditor.js:0
+#, python-format
+msgid "Heading 4"
+msgstr ""
+
+#. module: web_editor
+#. openerp-web
+#: code:addons/web_editor/static/src/odoo-editor/src/OdooEditor.js:0
+#, python-format
+msgid "Heading 5"
+msgstr ""
+
+#. module: web_editor
+#. openerp-web
+#: code:addons/web_editor/static/src/odoo-editor/src/OdooEditor.js:0
+#, python-format
+msgid "Heading 6"
 msgstr ""
 
 #. module: web_editor
@@ -1557,6 +1585,13 @@ msgstr "Liên kết đến"
 
 #. module: web_editor
 #. openerp-web
+#: code:addons/web_editor/static/src/odoo-editor/src/OdooEditor.js:0
+#, python-format
+msgid "List"
+msgstr "Danh sách"
+
+#. module: web_editor
+#. openerp-web
 #: code:addons/web_editor/static/src/xml/wysiwyg.xml:0
 #, python-format
 msgid "Load more..."
@@ -1797,13 +1832,6 @@ msgstr ""
 #: code:addons/web_editor/static/src/odoo-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Paste as URL"
-msgstr ""
-
-#. module: web_editor
-#. openerp-web
-#: code:addons/web_editor/static/src/odoo-editor/src/OdooEditor.js:0
-#, python-format
-msgid "Paste as text"
 msgstr ""
 
 #. module: web_editor
@@ -2342,13 +2370,6 @@ msgstr "Hiển thị hình ảnh đã tối ưu hóa"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/odoo-editor/src/OdooEditor.js:0
-#, python-format
-msgid "Simple text paste."
-msgstr ""
-
-#. module: web_editor
-#. openerp-web
 #: code:addons/web_editor/static/src/js/editor/snippets.options.js:0
 #: code:addons/web_editor/static/src/xml/wysiwyg.xml:0
 #: model_terms:ir.ui.view,arch_db:web_editor.colorpicker
@@ -2661,6 +2682,13 @@ msgid ""
 msgstr ""
 "Để lưu khối mẫu, chúng ta cần lưu tất cả các sửa đổi trước đó và nạp lại "
 "trang này."
+
+#. module: web_editor
+#. openerp-web
+#: code:addons/web_editor/static/src/odoo-editor/src/OdooEditor.js:0
+#, python-format
+msgid "To-do"
+msgstr ""
 
 #. module: web_editor
 #: model_terms:ir.ui.view,arch_db:web_editor.snippet_options_image_optimization_widgets
@@ -3115,14 +3143,14 @@ msgstr ""
 #: code:addons/web_editor/static/src/xml/wysiwyg.xml:0
 #, python-format
 msgid "⌙ Autoconvert to relative link"
-msgstr ""
+msgstr "⌙ Tự động chuyển đổi link tương đối"
 
 #. module: web_editor
 #. openerp-web
 #: code:addons/web_editor/static/src/xml/wysiwyg.xml:0
 #, python-format
 msgid "⌙ Border"
-msgstr ""
+msgstr "⌙ Viền"
 
 #. module: web_editor
 #: model_terms:ir.ui.view,arch_db:web_editor.snippet_options_background_options
@@ -3162,12 +3190,12 @@ msgstr "⌙ Hình ảnh"
 #: code:addons/web_editor/static/src/xml/wysiwyg.xml:0
 #, python-format
 msgid "⌙ Link Label"
-msgstr ""
+msgstr "⌙ Nhãn Link"
 
 #. module: web_editor
 #: model_terms:ir.ui.view,arch_db:web_editor.snippet_options_background_options
 msgid "⌙ Main Color"
-msgstr ""
+msgstr "⌙ Màu Chính"
 
 #. module: web_editor
 #. openerp-web
@@ -3175,7 +3203,7 @@ msgstr ""
 #: code:addons/web_editor/static/src/xml/wysiwyg.xml:0
 #, python-format
 msgid "⌙ Open in new window"
-msgstr ""
+msgstr "⌙ Mở trong cửa sổ mới"
 
 #. module: web_editor
 #: model_terms:ir.ui.view,arch_db:web_editor.snippet_options_background_options
@@ -3195,7 +3223,7 @@ msgstr "⌙ Hình dáng"
 #: code:addons/web_editor/static/src/xml/wysiwyg.xml:0
 #, python-format
 msgid "⌙ Size"
-msgstr ""
+msgstr "⌙ Kích cỡ"
 
 #. module: web_editor
 #. openerp-web
@@ -3209,7 +3237,7 @@ msgstr "⌙ Style"
 #: code:addons/web_editor/static/src/xml/wysiwyg.xml:0
 #, python-format
 msgid "⌙ Text Color"
-msgstr ""
+msgstr "⌙ Màu Chữ"
 
 #. module: web_editor
 #: model_terms:ir.ui.view,arch_db:web_editor.snippet_options_background_options
@@ -3221,4 +3249,4 @@ msgstr "⌙ Chiều rộng"
 #: code:addons/web_editor/static/src/xml/image_link_tools.xml:0
 #, python-format
 msgid "⌙ Your URL"
-msgstr ""
+msgstr "⌙ URL của bạn"

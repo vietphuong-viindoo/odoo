@@ -133,7 +133,6 @@ class TestPointOfSaleFlow(TestPointOfSaleCommon):
             'partner_id': self.partner1.id,
             'lines': [(0, 0, {
                 'name': "OL/0001",
-                'id': 1,
                 'product_id': self.product2.id,
                 'price_unit': 6,
                 'discount': 0,
@@ -619,7 +618,6 @@ class TestPointOfSaleFlow(TestPointOfSaleCommon):
            'lines': [[0,
              0,
              {'discount': 0,
-              'id': 42,
               'pack_lot_ids': [],
               'price_unit': 0.9,
               'product_id': self.led_lamp.id,
@@ -638,7 +636,6 @@ class TestPointOfSaleFlow(TestPointOfSaleCommon):
               'payment_method_id': self.cash_payment_method.id}]],
            'uid': '00042-003-0014',
            'user_id': self.env.uid},
-          'id': '00042-003-0014',
           'to_invoice': False}
 
         untax, atax = self.compute_tax(self.whiteboard_pen, 1.2)
@@ -653,7 +650,6 @@ class TestPointOfSaleFlow(TestPointOfSaleCommon):
            'lines': [[0,
              0,
              {'discount': 0,
-              'id': 3,
               'pack_lot_ids': [],
               'price_unit': 1.2,
               'product_id': self.whiteboard_pen.id,
@@ -672,7 +668,6 @@ class TestPointOfSaleFlow(TestPointOfSaleCommon):
               'payment_method_id': self.credit_payment_method.id}]],
            'uid': '00043-003-0014',
            'user_id': self.env.uid},
-          'id': '00043-003-0014',
           'to_invoice': False}
 
         untax, atax = self.compute_tax(self.newspaper_rack, 1.28)
@@ -687,7 +682,6 @@ class TestPointOfSaleFlow(TestPointOfSaleCommon):
            'lines': [[0,
              0,
              {'discount': 0,
-              'id': 3,
               'pack_lot_ids': [],
               'price_unit': 1.28,
               'product_id': self.newspaper_rack.id,
@@ -706,7 +700,6 @@ class TestPointOfSaleFlow(TestPointOfSaleCommon):
               'payment_method_id': self.bank_payment_method.id}]],
            'uid': '00044-003-0014',
            'user_id': self.env.uid},
-          'id': '00044-003-0014',
           'to_invoice': False}
 
         # I create an order on an open session
@@ -973,7 +966,6 @@ class TestPointOfSaleFlow(TestPointOfSaleCommon):
            'lines': [[0,
              0,
              {'discount': 0,
-              'id': 42,
               'pack_lot_ids': [],
               'price_unit': 10.0,
               'product_id': product5.id,
@@ -992,7 +984,6 @@ class TestPointOfSaleFlow(TestPointOfSaleCommon):
               'payment_method_id': self.cash_payment_method.id}]],
            'uid': '12345-123-1234',
            'user_id': self.env.uid},
-          'id': '12345-123-1234',
           'to_invoice': False}
         self.PosOrder.create_from_ui([product5_order])
 
@@ -1093,7 +1084,6 @@ class TestPointOfSaleFlow(TestPointOfSaleCommon):
            'pricelist_id': self.pos_config.available_pricelist_ids[0].id,
            'lines': [[0, 0, {
                 'discount': 0,
-                'id': 42,
                 'pack_lot_ids': [],
                 'price_unit': 750.0,
                 'product_id': product5.id,
@@ -1142,7 +1132,6 @@ class TestPointOfSaleFlow(TestPointOfSaleCommon):
            'pricelist_id': self.pos_config.available_pricelist_ids[0].id,
            'lines': [[0, 0, {
                 'discount': 0,
-                'id': 42,
                 'pack_lot_ids': [],
                 'price_unit': 750.0,
                 'product_id': self.product3.id,
@@ -1201,7 +1190,6 @@ class TestPointOfSaleFlow(TestPointOfSaleCommon):
             'partner_id': self.partner1.id,
             'lines': [(0, 0, {
                 'name': "OL/0001",
-                'id': 1,
                 'product_id': self.product2.id,
                 'price_unit': 6,
                 'discount': 0,
@@ -1210,7 +1198,7 @@ class TestPointOfSaleFlow(TestPointOfSaleCommon):
                 'price_subtotal': 6,
                 'price_subtotal_incl': 6,
             })],
-            'pricelist_id': 1,
+            'pricelist_id': self.pos_config.pricelist_id.id,
             'amount_paid': 6.0,
             'amount_total': 6.0,
             'amount_tax': 0.0,
@@ -1263,6 +1251,36 @@ class TestPointOfSaleFlow(TestPointOfSaleCommon):
         #create a new pos order with the product
         self.pos_config.open_session_cb(check_coa=False)
         current_session = self.pos_config.current_session_id
+        order = self.PosOrder.create({
+            'company_id': self.env.company.id,
+            'session_id': current_session.id,
+            'partner_id': self.partner1.id,
+            'pricelist_id': self.partner1.property_product_pricelist.id,
+            'lines': [(0, 0, {
+                'name': "OL/0001",
+                'product_id': product.id,
+                'price_unit': 10,
+                'discount': 0.0,
+                'qty': 1,
+                'tax_ids': [],
+                'price_subtotal': 10,
+                'price_subtotal_incl': 10,
+            })],
+            'amount_total': 10,
+            'amount_tax': 0.0,
+            'amount_paid': 10,
+            'amount_return': 0.0,
+            'to_invoice': True
+        })
+        #create a payment
+        payment_context = {"active_ids": order.ids, "active_id": order.id}
+        order_payment = self.PosMakePayment.with_context(**payment_context).create({
+            'amount': order.amount_total,
+            'payment_method_id': self.cash_payment_method.id
+        })
+        order_payment.with_context(**payment_context).check()
+        current_session.action_pos_session_closing_control()
+        self.assertEqual(current_session.move_id.line_ids[0].account_id.id, account.id)
 
     def test_tracked_product_with_owner(self):
         # open pos session
@@ -1295,7 +1313,6 @@ class TestPointOfSaleFlow(TestPointOfSaleCommon):
             'partner_id': self.partner1.id,
             'lines': [(0, 0, {
                 'name': "OL/0001",
-                'id': 1,
                 'product_id': self.product2.id,
                 'price_unit': 6,
                 'discount': 0,
@@ -1307,7 +1324,7 @@ class TestPointOfSaleFlow(TestPointOfSaleCommon):
                     [0, 0, {'lot_name': '1001'}],
                 ]
             })],
-            'pricelist_id': 1,
+            'pricelist_id': self.pos_config.pricelist_id.id,
             'amount_paid': 6.0,
             'amount_total': 6.0,
             'amount_tax': 0.0,
