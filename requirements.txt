@@ -52,4 +52,5 @@ phonenumbers
 gengo
 pdfminer.six==20201018
 websocket-client
-geoip2
+geoip2==4.6.0
+aiohttp==3.8.4
