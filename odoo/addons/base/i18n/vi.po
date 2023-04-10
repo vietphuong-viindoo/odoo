@@ -16894,7 +16894,7 @@ msgstr "Điều chỉnh bản dịch"
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_P
 msgid "Education"
-msgstr "Trình độ"
+msgstr "Giáo dục"
 
 #. module: base
 #: model:res.country,name:base.eg
@@ -27890,7 +27890,7 @@ msgstr "Công cộng"
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_O
 msgid "Public Administration"
-msgstr "Công khai tài khoản quản trị"
+msgstr "Hành chính công"
 
 #. module: base
 #: model:res.groups,comment:base.group_public
@@ -28259,7 +28259,7 @@ msgstr "Trường Qweb many2many"
 #. module: base
 #: model:res.partner.industry,full_name:base.res_partner_industry_R
 msgid "R ARTS, ENTERTAINMENT AND RECREATION"
-msgstr "R ARTS, GIẢI TRÍ VÀ KIỂM TRA"
+msgstr "R NGHỆ THUẬT, VUI CHƠI VÀ GIẢI TRÍ"
 
 #. module: base
 #: model:res.country,vat_label:base.mx
