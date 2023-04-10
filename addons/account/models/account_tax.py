@@ -377,7 +377,7 @@ class AccountTax(models.Model):
 
         # We first need to find out whether this tax computation is made for a refund
         tax_type = self and self[0].type_tax_use
-        is_refund = is_refund or (tax_type == 'sale' and price_unit < 0) or (tax_type == 'purchase' and price_unit > 0)
+        is_refund = is_refund or (tax_type == 'sale' and price_unit > 0) or (tax_type == 'purchase' and price_unit < 0)
 
         rslt = self.with_context(caba_no_transition_account=True)\
                    .compute_all(price_unit, currency=currency_id, quantity=quantity, product=product_id, partner=partner_id, is_refund=is_refund, include_caba_tags=include_caba_tags)
@@ -1152,7 +1152,7 @@ class AccountTax(models.Model):
                 matched_tax_lines = [
                     x
                     for x in tax_lines
-                    if (x['group_tax'] or x['tax_repartition_line'].tax_id).tax_group_id == tax_detail['tax_group']
+                    if x['tax_repartition_line'].tax_id.tax_group_id == tax_detail['tax_group']
                 ]
                 if matched_tax_lines:
                     tax_group_vals['tax_amount'] = sum(x['tax_amount'] for x in matched_tax_lines)
