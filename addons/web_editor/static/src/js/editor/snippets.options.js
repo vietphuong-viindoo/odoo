@@ -4366,8 +4366,8 @@ registry.sizing = SnippetOptionWidget.extend({
                 return;
             }
 
-            // If we are in grid mode, add a background grid and place the
-            // element we are resizing in front of it.
+            // If we are in grid mode, add a background grid and place it in
+            // front of the other elements.
             const rowEl = self.$target[0].parentNode;
             let backgroundGridEl;
             if (rowEl.classList.contains('o_grid_mode')) {
@@ -5254,12 +5254,15 @@ registry.layout_column = SnippetOptionWidget.extend({
             gridUtils._reloadLazyImages(columnEl);
 
             // Removing the grid properties.
-            columnEl.classList.remove('o_grid_item', 'o_grid_item_image', 'o_grid_item_image_contain');
+            const gridSizeClasses = columnEl.className.match(/(g-col-lg|g-height)-[0-9]+/g);
+            columnEl.classList.remove('o_grid_item', 'o_grid_item_image', 'o_grid_item_image_contain', ...gridSizeClasses);
             columnEl.style.removeProperty('grid-area');
             columnEl.style.removeProperty('z-index');
         }
         // Removing the grid properties.
         delete rowEl.dataset.rowCount;
+        rowEl.style.removeProperty('--grid-item-padding-x');
+        rowEl.style.removeProperty('--grid-item-padding-y');
     },
     /**
      * Removes the padding highlights that were added when changing the grid
@@ -6061,7 +6064,7 @@ registry.ImageTools = ImageHandlerOption.extend({
         const [module, directory, fileName] = shapeName.split('/');
         let shape = this.shapeCache[fileName];
         if (!shape) {
-            const shapeURL = `/${module}/static/image_shapes/${directory}/${fileName}.svg`;
+            const shapeURL = `/${encodeURIComponent(module)}/static/image_shapes/${encodeURIComponent(directory)}/${encodeURIComponent(fileName)}.svg`;
             shape = await (await fetch(shapeURL)).text();
             this.shapeCache[fileName] = shape;
         }
@@ -6267,7 +6270,7 @@ registry.ImageTools = ImageHandlerOption.extend({
         uiFragment.querySelectorAll('we-select-page we-button[data-set-img-shape]').forEach(btn => {
             const image = document.createElement('img');
             const [moduleName, directory, shapeName] = btn.dataset.setImgShape.split('/');
-            image.src = `/${moduleName}/static/image_shapes/${directory}/${shapeName}.svg`;
+            image.src = `/${encodeURIComponent(moduleName)}/static/image_shapes/${encodeURIComponent(directory)}/${encodeURIComponent(shapeName)}.svg`;
             $(btn).prepend(image);
 
             if (btn.dataset.animated) {
@@ -6314,7 +6317,7 @@ registry.ImageTools = ImageHandlerOption.extend({
                 // attribute.
                 match = match.slice(0, -12);
             }
-            return this._loadImageInfo(`/web/image/${match}`);
+            return this._loadImageInfo(`/web/image/${encodeURIComponent(match)}`);
         }
         return this._super(...arguments);
     },
@@ -6758,6 +6761,13 @@ registry.BackgroundShape = SnippetOptionWidget.extend({
      */
     onBuilt() {
         this._patchShape(this.$target[0]);
+        // Flip classes should no longer be used but are still present in some
+        // theme snippets.
+        if (this.$target[0].querySelector('.o_we_flip_x, .o_we_flip_y')) {
+            this._handlePreviewState(false, () => {
+                return {flip: this._getShapeData().flip};
+            });
+        }
     },
 
     //--------------------------------------------------------------------------
@@ -6773,18 +6783,6 @@ registry.BackgroundShape = SnippetOptionWidget.extend({
             return this._rerenderXML();
         }
         return this._super.apply(this, arguments);
-    },
-    /**
-     * @override
-     */
-    onBuilt() {
-        // Flip classes should no longer be used but are still present in some
-        // theme snippets.
-        if (this.$target[0].querySelector('.o_we_flip_x, .o_we_flip_y')) {
-            this._handlePreviewState(false, () => {
-                return {flip: this._getShapeData().flip};
-            });
-        }
     },
 
     //--------------------------------------------------------------------------
@@ -7077,9 +7075,9 @@ registry.BackgroundShape = SnippetOptionWidget.extend({
                 return `${colorName}=${encodedCol}`;
             });
         if (flip.length) {
-            searchParams.push(`flip=${flip.sort().join('')}`);
+            searchParams.push(`flip=${encodeURIComponent(flip.sort().join(''))}`);
         }
-        return `/web_editor/shape/${shape}.svg?${searchParams.join('&')}`;
+        return `/web_editor/shape/${encodeURIComponent(shape)}.svg?${searchParams.join('&')}`;
     },
     /**
      * Retrieves current shape data from the target's dataset.
