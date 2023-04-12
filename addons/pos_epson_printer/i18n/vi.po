@@ -29,7 +29,7 @@ msgstr "Két tiền"
 #. module: pos_epson_printer
 #: model:ir.model,name:pos_epson_printer.model_res_config_settings
 msgid "Config Settings"
-msgstr "Cấu hình"
+msgstr "Thiết lập Cấu hình"
 
 #. module: pos_epson_printer
 #. openerp-web
@@ -39,6 +39,8 @@ msgid ""
 "Check on the printer configuration for the 'Device ID' setting. It should be"
 " set to: "
 msgstr ""
+"Kiểm tra cấu hình máy in để biết cài đặt 'ID thiết bị'. Cài đặt này phải được"
+" đặt thành: "
 
 #. module: pos_epson_printer
 #. openerp-web
@@ -107,7 +109,7 @@ msgstr "Cấu hình điểm bán lẻ"
 #. module: pos_epson_printer
 #: model:ir.model.fields,field_description:pos_epson_printer.field_res_config_settings__pos_epson_printer_ip
 msgid "Pos Epson Printer Ip"
-msgstr ""
+msgstr "Địa chỉ Máy in Pos Epson"
 
 #. module: pos_epson_printer
 #. openerp-web
@@ -131,18 +133,18 @@ msgstr ""
 #: code:addons/pos_epson_printer/static/src/js/printers.js:0
 #, python-format
 msgid "The following error code was given by the printer:"
-msgstr ""
+msgstr "Mã lỗi sau do máy in đưa ra:"
 
 #. module: pos_epson_printer
 #. openerp-web
 #: code:addons/pos_epson_printer/static/src/js/printers.js:0
 #, python-format
 msgid "The printer was successfully reached, but it wasn't able to print."
-msgstr ""
+msgstr "Máy in đã được truy cập thành công, nhưng nó không thể in."
 
 #. module: pos_epson_printer
 #. openerp-web
 #: code:addons/pos_epson_printer/static/src/js/printers.js:0
 #, python-format
 msgid "To find more details on the error reason, please search online for:"
-msgstr ""
+msgstr "Để biết thêm chi tiết về lý do lỗi, vui lòng tìm kiếm trực tuyến cho:"

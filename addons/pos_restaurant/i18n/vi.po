@@ -95,7 +95,7 @@ msgstr "Thêm nút"
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.res_config_settings_view_form
 msgid "Add internal notes on order lines for the kitchen"
-msgstr ""
+msgstr "Thêm ghi chú nội bộ trên các dòng đặt hàng cho nhà bếp"
 
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.res_config_settings_view_form
@@ -122,7 +122,7 @@ msgstr ""
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.res_config_settings_view_form
 msgid "Allow Bill Splitting"
-msgstr ""
+msgstr "Cho phép Tách Hóa đơn"
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_pos_config__iface_orderline_notes
@@ -132,7 +132,7 @@ msgstr "Cho phép ghi chú nội bộ tùy chỉnh trong dòng đơn hàng. "
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.res_config_settings_view_form
 msgid "Allow to print receipt before payment"
-msgstr ""
+msgstr "Cho phép in hóa đơn trước khi thanh toán"
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_pos_config__iface_printbill
@@ -233,7 +233,7 @@ msgstr "Tách Bill"
 #: code:addons/pos_restaurant/static/src/js/Screens/ProductScreen/ControlButtons/TableGuestsButton.js:0
 #, python-format
 msgid "Blocked action"
-msgstr ""
+msgstr "Hành động bị chặn"
 
 #. module: pos_restaurant
 #. odoo-javascript
@@ -297,7 +297,7 @@ msgstr "Màu sắc"
 #. module: pos_restaurant
 #: model:ir.model,name:pos_restaurant.model_res_config_settings
 msgid "Config Settings"
-msgstr "Cấu hình"
+msgstr "Thiết lập Cấu hình"
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_floor__create_uid
@@ -343,7 +343,7 @@ msgstr "Đồ uống"
 #: code:addons/pos_restaurant/static/src/js/ChromeWidgets/TicketButton.js:0
 #, python-format
 msgid "Due to a connection error, the orders are not synchronized."
-msgstr ""
+msgstr "Do lỗi kết nối nên các đơn hàng không được đồng bộ."
 
 #. module: pos_restaurant
 #. odoo-javascript
@@ -369,7 +369,7 @@ msgstr ""
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.res_config_settings_view_form
 msgid "Early Receipt Printing"
-msgstr ""
+msgstr "In Hóa đơn Sớm"
 
 #. module: pos_restaurant
 #. odoo-javascript
@@ -389,7 +389,7 @@ msgstr "Kích hoạt tính năng Tách Biên lai ở Điểm bán lẻ"
 #: code:addons/pos_restaurant/static/src/js/Screens/ProductScreen/ControlButtons/SubmitOrderButton.js:0
 #, python-format
 msgid "Failed in printing the changes in the order"
-msgstr ""
+msgstr "Không thể in các thay đổi trong đơn đặt hàng"
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_table__floor_id
@@ -422,12 +422,12 @@ msgstr "Các Sàn"
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_pos_config__is_table_management
 msgid "Floors & Tables"
-msgstr "Floors & Tables"
+msgstr "Các Sàn & Các Bàn"
 
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.res_config_settings_view_form
 msgid "Floors & Tables Map"
-msgstr ""
+msgstr "Sơ đồ Sàn & Bàn"
 
 #. module: pos_restaurant
 #: model:pos.category,name:pos_restaurant.food
@@ -547,12 +547,12 @@ msgstr "Tiếp tục mở"
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.res_config_settings_view_form
 msgid "Kitchen Notes"
-msgstr ""
+msgstr "Ghi chú Nhà bếp"
 
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.res_config_settings_view_form
 msgid "Kitchen Printers"
-msgstr ""
+msgstr "Máy in Nhà bếp"
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_floor____last_update
@@ -578,7 +578,7 @@ msgstr "Cập nhật lần cuối"
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_pos_order__multiprint_resume
 msgid "Last printed state of the order"
-msgstr ""
+msgstr "Trạng thái in cuối cùng của đơn đặt hàng"
 
 #. module: pos_restaurant
 #. odoo-javascript
@@ -630,7 +630,7 @@ msgstr "Bánh kẹp Mozzarella "
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_pos_order__multiprint_resume
 msgid "Multiprint Resume"
-msgstr "Multiprint Resume"
+msgstr "Sơ yếu lý lịch in nhiều lần"
 
 #. module: pos_restaurant
 #. odoo-javascript
@@ -804,32 +804,32 @@ msgstr "Phiên bán hàng"
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_res_config_settings__pos_iface_orderline_notes
 msgid "Pos Iface Orderline Notes"
-msgstr ""
+msgstr "Ghi chú dòng Đặt hàng Pos Iface"
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_res_config_settings__pos_iface_printbill
 msgid "Pos Iface Printbill"
-msgstr ""
+msgstr "Hóa đơn in Pos Iface"
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_res_config_settings__pos_iface_splitbill
 msgid "Pos Iface Splitbill"
-msgstr ""
+msgstr "Giao diện Pos Tách bill"
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_res_config_settings__pos_is_order_printer
 msgid "Pos Is Order Printer"
-msgstr ""
+msgstr "Pos là Máy in Đặt hàng"
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_res_config_settings__pos_is_table_management
 msgid "Pos Is Table Management"
-msgstr ""
+msgstr "Pos là Bảng Quản lý"
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_res_config_settings__pos_set_tip_after_payment
 msgid "Pos Set Tip After Payment"
-msgstr ""
+msgstr "Pos Thiết lập Tip Sau khi Thanh toán"
 
 #. module: pos_restaurant
 #. odoo-javascript
@@ -939,7 +939,7 @@ msgstr "In lại biên lai"
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.res_config_settings_view_form
 msgid "Restaurant &amp; Bar"
-msgstr ""
+msgstr "Nhà hàng &amp; Bar"
 
 #. module: pos_restaurant
 #: model:ir.model,name:pos_restaurant.model_restaurant_floor
@@ -1130,7 +1130,7 @@ msgstr "ĐT:"
 #: code:addons/pos_restaurant/models/pos_restaurant.py:0
 #, python-format
 msgid "The %s is already used in another Pos Config."
-msgstr ""
+msgstr "%s đã được sử dụng trong một Cấu hình Pos khác."
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_printer__proxy_ip
@@ -1145,7 +1145,7 @@ msgstr "Số lượng khách hàng mà được phục vụ bởi đơn hàng n�
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_floor__background_color
 msgid "The background color of the floor in a html-compatible format"
-msgstr ""
+msgstr "Màu nền của sàn ở định dạng tương thích với html"
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_table__seats
@@ -1301,7 +1301,7 @@ msgstr "Không thể xóa bàn"
 #: code:addons/pos_restaurant/static/src/js/Screens/FloorScreen/FloorScreen.js:0
 #, python-format
 msgid "Unable to fetch orders"
-msgstr ""
+msgstr "Không thể tìm nạp đơn đặt hàng"
 
 #. module: pos_restaurant
 #. odoo-javascript
@@ -1378,7 +1378,7 @@ msgstr "Vàng"
 #: code:addons/pos_restaurant/static/src/js/Screens/ProductScreen/ControlButtons/TableGuestsButton.js:0
 #, python-format
 msgid "You cannot put a number that exceeds %s "
-msgstr ""
+msgstr "Bạn không thể đặt một số vượt quá %s "
 
 #. module: pos_restaurant
 #. odoo-python
@@ -1449,4 +1449,4 @@ msgstr "chiết khấu"
 #: code:addons/pos_restaurant/models/pos_config.py:0
 #, python-format
 msgid "Cash Bar"
-msgstr ""
+msgstr "Quầy Thanh toán"

@@ -23,7 +23,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:pos_hr.pos_config_form_view_inherit
 #: model_terms:ir.ui.view,arch_db:pos_hr.res_config_settings_view_form
 msgid "Allowed Employees"
-msgstr ""
+msgstr "Nhân viên được phép"
 
 #. module: pos_hr
 #: model:ir.model.fields,field_description:pos_hr.field_pos_order__cashier
@@ -42,7 +42,7 @@ msgstr "Đổi thu ngân"
 #. module: pos_hr
 #: model:ir.model,name:pos_hr.model_res_config_settings
 msgid "Config Settings"
-msgstr "Cấu hình"
+msgstr "Thiết lập Cấu hình"
 
 #. module: pos_hr
 #: model:ir.model,name:pos_hr.model_hr_employee
@@ -53,6 +53,7 @@ msgid "Employee"
 msgstr "Nhân viên"
 
 #. module: pos_hr
+#. odoo-python
 #: code:addons/pos_hr/models/hr_employee.py:0
 #, python-format
 msgid "Employee: %s - PoS Config(s): %s \n"
@@ -135,6 +136,7 @@ msgid "Select Cashier"
 msgstr "Chọn Thu ngân"
 
 #. module: pos_hr
+#. odoo-python
 #: code:addons/pos_hr/models/hr_employee.py:0
 #, python-format
 msgid ""
