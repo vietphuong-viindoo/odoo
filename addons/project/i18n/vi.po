@@ -1846,7 +1846,7 @@ msgstr "Tên Hiển thị"
 #: model:ir.model.fields,field_description:project.field_project_task__display_project_id
 #: model:ir.model.fields,field_description:project.field_project_task_burndown_chart_report__display_project_id
 msgid "Display Project"
-msgstr "Hiển thị Dự án"
+msgstr "Dự án Hiển thị"
 
 #. module: project
 #: code:addons/project/models/digest.py:0
