@@ -2012,10 +2012,8 @@ export class OdooEditor extends EventTarget {
                 this.historyRevertUntil(this._beforeCommandbarStepIndex);
                 this.historyStep(true);
                 this._historyStepsStates.set(peek(this._historySteps).id, 'consumed');
-                setTimeout(() => {
-                    this.editable.focus();
-                    getDeepRange(this.editable, { select: true });
-                });
+                this.editable.focus();
+                getDeepRange(this.editable, { select: true });
             },
             postValidate: () => {
                 this.historyStep(true);
@@ -3227,10 +3225,15 @@ export class OdooEditor extends EventTarget {
             link.remove();
             setSelection(...start, ...start, false);
         }
-        if (files.length && targetSupportsHtmlContent) {
-            this.addImagesFiles(files).then(html => this._applyCommand('insertHTML', this._prepareClipboardData(html)));
-        } else if (clipboardHtml && targetSupportsHtmlContent) {
-            this._applyCommand('insertHTML', this._prepareClipboardData(clipboardHtml));
+        if ((files.length || clipboardHtml) && targetSupportsHtmlContent) {
+            // Differentiate or choose between images and html
+            const clipboardElem = document.createElement('template');
+            clipboardElem.innerHTML = this._prepareClipboardData(clipboardHtml);
+            if (files.length && !clipboardElem.content.querySelector('table')) {
+                this.addImagesFiles(files).then(html => this._applyCommand('insertHTML', this._prepareClipboardData(html)));
+            } else {
+                this._applyCommand('insertHTML', clipboardElem.content);
+            }
         } else {
             const text = ev.clipboardData.getData('text/plain');
             const splitAroundUrl = text.split(URL_REGEX);

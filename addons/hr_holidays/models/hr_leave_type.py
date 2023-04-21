@@ -148,7 +148,7 @@ class HolidaysType(models.Model):
         date_from = self._context.get('default_date_from', fields.Datetime.today())
         employee_id = self._context.get('default_employee_id', self._context.get('employee_id', self.env.user.employee_id.id))
         for holiday_type in self:
-            if holiday_type.requires_allocation:
+            if holiday_type.requires_allocation == 'yes':
                 allocation = self.env['hr.leave.allocation'].search([
                     ('holiday_status_id', '=', holiday_type.id),
                     ('employee_id', '=', employee_id),
@@ -350,17 +350,17 @@ class HolidaysType(models.Model):
                 for future_allocation_interval in future_allocation_intervals._items:
                     if future_allocation_interval[0].date() > search_date:
                         continue
+                    employee_quantity_available = future_allocation_interval[2].employee_id._get_work_days_data_batch(
+                        future_allocation_interval[0],
+                        future_allocation_interval[1],
+                        compute_leaves=False,
+                        domain=company_domain)[employee_id]
                     for allocation in future_allocation_interval[2]:
                         if not allocation.active or allocation.date_from > search_date:
                             continue
                         days_consumed = allocations_days_consumed[employee_id][holiday_status_id][allocation]
                         if future_allocation_interval[1] != fields.datetime.combine(date, time.max) + timedelta(days=5*365):
-                            # Compute the remaining number of days/hours in the allocation only if it has an end date
-                            quantity_available = allocation.employee_id._get_work_days_data_batch(
-                                future_allocation_interval[0],
-                                future_allocation_interval[1],
-                                compute_leaves=False,
-                                domain=company_domain)[employee_id]
+                            quantity_available = employee_quantity_available
                         else:
                             # If no end date to the allocation, consider the number of days remaining as infinite
                             quantity_available = {'days': float('inf'), 'hours': float('inf')}
