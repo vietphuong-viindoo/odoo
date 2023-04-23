@@ -14,7 +14,7 @@ msgstr ""
 "POT-Creation-Date: 2022-12-15 12:49+0000\n"
 "PO-Revision-Date: 2022-09-22 05:54+0000\n"
 "Last-Translator: Thi Huong Nguyen, 2023\n"
-"Language-Team: Vietnamese (https://www.transifex.com/odoo/teams/41243/vi/)\n"
+"Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -54,7 +54,7 @@ msgstr "15% trên đơn hàng của bạn"
 #: code:addons/pos_loyalty/static/src/js/Loyalty.js:0
 #, python-format
 msgid "A better global discount is already applied."
-msgstr "Chiết khấu tốt hơn đã được áp dụng."
+msgstr "Chiết khấu hấp dẫn hơn đã được áp dụng."
 
 #. module: pos_loyalty
 #: model:ir.model.fields,help:pos_loyalty.field_loyalty_rule__promo_barcode
@@ -77,7 +77,7 @@ msgstr "Phiếu giảm giá Đang hoạt động"
 #: code:addons/pos_loyalty/static/src/xml/OrderWidget.xml:0
 #, python-format
 msgid "Active Programs"
-msgstr "Chương trình đang hoạt động"
+msgstr "Chương trình đang diễn ra"
 
 #. module: pos_loyalty
 #. odoo-javascript
@@ -175,7 +175,7 @@ msgstr "Hủy phần thưởng"
 #: model:ir.model.fields,help:pos_loyalty.field_pos_config__gift_card_settings
 #: model:ir.model.fields,help:pos_loyalty.field_res_config_settings__pos_gift_card_settings
 msgid "Defines the way you want to set your gift cards."
-msgstr "Xác định cách bạn muốn cài đặt thẻ quà tặng. "
+msgstr "Xác định cách bạn muốn thiết lập thẻ quà tặng. "
 
 #. module: pos_loyalty
 #: model:ir.ui.menu,name:pos_loyalty.menu_discount_loyalty_type_config
@@ -233,7 +233,7 @@ msgstr "Tạo thẻ Quà tặng"
 #: model:ir.model.fields,field_description:pos_loyalty.field_pos_config__gift_card_settings
 #: model:ir.model.fields,field_description:pos_loyalty.field_res_config_settings__pos_gift_card_settings
 msgid "Gift Cards settings"
-msgstr "Cài đặt thẻ quà tặng"
+msgstr "Thiết lập thẻ quà tặng"
 
 #. module: pos_loyalty
 #. odoo-javascript
@@ -299,7 +299,7 @@ msgstr "Phiếu giảm giá khách hàng thân thiết"
 #. module: pos_loyalty
 #: model:loyalty.program,portal_point_name:pos_loyalty.loyalty_program
 msgid "Loyalty Points"
-msgstr "Điểm CT KH thân thiết"
+msgstr "Điểm khách hàng thân thiết"
 
 #. module: pos_loyalty
 #: model:ir.model,name:pos_loyalty.model_loyalty_program
@@ -310,12 +310,12 @@ msgstr "Chương trình khách hàng thân thiết"
 #. module: pos_loyalty
 #: model:ir.model,name:pos_loyalty.model_loyalty_reward
 msgid "Loyalty Reward"
-msgstr "Phần thưởng CT KH thân thiết"
+msgstr "Phần thưởng khách hàng thân thiết"
 
 #. module: pos_loyalty
 #: model:ir.model,name:pos_loyalty.model_loyalty_rule
 msgid "Loyalty Rule"
-msgstr "Quy tắc CT KH thân thiết"
+msgstr "Quy tắc khách hàng thân thiết"
 
 #. module: pos_loyalty
 #. odoo-javascript
@@ -350,7 +350,7 @@ msgstr "Vui lòng chọn một sản phẩm cho phần thưởng này"
 #: code:addons/pos_loyalty/static/src/js/ControlButtons/RewardButton.js:0
 #, python-format
 msgid "Please select a reward"
-msgstr "Vui lòng chọn 1 phần thưởng"
+msgstr "Vui lòng chọn một phần thưởng"
 
 #. module: pos_loyalty
 #: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_program__pos_order_count
@@ -367,7 +367,7 @@ msgstr "Tham chiếu đơn hàng POS"
 #: code:addons/pos_loyalty/models/loyalty_program.py:0
 #, python-format
 msgid "PoS Orders"
-msgstr "Các đơn hàng POS"
+msgstr "Đơn hàng POS"
 
 #. module: pos_loyalty
 #: model:ir.model.fields,help:pos_loyalty.field_loyalty_card__source_pos_order_id
@@ -388,17 +388,17 @@ msgstr "Cấu hình điểm bán lẻ"
 #. module: pos_loyalty
 #: model:ir.model,name:pos_loyalty.model_pos_order_line
 msgid "Point of Sale Order Lines"
-msgstr "Chi tiết đơn hàng bán lẻ"
+msgstr "Chi tiết đơn hàng điểm bán lẻ"
 
 #. module: pos_loyalty
 #: model:ir.model,name:pos_loyalty.model_pos_order
 msgid "Point of Sale Orders"
-msgstr "Đơn bán lẻ"
+msgstr "Đơn hàng điểm bán lẻ"
 
 #. module: pos_loyalty
 #: model:ir.model,name:pos_loyalty.model_pos_session
 msgid "Point of Sale Session"
-msgstr "Phiên bán hàng"
+msgstr "Phiên POS"
 
 #. module: pos_loyalty
 #: model:ir.model.fields,field_description:pos_loyalty.field_loyalty_program__pos_config_ids
@@ -472,7 +472,7 @@ msgstr "Hạn chế xuất bản cho các cửa hàng đó."
 #: model:ir.model.fields,field_description:pos_loyalty.field_pos_order_line__reward_id
 #, python-format
 msgid "Reward"
-msgstr "Thưởng"
+msgstr "Phần thưởng"
 
 #. module: pos_loyalty
 #: model:ir.model.fields,field_description:pos_loyalty.field_pos_order_line__reward_identifier_code
@@ -789,4 +789,4 @@ msgstr "Ví điện tử yêu cầu khách hàng lựa chọn"
 #: code:addons/pos_loyalty/static/src/xml/OrderReceipt.xml:0
 #, python-format
 msgid "no expiration"
-msgstr "không có hạn"
+msgstr "không có thời hạn"
