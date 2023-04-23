@@ -1,9 +1,10 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* base_geolocalize
-#
+# 
 # Translators:
 # Martin Trigaux, 2022
+# Thi Huong Nguyen, 2023
 #
 msgid ""
 msgstr ""
@@ -11,7 +12,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-20 09:01+0000\n"
 "PO-Revision-Date: 2022-09-22 05:45+0000\n"
-"Last-Translator: Martin Trigaux, 2022\n"
+"Last-Translator: Thi Huong Nguyen, 2023\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,7 +32,7 @@ msgid ""
 "API key for GeoCoding (Places) required.\n"
 "Visit https://developers.google.com/maps/documentation/geocoding/get-api-key for more information."
 msgstr ""
-"Yêu cầu có mã API cho GeoCoding (địa điểm).\n"
+"Yêu cầu có mã API cho GeoCoding (Places).\n"
 "Truy cập trang https://developers.google.com/maps/documentation/geocoding/get-api-key để biết thêm chi tiết."
 
 #. module: base_geolocalize
@@ -42,12 +43,12 @@ msgstr "API:"
 #. module: base_geolocalize
 #: model_terms:ir.ui.view,arch_db:base_geolocalize.view_crm_partner_geo_form
 msgid "Compute Localization"
-msgstr ""
+msgstr "Tính toán bản địa hóa"
 
 #. module: base_geolocalize
 #: model_terms:ir.ui.view,arch_db:base_geolocalize.view_crm_partner_geo_form
 msgid "Compute based on address"
-msgstr ""
+msgstr "Tính toán dựa trên địa chỉ"
 
 #. module: base_geolocalize
 #: model:ir.model,name:base_geolocalize.model_res_config_settings
@@ -139,12 +140,12 @@ msgstr "Cập nhật lần cuối"
 #. module: base_geolocalize
 #: model_terms:ir.ui.view,arch_db:base_geolocalize.view_crm_partner_geo_form
 msgid "Lat :"
-msgstr ""
+msgstr "Vĩ độ:"
 
 #. module: base_geolocalize
 #: model_terms:ir.ui.view,arch_db:base_geolocalize.view_crm_partner_geo_form
 msgid "Long:"
-msgstr ""
+msgstr "Kinh độ:"
 
 #. module: base_geolocalize
 #: model:ir.model.fields,field_description:base_geolocalize.field_base_geo_provider__name
@@ -171,7 +172,7 @@ msgstr "Nhà cung cấp %s không được triển khai cho dịch vụ vị tr�
 #. module: base_geolocalize
 #: model_terms:ir.ui.view,arch_db:base_geolocalize.view_crm_partner_geo_form
 msgid "Refresh"
-msgstr "Refresh"
+msgstr "Làm mới"
 
 #. module: base_geolocalize
 #: model_terms:ir.ui.view,arch_db:base_geolocalize.view_crm_partner_geo_form

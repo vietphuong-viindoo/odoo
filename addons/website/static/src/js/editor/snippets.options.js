@@ -2252,6 +2252,15 @@ options.registry.HeaderNavbar = options.Class.extend({
     //--------------------------------------------------------------------------
 
     /**
+     * @override
+     */
+    async start() {
+        await this._super(...arguments);
+        // TODO Remove in master.
+        const signInOptionEl = this.el.querySelector('[data-customize-website-views="portal.user_sign_in"]');
+        signInOptionEl.dataset.noPreview = 'true';
+    },
+    /**
      * @private
      */
     async updateUI() {
@@ -3769,6 +3778,23 @@ options.registry.GridImage = options.Class.extend({
                 : 'cover';
         }
         return this._super(...arguments);
+    },
+});
+
+options.registry.layout_column.include({
+
+    //--------------------------------------------------------------------------
+    // Private
+    //--------------------------------------------------------------------------
+
+    /**
+     * TODO adapt in master: used to hide the "Layout" options on "Images Wall"
+     * (which has its own options to handle the layout).
+     *
+     * @override
+     */
+    _computeVisibility() {
+        return !this.$target[0].closest('[data-snippet="s_images_wall"]');
     },
 });
 

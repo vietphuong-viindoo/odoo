@@ -6,7 +6,7 @@
 # Martin Trigaux, 2022
 # Duy BQ <duybq86@gmail.com>, 2022
 # Thi Huong Nguyen, 2023
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0beta\n"
@@ -14,7 +14,7 @@ msgstr ""
 "POT-Creation-Date: 2022-10-10 10:23+0000\n"
 "PO-Revision-Date: 2022-09-22 05:55+0000\n"
 "Last-Translator: Thi Huong Nguyen, 2023\n"
-"Language-Team: Vietnamese (https://www.transifex.com/odoo/teams/41243/vi/)\n"
+"Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -107,12 +107,12 @@ msgstr "Biểu tượng Kiểu Hoạt động"
 #: code:addons/stock_picking_batch/wizard/stock_add_to_wave.py:0
 #, python-format
 msgid "Add Operations"
-msgstr ""
+msgstr "Thêm Hoạt động"
 
 #. module: stock_picking_batch
 #: model_terms:ir.ui.view,arch_db:stock_picking_batch.stock_picking_to_batch_form
 msgid "Add pickings to"
-msgstr "Add pickings to"
+msgstr "Thêm phiếu kho vào"
 
 #. module: stock_picking_batch
 #: model_terms:ir.ui.view,arch_db:stock_picking_batch.stock_add_to_wave_form
@@ -167,7 +167,7 @@ msgstr ""
 #. module: stock_picking_batch
 #: model:ir.model.fields,field_description:stock_picking_batch.field_stock_picking_type__auto_batch
 msgid "Automatic Batches"
-msgstr ""
+msgstr "Nhóm hàng loạt tự động"
 
 #. module: stock_picking_batch
 #: model:ir.model.fields,help:stock_picking_batch.field_stock_picking_type__batch_group_by_partner
@@ -193,7 +193,7 @@ msgstr ""
 #: model:ir.model.fields,help:stock_picking_batch.field_stock_picking_type__auto_batch
 msgid ""
 "Automatically put pickings into batches as they are confirmed when possible."
-msgstr ""
+msgstr "Nếu có thể, tự động phân nhóm phiếu kho khi chúng được xác nhận."
 
 #. module: stock_picking_batch
 #: model_terms:ir.ui.view,arch_db:stock_picking_batch.report_picking_batch
@@ -304,7 +304,7 @@ msgstr "Xác nhận"
 #: model:ir.model.fields,field_description:stock_picking_batch.field_stock_picking_type__batch_group_by_partner
 #: model_terms:ir.ui.view,arch_db:stock_picking_batch.view_picking_type_form_inherit
 msgid "Contact"
-msgstr "Danh bạ"
+msgstr "Liên hệ"
 
 #. module: stock_picking_batch
 #: model:ir.model.fields,field_description:stock_picking_batch.field_stock_picking_type__count_picking_batch

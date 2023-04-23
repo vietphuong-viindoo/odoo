@@ -1,22 +1,22 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* mail
-#
+# 
 # Translators:
 # Hoàng Tiến Dũng, 2022
 # Trinh Tran Thi Phuong <trinhttp@trobz.com>, 2022
 # Duy BQ <duybq86@gmail.com>, 2022
 # Thin Tran <trvathin@gmail.com>, 2022
 # Dung Nguyen Thi <dungnt@trobz.com>, 2022
-# Nancy Momoland <thanhnguyen.icsc@gmail.com>, 2022
-# Thi Huong Nguyen, 2023
 # Martin Trigaux, 2023
-#
+# Nancy Momoland <thanhnguyen.icsc@gmail.com>, 2023
+# Thi Huong Nguyen, 2023
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-02 10:33+0000\n"
+"POT-Creation-Date: 2023-04-14 05:51+0000\n"
 "PO-Revision-Date: 2022-09-22 05:53+0000\n"
 "Last-Translator: Thi Huong Nguyen, 2023\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
@@ -1430,8 +1430,8 @@ msgid "Animals & Nature"
 msgstr ""
 
 #. module: mail
-#. odoo-javascript
 #. odoo-python
+#. odoo-javascript
 #: code:addons/mail/models/mail_channel.py:0
 #: code:addons/mail/static/src/components/message/message.xml:0
 #: code:addons/mail/static/src/models/message.js:0
@@ -7923,7 +7923,7 @@ msgid "Review All Templates"
 msgstr ""
 
 #. module: mail
-#: model:ir.model.fields,field_description:mail.field_mail_mail__body_html
+#: model:ir.model.fields,field_description:mail.field_mail_mail__body_content
 msgid "Rich-text Contents"
 msgstr "Nội dung Rich-text"
 
@@ -9016,6 +9016,11 @@ msgstr "Các mẫu"
 #: model_terms:ir.ui.view,arch_db:mail.view_email_server_form
 msgid "Test & Confirm"
 msgstr "Kiểm thử & Xác nhận"
+
+#. module: mail
+#: model:ir.model.fields,field_description:mail.field_mail_mail__body_html
+msgid "Text Contents"
+msgstr ""
 
 #. module: mail
 #. odoo-javascript
@@ -16320,8 +16325,8 @@ msgid "doctor"
 msgstr ""
 
 #. module: mail
-#. odoo-javascript
 #. odoo-python
+#. odoo-javascript
 #: code:addons/mail/models/mail_thread.py:0
 #: code:addons/mail/static/src/components/message/message.xml:0
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
