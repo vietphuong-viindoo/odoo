@@ -59,7 +59,7 @@ msgstr "Cần Phương tiện"
 #: code:addons/account_fleet/models/account_move.py:0
 #, python-format
 msgid "Service Vendor Bill: %s"
-msgstr ""
+msgstr "Hóa đơn NCC Dịch vụ: %s"
 
 #. module: account_fleet
 #: model:ir.model,name:account_fleet.model_fleet_vehicle
@@ -75,4 +75,4 @@ msgstr "Hóa đơn nhà cung cấp"
 #. module: account_fleet
 #: model_terms:ir.ui.view,arch_db:account_fleet.fleet_vehicle_view_form
 msgid "show the vendor bills for this vehicle"
-msgstr "show the vendor bills for this vehicle"
+msgstr "hiển thị hóa đơn NCC cho phương tiện này"
