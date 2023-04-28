@@ -3400,12 +3400,12 @@ msgstr "vd: Đèn"
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_variant_easy_edit_view
 msgid "e.g. Odoo Enterprise Subscription"
-msgstr "ví dụ. Đăng ký Odoo bản Enterprise"
+msgstr "vd: Đăng ký ấn bản Enterprise"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_pricelist_view
 msgid "e.g. USD Retailers"
-msgstr "e.g. Giá bán lẻ bằng USD"
+msgstr "vd: Giá bán lẻ bằng USD"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_template_form_view

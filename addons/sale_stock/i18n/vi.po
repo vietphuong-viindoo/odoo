@@ -13,7 +13,7 @@ msgstr ""
 "POT-Creation-Date: 2022-10-10 10:23+0000\n"
 "PO-Revision-Date: 2022-09-22 05:55+0000\n"
 "Last-Translator: Thi Huong Nguyen, 2023\n"
-"Language-Team: Vietnamese (https://www.transifex.com/odoo/teams/41243/vi/)\n"
+"Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -27,7 +27,7 @@ msgid ""
 "                Manual actions may be needed."
 msgstr ""
 ".\n"
-"                Có thể cần xử lý thủ công."
+"            Có thể cần có hành động."
 
 #. module: sale_stock
 #: model_terms:ir.ui.view,arch_db:sale_stock.sale_order_portal_content_inherit_sale_stock
@@ -37,12 +37,12 @@ msgstr "<i class=\"fa fa-fw fa-clock-o\"/> <b>Chuẩn bị</b>"
 #. module: sale_stock
 #: model_terms:ir.ui.view,arch_db:sale_stock.sale_order_portal_content_inherit_sale_stock
 msgid "<i class=\"fa fa-fw fa-times\"/> <b>Cancelled</b>"
-msgstr "<i class=\"fa fa-fw fa-times\"/> <b>Hủy</b>"
+msgstr "<i class=\"fa fa-fw fa-times\"/> <b>Đã hủy</b>"
 
 #. module: sale_stock
 #: model_terms:ir.ui.view,arch_db:sale_stock.sale_order_portal_content_inherit_sale_stock
 msgid "<i class=\"fa fa-fw fa-truck\"/> <b>Shipped</b>"
-msgstr "<i class=\"fa fa-fw fa-truck\"/> <b>Đã giao</b>"
+msgstr "<i class=\"fa fa-fw fa-truck\"/> <b>Đã vận chuyển</b>"
 
 #. module: sale_stock
 #: model_terms:ir.ui.view,arch_db:sale_stock.sale_order_cancel_view_form_inherit
@@ -62,9 +62,9 @@ msgid ""
 "specific.\" role=\"img\" aria-label=\"Values set here are company-"
 "specific.\" groups=\"base.group_multi_company\"/>"
 msgstr ""
-"<span class=\"fa fa-lg fa-building-o\" title=\"Giá trị đặt ở đây áp dụng cho"
-" công ty cụ thể. \" role=\"img\" aria-label=\"Values set here are company-"
-"specific.\" groups=\"base.group_multi_company\"/>"
+"<span class=\"fa fa-lg fa-building-o\" title=\"Giá trị đặt tại đây được áp "
+"dụng cho công ty cụ thể\" role=\"img\" aria-label=\"Values set here are "
+"company-specific.\" groups=\"base.group_multi_company\"/>"
 
 #. module: sale_stock
 #: model_terms:ir.ui.view,arch_db:sale_stock.stock_production_lot_view_form
@@ -101,11 +101,11 @@ msgid ""
 "  - Timesheet: the quantity is the sum of hours recorded on tasks linked to this sale line\n"
 "  - Stock Moves: the quantity comes from confirmed pickings\n"
 msgstr ""
-"Dựa trên cài đặt của dự án, lượng công việc đã thực hiện có thể được tính theo :\n"
-"  - Thủ công: số lượng được ghi nhận thủ công ở mỗi dòng\n"
-"  - Phân tích chi phí: số lượng dựa trên tổng các khoản chi phí đã ghi nhận\n"
-"  - Thời gian biểu: theo số lượng tổng giờ đã được ghi nhận của các công việc liên kết với nội dung trên Đơn bán\n"
-"  - Chuyển kho: số lượng dựa trên số lượng mã phiếu kho đã xác nhận\n"
+"Theo cấu hình sản phẩm, số lượng đã giao có thể được tính tự động theo cơ chế :\n"
+"  - Thủ công: số lượng được đặt thủ công trên mục\n"
+"  - Phân tích từ chi phí: số lượng dựa trên tổng các khoản chi phí đã ghi nhận\n"
+"  - Bảng chấm công: số lượng là tổng số giờ được ghi nhận của nhiệm vụ liên kết với mục bán hàng\n"
+"  - Dịch chuyển tồn kho: số lượng đến từ các phiếu giao hàng đã xác nhận\n"
 
 #. module: sale_stock
 #. openerp-web

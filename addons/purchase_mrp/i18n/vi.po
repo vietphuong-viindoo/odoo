@@ -5,7 +5,7 @@
 # Translators:
 # Martin Trigaux, 2022
 # Thi Huong Nguyen, 2023
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.5alpha1\n"
@@ -33,12 +33,12 @@ msgstr "<span class=\"o_stat_text\">Mua hàng</span>"
 #. module: purchase_mrp
 #: model:ir.model,name:purchase_mrp.model_report_mrp_report_bom_structure
 msgid "BOM Overview Report"
-msgstr "Báo cáo Tổng quan Định mức Nguyên vật liệu"
+msgstr "Báo cáo Tổng quan Định mức nguyên liệu"
 
 #. module: purchase_mrp
 #: model:ir.model,name:purchase_mrp.model_mrp_bom
 msgid "Bill of Material"
-msgstr "Định mức nguyên vật liệu"
+msgstr "Định mức nguyên liệu"
 
 #. module: purchase_mrp
 #: model:ir.model,name:purchase_mrp.model_mrp_bom_line
@@ -126,5 +126,4 @@ msgstr ""
 #, python-format
 msgid "The total cost share for a BoM's component have to be 100"
 msgstr ""
-"Tổng chia sẻ chi phí cho một linh kiện của định mức nguyên vật liệu phải là "
-"100"
+"Tổng chia sẻ chi phí cho một linh kiện của định mức nguyên liệu phải là 100"
