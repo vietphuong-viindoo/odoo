@@ -3640,8 +3640,11 @@ class AccountMove(models.Model):
         self.ensure_one()
         if self.move_type != 'entry':
             for group_name, _group_method, group_data in groups:
-                if group_name == 'portal_customer':
+                if group_name in ('portal_customer', 'customer'):
                     group_data['has_button_access'] = True
+
+                    # 'notification_is_customer' is used to determine whether the group should be sent the access_token
+                    group_data['notification_is_customer'] = True
 
         return groups
 
@@ -5488,7 +5491,7 @@ class AccountMoveLine(models.Model):
                 raise UserError(_("Entries are not from the same account: %s != %s")
                                 % (account.display_name, line.account_id.display_name))
 
-        sorted_lines = self.sorted(key=lambda line: (line.date_maturity or line.date, line.currency_id, line.amount_currency))
+        sorted_lines = self.sorted(key=lambda line: (line.date_maturity or line.date, line.currency_id))
 
         # ==== Collect all involved lines through the existing reconciliation ====
 
