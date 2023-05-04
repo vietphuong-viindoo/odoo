@@ -99,7 +99,7 @@ msgstr "%s và %s"
 #: code:addons/crm/models/crm_lead.py:0
 #, python-format
 msgid "%s's opportunity"
-msgstr "%s's cơ hội"
+msgstr "Cơ hội của %s"
 
 #. module: crm
 #. openerp-web
