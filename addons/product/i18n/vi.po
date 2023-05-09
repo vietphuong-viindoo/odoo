@@ -3278,10 +3278,9 @@ msgstr ""
 #, python-format
 msgid ""
 "You cannot delete the value %s because it is used on the following products:\n"
-"%s"
+"%s\n"
+" If the value has been associated to a product in the past, you will not be able to delete it."
 msgstr ""
-"Bạn không thể xóa giá trị %s bởi vì nó được dùng cho sản phẩm:\n"
-"%s"
 
 #. module: product
 #. odoo-python
@@ -3306,6 +3305,13 @@ msgstr ""
 "(%s)\n"
 ", chúng được sử dụng trong (các) bảng giá khác:\n"
 "%s"
+
+#. module: product
+#. odoo-python
+#: code:addons/product/models/product_attribute.py:0
+#, python-format
+msgid "You cannot delete value %s because it was used in some products."
+msgstr ""
 
 #. module: product
 #. odoo-python
@@ -3400,12 +3406,12 @@ msgstr "vd: Đèn"
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_variant_easy_edit_view
 msgid "e.g. Odoo Enterprise Subscription"
-msgstr "ví dụ. Đăng ký Odoo bản Enterprise"
+msgstr "vd: Đăng ký ấn bản Enterprise"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_pricelist_view
 msgid "e.g. USD Retailers"
-msgstr "e.g. Giá bán lẻ bằng USD"
+msgstr "vd: Giá bán lẻ bằng USD"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_template_form_view

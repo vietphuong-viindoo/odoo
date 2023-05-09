@@ -24,7 +24,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:pos_epson_printer.pos_iot_config_view_form
 #: model_terms:ir.ui.view,arch_db:pos_epson_printer.res_config_settings_view_form
 msgid "Cashdrawer"
-msgstr "Két tiền"
+msgstr "Ngăn kéo đựng tiền"
 
 #. module: pos_epson_printer
 #. odoo-javascript
@@ -40,19 +40,19 @@ msgstr ""
 #. module: pos_epson_printer
 #: model:ir.model,name:pos_epson_printer.model_res_config_settings
 msgid "Config Settings"
-msgstr "Cấu hình"
+msgstr "Cài đặt cấu hình"
 
 #. module: pos_epson_printer
 #. odoo-javascript
 #: code:addons/pos_epson_printer/static/src/js/printers.js:0
 #, python-format
 msgid "Connection to the printer failed"
-msgstr "Kết nối đến máy in thất bại"
+msgstr "Kết nối với máy in không thành công"
 
 #. module: pos_epson_printer
 #: model:ir.model.fields,field_description:pos_epson_printer.field_pos_config__epson_printer_ip
 msgid "Epson Printer IP"
-msgstr "Epson Printer IP"
+msgstr "IP máy in Epson"
 
 #. module: pos_epson_printer
 #: model_terms:ir.ui.view,arch_db:pos_epson_printer.pos_iot_config_view_form
@@ -68,8 +68,8 @@ msgid ""
 "If you are on a secure server (HTTPS) please make sure you manually accepted"
 " the certificate by accessing %s"
 msgstr ""
-"Nếu bạn ở máy chủ bảo mật (HTTPS), vui lòng bảo đảm bạn đã chấp nhận chứng "
-"chỉ theo cách thủ công bằng cách truy cập %s"
+"Nếu bạn đang sử dụng máy chủ bảo mật (HTTPS), hãy bảo đảm bạn đã chấp nhận "
+"chứng chỉ theo cách thủ công bằng cách truy cập %s"
 
 #. module: pos_epson_printer
 #: model:ir.model.fields,help:pos_epson_printer.field_pos_config__epson_printer_ip
@@ -116,7 +116,7 @@ msgstr "Địa chỉ Máy in Pos Epson"
 #: code:addons/pos_epson_printer/static/src/js/printers.js:0
 #, python-format
 msgid "Printing failed"
-msgstr "In thất bại"
+msgstr "In không thành công"
 
 #. module: pos_epson_printer
 #: model_terms:ir.ui.view,arch_db:pos_epson_printer.pos_iot_config_view_form
@@ -126,7 +126,7 @@ msgid ""
 "connected to the IoT Box."
 msgstr ""
 "Máy in hóa đơn Epson sẽ được sử dụng thay vì máy in hóa đơn kết nối với IoT "
-"Box. "
+"Box."
 
 #. module: pos_epson_printer
 #. odoo-javascript

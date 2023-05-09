@@ -1,18 +1,18 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* crm_iap_mine
-#
+# 
 # Translators:
 # Martin Trigaux, 2022
-# Thi Huong Nguyen, 2022
-#
+# Thi Huong Nguyen, 2023
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0beta\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-23 08:02+0000\n"
 "PO-Revision-Date: 2022-09-22 05:45+0000\n"
-"Last-Translator: Thi Huong Nguyen, 2022\n"
+"Last-Translator: Thi Huong Nguyen, 2023\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -45,7 +45,7 @@ msgstr ""
 "<div style=\"margin: 0px; padding: 0px;\">\n"
 "    <p>Thân gửi,</p>\n"
 "    <p>Tài khoản Tạo lead IAP của bạn không còn tín dụng.<br/>\n"
-"    Bạn có thể nạp tín dụng cho tài khoản Tạo lead IAP trong cài đặt của ứng dụng CRM.<br/></p>\n"
+"    Bạn có thể nạp tín dụng cho tài khoản Tạo lead IAP trong phần cài đặt của ứng dụng CRM.<br/></p>\n"
 "    <p>Trân trọng,</p>\n"
 "    <p>Odoo S.A.</p>\n"
 "</div>"
@@ -79,7 +79,7 @@ msgstr "<span class=\"o_stat_text\">Cơ hội</span>"
 #. module: crm_iap_mine
 #: model:crm.iap.lead.industry,name:crm_iap_mine.crm_iap_mine_industry_238
 msgid "Automobiles & Components"
-msgstr "Xe động cơ & Linh kiện"
+msgstr "Xe động cơ & linh kiện"
 
 #. module: crm_iap_mine
 #: model:ir.model.fields,field_description:crm_iap_mine.field_crm_iap_lead_mining_request__available_state_ids
@@ -130,7 +130,7 @@ msgstr "Mã màu"
 #. module: crm_iap_mine
 #: model:crm.iap.lead.industry,name:crm_iap_mine.crm_iap_mine_industry_163
 msgid "Commercial & Professional Services"
-msgstr "Thương mại & Dịch vụ chuyên nghiệp"
+msgstr "Dịch vụ chuyên nghiệp & thương mại"
 
 #. module: crm_iap_mine
 #: model:ir.model.fields.selection,name:crm_iap_mine.selection__crm_iap_lead_mining_request__search_type__companies
@@ -223,13 +223,13 @@ msgstr "Tên hiển thị"
 #. module: crm_iap_mine
 #: model:crm.iap.lead.industry,name:crm_iap_mine.crm_iap_mine_industry_158_159
 msgid "Diversified Financials & Financial Services"
-msgstr "Tài chính đa dạng & Dịch vụ tài chính"
+msgstr "Dịch vụ tài chính và tài chính đa dạng"
 
 #. module: crm_iap_mine
 #: model:ir.model.fields.selection,name:crm_iap_mine.selection__crm_iap_lead_mining_request__state__done
 #: model_terms:ir.ui.view,arch_db:crm_iap_mine.crm_iap_lead_mining_request_view_search
 msgid "Done"
-msgstr "Hoàn thành"
+msgstr "Hoàn tất"
 
 #. module: crm_iap_mine
 #: model:ir.model.fields.selection,name:crm_iap_mine.selection__crm_iap_lead_mining_request__state__draft
@@ -245,7 +245,7 @@ msgstr "Email"
 #. module: crm_iap_mine
 #: model:crm.iap.lead.industry,name:crm_iap_mine.crm_iap_mine_industry_138_156
 msgid "Energy & Utilities "
-msgstr "Năng lượng & Tiện ích"
+msgstr "Năng lượng & tiện ích"
 
 #. module: crm_iap_mine
 #: model:ir.model.fields.selection,name:crm_iap_mine.selection__crm_iap_lead_mining_request__state__error
@@ -296,7 +296,7 @@ msgstr "Tạo lead mới dựa trên quốc gia, ngành nghề, quy mô, v.v."
 #. module: crm_iap_mine
 #: model:ir.model.fields,field_description:crm_iap_mine.field_crm_iap_lead_mining_request__lead_ids
 msgid "Generated Lead / Opportunity"
-msgstr "Tạo lead / cơ hội"
+msgstr "Tiềm năng / cơ hội được tạo"
 
 #. module: crm_iap_mine
 #: model_terms:ir.ui.view,arch_db:crm_iap_mine.crm_iap_lead_mining_request_view_search
@@ -306,7 +306,7 @@ msgstr "Nhóm theo"
 #. module: crm_iap_mine
 #: model:crm.iap.lead.industry,name:crm_iap_mine.crm_iap_mine_industry_160
 msgid "Health Care Equipment & Services"
-msgstr "Thiết bị & Dịch vụ chăm sóc sức khỏe"
+msgstr "Thiết bị & dịch vụ chăm sóc sức khỏe"
 
 #. module: crm_iap_mine
 #: model:ir.model,name:crm_iap_mine.model_crm_iap_lead_helpers
@@ -341,7 +341,7 @@ msgstr "Ngành nghề "
 #. module: crm_iap_mine
 #: model:ir.model.fields,field_description:crm_iap_mine.field_crm_iap_lead_industry__name
 msgid "Industry"
-msgstr "Ngành nghề "
+msgstr "Ngành nghề"
 
 #. module: crm_iap_mine
 #: model:ir.model.constraint,message:crm_iap_mine.constraint_crm_iap_lead_industry_name_uniq
@@ -360,7 +360,7 @@ msgstr "Không đủ tín dụng"
 #: model:ir.model.fields,field_description:crm_iap_mine.field_crm_iap_lead_role____last_update
 #: model:ir.model.fields,field_description:crm_iap_mine.field_crm_iap_lead_seniority____last_update
 msgid "Last Modified on"
-msgstr "Sửa lần cuối vào"
+msgstr "Chỉnh sửa lần cuối vào"
 
 #. module: crm_iap_mine
 #: model:ir.model.fields,field_description:crm_iap_mine.field_crm_iap_lead_helpers__write_uid
@@ -509,7 +509,7 @@ msgstr "Vai trò khác"
 #. module: crm_iap_mine
 #: model:ir.model,name:crm_iap_mine.model_crm_iap_lead_role
 msgid "People Role"
-msgstr "Vai trò con người"
+msgstr "Con người vai trò"
 
 #. module: crm_iap_mine
 #: model:ir.model,name:crm_iap_mine.model_crm_iap_lead_seniority
@@ -519,7 +519,7 @@ msgstr "Người có thâm niên"
 #. module: crm_iap_mine
 #: model:crm.iap.lead.industry,name:crm_iap_mine.crm_iap_mine_industry_161
 msgid "Pharmaceuticals, Biotechnology & Life Sciences"
-msgstr "Dược phẩm, công nghệ sinh học & Khoa học đời sống"
+msgstr "Dược phẩm, công nghệ sinh học & khoa học đời sống"
 
 #. module: crm_iap_mine
 #: model_terms:ir.ui.view,arch_db:crm_iap_mine.enrich_company
@@ -529,7 +529,7 @@ msgstr "Điện thoại"
 #. module: crm_iap_mine
 #: model:ir.model.fields,field_description:crm_iap_mine.field_crm_iap_lead_mining_request__preferred_role_id
 msgid "Preferred Role"
-msgstr "Vai trò ưa thích"
+msgstr "Vai trò ưu tiên"
 
 #. module: crm_iap_mine
 #: model:crm.iap.lead.industry,name:crm_iap_mine.crm_iap_mine_industry_114
@@ -556,7 +556,7 @@ msgstr "Thử lại"
 #: model:ir.model.fields,field_description:crm_iap_mine.field_crm_iap_lead_role__reveal_id
 #: model:ir.model.fields,field_description:crm_iap_mine.field_crm_iap_lead_seniority__reveal_id
 msgid "Reveal"
-msgstr "Tiết lộ"
+msgstr "Hiện"
 
 #. module: crm_iap_mine
 #: model:ir.model.fields.selection,name:crm_iap_mine.selection__crm_iap_lead_mining_request__contact_filter_type__role
@@ -604,12 +604,12 @@ msgstr "Quy mô"
 #. module: crm_iap_mine
 #: model:crm.iap.lead.industry,name:crm_iap_mine.crm_iap_mine_industry_165
 msgid "Software & Services"
-msgstr "Phần mềm & Dịch vụ"
+msgstr "Phần mềm & dịch vụ"
 
 #. module: crm_iap_mine
 #: model:ir.model.fields,field_description:crm_iap_mine.field_crm_iap_lead_mining_request__state_ids
 msgid "States"
-msgstr "Bang"
+msgstr "Bang / Tỉnh"
 
 #. module: crm_iap_mine
 #: model:ir.model.fields,field_description:crm_iap_mine.field_crm_iap_lead_mining_request__state
@@ -665,7 +665,7 @@ msgid ""
 "Up to %d additional credits will be consumed to identify %d contacts per "
 "company."
 msgstr ""
-"Cần sử dụng thêm tối đa %d tín dụng để xác định %d liên hệ mỗi công ty. "
+"Cần sử dụng thêm tối đa %d tín dụng để xác định %d liên hệ cho mỗi công ty. "
 
 #. module: crm_iap_mine
 #: model_terms:ir.ui.view,arch_db:crm_iap_mine.crm_iap_lead_mining_request_view_form
@@ -688,12 +688,12 @@ msgstr "Bạn không có đủ tín dụng để gửi yêu cầu này. "
 #: code:addons/crm_iap_mine/models/crm_iap_lead_mining_request.py:0
 #, python-format
 msgid "Your request could not be executed: %s"
-msgstr "Yêu cầu của bạn không thể được thực thi: %s"
+msgstr "Không thể thực thi yêu cầu của bạn: %s"
 
 #. module: crm_iap_mine
 #: model:crm.iap.lead.role,name:crm_iap_mine.crm_iap_mine_role_2
 msgid "communications"
-msgstr "giao tiếp"
+msgstr "trao đổi"
 
 #. module: crm_iap_mine
 #: model:crm.iap.lead.role,name:crm_iap_mine.crm_iap_mine_role_3
@@ -768,7 +768,7 @@ msgstr "quản lý"
 #. module: crm_iap_mine
 #: model:crm.iap.lead.role,name:crm_iap_mine.crm_iap_mine_role_13
 msgid "marketing"
-msgstr "tiếp thị"
+msgstr "marketing"
 
 #. module: crm_iap_mine
 #: model:crm.iap.lead.role,name:crm_iap_mine.crm_iap_mine_role_14
