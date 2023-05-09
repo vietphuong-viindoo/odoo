@@ -357,6 +357,8 @@ msgstr "Giá trị dự án mặc định cho bảng chấm công được tạo
 msgid ""
 "Define an 'hourly cost' on the employee to track the cost of their time."
 msgstr ""
+"Xác định \"chi phí theo giờ\" cho nhân viên để theo dõi chi phí theo thời "
+"gian họ làm việc"
 
 #. module: hr_timesheet
 #: model:ir.model.fields,field_description:hr_timesheet.field_account_analytic_line__department_id

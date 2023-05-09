@@ -541,6 +541,7 @@ class AccountMoveLine(models.Model):
                       FROM account_account account
                      WHERE account.company_id = ANY(%(company_ids)s)
                        AND account.account_type IN ('asset_receivable', 'liability_payable')
+                       AND account.deprecated = 'f'
                 )
                 SELECT * FROM previous
                 UNION ALL
@@ -1062,6 +1063,8 @@ class AccountMoveLine(models.Model):
                     is_refund = True
                 elif tax_type == {'purchase'} and line.debit == 0:
                     is_refund = True
+                if line.tax_repartition_line_id.factor_percent < 0:
+                    is_refund = not is_refund
             line.is_refund = is_refund
 
     @api.depends('date_maturity')
@@ -2345,7 +2348,11 @@ class AccountMoveLine(models.Model):
                 raise UserError(_("Entries are not from the same account: %s != %s")
                                 % (account.display_name, line.account_id.display_name))
 
-        sorted_lines = self.sorted(key=lambda line: (line.date_maturity or line.date, line.currency_id, line.amount_currency))
+        if self._context.get('reduced_line_sorting'):
+            sorting_f = lambda line: (line.date_maturity or line.date, line.currency_id)
+        else:
+            sorting_f = lambda line: (line.date_maturity or line.date, line.currency_id, line.amount_currency)
+        sorted_lines = self.sorted(key=sorting_f)
 
         # ==== Collect all involved lines through the existing reconciliation ====
 
