@@ -3937,7 +3937,7 @@ msgstr "Afficher inline"
 #: model:ir.model.fields,field_description:website.field_website_track__display_name
 #: model:ir.model.fields,field_description:website.field_website_visitor__display_name
 msgid "Display Name"
-msgstr "Afficher Nom"
+msgstr "Nom d'affichage"
 
 #. module: website
 #: model:ir.model.fields,help:website.field_res_config_settings__website_cookies_bar
@@ -10204,6 +10204,13 @@ msgstr "Transition"
 #, python-format
 msgid "Translate Attribute"
 msgstr "Attributs de traduction"
+
+#. module: website
+#. openerp-web
+#: code:addons/website/static/src/js/menu/translate.js:0
+#, python-format
+msgid "Translate Selection Option"
+msgstr "Option de sélection de la traduction"
 
 #. module: website
 #. openerp-web

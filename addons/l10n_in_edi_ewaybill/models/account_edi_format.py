@@ -77,6 +77,8 @@ class AccountEdiFormat(models.Model):
             error_message.append(_("- Transportation Mode"))
         elif move.l10n_in_mode == "0" and not move.l10n_in_transporter_id:
             error_message.append(_("- Transporter is required when E-waybill is managed by transporter"))
+        elif move.l10n_in_mode == "0" and move.l10n_in_transporter_id and not move.l10n_in_transporter_id.vat:
+            error_message.append(_("- Selected Transporter is missing GSTIN"))
         elif move.l10n_in_mode == "1":
             if not move.l10n_in_vehicle_no and move.l10n_in_vehicle_type:
                 error_message.append(_("- Vehicle Number and Type is required when Transportation Mode is By Road"))
@@ -209,7 +211,7 @@ class AccountEdiFormat(models.Model):
                     if response.get("error"):
                         error = response["error"]
                         error_codes = [e.get("code") for e in error]
-            if "4002" in error_codes:
+            if "4002" in error_codes or "4026" in error_codes:
                 # Get E-waybill by details in case of IRN is already generated
                 # this happens when timeout from the Government portal but E-waybill is generated
                 response = self._l10n_in_edi_irn_ewaybill_get(invoices.company_id, generate_json.get("Irn"))
