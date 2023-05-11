@@ -3311,10 +3311,13 @@ msgstr ""
 #, python-format
 msgid ""
 "You cannot delete the value %s because it is used on the following products:\n"
-"%s"
+"%s\n"
+" If the value has been associated to a product in the past, you will not be able to delete it."
 msgstr ""
-"Bạn không thể xóa giá trị %s bởi vì nó được dùng cho sản phẩm:\n"
-"%s"
+"Bạn không thể xóa giá trị %s bởi vì nó được dùng cho các sản phẩm sau:\n"
+"%s\n"
+"Nếu giá trị đó đã liên kết đến một sản phẩm từ trước, bạn sẽ không thể xóa nó."
+
 
 #. module: product
 #: code:addons/product/models/product.py:0
