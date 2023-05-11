@@ -2831,7 +2831,7 @@ msgstr "Số điện thoại đã vào sổ đen"
 #: model:crm.lead.scoring.frequency.field,name:crm.frequency_field_phone_state
 #: model:ir.model.fields,field_description:crm.field_crm_lead__phone_state
 msgid "Phone Quality"
-msgstr "Chất lượng phone"
+msgstr "Chất lượng Số điện thoại"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_lead__phone_mobile_search
