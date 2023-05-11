@@ -2922,7 +2922,7 @@ msgstr "Cập nhật Giai đoạn Lần cuối"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__last_update_id
 msgid "Last Update"
-msgstr "Cập nhật Gần nhất"
+msgstr "Cập nhật lần cuối"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__last_update_color

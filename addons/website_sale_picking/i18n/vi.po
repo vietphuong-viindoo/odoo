@@ -128,7 +128,7 @@ msgstr "Kho"
 #. module: website_sale_picking
 #: model:ir.model,name:website_sale_picking.model_website
 msgid "Website"
-msgstr "Trang web"
+msgstr "Website"
 
 #. module: website_sale_picking
 #: code:addons/website_sale_picking/controllers/main.py:0

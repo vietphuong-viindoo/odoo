@@ -58,4 +58,4 @@ msgstr "Đơn bán hàng"
 #. module: website_sale_product_configurator
 #: model:ir.model,name:website_sale_product_configurator.model_website
 msgid "Website"
-msgstr "Trang web"
+msgstr "Website"

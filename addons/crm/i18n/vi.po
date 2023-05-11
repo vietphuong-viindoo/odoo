@@ -2469,7 +2469,7 @@ msgstr "Lead của tôi"
 #: model_terms:ir.ui.view,arch_db:crm.crm_opportunity_report_view_search
 #: model_terms:ir.ui.view,arch_db:crm.view_crm_case_opportunities_filter
 msgid "My Pipeline"
-msgstr "Chu trình của tôi"
+msgstr "Cơ hội của tôi"
 
 #. module: crm
 #: model:crm.stage,name:crm.stage_lead1
@@ -2947,7 +2947,7 @@ msgstr "Số điện thoại hạn chế"
 #: model:crm.lead.scoring.frequency.field,name:crm.frequency_field_phone_state
 #: model:ir.model.fields,field_description:crm.field_crm_lead__phone_state
 msgid "Phone Quality"
-msgstr "Chất lượng điện thoại"
+msgstr "Chất lượng số điện thoại"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_lead__phone_mobile_search
@@ -3996,7 +3996,7 @@ msgstr "Chúng ta không có nhân lực/kỹ năng"
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_lead__website
 msgid "Website"
-msgstr "Trang web"
+msgstr "Website"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_lead__website_message_ids
