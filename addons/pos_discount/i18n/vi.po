@@ -4,9 +4,6 @@
 #
 # Translators:
 # Martin Trigaux, 2022
-<<<<<<< HEAD
-#
-=======
 # Thi Huong Nguyen, 2023
 # 
 msgid ""
