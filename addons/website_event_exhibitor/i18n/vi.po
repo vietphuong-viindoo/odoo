@@ -1037,7 +1037,7 @@ msgstr "Chúng tôi không tìm thấy nhà triển lãm nào phù hợp"
 #: model_terms:ir.ui.view,arch_db:website_event_exhibitor.event_sponsor_view_form
 #: model_terms:ir.ui.view,arch_db:website_event_exhibitor.event_sponsor_view_tree
 msgid "Website"
-msgstr "Trang web"
+msgstr "Website"
 
 #. module: website_event_exhibitor
 #: model:ir.model,name:website_event_exhibitor.model_website_event_menu

@@ -36801,7 +36801,7 @@ msgstr "Kiểm thử cohort Trang web"
 #: model_terms:ir.ui.view,arch_db:base.view_partner_address_form
 #: model_terms:ir.ui.view,arch_db:base.view_partner_form
 msgid "Website"
-msgstr "Trang web"
+msgstr "Website"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_payment_authorize

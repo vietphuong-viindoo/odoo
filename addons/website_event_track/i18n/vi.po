@@ -2622,7 +2622,7 @@ msgstr "Chúng tôi sẽ đánh giá đề xuất của bạn và trả lời b�
 #. module: website_event_track
 #: model:ir.model,name:website_event_track.model_website
 msgid "Website"
-msgstr "Trang web"
+msgstr "Website"
 
 #. module: website_event_track
 #: model:ir.model.fields,field_description:website_event_track.field_website__app_icon

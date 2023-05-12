@@ -91,7 +91,7 @@ msgstr "Gửi tới điểm bưu kiện này"
 #. module: website_sale_delivery_mondialrelay
 #: model:ir.model,name:website_sale_delivery_mondialrelay.model_website
 msgid "Website"
-msgstr "Trang web"
+msgstr "Website"
 
 #. module: website_sale_delivery_mondialrelay
 #: code:addons/website_sale_delivery_mondialrelay/controllers/controllers.py:0
