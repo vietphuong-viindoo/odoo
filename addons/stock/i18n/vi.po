@@ -8261,7 +8261,7 @@ msgstr "Phiếu điều chuyển liên kho đã được tạo"
 #: code:addons/stock/models/stock_move_line.py:0
 #, python-format
 msgid "The inventory adjustments have been reverted."
-msgstr "Điều chỉnh tồn kho đã được đảo lại."
+msgstr "Điều chỉnh tồn kho đã được đảo lại."
 
 #. module: stock
 #: model:ir.model.constraint,message:stock.constraint_stock_location_inventory_freq_nonneg
@@ -8624,6 +8624,14 @@ msgid ""
 msgstr ""
 "Không thể thay đổi công ty của sản phẩm này nếu có số lượng sản phẩm này "
 "thuộc về một công ty khác."
+
+#. module: stock
+#: code:addons/stock/models/product.py:0
+#, python-format
+msgid ""
+"This product's company cannot be changed as long as there are stock moves of"
+" it belonging to another company."
+msgstr ""
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_change_product_qty__new_quantity
@@ -10353,7 +10361,7 @@ msgstr "report_stock_quantity_graph"
 #: code:addons/stock/static/src/widgets/json_widget.xml:0
 #, python-format
 msgid "should be replenished"
-msgstr "cần được bổ sung"
+msgstr "cần được tái cung ứng"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_move__warehouse_id
