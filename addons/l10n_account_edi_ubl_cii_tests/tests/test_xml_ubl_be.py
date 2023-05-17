@@ -256,6 +256,33 @@ class TestUBLBE(TestUBLCommon):
             expected_file='from_odoo/bis3_out_invoice_public_admin.xml',
         )
 
+    def test_rounding_price_unit(self):
+        """ OpenPeppol states that:
+        * All document level amounts shall be rounded to two decimals for accounting
+        * Invoice line net amount shall be rounded to two decimals
+        See: https://docs.peppol.eu/poacc/billing/3.0/bis/#_rounding
+        Do not round the unit prices. It allows to obtain the correct line amounts when prices have more than 2
+        digits.
+        """
+        # Set the allowed number of digits for the price_unit
+        decimal_precision = self.env['decimal.precision'].search([('name', '=', 'Product Price')], limit=1)
+        self.assertTrue(bool(decimal_precision), "The decimal precision for Product Price is required for this test")
+        decimal_precision.digits = 4
+
+        invoice = self._generate_move(
+            self.partner_1,
+            self.partner_2,
+            move_type='out_invoice',
+            invoice_line_ids=[
+                {
+                    'product_id': self.product_a.id,
+                    'quantity': 10000,
+                    'price_unit': 0.4567,
+                    'tax_ids': [(6, 0, self.tax_21.ids)],
+                }
+            ],
+        )
+        self._assert_invoice_attachment(invoice, xpaths=None, expected_file='from_odoo/bis3_out_invoice_rounding.xml')
 
     ####################################################
     # Test import
@@ -354,3 +381,18 @@ class TestUBLBE(TestUBLCommon):
         # source: vat-category-E.xml
         self._assert_imported_invoice_from_file(subfolder=subfolder, filename='bis3_tax_exempt_gbp.xml',
             amount_total=1200, amount_tax=0, list_line_subtotals=[1200], currency_id=self.env.ref('base.GBP').id)
+
+    def test_import_existing_invoice_flip_move_type(self):
+        """ Tests whether the move_type of an existing invoice can be flipped when importing an attachment
+        For instance: with an email alias to create account_move, first the move is created (using alias_defaults,
+        which contains move_type = 'out_invoice') then the attachment is decoded, if it represents a credit note,
+        the move type needs to be changed to 'out_refund'
+        """
+        invoice = self.env['account.move'].create({'move_type': 'out_invoice'})
+        self.update_invoice_from_file(
+            'l10n_account_edi_ubl_cii_tests',
+            'tests/test_files/from_odoo',
+            'bis3_out_refund.xml',
+            invoice,
+        )
+        self.assertRecordValues(invoice, [{'move_type': 'out_refund', 'amount_total': 3164.22}])
