@@ -38317,7 +38317,7 @@ msgstr "tiêu đề"
 #: code:addons/base/models/ir_fields.py:0
 #, python-format
 msgid "true"
-msgstr "đúng"
+msgstr "true"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_sale_delivery_mondialrelay

@@ -51,14 +51,14 @@ msgstr ""
 #: code:addons/product/models/product_pricelist_item.py:0
 #, python-format
 msgid "%(percentage)s %% discount and %(price)s surcharge"
-msgstr "%(percentage)s %% giám giá và %(price)s phụ phí"
+msgstr "%(percentage)s %% giảm giá và %(price)s phụ phí"
 
 #. module: product
 #. odoo-python
 #: code:addons/product/models/product_pricelist_item.py:0
 #, python-format
 msgid "%s %% discount"
-msgstr "%s %% chiếu khấu"
+msgstr "%s %% giảm giá"
 
 #. module: product
 #. odoo-python
