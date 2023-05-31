@@ -289,7 +289,7 @@ class AccountEdiXmlUBL20(models.AbstractModel):
         else:
             gross_price_subtotal = net_price_subtotal / (1.0 - (line.discount or 0.0) / 100.0)
         # Price subtotal with discount / quantity:
-        gross_price_unit = line.currency_id.round((gross_price_subtotal / line.quantity) if line.quantity else 0.0)
+        gross_price_unit = gross_price_subtotal / line.quantity if line.quantity else 0.0
 
         uom = super()._get_uom_unece_code(line)
 
@@ -299,6 +299,7 @@ class AccountEdiXmlUBL20(models.AbstractModel):
 
             # The price of an item, exclusive of VAT, after subtracting item price discount.
             'price_amount': gross_price_unit,
+            'product_price_dp': self.env['decimal.precision'].precision_get('Product Price'),
 
             # The number of item units to which the price applies.
             # setting to None -> the xml will not comprise the BaseQuantity (it's not mandatory)
@@ -484,7 +485,8 @@ class AccountEdiXmlUBL20(models.AbstractModel):
         phone = _find_value(f'//cac:Accounting{role}Party/cac:Party//cbc:Telephone')
         mail = _find_value(f'//cac:Accounting{role}Party/cac:Party//cbc:ElectronicMail')
         name = _find_value(f'//cac:Accounting{role}Party/cac:Party//cbc:Name')
-        self._import_retrieve_and_fill_partner(invoice, name=name, phone=phone, mail=mail, vat=vat)
+        country_code = _find_value(f'//cac:Accounting{role}Party/cac:Party//cac:Country//cbc:IdentificationCode')
+        self._import_retrieve_and_fill_partner(invoice, name=name, phone=phone, mail=mail, vat=vat, country_code=country_code)
 
         # ==== currency_id ====
 
