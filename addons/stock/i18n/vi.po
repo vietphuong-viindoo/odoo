@@ -3338,7 +3338,7 @@ msgstr "Chiều cao phải là số dương"
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_warehouse_orderpoint__snoozed_until
 msgid "Hidden until next scheduler."
-msgstr "Ẩn cho đến khi lên lịch tiếp theo."
+msgstr "Ẩn cho đến trình lập kế hoạch tiếp theo."
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking__hide_picking_type
@@ -8240,7 +8240,7 @@ msgstr ""
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_package_type__sequence
 msgid "The first in the sequence is the default one."
-msgstr "Thứ tự đầu tiên trong trình tự mặc định là 1."
+msgstr "Đứng đầu trong trình tự là loại mặc định."
 
 #. module: stock
 #. odoo-javascript
@@ -8632,6 +8632,8 @@ msgid ""
 "This product's company cannot be changed as long as there are stock moves of"
 " it belonging to another company."
 msgstr ""
+"Không thể thay đổi công ty của sản phẩm này nếu có dịch chuyển tồn kho của "
+"nó thuộc về một công ty khác."
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_change_product_qty__new_quantity
@@ -10399,3 +10401,13 @@ msgid ""
 msgstr ""
 "{{ object.company_id.name }} Phiếu xuất kho (Mã {{ object.name or 'không có'"
 " }})"
+
+#. module: stock
+#: code:addons/stock/models/stock_move_line.py:0
+#, python-format
+msgid ""
+"It is not allow to import reserved quantity, you have to use the quantity "
+"directly."
+msgstr ""
+"Không được phép nhập số lượng đã dự trữ, bạn phải trực tiếp sử dụng số "
+"lượng."

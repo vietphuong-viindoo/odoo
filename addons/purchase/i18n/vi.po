@@ -3318,7 +3318,7 @@ msgid ""
 "You must define a product for everything you sell or purchase,\n"
 "            whether it's a storable product, a consumable or a service."
 msgstr ""
-"Bạn nên chỉ định một sản phẩm mỗi khi muốn bán hoặc mua hàng.\n"
+"Bạn nên chỉ định một sản phẩm mỗi khi muốn bán hoặc mua hàng,\n"
 "khi nó là một sản phẩm lưu kho, tiêu dùng hoặc một dịch vụ."
 
 #. module: purchase
