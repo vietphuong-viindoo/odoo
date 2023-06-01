@@ -18312,7 +18312,7 @@ msgid ""
 "Disabling this option will also uninstall the following modules \n"
 "%s"
 msgstr ""
-"Tắt lựa chọn này sẽ đồng thời tự động gỡ cài đặt Các mô-đun sau \n"
+"Tắt tùy chọn này sẽ đồng thời tự động gỡ cài đặt các mô-đun sau \n"
 "%s"
 
 #. module: base
