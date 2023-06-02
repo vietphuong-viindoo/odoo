@@ -316,7 +316,7 @@ class SaleOrderLine(models.Model):
     @api.depends('state')
     def _compute_product_uom_readonly(self):
         for line in self:
-            line.product_uom_readonly = line.state in ['sale', 'done', 'cancel']
+            line.product_uom_readonly = line.ids and line.state in ['sale', 'done', 'cancel']
 
     @api.depends('is_expense')
     def _compute_qty_delivered_method(self):
@@ -344,7 +344,7 @@ class SaleOrderLine(models.Model):
         """
         # compute for analytic lines
         lines_by_analytic = self.filtered(lambda sol: sol.qty_delivered_method == 'analytic')
-        mapping = lines_by_analytic._get_delivered_quantity_by_analytic([])
+        mapping = lines_by_analytic._get_delivered_quantity_by_analytic([('amount', '<=', 0.0)])
         for so_line in lines_by_analytic:
             so_line.qty_delivered = mapping.get(so_line.id or so_line._origin.id, 0.0)
         # compute for manual lines
@@ -365,20 +365,29 @@ class SaleOrderLine(models.Model):
 
         # group analytic lines by product uom and so line
         domain = expression.AND([[('so_line', 'in', self.ids)], additional_domain])
-        analytic_lines = self.env['account.analytic.line'].search(domain)
-        for line in analytic_lines:
-            if not line.product_uom_id:
+        data = self.env['account.analytic.line'].read_group(
+            domain,
+            ['so_line', 'unit_amount', 'product_uom_id'], ['product_uom_id', 'so_line'], lazy=False
+        )
+
+        # convert uom and sum all unit_amount of analytic lines to get the delivered qty of SO lines
+        # browse so lines and product uoms here to make them share the same prefetch
+        lines = self.browse([item['so_line'][0] for item in data])
+        lines_map = {line.id: line for line in lines}
+        product_uom_ids = [item['product_uom_id'][0] for item in data if item['product_uom_id']]
+        product_uom_map = {uom.id: uom for uom in self.env['uom.uom'].browse(product_uom_ids)}
+        for item in data:
+            if not item['product_uom_id']:
                 continue
-            result.setdefault(line.so_line.id, 0.0)
-            if line.so_line.product_uom.category_id == line.product_uom_id.category_id:
-                qty = line.product_uom_id._compute_quantity(line.unit_amount, line.so_line.product_uom, rounding_method='HALF-UP')
+            so_line_id = item['so_line'][0]
+            so_line = lines_map[so_line_id]
+            result.setdefault(so_line_id, 0.0)
+            uom = product_uom_map.get(item['product_uom_id'][0])
+            if so_line.product_uom.category_id == uom.category_id:
+                qty = uom._compute_quantity(item['unit_amount'], so_line.product_uom, rounding_method='HALF-UP')
             else:
-                qty = line.unit_amount
-
-            # if greater than 0 -> refund
-            sign = line.amount and -line.amount / abs(line.amount) or 1
-
-            result[line.so_line.id] += sign * qty
+                qty = item['unit_amount']
+            result[so_line_id] += qty
 
         return result
 
@@ -606,6 +615,15 @@ class SaleOrderLine(models.Model):
 
     @api.onchange('product_id')
     def product_id_change(self):
+        if not self.product_id:
+            return
+
+        if not self.product_uom or (self.product_id.uom_id.id != self.product_uom.id):
+            self.update({
+                'product_uom': self.product_id.uom_id,
+                'product_uom_qty': self.product_uom_qty or 1.0
+            })
+
         self._update_description()
         self._update_taxes()
 
@@ -623,6 +641,7 @@ class SaleOrderLine(models.Model):
     def _update_description(self):
         if not self.product_id:
             return
+
         valid_values = self.product_id.product_tmpl_id.valid_product_template_attribute_line_ids.product_template_value_ids
         # remove the is_custom values that don't belong to this template
         for pacv in self.product_custom_attribute_value_ids:
@@ -634,49 +653,39 @@ class SaleOrderLine(models.Model):
             if ptav._origin not in valid_values:
                 self.product_no_variant_attribute_value_ids -= ptav
 
-        vals = {}
-        if not self.product_uom or (self.product_id.uom_id.id != self.product_uom.id):
-            vals['product_uom'] = self.product_id.uom_id
-            vals['product_uom_qty'] = self.product_uom_qty or 1.0
-
         lang = get_lang(self.env, self.order_id.partner_id.lang).code
         product = self.product_id.with_context(
             lang=lang,
         )
-
-        self.update({'name': self.with_context(lang=lang).get_sale_order_line_multiline_description_sale(product)})
+        self.update({
+            'name': self.with_context(lang=lang).get_sale_order_line_multiline_description_sale(product)
+        })
 
     def _update_taxes(self):
         if not self.product_id:
             return
 
-        vals = {}
-        if not self.product_uom or (self.product_id.uom_id.id != self.product_uom.id):
-            vals['product_uom'] = self.product_id.uom_id
-            vals['product_uom_qty'] = self.product_uom_qty or 1.0
-
-        product = self.product_id.with_context(
-            partner=self.order_id.partner_id,
-            quantity=vals.get('product_uom_qty') or self.product_uom_qty,
-            date=self.order_id.date_order,
-            pricelist=self.order_id.pricelist_id.id,
-            uom=self.product_uom.id
-        )
-
         self._compute_tax_id()
 
         if self.order_id.pricelist_id and self.order_id.partner_id:
-            vals['price_unit'] = product._get_tax_included_unit_price(
-                self.company_id,
-                self.order_id.currency_id,
-                self.order_id.date_order,
-                'sale',
-                fiscal_position=self.order_id.fiscal_position_id,
-                product_price_unit=self._get_display_price(product),
-                product_currency=self.order_id.currency_id
+            product = self.product_id.with_context(
+                partner=self.order_id.partner_id,
+                quantity=self.product_uom_qty,
+                date=self.order_id.date_order,
+                pricelist=self.order_id.pricelist_id.id,
+                uom=self.product_uom.id
             )
-
-        self.update(vals)
+            self.update({
+                'price_unit': product._get_tax_included_unit_price(
+                    self.company_id,
+                    self.order_id.currency_id,
+                    self.order_id.date_order,
+                    'sale',
+                    fiscal_position=self.order_id.fiscal_position_id,
+                    product_price_unit=self._get_display_price(product),
+                    product_currency=self.order_id.currency_id
+                )
+            })
 
     @api.onchange('product_uom', 'product_uom_qty')
     def product_uom_change(self):
