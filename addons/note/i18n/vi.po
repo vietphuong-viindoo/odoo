@@ -45,7 +45,7 @@ msgid ""
 "Actions may trigger specific behavior like opening calendar view or "
 "automatically mark as done when a document is uploaded"
 msgstr ""
-"Hành động có thể kích hoạt hành vi cụ thể như mở chế độ xem lịch hoặc tự "
+"Hành động có thể kích hoạt hành vi cụ thể như mở giao diện lịch hoặc tự "
 "động đánh dấu là xong khi tài liệu được tải lên"
 
 #. module: note

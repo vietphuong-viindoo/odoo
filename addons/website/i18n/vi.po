@@ -5424,8 +5424,8 @@ msgid ""
 "If this field is empty, the view applies to all users. Otherwise, the view "
 "applies to the users of those groups only."
 msgstr ""
-"Nếu trường này trống, chế độ xem sẽ áp dụng cho tất cả người dùng. Nếu "
-"không, chế độ xem chỉ áp dụng cho người dùng của các nhóm đó."
+"Nếu trường này trống, giao diện sẽ áp dụng cho tất cả người dùng. Nếu "
+"không, giao diện chỉ áp dụng cho người dùng của các nhóm đó."
 
 #. module: website
 #: model:ir.model.fields,help:website.field_website_page__active
@@ -7862,7 +7862,7 @@ msgstr "Trước đó"
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website_page__arch_prev
 msgid "Previous View Architecture"
-msgstr "Chế độ xem kiến trúc trước đó"
+msgstr "Giao diện kiến trúc trước đó"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippets
@@ -9962,7 +9962,7 @@ msgid ""
 "menu *Action*."
 msgstr ""
 "Để gửi lời mời trong chế độ B2B, hãy mở một số liên lạc hoặc chọn một số "
-"người trong chế độ xem danh sách và nhấp vào tùy chọn 'Quản lý truy cập cổng"
+"người trong giao diện danh sách và nhấp vào tùy chọn 'Quản lý truy cập cổng"
 " thông tin' trong menu thả xuống * Hành động *."
 
 #. module: website

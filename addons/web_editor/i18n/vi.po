@@ -2356,7 +2356,7 @@ msgstr ""
 #: code:addons/web_editor/static/src/js/common/ace.js:0
 #, python-format
 msgid "Reseting views is not supported yet"
-msgstr "Cài lại các chế độ xem chưa được hỗ trợ"
+msgstr "Cài lại các giao diện chưa được hỗ trợ"
 
 #. module: web_editor
 #. odoo-javascript

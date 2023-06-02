@@ -495,7 +495,7 @@ msgstr ""
 "Nếu nhà cung cấp được chọn hoặc nếu bất kỳ sản phẩm nào trong đơn mua hàng "
 "gốc có cảnh báo chặn thì chúng tôi sẽ chặn việc tạo đơn mua hàng dự trù. "
 "Điều này là do thông thường các trường này bị xóa với thông báo cảnh báo "
-"trong chế độ xem biểu mẫu, nhưng chúng tôi không thể tạo lại trường đó trong"
+"trong giao diện biểu mẫu, nhưng chúng tôi không thể tạo lại trường đó trong"
 " trường hợp này."
 
 #. module: purchase_requisition

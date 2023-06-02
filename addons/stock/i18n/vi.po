@@ -4365,7 +4365,7 @@ msgstr "Dịch chuyển liên kết"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_picking_form
 msgid "List view of operations"
-msgstr "Chế độ xem danh sách của hoạt động"
+msgstr "Giao diện danh sách của hoạt động"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_product_product__location_id
@@ -8289,7 +8289,7 @@ msgid ""
 "            if it should show the customer."
 msgstr ""
 "Hệ thống loại hoạt động cho phép bạn gán cho mỗi hoạt động tồn kho. \n"
-"             một loại cụ thể, sẽ điều chỉnh chế độ xem của nó cho phù hợp.\n"
+"             một loại cụ thể, sẽ điều chỉnh giao diện của nó cho phù hợp.\n"
 "             Trong loại hoạt động, ví dụ: bạn có thể chỉ định có cần đóng gói theo\n"
 "             mặc định hay không, có hiển thị khách hàng hay không."
 
@@ -9394,7 +9394,7 @@ msgstr "Quản lý kho hàng"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_location__warehouse_view_ids
 msgid "Warehouse View"
-msgstr "Chế độ xem kho hàng"
+msgstr "Giao diện kho hàng"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_rule__propagate_warehouse_id

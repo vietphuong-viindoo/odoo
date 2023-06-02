@@ -2442,7 +2442,7 @@ msgid ""
 msgstr ""
 "\n"
 "* Đăng ký và xác nhận thời gian biểu\n"
-"* Kích hoạt chế độ xem lưới cho thời gian biểu\n"
+"* Kích hoạt giao diện lưới cho thời gian biểu\n"
 "    "
 
 #. module: base
@@ -3409,7 +3409,7 @@ msgid ""
 "for IoT Box config.   \n"
 msgstr ""
 "\n"
-"Các tính năng nâng cao cho PoS như chế độ xem tốt hơn\n"
+"Các tính năng nâng cao cho PoS như giao diện tốt hơn\n"
 "cho cấu hình Hộp IoT.   \n"
 
 #. module: base
@@ -3726,7 +3726,7 @@ msgstr ""
 "* Báo cáo cơ cấu chi phí\n"
 "\n"
 "Ngoài ra, cho phép tính toán giá thành của sản phẩm dựa trên Hoá đơn Nguyên vật liệu, sử dụng chi phí của các bộ phận và hoạt động của khu vực sản xuất.\n"
-"Một nút đã được thêm vào sản phẩm cùng với một hoạt động trong chế độ xem danh sách của sản phẩm.\n"
+"Một nút đã được thêm vào sản phẩm cùng với một hoạt động trong giao diện danh sách của sản phẩm.\n"
 "Nếu tính năng định giá tồn kho tự động đang hoạt động, các bút toán kế toán cần thiết sẽ được tạo.\n"
 "\n"
 
@@ -4316,7 +4316,7 @@ msgstr ""
 "Mô-đun cầu cho thư và doanh nghiệp\n"
 "=====================================\n"
 "\n"
-"Hiển thị bản xem trước của tệp đính kèm trò chuyện cuối cùng trong chế độ xem biểu mẫu cho lớn\n"
+"Hiển thị bản xem trước của tệp đính kèm trò chuyện cuối cùng trong giao diện biểu mẫu cho lớn\n"
 "thiết bị màn hình.\n"
 
 #. module: base
@@ -4589,7 +4589,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"Chưa các tính năng nâng cao cho phân hệ CRM như thêm chế độ xem mới\n"
+"Chưa các tính năng nâng cao cho phân hệ CRM như thêm giao diện mới\n"
 "    "
 
 #. module: base
@@ -5436,7 +5436,7 @@ msgstr ""
 "\n"
 "Thêm các tùy chọn sau:\n"
 "- báo cáo về nhiệm vụ\n"
-"- Ứng dụng quản lý dịch vụ hiện trường với chế độ xem tùy chỉnh cho nhân viên hiện trường\n"
+"- Ứng dụng quản lý dịch vụ hiện trường với giao diện tùy chỉnh cho nhân viên hiện trường\n"
 "- thêm sản phẩm vào nhiệm vụ\n"
 "\n"
 "    "
@@ -5597,7 +5597,7 @@ msgstr ""
 "Đối với mục đích kiểm tra và khắc phục sự cố, chúng tôi cũng thêm một menu \"Hóa đơn tư vấn trong AFIP\" cho phép chúng tôi tham khảo các hóa đơn trước đó\n"
 "đã được gửi tới AFIP và số cuối cùng được sử dụng làm hỗ trợ cho bất kỳ sự cố nào có thể xảy ra trong quá trình đồng bộ hóa trình tự giữa Odoo và AFIP.\n"
 "\n"
-"    LƯU Ý: Từ chế độ xem biểu mẫu của Tạp chí, chúng tôi có thể buộc đồng bộ hóa giữa các chuỗi odoo với từng loại tài liệu\n"
+"    LƯU Ý: Từ giao diện biểu mẫu của Tạp chí, chúng tôi có thể buộc đồng bộ hóa giữa các chuỗi odoo với từng loại tài liệu\n"
 "     với các số cuối cùng được đăng ký trong AFIP.\n"
 "\n"
 "Từ hóa đơn của nhà cung cấp, chúng tôi đã thêm một chức năng có thể được định cấu hình trong cài đặt kế toán để có thể xác minh\n"
@@ -6120,13 +6120,13 @@ msgstr ""
 "- Giải quyết phiếu hỗ trợ bằng cách xử lý qua các giai đoạn khác nhau.\n"
 "- Thêm mức độ ưu tiên, loại, mô tả và thẻ để xác định phiếu hỗ trợ.\n"
 "- Sử dụng chatter để truyền đạt thông tin bổ sung và nhắn tin với đồng nghiệp về phiếu hỗ trợ.\n"
-"- Tận hưởng việc sử dụng trang tổng quan phù hợp và chế độ xem Kanban dễ sử dụng để xử lý phiếu hỗ trợ.\n"
-"- Thực hiện phân tích chuyên sâu về phiếu hỗ trợ thông qua chế độ xem pivot trong menu báo cáo.\n"
+"- Tận hưởng việc sử dụng trang tổng quan phù hợp và giao diện Kanban dễ sử dụng để xử lý phiếu hỗ trợ.\n"
+"- Thực hiện phân tích chuyên sâu về phiếu hỗ trợ thông qua giao diện pivot trong menu báo cáo.\n"
 "- Tạo một nhóm và xác định các thành viên trong nhóm, sử dụng phương thức tự động giao việc nếu muốn.\n"
 "- Sử dụng bí danh email để tự động tạo phiếu hỗ trợ và trò chuyện với khách hàng.\n"
 "- Thêm hạn chót thỏa thuận mức độ dịch vụ vào phiếu hỗ trợ một cách tự động.\n"
 "- Nhận phản hồi của khách hàng bằng cách sử dụng đánh giá.\n"
-"- Dễ dàng cài đặt các tính năng bổ sung bằng cách sử dụng chế độ xem biểu mẫu nhóm.\n"
+"- Dễ dàng cài đặt các tính năng bổ sung bằng cách sử dụng giao diện biểu mẫu nhóm.\n"
 "\n"
 "    "
 
@@ -6682,8 +6682,8 @@ msgstr ""
 "Biến sự kiện của bạn thành trải nghiệm tương tác bằng cách cho phép mọi người đăng lên Tường Twitter của bạn. Kết nối với đám đông và xây dựng mối quan hệ cá nhân với những người tham dự.\n"
 "  * Tạo tường twitter trực tiếp cho sự kiện\n"
 "  * Không cần kiểm duyệt phức tạp.\n"
-"  * Tùy chỉnh chế độ xem trực tiếp của bạn với sự trợ giúp của các tùy chọn khác nhau.\n"
-"  * Chế độ xem Tự động Storify sau khi sự kiện kết thúc.\n"
+"  * Tùy chỉnh giao diện trực tiếp của bạn với sự trợ giúp của các tùy chọn khác nhau.\n"
+"  * Giao diện Tự động Storify sau khi sự kiện kết thúc.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_account_3way_match
@@ -7569,7 +7569,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"Chế độ xem biểu đồ Odoo Web Gantt.\n"
+"Giao diện biểu đồ Odoo Web Gantt.\n"
 "=============================\n"
 "\n"
 "    "
@@ -8436,7 +8436,7 @@ msgstr ""
 "cách đơn giản mà đầy tính đồ họa. Addon này có hai tính năng chính:\n"
 "\n"
 "* tạo một ứng dụng mới (thêm module, mục menu cấp cao nhất và hành động mặc định)\n"
-"* tùy chỉnh một ứng dụng hiện có (chỉnh sửa menu, hành động, chế độ xem, bản dịch,...)\n"
+"* tùy chỉnh một ứng dụng hiện có (chỉnh sửa menu, hành động, giao diện, bản dịch,...)\n"
 "\n"
 "Lưu ý: Chỉ người dùng có vai trò quản trị viên được phép thực hiện các tùy chỉnh trên.\n"
 
@@ -8595,7 +8595,7 @@ msgid ""
 msgstr ""
 "\n"
 "Module kỹ thuật:\n"
-"Mục đích chính là điều chỉnh chế độ xem sale_order để cho phép cấu hình sản phẩm trong Đơn bán hàng.\n"
+"Mục đích chính là điều chỉnh giao diện sale_order để cho phép cấu hình sản phẩm trong Đơn bán hàng.\n"
 "\n"
 "Tính năng \"sản phẩm tùy chọn\" cũng được kích hoạt.\n"
 "    "
@@ -9462,8 +9462,8 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"Mô-đun này thêm chế độ xem bảng điều khiển mới trong ứng dụng website.\n"
-"Kiểu xem mới này chứa một số thống kê cơ bản, biểu đồ và chế độ xem phụ xoay vòng cho phép bạn có được cái nhìn tổng quan nhanh về doanh số bán hàng trực tuyến của mình.\n"
+"Mô-đun này thêm giao diện bảng điều khiển mới trong ứng dụng website.\n"
+"Kiểu xem mới này chứa một số thống kê cơ bản, biểu đồ và giao diện phụ xoay vòng cho phép bạn có được cái nhìn tổng quan nhanh về doanh số bán hàng trực tuyến của mình.\n"
 "Nó cũng cung cấp các công cụ mới để phân tích dữ liệu của bạn.\n"
 "    "
 
@@ -9856,7 +9856,7 @@ msgstr ""
 "\n"
 "** Chuyển tiếp lead**\n"
 "\n"
-"Việc chuyển tiếp lead có thể được thực hiện cho một hoặc một số lead tại một thời điểm. Hành động này có trong phần *Đối tác được Chỉ định* của chế độ xem biểu mẫu lead/cơ hội và trong menu *Hành động* của chế độ xem danh sách.\n"
+"Việc chuyển tiếp lead có thể được thực hiện cho một hoặc một số lead tại một thời điểm. Hành động này có trong phần *Đối tác được Chỉ định* của giao diện biểu mẫu lead/cơ hội và trong menu *Hành động* của giao diện danh sách.\n"
 "\n"
 "Việc chỉ định tự động được tính toán theo trọng số của các cấp độ đối tác và định vị địa lý. Đối tác nhận được lead ở xung quanh họ.\n"
 "\n"
@@ -9872,7 +9872,7 @@ msgid ""
 msgstr ""
 "\n"
 "Module này cho phép người dùng xác định các đơn đặt hàng thầu phụ một cách dễ dàng hơn khi áp dụng chi phí thu mua hàng hóa,\n"
-"bằng cách hiển thị tham chiếu lấy hàng liên quan trong chế độ xem tìm kiếm.\n"
+"bằng cách hiển thị tham chiếu lấy hàng liên quan trong giao diện tìm kiếm.\n"
 "    "
 
 #. module: base
@@ -9994,7 +9994,7 @@ msgid ""
 msgstr ""
 "\n"
 "Module này cho phép bạn bán các sản phẩm cho thuê trong Thương mại Điện tử với\n"
-"những chế độ xem và lựa chọn bán phù hợp.\n"
+"những giao diện và lựa chọn bán phù hợp.\n"
 "    "
 
 #. module: base
@@ -10007,7 +10007,7 @@ msgid ""
 msgstr ""
 "\n"
 "Module này cho phép bạn bán các sản phẩm cho thuê cùng với sản phẩm tùy chọn trong Thương mại Điện tử với\n"
-"các chế độ xem và lựa chọn bán phù hợp.\n"
+"các giao diện và lựa chọn bán phù hợp.\n"
 "    "
 
 #. module: base
@@ -10020,7 +10020,7 @@ msgid ""
 msgstr ""
 "\n"
 "Module này cho phép bạn bán các sản phẩm đăng ký trong Thương mại Điện tử\n"
-"với các chế độ xem và lựa chọn bán phù hợp.\n"
+"với các giao diện và lựa chọn bán phù hợp.\n"
 "    "
 
 #. module: base
@@ -10167,7 +10167,7 @@ msgstr ""
 "Module này triển khai một đồng hồ tính giờ.\n"
 "==========================================================\n"
 "\n"
-"Đồng hồ tính giờ được thêm vào chế độ xem để ghi lại thời gian\n"
+"Đồng hồ tính giờ được thêm vào giao diện để ghi lại thời gian\n"
 "    "
 
 #. module: base
@@ -10960,7 +10960,7 @@ msgstr ""
 msgid ""
 " Adds a stat button on lead form view to access their livechat sessions."
 msgstr ""
-" Thêm nút thống kê trên chế độ xem biểu mẫu khách hàng tiềm năng để truy cập"
+" Thêm nút thống kê trên giao diện biểu mẫu khách hàng tiềm năng để truy cập"
 " các phiên trò chuyện trực tiếp của họ."
 
 #. module: base
@@ -11991,9 +11991,9 @@ msgid ""
 "                        <span attrs=\"{'invisible': [('reset_mode', '!=', 'hard')]}\">This view is not coming from a file.</span>\n"
 "                        <span attrs=\"{'invisible': [('reset_mode', '!=', 'other_view')]}\">You need two views to compare.</span>"
 msgstr ""
-"<span attrs=\"{'invisible': [('reset_mode', '!=', 'soft')]}\">Chế độ xem này không có phiên bản trước đó.</span>\n"
-"                        <span attrs=\"{'invisible': [('reset_mode', '!=', 'hard')]}\">Chế độ xem này không đến từ một tệp.</span>\n"
-"                        <span attrs=\"{'invisible': [('reset_mode', '!=', 'other_view')]}\">Bạn cần hai chế độ xem để thực hiện so sánh.</span>"
+"<span attrs=\"{'invisible': [('reset_mode', '!=', 'soft')]}\">Giao diện này không có phiên bản trước đó.</span>\n"
+"                        <span attrs=\"{'invisible': [('reset_mode', '!=', 'hard')]}\">Giao diện này không đến từ một tệp.</span>\n"
+"                        <span attrs=\"{'invisible': [('reset_mode', '!=', 'other_view')]}\">Bạn cần hai giao diện để thực hiện so sánh.</span>"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_currency_kanban
@@ -13239,7 +13239,7 @@ msgstr "Đóng Cửa sổ Hành động"
 #. module: base
 #: model:ir.model,name:base.model_ir_actions_act_window_view
 msgid "Action Window View"
-msgstr "Chế độ xem Cửa sổ Hành động"
+msgstr "Giao diện Cửa sổ Hành động"
 
 #. module: base
 #: model:ir.actions.act_window,name:base.ir_sequence_actions
@@ -13498,7 +13498,7 @@ msgstr "Bổ sung hỗ trợ Định danh itsme® khi ký tài liệu (chỉ ở
 #. module: base
 #: model:ir.module.module,summary:base.module_stock_barcode_picking_batch
 msgid "Add the support of batch transfers into the barcode view"
-msgstr "Thêm hỗ trợ chuyển hàng loạt vào chế độ xem mã vạch"
+msgstr "Thêm hỗ trợ chuyển hàng loạt vào giao diện mã vạch"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_sale_product_matrix
@@ -13602,7 +13602,7 @@ msgstr "Thêm cơ chế giao hàng miễn phí trong các đơn bán hàng"
 #. module: base
 #: model:ir.module.module,description:base.module_contacts_enterprise
 msgid "Adds notably the map view of contact"
-msgstr "Đáng chú ý, bổ sung chế độ xem bản đồ của liên hệ"
+msgstr "Đáng chú ý, bổ sung giao diện bản đồ của liên hệ"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_l10n_mx_hr
@@ -13832,7 +13832,7 @@ msgstr "Các tính năng nâng cao cho stock_account"
 #: model:ir.module.module,summary:base.module_mrp_subonctracting_landed_costs
 msgid "Advanced views to manage landed cost for subcontracting orders"
 msgstr ""
-"Chế độ xem nâng cao để quản lý chi phí thu mua hàng hóa cho các đơn đặt hàng"
+"Giao diện nâng cao để quản lý chi phí thu mua hàng hóa cho các đơn đặt hàng"
 " hợp đồng phụ"
 
 #. module: base
@@ -13975,7 +13975,7 @@ msgstr "Cho phép tích hợp với các plugin thư."
 #. module: base
 #: model:ir.module.module,summary:base.module_stock_barcode_mrp_subcontracting
 msgid "Allows the subcontracting process with the barcode views"
-msgstr "Cho phép quy trình hợp đồng phụ với chế độ xem mã vạch"
+msgstr "Cho phép quy trình hợp đồng phụ với giao diện mã vạch"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_stock_barcode_quality_control
@@ -15140,12 +15140,12 @@ msgstr "Cơ sở: Tự dộng thực thi vacuum dữ liệu nội bộ"
 #. module: base
 #: model:ir.module.module,summary:base.module_web_grid
 msgid "Basic 2D Grid view for odoo"
-msgstr "Chế độ xem Lưới 2D cơ bản cho Odoo"
+msgstr "Giao diện Lưới 2D cơ bản cho Odoo"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_web_cohort
 msgid "Basic Cohort view for odoo"
-msgstr "Chế độ xem Cohort cơ bản cho Odoo"
+msgstr "Giao diện Cohort cơ bản cho Odoo"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_quality
@@ -15187,8 +15187,8 @@ msgid ""
 "Be aware that editing the architecture of a standard view is not advised, since the changes will be overwritten during future module updates.<br/>\n"
 "                        We recommend applying modifications to standard views through inherited views or customization with Odoo Studio."
 msgstr ""
-"Xin lưu ý rằng không nên chỉnh sửa kiến trúc của chế độ xem tiêu chuẩn, vì các thay đổi sẽ bị ghi đè trong các bản cập nhật module trong tương lai.<br/>\n"
-"                        Chúng tôi khuyên bạn nên sửa đổi chế độ xem tiêu chuẩn thông qua chế độ xem kế thừa hoặc tùy chỉnh với Studio Odoo."
+"Xin lưu ý rằng không nên chỉnh sửa kiến trúc của giao diện tiêu chuẩn, vì các thay đổi sẽ bị ghi đè trong các bản cập nhật module trong tương lai.<br/>\n"
+"                        Chúng tôi khuyên bạn nên sửa đổi giao diện tiêu chuẩn thông qua giao diện kế thừa hoặc tùy chỉnh với Studio Odoo."
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__ir_asset__directive__before
@@ -15834,7 +15834,7 @@ msgstr "Chỉ có thể đổi tên 1 trường tại 1 thời điểm!"
 #: code:addons/base/models/ir_ui_view.py:0
 #, python-format
 msgid "Can't compare more than two views."
-msgstr "Không thể so sánh nhiều hơn hai chế độ xem."
+msgstr "Không thể so sánh nhiều hơn hai giao diện."
 
 #. module: base
 #: model:res.country,name:base.ca
@@ -16446,7 +16446,7 @@ msgid ""
 "Comma-separated list of allowed view modes, such as 'form', 'tree', "
 "'calendar', etc. (Default: tree,form)"
 msgstr ""
-"Danh sách các chế độ xem được phép được phân tách bằng dấu phẩy, ví dụ "
+"Danh sách các giao diện được phép được phân tách bằng dấu phẩy, ví dụ "
 "'form', 'tree', 'calendar', etc. (Mặc định: tree,form)"
 
 #. module: base
@@ -17207,7 +17207,7 @@ msgstr "Tạo một Danh xưng"
 #. module: base
 #: model_terms:ir.actions.act_window,help:base.action_ui_view_custom
 msgid "Create a customized view"
-msgstr "Tạo chế độ xem tuỳ chỉnh"
+msgstr "Tạo giao diện tuỳ chỉnh"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__ir_actions_server__state__object_create
@@ -17651,7 +17651,7 @@ msgstr "Phím tắt Tùy biến"
 #. module: base
 #: model:ir.model,name:base.model_ir_ui_view_custom
 msgid "Custom View"
-msgstr "Chế độ xem Tuỳ chỉnh"
+msgstr "Giao diện Tuỳ chỉnh"
 
 #. module: base
 #. odoo-python
@@ -17831,7 +17831,7 @@ msgid ""
 "Database ID of record to open in form view, when ``view_mode`` is set to "
 "'form' only"
 msgstr ""
-"ID cơ sở dữ liệu của bản ghi để mở trong chế độ xem biểu mẫu, khi "
+"ID cơ sở dữ liệu của bản ghi để mở trong giao diện biểu mẫu, khi "
 "``view_mode`` chỉ được đặt thành 'biểu mẫu'"
 
 #. module: base
@@ -18031,7 +18031,7 @@ msgstr "Giá trị Mặc định"
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_actions_act_window__limit
 msgid "Default limit for the list view"
-msgstr "Giới hạn mặc định cho chế độ xem danh sách"
+msgstr "Giới hạn mặc định cho giao diện danh sách"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_report_paperformat__default
@@ -18065,7 +18065,7 @@ msgstr "Báo cáo đã Xác định"
 #. module: base
 #: model:ir.module.module,summary:base.module_web_map
 msgid "Defines the map view for odoo enterprise"
-msgstr "Xác định chế độ xem bản đồ cho Odoo Enterprise"
+msgstr "Xác định giao diện bản đồ cho Odoo Enterprise"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_model_constraint__definition
@@ -19057,7 +19057,7 @@ msgstr "Hóa đơn điện tử cho Colombia với Carvajal UBL 2.1"
 #: code:addons/template_inheritance.py:0
 #, python-format
 msgid "Element %r cannot be located in parent view"
-msgstr "Không thể định vị phần tử %r trong chế độ xem mẹ"
+msgstr "Không thể định vị phần tử %r trong giao diện mẹ"
 
 #. module: base
 #. odoo-python
@@ -19291,7 +19291,7 @@ msgid ""
 "* Cost Structure report (mrp_account)"
 msgstr ""
 "Mở rộng Enterprise cho Sản xuất\n"
-"* Lập kế hoạch công đoạn. Kiểm tra kế hoạch theo chế độ xem Gantt được nhóm theo đơn đặt hàng sản xuất/khu vực sản xuất\n"
+"* Lập kế hoạch công đoạn. Kiểm tra kế hoạch theo giao diện Gantt được nhóm theo đơn đặt hàng sản xuất/khu vực sản xuất\n"
 "* Báo cáo truy xuất nguồn gốc\n"
 "* Báo cáo Cấu trúc Chi phí (mrp_account)"
 
@@ -19360,7 +19360,7 @@ msgid ""
 "%(fivelines)s\n"
 "%(error)s"
 msgstr ""
-"Lỗi khi xác thực chế độ xem gần:\n"
+"Lỗi khi xác thực giao diện gần:\n"
 "\n"
 "%(fivelines)s\n"
 "%(error)s"
@@ -19724,7 +19724,7 @@ msgstr "Địa chỉ Mở rộng"
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__ir_ui_view__mode__extension
 msgid "Extension View"
-msgstr "Chế độ xem Mở rộng"
+msgstr "Giao diện Mở rộng"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_snailmail_account_followup
@@ -20032,7 +20032,7 @@ msgstr "Trương \"Kiểu\" không thể thay đổi ở model."
 msgid ""
 "Field %(name)r used in %(use)s is present in view but is in select multi."
 msgstr ""
-"Trường %(name)r được sử dụng trong %(use)s có trong chế độ xem nhưng nằm "
+"Trường %(name)r được sử dụng trong %(use)s có trong giao diện nhưng nằm "
 "trong đa lựa chọn."
 
 #. module: base
@@ -20051,7 +20051,7 @@ msgstr ""
 #, python-format
 msgid "Field %(name)r used in %(use)s must be present in view but is missing."
 msgstr ""
-"Trường %(name)r được dùng trong %(use)s phải có trong chế độ xem, nhưng hiện"
+"Trường %(name)r được dùng trong %(use)s phải có trong giao diện, nhưng hiện"
 " đang bị thiếu."
 
 #. module: base
@@ -20276,8 +20276,8 @@ msgid ""
 "File from where the view originates.\n"
 "                                                          Useful to (hard) reset broken views or to read arch from file in dev-xml mode."
 msgstr ""
-"Tệp là nơi bắt nguồn chế độ xem.\n"
-"                                                          Hữu ích để đặt lại (sử dụng phím cứng) các chế độ xem bị hỏng hoặc để đọc arch từ tệp ở chế độ dev-xml."
+"Tệp là nơi bắt nguồn giao diện.\n"
+"                                                          Hữu ích để đặt lại (sử dụng phím cứng) các giao diện bị hỏng hoặc để đọc arch từ tệp ở chế độ dev-xml."
 
 #. module: base
 #: model:ir.model,name:base.model_ir_binary
@@ -20936,7 +20936,7 @@ msgstr "Đức SKR04 - Kế toán"
 #. module: base
 #: model:ir.module.module,summary:base.module_website_sale_dashboard
 msgid "Get a new dashboard view in the Website App"
-msgstr "Có được một chế độ xem trang tổng quan mới trong Ứng dụng Trang web"
+msgstr "Có được một giao diện trang tổng quan mới trong Ứng dụng Trang web"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_social_demo
@@ -21090,7 +21090,7 @@ msgstr "Grenada"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_web_grid
 msgid "Grid View"
-msgstr "Chế độ xem Lưới"
+msgstr "Giao diện Lưới"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_model_access__group_id
@@ -21972,7 +21972,7 @@ msgid ""
 "form view."
 msgstr ""
 "Nếu chọn có, hoạt động sẽ không được hiển thị ở thanh công cụ bên phải trên "
-"chế độ xem biểu mẫu."
+"giao diện biểu mẫu."
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_default__company_id
@@ -22014,8 +22014,8 @@ msgid ""
 "If this field is empty, the view applies to all users. Otherwise, the view "
 "applies to the users of those groups only."
 msgstr ""
-"Nếu trường này trống, chế độ xem sẽ áp dụng cho tất cả người dùng. Nếu "
-"không, chế độ xem chỉ áp dụng cho người dùng của các nhóm đó."
+"Nếu trường này trống, giao diện sẽ áp dụng cho tất cả người dùng. Nếu "
+"không, giao diện chỉ áp dụng cho người dùng của các nhóm đó."
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_ui_view__active
@@ -22025,9 +22025,9 @@ msgid ""
 "* if False, the view currently does not extend its parent but can be enabled\n"
 "         "
 msgstr ""
-"Nếu chế độ xem này được kế thừa,\n"
-"* nếu Đúng, chế độ xem luôn mở rộng chế độ xem cha của nó\n"
-"* nếu Sai, chế độ xem hiện không mở rộng chế độ xem cha của nó nhưng có thể được bật\n"
+"Nếu giao diện này được kế thừa,\n"
+"* nếu Đúng, giao diện luôn mở rộng giao diện cha của nó\n"
+"* nếu Sai, giao diện hiện không mở rộng giao diện cha của nó nhưng có thể được bật\n"
 "         "
 
 #. module: base
@@ -22498,7 +22498,7 @@ msgstr "Kế thừa từ Giao diện"
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_view_form
 msgid "Inherited Views"
-msgstr "Chế độ xem Kế thừa"
+msgstr "Giao diện Kế thừa"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_model__inherited_model_ids
@@ -22513,8 +22513,8 @@ msgid ""
 "Inherited view cannot have 'Groups' define on the record. Use 'groups' "
 "attributes inside the view definition"
 msgstr ""
-"Không thể xác định 'Nhóm' trên bản ghi cho chế độ xem kế thừa. Hãy sử dụng "
-"các thuộc tính 'nhóm' bên trong định nghĩa chế độ xem"
+"Không thể xác định 'Nhóm' trên bản ghi cho giao diện kế thừa. Hãy sử dụng "
+"các thuộc tính 'nhóm' bên trong định nghĩa giao diện"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_groups__implied_ids
@@ -22590,7 +22590,7 @@ msgstr ""
 #: code:addons/base/models/ir_ui_view.py:0
 #, python-format
 msgid "Insufficient fields for Calendar View!"
-msgstr "Không đủ trường cho Chế độ xem lịch!"
+msgstr "Không đủ trường cho Giao diện lịch!"
 
 #. module: base
 #. odoo-python
@@ -22600,7 +22600,7 @@ msgid ""
 "Insufficient fields to generate a Calendar View for %s, missing a date_stop "
 "or a date_delay"
 msgstr ""
-"Không đủ trường để tạo Chế độ xem lịch cho %s, đang thiếu một date_stop hoặc"
+"Không đủ trường để tạo Giao diện lịch cho %s, đang thiếu một date_stop hoặc"
 " một date_delay"
 
 #. module: base
@@ -22827,13 +22827,13 @@ msgid ""
 "Invalid inheritance mode: if the mode is 'extension', the view must extend "
 "an other view"
 msgstr ""
-"Chế độ kế thừa không hợp lệ: nếu chế độ là 'extension', chế độ xem phải mở "
-"rộng chế độ xem khác"
+"Chế độ kế thừa không hợp lệ: nếu chế độ là 'extension', giao diện phải mở "
+"rộng giao diện khác"
 
 #. module: base
 #: model:ir.model.constraint,message:base.constraint_ir_ui_view_qweb_required_key
 msgid "Invalid key: QWeb view should have a key"
-msgstr "Khóa không hợp lệ: Chế độ xem QWeb phải có khóa"
+msgstr "Khóa không hợp lệ: Giao diện QWeb phải có khóa"
 
 #. module: base
 #. odoo-python
@@ -22922,7 +22922,7 @@ msgstr "Giá trị không hợp lệ với %s.%s: %s"
 #: code:addons/base/models/ir_ui_view.py:0
 #, python-format
 msgid "Invalid view %(name)s definition in %(file)s"
-msgstr "Định nghĩa chế độ xem %(name)s không hợp lệ trong %(file)s"
+msgstr "Định nghĩa giao diện %(name)s không hợp lệ trong %(file)s"
 
 #. module: base
 #. odoo-python
@@ -24379,7 +24379,7 @@ msgstr ""
 "Tùy chỉnh Quy trình Tuyển dụng của Bạn\n"
 "----------------------------------\n"
 "\n"
-"Sử dụng chế độ xem kanban và tùy chỉnh các bước trong quy trình tuyển dụng;\n"
+"Sử dụng giao diện kanban và tùy chỉnh các bước trong quy trình tuyển dụng;\n"
 "sơ tuyển, phỏng vấn lần đầu, phỏng vấn lần hai, thương lượng, ...\n"
 "\n"
 "Nhận số liệu thống kê chính xác về quy trình tuyển dụng của bạn. Nhận báo cáo để so sánh\n"
@@ -24388,7 +24388,7 @@ msgstr ""
 "Hợp lý hóa Quy trình Tuyển dụng của Bạn\n"
 "-----------------------------------\n"
 "\n"
-"Theo dõi các ứng viên trong quá trình tuyển dụng với chế độ xem kanban thông minh. Tiết kiệm\n"
+"Theo dõi các ứng viên trong quá trình tuyển dụng với giao diện kanban thông minh. Tiết kiệm\n"
 "thời gian bằng cách tự động hóa một số thông tin liên lạc với các mẫu email.\n"
 "\n"
 "Các tài liệu như CV và thư xin việc được lập chỉ mục tự động,\n"
@@ -24663,7 +24663,7 @@ msgstr "Quan hệ ManyToMany"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_web_map
 msgid "Map View"
-msgstr "Chế độ xem Bản đồ"
+msgstr "Giao diện Bản đồ"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_product_margin
@@ -25124,7 +25124,7 @@ msgstr "Thiếu giá trị bắt buộc cho trường '%s' (%s)"
 #: code:addons/base/models/ir_ui_view.py:0
 #, python-format
 msgid "Missing view architecture."
-msgstr "Thiếu kiến trúc chế độ xem."
+msgstr "Thiếu kiến trúc giao diện."
 
 #. module: base
 #: model:res.partner.title,name:base.res_partner_title_mister
@@ -25596,7 +25596,7 @@ msgstr "Tên"
 msgid ""
 "Name or id %(name_or_id)r in %(use)s must be present in view but is missing."
 msgstr ""
-"Tên hoặc id %(name_or_id)r trong %(use)s phải có mặt trong chế độ xem nhưng "
+"Tên hoặc id %(name_or_id)r trong %(use)s phải có mặt trong giao diện nhưng "
 "bị thiếu."
 
 #. module: base
@@ -26392,7 +26392,7 @@ msgstr ""
 "Kênh Bán hàng của Bạn, Cách thức của Bạn\n"
 "--------------------------------------\n"
 "\n"
-"Theo dõi luồng cơ hội kinh doanh của bạn với chế độ xem kanban đã được cải tiến. Làm việc\n"
+"Theo dõi luồng cơ hội kinh doanh của bạn với giao diện kanban đã được cải tiến. Làm việc\n"
 "bên trong kênh bán hàng và nhận thông tin trực quan tức thì về các hành động tiếp theo,\n"
 "thông báo mới, cơ hội kinh doanh ưu tiên và doanh thu dự kiến.\n"
 "\n"
@@ -26429,7 +26429,7 @@ msgstr ""
 "--------------------\n"
 "\n"
 "Lên lịch các cuộc họp và cuộc gọi điện thoại với lịch được tích hợp. Bạn có thể\n"
-"xem chương trình của mình và của đồng nghiệp trong cùng một chế độ xem. Là một nhà quản lý, \n"
+"xem chương trình của mình và của đồng nghiệp trong cùng một giao diện. Là một nhà quản lý, \n"
 "việc nắm bắt các công việc mà đội ngũ của bạn đang thực hiện trở nên thật đơn giản.\n"
 "\n"
 "Tự động hoá Lead Automation và Chiến dịch Marketing\n"
@@ -26606,7 +26606,7 @@ msgstr ""
 "Lập chỉ mục CV, theo dõi ứng viên, tìm kiếm hồ sơ với <a href=\"https://www.odoo.com/app/employees\">Nhân sự của Odoo</a>.\n"
 "\n"
 "Đăng lời mời làm việc và theo dõi từng đơn ứng tuyển đã nhận. Theo dõi ứng viên\n"
-"trong quy trình tuyển dụng của bạn với chế độ xem kanban thông minh.\n"
+"trong quy trình tuyển dụng của bạn với giao diện kanban thông minh.\n"
 "\n"
 "Tiết kiệm thời gian bằng cách tự động hóa thông tin trao đổi với các mẫu email. CV\n"
 "được lập chỉ mục tự động, cho phép bạn dễ dàng tìm thấy các hồ sơ cụ thể.\n"
@@ -26747,7 +26747,7 @@ msgstr ""
 "\n"
 "Odoo giúp bạn quản lý toàn bộ hoạt động lắp ráp hoặc sản xuất. Lên lịch \n"
 "lệnh sản xuất và công đoạn một cách tự động. Xem lại kế hoạch\n"
-"được đề xuất với chế độ xem kanban và gantt thông minh. Sử dụng các tính năng phân tích\n"
+"được đề xuất với giao diện kanban và gantt thông minh. Sử dụng các tính năng phân tích\n"
 "nâng cao để phát hiện tình trạng tắc nghẽn nguồn tài nguyên và vị trí hàng tồn kho.\n"
 "\n"
 "Lập kế Lệnh Sản xuất một cách Hiệu quả\n"
@@ -26783,8 +26783,8 @@ msgstr ""
 "---------------------------\n"
 "\n"
 "Sắp xếp các lệnh sản xuất và lệnh việc theo cách bạn muốn. Xử lý các lệnh tiếp theo\n"
-"từ chế độ xem danh sách, kiểm soát trong chế độ xem theo lịch và chỉnh sửa lịch trình \n"
-"được đề xuất trong chế độ xem Gantt.\n"
+"từ giao diện danh sách, kiểm soát trong giao diện theo lịch và chỉnh sửa lịch trình \n"
+"được đề xuất trong giao diện Gantt.\n"
 "\n"
 "\n"
 "Phân tích Tồn kho & Sản xuất\n"
@@ -27944,7 +27944,7 @@ msgstr ""
 "----------------------\n"
 "\n"
 "Hoàn toàn kiểm soát cách bạn hiển thị sản phẩm trong trang danh mục: \n"
-"banner quảng cáo, kích thước sản phẩm liên quan, chiết khấu, biến thể, chế độ xem dạng \n"
+"banner quảng cáo, kích thước sản phẩm liên quan, chiết khấu, biến thể, giao diện dạng \n"
 "lưới/danh sách,...\n"
 "\n"
 "Chỉnh sửa nội tuyến bất kỳ sản phẩm để làm cho trang web của bạn phát triển theo nhu cầu của khách hàng.\n"
@@ -28256,15 +28256,15 @@ msgid ""
 "(<xpath/>) are applied, and the result is used as if it were this view's\n"
 "actual arch.\n"
 msgstr ""
-"Chỉ áp dụng nếu chế độ xem này kế thừa từ chế độ xem khác (inherit_id không phải là Sai/Không có).\n"
+"Chỉ áp dụng nếu giao diện này kế thừa từ giao diện khác (inherit_id không phải là Sai/Không có).\n"
 "\n"
-"* Nếu yêu cầu mở rộng (mặc định), thì chế độ xem chính\n"
-"gần nhất sẽ được tìm kiếm (thông qua inherit_id), sau đó tất cả các chế độ xem kế thừa từ\n"
-"nó sẽ được áp dụng với model của chế độ xem này.\n"
-"* nếu là chính, thì chế độ xem chính gần nhất được giải quyết hoàn toàn (ngay cả khi nó sử dụng \n"
-"một model khác với chế độ xem này), sau đó thông số kế thừa của chế độ xem\n"
+"* Nếu yêu cầu mở rộng (mặc định), thì giao diện chính\n"
+"gần nhất sẽ được tìm kiếm (thông qua inherit_id), sau đó tất cả các giao diện kế thừa từ\n"
+"nó sẽ được áp dụng với model của giao diện này.\n"
+"* nếu là chính, thì giao diện chính gần nhất được giải quyết hoàn toàn (ngay cả khi nó sử dụng \n"
+"một model khác với giao diện này), sau đó thông số kế thừa của giao diện\n"
 "(<xpath/>) này sẽ được áp dụng và kết quả được sử dụng như arch thực của \n"
-"chế độ xem này.\n"
+"giao diện này.\n"
 
 #. module: base
 #. odoo-python
@@ -28385,7 +28385,7 @@ msgid ""
 "Optional help text for the users with a description of the target view, such"
 " as its usage and purpose."
 msgstr ""
-"Văn bản trợ giúp tùy chọn cho người dùng có mô tả về chế độ xem mục tiêu, "
+"Văn bản trợ giúp tùy chọn cho người dùng có mô tả về giao diện mục tiêu, "
 "chẳng hạn như mục đích sử dụng và mục đích của nó."
 
 #. module: base
@@ -29731,7 +29731,7 @@ msgstr "Arch Trước đó"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_ui_view__arch_prev
 msgid "Previous View Architecture"
-msgstr "Kiến trúc Chế độ xem Trước đó"
+msgstr "Kiến trúc Giao diện Trước đó"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_cron__lastcall
@@ -30064,8 +30064,8 @@ msgstr ""
 "--------------------------------\n"
 "\n"
 "Tổ chức các dự án theo quy trình của riêng bạn. Thực hiện nhiệm vụ và vấn đề bằng cách sử dụng \n"
-"chế độ xem kanban, lên lịch cho các nhiệm vụ bằng biểu đồ gantt và kiểm soát hạn chót trong \n"
-"chế độ xem lịch. Mỗi dự án có thể có các giai đoạn riêng, cho phép các đội ngũ tối ưu hóa\n"
+"giao diện kanban, lên lịch cho các nhiệm vụ bằng biểu đồ gantt và kiểm soát hạn chót trong \n"
+"giao diện lịch. Mỗi dự án có thể có các giai đoạn riêng, cho phép các đội ngũ tối ưu hóa\n"
 "công việc của họ.\n"
 "\n"
 "Dễ Sử dụng\n"
@@ -30444,7 +30444,7 @@ msgstr "QWeb Trường thời gian"
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.act_report_xml_view
 msgid "QWeb views"
-msgstr "Chế độ xem QWeb"
+msgstr "Giao diện QWeb"
 
 #. module: base
 #: model:res.country,name:base.qa
@@ -31121,17 +31121,17 @@ msgstr "Đặt lại hiển thị"
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.reset_view_arch_wizard_view
 msgid "Reset View Architecture"
-msgstr "Đặt lại Kiến trúc Chế độ xem"
+msgstr "Đặt lại Kiến trúc Giao diện"
 
 #. module: base
 #: model:ir.model,name:base.model_reset_view_arch_wizard
 msgid "Reset View Architecture Wizard"
-msgstr "Trình hỗ trợ Đặt lại Kiến trúc Chế độ xem"
+msgstr "Trình hỗ trợ Đặt lại Kiến trúc Giao diện"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__reset_view_arch_wizard__reset_mode__other_view
 msgid "Reset to another view."
-msgstr "Đặt lại thành chế độ xem khác."
+msgstr "Đặt lại thành giao diện khác."
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__reset_view_arch_wizard__reset_mode__hard
@@ -34655,7 +34655,7 @@ msgid ""
 "This field should be used when accessing view arch. It will use translation.\n"
 "                               Note that it will read `arch_db` or `arch_fs` if in dev-xml mode."
 msgstr ""
-"Trường này nên được sử dụng khi truy cập vào arch chế độ xem. Bản dịch sẽ được sử dụng.\n"
+"Trường này nên được sử dụng khi truy cập vào arch giao diện. Bản dịch sẽ được sử dụng.\n"
 "                              Lưu ý rằng nó sẽ đọc `arch_db` hoặc `arch_fs` nếu ở chế độ dev-xml."
 
 #. module: base
@@ -34670,7 +34670,7 @@ msgid ""
 "                                                                         Useful to (soft) reset a broken view."
 msgstr ""
 "Trường này sẽ lưu `arch_db` hiện tại trước khi ghi vào đó.\n"
-"                                                                        Hữu ích khi khởi động lại (bắt buộc) chế độ xem bị hỏng."
+"                                                                        Hữu ích khi khởi động lại (bắt buộc) giao diện bị hỏng."
 
 #. module: base
 #. odoo-python
@@ -34696,9 +34696,9 @@ msgid ""
 " and reference view. The result is returned as an ordered list of pairs "
 "(view_id,view_mode)."
 msgstr ""
-"Trường chức năng này tính toán danh sách theo thứ tự của chế độ xem sẽ được "
-"bật khi hiển thị kết quả của một hành động, chế độ xem liên kết, chế độ xem "
-"và chế độ xem tham chiếu. Kết quả được trả về dưới dạng danh sách các cặp "
+"Trường chức năng này tính toán danh sách theo thứ tự của giao diện sẽ được "
+"bật khi hiển thị kết quả của một hành động, giao diện liên kết, giao diện "
+"và giao diện tham chiếu. Kết quả được trả về dưới dạng danh sách các cặp "
 "được sắp xếp theo thứ tự (view_id,view_mode)."
 
 #. module: base
@@ -34851,7 +34851,7 @@ msgid ""
 "present in a separate module as it contains models used only to perform\n"
 "tests independently to functional aspects of other models. "
 msgstr ""
-"Module này bao gồm các bản kiểm thử liên quan đến chế độ xem grantt trên web. Chúng xuất hiện \n"
+"Module này bao gồm các bản kiểm thử liên quan đến giao diện grantt trên web. Chúng xuất hiện \n"
 "trong một module riêng biệt vì chứa các model chỉ được sử dụng để tiến hành \n"
 "kiểm thử độc lập với các khía cạnh chức năng của những model khác."
 
@@ -34862,7 +34862,7 @@ msgid ""
 "present in a separate module as it contains models used only to perform\n"
 "tests independently to functional aspects of other models. "
 msgstr ""
-"Module này bao gồm các bản kiểm thử liên quan đến chế độ xem dạng lưới trên web. Chúng xuất hiện \n"
+"Module này bao gồm các bản kiểm thử liên quan đến giao diện dạng lưới trên web. Chúng xuất hiện \n"
 "trong một module riêng biệt vì chứa các model chỉ được sử dụng để tiến hành \n"
 "kiểm thử độc lập với các khía cạnh chức năng của những model khác."
 
@@ -34934,7 +34934,7 @@ msgstr ""
 "trong một module riêng biệt vì chúng tôi đang kiểm thử việc cài đặt/gỡ cài đặt/nâng cấp\n"
 "module và chúng tôi không muốn lần nào cũng cần tải lại module trang web, bao gồm cả các \n"
 "thành phần phụ thuộc có thể có. Chúng tôi cũng không muốn bổ sung một số định tuyến, \n"
-"chế độ xem và model vào module trang web chỉ nhằm mục đích chạy các bản kiểm thử."
+"giao diện và model vào module trang web chỉ nhằm mục đích chạy các bản kiểm thử."
 
 #. module: base
 #: model:ir.module.module,description:base.module_sale_subscription_taxcloud
@@ -34961,7 +34961,7 @@ msgid ""
 "For that purpose it adds a gantt view on event tracks."
 msgstr ""
 "Mô-đun này giúp phân tích và tổ chức các sự kiện theo dõi.\n"
-"Với mục đích đó, nó thêm chế độ xem gantt trên các bản nhạc sự kiện."
+"Với mục đích đó, nó thêm giao diện gantt trên các bản nhạc sự kiện."
 
 #. module: base
 #: model:ir.module.module,description:base.module_event_enterprise
@@ -34978,7 +34978,7 @@ msgstr ""
 "Với mục đích đó, module này bổ sung\n"
 "\n"
 "* phân tích cohort về người tham dự;\n"
-"* chế độ xem gantt về sự kiện;\n"
+"* giao diện gantt về sự kiện;\n"
 "\n"
 "    "
 
@@ -34990,7 +34990,7 @@ msgid ""
 "    "
 msgstr ""
 "Module này giúp phân tích doanh thu từ các sự kiện.\n"
-"Với mục đích đó, chế độ xem trang tổng quan được thêm vào báo cáo doanh thu\n"
+"Với mục đích đó, giao diện trang tổng quan được thêm vào báo cáo doanh thu\n"
 "    "
 
 #. module: base
@@ -36754,7 +36754,7 @@ msgstr "Kiểm tra Gantt trên web"
 #. module: base
 #: model:ir.module.module,summary:base.module_test_web_gantt
 msgid "Web Gantt Tests: Tests specific to the gantt view"
-msgstr "Kiểm tra Gantt trên web: Kiểm tra cụ thể cho chế độ xem gantt"
+msgstr "Kiểm tra Gantt trên web: Kiểm tra cụ thể cho giao diện gantt"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_test_web_grid
@@ -36765,7 +36765,7 @@ msgstr "Kiểm thử Lưới Trang web"
 #: model:ir.module.module,summary:base.module_test_web_grid
 msgid "Web Grid Tests: performances and tests specific to the grid view"
 msgstr ""
-"Kiểm thử Lưới Trang web: hiệu suất và kiểm thử dành riêng cho chế độ xem "
+"Kiểm thử Lưới Trang web: hiệu suất và kiểm thử dành riêng cho giao diện "
 "lưới"
 
 #. module: base

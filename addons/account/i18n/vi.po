@@ -15846,7 +15846,7 @@ msgstr ""
 "Dùng lựa chọn “<i>Gửi bưu điện</i>” để vào sổ hóa đơn tự động. Đối với chi "
 "phí của một con tem, chúng tôi thực hiện tất cả các công việc thủ công: hóa "
 "đơn của bạn sẽ được in ở đúng quốc gia, đựng trong phong bì và được gửi qua "
-"đường bưu điện. Sử dụng tính năng này từ chế độ xem danh sách để vào sổ hàng"
+"đường bưu điện. Sử dụng tính năng này từ giao diện danh sách để vào sổ hàng"
 " loạt hóa đơn."
 
 #. module: account

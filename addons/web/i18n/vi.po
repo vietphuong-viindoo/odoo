@@ -2156,7 +2156,7 @@ msgstr "Sửa Miền"
 #: code:addons/web/static/src/views/debug_items.js:0
 #, python-format
 msgid "Edit SearchView"
-msgstr "Chỉnh sửa Chế độ xem tìm kiếm"
+msgstr "Chỉnh sửa Giao diện tìm kiếm"
 
 #. module: web
 #. odoo-javascript

@@ -435,7 +435,7 @@ msgid ""
 "Optional help text for the users with a description of the target view, such"
 " as its usage and purpose."
 msgstr ""
-"Văn bản trợ giúp tùy chọn cho người dùng có mô tả về chế độ xem mục tiêu, "
+"Văn bản trợ giúp tùy chọn cho người dùng có mô tả về giao diện mục tiêu, "
 "chẳng hạn như mục đích sử dụng và mục đích của nó."
 
 #. module: base_automation

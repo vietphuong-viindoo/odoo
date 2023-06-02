@@ -200,7 +200,7 @@ msgid ""
 " subcontracting portal view"
 msgstr ""
 "Danh sách sản phẩm được sử dụng trong ĐMNL, dùng để lọc danh sách sản phẩm "
-"trong chế độ xem cổng thông tin thầu phụ"
+"trong giao diện cổng thông tin thầu phụ"
 
 #. module: mrp_subcontracting
 #: model:ir.model.fields,field_description:mrp_subcontracting.field_res_partner__production_ids
