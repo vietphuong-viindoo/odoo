@@ -617,8 +617,8 @@ msgid ""
 "ID of the parent record holding the alias (example: project holding the task"
 " creation alias)"
 msgstr ""
-"ID của bản ghi cha mà chứa bí danh (ví dụ: dự án chứa bí danh để tạo nhiệm "
-"vụ)"
+"ID của tập dữ liệu cha mà chứa bí danh (ví dụ: dự án chứa bí danh để tạo "
+"nhiệm vụ)"
 
 #. module: maintenance
 #: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__activity_exception_icon
