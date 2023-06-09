@@ -216,7 +216,7 @@ msgstr "Generate Sales Payment Link"
 #. module: account_payment
 #: model:ir.actions.act_window,name:account_payment.action_invoice_order_generate_link
 msgid "Generate a Payment Link"
-msgstr "Generate a Payment Link"
+msgstr "Tạo Link Thanh toán"
 
 #. module: account_payment
 #: model:ir.model.fields,field_description:account_payment.field_payment_refund_wizard__has_pending_refund
