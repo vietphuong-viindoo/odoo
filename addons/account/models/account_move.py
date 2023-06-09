@@ -689,7 +689,7 @@ class AccountMove(models.Model):
                     if move._get_last_sequence(lock=False):
                         # The name does not match the date and the move is not the first in the period:
                         # Reset to draft
-                        move.name = '/'
+                        move.name = False
                         continue
                 else:
                     if move_has_name and move.posted_before or not move_has_name and move._get_last_sequence(lock=False):
@@ -701,7 +701,7 @@ class AccountMove(models.Model):
             if move.date and (not move_has_name or not move._sequence_matches_date()):
                 move._set_next_sequence()
 
-        self.filtered(lambda m: not m.name).name = '/'
+        self.filtered(lambda m: not m.name and not move.quick_edit_mode).name = '/'
         self._inverse_name()
 
 
@@ -1642,7 +1642,7 @@ class AccountMove(models.Model):
     @api.onchange('invoice_cash_rounding_id')
     def _onchange_invoice_cash_rounding_id(self):
         for move in self:
-            if move.invoice_cash_rounding_id and not move.invoice_cash_rounding_id.profit_account_id:
+            if move.invoice_cash_rounding_id.strategy == 'add_invoice_line' and not move.invoice_cash_rounding_id.profit_account_id:
                 return {'warning': {
                     'title': _("Warning for Cash Rounding Method: %s", move.invoice_cash_rounding_id.name),
                     'message': _("You must specifiy the Profit Account (company dependent)")
