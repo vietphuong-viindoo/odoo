@@ -1046,7 +1046,7 @@ msgstr "Thêm thẻ"
 #: code:addons/website_slides/static/src/js/slides_category_add.js:0
 #, python-format
 msgid "Add a section"
-msgstr "Thêm phân vùng"
+msgstr "Thêm phần"
 
 #. module: website_slides
 #. odoo-javascript
