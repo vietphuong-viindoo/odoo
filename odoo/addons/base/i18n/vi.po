@@ -25043,64 +25043,64 @@ msgstr "Công thức kế toán bảng tính"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_spreadsheet_dashboard
 msgid "Spreadsheet dashboard"
-msgstr "Trang tổng quan bảng tính"
+msgstr "Bảng Tổng hợp Bảng tính"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_spreadsheet_dashboard_account
 msgid "Spreadsheet dashboard for accounting"
-msgstr "Bảng điều khiển bảng tính cho kế toán"
+msgstr "Bảng Tổng hợp bảng tính cho kế toán"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_spreadsheet_dashboard_website_sale_slides
 msgid "Spreadsheet dashboard for eLearning"
-msgstr "Trang tổng quan bảng tính cho eLearning"
+msgstr "Bảng Tổng hợp bảng tính cho eLearning"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_spreadsheet_dashboard_event_sale
 msgid "Spreadsheet dashboard for events"
-msgstr "Trang tổng quan bảng tính cho các sự kiện"
+msgstr "Bảng Tổng hợp bảng tính cho các sự kiện"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_spreadsheet_dashboard_hr_expense
 msgid "Spreadsheet dashboard for expenses"
-msgstr "Bảng điều khiển bảng tính cho các chi phí"
+msgstr "Bảng Tổng hợp bảng tính cho các chi tiêu"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_spreadsheet_dashboard_sale_expense
 msgid "Spreadsheet dashboard for expenses and sales"
-msgstr "Trang tổng quan bảng tính dành cho chi phí và bán hàng"
+msgstr "Bảng Tổng hợp bảng tính dành cho chi phí và bán hàng"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_spreadsheet_dashboard_im_livechat
 msgid "Spreadsheet dashboard for live chat"
-msgstr "Trang tổng quan bảng tính để trò chuyện trực tiếp"
+msgstr "Bảng Tổng hợp bảng tính cho live chat"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_spreadsheet_dashboard_pos_hr
 msgid "Spreadsheet dashboard for point of sale"
-msgstr "Trang tổng quan bảng tính cho điểm bán hàng"
+msgstr "Bảng Tổng hợp bảng tính cho điểm bán hàng"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_spreadsheet_dashboard_purchase
 #: model:ir.module.module,shortdesc:base.module_spreadsheet_dashboard_purchase_stock
 msgid "Spreadsheet dashboard for purchases"
-msgstr "Trang tổng quan bảng tính để mua hàng"
+msgstr "Bảng Tổng hợp bảng tính cho mua hàng"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_spreadsheet_dashboard_sale
 msgid "Spreadsheet dashboard for sales"
-msgstr "Trang tổng quan bảng tính để bán hàng"
+msgstr "Bảng Tổng hợp bảng tính cho bán hàng"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_spreadsheet_dashboard_stock_account
 msgid "Spreadsheet dashboard for stock"
-msgstr "Bảng điều khiển bảng tính cho kho"
+msgstr "Bảng Tổng hợp bảng tính cho kho"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_spreadsheet_dashboard_hr_timesheet
 #: model:ir.module.module,shortdesc:base.module_spreadsheet_dashboard_sale_timesheet
 msgid "Spreadsheet dashboard for time sheets"
-msgstr "Bảng điều khiển bảng tính cho các tờ thời gian"
+msgstr "Bảng Tổng hợp bảng tính cho các tờ thời gian"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_profile__sql
