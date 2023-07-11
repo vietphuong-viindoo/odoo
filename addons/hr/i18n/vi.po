@@ -766,7 +766,7 @@ msgstr "Dựa trên trạng thái người dùng trong hệ thống"
 #. module: hr
 #: model:ir.model,name:hr.model_hr_employee_base
 msgid "Basic Employee"
-msgstr "Người dùng cơ bản"
+msgstr "Nhân viên Cơ sở"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_res_users__can_edit
@@ -2591,7 +2591,7 @@ msgstr "Mã ZIP Cá nhân"
 #. module: hr
 #: model:ir.model,name:hr.model_hr_employee_public
 msgid "Public Employee"
-msgstr "Đăng nhân viên"
+msgstr "Nhân viên Công khai"
 
 #. module: hr
 #: model_terms:hr.job,website_description:hr.job_ceo
