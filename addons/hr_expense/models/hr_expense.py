@@ -332,11 +332,14 @@ class HrExpense(models.Model):
             raise UserError(_("You need to have at least one category that can be expensed in your database to proceed!"))
 
         for attachment in attachments:
-            expense = self.env['hr.expense'].create({
+            vals = {
                 'name': attachment.name.split('.')[0],
                 'unit_amount': 0,
-                'product_id': product.id
-            })
+                'product_id': product.id,
+            }
+            if product.property_account_expense_id:
+                vals['account_id'] = product.property_account_expense_id.id
+            expense = self.env['hr.expense'].create(vals)
             attachment.write({
                 'res_model': 'hr.expense',
                 'res_id': expense.id,
@@ -531,7 +534,7 @@ Or send your receipts at <a href="mailto:%(email)s?subject=Lunch%%20with%%20cust
             move_line_name = expense.employee_id.name + ': ' + expense.name.split('\n')[0][:64]
             account_src = expense._get_expense_account_source()
             account_dst = expense._get_expense_account_destination()
-            account_date = expense.sheet_id.accounting_date or expense.date or fields.Date.context_today(expense)
+            account_date = expense.date or expense.sheet_id.accounting_date or fields.Date.context_today(expense)
 
             company_currency = expense.company_id.currency_id
 
@@ -892,7 +895,7 @@ class HrExpenseSheet(models.Model):
     amount_residual = fields.Monetary(
         string="Amount Due", store=True,
         currency_field='currency_id',
-        related='account_move_id.amount_residual')
+        compute='_compute_amount_residual')
     company_id = fields.Many2one('res.company', string='Company', required=True, readonly=True, states={'draft': [('readonly', False)]}, default=lambda self: self.env.company)
     currency_id = fields.Many2one('res.currency', string='Currency', readonly=True, states={'draft': [('readonly', False)]}, default=lambda self: self.env.company.currency_id)
     attachment_number = fields.Integer(compute='_compute_attachment_number', string='Number of Attachments')
@@ -916,6 +919,13 @@ class HrExpenseSheet(models.Model):
     def _compute_amount(self):
         for sheet in self:
             sheet.total_amount = sum(sheet.expense_line_ids.mapped('total_amount_company'))
+
+    @api.depends("account_move_id.line_ids")
+    def _compute_amount_residual(self):
+        for sheet in self:
+            payment_term_lines = sheet.account_move_id.sudo().line_ids \
+                .filtered(lambda line: line.expense_id in sheet.expense_line_ids and line.account_internal_type in ('receivable', 'payable'))
+            sheet.amount_residual = -sum(payment_term_lines.mapped('amount_residual'))
 
     @api.depends('account_move_id.payment_state')
     def _compute_payment_state(self):
@@ -1198,6 +1208,8 @@ class HrExpenseSheet(models.Model):
 
     def action_register_payment(self):
         ''' Open the account.payment.register wizard to pay the selected journal entries.
+        There can be more than one bank_account_id in the expense sheet when registering payment for multiple expenses.
+        The default_partner_bank_id is set only if there is one available, if more than one the field is left empty.
         :return: An action opening the account.payment.register wizard.
         '''
         return {
@@ -1207,7 +1219,7 @@ class HrExpenseSheet(models.Model):
             'context': {
                 'active_model': 'account.move',
                 'active_ids': self.account_move_id.ids,
-                'default_partner_bank_id': self.employee_id.sudo().bank_account_id.id,
+                'default_partner_bank_id': self.employee_id.sudo().bank_account_id.id if len(self.employee_id.sudo().bank_account_id.ids) <= 1 else None,
             },
             'target': 'new',
             'type': 'ir.actions.act_window',
