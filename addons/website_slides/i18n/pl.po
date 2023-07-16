@@ -25,6 +25,7 @@
 # Dawid Prus, 2021
 # Grzegorz Grzelak <grzegorz.grzelak@openglobe.pl>, 2023
 # Maksym <ms@myodoo.pl>, 2023
+# Tadeusz Karpiński <tadeusz.karpinski@braintec.com>, 2023
 # Tadeusz Karpiński <tadeuszkarpinski@gmail.com>, 2023
 # 
 msgid ""
@@ -1402,7 +1403,7 @@ msgstr "Anuluj"
 #. module: website_slides
 #: model:slide.channel.tag,name:website_slides.slide_channel_tag_role_carpenter
 msgid "Carpenter"
-msgstr ""
+msgstr "Stolarz"
 
 #. module: website_slides
 #: model_terms:slide.slide,html_content:website_slides.slide_slide_demo_1_4
@@ -2806,7 +2807,7 @@ msgstr "Oto jak uzyskać najsłodsze truskawki, jakie kiedykolwiek jadłeś!"
 #. module: website_slides
 #: model_terms:ir.ui.view,arch_db:website_slides.course_nav
 msgid "Home"
-msgstr "Dom"
+msgstr "Strona główna"
 
 #. module: website_slides
 #: model:slide.slide,name:website_slides.slide_slide_demo_0_1
@@ -3477,7 +3478,7 @@ msgstr "Metody"
 #. module: website_slides
 #: model:slide.slide,name:website_slides.slide_slide_demo_0_2
 msgid "Mighty Carrots"
-msgstr ""
+msgstr "Potężne marchewki"
 
 #. module: website_slides
 #: model_terms:slide.slide,description:website_slides.slide_slide_demo_2_1

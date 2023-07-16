@@ -30,6 +30,7 @@
 # Paweł Wodyński <pw@myodoo.pl>, 2022
 # Łukasz Grzenkowicz <lukasz.grzenkowicz@gmail.com>, 2022
 # Maksym <ms@myodoo.pl>, 2023
+# Tadeusz Karpiński <tadeusz.karpinski@braintec.com>, 2023
 # Tadeusz Karpiński <tadeuszkarpinski@gmail.com>, 2023
 # 
 msgid ""
@@ -50,7 +51,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_comparisons
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_mail_block_comparison_table
 msgid "$18"
-msgstr ""
+msgstr "$18"
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_mail_block_discount2
@@ -145,7 +146,7 @@ msgstr "21 Lip"
 #: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid "24H Stats of %(mailing_type)s \"%(mailing_name)s\""
-msgstr ""
+msgstr "24-godzinne statystyki %(mailing_type)s \"%(mailing_name)s\""
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_hr_options
@@ -156,7 +157,7 @@ msgstr "25%"
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.snippet_options
 msgid "400px"
-msgstr ""
+msgstr "400px"
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_hr_options
@@ -173,7 +174,7 @@ msgstr "75%"
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.snippet_options
 msgid "800px"
-msgstr ""
+msgstr "800px"
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_call_to_action
@@ -427,6 +428,8 @@ msgid ""
 "<span class=\"s_blockquote_author\"><b>John DOE</b> • CEO of "
 "MyCompany</span>"
 msgstr ""
+"<span class=\"s_blockquote_author\"><b>John DOE</b> - dyrektor generalny "
+"MyCompany</span>"
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_numbers
@@ -1792,7 +1795,7 @@ msgstr "Treść wiadomości e-mail"
 #: model_terms:ir.ui.view,arch_db:mass_mailing.res_config_settings_view_form
 #, python-format
 msgid "Email Marketing"
-msgstr "E-mail Marketing"
+msgstr "Marketing E-mail"
 
 #. module: mass_mailing
 #: model:ir.model,name:mass_mailing.model_mail_thread
@@ -2196,7 +2199,7 @@ msgstr "Jest obserwatorem"
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_list__is_public
 msgid "Is Public"
-msgstr ""
+msgstr "Jest publiczny"
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_call_to_action
@@ -4547,6 +4550,8 @@ msgid ""
 "email1@example.com\n"
 "email2@example.com"
 msgstr ""
+"email1@example.com\n"
+"email2@example.com"
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.layout
