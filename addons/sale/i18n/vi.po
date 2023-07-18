@@ -54,7 +54,7 @@ msgstr "%(line_description)s(Đã hủy)"
 #: code:addons/sale/models/sale_order_line.py:0
 #, python-format
 msgid "%(line_description)s (Draft)"
-msgstr "%(line_description)s(Nháp)"
+msgstr "%(line_description)s(Dự thảo)"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.portal_my_orders
@@ -1277,13 +1277,13 @@ msgid ""
 "Creation date of draft/sent orders,\n"
 "Confirmation date of confirmed orders."
 msgstr ""
-"Ngày tạo đơn hàng nháp/đã gửi,\n"
-"Ngày xác nhận của đơn hàng được xác nhận. "
+"Ngày tạo đơn hàng dự thảo/đã gửi,\n"
+"Ngày xác nhận của đơn hàng đã xác nhận. "
 
 #. module: sale
 #: model:ir.model.fields.selection,name:sale.selection__sale_payment_provider_onboarding_wizard__payment_method__stripe
 msgid "Credit & Debit card (via Stripe)"
-msgstr ""
+msgstr "Thẻ Tín dụng & Ghi nợ (qua Stripe)"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_advance_payment_inv__currency_id
@@ -1463,7 +1463,7 @@ msgstr "Phương thức giao hàng"
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order_line__qty_delivered
 msgid "Delivery Quantity"
-msgstr ""
+msgstr "Số lượng đã giao"
 
 #. module: sale
 #: model:ir.model.fields,help:sale.field_sale_order__expected_date
@@ -1526,7 +1526,7 @@ msgstr "Số tiền giảm giá"
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.res_config_settings_view_form
 msgid "Discounts, Loyalty & Gift Card"
-msgstr ""
+msgstr "Chiết khấu, Thẻ quà tặng & KH Trung thành"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_advance_payment_inv__display_name
@@ -1548,7 +1548,7 @@ msgstr "Kiểu Hiển thị"
 #: code:addons/sale/static/src/js/product_discount_field.js:0
 #, python-format
 msgid "Do you want to apply this value to all lines ?"
-msgstr ""
+msgstr "Bạn có muốn áp dụng giá trị này cho tất cả các dòng?"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.res_config_settings_view_form
@@ -1572,12 +1572,12 @@ msgstr "Hoàn thành"
 #: code:addons/sale/wizard/sale_make_invoice_advance.py:0
 #, python-format
 msgid "Down Payment"
-msgstr "Tiền đặt cọc"
+msgstr "Tiền trả trước"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_advance_payment_inv__amount
 msgid "Down Payment Amount"
-msgstr "Tổng tiền đặt cọc"
+msgstr "Tổng tiền trả trước"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_advance_payment_inv__fixed_amount
@@ -1587,14 +1587,14 @@ msgstr "Số tiền trả trước (cố định)"
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_advance_payment_inv__product_id
 msgid "Down Payment Product"
-msgstr "Sản phẩm Tiền đặt cọc"
+msgstr "Sản phẩm Tiền trả trước"
 
 #. module: sale
 #. odoo-python
 #: code:addons/sale/wizard/sale_make_invoice_advance.py:0
 #, python-format
 msgid "Down Payment: %s (Draft)"
-msgstr ""
+msgstr "Trả trước: %s (Dự thảo)"
 
 #. module: sale
 #. odoo-python
@@ -1602,31 +1602,31 @@ msgstr ""
 #: code:addons/sale/wizard/sale_make_invoice_advance.py:0
 #, python-format
 msgid "Down Payments"
-msgstr "Đặt cọc"
+msgstr "Thanh toán trả trước"
 
 #. module: sale
 #. odoo-python
 #: code:addons/sale/wizard/sale_make_invoice_advance.py:0
 #, python-format
 msgid "Down payment"
-msgstr "Tiền đặt cọc"
+msgstr "Tiền trả trước"
 
 #. module: sale
 #: model:ir.model.fields.selection,name:sale.selection__sale_advance_payment_inv__advance_payment_method__fixed
 msgid "Down payment (fixed amount)"
-msgstr "Tiền đặt cọc (số tiền cố định)"
+msgstr "Tiền trả trước (số tiền cố định)"
 
 #. module: sale
 #: model:ir.model.fields.selection,name:sale.selection__sale_advance_payment_inv__advance_payment_method__percentage
 msgid "Down payment (percentage)"
-msgstr "Tiền đặt cọc (theo phần trăm)"
+msgstr "Tiền trả trước (theo phần trăm)"
 
 #. module: sale
 #. odoo-python
 #: code:addons/sale/wizard/sale_make_invoice_advance.py:0
 #, python-format
 msgid "Down payment of %s%%"
-msgstr "Tiền đặt cọc cho %s%%"
+msgstr "Tiền trả trước cho %s%%"
 
 #. module: sale
 #: model:ir.model.fields,help:sale.field_sale_order_line__is_downpayment
@@ -2996,7 +2996,7 @@ msgstr ""
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.res_config_settings_view_form
 msgid "Product used for down payments"
-msgstr "Sản phẩm được sử dụng cho mục đích đặt cọc/ứng trước"
+msgstr "Sản phẩm được sử dụng cho mục đích đặt cọc/trả trước"
 
 #. module: sale
 #: model:ir.actions.act_window,name:sale.product_template_action
@@ -3620,7 +3620,7 @@ msgstr "Gửi một báo giá để kiểm thử cổng giao dịch khách hàng
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.sale_order_cancel_view_form
 msgid "Send and cancel"
-msgstr ""
+msgstr "Gửi và hủy"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.view_order_form
@@ -4069,7 +4069,7 @@ msgid ""
 "The product used to invoice a down payment should be of type 'Service'. "
 "Please use another product or update this product."
 msgstr ""
-"Sản phẩm được sử dụng để xuất hoá đơn cho một khoản tiền đặt cọc/ứng trước "
+"Sản phẩm được sử dụng để xuất hoá đơn cho một khoản tiền đặt cọc/trả trước "
 "phải có kiểu là kiểu 'Dịch vụ'. Vui lòng chọn một sản phẩm khác hoặc cập "
 "nhật lại sản phẩm này."
 
@@ -4097,7 +4097,7 @@ msgstr "Các tham số được cung cấp không hợp lệ. "
 #: code:addons/sale/wizard/sale_make_invoice_advance.py:0
 #, python-format
 msgid "The value of the down payment amount must be positive."
-msgstr "Giá trị của khoản đặt cọc phải dương."
+msgstr "Giá trị của khoản trả trước phải dương."
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.portal_my_orders
