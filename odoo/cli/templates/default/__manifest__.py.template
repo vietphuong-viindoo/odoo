@@ -1,11 +1,9 @@
-# -*- coding: utf-8 -*-
 {
     'name': "{{ name }}",
     'name_vi_VN': "{{ name }}",
 
-    'summary': """Short (1 phrase/line) summary of the module's purpose, used as
-subtitle on modules listing or https://viindoo.com/apps""",
-    'summary_vi_VN': """Mô tả ngắn gọn bằng tiếng Việt (1 câu, 1 dòng) về mục đích của module""",
+    'summary': """Short (1 phrase/line) summary of the module's purpose, used as subtitle and meta description for listing on https://viindoo.com/apps""",
+    'summary_vi_VN': """Mô tả ngắn gọn bằng tiếng Việt (1 câu, 1 dòng) về mục đích của module, được sử dụng là tiêu đề phụ và meta description ở https://viindoo.com/apps""",
 
     'description': """
 What it does
@@ -33,7 +31,7 @@ Editions Supported
 2. Enterprise Edition
 
     """,
-'description_vi_VN': """
+	'description_vi_VN': """
 Ứng dụng này làm gì
 ===================
 Mô tả chi tiết về module
@@ -62,8 +60,8 @@ Tính năng chính
 
     'author': "Viindoo",
     'website': "https://viindoo.com/apps/app/16.0/{{ name }}",
-    'live_test_url': "https://v16demo-int.erponline.vn",
-    'live_test_url_vi_VN': "https://v16demo-vn.erponline.vn",
+    'live_test_url': "https://v16demo-int.viindoo.cloud",
+    'live_test_url_vi_VN': "https://v16demo-vn.viindoo.cloud",
     # 'demo_video_url': "https://www.youtube.com/watch?v=xa8pxRnZpWs",
     # 'demo_video_url_vi_VN': "https://www.youtube.com/watch?v=xa8pxRnZpWs",
     'support': "apps.support@viindoo.com",
@@ -89,15 +87,15 @@ Tính năng chính
     ],
 
 	'images': [
-		# 'static/description/main_screenshot.png',
-		# 'static/description/another_screenshot_1.png',
-		# 'static/description/another_screenshot_2.png',
-		],
+        # 'static/description/main_screenshot.png',
+        # 'static/description/another_screenshot_1.png',
+        # 'static/description/another_screenshot_2.png',
+        ],
 
 	# The list of IDs of the project tasks in Viindoo Company's database that require
 	# this module development.
 	'task_ids': [
-		# 1292, 1294,
+        # 1292, 1294,
 		],
 
     'installable': True,
@@ -114,4 +112,3 @@ Tính năng chính
     'currency': 'EUR',
     'license': 'OPL-1',
 }
-
