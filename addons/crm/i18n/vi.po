@@ -2725,7 +2725,7 @@ msgstr "Số lượng lead và cơ hội được phân công trong tháng trư�
 
 #. module: crm
 #: model:ir.model.fields,help:crm.field_crm_lead__message_needaction_counter
-msgid "Number of messages which requires an action"
+msgid "Number of messages requiring action"
 msgstr "Số thông điệp cần có hành động"
 
 #. module: crm
