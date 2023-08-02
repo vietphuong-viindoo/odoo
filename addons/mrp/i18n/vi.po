@@ -5,7 +5,7 @@
 # Translators:
 # Martin Trigaux, 2022
 # Duy BQ <duybq86@gmail.com>, 2022
-# Nancy Momoland <thanhnguyen.icsc@gmail.com>, 2022
+# Nancy Momoland <thanh.np2502@gmail.com>, 2022
 # Vo Thanh Thuy, 2022
 # Thi Huong Nguyen, 2023
 # 
@@ -1496,6 +1496,8 @@ msgid ""
 "Create and confirm Manufacturing Orders this many days in advance, to have enough time to replenish components or manufacture semi-finished products.\n"
 "Note that security lead times will also be considered when appropriate."
 msgstr ""
+"Tạo và xác nhận lệnh sản xuất trước những ngày này để có đủ thời gian bổ sung nguyên liệu hoặc sản xuất bán thành phẩm.\n"
+"Lưu ý rằng thời gian mua hàng an toàn sẽ được thêm vào nếu cần."
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.view_mrp_production_backorder_form
@@ -2858,7 +2860,7 @@ msgstr "Lượng sử dụng thủ công"
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_bom_line__manual_consumption_readonly
 msgid "Manual Consumption Readonly"
-msgstr ""
+msgstr "Lượng sử dụng thủ công Chỉ đọc"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_routing_workcenter__time_cycle_manual
@@ -3363,7 +3365,7 @@ msgstr "Số MO đã tạo"
 #: model:ir.model.fields,help:mrp.field_mrp_bom__message_needaction_counter
 #: model:ir.model.fields,help:mrp.field_mrp_production__message_needaction_counter
 #: model:ir.model.fields,help:mrp.field_mrp_unbuild__message_needaction_counter
-msgid "Number of messages which requires an action"
+msgid "Number of messages requiring action"
 msgstr "Số thông điệp cần có hành động"
 
 #. module: mrp
@@ -4490,7 +4492,7 @@ msgstr "Sản xuất hàng loạt nối tiếp"
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.view_mrp_consumption_warning_form
 msgid "Set Quantities & Validate"
-msgstr ""
+msgstr "Đặt số lượng & xác nhận"
 
 #. module: mrp
 #: model:ir.model.fields.selection,name:mrp.selection__mrp_routing_workcenter__time_mode__manual
@@ -5237,14 +5239,14 @@ msgstr "Theo dõi thời gian: %(user)s"
 
 #. module: mrp
 #: model:ir.model.fields,help:mrp.field_mrp_workcenter_capacity__time_stop
-msgid "Time in minutes for the cleaning."
-msgstr "Thời gian tính bằng phút cho việc vệ sinh/làm sạch."
+msgid "Additional time in minutes for the cleaning."
+msgstr "Thời gian bổ sung tính bằng phút cho việc vệ sinh/làm sạch."
 
 #. module: mrp
 #: model:ir.model.fields,help:mrp.field_mrp_workcenter_capacity__time_start
-msgid "Time in minutes for the setup."
+msgid "Additional time in minutes for the setup."
 msgstr ""
-"Thời gian tính bằng phút để có thể chuẩn bị, khởi động Công đoạn Sản xuất "
+"Thời gian bổ sung tính bằng phút để có thể chuẩn bị, khởi động Công đoạn Sản xuất "
 "thực hiện bởi Năng lực sản xuất này."
 
 #. module: mrp
@@ -6367,7 +6369,7 @@ msgstr "Bạn cần phải cung cấp một số lô cho thành phẩm."
 #: code:addons/mrp/wizard/mrp_consumption_warning.py:0
 #, python-format
 msgid "You need to supply Lot/Serial Number"
-msgstr ""
+msgstr "Bạn cần cung cấp số lô/sê-ri"
 
 #. module: mrp
 #. odoo-python

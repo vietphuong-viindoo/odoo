@@ -4010,6 +4010,8 @@ msgid ""
 "It is not allowed to import reserved quantity, you have to use the quantity "
 "directly."
 msgstr ""
+"Không được phép nhập số lượng đã dự trữ, bạn phải trực tiếp sử dụng số "
+"lượng."
 
 #. module: stock
 #. odoo-python
@@ -5184,7 +5186,7 @@ msgstr "Số dịch chuyển nhập hàng trong 12 tháng qua"
 #: model:ir.model.fields,help:stock.field_stock_lot__message_needaction_counter
 #: model:ir.model.fields,help:stock.field_stock_picking__message_needaction_counter
 #: model:ir.model.fields,help:stock.field_stock_scrap__message_needaction_counter
-msgid "Number of messages which requires an action"
+msgid "Number of messages requiring action"
 msgstr "Số thông điệp cần có hành động"
 
 #. module: stock

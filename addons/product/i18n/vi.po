@@ -1744,7 +1744,7 @@ msgstr "Số lượng lỗi"
 #. module: product
 #: model:ir.model.fields,help:product.field_product_product__message_needaction_counter
 #: model:ir.model.fields,help:product.field_product_template__message_needaction_counter
-msgid "Number of messages which requires an action"
+msgid "Number of messages requiring action"
 msgstr "Số thông điệp cần có hành động"
 
 #. module: product
@@ -2735,7 +2735,7 @@ msgstr ""
 #: code:addons/product/models/product_pricelist_item.py:0
 #, python-format
 msgid "The rounding method must be strictly positive."
-msgstr ""
+msgstr "The rounding method must be strictly positive."
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_product__lst_price
