@@ -1121,7 +1121,7 @@ msgstr "Trạng thái linh kiện"
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_report_product_product_replenishment
 msgid "Component of Draft MO"
-msgstr "Thành phần dự thảo của MO"
+msgstr "Là nguyên liệu của MO dự thảo"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_production__move_raw_ids
@@ -4375,7 +4375,7 @@ msgstr "Thuê gia công"
 #: model:product.product,name:mrp.product_product_computer_desk
 #: model:product.template,name:mrp.product_product_computer_desk_product_template
 msgid "Table"
-msgstr "Bảng"
+msgstr "Bàn"
 
 #. module: mrp
 #: model:product.product,name:mrp.product_product_table_kit

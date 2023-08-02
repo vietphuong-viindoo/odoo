@@ -2932,7 +2932,7 @@ msgstr "Khối lượng dự báo"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.report_product_product_replenishment
 msgid "Forecasted with Pending"
-msgstr "Dự báo với Đang chờ xử lý"
+msgstr "Tồn Dự báo đánh dấu Đang chờ xử lý"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.report_replenishment_header
@@ -2947,7 +2947,7 @@ msgstr "Định dạng"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.report_product_product_replenishment
 msgid "Free Stock"
-msgstr "Kho tự do"
+msgstr "Tồn kho chưa dùng"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_product_product__free_qty
@@ -6470,7 +6470,7 @@ msgstr "Số lượng đã giữ phần"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.report_product_product_replenishment
 msgid "Reserved from stock"
-msgstr "Dự trữ từ kho"
+msgstr "Giữ phần từ kho"
 
 #. module: stock
 #: code:addons/stock/models/stock_move_line.py:0
@@ -8424,7 +8424,7 @@ msgstr "Khởi chạy một quy tắc khác nếu không có tồn kho"
 #: code:addons/stock/static/src/js/report_stock_forecasted.js:0
 #, python-format
 msgid "Try to add some incoming or outgoing transfers."
-msgstr "Cố gắng thêm một số phiếu nhập kho hoặc giao đi."
+msgstr "Hãy thử thêm một số phiếu xuất / nhập kho."
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_barcode_rule__type
