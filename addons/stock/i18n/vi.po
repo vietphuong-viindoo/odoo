@@ -4728,7 +4728,7 @@ msgid ""
 "No rule has been found to replenish \"%s\" in \"%s\".\n"
 "Verify the routes configuration on the product."
 msgstr ""
-"Không có quy tắc bổ sung nào cho \"%s\" ở \"%s\".\n"
+"Không có quy tắc tái cung ứng nào cho \"%s\" ở \"%s\".\n"
 "Xác định luồng xử lý trong thông tin sản phẩm."
 
 #. module: stock
