@@ -25,14 +25,14 @@ msgstr ""
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid " days"
-msgstr "ngày"
+msgstr " ngày"
 
 #. module: spreadsheet_dashboard_account
 #. openerp-web
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "# days"
-msgstr ""
+msgstr "số ngày"
 
 #. module: spreadsheet_dashboard_account
 #. openerp-web
@@ -50,7 +50,7 @@ msgstr "Tổng tiền"
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "Average Invoice"
-msgstr ""
+msgstr "Hóa đơn trung bình"
 
 #. module: spreadsheet_dashboard_account
 #. openerp-web
@@ -72,7 +72,7 @@ msgstr "Quốc gia"
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "Current year"
-msgstr ""
+msgstr "Năm hiện hành"
 
 #. module: spreadsheet_dashboard_account
 #. openerp-web
@@ -114,7 +114,7 @@ msgstr "Đã xuất hóa đơn"
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "Invoiced by Month"
-msgstr ""
+msgstr "Hóa đơn theo tháng"
 
 #. module: spreadsheet_dashboard_account
 #. openerp-web
@@ -188,7 +188,7 @@ msgstr "Sản phẩm"
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "Product Category"
-msgstr "Danh mục sản phẩm"
+msgstr "Nhóm sản phẩm"
 
 #. module: spreadsheet_dashboard_account
 #. openerp-web
@@ -244,7 +244,7 @@ msgstr "Trạng thái"
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "Top Categories"
-msgstr ""
+msgstr "Nhóm sản phẩm tiêu biểu"
 
 #. module: spreadsheet_dashboard_account
 #. openerp-web
@@ -259,7 +259,7 @@ msgstr "Quốc gia hàng đầu"
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "Top Invoices"
-msgstr ""
+msgstr "Hóa đơn hàng đầu"
 
 #. module: spreadsheet_dashboard_account
 #. openerp-web
@@ -282,11 +282,11 @@ msgstr "Nhân viên kinh doanh tiêu biểu"
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "in current year"
-msgstr ""
+msgstr "trong năm hiện hàng"
 
 #. module: spreadsheet_dashboard_account
 #. openerp-web
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "unpaid"
-msgstr ""
+msgstr "chưa thanh toán"

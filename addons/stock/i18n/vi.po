@@ -9578,7 +9578,7 @@ msgstr ""
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_route__product_categ_selectable
 msgid "When checked, the route will be selectable on the Product Category."
-msgstr "Khi chọn, có thể chọn tuyến cung ứng trong Danh mục sản phẩm."
+msgstr "Khi chọn, có thể chọn tuyến cung ứng trong Nhóm sản phẩm."
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_route__packaging_selectable

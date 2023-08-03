@@ -190,7 +190,7 @@ msgstr "Sản phẩm"
 #: code:addons/spreadsheet_dashboard_purchase_stock/data/files/purchase_dashboard.json:0
 #, python-format
 msgid "Product Category"
-msgstr "Danh mục sản phẩm"
+msgstr "Nhóm sản phẩm"
 
 #. module: spreadsheet_dashboard_purchase_stock
 #. openerp-web
@@ -311,7 +311,7 @@ msgstr "Đơn hàng tiêu biểu"
 #: code:addons/spreadsheet_dashboard_purchase_stock/data/files/purchase_dashboard.json:0
 #, python-format
 msgid "Top Product Categories"
-msgstr "Danh mục sản phẩm tiêu biểu"
+msgstr "Nhóm sản phẩm tiêu biểu"
 
 #. module: spreadsheet_dashboard_purchase_stock
 #. openerp-web

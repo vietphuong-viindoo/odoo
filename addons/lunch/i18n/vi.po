@@ -1913,7 +1913,7 @@ msgid ""
 "The following product categories are archived. You should either unarchive the categories or change the category of the product.\n"
 "%s"
 msgstr ""
-"Danh mục sản phẩm sau đã được lưu trữ. Bạn nên bỏ lưu trữ danh mục hoặc thay đổi danh mục của sản phẩm.\n"
+"Nhóm sản phẩm sau đã được lưu trữ. Bạn nên bỏ lưu trữ danh mục hoặc thay đổi danh mục của sản phẩm.\n"
 "%s"
 
 #. module: lunch

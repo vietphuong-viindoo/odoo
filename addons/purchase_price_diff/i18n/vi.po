@@ -40,7 +40,7 @@ msgstr "Sản phẩm"
 #. module: purchase_price_diff
 #: model:ir.model,name:purchase_price_diff.model_product_category
 msgid "Product Category"
-msgstr "Danh mục sản phẩm"
+msgstr "Nhóm sản phẩm"
 
 #. module: purchase_price_diff
 #: model:ir.model.fields,help:purchase_price_diff.field_product_product__property_account_creditor_price_difference

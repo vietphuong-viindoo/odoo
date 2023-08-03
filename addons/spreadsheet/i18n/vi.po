@@ -30,48 +30,50 @@ msgid ""
 " A string, possible empty, or a reference to a valid string. If empty, the "
 "text will be simply concatenated."
 msgstr ""
+"Một chuỗi ký tự, có thể rỗng, hoặc dẫn chiếu đến một chuỗi hợp lệ. Nếu rỗng,"
+"văn bản sẽ đơn giản là được nối vào nhau."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "%s %s and %s"
-msgstr ""
+msgstr "%s %s và %s"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "%s Columns left"
-msgstr ""
+msgstr "%s Cột bên trái"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "%s Columns right"
-msgstr ""
+msgstr "%s Cột bên phải"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "%s Rows above"
-msgstr ""
+msgstr "%s Hàng bên trên"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "%s Rows below"
-msgstr ""
+msgstr "%s Hàng bên dưới"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/assets_backend/spreadsheet_action_loader.js:0
 #, python-format
 msgid "%s couldn't be loaded"
-msgstr ""
+msgstr "%s không thể nạp được"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -99,21 +101,21 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "(Blanks)"
-msgstr ""
+msgstr "(Bỗng)"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "+ Add another rule"
-msgstr ""
+msgstr "+ Thêm một quy tắc khác"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "- [optional]"
-msgstr ""
+msgstr "- [tùy chọn]"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -131,28 +133,28 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "1 column"
-msgstr ""
+msgstr "1 cột"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "1 row"
-msgstr ""
+msgstr "1 hàng"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "2 columns"
-msgstr ""
+msgstr "2 cột"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "2 rows"
-msgstr ""
+msgstr "2 hàng"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -168,63 +170,63 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "A conditional count across a range."
-msgstr "A conditional count across a range."
+msgstr "Một số lượng có điều kiện trên một phạm vi."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "A conditional sum across a range."
-msgstr "A conditional sum across a range."
+msgstr "Một tổng có điều kiện trên một phạm vi."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "A filter can only be created on a continuous selection."
-msgstr ""
+msgstr "Chỉ có thể tạo bộ lọc trên vùng chọn liên tục."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "A maximum range limit value is needed"
-msgstr ""
+msgstr "Cần có giá trị giới hạn phạm vi tối đa"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "A minimum range limit value is needed"
-msgstr ""
+msgstr "Cần có giá trị giới hạn phạm vi tối thiểu"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "A number raised to a power."
-msgstr "A number raised to a power."
+msgstr "Một con số được nâng lên thành lũy thừa."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "A random number between 0 inclusive and 1 exclusive."
-msgstr "A random number between 0 inclusive and 1 exclusive."
+msgstr "Một số ngẫu nhiên giữa 0 (bao gồm) và 1 (không bao gồm)."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "A range needs to be defined"
-msgstr ""
+msgstr "Một phạm vi cần phải được xác định"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "A sheet with the name %s already exists. Please select another name."
-msgstr ""
+msgstr "Một trang tính có tên %s đã tồn tại. Vui lòng chọn tên khác."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -238,28 +240,28 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Absolute value"
-msgstr ""
+msgstr "Giá trị tuyệt đối"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Absolute value of a number."
-msgstr ""
+msgstr "Giá trị tuyệt đối của một số."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Accrued interest of security paying at maturity."
-msgstr ""
+msgstr "Tiền lãi lũy kế của thanh toán bảo đảm khi đáo hạn."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/global_filters/plugins/global_filters_ui_plugin.js:0
 #, python-format
 msgid "Active Filters"
-msgstr ""
+msgstr "Bộ lọc được kích hoạt"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -273,14 +275,14 @@ msgstr "Thêm"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Add Filter"
-msgstr ""
+msgstr "Thêm bộ lọc"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Add range"
-msgstr ""
+msgstr "Thêm phạm vi"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2379,14 +2381,14 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/helpers/constants.js:0
 #, python-format
 msgid "Last 180 Days"
-msgstr ""
+msgstr "180 ngày qua"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/helpers/constants.js:0
 #, python-format
 msgid "Last 3 Years"
-msgstr ""
+msgstr "3 năm qua"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2414,7 +2416,7 @@ msgstr "7 ngày trước"
 #: code:addons/spreadsheet/static/src/helpers/constants.js:0
 #, python-format
 msgid "Last 90 Days"
-msgstr ""
+msgstr "90 ngày qua"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3550,7 +3552,7 @@ msgstr "Chọn tất cả"
 #: code:addons/spreadsheet/static/src/global_filters/components/filter_value/filter_value.xml:0
 #, python-format
 msgid "Select period..."
-msgstr ""
+msgstr "Chọn chu kỳ..."
 
 #. module: spreadsheet
 #. odoo-javascript

@@ -228,7 +228,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:loyalty.loyalty_reward_view_kanban
 #: model_terms:ir.ui.view,arch_db:loyalty.loyalty_rule_view_kanban
 msgid "<i class=\"fa fa-cubes fa-fw\" title=\"Product Categories\"/>"
-msgstr "<i class=\"fa fa-cubes fa-fw\" title=\"Danh mục sản phẩm\"/>"
+msgstr "<i class=\"fa fa-cubes fa-fw\" title=\"Nhóm sản phẩm\"/>"
 
 #. module: loyalty
 #: model_terms:ir.ui.view,arch_db:loyalty.loyalty_reward_view_kanban
@@ -930,7 +930,7 @@ msgstr "Điểm giảm giá"
 #. module: loyalty
 #: model:ir.model.fields,field_description:loyalty.field_loyalty_reward__discount_product_category_id
 msgid "Discounted Prod. Categories"
-msgstr "Danh mục sản phẩm giảm giá"
+msgstr "Nhóm sản phẩm giảm giá"
 
 #. module: loyalty
 #: model:ir.model.fields,field_description:loyalty.field_loyalty_reward__discount_product_tag_id

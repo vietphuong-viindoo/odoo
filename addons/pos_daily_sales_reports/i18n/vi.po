@@ -213,7 +213,7 @@ msgstr "Sản phẩm"
 #. module: pos_daily_sales_reports
 #: model_terms:ir.ui.view,arch_db:pos_daily_sales_reports.pos_daily_report
 msgid "Product Category"
-msgstr "Danh mục sản phẩm"
+msgstr "Nhóm sản phẩm"
 
 #. module: pos_daily_sales_reports
 #: model_terms:ir.ui.view,arch_db:pos_daily_sales_reports.pos_daily_report
