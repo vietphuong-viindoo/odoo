@@ -33,6 +33,13 @@ msgid ""
 "        Planning: Work entries will be generated from the employee's planning. (requires Planning app)\n"
 "    "
 msgstr ""
+"\n"
+"        Xác định nguồn tạo nhật ký công việc\n"
+"\n"
+"        Thời gian làm việc: Nhật ký công việc sẽ được tạo từ lịch làm việc bên dưới.\n"
+"        Vào/Ra: Nhật ký công việc sẽ được tạo từ Vào/ra của nhân viên. (yêu cầu ứng dụng Vào/ra)\n"
+"        Lập kế hoạch: Nhật ký công việc sẽ được tạo từ kế hoạch của nhân viên. (yêu cầu ứng dụng `Lập kế hoạch`)\n"
+"    "
 
 #. module: hr_work_entry_contract
 #. odoo-python
@@ -58,6 +65,8 @@ msgid ""
 "<i class=\"fa fa-exclamation-triangle me-1\" title=\"Warning\"/>You are not "
 "allowed to regenerate validated work entries"
 msgstr ""
+"<i class=\"fa fa-exclamation-triangle me-1\" title=\"Warning\"/>Bạn không được phép "
+"Tạo lại nhật ký công việc đã được xác thực"
 
 #. module: hr_work_entry_contract
 #: model_terms:ir.ui.view,arch_db:hr_work_entry_contract.hr_work_entry_regeneration_wizard
@@ -70,6 +79,8 @@ msgid ""
 "<span class=\"text-muted\">Warning: The work entry regeneration will delete "
 "all manual changes on the selected period.</span>"
 msgstr ""
+"<span class=\"text-muted\">Cảnh báo: Việc tạo lại nhật ký công việc sẽ xóa "
+"tất cả các thay đổi thủ công trong khoảng thời gian đã chọn.</span>"
 
 #. module: hr_work_entry_contract
 #: model:ir.model.fields,help:hr_work_entry_contract.field_hr_work_entry_type__is_leave
@@ -153,7 +164,8 @@ msgstr "Từ"
 #: model:ir.actions.server,name:hr_work_entry_contract.ir_cron_generate_missing_work_entries_ir_actions_server
 #: model:ir.cron,cron_name:hr_work_entry_contract.ir_cron_generate_missing_work_entries
 msgid "Generate Missing Work Entries"
-msgstr ""
+msgstr "Tạo Nhật ký công việc bị thiếu"
+
 
 #. module: hr_work_entry_contract
 #: model:ir.model.fields,field_description:hr_work_entry_contract.field_hr_contract__date_generated_from
@@ -276,6 +288,7 @@ msgstr "Nghỉ bệnh"
 msgid ""
 "Sorry, generating work entries from cancelled contracts is not allowed."
 msgstr ""
+"Xin lỗi, Việc tạo lại nhật ký công việc từ hợp đồng bị hủy thì khôngđược phép."
 
 #. module: hr_work_entry_contract
 #. odoo-python
@@ -310,7 +323,7 @@ msgstr "Đến"
 #. module: hr_work_entry_contract
 #: model:hr.work.entry.type,name:hr_work_entry_contract.work_entry_type_unpaid_leave
 msgid "Unpaid"
-msgstr "Không lương"
+msgstr "Nghỉ không lương"
 
 #. module: hr_work_entry_contract
 #: model:ir.model.fields,field_description:hr_work_entry_contract.field_hr_work_entry_regeneration_wizard__valid
