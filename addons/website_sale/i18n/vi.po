@@ -3275,7 +3275,7 @@ msgstr "Đơn bán"
 #. module: website_sale
 #: model:ir.model,name:website_sale.model_sale_order_line
 msgid "Sales Order Line"
-msgstr "Chi tiết Đơn bán"
+msgstr "Dòng Đơn bán"
 
 #. module: website_sale
 #. odoo-javascript

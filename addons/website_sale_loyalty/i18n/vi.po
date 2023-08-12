@@ -220,12 +220,12 @@ msgstr "Hạn chế phát hành cho website này"
 #. module: website_sale_loyalty
 #: model:ir.model,name:website_sale_loyalty.model_sale_order
 msgid "Sales Order"
-msgstr "Đơn bán hàng"
+msgstr "Đơn bán"
 
 #. module: website_sale_loyalty
 #: model:ir.model,name:website_sale_loyalty.model_sale_order_line
 msgid "Sales Order Line"
-msgstr "Chi tiết đơn hàng"
+msgstr "Dòng đơn bán"
 
 #. module: website_sale_loyalty
 #: code:addons/website_sale_loyalty/wizard/sale_coupon_share.py:0

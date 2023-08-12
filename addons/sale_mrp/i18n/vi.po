@@ -116,7 +116,7 @@ msgstr "Lệnh Sản xuất"
 #. module: sale_mrp
 #: model:ir.model,name:sale_mrp.model_sale_order
 msgid "Sales Order"
-msgstr "Đơn bán hàng"
+msgstr "Đơn bán"
 
 #. module: sale_mrp
 #: model:ir.model,name:sale_mrp.model_sale_order_line

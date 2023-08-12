@@ -328,7 +328,7 @@ msgstr "Là một Dịch vụ"
 #. module: sale_project
 #: model:ir.model,name:sale_project.model_account_move_line
 msgid "Journal Item"
-msgstr "Bút toán"
+msgstr "Phát sinh kế toán"
 
 #. module: sale_project
 #. odoo-javascript
@@ -552,7 +552,7 @@ msgstr "Bán hàng & Hoá đơn"
 #: model_terms:ir.ui.view,arch_db:sale_project.view_sale_project_inherit_form
 #, python-format
 msgid "Sales Order"
-msgstr "Đơn bán hàng"
+msgstr "Đơn bán"
 
 #. module: sale_project
 #: model_terms:ir.ui.view,arch_db:sale_project.project_sharing_inherit_project_task_view_search

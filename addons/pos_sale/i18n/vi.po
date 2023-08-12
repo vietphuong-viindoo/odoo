@@ -389,7 +389,7 @@ msgstr "Báo cáo phân tích bán hàng"
 #: model:ir.model,name:pos_sale.model_sale_order
 #, python-format
 msgid "Sales Order"
-msgstr "Đơn bán hàng"
+msgstr "Đơn bán"
 
 #. module: pos_sale
 #: model:ir.model,name:pos_sale.model_sale_order_line

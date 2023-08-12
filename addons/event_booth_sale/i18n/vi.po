@@ -336,7 +336,7 @@ msgstr "Dòng đơn bán hàng"
 #. module: event_booth_sale
 #: model:ir.model,name:event_booth_sale.model_sale_order
 msgid "Sales Order"
-msgstr "Đơn bán hàng"
+msgstr "Đơn bán"
 
 #. module: event_booth_sale
 #: model:ir.model,name:event_booth_sale.model_sale_order_line
