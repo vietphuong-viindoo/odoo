@@ -753,8 +753,8 @@ msgid ""
 msgstr ""
 "Dựa trên cài đặt của sản phẩm, lượng công việc đã thực hiện có thể được tính toán theo các cơ chế sau:\n"
 "  - Thủ công: số lượng được ghi nhận thủ công ở mỗi dòng\n"
-"  - Phân tích chi phí: số lượng dựa trên tổng các khoản chi phí đã ghi nhận\n"
-"  - Thời gian biểu: theo số lượng tổng giờ đã được ghi nhận của các công việc liên kết với nội dung trên Đơn bán\n"
+"  - Phân tích từ Chi tiêu: số lượng dựa trên tổng các khoản chi tiêu đã ghi nhận\n"
+"  - Bảng chấm công: theo số lượng tổng giờ đã được ghi nhận của các công việc liên kết với nội dung trên Đơn bán\n"
 "  - Chuyển kho: số lượng dựa trên số lượng mã phiếu kho đã xác nhận\n"
 
 #. module: sale
@@ -831,7 +831,7 @@ msgstr "Cho phép gửi hoá đơn Chiếu lệ đến khách hàng của bạn"
 #. module: sale
 #: model:ir.model.fields,help:sale.field_res_config_settings__group_proforma_sales
 msgid "Allows you to send pro-forma invoice."
-msgstr "Cho phép bạn gửi hoá đơn Chiếu lệ"
+msgstr "Cho phép bạn gửi hoá đơn chiếu lệ"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_res_config_settings__module_sale_amazon
@@ -894,7 +894,7 @@ msgstr "Độ chính xác phân tích"
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order_line__analytic_line_ids
 msgid "Analytic lines"
-msgstr "Dòng Kế toán Quản trị"
+msgstr "Phát sinh Kế toán Quản trị"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.res_config_settings_view_form
@@ -920,6 +920,8 @@ msgid ""
 "As an example, if you sell pre-paid hours of services, Odoo recommends you\n"
 "            to sell extra hours when all ordered hours have been consumed."
 msgstr ""
+"Ví dụ, nếu bạn bán số giờ dịch vụ trả trước, Odoo sẽ đề xuất bạn\n"
+"                bán thêm số giờ khi tất cả số giờ đặt hàng đã được sử dụng hết. "
 
 #. module: sale
 #: model:ir.model.fields.selection,name:sale.selection__product_template__expense_policy__cost
@@ -1728,7 +1730,7 @@ msgstr "Giá trị thêm"
 #: code:addons/sale/models/sale_order_line.py:0
 #, python-format
 msgid "Extra line with %s"
-msgstr "Dòng thêm với %s"
+msgstr "Dòng bổ sung với %s"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_res_config_settings__module_delivery_fedex
@@ -1769,7 +1771,7 @@ msgstr "Biểu tượng Font-Awesome (vd: fa-tasks)"
 #. module: sale
 #: model:ir.model.constraint,message:sale.constraint_sale_order_line_non_accountable_null_fields
 msgid "Forbidden values on non-accountable sale order line"
-msgstr "Giá trị bị cấm trên dòng đặt hàng không được ghi sổ"
+msgstr "Giá trị bị cấm trên dòng đơn bán không được ghi sổ"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order_cancel__email_from
@@ -1785,7 +1787,7 @@ msgid ""
 msgstr ""
 "Từ báo cáo này, bạn có thể có cái nhìn tổng quan về tổng tiền đã lập hoá đơn"
 " cho khách hàng của bạn. Công cụ tìm kiếm có thể được dùng để cá nhân hóa "
-"báo cáo Hoá đơn và hơn nữa là để, đáp ứng việc phân tích theo nhu cầu của "
+"báo cáo Hoá đơn và hơn nữa là để đáp ứng việc phân tích theo nhu cầu của "
 "bạn."
 
 #. module: sale
@@ -1918,7 +1920,8 @@ msgstr "Nếu đúng, có thể sử dụng đóng gói cho đơn bán hàng"
 #: model:ir.model.fields,help:sale.field_sale_order__pricelist_id
 msgid "If you change the pricelist, only newly added lines will be affected."
 msgstr ""
-"Nếu bạn thay đổi bảng giá, chỉ những dòng mới được thêm mới bị ảnh hưởng. "
+"Nếu bạn thay đổi bảng giá, chỉ những dòng mới được thêm vào mới bị ảnh "
+"hưởng. "
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.res_config_settings_view_form
@@ -2153,9 +2156,7 @@ msgstr "Là chi tiêu"
 #: model:ir.model.fields,help:sale.field_sale_order_line__is_expense
 msgid ""
 "Is true if the sales order line comes from an expense or a vendor bills"
-msgstr ""
-"Đúng nếu chi tiết Đơn bán đến từ một khoản chi phí hoặc một hoá đơn nhà cung"
-" cấp"
+msgstr "Mang giá trị True nếu dòng đơn bán đến từ chi tiêu hoặc hóa đơn nhà cung cấp"
 
 #. module: sale
 #. odoo-python
@@ -3405,7 +3406,7 @@ msgstr "Dòng trên Đơn bán"
 #: model:ir.model.fields,field_description:sale.field_product_product__sale_line_warn
 #: model:ir.model.fields,field_description:sale.field_product_template__sale_line_warn
 msgid "Sales Order Line"
-msgstr "Chi tiết Đơn bán"
+msgstr "Dòng Đơn bán"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_account_move_line__sale_line_ids
@@ -3529,7 +3530,7 @@ msgstr "Nhân viên Kinh doanh"
 #: code:addons/sale/models/res_company.py:0
 #, python-format
 msgid "Sample Order Line"
-msgstr "Chi tiết Đơn bán mẫu"
+msgstr "Dòng Đơn bán mẫu"
 
 #. module: sale
 #. odoo-python
@@ -4715,7 +4716,7 @@ msgid ""
 msgstr ""
 "{{ object.company_id.name }} {{ (object.get_portal_last_transaction().state "
 "== 'pending') and 'Đơn đang chờ' or 'Đơn hàng' }} (Mã {{ object.name or"
-" 'không có' }})"
+" 'n/a' }})"
 
 #. module: sale
 #: model:mail.template,subject:sale.email_template_edi_sale
@@ -4735,4 +4736,4 @@ msgid ""
 "object.name or 'n/a' }})"
 msgstr ""
 "{{ object.company_id.name }} {{ object.type_name }} Đã hủy (Mã {{ "
-"object.name or 'không có' }})"
+"object.name or 'n/a' }})"

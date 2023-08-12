@@ -601,7 +601,7 @@ msgstr "Cho phép Giao hàng Sau"
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.res_config_settings_view_form
 msgid "Allow cashiers to set a discount per line"
-msgstr "Cho phép nhân viên thu ngân đặt chiết khấu cho mỗi mục"
+msgstr "Cho phép nhân viên thu ngân đặt chiết khấu cho mỗi dòng"
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.pos_config_view_form
@@ -851,7 +851,7 @@ msgstr "Thanh toán Ngân hàng"
 #. module: point_of_sale
 #: model:ir.model,name:point_of_sale.model_account_bank_statement_line
 msgid "Bank Statement Line"
-msgstr "Mục sao kê ngân hàng"
+msgstr "Dòng sao kê ngân hàng"
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -2635,8 +2635,8 @@ msgid ""
 "If this orderline is a refund, then the refunded orderline is specified in "
 "this field."
 msgstr ""
-"Nếu mục đơn hàng này là một đơn hoàn tiền, thì mục đơn hàng được hoàn tiền "
-"được chỉ rõ trong trường này. "
+"Nếu dòng đơn hàng này là một đơn hoàn tiền, thì dòng đơn hàng được hoàn tiền"
+" được chỉ rõ trong trường này. "
 
 #. module: point_of_sale
 #: model:ir.model.fields,help:point_of_sale.field_pos_config__picking_policy
@@ -3153,12 +3153,12 @@ msgstr "Giới hạn tải Sản phẩm"
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_config__manual_discount
 #: model:ir.model.fields,field_description:point_of_sale.field_res_config_settings__pos_manual_discount
 msgid "Line Discounts"
-msgstr "Chiết khấu Theo mục"
+msgstr "Chiết khấu theo dòng"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_order_line__name
 msgid "Line No"
-msgstr "Mục số"
+msgstr "Dòng số"
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.res_config_settings_view_form
@@ -3609,7 +3609,7 @@ msgstr "Số lượng lỗi"
 #. module: point_of_sale
 #: model:ir.model.fields,help:point_of_sale.field_pos_order_line__refunded_qty
 msgid "Number of items refunded in this orderline."
-msgstr "Số mặt hàng được hoàn tiền cho mục đơn hàng này"
+msgstr "Số mặt hàng được hoàn tiền cho dòng đơn hàng này"
 
 #. module: point_of_sale
 #: model:ir.model.fields,help:point_of_sale.field_pos_session__message_needaction_counter
@@ -3943,7 +3943,7 @@ msgstr "Hạng mục Đặt hàng"
 #: model:ir.model.fields,help:point_of_sale.field_pos_order_line__refund_orderline_ids
 msgid "Orderlines in this field are the lines that refunded this orderline."
 msgstr ""
-"Dòng đơn hàng trong trường này là dòng đã hoàn tiền cho dòng đơn hàng này."
+"Các dòng đơn hàng trong trường này là các dòng mà đã hoàn tiền cho dòng này."
 
 #. module: point_of_sale
 #. odoo-python
@@ -4682,7 +4682,7 @@ msgstr "Số Đơn hàng PoS"
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_pack_operation_lot__pos_order_line_id
 msgid "Pos Order Line"
-msgstr "Chi tiết đơn hàng PoS"
+msgstr "Dòng đơn hàng Pos"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_account_bank_statement_line__pos_payment_ids
@@ -5426,14 +5426,14 @@ msgstr "Số sê-ri"
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_report_pos_order__nbr_lines
 msgid "Sale Line Count"
-msgstr "Bộ đếm Chi tiết Đơn hàng"
+msgstr "Số lượng Dòng đơn hàng"
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_pos_order_line
 #: model:ir.actions.act_window,name:point_of_sale.action_pos_order_line_day
 #: model:ir.actions.act_window,name:point_of_sale.action_pos_order_line_form
 msgid "Sale line"
-msgstr "Mục bán hàng"
+msgstr "Dòng bán hàng"
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_report_pos_details
@@ -5915,7 +5915,7 @@ msgstr "Tuyến cụ thể"
 #. module: point_of_sale
 #: model:ir.model,name:point_of_sale.model_pos_pack_operation_lot
 msgid "Specify product lot/serial number in pos order line"
-msgstr "Hãy chỉ ra số lô/sê-ri sản phẩm trong mục đơn hàng PoS"
+msgstr "Hãy chỉ ra số lô/sê-ri sản phẩm trong dòng đơn hàng PoS"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_config__route_id
@@ -6219,7 +6219,7 @@ msgstr ""
 msgid ""
 "The Point of Sale only supports the \"add a rounding line\" rounding "
 "strategy."
-msgstr "Điểm Bán hàng chỉ hỗ trợ chiến lược làm tròn \"thêm một dòng làm tròn\"."
+msgstr "Ứng dụng Điểm Bán lẻ chỉ hỗ trợ làm tròn bằng cách \"thêm một dòng làm tròn\"."
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -7043,7 +7043,7 @@ msgid ""
 "%s"
 msgstr ""
 "Không thể đóng và xác nhận phiên.\n"
-"Vui lòng đặt tài khoản thuế tương ứng trong mỗi mục phân loại của các loại thuế sau: \n"
+"Vui lòng đặt tài khoản thuế tương ứng trong mỗi dòng phân loại của các loại thuế sau: \n"
 "%s"
 
 #. module: point_of_sale
@@ -7447,7 +7447,7 @@ msgstr "Bạn không thể mở phiên vào ngày trước ngày khóa kỳ kế
 msgid ""
 "You cannot delete a bank statement line linked to Point of Sale session."
 msgstr ""
-"Bạn không thể xóa mục sao kê ngân hàng được liên kết với phiên Điểm bán "
+"Bạn không thể xóa dòng sao kê ngân hàng được liên kết với phiên Điểm bán "
 "hàng."
 
 #. module: point_of_sale
