@@ -30,9 +30,9 @@ msgstr "Miễn phí giao hàng - %s"
 #. module: sale_loyalty_delivery
 #: model:ir.model,name:sale_loyalty_delivery.model_sale_order
 msgid "Sales Order"
-msgstr "Đơn bán hàng"
+msgstr "Đơn bán"
 
 #. module: sale_loyalty_delivery
 #: model:ir.model,name:sale_loyalty_delivery.model_sale_order_line
 msgid "Sales Order Line"
-msgstr "Chi tiết đơn hàng"
+msgstr "Dòng đơn bán"

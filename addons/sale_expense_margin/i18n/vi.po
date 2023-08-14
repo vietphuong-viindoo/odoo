@@ -28,9 +28,9 @@ msgstr "Chi phí"
 #. module: sale_expense_margin
 #: model:ir.model,name:sale_expense_margin.model_account_move_line
 msgid "Journal Item"
-msgstr "Bút toán"
+msgstr "Phát sinh kế toán"
 
 #. module: sale_expense_margin
 #: model:ir.model,name:sale_expense_margin.model_sale_order_line
 msgid "Sales Order Line"
-msgstr "Chi tiết đơn hàng"
+msgstr "Dòng đơn bán"

@@ -71,4 +71,4 @@ msgstr "Loại phần thưởng"
 #. module: loyalty_delivery
 #: model:ir.model,name:loyalty_delivery.model_sale_order
 msgid "Sales Order"
-msgstr "Đơn bán hàng"
+msgstr "Đơn bán"

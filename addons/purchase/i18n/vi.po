@@ -1654,7 +1654,7 @@ msgstr "Số tiền tối thiểu yêu cầu phải có xác nhận hai lần"
 #. module: purchase
 #: model:ir.model.constraint,message:purchase.constraint_purchase_order_line_accountable_required_fields
 msgid "Missing required fields on accountable purchase order line."
-msgstr "Thiếu các trường bắt buộc trên dòng đơn đặt hàng có thể ghi sổ."
+msgstr "Thiếu các trường bắt buộc trên dòng đơn mua hàng có thể ghi sổ."
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order__my_activity_date_deadline
@@ -2160,7 +2160,7 @@ msgstr "SL Đơn mua"
 #: model_terms:ir.ui.view,arch_db:purchase.purchase_order_form
 #: model_terms:ir.ui.view,arch_db:purchase.purchase_order_line_form2
 msgid "Purchase Order Line"
-msgstr "Dòng hàng Đơn Mua"
+msgstr "Dòng Đơn Mua"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_product_product__purchase_line_warn
@@ -2235,7 +2235,7 @@ msgstr "Các đơn mua mà đã có hoá đơn nhà cung cấp xuất."
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.purchase_order_view_search
 msgid "Purchase orders that include lines not invoiced."
-msgstr "Đơn mua có chứa các hạng mục chưa lên hoá đơn."
+msgstr "Đơn mua có chứa các dòng chưa được xuất hóa đơn."
 
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.res_config_settings_view_form_purchase
@@ -2872,7 +2872,7 @@ msgid ""
 "There is no invoiceable line. If a product has a control policy based on "
 "received quantity, please make sure that a quantity has been received."
 msgstr ""
-"Không có dòng có thể lập hóa đơn. Nếu một sản phẩm có chính sách kiểm soát "
+"Không có dòng nào có thể lập hóa đơn. Nếu một sản phẩm có chính sách kiểm soát "
 "dựa trên số lượng đã nhận, vui lòng đảm bảo rằng đã nhận hàng."
 
 #. module: purchase
@@ -3304,9 +3304,8 @@ msgid ""
 "You cannot change the type of a purchase order line. Instead you should "
 "delete the current line and create a new line of the proper type."
 msgstr ""
-"Bạn không thể thay đổi loại của một dòng đơn mua hàng\n"
-"\n"
-" hàng. Thay vào đó, bạn nên xóa dòng hiện tại và tạo một dòng mới có loại phù hợp."
+"Bạn không thể thay đổi loại của một dòng đơn mua hàng. Thay vào đó, bạn nên "
+"xóa dòng hiện tại và tạo một dòng mới có loại phù hợp."
 
 #. module: purchase
 #: model_terms:ir.actions.act_window,help:purchase.product_product_action

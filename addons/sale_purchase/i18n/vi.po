@@ -5,7 +5,7 @@
 # Translators:
 # Martin Trigaux, 2022
 # Thi Huong Nguyen, 2023
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.5alpha1\n"
@@ -159,7 +159,7 @@ msgstr "Cảnh báo đơn mua hàng"
 #. module: sale_purchase
 #: model:ir.model,name:sale_purchase.model_purchase_order_line
 msgid "Purchase Order Line"
-msgstr "Dòng hàng Đơn Mua"
+msgstr "Dòng Đơn Mua"
 
 #. module: sale_purchase
 #: code:addons/sale_purchase/models/sale_order.py:0
@@ -189,7 +189,7 @@ msgstr "Đơn bán"
 #. module: sale_purchase
 #: model:ir.model,name:sale_purchase.model_sale_order
 msgid "Sales Order"
-msgstr "Đơn bán hàng"
+msgstr "Đơn bán"
 
 #. module: sale_purchase
 #: model:ir.model,name:sale_purchase.model_sale_order_cancel
@@ -199,13 +199,13 @@ msgstr "Hủy đơn bán hàng"
 #. module: sale_purchase
 #: model:ir.model,name:sale_purchase.model_sale_order_line
 msgid "Sales Order Line"
-msgstr "Chi tiết Đơn bán"
+msgstr "Dòng đơn bán"
 
 #. module: sale_purchase
 #: code:addons/sale_purchase/models/purchase_order.py:0
 #, python-format
 msgid "Sources Sale Orders %s"
-msgstr "Đơn bán nguồn của %s"
+msgstr "Đơn bán nguồn %s"
 
 #. module: sale_purchase
 #: model:ir.model.fields,field_description:sale_purchase.field_product_product__service_to_purchase

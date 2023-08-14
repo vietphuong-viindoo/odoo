@@ -54,7 +54,7 @@ msgstr "Tiến hành thanh toán"
 #. module: website_sale_product_configurator
 #: model:ir.model,name:website_sale_product_configurator.model_sale_order
 msgid "Sales Order"
-msgstr "Đơn bán hàng"
+msgstr "Đơn bán"
 
 #. module: website_sale_product_configurator
 #: model:ir.model,name:website_sale_product_configurator.model_website

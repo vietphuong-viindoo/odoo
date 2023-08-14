@@ -5,7 +5,7 @@
 # Translators:
 # Martin Trigaux, 2022
 # Thi Huong Nguyen, 2023
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0+e\n"
@@ -61,17 +61,17 @@ msgstr "Đơn mua hàng"
 #. module: stock_dropshipping
 #: model:ir.model,name:stock_dropshipping.model_purchase_order_line
 msgid "Purchase Order Line"
-msgstr "Chi tiết đơn mua"
+msgstr "Dòng đơn mua"
 
 #. module: stock_dropshipping
 #: model:ir.model,name:stock_dropshipping.model_sale_order
 msgid "Sales Order"
-msgstr "Đơn bán hàng"
+msgstr "Đơn bán"
 
 #. module: stock_dropshipping
 #: model:ir.model,name:stock_dropshipping.model_sale_order_line
 msgid "Sales Order Line"
-msgstr "Chi tiết Đơn bán"
+msgstr "Dòng đơn bán"
 
 #. module: stock_dropshipping
 #: model:ir.model,name:stock_dropshipping.model_stock_rule
