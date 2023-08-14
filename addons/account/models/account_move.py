@@ -3516,11 +3516,13 @@ class AccountMove(models.Model):
         for ids in self._cr.split_for_in_conditions(records.ids, size=100):
             moves = self.browse(ids)
             try:  # try posting in batch
-                moves._post()
+                with self.env.cr.savepoint():
+                    moves._post()
             except UserError:  # if at least one move cannot be posted, handle moves one by one
                 for move in moves:
                     try:
-                        move._post()
+                        with self.env.cr.savepoint():
+                            move._post()
                     except UserError as e:
                         move.to_check = True
                         msg = _('The move could not be posted for the following reason: %(error_message)s', error_message=e)
@@ -5555,7 +5557,7 @@ class AccountMoveLine(models.Model):
         # ==== Create entries for cash basis taxes ====
 
         is_cash_basis_needed = account.company_id.tax_exigibility and account.user_type_id.type in ('receivable', 'payable')
-        if is_cash_basis_needed and not self._context.get('move_reverse_cancel'):
+        if is_cash_basis_needed and not self._context.get('move_reverse_cancel') and not self._context.get('no_cash_basis'):
             tax_cash_basis_moves = partials._create_tax_cash_basis_moves()
             results['tax_cash_basis_moves'] = tax_cash_basis_moves
 
