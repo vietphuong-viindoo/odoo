@@ -1994,7 +1994,7 @@ msgstr "ví dụ. Giảm 10% cho máy tính xách tay"
 #: model:ir.model.fields.selection,name:loyalty.selection__loyalty_program__program_type__ewallet
 #, python-format
 msgid "eWallet"
-msgstr "ví điện tử"
+msgstr "Ví điện tử"
 
 #. module: loyalty
 #: model_terms:ir.ui.view,arch_db:loyalty.loyalty_program_view_form
@@ -2020,7 +2020,7 @@ msgid ""
 "                                    <br/>\n"
 "                                    Then, eWallets are proposed during the checkout, to pay orders."
 msgstr ""
-"ví điện tử được tạo thủ công hoặc tự động khi khách hàng đặt mua sản phẩm Ví điện tử.\n"
+"Ví điện tử được tạo thủ công hoặc tự động khi khách hàng đặt mua sản phẩm Ví điện tử.\n"
 "                                    <br/>\n"
 "                                    Sau đó, Ví điện tử được đề xuất trong quá trình thanh toán, để thanh toán đơn đặt hàng."
 
