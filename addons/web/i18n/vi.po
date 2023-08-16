@@ -2548,7 +2548,7 @@ msgstr "Chứng nhận GNU LGPL"
 #: code:addons/web/static/src/views/debug_items.js:0
 #, python-format
 msgid "Get View"
-msgstr "Lấy dạng xem"
+msgstr "Xem Giao diện"
 
 #. module: web
 #. odoo-javascript
