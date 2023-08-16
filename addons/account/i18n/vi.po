@@ -15432,7 +15432,7 @@ msgstr "Chuyển bút toán tới %s"
 #: code:addons/account/wizard/account_automatic_entry_wizard.py:0
 #, python-format
 msgid "Transfer from %s"
-msgstr "Chuyển từ %s"
+msgstr "Chuyển từ TK %s"
 
 #. module: account
 #. odoo-python
@@ -15440,7 +15440,7 @@ msgstr "Chuyển từ %s"
 #: code:addons/account/wizard/account_automatic_entry_wizard.py:0
 #, python-format
 msgid "Transfer to %s"
-msgstr "Chuyển cho %s"
+msgstr "Kết chuyển sang TK %s"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
@@ -17066,7 +17066,7 @@ msgstr "[FURN_8999] Ghế Sofa có ba chỗ ngồi"
 #: code:addons/account/wizard/account_automatic_entry_wizard.py:0
 #, python-format
 msgid "[Not set]"
-msgstr "[Không cài]"
+msgstr "[Chưa thiết lập]"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_move_form
