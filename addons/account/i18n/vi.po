@@ -1779,8 +1779,8 @@ msgid ""
 "put on the regular tax account."
 msgstr ""
 "Tài khoản được sử dụng để chuyển đổi số thuế cho các loại thuế cơ sở tiền "
-"mặt. Nó sẽ chứa số tiền thuế miễn là hóa đơn gốc chưa được đối chiếu; khi "
-"đối chiếu, số tiền này đã hủy trên tài khoản này và đưa vào tài khoản thuế "
+"mặt. Nó sẽ chứa số tiền thuế miễn là hóa đơn gốc chưa được đối soát; khi "
+"đối soát, số tiền này đã hủy trên tài khoản này và đưa vào tài khoản thuế "
 "thông thường."
 
 #. module: account
@@ -3150,7 +3150,7 @@ msgid ""
 "Reconciliation replaces the latter by the definitive account(s)."
 msgstr ""
 "Giao dịch Ngân hàng được vào sổ ngay sau khi nhập hoặc đồng bộ hóa. Đối tác của họ là tài khoản ngân hàng tạm thời.\n"
-"Đối chiếu thay thế đối chiếu sau bởi (các) tài khoản xác định."
+"Đối soát thay thế đối soát sau bởi (các) tài khoản xác định."
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_setup_bank_manual_config__acc_type
@@ -3874,7 +3874,7 @@ msgid ""
 "Check this box if this account allows invoices & payments matching of "
 "journal items."
 msgstr ""
-"Đánh dấu vào hộp này nếu tài khoản này cho phép khớp/đối chiếu các hoá đơn "
+"Đánh dấu vào hộp này nếu tài khoản này cho phép khớp/đối soát các hoá đơn "
 "và thanh toán."
 
 #. module: account
@@ -8859,7 +8859,7 @@ msgstr "Hóa đơn trễ"
 #: model:ir.model.fields,field_description:account.field_res_partner__last_time_entries_checked
 #: model:ir.model.fields,field_description:account.field_res_users__last_time_entries_checked
 msgid "Latest Invoices & Payments Matching Date"
-msgstr "Ngày đối chiếu Hoá đơn & Thanh toán gần nhất"
+msgstr "Ngày đối soát Hoá đơn & Thanh toán gần nhất"
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_journal__sale_activity_user_id
@@ -10349,7 +10349,7 @@ msgid ""
 "Bank transactions are then reconciled on the Outstanding Payments Account rather the Payable Account."
 msgstr ""
 "Các Khoản Thanh toán được vào sổ trên một Tài khoản Thanh toán Chưa thanh toán. Trong tiện ích điều chỉnh ngân hàng, chúng xuất hiện dưới dạng các đường màu xanh lam.\n"
-"Các giao dịch ngân hàng sau đó được đối chiếu trên Tài khoản thanh toán chưa thanh toán thay vì Tài khoản phải trả."
+"Các giao dịch ngân hàng sau đó được đối soát trên Tài khoản thanh toán chưa thanh toán thay vì Tài khoản phải trả."
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_invoice_send__mail_server_id
@@ -11218,7 +11218,7 @@ msgstr "Trả trước"
 msgid ""
 "Preset to create journal entries during a invoices and payments matching"
 msgstr ""
-"Đặt trước để tạo các bút toán sổ nhật ký trong khi đối chiếu các hoá đơn và "
+"Đặt trước để tạo các bút toán sổ nhật ký trong khi đối soát các hoá đơn và "
 "các khoản thanh toán"
 
 #. module: account
@@ -11552,7 +11552,7 @@ msgstr "Hoá đơn được đối soát"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_payment__reconciled_invoices_type
 msgid "Reconciled Invoices Type"
-msgstr "Loại hóa đơn đối chiếu"
+msgstr "Loại hóa đơn đối soát"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_move_form
@@ -12379,7 +12379,7 @@ msgid ""
 msgstr ""
 "Chọn mục này nếu các loại thuế nên sử dụng cơ sở tiền mặt, điều này sẽ tạo "
 "ra một bút toán cho các loại thuế đó trên một tài khoản nhất định trong quá "
-"trình đối chiếu."
+"trình đối soát."
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_journal__selected_payment_method_codes
@@ -13438,7 +13438,7 @@ msgid ""
 "Tax current account used as a counterpart to the Tax Closing Entry when in "
 "favor of the authorities."
 msgstr ""
-"Tài khoản vãng lai thuế được sử dụng như một đối chiếu với Bảng kê khai "
+"Tài khoản vãng lai thuế được sử dụng như một đối soát với Bảng kê khai "
 "quyết toán thuế khi có sự hỗ trợ của cơ quan chức năng."
 
 #. module: account
@@ -13447,7 +13447,7 @@ msgid ""
 "Tax current account used as a counterpart to the Tax Closing Entry when in "
 "favor of the company."
 msgstr ""
-"Tài khoản vãng lai thuế được sử dụng để đối chiếu với Bảng kê khai thuế khi "
+"Tài khoản vãng lai thuế được sử dụng để đối soát với Bảng kê khai thuế khi "
 "có lợi cho công ty."
 
 #. module: account
@@ -13890,7 +13890,7 @@ msgstr ""
 #: model:ir.model.fields,help:account.field_account_move_line__statement_id
 msgid "The bank statement used for bank reconciliation"
 msgstr ""
-"Sao kê ngân hàng này được sử dụng cho việc đối soát/đối chiếu với các giao "
+"Sao kê ngân hàng này được sử dụng cho việc đối soát/đối soát với các giao "
 "dịch ngân hàng"
 
 #. module: account
@@ -13902,7 +13902,7 @@ msgid ""
 "reconciling its lines."
 msgstr ""
 "Các bút toán cơ sở tiền mặt được tạo ra từ các loại thuế trên bút toán này, "
-"khi đối chiếu các dòng của nó."
+"khi đối soát các dòng của nó."
 
 #. module: account
 #: model:ir.model.fields,help:account.field_res_company__chart_template_id
