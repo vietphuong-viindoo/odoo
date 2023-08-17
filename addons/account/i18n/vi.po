@@ -16295,8 +16295,8 @@ msgid ""
 "You can only change the period/account for items that are not yet "
 "reconciled."
 msgstr ""
-"Bạn chỉ được phép thay đổi kỳ/tài khoản đối với các chi tiết bút toán đã vào"
-" sổ."
+"Bạn chỉ được phép thay đổi kỳ/tài khoản đối với các phát sinh kế toán"
+" chưa đối soát hết."
 
 #. module: account
 #. odoo-python
@@ -16304,7 +16304,7 @@ msgstr ""
 #, python-format
 msgid "You can only change the period/account for posted journal items."
 msgstr ""
-"Bạn chỉ được phép thay đổi kỳ/tài khoản đối với các bút toán đã vào sổ."
+"Bạn chỉ được phép thay đổi kỳ/tài khoản đối với các phát sinh kế toán đã vào sổ."
 
 #. module: account
 #. odoo-python
