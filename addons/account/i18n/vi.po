@@ -1072,7 +1072,7 @@ msgstr "<span>Báo cáo</span>"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.account_journal_dashboard_kanban_view
 msgid "<span>Running Balance</span>"
-msgstr ""
+msgstr "<span>Số dư thuần hiện tại</span>"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.bill_preview
@@ -12058,7 +12058,7 @@ msgstr "Quy tắc cho đối tượng đối soát"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_bank_statement_line__running_balance
 msgid "Running Balance"
-msgstr "Số dư đang chạy"
+msgstr "Số dư thuần hiện tại"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_res_config_settings__module_account_sepa
@@ -14563,7 +14563,7 @@ msgstr "Số tiền còn lại trên bút toán thể hiện bằng tiền tệ 
 #: code:addons/account/models/account_bank_statement.py:0
 #, python-format
 msgid "The running balance (%s) doesn't match the specified ending balance."
-msgstr "Số dư đang hoạt động (%s) không khớp với số dư cuối kỳ đã chỉ định."
+msgstr "Số dư thuần hiện tại (%s) không khớp với số dư cuối kỳ đã chỉ định."
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.account_automatic_entry_wizard_form
