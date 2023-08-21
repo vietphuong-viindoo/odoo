@@ -5084,7 +5084,7 @@ msgstr "Ở lại đây"
 #: code:addons/web/static/src/views/form/form_error_dialog/form_error_dialog.xml:0
 #, python-format
 msgid "Stay here"
-msgstr "Ở đây"
+msgstr "Tắt thông báo"
 
 #. module: web
 #. odoo-javascript
