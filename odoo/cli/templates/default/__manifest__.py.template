@@ -31,7 +31,7 @@ Editions Supported
 2. Enterprise Edition
 
     """,
-	'description_vi_VN': """
+    'description_vi_VN': """
 Ứng dụng này làm gì
 ===================
 Mô tả chi tiết về module
@@ -86,17 +86,17 @@ Tính năng chính
         'demo/demo.xml',
     ],
 
-	'images': [
+    'images': [
         # 'static/description/main_screenshot.png',
         # 'static/description/another_screenshot_1.png',
         # 'static/description/another_screenshot_2.png',
         ],
 
-	# The list of IDs of the project tasks in Viindoo Company's database that require
-	# this module development.
-	'task_ids': [
+    # The list of IDs of the project tasks in Viindoo Company's database that require
+    # this module development.
+    'task_ids': [
         # 1292, 1294,
-		],
+        ],
 
     'installable': True,
     'application': False,
