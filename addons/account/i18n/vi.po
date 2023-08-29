@@ -1127,8 +1127,8 @@ msgid ""
 "<strong class=\"text-center\">Scan me with your banking "
 "app.</strong><br/><br/>"
 msgstr ""
-"Quét tôi qua ứng dụng ngân hàng <br/><br/><strong class=\"text-center\">của "
-"bạn."
+"<strong class=\"text-center\">Quét mã thanh toán qua ứng dụng ngân hàng của "
+"bạn.</strong><br/><br/>"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.report_invoice_document
