@@ -354,8 +354,10 @@ export class Record extends DataPoint {
         }
         return value.every(
             (propertyDefinition) =>
-                !propertyDefinition.id ||
-                (propertyDefinition.string && propertyDefinition.string.length)
+                propertyDefinition.name &&
+                propertyDefinition.name.length &&
+                propertyDefinition.string &&
+                propertyDefinition.string.length
         );
     }
 
@@ -866,7 +868,9 @@ export class StaticList extends DataPoint {
 
     async delete(recordId, operation = "DELETE") {
         const record = this.records.find((r) => r.id === recordId);
-        await this.__syncParent({ operation, ids: [record.__bm_handle__] });
+        if (record) {
+            await this.__syncParent({ operation, ids: [record.__bm_handle__] });
+        }
     }
 
     async add(object, params = { isM2M: false }) {
