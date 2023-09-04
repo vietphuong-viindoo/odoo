@@ -803,6 +803,7 @@ class AccountMove(models.Model):
             currency = (
                 invoice.statement_line_id.foreign_currency_id
                 or invoice.journal_id.currency_id
+                or invoice.currency_id
                 or invoice.journal_id.company_id.currency_id
             )
             invoice.currency_id = currency
@@ -3586,12 +3587,16 @@ class AccountMove(models.Model):
         return action
 
     def action_switch_invoice_into_refund_credit_note(self):
-        if any(move.move_type not in ('in_invoice', 'out_invoice') for move in self):
-            raise ValidationError(_("This action isn't available for this document."))
-
         for move in self:
+            if move.posted_before:
+                raise ValidationError(_("You cannot switch the type of a posted document."))
+            if move.move_type == 'entry':
+                raise ValidationError(_("This action isn't available for this document."))
+            in_out, old_move_type = move.move_type.split('_')
+            new_move_type = f"{in_out}_{'invoice' if old_move_type == 'refund' else 'refund'}"
+            move.name = False
             move.write({
-                'move_type': move.move_type.replace('invoice', 'refund'),
+                'move_type': new_move_type,
                 'partner_bank_id': False,
                 'currency_id': move.currency_id.id,
             })
