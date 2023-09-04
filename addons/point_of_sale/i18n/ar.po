@@ -8,16 +8,16 @@
 # Farid Fox, 2022
 # Abdullah Mohamed, 2022
 # Martin Trigaux, 2023
+# Mehjabin Farsana, 2023
 # Malaz Abuidris <msea@odoo.com>, 2023
-# Wil Odoo, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-10 08:03+0000\n"
+"POT-Creation-Date: 2023-08-18 08:43+0000\n"
 "PO-Revision-Date: 2021-09-14 12:24+0000\n"
-"Last-Translator: Wil Odoo, 2023\n"
+"Last-Translator: Malaz Abuidris <msea@odoo.com>, 2023\n"
 "Language-Team: Arabic (https://app.transifex.com/odoo/teams/41243/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -915,7 +915,7 @@ msgstr "لا يمكن فوترة الطلب من جلسة مغلقة. "
 #: code:addons/point_of_sale/static/src/js/Screens/ProductScreen/ProductScreen.js:0
 #, python-format
 msgid "Cannot modify a tip"
-msgstr ""
+msgstr "لا يمكن تعديل النصيحة "
 
 #. module: point_of_sale
 #. openerp-web
@@ -1667,6 +1667,7 @@ msgstr "العميل مطلوب"
 #. module: point_of_sale
 #. openerp-web
 #: code:addons/point_of_sale/static/src/js/Screens/PaymentScreen/PaymentScreen.js:0
+#: code:addons/point_of_sale/wizard/pos_payment.py:0
 #, python-format
 msgid "Customer is required for %s payment method."
 msgstr "العميل مطلوب لطريقة الدفع %s.  "
@@ -1676,7 +1677,7 @@ msgstr "العميل مطلوب لطريقة الدفع %s.  "
 #: code:addons/point_of_sale/static/src/js/Screens/ProductScreen/ProductScreen.js:0
 #, python-format
 msgid "Customer tips, cannot be modified directly"
-msgstr ""
+msgstr "لا يمكن تعديل نصائح العملاء مباشرة "
 
 #. module: point_of_sale
 #: model:ir.ui.menu,name:point_of_sale.menu_point_of_sale_customer
@@ -2017,6 +2018,13 @@ msgid "Do you want to open the customer list to select customer?"
 msgstr "هل ترغب في فتح قائمة العملاء لاختيار العميل؟ "
 
 #. module: point_of_sale
+#. openerp-web
+#: code:addons/point_of_sale/static/src/js/Misc/AbstractReceiptScreen.js:0
+#, python-format
+msgid "Do you want to print using the web printer?"
+msgstr "هل ترغب بالطباعة باستخدام طابعة الويب؟ "
+
+#. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.pos_config_view_form
 #: model_terms:ir.ui.view,arch_db:point_of_sale.res_config_settings_view_form
 msgid "Documentation"
@@ -2266,6 +2274,13 @@ msgstr "أوامر الاستيراد المنتهية"
 #: model_terms:ir.ui.view,arch_db:point_of_sale.pos_config_view_form
 msgid "Fiscal Position"
 msgstr "الوضع المالي "
+
+#. module: point_of_sale
+#. openerp-web
+#: code:addons/point_of_sale/static/src/js/Screens/TicketScreen/TicketScreen.js:0
+#, python-format
+msgid "Fiscal Position not found"
+msgstr "لم يتم العثور على الوضع المالي "
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.pos_config_view_form
@@ -3328,11 +3343,6 @@ msgid "Newspaper Rack"
 msgstr "رف الصحف"
 
 #. module: point_of_sale
-#: model:ir.model.fields,field_description:point_of_sale.field_pos_session__activity_calendar_event_id
-msgid "Next Activity Calendar Event"
-msgstr "الفعالية التالية في تقويم الأنشطة "
-
-#. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_session__activity_date_deadline
 msgid "Next Activity Deadline"
 msgstr "الموعد النهائي للنشاط التالي"
@@ -3507,13 +3517,13 @@ msgstr "عدد الرسائل الحادث بها خطأ في التسليم"
 #: code:addons/point_of_sale/models/pos_config.py:0
 #, python-format
 msgid "Number of partners loaded can not be 0"
-msgstr ""
+msgstr "لا يمكن أن يكون عدد الشركاء الذين يتم تحميلهم 0 "
 
 #. module: point_of_sale
 #: code:addons/point_of_sale/models/pos_config.py:0
 #, python-format
 msgid "Number of product loaded can not be 0"
-msgstr ""
+msgstr "لا يمكن أن يكون عدد المنتجات التي يتم تحميلها 0 "
 
 #. module: point_of_sale
 #: model:ir.model.fields,help:point_of_sale.field_pos_session__message_unread_counter
@@ -3596,7 +3606,7 @@ msgstr "تطبيق التقريب عند الدفع نقداً فقط "
 #, python-format
 msgid ""
 "Only journals of type 'Cash' or 'Bank' could be used with payment methods."
-msgstr ""
+msgstr "يمكن فقط استخدام دفاتر اليومية من نوع \"نقد\" أو \"بنك\" مع طرق الدفع. "
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.pos_config_view_form
@@ -4119,7 +4129,7 @@ msgstr "المدفوعات:"
 #: code:addons/point_of_sale/static/src/js/Screens/PaymentScreen/PaymentScreen.js:0
 #, python-format
 msgid "Pending Electronic Payments"
-msgstr ""
+msgstr "المدفوعات الإلكترونية المعلقة"
 
 #. module: point_of_sale
 #: model:ir.filters,name:point_of_sale.filter_orders_per_session
@@ -5979,6 +5989,17 @@ msgstr ""
 msgid ""
 "The fiscal data module encountered an error while receiving your order."
 msgstr "لقد واجه تطبيق البيانات المالية خطأ عند استلام طلبك. "
+
+#. module: point_of_sale
+#. openerp-web
+#: code:addons/point_of_sale/static/src/js/Screens/TicketScreen/TicketScreen.js:0
+#, python-format
+msgid ""
+"The fiscal position used in the original order is not loaded. Make sure it "
+"is loaded by adding it in the pos configuration."
+msgstr ""
+"لم يتم تحميل الوضع المالي المستخدم في الطلب الرئيسي. تأكد من أنه قد تم "
+"تحميله عن طريق إضافته في تهيئة نقطة البيع. "
 
 #. module: point_of_sale
 #: model:ir.model.fields,help:point_of_sale.field_pos_config__proxy_ip

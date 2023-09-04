@@ -9,6 +9,7 @@
 # 敬雲 林 <chingyun@yuanchih-consult.com>, 2023
 # Benson <Benson.Dr@Gmail.com>, 2023
 # Tony Ng, 2023
+# Wil Odoo, 2023
 # 
 msgid ""
 msgstr ""
@@ -16,7 +17,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-18 09:52+0000\n"
 "PO-Revision-Date: 2021-09-14 12:18+0000\n"
-"Last-Translator: Tony Ng, 2023\n"
+"Last-Translator: Wil Odoo, 2023\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/odoo/teams/41243/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -163,7 +164,7 @@ msgstr "(object._get_report_base_filename())"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.report_journal
 msgid "- Posted Entries Only"
-msgstr ""
+msgstr "- 只限已過賬記項"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.report_journal
@@ -1674,7 +1675,7 @@ msgstr "會計"
 #. module: account
 #: model:ir.actions.act_window,name:account.open_account_journal_dashboard_kanban
 msgid "Accounting Dashboard"
-msgstr "會計工作台"
+msgstr "會計概覽畫面"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_invoice_filter
@@ -6132,7 +6133,7 @@ msgstr "公式"
 #: model:ir.model.fields,field_description:account.field_account_invoice_send__email_from
 #: model_terms:ir.ui.view,arch_db:account.view_account_group_form
 msgid "From"
-msgstr "來自"
+msgstr "由"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.report_journal
@@ -6924,7 +6925,7 @@ msgstr "在這裡插入您的條款和條件..."
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
 msgid "Install More Packages"
-msgstr "安裝更多的套件模組"
+msgstr "安裝更多套裝"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_position_form
@@ -9506,7 +9507,7 @@ msgstr "逾期應收憑單，超過付款日期"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
 msgid "Package"
-msgstr "包裹"
+msgstr "套裝"
 
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_invoice_report__payment_state__paid
@@ -11113,12 +11114,12 @@ msgstr "核銷模型的規則"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_res_config_settings__module_account_sepa
 msgid "SEPA Credit Transfer (SCT)"
-msgstr "SEPA貸方交易"
+msgstr "SEPA 轉賬付款（SCT）"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
 msgid "SEPA Direct Debit (SDD)"
-msgstr "SEPA借方交易"
+msgstr "SEPA 直接扣賬（SDD）"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_account__message_has_sms_error
@@ -12148,8 +12149,8 @@ msgstr "暫記項目"
 
 #. module: account
 #: model:ir.actions.server,name:account.action_move_switch_invoice_to_credit_note
-msgid "Switch into refund/credit note"
-msgstr "切換至折讓/貸記單"
+msgid "Switch into invoice/credit note"
+msgstr "切換至發票/貸記單"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_account_tag__name
@@ -12550,7 +12551,7 @@ msgstr "含稅"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
 msgid "TaxCloud"
-msgstr "稅務雲"
+msgstr "TaxCloud"
 
 #. module: account
 #: code:addons/account/models/account_account.py:0
@@ -13564,7 +13565,7 @@ msgstr "用於確定此明细是否應結轉的方法."
 #, python-format
 msgid ""
 "The move could not be posted for the following reason: %(error_message)s"
-msgstr ""
+msgstr "分錄未能過賬，原因： %(error_message)s"
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_move_line__move_id
@@ -14199,7 +14200,7 @@ msgstr "當第三方在您的資料庫中不存在的時候(或者找不到)，�
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.open_account_journal_dashboard_kanban
 msgid "This is the accounting dashboard"
-msgstr "這是會計儀表版"
+msgstr "這是「會計概覽畫面」"
 
 #. module: account
 #: code:addons/account/models/account_journal.py:0
@@ -14785,7 +14786,7 @@ msgstr "使用現金收付制"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_res_config_settings__module_account_sepa_direct_debit
 msgid "Use SEPA Direct Debit"
-msgstr "使用SEPA直接計入借方"
+msgstr "使用 SEPA 直接扣賬"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_move_reversal__journal_id
@@ -15711,6 +15712,12 @@ msgid ""
 "You cannot switch an account to prevent the reconciliation if some partial "
 "reconciliations are still pending."
 msgstr "如果某些部分對帳仍待處理，則您無法切換項目以阻止對帳."
+
+#. module: account
+#: code:addons/account/models/account_account.py:0
+#, python-format
+msgid "You cannot switch the type of a posted document."
+msgstr "已過賬文件不能更改類別。"
 
 #. module: account
 #: code:addons/account/models/account_move.py:0
