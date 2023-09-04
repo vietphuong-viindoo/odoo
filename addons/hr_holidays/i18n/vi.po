@@ -1054,7 +1054,7 @@ msgstr "Cấp phát"
 #. module: hr_holidays
 #: model_terms:ir.ui.view,arch_db:hr_holidays.edit_holiday_status_form
 msgid "Allow To Join Supporting Document"
-msgstr "Cho phép tham gia Tài liệu hỗ trợ"
+msgstr "Cho phép Đính kèm Tài liệu hỗ trợ"
 
 #. module: hr_holidays
 #: model:ir.model.fields,help:hr_holidays.field_hr_leave_allocation__holiday_type
