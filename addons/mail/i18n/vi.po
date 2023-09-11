@@ -1859,7 +1859,7 @@ msgstr ""
 #: code:addons/mail/static/src/components/call_settings_menu/call_settings_menu.xml:0
 #, python-format
 msgid "Blur video background"
-msgstr ""
+msgstr "Làm mờ nền video"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_template__body_html
@@ -3543,7 +3543,7 @@ msgstr "Bật theo dõi có thứ tự"
 #: code:addons/mail/static/src/components/call_settings_menu/call_settings_menu.xml:0
 #, python-format
 msgid "Enable Push-to-talk"
-msgstr ""
+msgstr "Bật tính năng Nhấn để nói"
 
 #. module: mail
 #. odoo-javascript
@@ -8561,7 +8561,7 @@ msgstr ""
 #: code:addons/mail/static/src/components/call_settings_menu/call_settings_menu.xml:0
 #, python-format
 msgid "Show video participants only"
-msgstr ""
+msgstr "Chỉ hiển thị người tham gia video"
 
 #. module: mail
 #. odoo-javascript
@@ -10070,7 +10070,7 @@ msgstr "Video"
 #: code:addons/mail/static/src/components/call_settings_menu/call_settings_menu.xml:0
 #, python-format
 msgid "Video Settings"
-msgstr ""
+msgstr "Cài đặt video"
 
 #. module: mail
 #. odoo-python
@@ -10133,7 +10133,7 @@ msgstr "Giọng nói"
 #: code:addons/mail/static/src/components/call_settings_menu/call_settings_menu.xml:0
 #, python-format
 msgid "Voice Settings"
-msgstr ""
+msgstr "Cài đặt giọng nói"
 
 #. module: mail
 #. odoo-javascript
@@ -10142,7 +10142,7 @@ msgstr ""
 #: code:addons/mail/static/src/components/call_settings_menu/call_settings_menu.xml:0
 #, python-format
 msgid "Voice detection threshold"
-msgstr ""
+msgstr "Ngưỡng phát hiện giọng nói"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_res_users_settings_volumes__volume
