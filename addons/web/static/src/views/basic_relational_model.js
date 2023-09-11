@@ -243,6 +243,11 @@ export class Record extends DataPoint {
                 case "integer":
                 case "monetary":
                     continue;
+                case "html":
+                    if (this.isRequired(fieldName) && this.data[fieldName].length === 0) {
+                        this._setInvalidField(fieldName);
+                    }
+                    break;
                 case "properties":
                     if (!this.checkPropertiesValidity(fieldName)) {
                         this._setInvalidField(fieldName);
@@ -579,7 +584,11 @@ export class Record extends DataPoint {
             const prom = this.model.__bm__.notifyChanges(this.__bm_handle__, data, {
                 viewType: this.__viewType,
             });
-            prom.catch(resolveUpdatePromise); // onchange rpc may return an error
+            prom.catch(() => {
+                this.model.notify();
+                // onchange rpc may return an error
+                resolveUpdatePromise();
+            });
             const fieldNames = await prom;
             this._removeInvalidFields(fieldNames);
             for (const fieldName of fieldNames) {
