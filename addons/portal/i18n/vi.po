@@ -3,7 +3,6 @@
 # 	* portal
 #
 # Translators:
-# sao sang <saosangmo@yahoo.com>, 2021
 # fanha99 <fanha99@hotmail.com>, 2021
 # Hoa Thi <giaphoa196@gmail.com>, 2021
 # Thang Duong Bao <nothingctrl@gmail.com>, 2021
@@ -75,6 +74,16 @@ msgstr "<i class=\"fa fa-pencil\"/> Sửa"
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_security
 msgid "<i title=\"Documentation\" class=\"fa fa-fw o_button_icon fa-info-circle\"/>"
 msgstr "<i title=\"Tài liệu\" class=\"fa fa-fw o_button_icon fa-info-circle\"/>"
+
+#. module: portal
+#: model_terms:ir.ui.view,arch_db:portal.portal_my_details
+msgid "<option value=\"\">Country...</option>"
+msgstr ""
+
+#. module: portal
+#: model_terms:ir.ui.view,arch_db:portal.portal_my_details
+msgid "<option value=\"\">select...</option>"
+msgstr ""
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_details
@@ -378,11 +387,6 @@ msgstr "Không thể lưu tập tin <strong>%s</strong>"
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_details
 msgid "Country"
 msgstr "Quốc gia"
-
-#. module: portal
-#: model_terms:ir.ui.view,arch_db:portal.portal_my_details
-msgid "Country..."
-msgstr "Quốc gia..."
 
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_portal_share__create_uid
@@ -1332,11 +1336,6 @@ msgstr "mật khẩu"
 #: model:ir.model,name:portal.model_res_users_apikeys_description
 msgid "res.users.apikeys.description"
 msgstr "res.users.apikeys.description"
-
-#. module: portal
-#: model_terms:ir.ui.view,arch_db:portal.portal_my_details
-msgid "select..."
-msgstr "chọn..."
 
 #. module: portal
 #. openerp-web
