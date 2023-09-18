@@ -5828,14 +5828,14 @@ msgstr "Thông điệp"
 #: code:addons/mail/static/src/models/composer.js:0
 #, python-format
 msgid "Message #%s..."
-msgstr "Tin nhắn #%s..."
+msgstr "Nhắn tin cho #%s..."
 
 #. module: mail
 #. odoo-javascript
 #: code:addons/mail/static/src/models/composer.js:0
 #, python-format
 msgid "Message %s..."
-msgstr "Tin nhắn %s..."
+msgstr "Nhắn tin cho %s..."
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_blacklist__message_has_error
