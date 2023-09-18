@@ -1,11 +1,11 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* account_fleet
-#
+# 
 # Translators:
 # Martin Trigaux, 2022
 # Thi Huong Nguyen, 2023
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0beta\n"
@@ -59,7 +59,7 @@ msgstr "Cần Phương tiện"
 #: code:addons/account_fleet/models/account_move.py:0
 #, python-format
 msgid "Service Vendor Bill: %s"
-msgstr "Hóa đơn NCC Dịch vụ: %s"
+msgstr "Hoá đơn mua hàng dịch vụ: %s"
 
 #. module: account_fleet
 #: model:ir.model,name:account_fleet.model_fleet_vehicle
