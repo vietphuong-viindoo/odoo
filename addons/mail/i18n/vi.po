@@ -4287,14 +4287,14 @@ msgstr "Thông điệp"
 #: code:addons/mail/static/src/components/composer_text_input/composer_text_input.js:0
 #, python-format
 msgid "Message #%s..."
-msgstr "Tin nhắn #%s..."
+msgstr "Nhắn tin cho #%s..."
 
 #. module: mail
 #. openerp-web
 #: code:addons/mail/static/src/components/composer_text_input/composer_text_input.js:0
 #, python-format
 msgid "Message %s..."
-msgstr "Tin nhắn %s..."
+msgstr "Nhắn tin cho %s..."
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_blacklist__message_has_error
