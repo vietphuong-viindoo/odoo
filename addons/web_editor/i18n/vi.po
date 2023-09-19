@@ -478,7 +478,7 @@ msgstr "URL Đính kèm"
 #: code:addons/web_editor/static/src/xml/wysiwyg.xml:0
 #, python-format
 msgid "Autoconvert to relative link"
-msgstr "Tự động chuyển đổi sang liên kết tương ứng"
+msgstr "Tự động chuyển đổi sang liên kết tương đối"
 
 #. module: web_editor
 #. odoo-javascript
@@ -492,7 +492,7 @@ msgstr "Chơi tự động"
 #: code:addons/web_editor/static/src/js/wysiwyg/wysiwyg.js:0
 #, python-format
 msgid "Back to one column."
-msgstr ""
+msgstr "Về một cột"
 
 #. module: web_editor
 #: model_terms:ir.ui.view,arch_db:web_editor.snippet_options_background_options
@@ -527,7 +527,7 @@ msgstr "Các khối cơ bản"
 #. module: web_editor
 #: model_terms:ir.ui.view,arch_db:web_editor.snippet_options
 msgid "Basics"
-msgstr ""
+msgstr "Cơ bản"
 
 #. module: web_editor
 #. odoo-javascript
@@ -596,7 +596,7 @@ msgstr ""
 #: code:addons/web_editor/static/src/xml/wysiwyg.xml:0
 #, python-format
 msgid "Border Width"
-msgstr "Border Width"
+msgstr "Độ rộng Viền"
 
 #. module: web_editor
 #: model_terms:ir.ui.view,arch_db:web_editor.snippet_options_image_optimization_widgets
