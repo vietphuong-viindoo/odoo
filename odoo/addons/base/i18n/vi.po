@@ -8060,7 +8060,7 @@ msgstr "Kiểm tra tính Nhất quán Kế toán"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_sequence
 msgid "Accounting Sequence"
-msgstr "Trình tự Kế toán"
+msgstr "Đánh thứ tự cho Kế toán"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_latam_account_sequence
@@ -10497,7 +10497,7 @@ msgstr "Chat, mail gateway và các kênh riêng"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_check_printing
 msgid "Check Printing Base"
-msgstr "Kiểm tra cơ sở in"
+msgstr "Cơ sở cho việc in Séc"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_res_partner__is_company
@@ -12287,7 +12287,7 @@ msgstr "Chủ đề trang web mặc định"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_tax_python
 msgid "Define Taxes as Python Code"
-msgstr "Thiết lập Thuế dưới dạng Mã Python"
+msgstr "Tính thuế bằng Mã Python"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_mail_server__from_filter
@@ -16367,7 +16367,7 @@ msgstr "Kế toán - Ireland"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_lock
 msgid "Irreversible Lock Date"
-msgstr "Ngày khóa không thể đảo ngược"
+msgstr "Ngày khóa sổ"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_base_partner_merge_automatic_wizard__group_by_is_company
@@ -22180,7 +22180,7 @@ msgstr "Thanh toán - Tài chính"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_payment_invoice_online_payment_patch
 msgid "Payment - Account / Invoice Online Payment Patch"
-msgstr ""
+msgstr "Vá lỗi Thanh toán trực tuyến cho Hóa đơn"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_payment
@@ -29207,7 +29207,7 @@ msgstr "account"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_qr_code_sepa
 msgid "account_qr_code_sepa"
-msgstr "account_qr_code_sepa"
+msgstr "Tạo mã QR chuyển khoản tín dụng SEPA"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_asset__active
