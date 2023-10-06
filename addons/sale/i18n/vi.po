@@ -869,7 +869,7 @@ msgstr "Tài khoản quản trị"
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order_line__analytic_distribution_search
 msgid "Analytic Distribution Search"
-msgstr "Tìm kiếm phân bổ phân tích"
+msgstr "Tìm kiếm phân bổ quản trị"
 
 #. module: sale
 #: model:ir.model.fields.selection,name:sale.selection__sale_order_line__qty_delivered_method__analytic

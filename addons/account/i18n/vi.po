@@ -2703,18 +2703,18 @@ msgstr "Chi phí KT Quản trị"
 #. module: account
 #: model:ir.model,name:account.model_account_analytic_distribution_model
 msgid "Analytic Distribution Model"
-msgstr "Mô hình phân bổ phân tích"
+msgstr "Mô hình phân bổ quản trị"
 
 #. module: account
 #: model:ir.ui.menu,name:account.menu_analytic__distribution_model
 msgid "Analytic Distribution Models"
-msgstr "Mô hình phân bổ phân tích"
+msgstr "Mô hình phân bổ quản trị"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_move_line__analytic_distribution_search
 #: model:ir.model.fields,field_description:account.field_account_reconcile_model_line__analytic_distribution_search
 msgid "Analytic Distribution Search"
-msgstr "Tìm kiếm phân bổ phân tích"
+msgstr "Tìm kiếm phân bổ quản trị"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_report__filter_analytic
@@ -12437,7 +12437,7 @@ msgid ""
 "analytic default (e.g. create new customer invoice or Sales order if we "
 "select this product, it will automatically take this as an analytic account)"
 msgstr ""
-"Chọn một danh mục sản phẩm sẽ sử dụng tài khoản phân tích được chỉ định "
+"Chọn một danh mục sản phẩm sẽ sử dụng tài khoản quản trị được chỉ định "
 "trong mặc định phân tích (ví dụ: tạo hóa đơn khách hàng mới hoặc Đơn đặt "
 "hàng nếu chúng tôi chọn sản phẩm này, nó sẽ tự động coi đây là tài khoản "
 "phân tích)"
@@ -12449,9 +12449,9 @@ msgid ""
 "create new customer invoice or Sales order if we select this product, it "
 "will automatically take this as an analytic account)"
 msgstr ""
-"Chọn một sản phẩm mà phân phối phân tích sẽ được sử dụng (ví dụ: tạo hóa đơn"
+"Chọn một sản phẩm mà phân bổ quản trị sẽ được sử dụng (ví dụ: tạo hóa đơn"
 " khách hàng mới hoặc Đơn đặt hàng bán hàng nếu chúng tôi chọn sản phẩm này, "
-"nó sẽ tự động coi đây là tài khoản phân tích)"
+"nó sẽ tự động coi đây là tài khoản quản trị)"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_move_form
