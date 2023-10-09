@@ -9284,7 +9284,7 @@ msgstr "Báo cáo liên kết"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_association
 msgid "Associations Management"
-msgstr "Quản lý hội"
+msgstr "Quản lý Hội viên"
 
 #. module: base
 #. odoo-python
@@ -9321,7 +9321,7 @@ msgstr "Đính kèm"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_attachment_indexation
 msgid "Attachments List and Document Indexation"
-msgstr "Danh sách đính kèm và các Tài liệu"
+msgstr "Danh sách đính kèm và Lập chỉ mục Tài liệu"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_hr_holidays_attendance
@@ -11902,7 +11902,7 @@ msgstr "Cổng thông tin Khách hàng"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_rating
 msgid "Customer Rating"
-msgstr "Xếp hạng của khách hàng"
+msgstr "Xếp hạng của Khách hàng"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_customer
@@ -12016,7 +12016,7 @@ msgstr "Gạch ngang"
 #: model:ir.ui.menu,name:base.menu_board_root
 #: model:ir.ui.menu,name:base.menu_reporting_dashboard
 msgid "Dashboards"
-msgstr "Bảng phân tích"
+msgstr "Bảng tổng hợp"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_productivity_data_cleaning
@@ -12869,7 +12869,7 @@ msgstr "Menu sổ xuống"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_mrp_subcontracting_dropshipping
 msgid "Dropship and Subcontracting Management"
-msgstr "Quản lý Dropship và hợp đồng gia công"
+msgstr "Quản lý Gia công với Dropshipping"
 
 #. module: base
 #. odoo-python
@@ -12944,7 +12944,7 @@ msgstr "EDI"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hw_escpos
 msgid "ESC/POS Hardware Driver"
-msgstr "Driver phần cứng ESC/POS"
+msgstr "Driver Phần cứng ESC/POS"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_eu_oss
@@ -14857,7 +14857,7 @@ msgstr "H - GIAO THÔNG VẬN TẢI VÀ LƯU TRỮ"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_holidays_attendance
 msgid "HR Attendance Holidays"
-msgstr "Nhân sự Chuyên cần Nghỉ lễ"
+msgstr "Tích hợp Điểm danh & Nghỉ"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_gamification
@@ -14914,7 +14914,7 @@ msgstr "Trình điều khiển Phần cứng cho Máy in ESC/POS và Két tiền
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hw_drivers
 msgid "Hardware Proxy"
-msgstr "Proxy phần cứng"
+msgstr "Proxy Phần cứng"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_reset_view_arch_wizard__has_diff
@@ -15918,7 +15918,7 @@ msgstr "Kế thừa"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_base_setup
 msgid "Initial Setup Tools"
-msgstr "Công cụ Cài đặt Nguyên thuỷ"
+msgstr "Công cụ Cài đặt Ban đầu"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_profile__init_stack_trace
@@ -16655,12 +16655,12 @@ msgstr "Chi phí Hàng về kho"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_mrp_landed_costs
 msgid "Landed Costs On MO"
-msgstr "Chi phí Mua hàng trong MO"
+msgstr "Phân bổ Chi phí Sản xuất"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_mrp_subonctracting_landed_costs
 msgid "Landed Costs With Subcontracting order"
-msgstr "Chi phí Mua hàng với đơn hàng Thầu phụ"
+msgstr "Phân bổ Chi phí Gia công"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_mrp_landed_costs
@@ -17343,12 +17343,12 @@ msgstr "MRP II"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_project_mrp
 msgid "MRP Project"
-msgstr "Dự án MRP"
+msgstr "Tích hợp Dự án với Sản xuất"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_mrp_subcontracting_repair
 msgid "MRP Subcontracting Repair"
-msgstr "Sửa chữa hợp đồng phụ MRP"
+msgstr "Sửa chữa Thuê ngoài"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_sale_subscription
@@ -17699,7 +17699,7 @@ msgstr "Sản xuất"
 #: model:ir.module.module,shortdesc:base.module_mrp_product_expiry
 #: model:ir.module.module,summary:base.module_mrp_product_expiry
 msgid "Manufacturing Expiry"
-msgstr "Hạn Sản xuất"
+msgstr "Hàng hết hạn trong Sản xuất"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_mrp
@@ -17729,7 +17729,7 @@ msgstr "Quan hệ ManyToMany"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_product_margin
 msgid "Margins by Products"
-msgstr "Lợi nhuận theo sản phẩm"
+msgstr "Biên lợi nhuận theo Sản phẩm"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_margin
@@ -18488,7 +18488,7 @@ msgstr "Ông"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_mrp_repair
 msgid "Mrp Repairs"
-msgstr "Mrp Sửa chữa"
+msgstr "Tích hợp Sửa chữa & Sản xuất"
 
 #. module: base
 #: model:res.partner.title,shortcut:base.res_partner_title_madam
@@ -21101,7 +21101,7 @@ msgstr "Mẹo giới thiệu"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_onboarding
 msgid "Onboarding toolbox"
-msgstr "Hộp công cụ giới thiệu"
+msgstr "Hộp công cụ Hướng dẫn bắt đầu sử dụng"
 
 #. module: base
 #: model:ir.module.module,description:base.module_sale_stock_margin
@@ -21892,22 +21892,22 @@ msgstr "POS Adyen"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_restaurant_adyen
 msgid "POS Restaurant Adyen"
-msgstr "POS Nhà hàng Adyen"
+msgstr "Thanh toán bằng Adyen cho Nhà hàng"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_restaurant_stripe
 msgid "POS Restaurant Stripe"
-msgstr "Nhà hàng POS Stripe"
+msgstr "Thanh toán bằng Stripe cho Nhà hàng"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_six
 msgid "POS Six"
-msgstr "POS Six"
+msgstr "Thanh toán bằng SIX cho Điểm bán lẻ"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_stripe
 msgid "POS Stripe"
-msgstr "POS Stripe"
+msgstr "Thanh toán bằng Stripe cho Điểm bán lẻ"
 
 #. module: base
 #. odoo-python
@@ -22154,7 +22154,7 @@ msgstr "Chính sách Mật khẩu"
 #: model:ir.module.module,shortdesc:base.module_auth_password_policy_portal
 #: model:ir.module.module,shortdesc:base.module_auth_password_policy_signup
 msgid "Password Policy support for Signup"
-msgstr "Chính sách mật khẩu hỗ trợ đăng ký"
+msgstr "Chính sách Mật khẩu khi đăng ký"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_logging__path
@@ -22164,7 +22164,7 @@ msgstr "Đường dẫn"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_asset__path
 msgid "Path (or glob pattern)"
-msgstr "Path (hoặc hình cầu)"
+msgstr "Path (hoặc glob pattern)"
 
 #. module: base
 #. odoo-python
@@ -22344,7 +22344,7 @@ msgstr "Điện thoại"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_phone_validation
 msgid "Phone Numbers Validation"
-msgstr "Xác thực số điện thoại"
+msgstr "Thẩm định Số điện thoại"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_partner_form
@@ -22666,7 +22666,7 @@ msgstr "Quản lý vòng đời sản phẩm (PLM)"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_product_matrix
 msgid "Product Matrix"
-msgstr "Ma trận sản phẩm"
+msgstr "Ma trận Sản phẩm"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_productivity
@@ -22750,17 +22750,17 @@ msgstr "Dự án - SMS"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_project_sale_expense
 msgid "Project - Sale - Expense"
-msgstr "Dự án - Bán - Chi phí"
+msgstr "Tích hợp Dự án - Bán - Chi Tiêu"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_project_hr_expense
 msgid "Project Expenses"
-msgstr "Chi phí dự án"
+msgstr "Tích hợp Chi tiêu với Dự án"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_project_mail_plugin
 msgid "Project Mail Plugin"
-msgstr "Plugin thư Dự án"
+msgstr "Plugin email cho Dự án"
 
 #. module: base
 #: model:ir.module.module,description:base.module_project
@@ -22908,12 +22908,12 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_project_purchase
 msgid "Project Purchase"
-msgstr "Mua dự án"
+msgstr "Tích hợp Dự án với Mua hàng"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_project_hr_expense
 msgid "Project expenses"
-msgstr "Chi phí dự án"
+msgstr "Tích hợp Chi tiêu với Dự án"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_model_fields_form
@@ -23025,7 +23025,7 @@ msgstr "Yêu cầu Mua sắm"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_purchase_product_matrix
 msgid "Purchase Matrix"
-msgstr "Ma trận mua"
+msgstr "Ma trận Sản phẩm cho Mua hàng"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_purchase_stock
@@ -23035,12 +23035,12 @@ msgstr "Đơn đặt hàng, biên lai, hoá đơn nhà cung cấp cho kho"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_purchase_requisition_stock
 msgid "Purchase Requisition Stock"
-msgstr "Kho yêu cầu mua hàng"
+msgstr "Tích hợp Yêu cầu mua hàng với Kho vận"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_purchase_stock
 msgid "Purchase Stock"
-msgstr "Mua hàng về kho"
+msgstr "Tích hợp Mua hàng với Kho vận"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_purchase_mrp
@@ -23050,7 +23050,7 @@ msgstr "Quản lý Mua hàng và SX"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_mrp_subcontracting_purchase
 msgid "Purchase and Subcontracting Management"
-msgstr "Quản lý mua hàng và hợp đồng phụ"
+msgstr "Quản lý Gia công với Mua hàng"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_purchase
@@ -23997,7 +23997,7 @@ msgstr "Bán"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_sms
 msgid "Sale - SMS"
-msgstr "Sale - SMS"
+msgstr "Bán hàng - SMS"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_loyalty
@@ -24012,7 +24012,7 @@ msgstr "Chương trình Khách hàng Thân thiết - Giao hàng"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_product_matrix
 msgid "Sale Matrix"
-msgstr "Ma trận bán hàng"
+msgstr "Ma trận Sản phẩm cho Bán hàng"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_mrp_margin
@@ -24032,17 +24032,17 @@ msgstr "Kiểm tra bán hàng kiểm tra cấu hình sản phẩm"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_project_stock
 msgid "Sale Project - Sale Stock"
-msgstr "Bán dự án - Bán hàng"
+msgstr "Tích hợp Bán hàng, Dự án và Kho vận"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_purchase
 msgid "Sale Purchase"
-msgstr "Mua Bán"
+msgstr "Tích hợp Mua và Bán"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_stock_margin
 msgid "Sale Stock Margin"
-msgstr "Sale Stock Margin"
+msgstr "Tích hợp Biên lợi nhuận và Kho vận"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_sale_purchase
@@ -24067,7 +24067,7 @@ msgstr "Bán & Mua"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_project
 msgid "Sales - Project"
-msgstr "Bán hàng - Dự án"
+msgstr "Tích hợp Bán hàng với Dự án"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_expense
@@ -24088,7 +24088,7 @@ msgstr "Đội Bán hàng"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_timesheet
 msgid "Sales Timesheet"
-msgstr "Thời gian biểu bán hàng"
+msgstr "Bán dịch vụ theo giờ chấm công"
 
 #. module: base
 #: model_terms:res.partner,website_description:base.res_partner_2
@@ -24104,7 +24104,7 @@ msgstr "Quản lý bán hàng và sản xuất"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_stock
 msgid "Sales and Warehouse Management"
-msgstr "Quản lý bán hàng và kho"
+msgstr "Tích hợp Bán hàng và Kho vận"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_sale
@@ -24605,7 +24605,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_timesheet_margin
 msgid "Service Margins in Sales Orders"
-msgstr "Biên dịch vụ trong đơn hàng bán hàng"
+msgstr "Biên lợi nhuận Bán dịch vụ theo giờ chấm công"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_services
@@ -24806,7 +24806,7 @@ msgstr "Kích thước của trường không thể âm."
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_skills_survey
 msgid "Skills Certification"
-msgstr "Chứng chỉ kỹ năng"
+msgstr "Chứng Nhận Kỹ năng"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_skills
@@ -24816,7 +24816,7 @@ msgstr "Kỹ năng Nhân viên"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_skills_slides
 msgid "Skills e-learning"
-msgstr "Kỹ năng học trực tuyến"
+msgstr "Khung Kỹ năng cho Học trực tuyến"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.res_config_installer
@@ -24989,7 +24989,7 @@ msgstr "Tây Ban Nha - SII EDI Suministro de Libros"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_base_sparse_field
 msgid "Sparse Fields"
-msgstr "Trường Thưa"
+msgstr "Trường Thưa thớt"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_res_users__new_password
@@ -25061,7 +25061,7 @@ msgstr "Bảng tính"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_spreadsheet_account
 msgid "Spreadsheet Accounting Formulas"
-msgstr "Công thức kế toán bảng tính"
+msgstr "Công thức Kế toán Bảng tính"
 
 #. module: base
 #: model:ir.module.module,description:base.module_spreadsheet_account
@@ -25224,7 +25224,7 @@ msgstr "Bước không được là số không."
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_stock_sms
 msgid "Stock - SMS"
-msgstr "Kho - SMS"
+msgstr "Kho vận - SMS"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_model_fields__store
@@ -25284,7 +25284,7 @@ msgstr "Thuê gia công sản xuất"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_mrp_subcontracting_account
 msgid "Subcontracting Management with Stock Valuation"
-msgstr "Quản lý thuê gia công với giá trị kho"
+msgstr "Kế toán Gia công"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.edit_menu_access
@@ -25554,7 +25554,7 @@ msgstr "Tạo nhiệm vụ từ đơn đặt hàng"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_timesheet
 msgid "Task Logs"
-msgstr "Nhật kí công việc"
+msgstr "Chấm công cho Nhiệm vụ"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_company__vat
@@ -28424,7 +28424,7 @@ msgstr "Hình ảnh Biểu tượng Web"
 #: model:ir.module.module,shortdesc:base.module_http_routing
 #: model:ir.module.module,summary:base.module_http_routing
 msgid "Web Routing"
-msgstr "Định tuyến Trang web"
+msgstr "Định tuyến Web"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_module_module__website
@@ -28703,12 +28703,12 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_work_entry
 msgid "Work Entries"
-msgstr "Quản lý các mục công việc"
+msgstr "Nhật ký Công việc"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_work_entry_contract
 msgid "Work Entries - Contract"
-msgstr "Công việc - Hợp đồng"
+msgstr "Nhật ký Công việc - Hợp đồng"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_mrp_workorder
@@ -29603,7 +29603,7 @@ msgstr "tháng"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_mrp_subcontracting
 msgid "mrp_subcontracting"
-msgstr "mrp_subcontracting"
+msgstr "Thuê Gian công cho Sản xuất"
 
 #. module: base
 #. odoo-python

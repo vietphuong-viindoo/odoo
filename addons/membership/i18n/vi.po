@@ -61,8 +61,8 @@ msgid ""
 "A member with whom you want to associate your membership.It will consider "
 "the membership state of the associated member."
 msgstr ""
-"Thành viên mà bạn muốn liên kết với thành viên hiện tại. Trạng thái thành "
-"viên hiện tại sẽ được tham chiếu từ thành viên liên kết."
+"Thành viên mà bạn muốn liên kết với hội viên hiện tại. Trạng thái thành "
+"viên hiện tại sẽ được tham chiếu từ hội viên liên kết."
 
 #. module: membership
 #: model:ir.model.fields,field_description:membership.field_membership_membership_line__account_invoice_line
@@ -77,12 +77,12 @@ msgstr "Thêm mô tả..."
 #. module: membership
 #: model_terms:ir.actions.act_window,help:membership.action_membership_members
 msgid "Add a new member"
-msgstr "Thêm thành viên mới"
+msgstr "Thêm hội viên mới"
 
 #. module: membership
 #: model:ir.model.fields,help:membership.field_membership_membership_line__member_price
 msgid "Amount for the membership"
-msgstr "Phí thành viên"
+msgstr "Phí hội viên"
 
 #. module: membership
 #: model:ir.model.fields,field_description:membership.field_report_membership__associate_member_id
@@ -100,7 +100,7 @@ msgstr "Đối tác Liên quan"
 #. module: membership
 #: model_terms:ir.ui.view,arch_db:membership.view_partner_form
 msgid "Buy Membership"
-msgstr "Mua thẻ thành viên"
+msgstr "Mua thẻ hội viên"
 
 #. module: membership
 #: model_terms:ir.ui.view,arch_db:membership.view_membership_invoice_view
@@ -111,7 +111,7 @@ msgstr "Hủy"
 #: model:ir.model.fields,field_description:membership.field_res_partner__membership_cancel
 #: model:ir.model.fields,field_description:membership.field_res_users__membership_cancel
 msgid "Cancel Membership Date"
-msgstr "Ngày hủy thẻ thành viên"
+msgstr "Ngày hủy thẻ hội viên"
 
 #. module: membership
 #: model:ir.model.fields,field_description:membership.field_membership_membership_line__date_cancel
@@ -123,7 +123,7 @@ msgstr "Ngày hủy"
 #: model:ir.model.fields.selection,name:membership.selection__report_membership__membership_state__canceled
 #: model:ir.model.fields.selection,name:membership.selection__res_partner__membership_state__canceled
 msgid "Cancelled Member"
-msgstr "Huỷ thẻ thành viên"
+msgstr "Huỷ thẻ hội viên"
 
 #. module: membership
 #: model_terms:ir.ui.view,arch_db:membership.membership_product_search_form_view
@@ -135,7 +135,7 @@ msgstr "Chuyên mục"
 #: model:ir.model.fields,help:membership.field_product_template__membership
 msgid "Check if the product is eligible for membership."
 msgstr ""
-"Đánh dấu nếu sản phẩm có đủ điều kiện để sử dụng cho quản lý thành viên."
+"Đánh dấu nếu sản phẩm có đủ điều kiện để sử dụng cho quản lý hội viên."
 
 #. module: membership
 #: model:ir.model.fields,field_description:membership.field_membership_membership_line__company_id
@@ -170,13 +170,13 @@ msgstr "Thời điểm tạo"
 #: model:ir.model.fields,field_description:membership.field_report_membership__membership_state
 #: model_terms:ir.ui.view,arch_db:membership.view_report_membership_search
 msgid "Current Membership State"
-msgstr "Trạng thái hiện tại của thành viên"
+msgstr "Trạng thái hiện tại của hội viên"
 
 #. module: membership
 #: model:ir.model.fields,field_description:membership.field_res_partner__membership_state
 #: model:ir.model.fields,field_description:membership.field_res_users__membership_state
 msgid "Current Membership Status"
-msgstr "Trạng thái hiện tại của thành viên"
+msgstr "Trạng thái hiện tại của hội viên"
 
 #. module: membership
 #: model_terms:ir.ui.view,arch_db:membership.view_res_partner_member_filter
@@ -189,18 +189,18 @@ msgstr "Khách hàng"
 #: model:ir.model.fields,help:membership.field_res_partner__membership_start
 #: model:ir.model.fields,help:membership.field_res_users__membership_start
 msgid "Date from which membership becomes active."
-msgstr "Ngày thẻ thành viên bắt đầu có hiệu lực."
+msgstr "Ngày thẻ hội viên bắt đầu có hiệu lực."
 
 #. module: membership
 #: model:ir.model.fields,help:membership.field_membership_membership_line__date
 msgid "Date on which member has joined the membership"
-msgstr "Ngày mà thành viên đã bắt đầu sử dụng dịch vụ"
+msgstr "Ngày mà hội viên đã bắt đầu sử dụng dịch vụ"
 
 #. module: membership
 #: model:ir.model.fields,help:membership.field_res_partner__membership_cancel
 #: model:ir.model.fields,help:membership.field_res_users__membership_cancel
 msgid "Date on which membership has been cancelled"
-msgstr "Ngày huỷ thẻ thành viên"
+msgstr "Ngày huỷ thẻ hội viên"
 
 #. module: membership
 #: model:ir.model.fields,help:membership.field_product_product__membership_date_to
@@ -255,7 +255,7 @@ msgstr "Dự báo"
 #: model:ir.model.fields.selection,name:membership.selection__report_membership__membership_state__free
 #: model:ir.model.fields.selection,name:membership.selection__res_partner__membership_state__free
 msgid "Free Member"
-msgstr "Miễn phí thành viên"
+msgstr "Miễn phí hội viên"
 
 #. module: membership
 #: model:ir.model.fields,field_description:membership.field_membership_membership_line__date_from
@@ -293,7 +293,7 @@ msgstr "Hoá đơn"
 #. module: membership
 #: model_terms:ir.ui.view,arch_db:membership.view_membership_invoice_view
 msgid "Invoice Membership"
-msgstr "Hoá đơn thẻ thành viên"
+msgstr "Hoá đơn thẻ hội viên"
 
 #. module: membership
 #: model:ir.model.fields.selection,name:membership.selection__membership_membership_line__state__invoiced
@@ -407,7 +407,7 @@ msgstr "Thành viên"
 #. module: membership
 #: model:ir.actions.act_window,name:membership.action_report_membership_tree
 msgid "Members Analysis"
-msgstr "Phân tích thành viên"
+msgstr "Phân tích hội viên"
 
 #. module: membership
 #: model:ir.model.fields,field_description:membership.field_membership_invoice__product_id
@@ -422,7 +422,7 @@ msgstr "Phân tích thành viên"
 #: model_terms:ir.ui.view,arch_db:membership.view_report_membership_pivot
 #: model_terms:ir.ui.view,arch_db:membership.view_report_membership_search
 msgid "Membership"
-msgstr "Quản lý thành viên"
+msgstr "Quản lý hội viên"
 
 #. module: membership
 #: model:ir.model.fields,field_description:membership.field_res_partner__membership_amount
@@ -433,12 +433,12 @@ msgstr "Membership Amount"
 #. module: membership
 #: model:ir.model,name:membership.model_report_membership
 msgid "Membership Analysis"
-msgstr "Phân tích thành viên"
+msgstr "Phân tích hội viên"
 
 #. module: membership
 #: model_terms:ir.ui.view,arch_db:membership.membership_products_form
 msgid "Membership Duration"
-msgstr "Thời hạn thành viên"
+msgstr "Thời hạn hội viên"
 
 #. module: membership
 #: model:ir.model.fields,field_description:membership.field_product_product__membership_date_to
@@ -453,37 +453,37 @@ msgstr "Ngày hết hạn"
 #: model_terms:ir.ui.view,arch_db:membership.membership_products_form
 #: model_terms:ir.ui.view,arch_db:membership.membership_products_tree
 msgid "Membership Fee"
-msgstr "Phí thành viên"
+msgstr "Phí hội viên"
 
 #. module: membership
 #: model:ir.model,name:membership.model_membership_invoice
 #: model_terms:ir.ui.view,arch_db:membership.view_membership_invoice_view
 msgid "Membership Invoice"
-msgstr "Hoá đơn thành viên"
+msgstr "Hoá đơn hội viên"
 
 #. module: membership
 #: model:ir.model,name:membership.model_membership_membership_line
 msgid "Membership Line"
-msgstr "Chi tiết thành viên"
+msgstr "Chi tiết hội viên"
 
 #. module: membership
 #: model_terms:ir.ui.view,arch_db:membership.view_res_partner_member_filter
 msgid "Membership Partners"
-msgstr "Đối tác thành viên"
+msgstr "Đối tác hội viên"
 
 #. module: membership
 #: model:ir.model.fields,field_description:membership.field_report_membership__membership_id
 #: model_terms:ir.ui.view,arch_db:membership.membership_product_search_form_view
 #: model_terms:ir.ui.view,arch_db:membership.view_report_membership_search
 msgid "Membership Product"
-msgstr "Dịch vụ thẻ thành viên"
+msgstr "Dịch vụ Thành viên"
 
 #. module: membership
 #: model:ir.actions.act_window,name:membership.action_membership_products
 #: model:ir.ui.menu,name:membership.menu_membership_products
 #: model_terms:ir.ui.view,arch_db:membership.membership_product_search_form_view
 msgid "Membership Products"
-msgstr "Dịch vụ thẻ thành viên"
+msgstr "Dịch vụ Thành viên"
 
 #. module: membership
 #: model:ir.model.fields,field_description:membership.field_product_product__membership_date_from
@@ -491,35 +491,35 @@ msgstr "Dịch vụ thẻ thành viên"
 #: model:ir.model.fields,field_description:membership.field_res_partner__membership_start
 #: model:ir.model.fields,field_description:membership.field_res_users__membership_start
 msgid "Membership Start Date"
-msgstr "Ngày bắt đầu"
+msgstr "Ngày bắt đầu làm Hội viên"
 
 #. module: membership
 #: model_terms:ir.ui.view,arch_db:membership.view_res_partner_member_filter
 msgid "Membership State"
-msgstr "Trạng thái thành viên"
+msgstr "Trạng thái Hội viên"
 
 #. module: membership
 #: model:ir.model.fields,field_description:membership.field_membership_membership_line__state
 msgid "Membership Status"
-msgstr "Trạng thái thẻ thành viên"
+msgstr "Tình trạng Hội viên"
 
 #. module: membership
 #: model_terms:ir.ui.view,arch_db:membership.membership_products_form
 #: model_terms:ir.ui.view,arch_db:membership.membership_products_tree
 msgid "Membership products"
-msgstr "Dịch vụ thẻ thành viên"
+msgstr "Dịch vụ Hội viên"
 
 #. module: membership
 #: model:ir.actions.server,name:membership.ir_cron_update_membership_ir_actions_server
 #: model:ir.cron,cron_name:membership.ir_cron_update_membership
 #: model:ir.cron,name:membership.ir_cron_update_membership
 msgid "Membership: update memberships"
-msgstr "Membership: update memberships"
+msgstr "Hội viên: cập nhật hội viên"
 
 #. module: membership
 #: model_terms:ir.ui.view,arch_db:membership.view_partner_form
 msgid "Memberships"
-msgstr "Quản lý thành viên"
+msgstr "Hội viên"
 
 #. module: membership
 #: model_terms:ir.ui.view,arch_db:membership.view_report_membership_search
@@ -536,7 +536,7 @@ msgstr "Chưa có dữ liệu nào!"
 #: model:ir.model.fields.selection,name:membership.selection__report_membership__membership_state__none
 #: model:ir.model.fields.selection,name:membership.selection__res_partner__membership_state__none
 msgid "Non Member"
-msgstr "Chưa phải thành viên"
+msgstr "Chưa phải hội viên"
 
 #. module: membership
 #: model_terms:ir.actions.act_window,help:membership.action_membership_members
@@ -544,15 +544,15 @@ msgid ""
 "Odoo helps you easily track all activities related to a member: \n"
 "                  Current Membership Status, Discussions and History of Membership, etc."
 msgstr ""
-"Odoo giúp bạn dễ dàng truy xuất và theo dõi tất cả các hoạt động liên quan đến quản lý thành viên như:\n"
-"               Tình trạng thành viên hiện tại, thảo luận và lịch sử quản lý thành viên, .v.v.."
+"Odoo giúp bạn dễ dàng truy xuất và theo dõi tất cả các hoạt động liên quan đến quản lý hội viên như:\n"
+"               Tình trạng hội viên hiện tại, thảo luận và lịch sử quản lý hội viên, .v.v.."
 
 #. module: membership
 #: model:ir.model.fields.selection,name:membership.selection__membership_membership_line__state__old
 #: model:ir.model.fields.selection,name:membership.selection__report_membership__membership_state__old
 #: model:ir.model.fields.selection,name:membership.selection__res_partner__membership_state__old
 msgid "Old Member"
-msgstr "Thẻ thành viên hết hạn"
+msgstr "Thẻ hội viên hết hạn"
 
 #. module: membership
 #: model:ir.model.fields.selection,name:membership.selection__membership_membership_line__state__paid
@@ -576,7 +576,7 @@ msgstr "Đối tác không có địa chỉ để lên hoá đơn."
 #: code:addons/membership/models/partner.py:0
 #, python-format
 msgid "Partner is a free Member."
-msgstr "Đối tác được miễn phí thành viên."
+msgstr "Đối tác được miễn phí hội viên."
 
 #. module: membership
 #: model:ir.model.fields,field_description:membership.field_report_membership__tot_pending
@@ -619,7 +619,7 @@ msgstr "Nhân viên Kinh doanh"
 #: model:ir.model.fields,help:membership.field_res_partner__free_member
 #: model:ir.model.fields,help:membership.field_res_users__free_member
 msgid "Select if you want to give free membership."
-msgstr "Chọn nếu bạn muốn miễn phí thành viên."
+msgstr "Chọn nếu bạn muốn miễn phí hội viên."
 
 #. module: membership
 #: model:ir.model.fields,field_description:membership.field_report_membership__start_date
@@ -631,7 +631,7 @@ msgstr "Ngày bắt đầu"
 #. module: membership
 #: model_terms:ir.ui.view,arch_db:membership.view_res_partner_member_filter
 msgid "Starting Date Of Membership"
-msgstr "Ngày bắt đầu thẻ thành viên"
+msgstr "Ngày bắt đầu thẻ hội viên"
 
 #. module: membership
 #: model_terms:ir.ui.view,arch_db:membership.report_membership_view_tree
@@ -696,10 +696,10 @@ msgstr "Nhà cung cấp"
 #: model:ir.model.fields.selection,name:membership.selection__report_membership__membership_state__waiting
 #: model:ir.model.fields.selection,name:membership.selection__res_partner__membership_state__waiting
 msgid "Waiting Member"
-msgstr "Hoá đơn cần thanh toán"
+msgstr "Hội viên đang chờ"
 
 #. module: membership
 #: code:addons/membership/models/partner.py:0
 #, python-format
 msgid "You cannot create recursive associated members."
-msgstr "Bạn không thể tạo 2 thành viên liên kết trùng lặp."
+msgstr "Bạn không thể tạo 2 hội viên liên kết trùng lặp."
