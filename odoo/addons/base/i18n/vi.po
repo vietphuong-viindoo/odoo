@@ -9396,7 +9396,7 @@ msgstr "Thông tin Xác thực"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_auth_ldap
 msgid "Authentication via LDAP"
-msgstr "Authentication qua LDAP"
+msgstr "Xác thực qua LDAP"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_module_module__author
@@ -9688,19 +9688,19 @@ msgstr "Mã vạch %s"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_barcodes_gs1_nomenclature
 msgid "Barcode - GS1 Nomenclature"
-msgstr "Mã vạch - GS1 Quy tắc"
+msgstr "Mã vạch - Quy tắc đặt tên mã vạch theo GS1"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_stock_barcode
 msgid "Barcode scanner for warehouses"
-msgstr ""
+msgstr "Quét mã vạch cho Kho vận"
 
 #. module: base
 #. odoo-python
 #: code:addons/base/models/ir_qweb_fields.py:0
 #, python-format
 msgid "Barcode symbology"
-msgstr "Mã vạch"
+msgstr "Ký hiệu mã vạch"
 
 #. module: base
 #. odoo-python
@@ -9737,7 +9737,7 @@ msgstr "Trường cơ bản"
 #: code:addons/base/models/res_lang.py:0
 #, python-format
 msgid "Base Language 'en_US' can not be deleted."
-msgstr "Ngôn ngữ cơ bản 'en_US' không thể xóa được."
+msgstr "Ngôn ngữ cơ sở 'en_US' không thể xóa được."
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__ir_model__state__base
@@ -27289,7 +27289,7 @@ msgstr "Đoạn mã cuộn Twitter trong trang web"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_auth_totp
 msgid "Two-Factor Authentication (TOTP)"
-msgstr "Xác thực hai bước (TOTP)"
+msgstr "Xác thực hai yếu tố (TOTP)"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_attachment__type
