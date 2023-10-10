@@ -3061,7 +3061,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"Ở nhiều quốc gia, giấy báo nợ được sử dụng để thể hiện sự gia tăng số tiền hóa đơn hiện có\n"
+"Ở nhiều quốc gia, Hóa đơn điều chỉnh tăng được sử dụng để thể hiện sự gia tăng số tiền hóa đơn hiện có\n"
 "hoặc trong một số trường hợp cụ thể được dùng để hủy giấy báo có.\n"
 "Nó giống như một hóa đơn thông thường, nhưng chúng ta cần theo dõi liên kết với hóa đơn gốc.\n"
 "Trình hỗ trợ được sử dụng tương tự như trình hỗ trợ dùng cho giấy báo có.\n"
@@ -12161,7 +12161,7 @@ msgstr "Ngày"
 #: model:ir.module.module,shortdesc:base.module_account_debit_note
 #: model:ir.module.module,summary:base.module_account_debit_note
 msgid "Debit Notes"
-msgstr "Giấy báo Nợ"
+msgstr "Hóa đơn điều chỉnh tăng"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_mail_server__smtp_debug
