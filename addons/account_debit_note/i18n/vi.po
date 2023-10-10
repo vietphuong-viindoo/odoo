@@ -23,17 +23,17 @@ msgstr ""
 #. module: account_debit_note
 #: model_terms:ir.ui.view,arch_db:account_debit_note.view_move_form_debit
 msgid "<span class=\"o_stat_text\">Debit Notes</span>"
-msgstr "<span class=\"o_stat_text\">Debit Notes</span>"
+msgstr "<span class=\"o_stat_text\">Giấy báo nợ</span>"
 
 #. module: account_debit_note
 #: model_terms:ir.ui.view,arch_db:account_debit_note.view_move_form_debit
 msgid "Add Debit Note"
-msgstr "Add Debit Note"
+msgstr "Thêm Giấy báo nợ"
 
 #. module: account_debit_note
 #: model:ir.model,name:account_debit_note.model_account_debit_note
 msgid "Add Debit Note wizard"
-msgstr "Add Debit Note wizard"
+msgstr "Đồ thuật Tạo Giấy báo nợ"
 
 #. module: account_debit_note
 #: model_terms:ir.ui.view,arch_db:account_debit_note.view_account_debit_note
@@ -43,7 +43,7 @@ msgstr "Hủy"
 #. module: account_debit_note
 #: model:ir.model.fields,field_description:account_debit_note.field_account_debit_note__copy_lines
 msgid "Copy Lines"
-msgstr "Copy Lines"
+msgstr "Sap chép các dòng"
 
 #. module: account_debit_note
 #: model:ir.model.fields,field_description:account_debit_note.field_account_debit_note__country_code
@@ -54,7 +54,7 @@ msgstr "Mã quốc gia"
 #: model:ir.actions.act_window,name:account_debit_note.action_view_account_move_debit
 #: model_terms:ir.ui.view,arch_db:account_debit_note.view_account_debit_note
 msgid "Create Debit Note"
-msgstr "Create Debit Note"
+msgstr "Tạo Giấy báo nợ"
 
 #. module: account_debit_note
 #: model:ir.model.fields,field_description:account_debit_note.field_account_debit_note__create_uid
@@ -70,7 +70,7 @@ msgstr "Thời điểm tạo"
 #: model:ir.model.fields,field_description:account_debit_note.field_account_debit_note__date
 #: model_terms:ir.ui.view,arch_db:account_debit_note.view_account_debit_note
 msgid "Debit Note Date"
-msgstr "Debit Note Date"
+msgstr "Ngày Giấy báo nợ"
 
 #. module: account_debit_note
 #: code:addons/account_debit_note/models/account_move.py:0
@@ -80,7 +80,7 @@ msgstr "Debit Note Date"
 #: model:ir.model.fields,field_description:account_debit_note.field_account_payment__debit_note_ids
 #, python-format
 msgid "Debit Notes"
-msgstr "Số giấy ghi nợ"
+msgstr "Giấy báo nợ"
 
 #. module: account_debit_note
 #: model:ir.model.fields,field_description:account_debit_note.field_account_debit_note__display_name
@@ -95,7 +95,7 @@ msgstr "ID"
 #. module: account_debit_note
 #: model:ir.model.fields,help:account_debit_note.field_account_debit_note__journal_id
 msgid "If empty, uses the journal of the journal entry to be debited."
-msgstr "If empty, uses the journal of the journal entry to be debited."
+msgstr "Nếu để trống, sử dụng cùng sổ nhật ký với bút toán mà sẽ được ghi nợ bằng giấy báo nợ."
 
 #. module: account_debit_note
 #: model:ir.model.fields,help:account_debit_note.field_account_debit_note__copy_lines
@@ -103,8 +103,8 @@ msgid ""
 "In case you need to do corrections for every line, it can be in handy to "
 "copy them.  We won't copy them for debit notes from credit notes. "
 msgstr ""
-"In case you need to do corrections for every line, it can be in handy to "
-"copy them.  We won't copy them for debit notes from credit notes. "
+"Trong trường hợp bạn cần phải điều chỉnh tất cả các dòng, có thể có ích khi sao chép chúng."
+" Hệ thống sẽ không sao chép Hóa đơn điều chỉnh giảm sang Giấy báo nợ."
 
 #. module: account_debit_note
 #: model:ir.model,name:account_debit_note.model_account_move
@@ -146,14 +146,14 @@ msgstr "Loại phát sinh"
 #: model:ir.model.fields,field_description:account_debit_note.field_account_move__debit_note_count
 #: model:ir.model.fields,field_description:account_debit_note.field_account_payment__debit_note_count
 msgid "Number of Debit Notes"
-msgstr "Number of Debit Notes"
+msgstr "Số lượng Giấy báo nợ"
 
 #. module: account_debit_note
 #: model:ir.model.fields,field_description:account_debit_note.field_account_bank_statement_line__debit_origin_id
 #: model:ir.model.fields,field_description:account_debit_note.field_account_move__debit_origin_id
 #: model:ir.model.fields,field_description:account_debit_note.field_account_payment__debit_origin_id
 msgid "Original Invoice Debited"
-msgstr "Original Invoice Debited"
+msgstr "Hóa đơn gốc mà tạo ra Giấy báo nợ"
 
 #. module: account_debit_note
 #: model:ir.model.fields,field_description:account_debit_note.field_account_debit_note__reason
@@ -166,15 +166,15 @@ msgid ""
 "The ISO country code in two chars. \n"
 "You can use this field for quick search."
 msgstr ""
-"The ISO country code in two chars. \n"
-"You can use this field for quick search."
+"Mã quốc gia 2 ký tự theo ISO. \n"
+"Bạn có thể dùng trường này để tìm kiếm nhanh."
 
 #. module: account_debit_note
 #: model:ir.model.fields,help:account_debit_note.field_account_bank_statement_line__debit_note_ids
 #: model:ir.model.fields,help:account_debit_note.field_account_move__debit_note_ids
 #: model:ir.model.fields,help:account_debit_note.field_account_payment__debit_note_ids
 msgid "The debit notes created for this invoice"
-msgstr "The debit notes created for this invoice"
+msgstr "Giấy báo nợ được tạo cho hóa đơn này"
 
 #. module: account_debit_note
 #: code:addons/account_debit_note/wizard/account_debit_note.py:0
@@ -185,10 +185,10 @@ msgstr "Giấy báo nợ này được tạo từ: %s"
 #. module: account_debit_note
 #: model:ir.model.fields,field_description:account_debit_note.field_account_debit_note__journal_id
 msgid "Use Specific Journal"
-msgstr "Chỉ định nhật kí dùng"
+msgstr "Dùng sổ nhật ký"
 
 #. module: account_debit_note
 #: code:addons/account_debit_note/wizard/account_debit_note.py:0
 #, python-format
 msgid "You can only debit posted moves."
-msgstr "You can only debit posted moves."
+msgstr "Bạn chỉ có thể tạo giấy báo nợ từ các hóa đơn đã vào sổ."
