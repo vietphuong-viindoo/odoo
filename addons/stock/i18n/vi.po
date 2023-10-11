@@ -3801,17 +3801,17 @@ msgstr "Toán hạng bên trái của miền không hợp lệ %s"
 
 #. module: stock
 #. odoo-python
-#: code:addons/stock/models/product.py:0
+#: code:addons/stock/models/product.py:0 code:addons/stock/models/product.py:0
 #, python-format
 msgid "Invalid domain operator %s"
 msgstr "Toán tử miền không hợp lệ %s"
 
 #. module: stock
 #. odoo-python
-#: code:addons/stock/models/product.py:0
+#: code:addons/stock/models/product.py:0 code:addons/stock/models/product.py:0
 #, python-format
-msgid "Invalid domain right operand %s"
-msgstr "Toán hạng miền không hợp lệ %s"
+msgid "Invalid domain right operand '%s'. It must be of type Integer/Float"
+msgstr "Toán hạng miền không hợp lệ '%s'. Nó phải thuộc kiểu số nguyên / số thực"
 
 #. module: stock
 #. odoo-python
