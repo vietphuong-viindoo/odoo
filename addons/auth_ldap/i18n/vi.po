@@ -238,7 +238,6 @@ msgstr "Dùng TLS"
 #: model:ir.model,name:auth_ldap.model_res_users
 msgid "User"
 msgstr "Người dùng"
->>>>>>> refs/remotes/odoo/16.0
 
 #. module: auth_ldap
 #: model_terms:ir.ui.view,arch_db:auth_ldap.view_ldap_installer_form
