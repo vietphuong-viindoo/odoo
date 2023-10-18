@@ -97,7 +97,7 @@ msgstr "Đã sao chép"
 #: code:addons/website_links/static/src/xml/recent_link.xml:0
 #, python-format
 msgid "Copy"
-msgstr "sao chép"
+msgstr "Sao chép"
 
 #. module: website_links
 #. openerp-web

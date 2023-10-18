@@ -409,7 +409,7 @@ msgstr "Tháng Tư"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Are you sure you want to delete this sheet ?"
-msgstr ""
+msgstr "Bạn có chắc muốn xóa sheet này không?"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -445,28 +445,28 @@ msgstr "Tự động"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Average magnitude of deviations from mean."
-msgstr "Average magnitude of deviations from mean."
+msgstr "Độ lớn trung bình của độ lệch so với giá trị trung bình."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Average of a set of values from a table-like range."
-msgstr "Average of a set of values from a table-like range."
+msgstr "Trung bình của một tập hợp các giá trị từ một phạm vi kiểu bảng."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Average of values depending on criteria."
-msgstr "Average of values depending on criteria."
+msgstr "Giá trị trung bình tùy thuộc vào tiêu chí."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Average of values depending on multiple criteria."
-msgstr "Average of values depending on multiple criteria."
+msgstr "Giá trị trung bình tùy thuộc vào nhiều tiêu chí."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -509,7 +509,7 @@ msgstr "Định dạng vùng xấu"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Bar"
-msgstr "Dạng Thanh"
+msgstr "Cột"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -576,7 +576,7 @@ msgstr "Dưới"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Calculates effective interest rate."
-msgstr "Tính lãi suất hiệu dụng."
+msgstr "Tính toán lãi suất hiệu dụng."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -616,7 +616,7 @@ msgstr "Không thể tìm thấy tệp quan hệ workbook"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Cannot open the chart side panel while no chart are selected"
-msgstr ""
+msgstr "Không thể mở bảng điều khiển bên biểu đồ khi không có biểu đồ nào được chọn"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -643,7 +643,7 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Categories / Labels"
-msgstr "Danh mục/Nhãn"
+msgstr "Danh mục / Nhãn"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -672,14 +672,14 @@ msgstr "Biểu đồ - %s"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Chart type"
-msgstr "Loại biểu đồ"
+msgstr "Kiểu biểu đồ"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Circular reference"
-msgstr "Circular reference"
+msgstr "Tham chiếu vòng tròn"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -694,7 +694,7 @@ msgstr "Làm sạch"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Clear Format"
-msgstr ""
+msgstr "Xóa Định dạng"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -793,7 +793,7 @@ msgstr "Thang màu"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Column left"
-msgstr "Column left"
+msgstr "Cột bên trái"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -807,7 +807,7 @@ msgstr "Số cột của một ô xác định."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Column right"
-msgstr "Column right"
+msgstr "Cột bên phải"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -843,7 +843,7 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Conditional formatting"
-msgstr "Conditional formatting"
+msgstr "Định dạng có điều kiện"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -887,42 +887,42 @@ msgstr "Chuyển đổi một giá trị thập phân thành phân số thập p
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Converts a date string to a date value."
-msgstr "Converts a date string to a date value."
+msgstr "Chuyển đổi chuỗi ký tự ngày thành giá trị kiểu ngày."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Converts a time string into its serial number representation."
-msgstr "Converts a time string into its serial number representation."
+msgstr "Chuyển đổi một chuỗi kỹ tự thời gian thành biểu diễn số sê-ri của nó."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Converts an angle value in radians to degrees."
-msgstr "Converts an angle value in radians to degrees."
+msgstr "Chuyển đổi một giá trị góc theo radian sang độ."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Converts from another base to decimal."
-msgstr "Converts from another base to decimal."
+msgstr "Chuyển đổi từ cơ số khác sang số thập phân."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Converts hour/minute/second into a time."
-msgstr "Converts hour/minute/second into a time."
+msgstr "Chuyển đổi giờ/phút/giây thành thời gian."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Converts year/month/day into a date."
-msgstr "Converts year/month/day into a date."
+msgstr "Chuyển đổi năm/tháng/ngày thành ngày."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -933,7 +933,7 @@ msgstr "Converts year/month/day into a date."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Copy"
-msgstr "sao chép"
+msgstr "Sao chép"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -947,21 +947,21 @@ msgstr "Bản sao của %s"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Cosecant of an angle provided in radians."
-msgstr "Cosecant of an angle provided in radians."
+msgstr "Cosec của một góc được tính bằng radian."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Cosine of an angle provided in radians."
-msgstr "Cosine of an angle provided in radians."
+msgstr "Cosine của một góc được tính bằng radian."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Cotangent of an angle provided in radians."
-msgstr "Cotangent of an angle provided in radians."
+msgstr "Cotan của một góc được tính bằng radian."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -969,7 +969,7 @@ msgstr "Cotangent of an angle provided in radians."
 #: code:addons/spreadsheet/static/src/pivot/pivot_model.js:0
 #, python-format
 msgid "Count"
-msgstr "Số tập dữ liệu"
+msgstr "Số lượng"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -983,7 +983,7 @@ msgstr "Đếm số"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Count values depending on multiple criteria."
-msgstr "Count values depending on multiple criteria."
+msgstr "Đếm các giá trị tùy thuộc vào nhiều tiêu chí."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -992,21 +992,21 @@ msgstr "Count values depending on multiple criteria."
 msgid ""
 "Counts number of unique values in a range, filtered by a set of criteria."
 msgstr ""
-"Counts number of unique values in a range, filtered by a set of criteria."
+"Đếm số giá trị duy nhất trong một phạm vi, được lọc theo một bộ tiêu chí."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Counts number of unique values in a range."
-msgstr "Counts number of unique values in a range."
+msgstr "Đếm số giá trị duy nhất trong một phạm vi."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Counts values and text from a table-like range."
-msgstr "Counts values and text from a table-like range."
+msgstr "Đếm các giá trị và văn bản từ một phạm vi giống như bảng."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1116,7 +1116,7 @@ msgstr "Định dạng tiền tệ tuỳ chỉnh"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Cut"
-msgstr "Cut"
+msgstr "Cắt"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3737,7 +3737,7 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Standard"
-msgstr "Standard"
+msgstr "Tiêu chuẩn"
 
 #. module: spreadsheet
 #. odoo-javascript

@@ -15822,7 +15822,7 @@ msgstr "Báo cáo kho Ấn Độ (GST)"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_in_tcs_tds
 msgid "Indian - TCS/TDS Accounting Report and Taxes"
-msgstr ""
+msgstr "Ấn Độ - Thuế và Báo cáo Kế toán TCS/TDC"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_in_upi
@@ -22474,7 +22474,7 @@ msgstr "Cổng thông tin"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_portal_rating
 msgid "Portal Rating"
-msgstr "Cổng Xếp hạng"
+msgstr "Đánh giá ở Cổng thông tin"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_users_search
@@ -27077,7 +27077,7 @@ msgstr "Tổng số tập dữ liệu trong model này"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_web_tour
 msgid "Tours"
-msgstr "Du lịch"
+msgstr "Tham quan"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_profile__traces_async

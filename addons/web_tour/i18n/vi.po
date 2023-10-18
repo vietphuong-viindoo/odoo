@@ -185,4 +185,4 @@ msgstr "Tên Tour"
 #: model:ir.ui.menu,name:web_tour.menu_tour_action
 #, python-format
 msgid "Tours"
-msgstr "Du lịch"
+msgstr "Tham quan"
