@@ -437,7 +437,7 @@ msgstr ""
 "---------------\n"
 "\n"
 "* Rekeningschema en btw-sjabloon voor bedrijven in Japan.\n"
-"* Dit sjabloon dekt vermoedelijk niet alle rekeningen voor een bedrijf. Je wordt verondersteld om zelf rekeningen toe te voegen, te verwijderen en/of te wijzigen gebaseerd op dit sjabloon.\n"
+"* Deze sjabloon dekt vermoedelijk niet alle rekeningen voor een bedrijf. Je wordt verondersteld om zelf rekeningen toe te voegen, te verwijderen en/of te wijzigen gebaseerd op deze sjabloon.\n"
 "\n"
 "Opmerking:\n"
 "-----------------\n"
@@ -7187,7 +7187,7 @@ msgstr ""
 "Verkoop abonnementen dashboard\n"
 "========================\n"
 "Het voegt dashboards toe aan:\n"
-"1) Analyseer de huidige omzet en andere kengetallen voor abonnementen\n"
+"1) Analyseer de huidige omzet en andere metrics voor abonnementen\n"
 "2) Analyseer de abonnementswijzigingen per verkoper en bereken hun waarde."
 
 #. module: base
@@ -17236,7 +17236,7 @@ msgstr "Beoordelingsoort"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_mass_mailing_event_sms
 msgid "Event Attendees SMS Marketing"
-msgstr "Evenement deelnemers SMS marketing"
+msgstr "Evenement deelnemers SMS-Marketing"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_event_barcode
@@ -20355,7 +20355,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,summary:base.module_marketing_automation_sms
 msgid "Integrate SMS Marketing in marketing campaigns"
-msgstr "Integreer SMS marketing in marketing campagnes"
+msgstr "Integreer SMS-Marketing in marketing campagnes"
 
 #. module: base
 #: model:ir.module.module,description:base.module_coupon
@@ -21593,7 +21593,7 @@ msgstr "Koppelingsveld"
 #: model:ir.module.module,shortdesc:base.module_link_tracker
 #: model:ir.module.module,shortdesc:base.module_website_links
 msgid "Link Tracker"
-msgstr "Opvolging links"
+msgstr "Link Tracker"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_timesheet_grid_holidays
@@ -22303,12 +22303,12 @@ msgstr "Marketing"
 #: model:ir.module.category,name:base.module_category_marketing_marketing_automation
 #: model:ir.module.module,shortdesc:base.module_marketing_automation
 msgid "Marketing Automation"
-msgstr "Marketing"
+msgstr "Marketing Automation"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_test_marketing_automation
 msgid "Marketing Automation Tests"
-msgstr "Marketing geautomatiseerde testen"
+msgstr "Tests marketing automation"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_ma
@@ -28898,12 +28898,12 @@ msgstr "SEPA betalingen voor Loonadministratie"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_mass_mailing_sms
 msgid "SMS Marketing"
-msgstr "SMS marketing"
+msgstr "SMS-Marketing"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_marketing_automation_sms
 msgid "SMS Marketing in Marketing Automation"
-msgstr "SMS marketing in marketing automatisering"
+msgstr "SMS-Marketing in Marketing Automation"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_sms

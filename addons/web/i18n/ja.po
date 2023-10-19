@@ -3064,6 +3064,13 @@ msgstr "ビューを開く"
 
 #. module: web
 #. openerp-web
+#: code:addons/web/static/src/core/debug/debug_menu.xml:0
+#, python-format
+msgid "Open developer tools"
+msgstr ""
+
+#. module: web
+#. openerp-web
 #: code:addons/web/static/src/webclient/user_menu/user_menu_items.xml:0
 #, python-format
 msgid "Open the next record"
@@ -4959,7 +4966,7 @@ msgstr "Wkhtmltopdfのインストールに問題があるようです。レポ�
 #: code:addons/web/static/src/legacy/xml/name_and_signature.xml:0
 #, python-format
 msgid "Your name"
-msgstr ""
+msgstr "名前"
 
 #. module: web
 #. openerp-web
