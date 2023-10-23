@@ -3423,7 +3423,7 @@ msgstr "Bỏ qua phân công tự động"
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_case_tree_view_oppor
 msgid "Snooze 7d"
-msgstr "Tạm tắt 7 ngày"
+msgstr "Hoãn thêm 7 ngày"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_lead__source_id
