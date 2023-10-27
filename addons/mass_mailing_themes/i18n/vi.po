@@ -81,6 +81,8 @@ msgid ""
 "<font style=\"color: rgb(255, 255, 255);\">And it won't cost you a "
 "thing!</font>"
 msgstr ""
+"<font style=\"color: rgb(255, 255, 255);\">Và bạn sẽ không phải tốn một "
+"đồng nào!</font>"
 
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_vip_template
@@ -99,7 +101,7 @@ msgstr ""
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
 msgid "<font style=\"color: rgb(255, 255, 255);\">Hi there!</font>"
-msgstr ""
+msgstr "<font style=\"color: rgb(255, 255, 255);\">Chào bạn!</font>"
 
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
@@ -107,6 +109,8 @@ msgid ""
 "<font style=\"color: rgb(255, 255, 255);\">The next edition of <span style=\"font-weight: bolder;\">Odoo Experience Online</span> is coming soon!\n"
 "                    <br/>To stir up your curiosity, have a look at all the great talks scheduled and highlighted in our agenda!</font>"
 msgstr ""
+"<font style=\"color: rgb(255, 255, 255);\">Phiên bản tiếp theo của <span style=\"font-weight: bolder;\">Odoo Experience Online</span> sẽ sớm ra mắt!\n"
+"                    <br/>Để khơi dậy sự tò mò của bạn, hãy xem tất cả các buổi trò chuyện tuyệt vời được lên lịch và những điểm nhấn đặc biệt trong chương trình của chúng tôi.!</font>"
 
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
@@ -114,6 +118,8 @@ msgid ""
 "<font style=\"color: rgb(255, 255, 255);\">Zero, zilch, nada! Odoo "
 "Experience is free for everyone!</font>"
 msgstr ""
+"<font style=\"color: rgb(255, 255, 255);\">Zero, zilch, nada! Odoo "
+"Experience miễn phí cho tất cả mọi người!</font>"
 
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_solar_template
@@ -200,6 +206,8 @@ msgid ""
 "An interactive, fun\n"
 "                                    <br/>and comprehensive experience"
 msgstr ""
+"Trải nghiệm tương tác, vui nhộn\n"
+"									 <br/>và toàn diện"
 
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
@@ -258,6 +266,8 @@ msgid ""
 "Create your very own chat room or join an existing one that sparks your "
 "interest."
 msgstr ""
+"Tạo phòng chat của riêng bạn hoặc tham gia phòng chat hiện có để khơi dậy"
+"sự quan tâm của bạn."
 
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_solar_template
@@ -309,6 +319,8 @@ msgid ""
 "Experience everything from a virtual exhibitor's hall to multiple "
 "interactive presentations and demos."
 msgstr ""
+"Trải nghiệm và tương tác mọi thứ từ triển lãm ảo đến các buổi thuyết trình "
+"và trình diễn."
 
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
@@ -318,7 +330,7 @@ msgstr "Facebook"
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
 msgid "Find out more"
-msgstr ""
+msgstr "Tìm hiểu thêm"
 
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_bold_template
@@ -346,11 +358,13 @@ msgid ""
 "Get 6-months' worth of knowledge\n"
 "                                    <br/>in just 2 days"
 msgstr ""
+"Nhận được kiến thức tương đương 6 tháng chỉ "
+"trong vòng 2 ngày."
 
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
 msgid "Go to the chatrooms"
-msgstr ""
+msgstr "Đi tới phòng chat"
 
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_vip_template
@@ -427,6 +441,8 @@ msgid ""
 "Meet (other) awesome members\n"
 "                                    <br/>of the community"
 msgstr ""
+"Gặp gỡ những thành viên tuyệt vời\n"
+"									 <br/>của cộng đồng"
 
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_bignews_template
@@ -492,12 +508,12 @@ msgstr ""
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
 msgid "Register now!"
-msgstr ""
+msgstr "Đăng ký ngay!"
 
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
 msgid "See what we've got planned"
-msgstr ""
+msgstr "Xem những gì chúng tôi đã lên kế hoạch"
 
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_bignews_template
