@@ -1544,9 +1544,13 @@ export class OdooEditor extends EventTarget {
             end = parent;
         }
         // Same with the start container
+        const table = closestElement(start, 'table');
+        // For selection starting at the beginning of the table and ending outside the
+        // table, the block should not be considered visible in order to remove the table.
+        const noBlocks = (table && firstLeaf(table) === start && !table.contains(end)) ? false : true;
         while (
             start &&
-            isRemovableInvisible(start) &&
+            isRemovableInvisible(start, noBlocks) &&
             !(endIsStart && start.contains(range.startContainer))
         ) {
             const parent = start.parentNode;
@@ -2795,7 +2799,6 @@ export class OdooEditor extends EventTarget {
      */
     _onSelectionChange() {
         const selection = this.document.getSelection();
-        console.log(selection);
         // When CTRL+A in the editor, sometimes the browser use the editable
         // element as an anchor & focus node. This is an issue for the commands
         // and the toolbar so we need to fix the selection to be based on the
