@@ -32,7 +32,7 @@ msgstr "SL Câu hỏi"
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_question__random_questions_count
 msgid "# Questions Randomly Picked"
-msgstr "Số lượng câu hỏi được chọn ngẫu nhiên"
+msgstr "SL Câu hỏi được chọn ngẫu nhiên"
 
 #. module: survey
 #: model:survey.question.answer,value:survey.vendor_certification_page_2_question_1_choice_4
