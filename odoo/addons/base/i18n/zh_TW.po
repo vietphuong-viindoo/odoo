@@ -6,9 +6,9 @@
 # sejun huang <sejun.huang@gmail.com>, 2021
 # Benson <Benson.Dr@Gmail.com>, 2022
 # 敬雲 林 <chingyun@yuanchih-consult.com>, 2023
-# Tony Ng, 2023
 # Wil Odoo, 2023
 # Martin Trigaux, 2023
+# Tony Ng, 2023
 # 
 msgid ""
 msgstr ""
@@ -16,7 +16,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-24 09:03+0000\n"
 "PO-Revision-Date: 2021-09-14 12:18+0000\n"
-"Last-Translator: Martin Trigaux, 2023\n"
+"Last-Translator: Tony Ng, 2023\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/odoo/teams/41243/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -4994,6 +4994,10 @@ msgid ""
 "=======================================================\n"
 "    "
 msgstr ""
+"\n"
+"GCC POS Localization\n"
+"=======================================================\n"
+"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_gamification
@@ -5511,6 +5515,10 @@ msgid ""
 "=======================================================\n"
 "    "
 msgstr ""
+"\n"
+"K.S.A. POS Localization\n"
+"=======================================================\n"
+"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_sa_hr_payroll
@@ -13938,7 +13946,7 @@ msgstr "勾選此項 如果 這個 聯繫人 是 一個 員工."
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_attachment__checksum
 msgid "Checksum/SHA1"
-msgstr "檢查碼/SHA1"
+msgstr "校驗碼/SHA1"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_actions_server__child_ids
@@ -22717,7 +22725,7 @@ msgstr "MRP 維修"
 #. module: base
 #: model:res.partner.title,shortcut:base.res_partner_title_madam
 msgid "Mrs."
-msgstr "Mrs."
+msgstr "太太"
 
 #. module: base
 #: model:res.groups,name:base.group_multi_company
@@ -25635,7 +25643,7 @@ msgstr "選項"
 #: model:ir.model.fields,help:base.field_ir_actions_act_window__domain
 msgid ""
 "Optional domain filtering of the destination data, as a Python expression"
-msgstr "目標資料的可選篩選條件，使用 Python 表達式"
+msgstr "目標資料的可選用篩選範圍，使用 Python 表達式"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_actions_act_url__help
@@ -26859,7 +26867,7 @@ msgstr "顯示活動推文的漂亮姿勢"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_report_layout__image
 msgid "Preview image src"
-msgstr "預覽圖片 src"
+msgstr "預覽圖片來源"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_report_layout__pdf
@@ -28066,7 +28074,7 @@ msgstr "服務端動作存在循環調用"
 #: model:ir.model.fields.selection,name:base.selection__ir_server_object_lines__evaluation_type__reference
 #: model_terms:ir.ui.view,arch_db:base.view_partner_form
 msgid "Reference"
-msgstr "參照"
+msgstr "客戶成功案例"
 
 #. module: base
 #: code:addons/base/models/ir_qweb_fields.py:0
@@ -28451,7 +28459,7 @@ msgstr "規則"
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_rule_form
 msgid "Rule Definition (Domain Filter)"
-msgstr "規則定義( 域名篩選)"
+msgstr "規則定義（範圍篩選）"
 
 #. module: base
 #: model:ir.model.constraint,message:base.constraint_ir_rule_no_access_rights
@@ -29524,7 +29532,7 @@ msgstr "簽訂勞動合約"
 #. module: base
 #: model:ir.module.module,summary:base.module_documents_sign
 msgid "Signature templates from Documents"
-msgstr "文件簽署模板"
+msgstr "文件中的簽名範本"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_auth_signup
@@ -33860,7 +33868,7 @@ msgstr "您可以嘗試其他搜尋條件."
 #. module: base
 #: model_terms:res.company,invoice_terms_html:base.main_company
 msgid "You should update this document to reflect your T&amp;C."
-msgstr "您應該更新此文件以反映您的 T&amp;C."
+msgstr "你應該更新此文件，以反映你的條款及細則。"
 
 #. module: base
 #: code:addons/base/models/ir_module.py:0

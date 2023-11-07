@@ -187,6 +187,45 @@ odoo.define('website.tour.form_editor', function (require) {
             content: 'Change the label position of the phone field',
             trigger: 'we-button[data-select-label-position="right"]',
         },
+        ...addCustomField("char", "text", "Conditional Visibility Check 1", false),
+        ...addCustomField("char", "text", "Conditional Visibility Check 2", false),
+        ...selectButtonByData("data-set-visibility='conditional'"),
+        ...selectButtonByData("data-set-visibility-dependency='Conditional Visibility Check 1'"),
+        ...addCustomField("char", "text", "Conditional Visibility Check 2", false),
+        ...selectFieldByLabel("Conditional Visibility Check 1"),
+        ...selectButtonByData("data-set-visibility='conditional'"),
+        {
+            content: "Check that 'Conditional Visibility Check 2' is not in the list of the visibility selector of Conditional Visibility Check 1",
+            trigger: "we-select[data-name='hidden_condition_opt']:not(:has(we-button[data-set-visibility-dependency='Conditional Visibility Check 2']))",
+            run: () => null,
+        },
+        ...addCustomField("char", "text", "Conditional Visibility Check 3", false),
+        ...addCustomField("char", "text", "Conditional Visibility Check 4", false),
+        ...selectButtonByData("data-set-visibility='conditional'"),
+        ...selectButtonByData("data-set-visibility-dependency='Conditional Visibility Check 3'"),
+        {
+            content: "Change the label of 'Conditional Visibility Check 4' and change it to 'Conditional Visibility Check 3'",
+            trigger: 'we-input[data-set-label-text] input',
+            run: "text Conditional Visibility Check 3",
+        },
+        {
+            content: "Check that the conditional visibility of the renamed field is removed",
+            trigger: "we-customizeblock-option.snippet-option-WebsiteFieldEditor we-select:contains('Visibility'):has(we-toggler:contains('Always Visible'))",
+            run: () => null,
+        },
+        ...addCustomField("char", "text", "Conditional Visibility Check 5", false),
+        ...addCustomField("char", "text", "Conditional Visibility Check 6", false),
+        ...selectButtonByData("data-set-visibility='conditional'"),
+        {
+            content: "Change the label of 'Conditional Visibility Check 6' and change it to 'Conditional Visibility Check 5'",
+            trigger: 'we-input[data-set-label-text] input',
+            run: "text Conditional Visibility Check 5",
+        },
+        {
+            content: "Check that 'Conditional Visibility Check 5' is not in the list of the renamed field",
+            trigger: "we-customizeblock-option.snippet-option-WebsiteFieldEditor we-select[data-name='hidden_condition_opt']:not(:has(we-button:contains('Conditional Visibility Check 5')))",
+            run: () => null,
+        },
         ...addExistingField('email_cc', 'text', 'Test conditional visibility', false, {visibility: CONDITIONALVISIBILITY, condition: 'odoo'}),
 
         ...addExistingField('date', 'text', 'Test Date', true),
@@ -566,7 +605,8 @@ odoo.define('website.tour.form_editor', function (require) {
                             ":has(.s_website_form_field.s_website_form_required:has(label:contains('State')):has(select[name='State'][required]:has(option[value='France'])))" +
                             ":has(.s_website_form_field:has(label:contains('State')):has(select[name='State'][required]:has(option[value='Canada'])))" +
                             ":has(.s_website_form_field:has(label:contains('Invoice Scan')))" +
-                            ":has(.s_website_form_field:has(input[name='email_to'][value='test@test.test']))",
+                            ":has(.s_website_form_field:has(input[name='email_to'][value='test@test.test']))" + 
+                            ":has(.s_website_form_field:has(input[name='website_form_signature']))",
             trigger:  ".s_website_form_send"
         },
         {
