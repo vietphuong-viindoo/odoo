@@ -2665,7 +2665,7 @@ msgstr "Máy chủ Gửi mail"
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_mailing__mail_server_available
 msgid "Mail Server Available"
-msgstr "Có sẵn máy chủ email"
+msgstr "Máy chủ Email Khả dụng"
 
 #. module: mass_mailing
 #: model:ir.actions.act_window,name:mass_mailing.action_view_mail_mail_statistics_mailing

@@ -590,7 +590,7 @@ msgstr "Tự động"
 #: model:ir.model.fields,field_description:loyalty.field_loyalty_program__available_on
 #: model_terms:ir.ui.view,arch_db:loyalty.loyalty_program_view_form
 msgid "Available On"
-msgstr "Có sẵn"
+msgstr "Khả dụng ở"
 
 #. module: loyalty
 #: model_terms:ir.ui.view,arch_db:loyalty.loyalty_card_view_form

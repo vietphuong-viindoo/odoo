@@ -7454,7 +7454,7 @@ msgid ""
 "You can add some from the Products menu, or linked any existing by flagging them as \"Available in PoS\".\n"
 "                    Or you can add demo data for testing purpose. Please mind that this is an irreversible action."
 msgstr ""
-"Bạn có thể thêm một số sản phẩm từ menu Sản phẩm hoặc liên kết bất kỳ sản phẩm nào hiện có bằng cách gắn cờ chúng là \"Có sẵn trong POS\".\n"
+"Bạn có thể thêm một số sản phẩm từ menu Sản phẩm hoặc liên kết bất kỳ sản phẩm nào hiện có bằng cách gắn cờ chúng là \"Khả dụng ở POS\".\n"
 "                     Hoặc bạn có thể thêm dữ liệu demo để kiểm thử. Xin lưu ý rằng không thể hoàn tác hành động này."
 
 #. module: point_of_sale
