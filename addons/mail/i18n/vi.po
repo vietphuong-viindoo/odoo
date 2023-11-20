@@ -7604,14 +7604,14 @@ msgstr "Ngày đọc"
 #: code:addons/mail/static/src/components/message/message.js:0
 #, python-format
 msgid "Read Less"
-msgstr ""
+msgstr "Đọc ít hơn"
 
 #. module: mail
 #. odoo-javascript
 #: code:addons/mail/static/src/components/message/message.js:0
 #, python-format
 msgid "Read More"
-msgstr "Tìm hiểu thêm"
+msgstr "Đọc thêm"
 
 #. module: mail
 #. odoo-javascript
@@ -7892,7 +7892,7 @@ msgstr "Địa chỉ trả lời"
 #: code:addons/mail/static/src/components/composer/composer.xml:0
 #, python-format
 msgid "Replying to"
-msgstr "Trả lời tới"
+msgstr "Trả lời"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_template__report_name
