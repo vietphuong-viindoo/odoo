@@ -644,7 +644,7 @@ msgstr "Thẻ hết hạn"
 #. module: loyalty
 #: model:ir.model.fields,field_description:loyalty.field_loyalty_rule__product_category_id
 msgid "Categories"
-msgstr "Phân loại"
+msgstr "Nhóm sản phẩm"
 
 #. module: loyalty
 #: model:ir.model.fields.selection,name:loyalty.selection__loyalty_reward__discount_applicability__cheapest

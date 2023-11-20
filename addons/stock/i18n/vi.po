@@ -3677,7 +3677,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:stock.view_move_search
 #, python-format
 msgid "Incoming"
-msgstr "Hàng về"
+msgstr "Sắp về kho"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_quant__in_date
@@ -4629,7 +4629,7 @@ msgstr "Quản lý Danh mục Lưu trữ"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
 msgid "Manage product packagings (e.g. pack of 6 bottles, box of 10 pieces)"
-msgstr "Quản lý cách thức đóng gói (vd: Thùng 6 Chái, Hộp 10 Chiếc, v.v.)"
+msgstr "Quản lý cách thức đóng gói (vd: Thùng 6 Chai, Hộp 10 Chiếc, v.v.)"
 
 #. module: stock
 #: model:ir.model.fields.selection,name:stock.selection__stock_warehouse_orderpoint__trigger__manual
@@ -5467,7 +5467,7 @@ msgstr "Loại xuất"
 #: model_terms:ir.ui.view,arch_db:stock.view_move_search
 #, python-format
 msgid "Outgoing"
-msgstr "Số lượng ra"
+msgstr "Sắp xuất kho"
 
 #. module: stock
 #. odoo-javascript
@@ -6889,19 +6889,19 @@ msgstr "Yêu cầu chữ ký trên phiếu xuất kho của bạn"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking_type__reservation_method
 msgid "Reservation Method"
-msgstr "Cách thức Đặt trước"
+msgstr "Cách thức Giữ phần"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.quant_search_view
 msgid "Reservations"
-msgstr "Dự trữ"
+msgstr "Giữ phần"
 
 #. module: stock
 #. odoo-javascript
 #: code:addons/stock/static/src/stock_forecasted/forecasted_details.xml:0
 #, python-format
 msgid "Reserve"
-msgstr "Dự trữ"
+msgstr "Giữ phần"
 
 #. module: stock
 #: model:ir.model.fields.selection,name:stock.selection__product_category__packaging_reserve_method__full
@@ -9153,7 +9153,7 @@ msgstr "Mở hàng"
 #: model_terms:ir.ui.view,arch_db:stock.vpicktree
 #, python-format
 msgid "Unreserve"
-msgstr "Không giữ phần"
+msgstr "Thôi giữ phần"
 
 #. module: stock
 #. odoo-python
