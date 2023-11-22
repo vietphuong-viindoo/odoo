@@ -230,10 +230,10 @@ msgid ""
 "target=\"_blank\">our videos</a>."
 msgstr ""
 "Thật không may, tôi chỉ là một robot 😞, tôi không hiểu! Nếu bạn cần trợ giúp"
-" khám pháp sản phẩm của chúng ta, vui lòng kiểm tra <a "
+" khám pháp sản phẩm của chúng tôi, vui lòng kiểm tra <a "
 "href=\"https://viindoo.com/documentation\" target=\"_blank\">tài liệu của "
-"chúng ta</a> hoặc các <a href=\"https://viindoo.com/slides\" "
-"target=\"_blank\">video của chúng ta</a>."
+"chúng tôi</a> hoặc các <a href=\"https://viindoo.com/slides\" "
+"target=\"_blank\">video của chúng tôi</a>."
 
 #. module: mail_bot
 #: model:ir.model,name:mail_bot.model_res_users
