@@ -1445,7 +1445,7 @@ msgstr "Số lượng lệnh sx dở dang"
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.view_assign_serial_numbers_production
 msgid "Create Backorder"
-msgstr "Tạo đơn Dở dang"
+msgstr "Tạo lệnh Dở dang"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_production__use_create_components_lots
@@ -1456,7 +1456,7 @@ msgstr "Tạo số lô/sê-ri mới cho các nguyên liệu"
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.view_mrp_production_backorder_form
 msgid "Create a Backorder"
-msgstr "Tạo một đơn Dở dang"
+msgstr "Tạo một lệnh Dở dang"
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.view_mrp_production_backorder_form
@@ -1464,8 +1464,8 @@ msgid ""
 "Create a backorder if you expect to process the remaining products later. Do"
 " not create a backorder if you will not process the remaining products."
 msgstr ""
-"Tạo đơn một đơn dở dang nếu bạn dự kiến sẽ xử lý sản phẩm còn lại sau. Không"
-" tạo đơn dở dang nếu bạn sẽ không xử lý sản phẩm còn lại. "
+"Tạo một lệnh dở dang nếu bạn dự kiến sẽ xử lý sản phẩm còn lại sau. Không"
+" tạo lệnh dở dang nếu bạn sẽ không xử lý sản phẩm còn lại. "
 
 #. module: mrp
 #: model_terms:ir.actions.act_window,help:mrp.mrp_production_report
@@ -1502,7 +1502,7 @@ msgstr ""
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.view_mrp_production_backorder_form
 msgid "Create backorder"
-msgstr "Tạo đơn Dở dang"
+msgstr "Tạo lệnh Dở dang"
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.res_config_settings_view_form
@@ -5046,7 +5046,7 @@ msgstr ""
 msgid ""
 "The quantity already produced awaiting allocation in the backorders chain."
 msgstr ""
-"Số lượng đã được sản xuất đang chờ phân bổ trong chuỗi đơn hàng tồn đọng."
+"Số lượng đã được sản xuất đang chờ phân bổ trong chuỗi lệnh dở dang tồn đọng."
 
 #. module: mrp
 #. odoo-python
@@ -5287,7 +5287,7 @@ msgstr "Đến ngày"
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_production_backorder_line__to_backorder
 msgid "To Backorder"
-msgstr "Cần lập đơn hàng tồn đọng"
+msgstr "Cần lập lệnh SX dở dang"
 
 #. module: mrp
 #: model:ir.model.fields.selection,name:mrp.selection__mrp_production__state__to_close
@@ -6311,8 +6311,8 @@ msgid ""
 "                        Do not create a backorder if you will not process the remaining products."
 msgstr ""
 "Số lượng số sê-ri bạn đã nhập ít hơn số lượng cần sản xuất.<br/>\n"
-"                        Tạo đơn dở dang nếu bạn dự kiến sản xuất số lượng còn lại sau.<br/>\n"
-"                        Không tạo đơn dở dang nếu bạn không xử lý sản phẩm còn lại. "
+"                        Tạo lệnh dở dang nếu bạn dự kiến sản xuất số lượng còn lại sau.<br/>\n"
+"                        Không tạo lệnh dở dang nếu bạn không xử lý sản phẩm còn lại. "
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.view_immediate_production
@@ -6459,7 +6459,7 @@ msgstr ""
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_routing_workcenter_form_view
 msgid "last"
-msgstr " "
+msgstr "cuối"
 
 #. module: mrp
 #. odoo-python
