@@ -2108,7 +2108,7 @@ msgstr "Có hiệu lực"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_search
 msgid "Active Account"
-msgstr "Kích hoạt tài khoản"
+msgstr "Tài khoản có hiệu lực"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_invoice_send__active_domain
