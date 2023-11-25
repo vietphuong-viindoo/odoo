@@ -1953,7 +1953,7 @@ msgstr "Không tìm thấy chữ tượng hình."
 #: model_terms:ir.ui.view,arch_db:web_editor.snippet_options_image_optimization_widgets
 #, python-format
 msgid "None"
-msgstr "Không dùng"
+msgstr "Không có"
 
 #. module: web_editor
 #. odoo-javascript

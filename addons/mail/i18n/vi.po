@@ -6536,7 +6536,7 @@ msgstr "Không tìm thấy người dùng"
 #: model:ir.model.fields.selection,name:mail.selection__mail_activity_type__category__default
 #, python-format
 msgid "None"
-msgstr "Không dùng"
+msgstr "Không có"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_gateway_allowed__email_normalized

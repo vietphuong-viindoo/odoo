@@ -2487,7 +2487,7 @@ msgstr "Chưa có người tham dự!"
 #: code:addons/event/models/event_registration.py:0
 #, python-format
 msgid "None"
-msgstr "Không dùng"
+msgstr "Không có"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_event__note

@@ -4205,7 +4205,7 @@ msgstr "Không có kết quả cho '"
 #. module: website_slides
 #: model:ir.model.fields.selection,name:website_slides.selection__slide_channel__promote_strategy__none
 msgid "None"
-msgstr "Không dùng"
+msgstr "Không có"
 
 #. module: website_slides
 #: model_terms:ir.ui.view,arch_db:website_slides.slide_channel_pages_kanban_view

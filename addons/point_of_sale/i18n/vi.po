@@ -3606,7 +3606,7 @@ msgstr "Phép đặt tên"
 #: code:addons/point_of_sale/static/src/xml/Screens/PartnerListScreen/PartnerDetailsEdit.xml:0
 #, python-format
 msgid "None"
-msgstr "Không dùng"
+msgstr "Không có"
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.view_report_pos_order_search

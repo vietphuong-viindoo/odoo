@@ -3619,7 +3619,7 @@ msgstr "Không tìm thấy cập nhật. Hãy tạo mới!"
 #: code:addons/project/controllers/portal.py:0
 #, python-format
 msgid "None"
-msgstr "Không dùng"
+msgstr "Không có"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_task_search_form

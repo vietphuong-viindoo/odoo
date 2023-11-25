@@ -2497,7 +2497,7 @@ msgstr "Không quản lý giao hàng trên Website"
 #: model:ir.model.fields.selection,name:website_sale.selection__website__product_page_image_spacing__none
 #: model_terms:ir.ui.view,arch_db:website_sale.snippet_options
 msgid "None"
-msgstr "Không dùng"
+msgstr "Không có"
 
 #. module: website_sale
 #: model_terms:ir.ui.view,arch_db:website_sale.product_pages_kanban_view
