@@ -15479,19 +15479,19 @@ msgstr "Tổng số tiền bạn phải trả cho đối tác này."
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_invoice_tree
 msgid "Total in Currency"
-msgstr "Tổng đơn vị tiền tệ"
+msgstr "Tổng nguyên tệ "
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_bank_statement_line__amount_total_in_currency_signed
 #: model:ir.model.fields,field_description:account.field_account_move__amount_total_in_currency_signed
 #: model:ir.model.fields,field_description:account.field_account_payment__amount_total_in_currency_signed
 msgid "Total in Currency Signed"
-msgstr "Tổng đơn vị tiền tệ đã ký"
+msgstr "Tổng nguyên tệ có dấu"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
 msgid "Track costs &amp; revenues by project, department, etc"
-msgstr "Theo dõi chi phí &amp; doanh thu theo dự án, bộ phận, vv"
+msgstr "Theo dõi chi phí &amp; doanh thu theo dự án, bộ phận, v.v."
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_bank_statement_line__transaction_type
@@ -17514,7 +17514,7 @@ msgstr "{label}: Đang điều chỉnh bút toán của {new_date}"
 #: code:addons/account/wizard/account_automatic_entry_wizard.py:0
 #, python-format
 msgid "{percent:0.2f}% recognized on {new_date}"
-msgstr "{percent:0.2f}% recognized vào {new_date}"
+msgstr "{percent:0.2f}% được ghi nhận vào {new_date}"
 
 #. module: account
 #. odoo-python
@@ -17533,7 +17533,7 @@ msgstr "{{ (object.name or '').replace('/','-') }}"
 msgid ""
 "{{ object.company_id.name }} Credit Note (Ref {{ object.name or 'n/a' }})"
 msgstr ""
-"{{ object.company_id.name }} Công nợ giảm (Ref {{ object.name or 'n/a' }})"
+"{{ object.company_id.name }} Hóa đơn điều chỉnh giảm (Ref {{ object.name or 'n/a' }})"
 
 #. module: account
 #: model:mail.template,subject:account.email_template_edi_invoice
