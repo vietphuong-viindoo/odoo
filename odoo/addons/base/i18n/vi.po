@@ -10919,12 +10919,12 @@ msgstr "Thông số công ty"
 #. module: base
 #: model:ir.model,name:base.model_ir_property
 msgid "Company Property"
-msgstr "Tài sản công ty"
+msgstr "Thông số Công ty"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_currency_rate__company_rate
 msgid "Company Rate"
-msgstr "Tỷ lệ công ty"
+msgstr "Tỷ giá công ty"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_company__report_header
@@ -10984,7 +10984,7 @@ msgstr "Tính toán"
 #: code:addons/base/models/ir_model.py:0
 #, python-format
 msgid "Compute method cannot depend on field 'id'"
-msgstr ""
+msgstr "Phương thức compute không được phụ thuộc vào trường 'id'."
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_model_form
@@ -16340,12 +16340,12 @@ msgstr "Tồn kho, Logistics, Định giá, Kế toán kho"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_currency_rate__inverse_company_rate
 msgid "Inverse Company Rate"
-msgstr "Tỷ lệ Công ty Nghịch đảo"
+msgstr "Tỷ giá Công ty Nghịch đảo"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_currency__inverse_rate
 msgid "Inverse Rate"
-msgstr "Tỷ lệ Nghịch đảo"
+msgstr "Tỷ giá Nghịch đảo"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__type__invoice
