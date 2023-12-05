@@ -193,14 +193,14 @@ msgstr "Tìm theo quốc gia"
 #: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
 #, python-format
 msgid "Top Buyers"
-msgstr "Bên mua hàng đầu"
+msgstr "Người mua hàng đầu"
 
 #. module: spreadsheet_dashboard_purchase
 #. openerp-web
 #: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
 #, python-format
 msgid "Top Orders"
-msgstr "Đơn hàng hàng đầu"
+msgstr "Đơn mua hàng đầu"
 
 #. module: spreadsheet_dashboard_purchase
 #. openerp-web

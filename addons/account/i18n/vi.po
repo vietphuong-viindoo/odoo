@@ -14916,7 +14916,7 @@ msgid ""
 "There doesn't appear to be anything to invoice for the selected order. "
 "However, you can use the amount field to force an accrual entry."
 msgstr ""
-"Không có bất kỳ thứ gì để lập hóa đơn cho đơn hàng đã chọn. Tuy nhiên, bạn "
+"Không có bất kỳ thứ gì để xuất hóa đơn cho đơn hàng đã chọn. Tuy nhiên, bạn "
 "có thể sử dụng trường số tiền để thực hiện một bút toán dồn tích."
 
 #. module: account
