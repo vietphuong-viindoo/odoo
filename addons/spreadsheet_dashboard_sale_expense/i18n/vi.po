@@ -174,7 +174,7 @@ msgstr "Chi phí tiêu biểu"
 #: code:addons/spreadsheet_dashboard_sale_expense/data/files/expense_dashboard.json:0
 #, python-format
 msgid "Top Reinvoiced Orders"
-msgstr "Đơn hàng được lập lại hoá đơn tiêu biểu"
+msgstr "Đơn bán tiêu biểu có chi tiêu tái xuất hóa đơn"
 
 #. module: spreadsheet_dashboard_sale_expense
 #. odoo-javascript
