@@ -305,10 +305,10 @@ class SaleOrderLine(models.Model):
     @api.depends('product_id')
     def _compute_name(self):
         for line in self:
-            lang = line.order_partner_id.lang or self.env.user.lang
             if not line.product_id:
                 continue
-            if not line.order_partner_id.is_public:
+            lang = line.order_id._get_lang()
+            if lang != self.env.lang:
                 line = line.with_context(lang=lang)
             name = line._get_sale_order_line_multiline_description_sale()
             if line.is_downpayment and not line.display_type:
@@ -432,7 +432,7 @@ class SaleOrderLine(models.Model):
             # manually edited
             if line.qty_invoiced > 0:
                 continue
-            if not line.product_uom or not line.product_id or not line.order_id.pricelist_id:
+            if not line.product_uom or not line.product_id:
                 line.price_unit = 0.0
             else:
                 price = line.with_company(line.company_id)._get_display_price()
@@ -485,9 +485,10 @@ class SaleOrderLine(models.Model):
         product = self.product_id.with_context(**self._get_product_price_context())
         qty = self.product_uom_qty or 1.0
         uom = self.product_uom or self.product_id.uom_id
+        currency = self.currency_id or self.order_id.company_id.currency_id
 
         price = pricelist_rule._compute_price(
-            product, qty, uom, order_date, currency=self.currency_id)
+            product, qty, uom, order_date, currency=currency)
 
         return price
 
