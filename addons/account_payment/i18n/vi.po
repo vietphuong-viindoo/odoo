@@ -487,7 +487,7 @@ msgid ""
 "posted: %(link)s"
 msgstr ""
 "Khoản thanh toán liên quan đến giao dịch có mã tham chiếu %(ref)s đã được "
-"ghi sổ: %(link)s"
+"vào sổ: %(link)s"
 
 #. module: account_payment
 #. odoo-python

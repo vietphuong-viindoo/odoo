@@ -2980,7 +2980,7 @@ msgid ""
 "It is forbidden to modify a tax used in a POS order not posted. You must "
 "close the POS sessions before modifying the tax."
 msgstr ""
-"Không được điều chỉnh thuế khi có đơn hàng chưa được ghi sổ. Bạn phải đóng "
+"Không được điều chỉnh thuế khi có đơn hàng chưa được vào sổ. Bạn phải đóng "
 "các phiên bán hàng trước khi điều chỉnh thuế."
 
 #. module: point_of_sale

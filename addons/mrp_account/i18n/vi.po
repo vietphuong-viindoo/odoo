@@ -141,7 +141,7 @@ msgid ""
 "Posts analytical accounting entries in real time for both component and "
 "operational costs."
 msgstr ""
-"Ghi sổ các bút toán kế toán phân tích theo thời gian thực cho cả chi phí "
+"Vào sổ các bút toán kế toán quản trị theo thời gian thực cho cả chi phí "
 "nguyên liệu và hoạt động."
 
 #. module: mrp_account

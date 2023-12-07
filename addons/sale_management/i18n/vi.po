@@ -231,7 +231,7 @@ msgstr "Tài liệu"
 msgid "Forbidden product, quantity and UoM on non-accountable sale quote line"
 msgstr ""
 "Sản phẩm bị cấm, số lượng và đơn vị tính cho dòng báo giá bán hàng không thể"
-" ghi sổ"
+" vào sổ"
 
 #. module: sale_management
 #: model:ir.model.fields,help:sale_management.field_sale_order_option__sequence
