@@ -150,7 +150,7 @@ msgstr "Nhân viên tiêu biểu"
 #: code:addons/spreadsheet_dashboard_hr_expense/data/files/expense_dashboard.json:0
 #, python-format
 msgid "Top Expenses"
-msgstr "Chi phí tiêu biểu"
+msgstr "Chi tiêu Tiêu biểu"
 
 #. module: spreadsheet_dashboard_hr_expense
 #. odoo-javascript
