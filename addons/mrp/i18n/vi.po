@@ -3403,7 +3403,7 @@ msgstr "OEE"
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_production_workorder_form_view_inherit
 msgid "On Hand"
-msgstr "hiện có"
+msgstr "Hiện có"
 
 #. module: mrp
 #. odoo-python
