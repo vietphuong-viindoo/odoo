@@ -4322,7 +4322,7 @@ msgstr "Thuộc tính"
 #: code:addons/project/static/src/js/project_task_kanban_examples.js:0
 #, python-format
 msgid "Published"
-msgstr "Đã đăng"
+msgstr "Đã xuất bản"
 
 #. module: project
 #. odoo-javascript

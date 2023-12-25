@@ -874,7 +874,7 @@ msgstr "Vui lòng chọn ít nhất một vé."
 #: model_terms:ir.ui.view,arch_db:website_event.event_event_view_search
 #: model_terms:ir.ui.view,arch_db:website_event.event_pages_kanban_view
 msgid "Published"
-msgstr "Đã đăng"
+msgstr "Đã xuất bản"
 
 #. module: website_event
 #: model_terms:ir.ui.view,arch_db:website_event.res_config_settings_view_form

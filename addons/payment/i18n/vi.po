@@ -1390,7 +1390,7 @@ msgstr "Danh sách nhà cung cấp"
 #: model:ir.model.fields,field_description:payment.field_payment_provider__is_published
 #: model_terms:ir.ui.view,arch_db:payment.payment_provider_kanban
 msgid "Published"
-msgstr "Đã đăng"
+msgstr "Đã xuất bản"
 
 #. module: payment
 #: model:payment.provider,name:payment.payment_provider_razorpay
