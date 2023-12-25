@@ -2417,6 +2417,8 @@ msgstr "Tiếp nhận phản hồi của khách hàng"
 msgid ""
 "Grant employees access to your project or tasks by adding them as followers."
 msgstr ""
+"Cấp quyền cho nhân viên truy cập vào dự án hoặc nhiệm vụ bằng cách thêm họ "
+"vào danh sách người theo dõi."
 
 #. module: project
 #. odoo-python
@@ -2426,6 +2428,8 @@ msgid ""
 "Grant portal users access to your project or tasks by adding them as "
 "followers."
 msgstr ""
+"Cấp quyền cho người dùng portal truy cập vào dự án hoặc nhiệm vụ bằng "
+"cách thêm họ vào danh sách người theo dõi."
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task_type__legend_done
