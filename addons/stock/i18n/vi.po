@@ -1207,7 +1207,7 @@ msgstr "Sản phẩm Khả dụng"
 #: model_terms:ir.ui.view,arch_db:stock.view_stock_quant_form_editable
 #: model_terms:ir.ui.view,arch_db:stock.view_stock_quant_tree_inventory_editable
 msgid "Available Quantity"
-msgstr "Số lượng hiện có"
+msgstr "Số lượng Khả dụng"
 
 #. module: stock
 #. odoo-python
