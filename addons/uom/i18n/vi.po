@@ -441,7 +441,7 @@ msgstr "gal (US)"
 #. module: uom
 #: model:uom.uom,name:uom.product_uom_inch
 msgid "in"
-msgstr "trong"
+msgstr "inch"
 
 #. module: uom
 #: model:uom.uom,name:uom.product_uom_cubic_inch
