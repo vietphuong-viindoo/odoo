@@ -42,6 +42,16 @@ msgid ""
 "            </p>\n"
 "        "
 msgstr ""
+"\n"
+"            <p class=\"o_view_nocontent_smiling_face\">\n"
+"                Thêm địa chỉ vào Danh sách được phép\n"
+"            </p><p>\n"
+"                Để bảo vệ bạn khỏi các vòng lặp thư rác và trả lời, hệ thống sẽ tự động chặn email\n"
+"                đến cổng của bạn vượt quá ngưỡng <b>%i</b> email mỗi <b>%i</b>\n"
+"                phút. Nếu có một số địa chỉ mà bạn cần nhận được thường xuyên\n"
+"                các bản cập nhật, tuy nhiên bạn có thể thêm chúng vào bên dưới và hệ thống sẽ cho phép chúng được thực hiện.\n"
+"            </p>\n"
+"        "
 
 #. module: mail
 #. odoo-python
@@ -87,7 +97,7 @@ msgstr ""
 #: code:addons/mail/static/src/models/notification_request_view.js:0
 #, python-format
 msgid "%(odoobotName)s has a request"
-msgstr ""
+msgstr "%(odoobotName)s có một yêu cầu"
 
 #. module: mail
 #. odoo-python
@@ -172,7 +182,7 @@ msgstr "%s ngày quá hạn"
 #: code:addons/mail/static/src/models/activity_view.js:0
 #, python-format
 msgid "%s days overdue:"
-msgstr ""
+msgstr "%s ngày quá hạn:"
 
 #. module: mail
 #. odoo-javascript
@@ -684,7 +694,7 @@ msgstr ""
 #: code:addons/mail/models/mail_channel.py:0
 #, python-format
 msgid "<div class=\"o_mail_notification\">invited %s to the channel</div>"
-msgstr ""
+msgstr "<div class=\"o_mail_notification\">đã mời %s tham gia kênh</div>"
 
 #. module: mail
 #. odoo-python
@@ -806,7 +816,7 @@ msgstr "<span class=\"o_form_label\">Danh sách máy chủ ICE tùy chỉnh</spa
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.res_config_settings_view_form
 msgid "<span class=\"o_form_label\">Email Templates</span>"
-msgstr ""
+msgstr "<span class=\"o_form_label\">Mẫu Email</span>"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.email_template_form
@@ -1060,7 +1070,7 @@ msgstr "Hành động cần Thực hiện khi có Email gửi đến"
 #: code:addons/mail/static/src/components/call_action_list/call_action_list.xml:0
 #, python-format
 msgid "Activate Full Screen"
-msgstr ""
+msgstr "Kích hoạt Toàn màn hình"
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_message_subtype__default
@@ -5097,7 +5107,7 @@ msgstr "Nút “bị cấm” trong tiếng Nhật"
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "Japanese “reserved” button"
-msgstr "Nút “đảo ngược” trong tiếng Nhật"
+msgstr "Nút “giữ phần” trong tiếng Nhật"
 
 #. module: mail
 #. odoo-javascript
@@ -36091,35 +36101,35 @@ msgstr "“passing grade”"
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "“prohibited”"
-msgstr "“prohibited”"
+msgstr "“bị cấm”"
 
 #. module: mail
 #. odoo-javascript
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "“reserved”"
-msgstr "“reserved”"
+msgstr "“giữ phần”"
 
 #. module: mail
 #. odoo-javascript
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "“secret”"
-msgstr "“secret”"
+msgstr "“bí mật”"
 
 #. module: mail
 #. odoo-javascript
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "“service charge”"
-msgstr "“service charge”"
+msgstr "“phí dịch vụ”"
 
 #. module: mail
 #. odoo-javascript
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "“vacancy”"
-msgstr "“vacancy”"
+msgstr "“vị trí còn trống”"
 
 #. module: mail
 #. odoo-javascript
