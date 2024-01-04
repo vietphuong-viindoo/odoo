@@ -727,7 +727,7 @@ msgid ""
 msgstr ""
 "<p><b>Chat với đồng nghiệp</b> theo thời gian thực sử dụng thông điệp trực "
 "tiếp.</p><p><i>Bạn có thể cần phải mời người dùng từ ứng dụng Thiết lập "
-"trước để họ có tài khoản người dùng trong Odoo.</i></p>"
+"trước để họ có tài khoản người dùng trong Hệ thống.</i></p>"
 
 #. module: mail
 #. odoo-javascript
@@ -791,7 +791,7 @@ msgstr ""
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.mail_template_preview_view_form
 msgid "<span class=\"col-md-5 col-lg-4 col-sm-12 ps-0\">Force a language: </span>"
-msgstr ""
+msgstr "<span class=\"col-md-5 col-lg-4 col-sm-12 ps-0\">Luôn dùng một ngôn ngữ: </span>"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.res_config_settings_view_form
@@ -914,7 +914,7 @@ msgstr "Kênh thuộc kiểu 'chat' không thể có quá hai người dùng."
 msgid ""
 "A chat should not be created with more than 2 persons. Create a group "
 "instead."
-msgstr "Không nên tạo chat cho hơn 2 người. Hãy tạo nhóm."
+msgstr "Không nên tạo chat cho hơn 2 người. Thay vì thế hãy tạo nhóm."
 
 #. module: mail
 #: model:ir.model.constraint,message:mail.constraint_mail_message_reaction_partner_or_guest_exists
@@ -1241,7 +1241,7 @@ msgstr "Thêm mô tả"
 #: code:addons/mail/models/mail_thread.py:0
 #, python-format
 msgid "Add a new %(document)s or send an email to %(email_link)s"
-msgstr "Bấm để thêm mới  %(document)s hoặc gửi email tới: %(email_link)s"
+msgstr "Bấm để thêm mới %(document)s hoặc gửi email tới: %(email_link)s"
 
 #. module: mail
 #: model_terms:ir.actions.act_window,help:mail.mail_blacklist_action
@@ -4582,7 +4582,7 @@ msgstr "Nếu bạn muốn sử dụng twilio làm nhà cung cấp máy chủ TU
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.mail_resend_message_view_form
 msgid "Ignore all"
-msgstr "Ignore all"
+msgstr "Bỏ qua tất cả"
 
 #. module: mail
 #. odoo-javascript
@@ -8408,7 +8408,7 @@ msgstr ""
 #. module: mail
 #: model:ir.actions.act_window,name:mail.mail_resend_message_action
 msgid "Sending Failures"
-msgstr "Sending Failures"
+msgstr "Gửi thất bại"
 
 #. module: mail
 #. odoo-javascript
