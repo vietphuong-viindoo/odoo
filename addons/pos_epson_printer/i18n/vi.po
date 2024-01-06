@@ -69,7 +69,7 @@ msgid ""
 " the certificate by accessing %s"
 msgstr ""
 "Nếu bạn đang sử dụng máy chủ bảo mật (HTTPS), hãy bảo đảm bạn đã chấp nhận "
-"chứng chỉ theo cách thủ công bằng cách truy cập %s"
+"chứng nhận theo cách thủ công bằng cách truy cập %s"
 
 #. module: pos_epson_printer
 #: model:ir.model.fields,help:pos_epson_printer.field_pos_config__epson_printer_ip

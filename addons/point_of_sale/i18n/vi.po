@@ -3300,7 +3300,7 @@ msgid ""
 "the certificate of your IoT Box."
 msgstr ""
 "Chắc chắn là bạn đã sử dụng IoT Box v18.12 hoặc cao hơn. Điều hướng đến %s "
-"để chấp nhận chứng chỉ cho IoT Box của bạn."
+"để chấp nhận chứng nhận cho IoT Box của bạn."
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.res_config_settings_view_form
@@ -4413,7 +4413,7 @@ msgid ""
 "Some browsers don't allow HTTP calls from websites to devices in the network (for security reasons). If it is the case, you will need to follow Odoo's documentation for 'Self-signed certificate for ePOS printers' and 'Secure connection (HTTPS)' to solve the issue"
 msgstr ""
 "Vui lòng kiểm tra xem máy in còn được kết nối hay không.\n"
-"Một số trình duyệt không cho phép gọi HTTP từ trang web đến thiết bị trong mạng (vì lý do bảo mật). Nếu đúng như vậy, bạn cần làm theo tài liệu của Odoo về 'Chứng chỉ tự ký cho máy in ePOS' và 'Kết nối an toàn (HTTPS)' để giải quyết vấn đề"
+"Một số trình duyệt không cho phép gọi HTTP từ trang web đến thiết bị trong mạng (vì lý do bảo mật). Nếu đúng như vậy, bạn cần làm theo tài liệu của Odoo về 'Chứng nhận tự ký cho máy in ePOS' và 'Kết nối an toàn (HTTPS)' để giải quyết vấn đề"
 
 #. module: point_of_sale
 #. odoo-javascript

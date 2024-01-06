@@ -783,7 +783,7 @@ msgstr "Hủy"
 #: model:ir.model.fields,field_description:hr.field_hr_employee__certificate
 #: model:ir.model.fields,field_description:hr.field_res_users__certificate
 msgid "Certificate Level"
-msgstr "Cấp độ Chứng chỉ"
+msgstr "Cấp độ Chứng nhận"
 
 #. module: hr
 #: model:ir.actions.act_window,name:hr.res_users_action_my

@@ -1111,7 +1111,7 @@ msgstr ""
 "        cấu hình để có đúng loại. Tuy nhiên, có thể \n"
 "        cần phải tạo thêm thuế vì một số lý do miễn thuế cụ thể/không có sujeta.\n"
 "        \n"
-"        Bạn cần định hình chứng chỉ của mình và cơ quan thuế.\n"
+"        Bạn cần định hình chứng nhận của mình và cơ quan thuế.\n"
 "    "
 
 #. module: base
@@ -9395,8 +9395,8 @@ msgid ""
 "Authenticate by using SSL certificates, belonging to your domain name. \n"
 "SSL certificates allow you to authenticate your mail server for the entire domain name."
 msgstr ""
-"Xác thực bằng cách sử dụng chứng chỉ SSL, thuộc về tên miền của bạn.\n"
-"Chứng chỉ SSL cho phép bạn xác thực máy chủ email cho toàn bộ tên miền."
+"Xác thực bằng cách sử dụng chứng nhận SSL, thuộc về tên miền của bạn.\n"
+"Chứng nhận SSL cho phép bạn xác thực máy chủ email cho toàn bộ tên miền."
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_mail_server__smtp_authentication
@@ -11291,7 +11291,7 @@ msgid ""
 "Could not load your certificate / private key. \n"
 "%s"
 msgstr ""
-"Không thể tải chứng chỉ / khóa cá nhân của bạn. \n"
+"Không thể tải chứng nhận / khóa cá nhân của bạn. \n"
 "%s"
 
 #. module: base
@@ -23937,7 +23937,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:base.field_ir_mail_server__smtp_ssl_certificate
 #: model:ir.model.fields.selection,name:base.selection__ir_mail_server__smtp_authentication__certificate
 msgid "SSL Certificate"
-msgstr "Chứng chỉ SSL"
+msgstr "Chứng nhận SSL"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_mail_server__smtp_ssl_private_key
@@ -23949,12 +23949,12 @@ msgstr "Khóa SSL bí mật"
 #: code:addons/base/models/ir_mail_server.py:0
 #, python-format
 msgid "SSL certificate is missing for %s."
-msgstr "Chứng chỉ SSL bị thiếu đối với %s."
+msgstr "Chứng nhận SSL bị thiếu đối với %s."
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_mail_server__smtp_ssl_certificate
 msgid "SSL certificate used for authentication"
-msgstr "Chứng chỉ SSL được sử dụng để xác thực"
+msgstr "Chứng nhận SSL được sử dụng để xác thực"
 
 #. module: base
 #. odoo-python
@@ -26395,7 +26395,7 @@ msgid ""
 "The private key or the certificate is not a valid file. \n"
 "%s"
 msgstr ""
-"Khóa cá nhân hoặc chứng chỉ không phải là tệp hợp lệ. \n"
+"Khóa cá nhân hoặc chứng nhận không phải là tệp hợp lệ. \n"
 "%s"
 
 #. module: base

@@ -371,7 +371,7 @@ msgid ""
 "                                        Download certification"
 msgstr ""
 "<i class=\"fa fa-fw fa-trophy\" role=\"img\" aria-label=\"Download certification\" title=\"Download certification\"/>\n"
-"                                        Tải chứng chỉ về"
+"                                        Tải chứng nhận về"
 
 #. module: survey
 #: model_terms:ir.ui.view,arch_db:survey.question_result_number_or_date_or_datetime
