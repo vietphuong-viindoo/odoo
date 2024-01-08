@@ -728,6 +728,9 @@ msgid ""
 "                Join this Course\n"
 "            </span>"
 msgstr ""
+"<span class=\"cta-title text_small_caps\">\n"
+"                Tham gia khóa học này\n"
+"            </span>"
 
 #. module: website_slides
 #: model_terms:ir.ui.view,arch_db:website_slides.slide_content_detailed
@@ -4419,6 +4422,8 @@ msgid ""
 "Please <a href=\"/web/login?redirect=%s\">login</a> or <a "
 "href=\"/web/signup?redirect=%s\">create an account</a> to join this course"
 msgstr ""
+"Vui lòng <a href=\"/web/login?redirect=%s\">đăng nhập</a> hoặc <a "
+"href=\"/web/signup?redirect=%s\">tạo một tài khoản</a> để tham gia khoá học này"
 
 #. module: website_slides
 #. odoo-javascript
