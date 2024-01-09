@@ -2002,7 +2002,7 @@ msgstr "Dự kiến"
 #: code:addons/mrp/report/mrp_report_bom_structure.py:0
 #, python-format
 msgid "Expected %s"
-msgstr "%s dự kiến"
+msgstr "Dự kiến vào %s"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_production__production_duration_expected
