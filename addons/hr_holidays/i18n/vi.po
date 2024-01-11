@@ -3884,6 +3884,8 @@ msgstr ""
 "                Nhân viên đề nghị Cán bộ Quản lý Nghỉ cấp phát ngày nghỉ (vd: ngày nghỉ bù)."
 
 #. module: hr_holidays
+#. odoo-javascript
+#: code:addons/hr_holidays/static/src/views/calendar/calendar_controller.js:0
 #: model:ir.actions.act_window,name:hr_holidays.hr_leave_action_my_request
 #: model:mail.message.subtype,description:hr_holidays.mt_leave
 #: model_terms:ir.ui.view,arch_db:hr_holidays.hr_leave_employee_view_dashboard
