@@ -126,11 +126,10 @@ def exec_pg_environ():
 def exec_pg_command(name, *args):
     prog = find_pg_tool(name)
     env = exec_pg_environ()
-    with open(os.devnull) as dn:
-        args2 = (prog,) + args
-        rc = subprocess.call(args2, env=env, stdout=dn, stderr=subprocess.STDOUT)
-        if rc:
-            raise Exception('Postgres subprocess %s error %s' % (args2, rc))
+    args2 = (prog,) + args
+    rc = subprocess.call(args2, env=env, stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
+    if rc:
+        raise Exception('Postgres subprocess %s error %s' % (args2, rc))
 
 def exec_pg_command_pipe(name, *args):
     prog = find_pg_tool(name)
@@ -1593,7 +1592,7 @@ class DotDict(dict):
     """
     def __getattr__(self, attrib):
         val = self.get(attrib)
-        return DotDict(val) if type(val) is dict else val
+        return DotDict(val) if isinstance(val, dict) else val
 
 
 def get_diff(data_from, data_to, custom_style=False):

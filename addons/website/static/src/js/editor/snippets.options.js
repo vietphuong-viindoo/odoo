@@ -3344,6 +3344,9 @@ options.registry.WebsiteAnimate = options.Class.extend({
         await this._super(...arguments);
         this.isAnimatedText = this.$target.hasClass('o_animated_text');
         this.$optionsSection = this.$overlay.data('$optionsSection');
+        if (this.isAnimatedText) {
+            this.$overlay[0].querySelector(".o_handles").style.pointerEvents = "none";
+        }
     },
     /**
      * @override
@@ -3504,7 +3507,7 @@ options.registry.MegaMenuLayout = options.registry.SelectTemplate.extend({
 });
 
 /**
- * Hides delete button for Mega Menu block.
+ * Hides delete and clone buttons for Mega Menu block.
  */
 options.registry.MegaMenuNoDelete = options.Class.extend({
     forceNoDeleteButton: true,

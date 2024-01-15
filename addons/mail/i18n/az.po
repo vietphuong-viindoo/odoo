@@ -192,7 +192,7 @@ msgstr ""
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.mail_notification_paynow
 msgid "&amp;nbsp;"
-msgstr ""
+msgstr "&amp;nbsp;"
 
 #. module: mail
 #. openerp-web
@@ -1678,7 +1678,7 @@ msgstr ""
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_compose_message__reply_to_force_new
 msgid "Considers answers as new thread"
-msgstr ""
+msgstr "Cavabları yeni mövzu kimi nəzərə alır"
 
 #. module: mail
 #: model:ir.model,name:mail.model_res_partner
@@ -3846,7 +3846,7 @@ msgstr "Yükləmə"
 #: code:addons/mail/static/src/xml/web_kanban_activity.xml:0
 #, python-format
 msgid "Loading..."
-msgstr ""
+msgstr "Yüklənir..."
 
 #. module: mail
 #. openerp-web
@@ -3902,9 +3902,9 @@ msgstr ""
 
 #. module: mail
 #. openerp-web
-#: code:addons/mail/static/src/components/welcome_view/welcome_view.xml:0
+#: code:addons/mail/static/src/components/welcome_view/welcome_view.js:0
 #, python-format
-msgid "Logged as"
+msgid "Logged in as %s"
 msgstr ""
 
 #. module: mail
@@ -6383,7 +6383,7 @@ msgstr "Bölgə"
 #: model_terms:ir.ui.view,arch_db:mail.view_mail_form
 #: model_terms:ir.ui.view,arch_db:mail.view_mail_search
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_activity_mixin__activity_state
@@ -7484,7 +7484,7 @@ msgstr ""
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_res_users_settings_volumes__volume
 msgid "Volume"
-msgstr ""
+msgstr "Həcmi"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.res_users_settings_view_form
@@ -8271,7 +8271,7 @@ msgstr ""
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.message_notification_email
 msgid "using"
-msgstr ""
+msgstr "istifadə edərək"
 
 #. module: mail
 #. openerp-web
