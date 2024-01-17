@@ -15051,9 +15051,9 @@ msgid ""
 " master budgets and the budgets are defined, the project managers can set "
 "the planned amount on each analytic account."
 msgstr ""
-"Cái này cho phép kế toán quản lý ngân sách phân tích chéo. Khi ngân sách "
-"chính và các ngân sách được xác định, người quản lý dự án có thể đặt số tiền"
-" được lên kế hoạch cho mỗi tài khoản kế toán quản trị."
+"Cái này cho phép kế toán quản lý ngân sách quản trị và ngân sách chéo. Khi "
+"ngân sách chính và các ngân sách được xác định, chủ nhiệm dự án có thể đặt "
+"số tiền theo kế hoạch cho mỗi tài khoản kế toán quản trị."
 
 #. module: account
 #: model:ir.model.fields,help:account.field_res_config_settings__module_account_batch_payment

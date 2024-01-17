@@ -4146,7 +4146,7 @@ msgstr "SL Dự án"
 #: model_terms:ir.ui.view,arch_db:project.view_project
 #: model_terms:ir.ui.view,arch_db:project.view_project_project_filter
 msgid "Project Manager"
-msgstr "Người quản lý Dự án"
+msgstr "Chủ nhiệm Dự án"
 
 #. module: project
 #: model:ir.model,name:project.model_project_milestone
