@@ -6823,7 +6823,7 @@ msgstr "Màn hình"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_color_blocks_2
 msgid "More Details"
-msgstr "Thêm chi tiết"
+msgstr "Xem chi tiết"
 
 #. module: website
 #: model_terms:digest.tip,tip_description:website.digest_tip_website_4

@@ -3087,7 +3087,7 @@ msgstr "Xem thêm"
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_color_blocks_2
 msgid "More Details"
-msgstr "Thêm chi tiết"
+msgstr "Xem chi tiết"
 
 #. module: mass_mailing
 #. odoo-python
