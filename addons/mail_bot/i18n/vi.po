@@ -67,7 +67,7 @@ msgid ""
 "help you discover its features.<br/><b>Try to send me an emoji</b> <span "
 "class=\"o_odoobot_command\">:)</span>"
 msgstr ""
-"Xin chào,<br/>Tính chat giúp nhân viên cộng tác hiệu quả. Tôi ở đây để giúp "
+"Xin chào,<br/>Tính năng chat giúp nhân viên cộng tác hiệu quả. Tôi ở đây để giúp "
 "bạn khám phá các tính năng của phần mềm.<br/><b>Hãy thử gửi một biểu tượng "
 "cảm xúc emoji cho tôi</b> <span class=\"o_odoobot_command\">:)</span>"
 
