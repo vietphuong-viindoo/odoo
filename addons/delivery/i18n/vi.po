@@ -162,7 +162,7 @@ msgid ""
 "for customers to follow."
 msgstr ""
 "Mô tả về phương thức giao hàng mà bạn muốn đưa ra cho khách hàng của mình "
-"trên Đơn bán hàng và email xác nhận bán hàng. Ví dụ: hướng dẫn dành cho "
+"trên Đơn bán và email xác nhận bán hàng. Ví dụ: hướng dẫn dành cho "
 "khách hàng."
 
 #. module: delivery
@@ -996,8 +996,8 @@ msgid ""
 "Shipping method details to be included at bottom sales orders and their "
 "confirmation emails. E.g. Instructions for customers to follow."
 msgstr ""
-"Chi tiết về phương thức vận chuyển sẽ được đưa vào cuối đơn bán hàng và "
-"email xác nhận đơn bán hàng đó. Ví dụ: Hướng dẫn dành cho khách hàng."
+"Chi tiết về phương thức vận chuyển sẽ được đưa vào cuối đơn bán và "
+"email xác nhận đơn bán đó. Ví dụ: Hướng dẫn dành cho khách hàng."
 
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_product_product__hs_code
@@ -1126,7 +1126,7 @@ msgid ""
 "                quotation) or the invoice (based on the delivery orders)."
 msgstr ""
 "Phí vận chuyển của những phương thức thanh toán này được tự động tính\n"
-"                tương ứng với thiết lập của; trên đơn bán hàng (dựa trên\n"
+"                tương ứng với thiết lập của; trên đơn bán (dựa trên\n"
 "                báo giá) hoặc trên hoá đơn (dựa theo đơn vận chuyển)."
 
 #. module: delivery

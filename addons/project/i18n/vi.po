@@ -912,7 +912,7 @@ msgid ""
 "An analytic account is required in order to use timesheets."
 msgstr ""
 "Tài khoản phân tích liên kết với dự án này cùng với các nhiệm vụ và bảng chấm công của dự án.\n"
-"Theo dõi chi phí và doanh thu của dự án bằng cách cài đặt tài khoản phân tích này trên các chứng từ liên quan của bạn (ví dụ: đơn bán hàng, hóa đơn, đơn mua hàng, hóa đơn mua hàng, chi phí,...).\n"
+"Theo dõi chi phí và doanh thu của dự án bằng cách cài đặt tài khoản phân tích này trên các chứng từ liên quan của bạn (ví dụ: đơn bán, hóa đơn, đơn mua hàng, hóa đơn mua hàng, chi phí,...).\n"
 "Tài khoản phân tích này có thể được thay đổi trên từng nhiệm vụ riêng lẻ nếu cần thiết.\n"
 "Cần có tài khoản phân tích để sử dụng bảng chấm công."
 
@@ -924,7 +924,7 @@ msgid ""
 "By default, the analytic account of the project is set. However, it can be changed on each task individually if necessary."
 msgstr ""
 "Tài khoản phân tích liên kết với nhiệm vụ này và bảng chấm công của nhiệm vụ.\n"
-"Theo dõi chi phí và doanh thu của dự án bằng cách cài đặt tài khoản phân tích này trên các chứng từ liên quan của bạn (ví dụ: đơn bán hàng, hóa đơn, đơn mua hàng, hóa đơn mua hàng, chi phí,...).\n"
+"Theo dõi chi phí và doanh thu của dự án bằng cách cài đặt tài khoản phân tích này trên các chứng từ liên quan của bạn (ví dụ: đơn bán, hóa đơn, đơn mua hàng, hóa đơn mua hàng, chi phí,...).\n"
 "Theo mặc định, tài khoản phân tích của dự án đã được thiết lập. Tuy nhiên, nó có thể được thay đổi trên từng nhiệm vụ riêng lẻ nếu cần thiết."
 
 #. module: project
@@ -1971,7 +1971,7 @@ msgid ""
 "it to a sales order item."
 msgstr ""
 "Tự động cung cấp dịch vụ của bạn khi đạt đến một cột mốc bằng cách liên kết "
-"nó với một mục đơn bán hàng."
+"nó với một mục đơn bán."
 
 #. module: project
 #. odoo-javascript

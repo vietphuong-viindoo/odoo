@@ -209,7 +209,7 @@ msgstr "Sản phẩm không hợp lệ để đổi."
 #: code:addons/sale_loyalty/wizard/sale_loyalty_coupon_wizard.py:0
 #, python-format
 msgid "Invalid sales order."
-msgstr "Đơn bán hàng không hợp lệ."
+msgstr "Đơn bán không hợp lệ."
 
 #. module: sale_loyalty
 #: model:ir.model.fields,field_description:sale_loyalty.field_sale_order_line__is_reward_line
@@ -296,7 +296,7 @@ msgstr "Không có phần thưởng nào cho khách hàng này!"
 #, python-format
 msgid "One or more rewards on the sale order is invalid. Please check them."
 msgstr ""
-"Một hoặc nhiều phần thưởng trên đơn bán hàng không hợp lệ. Vui lòng kiểm tra"
+"Một hoặc nhiều phần thưởng trên đơn bán không hợp lệ. Vui lòng kiểm tra"
 " chúng."
 
 #. module: sale_loyalty

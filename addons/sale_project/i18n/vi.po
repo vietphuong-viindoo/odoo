@@ -528,7 +528,7 @@ msgstr "Mốc thời gian đã đạt"
 #: model_terms:ir.ui.view,arch_db:sale_project.project_sharing_inherit_project_task_view_search
 #: model_terms:ir.ui.view,arch_db:sale_project.project_task_view_search
 msgid "Sale Order"
-msgstr "Đơn bán hàng"
+msgstr "Đơn bán"
 
 #. module: sale_project
 #: model:ir.model.fields,field_description:sale_project.field_project_project__sale_order_count
@@ -609,7 +609,7 @@ msgstr "Hạng mục đơn bán hàng"
 #. module: sale_project
 #: model:ir.model,name:sale_project.model_sale_order_line
 msgid "Sales Order Line"
-msgstr "Dòng đơn bán hàng"
+msgstr "Dòng đơn bán"
 
 #. module: sale_project
 #. odoo-python

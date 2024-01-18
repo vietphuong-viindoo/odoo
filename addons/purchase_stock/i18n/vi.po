@@ -768,7 +768,7 @@ msgid ""
 msgstr ""
 "Một tuyến dropship được bổ sung để áp dụng cho sản phẩm với mục đích yêu cầu"
 " nhà cung cấp giao hàng cho khách hàng của bạn. Một sản phẩm để dropship sẽ "
-"tạo ra một yêu cầu báo giá khi đơn bán hàng được xác nhận. Đây là một quy "
+"tạo ra một yêu cầu báo giá khi đơn bán được xác nhận. Đây là một quy "
 "trình theo yêu cầu. Địa chỉ giao hàng được yêu cầu sẽ là địa chỉ giao hàng "
 "của khách hàng, không phải là kho hàng của bạn."
 

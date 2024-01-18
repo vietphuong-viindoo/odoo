@@ -15558,7 +15558,7 @@ msgid ""
 "Trigger alerts when creating Invoices and Sales Orders for Partners with a "
 "Total Receivable amount exceeding a limit."
 msgstr ""
-"Kích hoạt cảnh báo khi tạo Hóa đơn và Đơn bán hàng cho Đối tác có Tổng số "
+"Kích hoạt cảnh báo khi tạo Hóa đơn và Đơn bán cho Đối tác có Tổng số "
 "tiền phải thu vượt quá giới hạn."
 
 #. module: account

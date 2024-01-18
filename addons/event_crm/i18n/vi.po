@@ -340,7 +340,7 @@ msgid ""
 "Per Order : A single Lead is created per Ticket Batch/Sale Order (B2B)"
 msgstr ""
 "Cho mỗi người tham dự : Tạo một lead cho mỗi người tham dự (B2C).\n"
-"Cho mỗi đơn hàng : Một lead được tạo cho một nhóm vé/Đơn bán hàng (B2B)."
+"Cho mỗi đơn hàng : Một lead được tạo cho một nhóm vé/Đơn bán (B2B)."
 
 #. module: event_crm
 #: model:ir.model.fields.selection,name:event_crm.selection__event_lead_rule__lead_creation_basis__order

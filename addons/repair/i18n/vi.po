@@ -1140,7 +1140,7 @@ msgstr "Có lỗi gửi SMS"
 #. module: repair
 #: model:ir.model.fields,field_description:repair.field_repair_order__sale_order_id
 msgid "Sale Order"
-msgstr "Đơn bán hàng"
+msgstr "Đơn bán"
 
 #. module: repair
 #: model:ir.model.fields,help:repair.field_repair_order__sale_order_id

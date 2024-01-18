@@ -55,12 +55,12 @@ msgstr "Cơ hội mới"
 #. module: gamification_sale_crm
 #: model:gamification.goal.definition,name:gamification_sale_crm.definition_crm_nbr_sale_order_created
 msgid "New Sales Orders"
-msgstr "Đơn bán hàng mới"
+msgstr "Đơn bán mới"
 
 #. module: gamification_sale_crm
 #: model:gamification.goal.definition,name:gamification_sale_crm.definition_crm_nbr_paid_sale_order
 msgid "Paid Sales Orders"
-msgstr "Đơn bán hàng đã thanh toán"
+msgstr "Đơn bán đã thanh toán"
 
 #. module: gamification_sale_crm
 #: model:gamification.challenge.line,name:gamification_sale_crm.line_crm_marketing2

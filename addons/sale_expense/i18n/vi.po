@@ -96,7 +96,7 @@ msgid ""
 "order"
 msgstr ""
 "Nếu danh mục có chính sách chi tiêu, danh mục sẽ được xuất lại hóa đơn trong"
-" đơn bán hàng này"
+" đơn bán này"
 
 #. module: sale_expense
 #: model_terms:ir.ui.view,arch_db:sale_expense.product_product_view_form_inherit_sale_expense

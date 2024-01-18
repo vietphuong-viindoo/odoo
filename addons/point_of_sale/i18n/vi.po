@@ -2732,7 +2732,7 @@ msgstr "Đang thực hiện"
 #: code:addons/point_of_sale/models/pos_order.py:0
 #, python-format
 msgid "In order to delete a sale, it must be new or cancelled."
-msgstr "Để xóa đơn bán hàng, đơn đó phải ở trạng thái mới hoặc đã hủy. "
+msgstr "Để xóa đơn bán, đơn đó phải ở trạng thái mới hoặc đã hủy. "
 
 #. module: point_of_sale
 #: model:ir.model.fields.selection,name:point_of_sale.selection__res_company__point_of_sale_update_stock_quantities__real

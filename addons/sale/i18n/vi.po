@@ -31,7 +31,7 @@ msgstr " Dữ liệu đã được nạp"
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_crm_team__sale_order_count
 msgid "# Sale Orders"
-msgstr "# Đơn bán hàng"
+msgstr "SL Đơn bán"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_report__nbr
@@ -922,7 +922,7 @@ msgid ""
 "Ability to select a package type in sales orders and to force a quantity "
 "that is a multiple of the number of units per package."
 msgstr ""
-"Khả năng chọn loại kiện hàng trong đơn bán hàng và buộc số lượng là bội số "
+"Khả năng chọn loại kiện hàng trong đơn bán và buộc số lượng là bội số "
 "của số lượng hàng trên mỗi kiện."
 
 #. module: sale
@@ -1962,7 +1962,7 @@ msgid ""
 "customer."
 msgstr ""
 "Vị trí tài chính được sử dụng để điều chỉnh thuế và tài khoản cho các khách "
-"hàng cụ thể hoặc các đơn bán hàng/hóa đơn. Giá trị mặc định đến từ phía "
+"hàng cụ thể hoặc các đơn bán/hóa đơn. Giá trị mặc định đến từ phía "
 "khách hàng. "
 
 #. module: sale
@@ -2126,7 +2126,7 @@ msgstr ""
 #. module: sale
 #: model:ir.model.fields,help:sale.field_product_packaging__sales
 msgid "If true, the packaging can be used for sales orders"
-msgstr "Nếu đúng, có thể sử dụng đóng gói cho đơn bán hàng"
+msgstr "Nếu đúng, có thể sử dụng đóng gói cho đơn bán"
 
 #. module: sale
 #: model:ir.model.fields,help:sale.field_sale_order__pricelist_id
@@ -2825,7 +2825,7 @@ msgid ""
 "Only one Custom Value is allowed per Attribute Value per Sales Order Line."
 msgstr ""
 "Chỉ cho phép một Giá trị tùy chỉnh cho mỗi Giá trị thuộc tính trong mỗi Dòng"
-" đơn bán hàng. "
+" đơn bán. "
 
 #. module: sale
 #. odoo-javascript
@@ -3526,7 +3526,7 @@ msgstr "Cảnh báo Đơn bán"
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.account_invoice_form
 msgid "Sale Orders"
-msgstr "Đơn bán hàng"
+msgstr "Đơn bán"
 
 #. module: sale
 #: model:ir.model,name:sale.model_sale_payment_provider_onboarding_wizard
@@ -3598,7 +3598,7 @@ msgstr "Đơn bán"
 #. module: sale
 #: model:ir.model,name:sale.model_sale_order_cancel
 msgid "Sales Order Cancel"
-msgstr "Hủy đơn bán hàng"
+msgstr "Hủy đơn bán"
 
 #. module: sale
 #: model:mail.message.subtype,name:sale.mt_order_confirmed
@@ -4115,8 +4115,8 @@ msgid ""
 "Team %(team_name)s has %(sale_order_count)s active sale orders. Consider "
 "canceling them or archiving the team instead."
 msgstr ""
-"Đội %(team_name)s có %(sale_order_count)s đơn bán hàng đang hoạt động. Cân "
-"nhắc hủy hoặc lưu trữ đội. "
+"Đội %(team_name)s có %(sale_order_count)s đơn bán đang hiệu lực. Cân "
+"nhắc hủy đơn hoặc lưu trữ đội. "
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.sale_order_portal_template
@@ -4233,7 +4233,7 @@ msgid ""
 "%s\n"
 "You can archive these products and recreate them with your company restriction instead, or leave them as shared product."
 msgstr ""
-"Các sản phẩm sau không thể chỉ giới hạn cho công ty %s vì đã được sử dụng trong báo giá hoặc đơn bán hàng của công ty khác:\n"
+"Các sản phẩm sau không thể chỉ giới hạn cho công ty %s vì đã được sử dụng trong báo giá hoặc đơn bán của công ty khác:\n"
 "%s\n"
 "Bạn có thể lưu trữ những sản phẩm này và tạo lại chúng với hạn chế cho công ty bạn, hoặc đặt là sản phẩm chia sẻ. "
 
@@ -4829,7 +4829,7 @@ msgid ""
 "orders."
 msgstr ""
 "Bạn không thể thay đổi loại của sản phẩm bởi vì nó đã được sử dụng trong Các"
-" đơn bán hàng."
+" đơn bán."
 
 #. module: sale
 #. odoo-python

@@ -135,7 +135,7 @@ msgstr "Được giao từ"
 #: code:addons/pos_sale/static/src/js/OrderManagementScreen/SaleOrderManagementScreen.js:0
 #, python-format
 msgid "Do you want to load the SN/Lots linked to the Sales Order?"
-msgstr "Bạn có muốn tải số sê-ri/lô liên kết với Đơn bán hàng không? "
+msgstr "Bạn có muốn tải số sê-ri/lô liên kết với Đơn bán không? "
 
 #. module: pos_sale
 #: model:product.template,name:pos_sale.default_downpayment_product_product_template
@@ -194,14 +194,14 @@ msgstr "Đơn hàng POS đã liên kết"
 #. module: pos_sale
 #: model:ir.model.fields,field_description:pos_sale.field_pos_order_line__sale_order_origin_id
 msgid "Linked Sale Order"
-msgstr "Đơn bán hàng đã liên kết"
+msgstr "Đơn bán đã liên kết"
 
 #. module: pos_sale
 #. odoo-python
 #: code:addons/pos_sale/models/pos_order.py:0
 #, python-format
 msgid "Linked Sale Orders"
-msgstr "Đơn bán hàng đã liên kết"
+msgstr "Đơn bán đã liên kết"
 
 #. module: pos_sale
 #. odoo-javascript
@@ -366,12 +366,12 @@ msgstr "Đang tải số sê-ri/lô"
 #: code:addons/pos_sale/static/src/xml/ProductScreen/Orderline.xml:0
 #, python-format
 msgid "SO"
-msgstr "Đơn bán hàng"
+msgstr "Đơn bán"
 
 #. module: pos_sale
 #: model:ir.model.fields,field_description:pos_sale.field_pos_order__sale_order_count
 msgid "Sale Order Count"
-msgstr "Số đơn bán hàng"
+msgstr "Số lượng đơn bán"
 
 #. module: pos_sale
 #: model_terms:ir.ui.view,arch_db:pos_sale.res_config_settings_view_form
@@ -394,7 +394,7 @@ msgstr "Đơn bán"
 #. module: pos_sale
 #: model:ir.model,name:pos_sale.model_sale_order_line
 msgid "Sales Order Line"
-msgstr "Dòng đơn bán hàng"
+msgstr "Dòng đơn bán"
 
 #. module: pos_sale
 #: model:ir.model,name:pos_sale.model_crm_team
@@ -449,7 +449,7 @@ msgstr "Phiên đang hoạt động"
 #: code:addons/pos_sale/static/src/xml/SetSaleOrderButton.xml:0
 #, python-format
 msgid "Set Sale Order"
-msgstr "Thiết lập đơn bán hàng"
+msgstr "Thiết lập đơn bán"
 
 #. module: pos_sale
 #. odoo-javascript
@@ -466,13 +466,13 @@ msgid ""
 "Some of the products in your Sale Order are not available in POS, do you "
 "want to import them?"
 msgstr ""
-"Một số sản phẩm trong Đơn bán hàng không có sẵn trong POS, bạn có muốn nhập "
+"Một số sản phẩm trong Đơn bán không có sẵn trong POS, bạn có muốn nhập "
 "các sản phẩm này không? "
 
 #. module: pos_sale
 #: model:ir.model.fields,field_description:pos_sale.field_pos_order_line__sale_order_line_id
 msgid "Source Sale Order Line"
-msgstr "Dòng đơn bán hàng nguồn"
+msgstr "Dòng đơn bán nguồn"
 
 #. module: pos_sale
 #. odoo-javascript
@@ -490,7 +490,7 @@ msgstr "Trạng thái"
 #. module: pos_sale
 #: model:ir.model.fields,help:pos_sale.field_sale_order__amount_unpaid
 msgid "The amount due from the sale order."
-msgstr "Số tiền cần thanh toán từ đơn bán hàng."
+msgstr "Số tiền cần thanh toán từ đơn bán."
 
 #. module: pos_sale
 #: model:ir.model.fields,help:pos_sale.field_pos_order__currency_rate
@@ -523,7 +523,7 @@ msgstr "Sản phẩm này sẽ được áp dụng khi khoản trả trước đ
 #: model:ir.model.fields,help:pos_sale.field_res_config_settings__pos_down_payment_product_id
 msgid "This product will be used as down payment on a sale order."
 msgstr ""
-"Sản phẩm này sẽ được sử dụng làm sản phẩm trả trước trong đơn bán hàng. "
+"Sản phẩm này sẽ được sử dụng làm sản phẩm trả trước trong đơn bán. "
 
 #. module: pos_sale
 #. odoo-javascript
