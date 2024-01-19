@@ -242,7 +242,7 @@ msgstr "<span class=\"o_stat_text\">LSX con</span>"
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_workcenter_view
 msgid "<span class=\"o_stat_text\">Load</span>"
-msgstr "<span class=\"o_stat_text\">Tải lượng</span>"
+msgstr "<span class=\"o_stat_text\">Khối lượng công việc</span>"
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_workcenter_view
@@ -5894,13 +5894,13 @@ msgstr "Công suất Năng lực Sản xuất"
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_workcenter__workcenter_load
 msgid "Work Center Load"
-msgstr "Tải lượng khu vực làm việc"
+msgstr "Khối lượng công việc"
 
 #. module: mrp
 #: model:ir.actions.act_window,name:mrp.action_mrp_workcenter_load_report_graph
 #: model_terms:ir.ui.view,arch_db:mrp.view_workcenter_load_pivot
 msgid "Work Center Loads"
-msgstr "Tải lượng khu vực làm việc"
+msgstr "Khối lượng công việc"
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_workcenter_view
@@ -5915,7 +5915,7 @@ msgstr "Sử dụng Năng lực Sản xuất"
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.view_work_center_load_graph
 msgid "Work Center load"
-msgstr "Tải lượng khu vực làm việc"
+msgstr "Khối lượng công việc"
 
 #. module: mrp
 #: model:ir.actions.act_window,name:mrp.mrp_workcenter_action
