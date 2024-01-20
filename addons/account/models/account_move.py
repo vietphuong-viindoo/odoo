@@ -4,7 +4,7 @@ from odoo import api, fields, models, Command, _
 from odoo.addons.base.models.decimal_precision import DecimalPrecision
 from odoo.exceptions import RedirectWarning, UserError, ValidationError, AccessError
 from odoo.tools import float_compare, float_is_zero, date_utils, email_split, email_re, html_escape, is_html_empty
-from odoo.tools.misc import formatLang, format_date, get_lang
+from odoo.tools.misc import formatLang, format_date, get_lang, groupby
 from odoo.osv import expression
 
 from datetime import date, timedelta
@@ -196,7 +196,7 @@ class AccountMove(models.Model):
     partner_id = fields.Many2one('res.partner', readonly=True, tracking=True,
         states={'draft': [('readonly', False)]},
         check_company=True,
-        string='Partner', change_default=True, ondelete='restrict')
+        string='Partner', index=True, change_default=True, ondelete='restrict')
     commercial_partner_id = fields.Many2one('res.partner', string='Commercial Entity', store=True, readonly=True,
         compute='_compute_commercial_partner_id', ondelete='restrict')
     country_code = fields.Char(related='company_id.account_fiscal_country_id.code', readonly=True)
@@ -1635,7 +1635,7 @@ class AccountMove(models.Model):
                         res = True
             r.invoice_has_matching_suspense_amount = res
 
-    @api.depends('partner_id', 'invoice_source_email', 'partner_id.name')
+    @api.depends('partner_id', 'invoice_source_email', 'partner_id.display_name')
     def _compute_invoice_partner_display_info(self):
         for move in self:
             vendor_display_name = move.partner_id.display_name
@@ -1757,6 +1757,7 @@ class AccountMove(models.Model):
             else:
                 move.invoice_payments_widget = json.dumps(False)
 
+    @api.depends_context('lang')
     @api.depends('line_ids.amount_currency', 'line_ids.tax_base_amount', 'line_ids.tax_line_id', 'partner_id', 'currency_id', 'amount_total', 'amount_untaxed')
     def _compute_tax_totals_json(self):
         """ Computed field used for custom widget's rendering.
@@ -2042,11 +2043,11 @@ class AccountMove(models.Model):
 
     @api.depends('company_id.account_fiscal_country_id', 'fiscal_position_id.country_id', 'fiscal_position_id.foreign_vat')
     def _compute_tax_country_id(self):
-        for record in self:
-            if record.fiscal_position_id.foreign_vat:
-                record.tax_country_id = record.fiscal_position_id.country_id
-            else:
-                record.tax_country_id = record.company_id.account_fiscal_country_id
+        foreign_vat_records = self.filtered(lambda r: r.fiscal_position_id.foreign_vat)
+        for fiscal_position_id, record_group in groupby(foreign_vat_records, key=lambda r: r.fiscal_position_id):
+            self.env['account.move'].concat(*record_group).tax_country_id = fiscal_position_id.country_id
+        for company_id, record_group in groupby((self-foreign_vat_records), key=lambda r: r.company_id):
+            self.env['account.move'].concat(*record_group).tax_country_id = company_id.account_fiscal_country_id
 
     @api.depends('tax_country_id.code')
     def _compute_tax_country_code(self):
@@ -3704,12 +3705,25 @@ class AccountMove(models.Model):
 
         self.ensure_one()
         if self.move_type != 'entry':
+            access_link = None
             for group_name, _group_method, group_data in groups:
-                if group_name in ('portal_customer', 'customer'):
+                if group_name == 'portal_customer':
                     group_data['has_button_access'] = True
+                    access_link = group_data['button_access']['url']
 
-                    # 'notification_is_customer' is used to determine whether the group should be sent the access_token
-                    group_data['notification_is_customer'] = True
+            # create a new group for partners that have been manually added as recipients
+            # those partners should have access to the invoice
+            button_access = {'url': access_link} if access_link else {}
+            recipient_group = (
+                'additional_intended_recipient',
+                lambda pdata: pdata['id'] in msg_vals.get('partner_ids', []) and pdata['id'] != self.partner_id.id,
+                {
+                    'has_button_access': True,
+                    'button_access': button_access,
+                    'notification_is_customer': True,
+                }
+            )
+            groups.insert(0, recipient_group)
 
         return groups
 

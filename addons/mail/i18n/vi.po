@@ -3777,7 +3777,7 @@ msgstr "Tham gia kênh"
 #: code:addons/mail/static/src/components/rtc_controller/rtc_controller.xml:0
 #, python-format
 msgid "Join Video Call"
-msgstr ""
+msgstr "Tham gia cuộc gọi video"
 
 #. module: mail
 #: model:ir.actions.act_window,name:mail.mail_channel_action_view
@@ -4052,10 +4052,10 @@ msgstr "Ghi chú"
 
 #. module: mail
 #. openerp-web
-#: code:addons/mail/static/src/components/welcome_view/welcome_view.xml:0
+#: code:addons/mail/static/src/components/welcome_view/welcome_view.js:0
 #, python-format
-msgid "Logged as"
-msgstr "Đã đăng nhập với tư cách là"
+msgid "Logged in as %s"
+msgstr ""
 
 #. module: mail
 #. openerp-web
