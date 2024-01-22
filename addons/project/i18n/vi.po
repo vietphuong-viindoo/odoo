@@ -893,7 +893,7 @@ msgstr "Cho phép đánh giá của khách hàng"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__allow_subtasks
 msgid "Allow Sub-tasks"
-msgstr "Cho phép Nhiệm vụ phụ"
+msgstr "Cho phép Nhiệm vụ con"
 
 #. module: project
 #: model:ir.model,name:project.model_account_analytic_account
@@ -5125,7 +5125,7 @@ msgstr "Dừng định kỳ"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__subtask_count
 msgid "Sub-task Count"
-msgstr "Số lượng Nhiệm vụ phụ"
+msgstr "Số lượng Nhiệm vụ con"
 
 #. module: project
 #: model:ir.actions.act_window,name:project.project_sharing_project_task_action_sub_task
@@ -5137,12 +5137,12 @@ msgstr "Số lượng Nhiệm vụ phụ"
 #: model_terms:ir.ui.view,arch_db:project.project_sharing_project_task_view_form
 #: model_terms:ir.ui.view,arch_db:project.view_task_form2
 msgid "Sub-tasks"
-msgstr "Nhiệm vụ phụ"
+msgstr "Nhiệm vụ con"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__subtask_planned_hours
 msgid "Sub-tasks Planned Hours"
-msgstr "Giờ dự kiến cho Nhiệm vụ phụ"
+msgstr "Giờ dự kiến cho Nhiệm vụ con"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.rating_rating_view_form_project
@@ -5157,7 +5157,7 @@ msgid ""
 "linked to this task. Usually less than or equal to the allocated hours of "
 "this task."
 msgstr ""
-"Tổng số giờ được phân bổ cho tất cả nhiệm vụ phụ (và nhiệm vụ phụ của chính "
+"Tổng số giờ được phân bổ cho tất cả nhiệm vụ con (và nhiệm vụ con của chính "
 "chúng) liên kết với nhiệm vụ này. Thường nhỏ hơn hoặc bằng số giờ được phân "
 "bổ cho nhiệm vụ này."
 
@@ -5236,7 +5236,7 @@ msgstr "SL nhiệm vụ"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__task_count_with_subtasks
 msgid "Task Count With Subtasks"
-msgstr "Số Nhiệm vụ có Nhiệm vụ phụ"
+msgstr "Số Nhiệm vụ có Nhiệm vụ con"
 
 #. module: project
 #: model:mail.message.subtype,description:project.mt_task_new
@@ -5943,7 +5943,7 @@ msgstr "Dùng Giai đoạn cho Dự án"
 #. module: project
 #: model:res.groups,name:project.group_subtask_project
 msgid "Use Subtasks"
-msgstr "Sử dụng Nhiệm vụ phụ"
+msgstr "Sử dụng Nhiệm vụ con"
 
 #. module: project
 #: model:res.groups,name:project.group_project_task_dependencies

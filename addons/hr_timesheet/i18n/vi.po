@@ -99,8 +99,8 @@ msgid ""
 "<span class=\"text-nowrap\" attrs=\"{'invisible' : [('encode_uom_in_days', '=', True)]}\">Hours Spent on Sub-tasks:</span>\n"
 "                                <span class=\"text-nowrap\" attrs=\"{'invisible' : [('encode_uom_in_days', '=', False)]}\">Days Spent on Sub-tasks:</span>"
 msgstr ""
-"<span class=\"text-nowrap\" attrs=\"{'invisible' : [('encode_uom_in_days', '=', True)]}\">Số giờ dùng cho nhiệm vụ phụ:</span>\n"
-"                                <span class=\"text-nowrap\" attrs=\"{'invisible' : [('encode_uom_in_days', '=', False)]}\">Số ngày dùng cho nhiệm vụ phụ:</span>"
+"<span class=\"text-nowrap\" attrs=\"{'invisible' : [('encode_uom_in_days', '=', True)]}\">Số giờ dùng cho nhiệm vụ con:</span>\n"
+"                                <span class=\"text-nowrap\" attrs=\"{'invisible' : [('encode_uom_in_days', '=', False)]}\">Số ngày dùng cho nhiệm vụ con:</span>"
 
 #. module: hr_timesheet
 #: model_terms:ir.ui.view,arch_db:hr_timesheet.timesheet_table
@@ -352,7 +352,7 @@ msgstr "Số ngày đã dùng"
 #. module: hr_timesheet
 #: model_terms:ir.ui.view,arch_db:hr_timesheet.portal_timesheet_table
 msgid "Days recorded on sub-tasks:"
-msgstr "Số ngày ghi lại trong nhiệm vụ phụ:"
+msgstr "Số ngày ghi lại trong nhiệm vụ con:"
 
 #. module: hr_timesheet
 #: model:ir.model.fields,help:hr_timesheet.field_res_company__internal_project_id
@@ -492,7 +492,7 @@ msgstr "Số giờ Đã sử dụng"
 #. module: hr_timesheet
 #: model_terms:ir.ui.view,arch_db:hr_timesheet.portal_timesheet_table
 msgid "Hours recorded on sub-tasks:"
-msgstr "Số giờ ghi lại trong nhiệm vụ phụ:"
+msgstr "Số giờ ghi lại trong nhiệm vụ con:"
 
 #. module: hr_timesheet
 #: model:ir.model.fields,field_description:hr_timesheet.field_timesheets_analysis_report__id
@@ -1072,14 +1072,14 @@ msgstr "Thời gian nghỉ"
 #: model:ir.model.fields,help:hr_timesheet.field_project_task__subtask_effective_hours
 msgid "Time spent on the sub-tasks (and their own sub-tasks) of this task."
 msgstr ""
-"Thời gian được sử dụng cho nhiệm vụ phụ (và nhiệm vụ phụ của chúng) của "
+"Thời gian được sử dụng cho nhiệm vụ con (và nhiệm vụ con của chúng) của "
 "nhiệm vụ này."
 
 #. module: hr_timesheet
 #: model:ir.model.fields,help:hr_timesheet.field_project_task__total_hours_spent
 msgid "Time spent on this task and its sub-tasks (and their own sub-tasks)."
 msgstr ""
-"Thời gian dành cho nhiệm vụ này và các nhiệm vụ phụ của nó (và các nhiệm vụ "
+"Thời gian dành cho nhiệm vụ này và các nhiệm vụ con của nó (và các nhiệm vụ "
 "phụ của chính chúng)."
 
 #. module: hr_timesheet
