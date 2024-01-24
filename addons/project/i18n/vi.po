@@ -39,7 +39,7 @@ msgid ""
 msgstr ""
 "\n"
 "                <p class=\"o_view_nocontent_smiling_face\">\n"
-"                    Không tìm thấy mốc thời gian nào. Hãy tạo một mốc!\n"
+"                    Không tìm thấy Mốc nào. Hãy tạo một mốc!\n"
 "                </p><p>\n"
 "                    Theo dõi các điểm tiến độ chính cần đạt được để đến với thành công.\n"
 "                </p>\n"
@@ -83,7 +83,7 @@ msgid ""
 "#{record.milestone_count_reached.value} Milestones reached out of "
 "#{record.milestone_count.value}"
 msgstr ""
-"#{record.milestone_count_reached.value} Mốc thời gian đã đạt trong số "
+"#{record.milestone_count_reached.value} Mốc đã đạt trong tổng số "
 "#{record.milestone_count.value}"
 
 #. module: project
@@ -105,7 +105,7 @@ msgstr "Biểu đồ burn-down %(name)s"
 #: code:addons/project/models/project.py:0
 #, python-format
 msgid "%(name)s's Milestones"
-msgstr "Mốc thời gian của %(name)s"
+msgstr "Mốc của %(name)s"
 
 #. module: project
 #. odoo-python
@@ -637,7 +637,7 @@ msgstr "<strong>Lịch sử trao đổi và thông tin liên lạc</strong>"
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.portal_my_task
 msgid "<strong>Milestone:</strong>"
-msgstr "<strong>Mốc thời gian:</strong>"
+msgstr "<strong>Mốc:</strong>"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.portal_my_task
@@ -779,7 +779,7 @@ msgstr "Kiểu Hoạt động"
 #: code:addons/project/static/src/components/project_right_side_panel/project_right_side_panel.xml:0
 #, python-format
 msgid "Add Milestone"
-msgstr "Thêm Mốc thời gian"
+msgstr "Thêm Mốc"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.personal_task_type_edit
@@ -2477,7 +2477,7 @@ msgstr "Mặt vui vẻ"
 #: model:ir.model.fields,field_description:project.field_project_task__has_late_and_unreached_milestone
 #: model:ir.model.fields,field_description:project.field_project_task_burndown_chart_report__has_late_and_unreached_milestone
 msgid "Has Late And Unreached Milestone"
-msgstr "Có mốc thời gian muộn và chưa đạt được"
+msgstr "Có Mốc muộn và chưa đạt được"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_milestone__has_message
@@ -2819,12 +2819,12 @@ msgstr "Là Người theo dõi"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__is_milestone_exceeded
 msgid "Is Milestone Exceeded"
-msgstr "Quá mốc thời gian"
+msgstr "Mốc quá hạn"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_report_project_task_user__milestone_reached
 msgid "Is Milestone Reached"
-msgstr ""
+msgstr "Đạt Mốc"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__is_private
@@ -3048,7 +3048,7 @@ msgstr "Hoạt động bị Trễ"
 #: model_terms:ir.ui.view,arch_db:project.view_task_project_user_search
 #: model_terms:ir.ui.view,arch_db:project.view_task_search_form
 msgid "Late Milestones"
-msgstr "Mốc thời gian chậm trễ"
+msgstr "Mốc chậm trễ"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.project_sharing_project_task_view_search
@@ -3271,22 +3271,22 @@ msgstr "Thông điệp"
 #: model_terms:ir.ui.view,arch_db:project.view_task_search_form
 #, python-format
 msgid "Milestone"
-msgstr "Mốc thời gian"
+msgstr "Mốc"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__milestone_count
 msgid "Milestone Count"
-msgstr "Số Mốc thời gian"
+msgstr "SL Mốc"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__milestone_count_reached
 msgid "Milestone Count Reached"
-msgstr "Số mốc thời gian đã đạt"
+msgstr "Số Mốc đã đạt"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_report_project_task_user__milestone_deadline
 msgid "Milestone Deadline"
-msgstr ""
+msgstr "Hạn chót của Mốc"
 
 #. module: project
 #. odoo-javascript
@@ -3298,7 +3298,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:project.view_project_kanban
 #, python-format
 msgid "Milestones"
-msgstr "Mốc thời gian"
+msgstr "Mốc"
 
 #. module: project
 #. odoo-javascript
@@ -3540,7 +3540,7 @@ msgstr "Không có khách hàng"
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.portal_tasks_list
 msgid "No Milestone"
-msgstr "Không có mốc thời gian"
+msgstr "Không có Mốc"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_project_project_filter
@@ -4151,7 +4151,7 @@ msgstr "Chủ nhiệm Dự án"
 #. module: project
 #: model:ir.model,name:project.model_project_milestone
 msgid "Project Milestone"
-msgstr "Mốc thời gian Dự án"
+msgstr "Mốc Dự án"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.project_view_kanban
@@ -4788,7 +4788,7 @@ msgstr "Tìm trong Thông điệp"
 #: code:addons/project/controllers/portal.py:0
 #, python-format
 msgid "Search in Milestone"
-msgstr "Tìm kiếm trong Mốc thời gian"
+msgstr "Tìm kiếm trong Mốc"
 
 #. module: project
 #. odoo-python
@@ -5468,12 +5468,12 @@ msgstr "Ngày kết thúc phải nằm trong tương lai"
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.project_update_default_description
 msgid "The following milestone has been added:"
-msgstr "Mốc thời gian sau đã được thêm:"
+msgstr "Các mốc sau đã được thêm:"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.project_update_default_description
 msgid "The following milestones have been added:"
-msgstr "Các mốc thời gian sau đã được thêm:"
+msgstr "Các mốc sau đã được thêm:"
 
 #. module: project
 #. odoo-python
@@ -5923,7 +5923,7 @@ msgstr "Dùng Bí danh Email"
 #. module: project
 #: model:res.groups,name:project.group_project_milestone
 msgid "Use Milestones"
-msgstr "Sử dụng mốc thời gian"
+msgstr "Sử dụng Mốc"
 
 #. module: project
 #: model:res.groups,name:project.group_project_rating
@@ -6428,12 +6428,12 @@ msgstr "nhiệm vụ"
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.project_update_default_description
 msgid "the deadline for the following milestone has been updated:"
-msgstr "hạn chót của các mốc thời gian sau đã được cập nhật:"
+msgstr "hạn chót của các mốc sau đã được cập nhật:"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.project_update_default_description
 msgid "the deadline for the following milestones has been updated:"
-msgstr "hạn chót của các mốc thời gian sau đã được cập nhật:"
+msgstr "hạn chót của các mốc sau đã được cập nhật:"
 
 #. module: project
 #. odoo-javascript
