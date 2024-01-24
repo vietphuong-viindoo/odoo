@@ -532,7 +532,7 @@ msgstr "Sử dụng Uỷ nhiệm LDAP để đăng nhập"
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
 msgid "Use external accounts to log in (Google, Facebook, etc.)"
-msgstr "Sử dụng các tài khoản ngoài (Google, Facebook, v.v.) để đăng nhập"
+msgstr "Sử dụng các tài khoản ngoài để đăng nhập như (Google, Facebook, v.v.)"
 
 #. module: base_setup
 #: model:ir.model.fields,field_description:base_setup.field_res_config_settings__module_auth_oauth
