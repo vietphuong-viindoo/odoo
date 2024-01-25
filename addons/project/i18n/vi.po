@@ -180,6 +180,8 @@ msgid ""
 ".\n"
 "      Attach all documents or links to the task directly, to have all research information centralized."
 msgstr ""
+".\n"
+"      Đính kèm tất cả các tài liệu hoặc link trực tiếp vào nhiệm vụ, để có toàn bộ các thông tin nghiên cứu được tập trung."
 
 #. module: project
 #: model:ir.model.fields.selection,name:project.selection__project_task__repeat_day__10
@@ -1452,6 +1454,8 @@ msgid ""
 "Communicate with customers on the task using the email gateway. Attach logo designs to the task, so that information flows from\n"
 "      designers to the workers who print the t-shirt. Organize priorities amongst orders using the"
 msgstr ""
+"Giao tiếp với khách hàng về nhiệm vụ bằng email. Đính kèm thiết kế logo vào nhiệm vụ để thông tin được truyền từ\n"
+"      nhà thiết kế cho công nhân in áo thun. Sắp xếp mức độ ưu tiên theo thứ tự bằng cách sử dụng biểu tượng"
 
 #. module: project
 #: model:ir.model,name:project.model_res_company
@@ -1748,6 +1752,8 @@ msgid ""
 "Customers propose feedbacks by email; Odoo creates tasks automatically, and you can\n"
 "      communicate on the task directly. Your managers decide which feedback is accepted"
 msgstr ""
+"Khách phản hồi bằng email; Hệ thống tự động tạo nhiệm vụ và các bạn có thể\n"
+"      trao đổi trực tiếp ngay trên nhiệm vụ. Người quản lý của bạn quyết định phản hồi nào được chấp nhận"
 
 #. module: project
 #. odoo-python
@@ -2459,6 +2465,8 @@ msgid ""
 "Handle your idea gathering within Tasks of your new Project and discuss them"
 " in the chatter of the tasks. Use the"
 msgstr ""
+"Xử lý việc thu thập ý tưởng của bạn trong Nhiệm vụ của Dự án mới và thảo luận"
+" về chúng ở khu vực chatter trên nhiệm vụ. Sử dụng"
 
 #. module: project
 #. odoo-javascript
@@ -4030,7 +4038,7 @@ msgstr "Trước đó"
 #: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
 #, python-format
 msgid "Prioritize Tasks by using the"
-msgstr ""
+msgstr "Ưu tiên các nhiệm vụ bằng cách sử dụng biểu tượng"
 
 #. module: project
 #. odoo-python
@@ -5913,7 +5921,7 @@ msgstr "Khả năng sử dụng"
 #: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
 #, python-format
 msgid "Use"
-msgstr ""
+msgstr "Sử dụng ký hiệu"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__alias_enabled
@@ -5980,7 +5988,7 @@ msgstr "Dùng thẻ để phân loại nhiệm vụ."
 #: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
 #, python-format
 msgid "Use the"
-msgstr "Sử dụng"
+msgstr "Sử dụng biểu tượng"
 
 #. module: project
 #. odoo-javascript
@@ -6330,7 +6338,7 @@ msgstr "ảnh đại diện"
 #: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
 #, python-format
 msgid "bullets to indicate the status of a task."
-msgstr ""
+msgstr "để chỉ báo tình trạng của một nhiệm vụ"
 
 #. module: project
 #. odoo-javascript
@@ -6339,6 +6347,7 @@ msgstr ""
 msgid ""
 "button to inform your colleagues that a task is ready for the next stage."
 msgstr ""
+"để thông báo cho đồng nghiệp rằng một nhiệm vụ đã sẵn sàng cho giai đoạn kế tiếp."
 
 #. module: project
 #. odoo-javascript
@@ -6391,7 +6400,7 @@ msgstr "VD: Ra mắt sản phẩm"
 #: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
 #, python-format
 msgid "icon to organize your daily activities."
-msgstr "biểu tượng để sắp xếp hoạt động hàng ngày của bạn."
+msgstr "để sắp xếp hoạt động hàng ngày của bạn."
 
 #. module: project
 #. odoo-javascript
@@ -6399,7 +6408,7 @@ msgstr "biểu tượng để sắp xếp hoạt động hàng ngày của bạn
 #: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
 #, python-format
 msgid "icon."
-msgstr "biểu tượng."
+msgstr "."
 
 #. module: project
 #. odoo-javascript
@@ -6451,7 +6460,7 @@ msgstr ""
 #: code:addons/project/static/src/xml/project_task_kanban_examples.xml:0
 #, python-format
 msgid "to indicate a problem or a need for discussion on a task."
-msgstr ""
+msgstr "để chỉ báo một vấn đề hoặc có nhu cầu thảo luận ở trên nhiệm vụ."
 
 #. module: project
 #. odoo-javascript
