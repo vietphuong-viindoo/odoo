@@ -783,7 +783,7 @@ msgstr "Nhiệm vụ Không thể xuất Hoá đơn"
 #: model_terms:ir.ui.view,arch_db:sale_timesheet.hr_timesheet_report_search_sale_timesheet
 #: model_terms:ir.ui.view,arch_db:sale_timesheet.timesheet_view_search
 msgid "Non-Billable"
-msgstr "Non-Billable"
+msgstr "Không thể xuất hoá đơn"
 
 #. module: sale_timesheet
 #: model:ir.model.fields,field_description:sale_timesheet.field_timesheets_analysis_report__non_billable_time
