@@ -3224,7 +3224,7 @@ msgstr "Yêu cầu"
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_case_tree_view_oppor
 msgid "Reschedule"
-msgstr "Đặt lại lịch trình"
+msgstr "Đặt lại lịch"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_lead__activity_user_id
