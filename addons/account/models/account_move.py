@@ -419,7 +419,7 @@ class AccountMove(models.Model):
         :return (datetime.date):
         """
         lock_dates = self._get_violated_lock_dates(invoice_date, has_tax)
-        today = fields.Date.today()
+        today = fields.Date.context_today(self)
         highest_name = self.highest_name or self._get_last_sequence(relaxed=True, lock=False)
         number_reset = self._deduce_sequence_number_reset(highest_name)
         if lock_dates:
@@ -4616,10 +4616,15 @@ class AccountMoveLine(models.Model):
             if account in (journal.default_account_id, journal.suspense_account_id):
                 continue
 
-            is_account_control_ok = not journal.account_control_ids or account in journal.account_control_ids
-            is_type_control_ok = not journal.type_control_ids or account.user_type_id in journal.type_control_ids
+            failed_check = False
+            if journal.type_control_ids or journal.account_control_ids:
+                failed_check = True
+                if journal.type_control_ids:
+                    failed_check = account.user_type_id not in journal.type_control_ids
+                if failed_check and journal.account_control_ids:
+                    failed_check = account not in journal.account_control_ids
 
-            if not is_account_control_ok or not is_type_control_ok:
+            if failed_check:
                 raise UserError(_("You cannot use this account (%s) in this journal, check the section 'Control-Access' under "
                                   "tab 'Advanced Settings' on the related journal.", account.display_name))
 

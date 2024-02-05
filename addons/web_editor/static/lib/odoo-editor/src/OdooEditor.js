@@ -61,6 +61,7 @@ import {
     splitTextNode,
     boundariesOut,
     rightLeafOnlyNotBlockPath,
+    lastLeaf,
 } from './utils/utils.js';
 import { editorCommands } from './commands/commands.js';
 import { Powerbox } from './powerbox/Powerbox.js';
@@ -1484,10 +1485,18 @@ export class OdooEditor extends EventTarget {
         });
         if (!range) return;
         let { startContainer: start, startOffset, endContainer: end, endOffset } = range;
+        const startBlock = closestBlock(start);
+        const endBlock = closestBlock(end);
+        // Do not join blocks in the following cases:
+        // 1. start and end share a common ancestor block with the range
+        // 2. selection spans multiple TDs
+        // 3. selection starts at beginning of startBlock and ends at end of
+        //    endBlock
         const doJoin =
-            (closestBlock(start) !== closestBlock(range.commonAncestorContainer) ||
-            closestBlock(end) !== closestBlock(range.commonAncestorContainer))
-            && (closestBlock(start).tagName !== 'TD' && closestBlock(end).tagName !== 'TD');
+            !(startBlock === closestBlock(range.commonAncestorContainer) &&
+                endBlock === closestBlock(range.commonAncestorContainer))
+            && (startBlock.tagName !== 'TD' && endBlock.tagName !== 'TD')
+            && !(firstLeaf(startBlock) === start && lastLeaf(endBlock) === end);
         let next = nextLeaf(end, this.editable);
         const splitEndTd = closestElement(end, 'td') && end.nextSibling;
 
@@ -1509,6 +1518,12 @@ export class OdooEditor extends EventTarget {
         const contents = range.extractContents();
 
         setSelection(start, nodeSize(start));
+        const startLi = closestElement(start, 'li');
+        // Uncheck a list item with empty text in multi-list selection.
+        if (startLi && startLi.classList.contains('o_checked') &&
+            startLi.textContent === '' && closestElement(end, 'li') !== startLi) {
+            startLi.classList.remove('o_checked');
+        }
         range = getDeepRange(this.editable, { sel });
         // Restore unremovables removed by extractContents.
         [...contents.querySelectorAll('*')].filter(isUnremovable).forEach(n => {
@@ -2654,6 +2669,7 @@ export class OdooEditor extends EventTarget {
                     ev.data === ' ' &&
                     selection &&
                     selection.anchorNode &&
+                    isHtmlContentSupported(selection.anchorNode) &&
                     !closestElement(selection.anchorNode).closest('a') &&
                     selection.anchorNode.nodeType === Node.TEXT_NODE &&
                     (!this.commandBar._active ||
@@ -3272,7 +3288,10 @@ export class OdooEditor extends EventTarget {
             link.remove();
             setSelection(...start, ...start, false);
         }
-        if ((files.length || clipboardHtml) && targetSupportsHtmlContent) {
+        if (!targetSupportsHtmlContent) {
+            const text = ev.clipboardData.getData('text/plain');
+            this._applyCommand('insertText', text);
+        } else if (files.length || clipboardHtml) {
             // Differentiate or choose between images and html
             const clipboardElem = document.createElement('template');
             clipboardElem.innerHTML = this._prepareClipboardData(clipboardHtml);

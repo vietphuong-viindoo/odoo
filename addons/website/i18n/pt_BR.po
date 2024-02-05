@@ -3129,7 +3129,7 @@ msgstr "Conteúdo"
 #: model:ir.model.fields,field_description:website.field_res_config_settings__cdn_activated
 #: model:ir.model.fields,field_description:website.field_website__cdn_activated
 msgid "Content Delivery Network (CDN)"
-msgstr "Rede de entrega de conteúdo (CDN: Content Delivery Network)"
+msgstr "Rede de distribuição de conteúdo (CDN: Content Delivery Network)"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -3919,6 +3919,15 @@ msgstr "Exiba este site quando usuários visitarem este domínio"
 #: code:addons/website/static/src/js/backend/res_config_settings.js:0
 #, python-format
 msgid "Do not activate"
+msgstr ""
+
+#. module: website
+#. openerp-web
+#: code:addons/website/static/src/xml/website.editor.xml:0
+#, python-format
+msgid ""
+"Do not copy/paste code you do not understand, this could put your data at "
+"risk."
 msgstr ""
 
 #. module: website
@@ -5524,6 +5533,15 @@ msgid ""
 msgstr ""
 "Se você descartar as edições atuais, todas as alterações não salvas serão "
 "perdidas. Você pode cancelar para retornar ao modo de edição."
+
+#. module: website
+#. openerp-web
+#: code:addons/website/static/src/snippets/s_embed_code/options.js:0
+#, python-format
+msgid ""
+"If you need to add analytics or marketing tags, inject code in your <head> "
+"or <body> instead. The option is in the \"Theme\" tab."
+msgstr ""
 
 #. module: website
 #. openerp-web
@@ -7713,7 +7731,7 @@ msgstr "Parágrafo"
 #. module: website
 #: model:ir.model.fields,field_description:website.field_theme_website_menu__parent_id
 msgid "Parent"
-msgstr "Superior (Conta-pai)"
+msgstr "Principal"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website_menu__parent_id
@@ -7723,7 +7741,7 @@ msgstr "Menu primário"
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website_menu__parent_path
 msgid "Parent Path"
-msgstr "Caminho Pai"
+msgstr "Caminho primário"
 
 #. module: website
 #: model:ir.model.fields,help:website.field_website_visitor__partner_id
@@ -7733,7 +7751,7 @@ msgstr "Parceiro do último usuário logado."
 #. module: website
 #: model:ir.model.fields,help:website.field_website__partner_id
 msgid "Partner-related data of the user"
-msgstr "Dados do usuário relacionado ao Parceiro"
+msgstr "Dados do usuário relacionado à parceria"
 
 #. module: website
 #: model:ir.actions.act_window,name:website.visitor_partner_action
@@ -11478,6 +11496,15 @@ msgstr ""
 #, python-format
 msgid "Your Email"
 msgstr "Seu e-mail"
+
+#. module: website
+#. openerp-web
+#: code:addons/website/static/src/snippets/s_embed_code/000.js:0
+#, python-format
+msgid ""
+"Your Embed Code snippet doesn't have anything to display. Click on Edit to "
+"modify it."
+msgstr ""
 
 #. module: website
 #. openerp-web

@@ -604,7 +604,7 @@ msgstr "Adicionar: "
 #: code:addons/web/static/src/legacy/js/views/signature_dialog.js:0
 #, python-format
 msgid "Adopt Your Signature"
-msgstr "Escolhe a sua assinatura"
+msgstr "Escolher a sua assinatura"
 
 #. module: web
 #. openerp-web
@@ -1333,7 +1333,7 @@ msgstr ""
 #: code:addons/web/static/src/views/helpers/utils.js:0
 #, python-format
 msgid "Count"
-msgstr "Contar"
+msgstr "Total"
 
 #. module: web
 #: model:ir.model.fields,field_description:web.field_base_document_layout__country_id
@@ -1456,7 +1456,7 @@ msgstr "Roxo escuro"
 #. module: web
 #: model_terms:ir.ui.view,arch_db:web.login
 msgid "Database"
-msgstr "Banco de Dados"
+msgstr "Base de dados"
 
 #. module: web
 #. openerp-web
