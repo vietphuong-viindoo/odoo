@@ -400,7 +400,7 @@ msgstr "<strong>Sản phẩm:</strong><br/>"
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.report_mrporder
 msgid "<strong>Quantity Producing:</strong><br/>"
-msgstr "<strong>Số lượng sản xuất:</strong><br/>"
+msgstr "<strong>Số lượng đang sản xuất:</strong><br/>"
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.report_mrp_workorder
