@@ -15129,8 +15129,8 @@ msgid ""
 "Be aware that editing the architecture of a standard view is not advised, since the changes will be overwritten during future module updates.<br/>\n"
 "                        We recommend applying modifications to standard views through inherited views or customization with Odoo Studio."
 msgstr ""
-"Xin lưu ý rằng không nên chỉnh sửa kiến trúc của chế độ xem tiêu chuẩn, vì các thay đổi sẽ bị ghi đè trong các bản cập nhật phân hệ trong tương lai.<br/>\n"
-"                        Chúng tôi khuyên bạn nên sửa đổi chế độ xem tiêu chuẩn thông qua chế độ xem kế thừa hoặc tùy chỉnh với Studio Odoo."
+"Xin lưu ý rằng bạn không nên chỉnh sửa kiến trúc của giao diện tiêu chuẩn vì những thay đổi này sẽ bị ghi đè trong quá trình cập nhật mô-đun trong tương lai.<br/>\n"
+"                        Chúng tôi khuyên bạn nên áp dụng sửa đổi giao diện tiêu chuẩn thông qua giao diện kế thừa hoặc tùy chỉnh với Odoo Studio."
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__ir_asset__directive__before
