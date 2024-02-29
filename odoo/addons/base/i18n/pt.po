@@ -31,6 +31,7 @@
 # Arxi, 2023
 # a75f12d3d37ea5bf159c4b3e85eb30e7_0fa6927, 2023
 # Daniel Reis, 2023
+# NumerSpiral HBG, 2024
 # Rita Bastos, 2024
 # 
 msgid ""
@@ -9826,6 +9827,7 @@ msgid ""
 "Below text serves as a suggestion and doesn’t engage Odoo S.A. "
 "responsibility."
 msgstr ""
+"O texto abaixo serve como sugestão e não é de responsabilidade da Odoo S.A."
 
 #. module: base
 #: model:res.country,name:base.bj
@@ -17581,7 +17583,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_crm_iap_mine
 msgid "Lead Generation"
-msgstr ""
+msgstr "Geração de Leads"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_crm_iap_reveal
