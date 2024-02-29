@@ -1625,6 +1625,10 @@ const Wysiwyg = Widget.extend({
                     });
                     colorpicker.on('color_leave', null, ev => {
                         this.odooEditor.historyRevertCurrentStep();
+                        // Compute the selection to ensure it's preserved
+                        // between selectionchange events in case this gets
+                        // triggered multiple times quickly.
+                        this.odooEditor._computeHistorySelection();
                     });
                     colorpicker.on('enter_key_color_colorpicker', null, () => {
                         $dropdown.children('.dropdown-toggle').dropdown('hide');
@@ -1651,7 +1655,9 @@ const Wysiwyg = Widget.extend({
         if (color && (!ColorpickerWidget.isCSSColor(color) && !weUtils.isColorGradient(color))) {
             color = (eventName === "foreColor" ? 'text-' : 'bg-') + color;
         }
-        const fonts = this.odooEditor.execCommand('applyColor', color, eventName === 'foreColor' ? 'color' : 'backgroundColor', this.lastMediaClicked);
+        let fonts = this.odooEditor.execCommand('applyColor', color, eventName === 'foreColor' ? 'color' : 'backgroundColor', this.lastMediaClicked);
+        // Some nodes returned by applyColor can be removed of the document by the sanitization in historyStep
+        fonts = fonts.filter(element => this.odooEditor.document.contains(element));
 
         if (!this.lastMediaClicked && fonts && fonts.length) {
             // Ensure the selection in the fonts tags, otherwise an undetermined
@@ -1664,7 +1670,7 @@ const Wysiwyg = Widget.extend({
             const range = new Range();
             range.setStart(first, 0);
             range.setEnd(...endPos(last));
-            sel.addRange(range);
+            sel.addRange(getDeepRange(this.odooEditor.editable, { range }));
         }
 
         const hexColor = this._colorToHex(color);
@@ -2071,6 +2077,9 @@ const Wysiwyg = Widget.extend({
                             placement: 'auto',
                         })
                         .popover('show');
+                    // Error has been handled by showing it near the element.
+                    // Do not display a traceback dialog about it.
+                    response.event.preventDefault();
                 });
             });
         });

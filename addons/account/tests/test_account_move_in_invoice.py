@@ -125,6 +125,7 @@ class TestAccountMoveInInvoiceOnchanges(AccountTestInvoicingCommon):
             'amount_tax': 168.0,
             'amount_total': 1128.0,
         }
+        (cls.tax_armageddon + cls.tax_armageddon.children_tax_ids).write({'type_tax_use': 'purchase'})
 
     def setUp(self):
         super(TestAccountMoveInInvoiceOnchanges, self).setUp()
@@ -1255,24 +1256,32 @@ class TestAccountMoveInInvoiceOnchanges(AccountTestInvoicingCommon):
                 'amount_currency': -800.0,
                 'debit': 0.0,
                 'credit': 800.0,
+                'tax_tag_invert': True,
+                'tax_base_amount': 0.0,
             },
             {
                 **self.product_line_vals_2,
                 'amount_currency': -160.0,
                 'debit': 0.0,
                 'credit': 160.0,
+                'tax_tag_invert': True,
+                'tax_base_amount': 0.0,
             },
             {
                 **self.tax_line_vals_1,
                 'amount_currency': -144.0,
                 'debit': 0.0,
                 'credit': 144.0,
+                'tax_tag_invert': True,
+                'tax_base_amount': 960.0,
             },
             {
                 **self.tax_line_vals_2,
                 'amount_currency': -24.0,
                 'debit': 0.0,
                 'credit': 24.0,
+                'tax_tag_invert': True,
+                'tax_base_amount': 160.0,
             },
             {
                 **self.term_line_vals_1,
@@ -1281,6 +1290,8 @@ class TestAccountMoveInInvoiceOnchanges(AccountTestInvoicingCommon):
                 'debit': 1128.0,
                 'credit': 0.0,
                 'date_maturity': move_reversal.date,
+                'tax_tag_invert': False,
+                'tax_base_amount': 0.0,
             },
         ], {
             **self.move_vals,
@@ -1307,24 +1318,32 @@ class TestAccountMoveInInvoiceOnchanges(AccountTestInvoicingCommon):
                 'amount_currency': -800.0,
                 'debit': 0.0,
                 'credit': 800.0,
+                'tax_tag_invert': True,
+                'tax_base_amount': 0,
             },
             {
                 **self.product_line_vals_2,
                 'amount_currency': -160.0,
                 'debit': 0.0,
                 'credit': 160.0,
+                'tax_tag_invert': True,
+                'tax_base_amount': 0,
             },
             {
                 **self.tax_line_vals_1,
                 'amount_currency': -144.0,
                 'debit': 0.0,
                 'credit': 144.0,
+                'tax_tag_invert': True,
+                'tax_base_amount': 960.0,
             },
             {
                 **self.tax_line_vals_2,
                 'amount_currency': -24.0,
                 'debit': 0.0,
                 'credit': 24.0,
+                'tax_tag_invert': True,
+                'tax_base_amount': 160.0,
             },
             {
                 **self.term_line_vals_1,
@@ -1333,6 +1352,8 @@ class TestAccountMoveInInvoiceOnchanges(AccountTestInvoicingCommon):
                 'debit': 1128.0,
                 'credit': 0.0,
                 'date_maturity': move_reversal.date,
+                'tax_tag_invert': False,
+                'tax_base_amount': 0,
             },
         ], {
             **self.move_vals,

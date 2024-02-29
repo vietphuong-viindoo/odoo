@@ -409,7 +409,11 @@ export const editorCommands = {
         const changedElements = [];
         const defaultDirection = editor.options.direction;
         const shouldApplyStyle = !isSelectionFormat(editor.editable, 'switchDirection');
-        for (const block of new Set(selectedTextNodes.map(textNode => closestElement(textNode, 'ul,ol') || closestBlock(textNode)))) {
+        let blocks = new Set(selectedTextNodes.map(textNode => closestElement(textNode, 'ul,ol') || closestBlock(textNode)));
+        blocks.forEach(block => {
+            blocks = [...blocks, ...block.querySelectorAll('ul,ol')];
+        })
+        for (const block of blocks) {
             if (!shouldApplyStyle) {
                 block.removeAttribute('dir');
             } else {
@@ -435,14 +439,23 @@ export const editorCommands = {
                 textAlignStyles.set(block, block.style.textAlign);
             }
         });
+        // Calling `document.execCommand` will cause an input event with the
+        // input type "formatRemove". This would cause a new history step to be
+        // created in the middle of the process, which we prevent here.
+        editor.historyPauseSteps();
         editor.document.execCommand('removeFormat');
         for (const node of getTraversedNodes(editor.editable)) {
-            // The only possible background image on text is the gradient.
-            closestElement(node).style.backgroundImage = '';
+            if (node.nodeType === Node.ELEMENT_NODE && node.hasAttribute('color')) {
+                node.removeAttribute('color');
+            }
+            const element = closestElement(node);
+            element.style.removeProperty('color');
+            element.style.removeProperty('background');
         }
         textAlignStyles.forEach((textAlign, block) => {
             block.style.setProperty('text-align', textAlign);
         });
+        editor.historyUnpauseSteps();
     },
 
     // Align
@@ -520,7 +533,8 @@ export const editorCommands = {
                 cli &&
                 cli.tagName == 'LI' &&
                 !li.has(cli) &&
-                !cli.classList.contains('oe-nested')
+                !cli.classList.contains('oe-nested') &&
+                !cli.classList.contains('nav-item')
             ) {
                 li.add(cli);
             }
@@ -547,11 +561,15 @@ export const editorCommands = {
             if (node.nodeType === Node.TEXT_NODE && !isVisibleStr(node)) {
                 node.remove();
             } else {
-                let block = closestBlock(node);
-                if (!['OL', 'UL'].includes(block.tagName)) {
-                    block = block.closest('li') || block;
-                    const ublock = block.closest('ol, ul');
-                    ublock && getListMode(ublock) == mode ? li.add(block) : blocks.add(block);
+                // Ensure nav-item lists are excluded from toggling
+                const isNavItemList = node => node.nodeName === 'LI' && node.classList.contains('nav-item');
+                let nodeToToggle = closestBlock(node);
+                nodeToToggle = isNavItemList(nodeToToggle) ? node : nodeToToggle;
+                if (!['OL', 'UL'].includes(nodeToToggle.tagName)) {
+                    const closestLi = closestElement(nodeToToggle, 'li');
+                    nodeToToggle = closestLi && !isNavItemList(closestLi) ? closestLi : nodeToToggle;
+                    const ublock = nodeToToggle.nodeName === 'LI' && nodeToToggle.closest('ol, ul');
+                    ublock && getListMode(ublock) == mode ? li.add(nodeToToggle) : blocks.add(nodeToToggle);
                 }
             }
         }

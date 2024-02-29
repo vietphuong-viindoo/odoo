@@ -158,7 +158,7 @@ exports.PosModel = Backbone.Model.extend({
             if(this.config.product_load_background)
                 this.loadProductsBackground();
         }
-        if(this.config.partner_load_background )
+        if(this.config.limited_partners_loading && this.config.partner_load_background )
             this.loadPartnersBackground();
 
         if(this.config.use_proxy){
@@ -3965,12 +3965,6 @@ exports.Order = Backbone.Model.extend({
                 }
                 else if(rounding_method === "DOWN" && rounding_applied < 0 && remaining < 0){
                     rounding_applied += rounding;
-                }else if(rounding_method  == "HALF-UP"){
-                    if(remaining > 0 && utils.float_is_zero(rounding_applied - rounding / -2, this.pos.currency.decimals)){
-                        rounding_applied = rounding / 2;
-                    }else if(remaining < 0 && utils.float_is_zero(rounding_applied - rounding / 2, this.pos.currency.decimals)){
-                        rounding_applied = -rounding /2;
-                    }
                 }
                 return sign * rounding_applied;
             }
