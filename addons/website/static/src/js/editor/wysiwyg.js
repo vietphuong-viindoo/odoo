@@ -4,6 +4,7 @@ odoo.define('website.wysiwyg', function (require) {
 var Wysiwyg = require('web_editor.wysiwyg');
 var snippetsEditor = require('website.snippet.editor');
 let socialMediaOptions = require('@website/snippets/s_social_media/options')[Symbol.for("default")];
+const { cloneContentEls } = require("website.utils");
 
 /**
  * Show/hide the dropdowns associated to the given toggles and allows to wait
@@ -58,6 +59,8 @@ const WebsiteWysiwyg = Wysiwyg.extend({
         // Dropdown menu initialization: handle dropdown openings by hand
         var $dropdownMenuToggles = $editableWindow.$('.o_mega_menu_toggle, #top_menu_container .dropdown-toggle');
         $dropdownMenuToggles.removeAttr('data-bs-toggle').dropdown('dispose');
+        // Since bootstrap 5.1.3, removing bsToggle is not sufficient anymore.
+        $dropdownMenuToggles.siblings(".dropdown-menu").addClass("o_wysiwyg_submenu");
         $dropdownMenuToggles.on('click.wysiwyg_megamenu', ev => {
             this.odooEditor.observerUnactive();
             var $toggle = $(ev.currentTarget);
@@ -207,11 +210,27 @@ const WebsiteWysiwyg = Wysiwyg.extend({
     /**
      * @override
      */
-    _saveElement: async function ($el, context, withLang) {
+    async _saveElement($el, context, withLang, ...rest) {
         var promises = [];
 
-        // Saving a view content
-        await this._super.apply(this, arguments);
+        // Saving Embed Code snippets with <script> in the database, as these
+        // elements are removed in edit mode.
+        if ($el[0].querySelector(".s_embed_code")) {
+            // Copied so as not to impact the actual DOM and prevent scripts
+            // from loading.
+            const $clonedEl = $el.clone(true, true);
+            for (const embedCodeEl of $clonedEl[0].querySelectorAll(".s_embed_code")) {
+                const embedTemplateEl = embedCodeEl.querySelector(".s_embed_code_saved");
+                if (embedTemplateEl) {
+                    embedCodeEl.querySelector(".s_embed_code_embedded")
+                        .replaceChildren(cloneContentEls(embedTemplateEl.content, true));
+                }
+            }
+            await this._super($clonedEl, context, withLang, ...rest);
+        } else {
+            // Saving a view content
+            await this._super.apply(this, arguments);
+        }
 
         // Saving mega menu options
         if ($el.data('oe-field') === 'mega_menu_content') {
@@ -220,7 +239,7 @@ const WebsiteWysiwyg = Wysiwyg.extend({
             // menu itself.
             // FIXME normally removing the 'show' class should not be necessary here
             // TODO check that editor classes are removed here as well
-            var classes = _.without($el.attr('class').split(' '), 'dropdown-menu', 'o_mega_menu', 'show');
+            const classes = _.without($el.attr("class").split(" "), "dropdown-menu", "o_mega_menu", "show", "o_wysiwyg_submenu");
             promises.push(this._rpc({
                 model: 'website.menu',
                 method: 'write',
