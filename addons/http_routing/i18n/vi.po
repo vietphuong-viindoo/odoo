@@ -4,14 +4,15 @@
 #
 # Translators:
 # Wil Odoo, 2023
-#
+# Thi Huong Nguyen, 2024
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-26 21:56+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
-"Last-Translator: Wil Odoo, 2023\n"
+"Last-Translator: Thi Huong Nguyen, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
@@ -73,7 +74,7 @@ msgstr "Có thể bạn đang tìm kiếm một trong những <b>trang phổ bi�
 #. module: http_routing
 #: model_terms:ir.ui.view,arch_db:http_routing.400
 msgid "Oops! Something went wrong."
-msgstr "Oops! Có gì đó sai sai."
+msgstr "Ôi! Đã xảy ra lỗi."
 
 #. module: http_routing
 #: model_terms:ir.ui.view,arch_db:http_routing.http_error_debug
