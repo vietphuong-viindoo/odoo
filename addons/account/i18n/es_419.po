@@ -5,8 +5,8 @@
 # Translators:
 # Martin Trigaux, 2023
 # Iran Villalobos López, 2024
-# Wil Odoo, 2024
 # Patricia Gutiérrez Capetillo <pagc@odoo.com>, 2024
+# Wil Odoo, 2024
 # Fernanda Alvarez, 2024
 # 
 msgid ""
@@ -2123,7 +2123,7 @@ msgstr "Acción"
 #: model:ir.model.fields,field_description:account.field_res_company__message_needaction
 #: model:ir.model.fields,field_description:account.field_res_partner_bank__message_needaction
 msgid "Action Needed"
-msgstr "Acción requerida"
+msgstr "Se requiere una acción"
 
 #. module: account
 #: model:ir.ui.menu,name:account.menu_finance_entries_actions
@@ -4109,7 +4109,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:account.field_account_account_tag__color
 #: model:ir.model.fields,field_description:account.field_account_journal__color
 msgid "Color Index"
-msgstr "Índice de colores"
+msgstr "Índice de color"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_report__column_ids
@@ -8337,7 +8337,7 @@ msgstr "Estadísticas de facturas"
 #: code:addons/account/wizard/account_move_send.py:0
 #, python-format
 msgid "Invoices are being sent in the background."
-msgstr "Se están enviando facturas en segundo plano"
+msgstr "Se están enviando facturas en segundo plano."
 
 #. module: account
 #. odoo-python
@@ -9778,6 +9778,13 @@ msgstr "Neto"
 #: model:ir.model.fields.selection,name:account.selection__account_report__filter_hierarchy__never
 msgid "Never"
 msgstr "Nunca"
+
+#. module: account
+#. odoo-python
+#: code:addons/account/models/account_tax.py:0
+#, python-format
+msgid "New"
+msgstr "Nuevo"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_setup_bank_manual_config__new_journal_name
@@ -11967,6 +11974,14 @@ msgstr ""
 #: model:ir.model,name:account.model_account_resequence_wizard
 msgid "Remake the sequence of Journal Entries."
 msgstr "Haga de nuevo la secuencia de asientos contables."
+
+#. module: account
+#. odoo-python
+#: code:addons/account/models/account_tax.py:0
+#: code:addons/account/models/account_tax.py:0
+#, python-format
+msgid "Removed"
+msgstr "Eliminado"
 
 #. module: account
 #: model:account.account,name:account.1_expense_rent
@@ -16980,6 +16995,13 @@ msgid ""
 msgstr ""
 "No puede crear un movimiento directamente en estado publicado. Cree un "
 "borrador de movimiento y publíquelo después."
+
+#. module: account
+#. odoo-python
+#: code:addons/account/models/account_account.py:0
+#, python-format
+msgid "You cannot create recursive groups."
+msgstr ""
 
 #. module: account
 #. odoo-python

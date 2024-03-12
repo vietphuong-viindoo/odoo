@@ -5034,7 +5034,7 @@ msgstr "Alamat Pelanggan"
 #. module: account
 #: model:ir.actions.act_window,name:account.action_open_sale_payment_items
 msgid "Customer Amounts to Settle"
-msgstr "Jumlah Pelanggan tunuk Dilunasi"
+msgstr "Jumlah Pelanggan untuk Dilunasi"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_payment_form
@@ -9746,6 +9746,13 @@ msgid "Never"
 msgstr "Tidak pernah"
 
 #. module: account
+#. odoo-python
+#: code:addons/account/models/account_tax.py:0
+#, python-format
+msgid "New"
+msgstr "Baru"
+
+#. module: account
 #: model:ir.model.fields,field_description:account.field_account_setup_bank_manual_config__new_journal_name
 msgid "New Journal Name"
 msgstr "New Journal Name"
@@ -11923,6 +11930,14 @@ msgstr ""
 #: model:ir.model,name:account.model_account_resequence_wizard
 msgid "Remake the sequence of Journal Entries."
 msgstr "Buat kembali nomor urut dari Entri Jurnal"
+
+#. module: account
+#. odoo-python
+#: code:addons/account/models/account_tax.py:0
+#: code:addons/account/models/account_tax.py:0
+#, python-format
+msgid "Removed"
+msgstr "Dihapus"
 
 #. module: account
 #: model:account.account,name:account.1_expense_rent
@@ -16886,6 +16901,13 @@ msgid ""
 msgstr ""
 "You cannot create a move already in the posted state. Please create a draft "
 "move and post it after."
+
+#. module: account
+#. odoo-python
+#: code:addons/account/models/account_account.py:0
+#, python-format
+msgid "You cannot create recursive groups."
+msgstr ""
 
 #. module: account
 #. odoo-python
