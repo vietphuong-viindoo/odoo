@@ -6128,7 +6128,7 @@ msgstr "Contáctenos y juntos mejoraremos su empresa."
 #: code:addons/website/static/src/xml/website.seo.xml:0
 #, python-format
 msgid "Keep empty to use default value"
-msgstr "Mantener vacío para usar el valor predeterminado"
+msgstr "Déjelo vacío para usar el valor predeterminado"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_ir_asset__key
@@ -10078,7 +10078,7 @@ msgstr "Consejo: interactúe con sus visitantes para convertirlos en leads"
 #: model:digest.tip,name:website.digest_tip_website_2
 #: model_terms:digest.tip,tip_description:website.digest_tip_website_2
 msgid "Tip: Search Engine Optimization (SEO)"
-msgstr "Consejo: optimización de motores de búsqueda (SEO)"
+msgstr "Consejo: optimización para motores de búsqueda (SEO)"
 
 #. module: website
 #: model:digest.tip,name:website.digest_tip_website_3
@@ -11472,6 +11472,16 @@ msgid ""
 msgstr ""
 "No puede eliminar un sitio web predeterminado %s. En su lugar, intente "
 "cambiar sus ajustes"
+
+#. module: website
+#: code:addons/website/models/website_menu.py:0
+#, python-format
+msgid ""
+"You cannot delete this website menu as this serves as the default parent "
+"menu for new websites (e.g., /shop, /event, ...)."
+msgstr ""
+"No puede eliminar este menú del sitio web, funciona como el menú principal "
+"predeterminado para nuevos sitios web (por ejemplo, /tienda, /evento...)."
 
 #. module: website
 #: code:addons/website/controllers/backend.py:0

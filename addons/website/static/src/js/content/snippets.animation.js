@@ -952,8 +952,11 @@ registry.socialShare = publicWidget.Widget.extend({
     _renderSocial: function (social) {
         var url = this.$el.data('urlshare') || document.URL.split(/[?#]/)[0];
         url = encodeURIComponent(url);
-        var title = document.title.split(" | ")[0];  // get the page title without the company name
-        var hashtags = ' #' + document.title.split(" | ")[1].replace(' ', '') + ' ' + this.hashtags;  // company name without spaces (for hashtag)
+        const titleParts = document.title.split(" | ");
+        const title = titleParts[0]; // Get the page title without the company name
+        const hashtags = titleParts.length === 1
+            ? ` ${this.hashtags}`
+            : ` #${titleParts[1].replace(" ", "")} ${this.hashtags}`; // Company name without spaces (for hashtag)
         var socialNetworks = {
             'facebook': 'https://www.facebook.com/sharer/sharer.php?u=' + url,
             'twitter': 'https://twitter.com/intent/tweet?original_referer=' + url + '&text=' + encodeURIComponent(title + hashtags + ' - ') + url,
@@ -1476,9 +1479,13 @@ registry.WebsiteAnimate = publicWidget.Widget.extend({
             // Cookies bar might be opened and considered as a modal but it is
             // not really one (eg 'discrete' layout), and should not be used as
             // scrollTop value.
-            const scrollTop = document.body.classList.contains("modal-open") ?
-                this.$target.find('.modal:visible').scrollTop() :
-                this.$scrollingElement.scrollTop();
+            // Only consider the `scrollTop` of modals opened inside `this.$target`.
+            const $openedModal = document.body.classList.contains("modal-open")
+                && this.$target.find(".modal:visible");
+            const scrollTop = $openedModal.length
+                ? $openedModal.scrollTop()
+                : this.$scrollingElement.scrollTop();
+
             const elTop = this._getElementOffsetTop($el[0]) - scrollTop;
 
             const visible = this.windowsHeight > (elTop + elOffset) && 0 < (elTop + elHeight - elOffset);

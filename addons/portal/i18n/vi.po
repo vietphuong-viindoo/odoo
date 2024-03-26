@@ -83,7 +83,7 @@ msgstr "<option value=\"\">Quốc gia...</option>"
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_details
 msgid "<option value=\"\">select...</option>"
-msgstr ""
+msgstr "<option value=\"\">chọn...</option>"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_details
@@ -427,7 +427,7 @@ msgstr ""
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_res_config_settings__portal_allow_api_keys
 msgid "Customer API Keys"
-msgstr ""
+msgstr "Khoá API của khách hàng"
 
 #. module: portal
 #: model:ir.model.fields,help:portal.field_portal_mixin__access_url
@@ -632,8 +632,8 @@ msgid ""
 "It is very important that this description be clear\n"
 "                and complete,"
 msgstr ""
-"Điều quan trọng là mô tả này và hoàn chỉnh và hết sức\n"
-"                rõ ràng,"
+"Điều quan trọng là phần mô tả này phải rõ ràng\n"
+"                 và đầy đủ,"
 
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_portal_share____last_update
@@ -659,7 +659,7 @@ msgstr "Cập nhật lần cuối"
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_portal_wizard_user__login_date
 msgid "Latest Authentication"
-msgstr "Xác thực gần nhất"
+msgstr "Lần xác thực gần nhất"
 
 #. module: portal
 #. openerp-web
@@ -1056,6 +1056,8 @@ msgid ""
 "The template \"Portal: new user\" not found for sending email to the portal "
 "user."
 msgstr ""
+"Không tìm thấy mẫu \"Cổng thông tin: người dùng mới\" để gửi email đến người"
+" dùng cổng thông tin."
 
 #. module: portal
 #. openerp-web
