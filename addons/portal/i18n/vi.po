@@ -23,7 +23,7 @@ msgstr ""
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_security
 msgid "\" to validate your action."
-msgstr ""
+msgstr "\" để xác thực hành động của bạn."
 
 #. module: portal
 #. odoo-javascript
@@ -50,21 +50,23 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:portal.my_account_link
 msgid "<i class=\"fa fa-fw fa-id-card-o me-1 small text-primary\"/> My Account"
 msgstr ""
+"<i class=\"fa fa-fw fa-id-card-o me-1 small text-primary\"/> Tài khoản của "
+"tôi"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.user_dropdown
 msgid "<i class=\"fa fa-fw fa-sign-out me-1 small text-primary\"/> Logout"
-msgstr ""
+msgstr "<i class=\"fa fa-fw fa-sign-out me-1 small text-primary\"/> Đăng xuất"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.user_dropdown
 msgid "<i class=\"fa fa-fw fa-th me-1 small text-primary\"/> Apps"
-msgstr ""
+msgstr "<i class=\"fa fa-fw fa-th me-1 small text-primary\"/> Ứng dụng"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.side_content
 msgid "<i class=\"fa fa-pencil\"/> Edit information"
-msgstr ""
+msgstr "<i class=\"fa fa-pencil\"/> Chỉnh sửa thông tin"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_back_in_edit_mode
@@ -76,12 +78,14 @@ msgstr "<i class=\"oi oi-arrow-right me-1\"/>Trở lại chế độ chỉnh s�
 msgid ""
 "<i class=\"oi oi-chevron-left\" role=\"img\" aria-label=\"Previous\" "
 "title=\"Previous\"/>"
-msgstr ""
+msgstr "<i class=\"oi oi-chevron-left\" role=\"img\" aria-label=\"Trước\" title=\"Trước\"/>"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.record_pager
 msgid "<i class=\"oi oi-chevron-right\" role=\"img\" aria-label=\"Next\" title=\"Next\"/>"
 msgstr ""
+"<i class=\"oi oi-chevron-right\" role=\"img\" aria-label=\"Tiếp theo\" "
+"title=\"Tiếp theo\"/>"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_security
@@ -96,7 +100,7 @@ msgstr "<option value=\"\">Quốc gia...</option>"
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_details_fields
 msgid "<option value=\"\">select...</option>"
-msgstr ""
+msgstr "<option value=\"\">chọn...</option>"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_details_fields
@@ -106,6 +110,10 @@ msgid ""
 "                <br/>Please contact us directly for that operation.\n"
 "            </small>"
 msgstr ""
+"<small class=\"form-text text-muted\">\n"
+"                  Không được phép đổi tên công ty, mã số thuế GTGT và quốc gia khi (các) chứng từ đã được xuất cho tài khoản của bạn.\n"
+"                  <br/>Vui lòng liên hệ trực tiếp với chúng tôi để thực hiện thao tác này.\n"
+"              </small>"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.pager
@@ -113,26 +121,30 @@ msgid ""
 "<span class=\"fa fa-chevron-left\" role=\"img\" aria-label=\"Previous\" "
 "title=\"Previous\"/>"
 msgstr ""
+"<span class=\"fa fa-chevron-left\" role=\"img\" aria-label=\"Trước\" "
+"title=\"Trước\"/>"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.pager
 msgid "<span class=\"fa fa-chevron-right\" role=\"img\" aria-label=\"Next\" title=\"Next\"/>"
 msgstr ""
+"<span class=\"fa fa-chevron-right\" role=\"img\" aria-label=\"Tiếp theo\" "
+"title=\"Tiếp theo\"/>"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_searchbar
 msgid "<span class=\"small me-1 navbar-text\">Filter By:</span>"
-msgstr ""
+msgstr "<span class=\"small me-1 navbar-text\">Lọc theo:</span>"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_searchbar
 msgid "<span class=\"small me-1 navbar-text\">Group By:</span>"
-msgstr ""
+msgstr "<span class=\"small me-1 navbar-text\">Nhóm theo:</span>"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_searchbar
 msgid "<span class=\"small me-1 navbar-text\">Sort By:</span>"
-msgstr ""
+msgstr "<span class=\"small me-1 navbar-text\">Sắp xếp theo:</span>"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_share_template
@@ -304,7 +316,7 @@ msgstr "Mô tả Khóa API"
 #: code:addons/portal/static/src/js/portal_security.js:0
 #, python-format
 msgid "API Key Ready"
-msgstr "Khóa API đã sẵn sàng"
+msgstr "Mã khóa API đã sẵn sàng"
 
 #. module: portal
 #. odoo-javascript
@@ -351,7 +363,7 @@ msgstr "Thêm nội dung bổ sung để hiển thị trong email"
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_home
 msgid "Add, remove or modify your addresses"
-msgstr ""
+msgstr "Thêm, xóa hoặc chỉnh sửa địa chỉ của bạn"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_security
@@ -361,17 +373,17 @@ msgstr "Đã thêm vào"
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_home
 msgid "Addresses"
-msgstr ""
+msgstr "Địa chỉ"
 
 #. module: portal
 #: model:ir.model.fields.selection,name:portal.selection__portal_wizard_user__email_state__exist
 msgid "Already Registered"
-msgstr ""
+msgstr "Đã đăng ký"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_security
 msgid "Are you sure you want to do this?"
-msgstr ""
+msgstr "Bạn có chắc chắn muốn thực hiện việc này không?"
 
 #. module: portal
 #. odoo-javascript
@@ -400,9 +412,9 @@ msgid ""
 "Changing VAT number is not allowed once document(s) have been issued for "
 "your account. Please contact us directly for this operation."
 msgstr ""
-"Thay đổi mã số thuế GTGT thì không được phép khi mà đã có tài liệu liên quan"
-" được phát hành cho tài khoản của bạn. Vui lòng liên hệ trực tiếp với chúng "
-"tôi để điều chỉnh."
+"Không được phép đổi mã số thuế GTGT khi (các) chứng từ đã được xuất cho tài "
+"khoản của bạn. Vui lòng liên hệ trực tiếp với chúng tôi để thực hiện thao "
+"tác này."
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_details_fields
@@ -410,9 +422,9 @@ msgid ""
 "Changing company name is not allowed once document(s) have been issued for "
 "your account. Please contact us directly for this operation."
 msgstr ""
-"Thay đổi tên công ty thì không được phép khi mà đã có tài liệu liên quan "
-"được phát hành cho tài khoản của bạn. Vui lòng liên hệ trực tiếp với chúng "
-"tôi liên quan đến vấn đề này."
+"Không được phép đổi tên công ty khi (các) chứng từ đã được xuất cho tài "
+"khoản của bạn. Vui lòng liên hệ trực tiếp với chúng tôi để thực hiện thao "
+"tác này."
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_details_fields
@@ -420,6 +432,8 @@ msgid ""
 "Changing the country is not allowed once document(s) have been issued for "
 "your account. Please contact us directly for this operation."
 msgstr ""
+"Không được phép đổi quốc gia khi (các) chứng từ đã được xuất cho tài khoản "
+"của bạn. Vui lòng liên hệ trực tiếp với chúng tôi để thực hiện thao tác này."
 
 #. module: portal
 #. odoo-javascript
@@ -464,7 +478,7 @@ msgstr "Cài đặt cấu hình"
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_home
 msgid "Configure your connection parameters"
-msgstr ""
+msgstr "Cấu hình các tham số kết nối của bạn"
 
 #. module: portal
 #. odoo-javascript
@@ -484,7 +498,7 @@ msgstr "Xác nhận mật khẩu"
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_home
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_security
 msgid "Connection &amp; Security"
-msgstr ""
+msgstr "Kết nối &amp; Bảo mật"
 
 #. module: portal
 #: model:ir.model,name:portal.model_res_partner
@@ -555,7 +569,7 @@ msgstr ""
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_res_config_settings__portal_allow_api_keys
 msgid "Customer API Keys"
-msgstr ""
+msgstr "Mã khoá API của khách hàng"
 
 #. module: portal
 #: model:ir.model.fields,help:portal.field_portal_mixin__access_url
@@ -565,7 +579,7 @@ msgstr "URL Cổng thông tin Khách hàng"
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.res_config_settings_view_form
 msgid "Customers can generate API Keys"
-msgstr ""
+msgstr "Khách hàng có thể tạo mã khóa API"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_share_template
@@ -582,7 +596,7 @@ msgstr "Xoá"
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_security
 msgid "Delete Account"
-msgstr ""
+msgstr "Xoá tài khoản"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_security
@@ -597,7 +611,7 @@ msgstr "Chi tiết"
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_security
 msgid "Developer API Keys"
-msgstr "Developer API Keys"
+msgstr "Mã khoá API của nhà phát triển"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_security
@@ -608,6 +622,11 @@ msgid ""
 "                                            This action cannot be undone.\n"
 "                                        </b>"
 msgstr ""
+"Vô hiệu hóa tài khoản của bạn để ngăn chặn mọi hoạt động đăng nhập tiếp theo.<br/>\n"
+"                                        <b>\n"
+"                                            <i class=\"fa fa-exclamation-triangle text-danger\"/>\n"
+"                                            Bạn không thể hoàn tác hành động này.\n"
+"                                        </b>"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_details
@@ -772,7 +791,7 @@ msgstr "Thư mời"
 #. module: portal
 #: model:mail.template,description:portal.mail_template_data_portal_welcome
 msgid "Invitation email to contacts to create a user account"
-msgstr ""
+msgstr "Email mời đến liên hệ để tạo tài khoản người dùng"
 
 #. module: portal
 #. odoo-python
@@ -780,7 +799,7 @@ msgstr ""
 #: code:addons/portal/wizard/portal_share.py:0
 #, python-format
 msgid "Invitation to access %s"
-msgstr ""
+msgstr "Lời mời truy cập %s"
 
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_portal_wizard_user__is_internal
@@ -800,8 +819,8 @@ msgid ""
 "It is very important that this description be clear\n"
 "                and complete,"
 msgstr ""
-"Điều quan trọng là mô tả này và hoàn chỉnh và hết sức\n"
-"                rõ ràng,"
+"Điều quan trọng là phần mô tả này phải rõ ràng\n"
+"                 và đầy đủ,"
 
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_portal_share__write_uid
@@ -820,7 +839,7 @@ msgstr "Cập nhật lần cuối"
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_portal_wizard_user__login_date
 msgid "Latest Authentication"
-msgstr "Xác thực gần nhất"
+msgstr "Lần xác thực gần nhất"
 
 #. module: portal
 #. odoo-javascript
@@ -870,12 +889,12 @@ msgstr ""
 #: code:addons/portal/controllers/portal.py:0
 #, python-format
 msgid "Multi company reports are not supported."
-msgstr ""
+msgstr "Báo cáo đa công ty không được hỗ trợ."
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_layout
 msgid "My account"
-msgstr ""
+msgstr "Tài khoản của tôi"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_details_fields
@@ -913,7 +932,7 @@ msgstr "Tiếp"
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_home
 msgid "No Documents to display"
-msgstr ""
+msgstr "Không có chứng từ nào để hiển thị"
 
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_portal_share__note
@@ -1079,7 +1098,7 @@ msgstr "Thu hồi Quyền truy cập"
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_security
 msgid "Revoke All Sessions"
-msgstr ""
+msgstr "Thu hồi tất cả các phiên"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_details
@@ -1224,7 +1243,7 @@ msgstr "Liên hệ \"%s\" không có email hợp lệ."
 #: code:addons/portal/wizard/portal_wizard.py:0
 #, python-format
 msgid "The contact \"%s\" has the same email as an existing user"
-msgstr ""
+msgstr "Liên hệ \"%s\" có email trùng với email của một người dùng đang tồn tại"
 
 #. module: portal
 #. odoo-python
@@ -1269,6 +1288,8 @@ msgstr "Đối tác \"%s\" đã được cấp quyền truy cập portal rồi."
 #, python-format
 msgid "The partner \"%s\" has no portal access or is internal."
 msgstr ""
+"Đối tác \"%s\" không có quyền truy cập cổng thông tin hoặc là người dùng nội"
+" bộ."
 
 #. module: portal
 #. odoo-python
@@ -1278,6 +1299,8 @@ msgid ""
 "The template \"Portal: new user\" not found for sending email to the portal "
 "user."
 msgstr ""
+"Không tìm thấy mẫu \"Cổng thông tin: người dùng mới\" để gửi email đến người"
+" dùng cổng thông tin."
 
 #. module: portal
 #. odoo-javascript
@@ -1312,7 +1335,7 @@ msgstr ""
 msgid ""
 "This text is included at the end of the email sent to new portal users."
 msgstr ""
-"Đoạn văn này sẽ được bao gồm ở cuối email gửi đến người dùng portal mới."
+"Nội dung này sẽ được bao gồm ở cuối email gửi đến người dùng portal mới."
 
 #. module: portal
 #: model:ir.model.fields,help:portal.field_portal_wizard__welcome_message
@@ -1330,7 +1353,7 @@ msgstr "Bật/Tắt bộ lọc"
 #: code:addons/portal/static/src/xml/portal_security.xml:0
 #, python-format
 msgid "Type in your password to confirm :"
-msgstr ""
+msgstr "Nhập mật khẩu của bạn để xác nhận:"
 
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_portal_wizard_user__user_id
@@ -1476,6 +1499,8 @@ msgid ""
 "You are about to log out from all devices that currently have access to this"
 " user's account."
 msgstr ""
+"Bạn sắp đăng xuất khỏi tất cả thiết bị hiện có quyền truy cập vào tài khoản "
+"của người dùng này."
 
 #. module: portal
 #. odoo-python
@@ -1549,7 +1574,7 @@ msgstr "đầy đủ quyền truy cập"
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_share_template
 msgid "has invited you to access the following"
-msgstr ""
+msgstr "đã mời bạn truy cập vào"
 
 #. module: portal
 #. odoo-javascript

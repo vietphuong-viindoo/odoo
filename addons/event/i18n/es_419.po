@@ -4,8 +4,8 @@
 # 
 # Translators:
 # Iran Villalobos López, 2024
-# Fernanda Alvarez, 2024
 # Wil Odoo, 2024
+# Fernanda Alvarez, 2024
 # Patricia Gutiérrez Capetillo <pagc@odoo.com>, 2024
 # 
 msgid ""
@@ -2232,7 +2232,7 @@ msgstr "Empresa"
 #: code:addons/event/static/src/client_action/event_barcode.xml:0
 #, python-format
 msgid "Company Logo"
-msgstr "Logo de la empresa"
+msgstr "Logotipo de la empresa"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_registration__company_name
@@ -2603,7 +2603,7 @@ msgstr "Organizador del evento"
 #: model_terms:ir.ui.view,arch_db:event.view_event_registration_form
 #: model_terms:ir.ui.view,arch_db:event.view_registration_search
 msgid "Event Registration"
-msgstr "Registro del evento"
+msgstr "Registro al evento"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_registration__event_user_id
@@ -3746,14 +3746,14 @@ msgstr "Número de teléfono"
 #: model_terms:event.event,ticket_instructions:event.event_0
 msgid ""
 "Please come <b>at least</b> 30 minutes before the beginning of the event."
-msgstr "Venga <b>por lo menos</b> 30 minutos antes del inicio del evento."
+msgstr "Venga <b>al menos</b> 30 minutos antes del inicio del evento."
 
 #. module: event
 #. odoo-python
 #: code:addons/event/models/res_config_settings.py:0
 #, python-format
 msgid "Please enter a valid base64 secret"
-msgstr "Introduzca una base64 secreta válida"
+msgstr "Introduzca un secreto de base64 válido"
 
 #. module: event
 #: model_terms:event.event,description:event.event_2

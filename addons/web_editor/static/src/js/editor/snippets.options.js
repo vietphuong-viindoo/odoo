@@ -4438,8 +4438,10 @@ const SnippetOptionWidget = Widget.extend({
                 return;
             }
 
+            this.__willReload = requiresReload;
             // Call widget option methods and update $target
             await this._select(previewMode, widget);
+            this.__willReload = false;
 
             // If it is not preview mode, the user selected the option for good
             // (so record the action)
@@ -4641,8 +4643,8 @@ registry.sizing = SnippetOptionWidget.extend({
             self.options.wysiwyg.odooEditor.automaticStepUnactive('resizing');
 
             const cursor = $handle.css('cursor') + '-important';
-            const $body = $(this.ownerDocument.body);
-            $body.addClass(cursor);
+            const $iframeWindow = $(this.ownerDocument.defaultView);
+            $iframeWindow[0].document.body.classList.add(cursor);
             self.$overlay.removeClass('o_handlers_idle');
 
             const bodyMouseMove = function (ev) {
@@ -4688,9 +4690,9 @@ registry.sizing = SnippetOptionWidget.extend({
                 }
             };
             const bodyMouseUp = function () {
-                $body.off('mousemove', bodyMouseMove);
-                $body.off('mouseup', bodyMouseUp);
-                $body.removeClass(cursor);
+                $iframeWindow.off("mousemove", bodyMouseMove);
+                $iframeWindow.off("mouseup", bodyMouseUp);
+                $iframeWindow[0].document.body.classList.remove(cursor);
                 self.$overlay.addClass('o_handlers_idle');
                 $handle.removeClass('o_active');
 
@@ -4729,8 +4731,8 @@ registry.sizing = SnippetOptionWidget.extend({
                     }});
                 }, 0);
             };
-            $body.on('mousemove', bodyMouseMove);
-            $body.on('mouseup', bodyMouseUp);
+            $iframeWindow.on("mousemove", bodyMouseMove);
+            $iframeWindow.on("mouseup", bodyMouseUp);
         });
 
         for (const [key, value] of Object.entries(resizeValues)) {
@@ -6523,7 +6525,6 @@ registry.ImageTools = ImageHandlerOption.extend({
      * @see this.selectClass for parameters
      */
     async crop() {
-        this.trigger_up('hide_overlay');
         this.trigger_up('disable_loading_effect');
         const img = this._getImg();
         const document = this.$el[0].ownerDocument;
@@ -7411,6 +7412,10 @@ registry.ImageTools = ImageHandlerOption.extend({
      * @returns {boolean}
      */
     _canHaveHoverEffect() {
+        // TODO Remove this comment in master:
+        // Note that this method does not ensure that a shape can be applied,
+        // which is required for hover effects. It should be preferably merged
+        // with the `_isImageSupportedForShapes()` method.
         return !this._isDeviceShape() && !this._isAnimatedShape();
     },
     /**
@@ -7570,6 +7575,16 @@ registry.ImageTools = ImageHandlerOption.extend({
                 clearTimeout(this.hoverTimeoutId);
             }
         }
+    },
+    /**
+     * Checks if a shape can be applied on the target.
+     *
+     * @private
+     * @returns {boolean}
+     */
+    _isImageSupportedForShapes() {
+        const imgEl = this._getImg();
+        return imgEl.dataset.originalId && this._isImageSupportedForProcessing(imgEl);
     },
 
     //--------------------------------------------------------------------------
@@ -7974,7 +7989,11 @@ registry.BackgroundImage = SnippetOptionWidget.extend({
             this.$target.addClass('oe_img_bg o_bg_img_center');
         } else {
             delete parts.url;
-            this.$target.removeClass('oe_img_bg o_bg_img_center');
+            this.$target[0].classList.remove(
+                "oe_img_bg",
+                "o_bg_img_center",
+                "o_modified_image_to_save",
+            );
         }
         const combined = backgroundImagePartsToCss(parts);
         this.$target.css('background-image', combined);

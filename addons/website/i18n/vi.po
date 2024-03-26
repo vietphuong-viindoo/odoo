@@ -3,17 +3,17 @@
 # 	* website
 #
 # Translators:
-# Thi Huong Nguyen, 2023
 # Martin Trigaux, 2024
 # Wil Odoo, 2024
-#
+# Thi Huong Nguyen, 2024
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-29 10:44+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
-"Last-Translator: Wil Odoo, 2024\n"
+"Last-Translator: Thi Huong Nguyen, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
@@ -3955,6 +3955,13 @@ msgid "Default Access Rights"
 msgstr "Quyền Truy cập Mặc định"
 
 #. module: website
+#. odoo-javascript
+#: code:addons/website/static/src/snippets/s_searchbar/options.js:0
+#, python-format
+msgid "Default Input Style"
+msgstr ""
+
+#. module: website
 #: model:ir.model.fields,field_description:website.field_website__default_lang_id
 msgid "Default Language"
 msgstr "Ngôn ngữ Mặc định"
@@ -7274,7 +7281,10 @@ msgid "Library"
 msgstr "Thư viện"
 
 #. module: website
+#. odoo-javascript
+#: code:addons/website/static/src/snippets/s_searchbar/options.js:0
 #: model_terms:ir.ui.view,arch_db:website.s_faq_collapse_options
+#, python-format
 msgid "Light"
 msgstr "Sáng"
 
@@ -9433,7 +9443,7 @@ msgstr "Theo dõi tiến trình"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_progress_bar
 msgid "Progress bar"
-msgstr ""
+msgstr "Thanh tiến trình"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
@@ -10955,8 +10965,11 @@ msgid "Structure"
 msgstr "Cấu trúc"
 
 #. module: website
+#. odoo-javascript
+#: code:addons/website/static/src/snippets/s_searchbar/options.js:0
 #: model_terms:ir.ui.view,arch_db:website.s_tabs_options
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
+#, python-format
 msgid "Style"
 msgstr "Phong cách"
 
