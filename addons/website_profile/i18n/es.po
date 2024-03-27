@@ -377,7 +377,7 @@ msgstr "<u>aquí</u>"
 #. module: website_profile
 #: model_terms:ir.ui.view,arch_db:website_profile.user_profile_content
 msgid "About"
-msgstr "Acerca de"
+msgstr "Sobre"
 
 #. module: website_profile
 #: model_terms:ir.ui.view,arch_db:website_profile.users_page_header
@@ -452,7 +452,7 @@ msgstr "Foro: verificación por correo electrónico"
 #. module: website_profile
 #: model:ir.model,name:website_profile.model_gamification_badge
 msgid "Gamification Badge"
-msgstr "Insignia de gamificación"
+msgstr "Insignia de ludificación"
 
 #. module: website_profile
 #: model_terms:ir.ui.view,arch_db:website_profile.profile_next_rank_card
@@ -492,7 +492,7 @@ msgstr "Karma mínimo para ver el perfil de otro usuario"
 #. module: website_profile
 #: model_terms:ir.ui.view,arch_db:website_profile.user_profile_sub_nav
 msgid "Mobile sub-nav"
-msgstr "Sub-navegación móvil"
+msgstr "Subnavegación móvil"
 
 #. module: website_profile
 #: model_terms:ir.ui.view,arch_db:website_profile.user_profile_content

@@ -5,8 +5,8 @@
 # Translators:
 # Martin Trigaux, 2023
 # Iran Villalobos López, 2024
-# Patricia Gutiérrez Capetillo <pagc@odoo.com>, 2024
 # Wil Odoo, 2024
+# Patricia Gutiérrez Capetillo <pagc@odoo.com>, 2024
 # Fernanda Alvarez, 2024
 # 
 msgid ""
@@ -9859,7 +9859,7 @@ msgstr "No"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_payment_search
 msgid "No Bank Matching"
-msgstr "No hay conciliación bancaria"
+msgstr "Sin conciliación bancaria"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_move_line_filter
@@ -11307,6 +11307,17 @@ msgstr "Por favor, cree cuentas nuevas desde el menú del plan de cuentas."
 #, python-format
 msgid "Please define a payment method line on your payment."
 msgstr "Por favor, defina una línea de método de pago en su pago. "
+
+#. module: account
+#. odoo-python
+#: code:addons/account/models/account_payment.py:0
+#, python-format
+msgid ""
+"The selected payment method is not available for this payment, please select"
+" the payment method again."
+msgstr ""
+"El método de pago seleccionado no está disponible para este pago, elija "
+"otro."
 
 #. module: account
 #. odoo-python
@@ -17001,7 +17012,7 @@ msgstr ""
 #: code:addons/account/models/account_account.py:0
 #, python-format
 msgid "You cannot create recursive groups."
-msgstr ""
+msgstr "No puede crear grupos recursivos."
 
 #. module: account
 #. odoo-python
@@ -17033,6 +17044,15 @@ msgid ""
 msgstr ""
 "No puede eliminar este asiento pues ya consumió un número de secuencia y no "
 "es el último de la cadena. Debe revertirlo en su lugar."
+
+#. module: account
+#. odoo-python
+#: code:addons/account/models/ir_actions_report.py:0
+#, python-format
+msgid ""
+"You cannot delete this report (%s), it is used by the accounting PDF "
+"generation engine."
+msgstr ""
 
 #. module: account
 #. odoo-python

@@ -109,7 +109,7 @@ msgstr "'Etiquetas de Productos - %s' % (object.name)"
 #. module: product
 #: model:ir.actions.report,print_report_name:product.report_product_packaging
 msgid "'Products packaging - %s' % (object.name)"
-msgstr "'Embalaje de productos - %s' % (object.name)"
+msgstr "'Empaquetados de productos - %s' % (object.name)"
 
 #. module: product
 #. odoo-python
@@ -294,8 +294,8 @@ msgid ""
 "Customer Invoice/Credit Note"
 msgstr ""
 "Una descripción del producto que quiera comunicar a sus clientes. Esta "
-"descripción se copiará a cada pedido de venta, albarán de salida y factura "
-"de cliente."
+"descripción se copiará a cada orden de venta/entrega y factura/factura "
+"rectificativa del cliente."
 
 #. module: product
 #. odoo-python
@@ -629,8 +629,8 @@ msgid ""
 "a transfer in the Barcode app to move all the contained units"
 msgstr ""
 "Código de barras utilizado para la identificación de los empaquetados. "
-"Escaneelo desde una transferencia en la aplicación Código de barras para "
-"mover todas las unidades contenidas."
+"Escaneelo desde un traslado en la aplicación Código de barras para mover "
+"todas las unidades contenidas."
 
 #. module: product
 #. odoo-python
@@ -1780,7 +1780,7 @@ msgstr "Última actualización el"
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_template_search_view
 msgid "Late Activities"
-msgstr "Actividades tardías"
+msgstr "Actividades retrasadas"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_supplierinfo__delay
@@ -2154,6 +2154,10 @@ msgid ""
 "\n"
 "Invalid URL: %s"
 msgstr ""
+"Introduzca una URL válida..\n"
+"Ejemplo: https://www.odoo.com\n"
+"\n"
+"URL no válida: %s"
 
 #. module: product
 #. odoo-python
@@ -2488,14 +2492,14 @@ msgstr "Empaquetado del producto"
 #. module: product
 #: model:ir.actions.report,name:product.report_product_packaging
 msgid "Product Packaging (PDF)"
-msgstr "Embalaje del Producto (PDF)"
+msgstr "Empaquetado del producto (PDF)"
 
 #. module: product
 #: model:ir.actions.act_window,name:product.action_packaging_view
 #: model:ir.model.fields,field_description:product.field_res_config_settings__group_stock_packaging
 #: model_terms:ir.ui.view,arch_db:product.product_packaging_tree_view
 msgid "Product Packagings"
-msgstr "Empaquetados del producto"
+msgstr "Empaquetados de productos"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_category__product_properties_definition
@@ -2562,7 +2566,7 @@ msgstr "Plantilla del producto"
 #: model:ir.model.fields,field_description:product.field_product_product__product_tooltip
 #: model:ir.model.fields,field_description:product.field_product_template__product_tooltip
 msgid "Product Tooltip"
-msgstr "Tooltip del producto"
+msgstr "Información sobre herramientas del producto"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product__detailed_type
