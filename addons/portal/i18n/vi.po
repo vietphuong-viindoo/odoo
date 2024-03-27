@@ -25,7 +25,7 @@ msgstr ""
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_security
 msgid "\" to validate your action."
-msgstr "\" để xác nhạn hành động của bạn."
+msgstr "\" để xác thực hành động của bạn."
 
 #. module: portal
 #. odoo-javascript
@@ -123,16 +123,20 @@ msgid ""
 "<span class=\"fa fa-chevron-left\" role=\"img\" aria-label=\"Previous\" "
 "title=\"Previous\"/>"
 msgstr ""
+"<span class=\"fa fa-chevron-left\" role=\"img\" aria-label=\"Trước\" "
+"title=\"Trước\"/>"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.pager
 msgid "<span class=\"fa fa-chevron-right\" role=\"img\" aria-label=\"Next\" title=\"Next\"/>"
 msgstr ""
+"<span class=\"fa fa-chevron-right\" role=\"img\" aria-label=\"Tiếp theo\" "
+"title=\"Tiếp theo\"/>"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_searchbar
 msgid "<span class=\"small me-1 navbar-text\">Filter By:</span>"
-msgstr "<span class=\"small me-1 navbar-text\">Bộ lọc:</span>"
+msgstr "<span class=\"small me-1 navbar-text\">Lọc theo:</span>"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_searchbar
@@ -142,7 +146,7 @@ msgstr "<span class=\"small me-1 navbar-text\">Nhóm theo:</span>"
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_searchbar
 msgid "<span class=\"small me-1 navbar-text\">Sort By:</span>"
-msgstr "<span class=\"small me-1 navbar-text\">Xếp theo:</span>"
+msgstr "<span class=\"small me-1 navbar-text\">Sắp xếp theo:</span>"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_share_template
@@ -296,12 +300,12 @@ msgstr "Đã thêm vào"
 #. module: portal
 #: model:ir.model.fields.selection,name:portal.selection__portal_wizard_user__email_state__exist
 msgid "Already Registered"
-msgstr "Đã đăng ký rồi"
+msgstr "Đã đăng ký"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_security
 msgid "Are you sure you want to do this?"
-msgstr "Bạn có chắc chắn muốn thực hiện?"
+msgstr "Bạn có chắc chắn muốn thực hiện hành động này không?"
 
 #. module: portal
 #. odoo-javascript
@@ -475,7 +479,7 @@ msgstr ""
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_res_config_settings__portal_allow_api_keys
 msgid "Customer API Keys"
-msgstr "Khóa API khách hàng"
+msgstr "Khoá API của khách hàng"
 
 #. module: portal
 #: model:ir.model.fields,help:portal.field_portal_mixin__access_url
@@ -497,7 +501,7 @@ msgstr "Xoá"
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_security
 msgid "Delete Account"
-msgstr "Xóa tài khoản"
+msgstr "Xoá tài khoản"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_security
@@ -527,7 +531,7 @@ msgstr ""
 "Vô hiệu tài khoản của bạn, ngăn chặn đăng nhập trong tương lai.<br/>\n"
 "                                        <b>\n"
 "                                            <i class=\"fa fa-exclamation-triangle text-danger\"/>\n"
-"                                            Hành động này không thể đảo ngược.\n"
+"                                            Bạn không thể hoàn tác hành động này.\n"
 "                                        </b>"
 
 #. module: portal
@@ -722,8 +726,8 @@ msgid ""
 "It is very important that this description be clear\n"
 "                and complete,"
 msgstr ""
-"Điều quan trọng là mô tả này và hoàn chỉnh và hết sức\n"
-"                rõ ràng,"
+"Điều quan trọng là phần mô tả này phải rõ ràng\n"
+"                 và đầy đủ,"
 
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_portal_share____last_update
@@ -749,7 +753,7 @@ msgstr "Cập nhật lần cuối"
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_portal_wizard_user__login_date
 msgid "Latest Authentication"
-msgstr "Xác thực gần nhất"
+msgstr "Lần xác thực gần nhất"
 
 #. module: portal
 #. odoo-javascript
@@ -827,7 +831,7 @@ msgstr "Tiếp"
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_home
 msgid "No Documents to display"
-msgstr "Không có tài liệu để hiển thị"
+msgstr "Không có tài liệu nào để hiển thị"
 
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_portal_share__note
@@ -1120,7 +1124,7 @@ msgstr "Liên hệ \"%s\" không có email hợp lệ."
 #: code:addons/portal/wizard/portal_wizard.py:0
 #, python-format
 msgid "The contact \"%s\" has the same email as an existing user"
-msgstr "Liên hệ \"%s\" có cùng email với một người dùng đã tồn tại"
+msgstr "Liên hệ \"%s\" có email trùng với email của một người dùng đang tồn tại"
 
 #. module: portal
 #. odoo-python
@@ -1164,7 +1168,9 @@ msgstr "Đối tác \"%s\" đã được cấp quyền truy cập portal rồi."
 #: code:addons/portal/wizard/portal_wizard.py:0
 #, python-format
 msgid "The partner \"%s\" has no portal access or is internal."
-msgstr "Đối tác \"%s\" không thể đăng nhập công thông tin hay nội bộ."
+msgstr ""
+"Đối tác \"%s\" không có quyền truy cập cổng thông tin hoặc là người dùng nội"
+" bộ."
 
 #. module: portal
 #. odoo-python
@@ -1174,7 +1180,7 @@ msgid ""
 "The template \"Portal: new user\" not found for sending email to the portal "
 "user."
 msgstr ""
-"Mẫu \"Portal: new user\" không thấy để có thể gửi email tới "
+"Mẫu \"Portal: người dùng mới\" không thấy để có thể gửi email tới "
 "người dùng cổng thông tin."
 
 #. module: portal
@@ -1210,7 +1216,7 @@ msgstr ""
 msgid ""
 "This text is included at the end of the email sent to new portal users."
 msgstr ""
-"Đoạn văn này sẽ được bao gồm ở cuối email gửi đến người dùng portal mới."
+"Nội dung này sẽ được bao gồm ở cuối email gửi đến người dùng portal mới."
 
 #. module: portal
 #: model:ir.model.fields,help:portal.field_portal_wizard__welcome_message
