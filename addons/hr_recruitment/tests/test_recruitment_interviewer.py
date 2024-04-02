@@ -130,3 +130,22 @@ class TestRecruitmentInterviewer(MailCommon):
             raise AssertionError('No mail.mail should be sent to members of Interviewer group')
 
         self.assertSentEmail(self.env.user.partner_id, [self.manager_user.partner_id])
+
+    def test_create_alias(self):
+        """This ensures that users who are not recruitment officers are not allowed to
+        create a mail alias for the recruiting source while who are recruitment officers are
+        """
+        hr_recruitment_source = self.env['hr.recruitment.source'].create({
+            'name': 'Recruitment Source'
+        })
+        with self.assertRaises(AccessError):
+            hr_recruitment_source.with_user(self.simple_user).create_alias()
+        with self.assertRaises(AccessError):
+            hr_recruitment_source.with_user(self.interviewer_user).create_alias()
+        recruitment_officer_user = new_test_user(self.env, 'rec_off',
+            groups='base.group_user,hr_recruitment.group_hr_recruitment_user',
+            name='Recruitment Officer', email='rec_off@example.com')
+        try:
+            hr_recruitment_source.with_user(recruitment_officer_user).create_alias()
+        except AccessError:
+            self.fail("Recruitment Officer should be able to create mail alias for hr.recruitment.source.")
