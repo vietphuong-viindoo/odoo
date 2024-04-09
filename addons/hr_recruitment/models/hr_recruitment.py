@@ -37,11 +37,6 @@ class RecruitmentSource(models.Model):
     def create_alias(self):
         campaign = self.env.ref('hr_recruitment.utm_campaign_job')
         medium = self.env.ref('utm.utm_medium_email')
-        mail_alias_obj = self.env['mail.alias']
-        # apply sudo() to allow Recruitment Officer to create emails
-        # since mail.alias record creation is only granted to global admins
-        if self.env.user.has_group('hr_recruitment.group_hr_recruitment_user'):
-            mail_alias_obj = mail_alias_obj.sudo()
         for source in self:
             vals = {
                 'alias_parent_thread_id': source.job_id.id,
@@ -55,7 +50,7 @@ class RecruitmentSource(models.Model):
                     'source_id': source.source_id.id,
                 },
             }
-            source.alias_id = mail_alias_obj.create(vals)
+            source.alias_id = self.env['mail.alias'].create(vals)
 
     @api.model
     def _get_view(self, view_id=None, view_type='form', **options):
