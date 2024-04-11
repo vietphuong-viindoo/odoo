@@ -135,7 +135,7 @@ class StockMove(models.Model):
         'mrp.routing.workcenter', 'Operation To Consume', check_company=True,
         domain="[('id', 'in', allowed_operation_ids)]")
     workorder_id = fields.Many2one(
-        'mrp.workorder', 'Work Order To Consume', copy=False, check_company=True)
+        'mrp.workorder', 'Work Order To Consume', copy=False, check_company=True, index='btree_not_null')
     # Quantities to process, in normalized UoMs
     bom_line_id = fields.Many2one('mrp.bom.line', 'BoM Line', check_company=True)
     byproduct_id = fields.Many2one(
@@ -545,6 +545,7 @@ class StockMove(models.Model):
         :return: The quantity delivered or received
         """
         qty_ratios = []
+        kit_qty = kit_qty / kit_bom.product_qty
         boms, bom_sub_lines = kit_bom.explode(product_id, kit_qty)
         for bom_line, bom_line_data in bom_sub_lines:
             # skip service since we never deliver them
@@ -559,8 +560,8 @@ class StockMove(models.Model):
                 # We compute the quantities needed of each components to make one kit.
                 # Then, we collect every relevant moves related to a specific component
                 # to know how many are considered delivered.
-                uom_qty_per_kit = bom_line_data['qty'] / bom_line_data['original_qty']
-                qty_per_kit = bom_line.product_uom_id._compute_quantity(uom_qty_per_kit, bom_line.product_id.uom_id, round=False)
+                uom_qty_per_kit = bom_line_data['qty'] / (bom_line_data['original_qty'])
+                qty_per_kit = bom_line.product_uom_id._compute_quantity(uom_qty_per_kit / kit_bom.product_qty, bom_line.product_id.uom_id, round=False)
                 if not qty_per_kit:
                     continue
                 incoming_moves = bom_line_moves.filtered(filters['incoming_moves'])

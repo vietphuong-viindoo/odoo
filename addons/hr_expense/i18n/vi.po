@@ -3,8 +3,8 @@
 # 	* hr_expense
 #
 # Translators:
-# Wil Odoo, 2024
 # Thi Huong Nguyen, 2024
+# Wil Odoo, 2024
 # 
 msgid ""
 msgstr ""
@@ -12,7 +12,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-29 10:44+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
-"Last-Translator: Thi Huong Nguyen, 2024\n"
+"Last-Translator: Wil Odoo, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
@@ -98,11 +98,6 @@ msgstr "1 %(exp_cur)s = %(rate)s %(comp_cur)s"
 #: model_terms:ir.ui.view,arch_db:hr_expense.report_expense_sheet
 msgid "2023-08-11"
 msgstr "2023-08-11"
-
-#. module: hr_expense
-#: model_terms:ir.ui.view,arch_db:hr_expense.report_expense_sheet
-msgid "50%"
-msgstr "50%"
 
 #. module: hr_expense
 #: model_terms:ir.ui.view,arch_db:hr_expense.product_product_expense_form_view
@@ -278,11 +273,6 @@ msgstr "Báo cáo chi tiêu chỉ được chứa các dòng từ cùng một c�
 #: model:ir.model,name:hr_expense.model_account_analytic_account
 msgid "Analytic Account"
 msgstr "Tài khoản quản trị"
-
-#. module: hr_expense
-#: model_terms:ir.ui.view,arch_db:hr_expense.report_expense_sheet
-msgid "Analytic Account Name"
-msgstr "Tên tài khoản phân tích"
 
 #. module: hr_expense
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense__analytic_distribution
@@ -1831,6 +1821,13 @@ msgid "Scan"
 msgstr "Quét"
 
 #. module: hr_expense
+#. odoo-javascript
+#: code:addons/hr_expense/static/src/components/qrcode_action.xml:0
+#, python-format
+msgid "Scan this QR code to get the Odoo app:"
+msgstr "Quét mã QR này để tải ứng dụng Odoo:"
+
+#. module: hr_expense
 #: model:ir.model.fields,help:hr_expense.field_hr_employee__expense_manager_id
 #: model:ir.model.fields,help:hr_expense.field_res_users__expense_manager_id
 msgid ""
@@ -2006,8 +2003,8 @@ msgstr "Thuế"
 
 #. module: hr_expense
 #: model_terms:ir.ui.view,arch_db:hr_expense.report_expense_sheet
-msgid "Tax Name"
-msgstr "Tên thuế"
+msgid "Tax 15%"
+msgstr "Thuế 15%"
 
 #. module: hr_expense
 #: model:ir.model.fields,field_description:hr_expense.field_hr_expense__tax_amount
@@ -2080,6 +2077,11 @@ msgstr ""
 "Chi tiêu được duyệt sau đây có nhân viên, số tiền và danh mục giống với một "
 "vài chi tiêu trong báo cáo này. Hãy xác nhận báo cáo này không chứa chi tiêu"
 " trùng lặp."
+
+#. module: hr_expense
+#: model:ir.model.constraint,message:hr_expense.constraint_hr_expense_sheet_journal_id_required_posted
+msgid "The journal must be set on posted expense"
+msgstr "Sổ nhật ký phải được cài trong chi phí được vào sổ"
 
 #. module: hr_expense
 #: model:ir.model.fields,help:hr_expense.field_hr_expense_sheet__employee_journal_id
@@ -2256,11 +2258,6 @@ msgstr "Sử dụng breadcrumbs để quay lại danh sách chi phí."
 #: model:ir.model,name:hr_expense.model_res_users
 msgid "User"
 msgstr "Người dùng"
-
-#. module: hr_expense
-#: model_terms:ir.ui.view,arch_db:hr_expense.report_expense_sheet
-msgid "VAT"
-msgstr "Thuế GTGT"
 
 #. module: hr_expense
 #: model:ir.actions.act_window,name:hr_expense.hr_expense_approve_duplicate_action
