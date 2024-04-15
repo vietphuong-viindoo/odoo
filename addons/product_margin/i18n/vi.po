@@ -1,7 +1,7 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* product_margin
-#
+# 
 # Translators:
 # Martin Trigaux, 2022
 # Thi Huong Nguyen, 2023
@@ -324,5 +324,5 @@ msgstr "Doanh thu"
 
 #. module: product_margin
 #: model:ir.model.fields,help:product_margin.field_product_product__total_margin
-msgid "Turnover - Standard price"
-msgstr "Doanh thu - Giá tiêu chuẩn"
+msgid "Turnover - Total cost"
+msgstr "Doanh thu - Tổng chi phí"

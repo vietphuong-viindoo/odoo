@@ -1,18 +1,19 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* website_event_meet
-#
+# 
 # Translators:
 # Martin Trigaux, 2022
 # Vo Thanh Thuy, 2022
+# Thi Huong Nguyen, 2024
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0beta\n"
+"Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-10 10:24+0000\n"
+"POT-Creation-Date: 2024-02-06 13:32+0000\n"
 "PO-Revision-Date: 2022-09-22 05:56+0000\n"
-"Last-Translator: Vo Thanh Thuy, 2022\n"
+"Last-Translator: Thi Huong Nguyen, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -99,14 +100,14 @@ msgid "Allow Room Creation"
 msgstr "Cho phép tạo phòng"
 
 #. module: website_event_meet
-#. openerp-web
+#. odoo-javascript
 #: code:addons/website_event_meet/static/src/js/website_event_meeting_room.js:0
 #, python-format
 msgid "Are you sure you want to close this room ?"
 msgstr "Bạn có chắc muốn đóng phòng này không? "
 
 #. module: website_event_meet
-#. openerp-web
+#. odoo-javascript
 #: code:addons/website_event_meet/static/src/js/website_event_meeting_room.js:0
 #, python-format
 msgid "Are you sure you want to duplicate this room ?"
@@ -119,7 +120,7 @@ msgid "Audience"
 msgstr "Khán giả"
 
 #. module: website_event_meet
-#. openerp-web
+#. odoo-javascript
 #: code:addons/website_event_meet/static/src/xml/website_event_meeting_room.xml:0
 #, python-format
 msgid ""
@@ -140,7 +141,7 @@ msgid "Can Publish"
 msgstr "Có thể đăng"
 
 #. module: website_event_meet
-#. openerp-web
+#. odoo-javascript
 #: code:addons/website_event_meet/static/src/xml/website_event_meeting_room.xml:0
 #, python-format
 msgid "Capacity"
@@ -166,7 +167,7 @@ msgid "Close"
 msgstr "Đóng"
 
 #. module: website_event_meet
-#. openerp-web
+#. odoo-javascript
 #: code:addons/website_event_meet/static/src/xml/website_event_meeting_room.xml:0
 #, python-format
 msgid "Create"
@@ -195,7 +196,7 @@ msgid "Created on"
 msgstr "Thời điểm tạo"
 
 #. module: website_event_meet
-#. openerp-web
+#. odoo-javascript
 #: code:addons/website_event_meet/static/src/xml/website_event_meeting_room.xml:0
 #, python-format
 msgid "Discard"
@@ -286,7 +287,7 @@ msgid "Join us there to chat about"
 msgstr "Hãy tới tham dự để trò chuyện về"
 
 #. module: website_event_meet
-#. openerp-web
+#. odoo-javascript
 #: code:addons/website_event_meet/static/src/xml/website_event_meeting_room.xml:0
 #: model:ir.model.fields,field_description:website_event_meet.field_event_meeting_room__room_lang_id
 #, python-format
@@ -319,7 +320,7 @@ msgid "Last activity"
 msgstr "Hoạt động cuối cùng"
 
 #. module: website_event_meet
-#. openerp-web
+#. odoo-javascript
 #: code:addons/website_event_meet/static/src/xml/website_event_meeting_room.xml:0
 #, python-format
 msgid "Launch a new topic"
@@ -404,7 +405,7 @@ msgid "Room Name"
 msgstr "Tên phòng"
 
 #. module: website_event_meet
-#. openerp-web
+#. odoo-javascript
 #: code:addons/website_event_meet/static/src/xml/website_event_meeting_room.xml:0
 #, python-format
 msgid "Room Topic"
@@ -440,7 +441,7 @@ msgid "Share your tips to reduce your ecological footprint using wood."
 msgstr "Chia sẻ mẹo giảm thiểu ảnh hưởng môi trường bằng cách dùng gỗ. "
 
 #. module: website_event_meet
-#. openerp-web
+#. odoo-javascript
 #: code:addons/website_event_meet/static/src/xml/website_event_meeting_room.xml:0
 #, python-format
 msgid "Short Summary"
@@ -458,7 +459,7 @@ msgid "Summary"
 msgstr "Tổng kết"
 
 #. module: website_event_meet
-#. openerp-web
+#. odoo-javascript
 #: code:addons/website_event_meet/static/src/xml/website_event_meeting_room.xml:0
 #, python-format
 msgid "Target People"
@@ -470,6 +471,7 @@ msgid "The event"
 msgstr "Sự kiện"
 
 #. module: website_event_meet
+#. odoo-python
 #: code:addons/website_event_meet/controllers/website_event_main.py:0
 #, python-format
 msgid ""
@@ -535,15 +537,15 @@ msgstr "Địa chỉ website"
 #. module: website_event_meet
 #: model_terms:ir.ui.view,arch_db:website_event_meet.meeting_room_main
 msgid "a few seconds"
-msgstr "một vài giây"
+msgstr "vài giây"
 
 #. module: website_event_meet
 #: model:event.meeting.room,target_audience:website_event_meet.event_meeting_room_2
 msgid "client(s)"
-msgstr "khách hàng"
+msgstr "khách"
 
 #. module: website_event_meet
-#. openerp-web
+#. odoo-javascript
 #: code:addons/website_event_meet/static/src/xml/website_event_meeting_room.xml:0
 #: model_terms:ir.ui.view,arch_db:website_event_meet.event_meeting_room_view_form
 #, python-format
@@ -551,7 +553,7 @@ msgid "e.g. Accountants"
 msgstr "vd. Kế toán"
 
 #. module: website_event_meet
-#. openerp-web
+#. odoo-javascript
 #: code:addons/website_event_meet/static/src/xml/website_event_meeting_room.xml:0
 #: model_terms:ir.ui.view,arch_db:website_event_meet.event_meeting_room_view_form
 #, python-format
@@ -559,7 +561,7 @@ msgid "e.g. Finance"
 msgstr "vd. Tài chính"
 
 #. module: website_event_meet
-#. openerp-web
+#. odoo-javascript
 #: code:addons/website_event_meet/static/src/xml/website_event_meeting_room.xml:0
 #: model_terms:ir.ui.view,arch_db:website_event_meet.event_meeting_room_view_form
 #, python-format
