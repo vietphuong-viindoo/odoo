@@ -15972,7 +15972,7 @@ msgstr "Phân hệ cầu nối để đẩy thông báo đến những người 
 #: model:ir.module.module,summary:base.module_website_event_track_live_quiz
 msgid "Bridge module to support quiz features during \"live\" tracks. "
 msgstr ""
-"Phân hệ cầu nối để hỗ trợ tính năng câu đố trong các sự kiện \"trực tiếp\"."
+"Phân hệ cầu nối để hỗ trợ tính năng câu đố trong các nội dung \"trực tiếp\"."
 
 #. module: base
 #: model:res.country,name:base.io
@@ -24385,7 +24385,7 @@ msgstr "Tỷ giá Tiền tệ Trực tuyến"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_event_track_live
 msgid "Live Event Tracks"
-msgstr "Theo dõi Sự kiện Trực tuyến"
+msgstr "Nội dung sự kiện trực tiếp"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_base_language_install
@@ -31045,7 +31045,7 @@ msgstr "Kiểm tra và Họp mặt trên tuyến cộng đồng"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_event_track_live_quiz
 msgid "Quiz on Live Event Tracks"
-msgstr "Kiểm tra Theo dõi Sự kiện Trực tiếp"
+msgstr "Câu đố trong Nội dung sự kiện trực tiếp"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_event_track_quiz
@@ -32424,7 +32424,7 @@ msgstr "Bộ khởi chạy Hành động Định kỳ"
 #: code:addons/base/models/ir_cron.py:0
 #, python-format
 msgid "Scheduled action disabled"
-msgstr ""
+msgstr "Hành động đã lên lịch bị tắt"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_cron__user_id
@@ -32708,8 +32708,7 @@ msgid ""
 "Send reminder push notifications to event attendees based on favorites "
 "tracks."
 msgstr ""
-"Gửi thông báo nhắc nhở đến những người tham dự sự kiện dựa trên công cụ "
-"theo dõi ưa thích."
+"Gửi thông báo nhắc nhở đến những người tham dự sự kiện dựa trên nội dung yêu thích."
 
 #. module: base
 #: model:ir.module.module,description:base.module_calendar_sms
@@ -33514,7 +33513,7 @@ msgstr "Speedscope"
 #. module: base
 #: model:ir.module.module,summary:base.module_website_event_track
 msgid "Sponsors, Tracks, Agenda, Event News"
-msgstr "Nhà tài trợ, Chương trình, Tin tức sự kiện"
+msgstr "Nhà tài trợ, Nội dung, Chương trình, Tin tức sự kiện"
 
 #. module: base
 #: model:ir.module.module,description:base.module_spreadsheet
@@ -34046,7 +34045,7 @@ msgstr "Tham số bổ sung"
 #. module: base
 #: model:ir.module.module,summary:base.module_website_event_track_live
 msgid "Support live tracks: streaming, participation, youtube"
-msgstr "Hỗ trợ các bản nhạc trực tiếp: phát trực tuyến, tham gia, youtube"
+msgstr "Hỗ trợ nội dung trực tiếp: phát trực tuyến, tham gia, youtube"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_quality_control_picking_batch
@@ -35967,8 +35966,8 @@ msgid ""
 "This module helps analyzing and organizing event tracks.\n"
 "For that purpose it adds a gantt view on event tracks."
 msgstr ""
-"Phân hệ này giúp phân tích và tổ chức các hành động theo dõi sự kiện.\n"
-"Với mục đích đó, giao diện gantt được thêm vào các hành động theo dõi sự kiện."
+"Phân hệ này giúp phân tích và tổ chức các nội dung sự kiện.\n"
+"Với mục đích đó, giao diện gantt được thêm vào nội dung sự kiện."
 
 #. module: base
 #: model:ir.module.module,description:base.module_event_enterprise
@@ -36049,8 +36048,7 @@ msgid ""
 "This module lets you use the full power of certifications within your "
 "courses."
 msgstr ""
-"Mô đun này cho phép bạn sử dụng toàn bộ tính năng về chứng nhận trong phạm "
-"vi các khoá học."
+"Mô đun này cho phép bạn sử dụng toàn bộ tính năng về chứng nhận trong các khóa học."
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_base_module_upgrade
@@ -36083,6 +36081,8 @@ msgid ""
 "This scheduled action has been disabled because its interval number is not a"
 " strictly positive value."
 msgstr ""
+"Hành động được lên lịch này đã bị vô hiệu hóa vì chu kỳ của hoạt động đó "
+"không phải là một giá trị hoàn toàn dương."
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_lang__thousands_sep
@@ -37920,7 +37920,7 @@ msgstr "Trang web - Ủy quyền thanh toán"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_appointment_crm
 msgid "Website Appointment Lead Enrichment"
-msgstr "Làm giàu khách hàng tiềm năng về cuộc hẹn trên trang web"
+msgstr "Tăng cường khách hàng tiềm năng về cuộc hẹn trên trang web"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_appointment
@@ -38650,6 +38650,9 @@ msgid ""
 "You cannot delete the admin user because it is utilized in various places "
 "(such as security configurations,...). Instead, archive it."
 msgstr ""
+"Bạn không thể xóa người dùng có vai trò quản trị viên vì người dùng này được"
+" sử dụng ở nhiều nơi (chẳng hạn như cấu hình bảo mật,...). Thay vào đó, hãy "
+"lưu trữ."
 
 #. module: base
 #. odoo-python

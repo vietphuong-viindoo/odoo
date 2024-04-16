@@ -1066,6 +1066,10 @@ msgid ""
 "                            info@yourcompany.example.com\n"
 "                        </small>"
 msgstr ""
+"<small>\n"
+"                            <i class=\"fa fa-1x fa-fw fa-envelope me-1\"/>\n"
+"                            info@yourcompany.example.com\n"
+"                        </small>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_comparisons
@@ -1575,7 +1579,7 @@ msgstr ""
 #: code:addons/website/static/src/xml/web_editor.xml:0
 #, python-format
 msgid "AI"
-msgstr ""
+msgstr "AI"
 
 #. module: website
 #. odoo-javascript
@@ -1852,7 +1856,7 @@ msgstr "Thêm trường mới vào cuối"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.view_view_form_extend
 msgid "Add groups in the \"Access Rights\" tab below."
-msgstr "Thêm nhóm trong tab \"Access Rights\" dưới đây"
+msgstr "Thêm nhóm trong tab \"Quyền truy cập\" dưới đây."
 
 #. module: website
 #. odoo-python
@@ -1873,7 +1877,7 @@ msgstr "Thêm %s mới"
 #: code:addons/website/static/src/components/dialog/add_page_dialog.xml:0
 #, python-format
 msgid "Add page template"
-msgstr ""
+msgstr "Thêm mẫu trang"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.external_snippets
@@ -1916,9 +1920,9 @@ msgid ""
 "Adjust volume, skip tracks, answer calls, and activate voice assistants with"
 " a simple tap, keeping your hands free and your focus on what matters most."
 msgstr ""
-"Điều chỉnh âm lượng, bỏ qua đoạn âm thanh, trả lời cuộc gọi và kích hoạt trợ"
-" lý giọng nói chỉ bằng một chạm đơn giản, nhờ đó bạn sẽ có nhiều thời gian "
-"hơn để tập trung vào những gì quan trọng nhất."
+"Điều chỉnh âm lượng, bỏ qua nội dung, trả lời cuộc gọi và kích hoạt trợ lý "
+"giọng nói chỉ bằng một chạm đơn giản, nhờ đó bạn sẽ có nhiều thời gian hơn "
+"để tập trung vào những gì quan trọng nhất."
 
 #. module: website
 #. odoo-javascript
@@ -2463,7 +2467,7 @@ msgstr "Hình dạng nền"
 #: code:addons/website/static/src/xml/website.background.video.xml:0
 #, python-format
 msgid "Background video"
-msgstr ""
+msgstr "Video nền"
 
 #. module: website
 #. odoo-javascript
@@ -3248,7 +3252,7 @@ msgstr "Quần áo"
 #: code:addons/website/static/src/client_actions/configurator/configurator.xml:0
 #, python-format
 msgid "Clothes, Marketing, ..."
-msgstr ""
+msgstr "Quần áo, Marketing, ..."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
@@ -3959,7 +3963,7 @@ msgstr "Quyền Truy cập Mặc định"
 #: code:addons/website/static/src/snippets/s_searchbar/options.js:0
 #, python-format
 msgid "Default Input Style"
-msgstr ""
+msgstr "Kiểu nhập mặc định"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website__default_lang_id
@@ -5044,7 +5048,7 @@ msgstr "Cực lớn"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.layout
 msgid "Extra items button"
-msgstr ""
+msgstr "Extra items button"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.searchbar_input_snippet_options
@@ -5054,7 +5058,7 @@ msgstr "Link thêm"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.footer_custom
 msgid "Extra page"
-msgstr ""
+msgstr "Thêm trang"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -5759,7 +5763,7 @@ msgid ""
 "Google doesn't need to be pinged anymore. It will automatically fetch your "
 "/sitemap.xml."
 msgstr ""
-"Google không cần ping nữa. Nó sẽ tự động tìm nạp "
+"Không cần ping Google nữa. Nó sẽ tự động tìm nạp "
 "/sitemap.xml của bạn."
 
 #. module: website
@@ -6334,8 +6338,8 @@ msgid ""
 "If you need to add analytics or marketing tags, inject code in your <head> "
 "or <body> instead."
 msgstr ""
-"Nếu bạn cần thêm thẻ thống kê hoặc marketing, thay vào đó hãy chèn mã trong <head> "
-"or <body>."
+"Nếu bạn cần thêm thẻ phân tích hoặc marketing, thay vào đó hãy chèn mã vào "
+"<head> hoặc <body>."
 
 #. module: website
 #. odoo-javascript
@@ -7643,7 +7647,7 @@ msgstr "Tiêu đề Media"
 #: code:addons/website/static/src/js/content/snippets.animation.js:0
 #, python-format
 msgid "Media video"
-msgstr ""
+msgstr "Media video"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_three_columns_menu
@@ -7686,7 +7690,7 @@ msgstr "Nội dung Mega Menu"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_menu_image_menu
 msgid "Mega menu default image"
-msgstr ""
+msgstr "Hình ảnh mặc định của menu chính"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_menus_logos
@@ -8241,7 +8245,7 @@ msgstr "Tiếp"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.step_wizard
 msgid "Next:"
-msgstr "Tiếp:"
+msgstr "Tiếp theo:"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_tabs_options
@@ -8686,7 +8690,7 @@ msgstr "Thông tin khác: "
 #: code:addons/website/static/src/snippets/s_social_media/options.js:0
 #, python-format
 msgid "Other social network"
-msgstr ""
+msgstr "Mạng xã hội khác"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_landing_s_text_image
@@ -9150,7 +9154,7 @@ msgstr "Viên "
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_share
 msgid "Pinterest"
-msgstr ""
+msgstr "Pinterest"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_website_form_options
@@ -11689,12 +11693,12 @@ msgstr ""
 #. module: website
 #: model:ir.ui.view,website_meta_description:website.contactus
 msgid "This is the contact us page of the website"
-msgstr ""
+msgstr "Đây là trang liên hệ với chúng tôi trên trang web"
 
 #. module: website
 #: model:ir.ui.view,website_meta_description:website.homepage
 msgid "This is the homepage of the website"
-msgstr ""
+msgstr "Đây là trang chủ của trang web"
 
 #. module: website
 #. odoo-python
@@ -13409,6 +13413,8 @@ msgid ""
 "You cannot delete this website menu as this serves as the default parent "
 "menu for new websites (e.g., /shop, /event, ...)."
 msgstr ""
+"Bạn không thể xóa menu trang web này vì menu này đóng vai trò là menu chính "
+"mặc định cho các trang web mới (ví dụ: /shop, /event, ...)."
 
 #. module: website
 #. odoo-python

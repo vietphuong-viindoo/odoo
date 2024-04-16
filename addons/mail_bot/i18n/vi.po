@@ -4,6 +4,7 @@
 #
 # Translators:
 # Wil Odoo, 2023
+# Thi Huong Nguyen, 2024
 #
 msgid ""
 msgstr ""
@@ -11,7 +12,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-26 21:55+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
-"Last-Translator: Wil Odoo, 2023\n"
+"Last-Translator: Thi Huong Nguyen, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
@@ -154,6 +155,8 @@ msgid ""
 "Odoo's chat helps employees collaborate efficiently. I'm here to help you "
 "discover its features."
 msgstr ""
+"Ứng dụng trò chuyện của Odoo giúp nhân viên cộng tác hiệu quả. Tôi ở đây để "
+"giúp bạn khám phá các tính năng của ứng dụng này."
 
 #. module: mail_bot
 #: model:ir.model.fields,field_description:mail_bot.field_res_users__odoobot_state
@@ -241,7 +244,7 @@ msgstr "Để bắt đầu, hãy thử gửi tôi một biểu tượng cảm x�
 #: code:addons/mail_bot/models/res_users.py:0
 #, python-format
 msgid "Try to send me an emoji"
-msgstr ""
+msgstr "Hãy thử gửi cho tôi một biểu tượng cảm xúc"
 
 #. module: mail_bot
 #. odoo-python

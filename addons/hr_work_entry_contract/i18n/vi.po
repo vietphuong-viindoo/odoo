@@ -4,6 +4,7 @@
 #
 # Translators:
 # Wil Odoo, 2023
+# Thi Huong Nguyen, 2024
 #
 msgid ""
 msgstr ""
@@ -11,7 +12,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-26 21:55+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
-"Last-Translator: Wil Odoo, 2023\n"
+"Last-Translator: Thi Huong Nguyen, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
@@ -63,7 +64,7 @@ msgid ""
 "<i class=\"fa fa-exclamation-triangle me-1\" title=\"Warning\"/>You are not "
 "allowed to regenerate validated work entries"
 msgstr ""
-"<i class=\"fa fa-exclamation-triangle me-1\" title=\"Warning\"/>Bạn không "
+"<i class=\"fa fa-exclamation-triangle me-1\" title=\"Cảnh báo\"/>Bạn không "
 "được phép Tạo lại nhật ký công việc đã được xác thực"
 
 #. module: hr_work_entry_contract
@@ -215,7 +216,7 @@ msgstr ""
 #. module: hr_work_entry_contract
 #: model:ir.model.fields,field_description:hr_work_entry_contract.field_hr_contract__last_generation_date
 msgid "Last Generation Date"
-msgstr ""
+msgstr "Ngày tạo cuối cùng"
 
 #. module: hr_work_entry_contract
 #: model:ir.model.fields,field_description:hr_work_entry_contract.field_hr_work_entry_regeneration_wizard__write_uid
@@ -283,8 +284,7 @@ msgstr "Nghỉ bệnh"
 msgid ""
 "Sorry, generating work entries from cancelled contracts is not allowed."
 msgstr ""
-"Xin lỗi, Việc tạo lại nhật ký công việc từ hợp đồng bị hủy thì khôngđược "
-"phép."
+"Rất tiếc, bạn không được phép tạo lại nhật ký công việc từ hợp đồng đã bị hủy."
 
 #. module: hr_work_entry_contract
 #. odoo-python

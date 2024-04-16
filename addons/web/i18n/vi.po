@@ -3,10 +3,10 @@
 # 	* web
 #
 # Translators:
-# Thi Huong Nguyen, 2024
 # Martin Trigaux, 2024
 # Wil Odoo, 2024
 # An Nguyen, 2024
+# Thi Huong Nguyen, 2024
 # 
 msgid ""
 msgstr ""
@@ -14,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-29 10:46+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
-"Last-Translator: An Nguyen, 2024\n"
+"Last-Translator: Thi Huong Nguyen, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
@@ -1131,7 +1131,7 @@ msgstr "Hạnh nhân"
 #: code:addons/web/static/src/views/fields/datetime/datetime_field.js:0
 #, python-format
 msgid "Always range"
-msgstr ""
+msgstr "Always range"
 
 #. module: web
 #. odoo-javascript
@@ -1504,6 +1504,8 @@ msgid ""
 "Boolean field from the model used in the relation, which indicates whether "
 "the state is folded or not."
 msgstr ""
+"Trường boolean từ mô hình được sử dụng trong quan hệ, cho biết trạng thái có"
+" được thu gọn hay không."
 
 #. module: web
 #. odoo-javascript
@@ -3565,8 +3567,8 @@ msgstr "ILY"
 #: code:addons/web/static/src/views/fields/datetime/datetime_field.js:0
 #: code:addons/web/static/src/views/fields/datetime/datetime_field.js:0
 #, python-format
-msgid "ISO-formatted date (e.g. \"2018-12-31\") or \"today\"."
-msgstr "Ngày được định dạng ISO (VD: \"2018-12-31\") hoặc \"hôm nay\"."
+msgid "ISO-formatted date (e.g. \"2018-12-31\") or \"%s\"."
+msgstr ""
 
 #. module: web
 #. odoo-javascript
@@ -5075,7 +5077,7 @@ msgstr "Không phải trạng thái kích hoạt, bấm để thay đổi"
 #: code:addons/web/static/src/views/fields/many2many_binary/many2many_binary_field.js:0
 #, python-format
 msgid "Number of files"
-msgstr ""
+msgstr "Số lượng tệp"
 
 #. module: web
 #. odoo-javascript
@@ -5967,7 +5969,7 @@ msgid ""
 "\n"
 "Think twice before you click that 'Delete' button!"
 msgstr ""
-"Bạn đã sẵn sàng để bản ghi của bạn biến mất trong không khí chưa? Bạn có chắc chắn không?\n"
+"Bạn đã sẵn sàng để bản ghi của bạn biến mất chưa? Bạn có chắc chắn không?\n"
 "Nó sẽ biến mất mãi mãi!\n"
 "\n"
 "Hãy suy nghĩ kỹ trước khi nhấn nút 'Xóa'!"

@@ -3,16 +3,16 @@
 # 	* hr
 #
 # Translators:
-# Thi Huong Nguyen, 2023
 # Wil Odoo, 2023
-#
+# Thi Huong Nguyen, 2024
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-05 12:31+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
-"Last-Translator: Wil Odoo, 2023\n"
+"Last-Translator: Thi Huong Nguyen, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
@@ -380,6 +380,8 @@ msgid ""
 "Additional Information: \n"
 " %(description)s"
 msgstr ""
+"Thông tin bổ sung: \n"
+" %(description)s"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__additional_note
@@ -890,12 +892,12 @@ msgstr "Thêm phòng ban mới"
 #. module: hr
 #: model_terms:ir.actions.act_window,help:hr.hr_contract_type_action
 msgid "Create a new employment type"
-msgstr ""
+msgstr "Tạo một loại hình công việc mới"
 
 #. module: hr
 #: model_terms:ir.actions.act_window,help:hr.hr_work_location_action
 msgid "Create a new work location"
-msgstr ""
+msgstr "Tạo một vị trí làm việc mới"
 
 #. module: hr
 #: model_terms:hr.job,website_description:hr.job_ceo
@@ -3262,7 +3264,7 @@ msgstr "Xem hồ sơ"
 #: model:ir.model.fields,field_description:hr.field_hr_employee__visa_expire
 #: model:ir.model.fields,field_description:hr.field_res_users__visa_expire
 msgid "Visa Expiration Date"
-msgstr "Ngày hết Hạn Visa"
+msgstr "Ngày hết hạn Visa"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__visa_no
@@ -3282,6 +3284,8 @@ msgstr "Cảnh báo"
 msgid ""
 "We are currently looking for someone like that to join our Consultant team."
 msgstr ""
+"Chúng tôi hiện đang tìm kiếm một người như vậy để tham gia đội ngũ Tư vấn "
+"viên của mình"
 
 #. module: hr
 #: model_terms:hr.job,description:hr.job_developer
