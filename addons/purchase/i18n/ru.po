@@ -23,10 +23,10 @@
 # Диляра Дельтаева <dilya.kz93@gmail.com>, 2022
 # Martin Trigaux, 2022
 # valmasone, 2022
-# Сергей Шебанин <sergey@shebanin.ru>, 2023
 # alenafairy, 2023
 # Wil Odoo, 2024
 # Смородин Даниил, 2024
+# Сергей Шебанин <sergey@shebanin.ru>, 2024
 # 
 msgid ""
 msgstr ""
@@ -34,7 +34,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-06 13:31+0000\n"
 "PO-Revision-Date: 2022-09-22 05:54+0000\n"
-"Last-Translator: Смородин Даниил, 2024\n"
+"Last-Translator: Сергей Шебанин <sergey@shebanin.ru>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/odoo/teams/41243/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -254,6 +254,11 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:purchase.purchase_order_portal_content
 msgid "<i class=\"fa fa-fw fa-check\"/> <b>Paid</b>"
 msgstr "<i class=\"fa fa-fw fa-check\"/><b>оплатить</b></i>"
+
+#. module: purchase
+#: model_terms:ir.ui.view,arch_db:purchase.purchase_order_portal_content
+msgid "<i class=\"fa fa-fw fa-check\"/> <b>Reversed</b>"
+msgstr ""
 
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.purchase_order_portal_content
@@ -948,7 +953,7 @@ msgstr "Конфигурационные настройки"
 #. module: purchase
 #: model:ir.ui.menu,name:purchase.menu_purchase_config
 msgid "Configuration"
-msgstr "Настройки"
+msgstr "Конфигурация"
 
 #. module: purchase
 #. odoo-python
@@ -965,7 +970,7 @@ msgstr "Подтвердить заказ"
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.purchase_order_form
 msgid "Confirm Receipt Date"
-msgstr "Подтверждение даты получения"
+msgstr "Подтвердить дату поступления"
 
 #. module: purchase
 #: model:ir.model.fields.selection,name:purchase.selection__res_company__po_double_validation__one_step
@@ -1026,7 +1031,7 @@ msgstr "Код страны"
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.purchase_order_form
 msgid "Create Bill"
-msgstr "Создать акт"
+msgstr "Добавить счет"
 
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.purchase_order_kpis_tree
@@ -1414,7 +1419,7 @@ msgstr "Акты и полученные товары"
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.res_config_settings_view_form_purchase
 msgid "Invoicing"
-msgstr "Актирование"
+msgstr "Выставление счетов"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order__message_is_follower
@@ -1456,7 +1461,7 @@ msgstr "Последнее обновление"
 #: code:addons/purchase/static/src/views/purchase_dashboard.xml:0
 #, python-format
 msgid "Late"
-msgstr "Ранее"
+msgstr "В прошлом"
 
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.purchase_order_view_search
@@ -1944,7 +1949,7 @@ msgstr "Печать"
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.purchase_order_form
 msgid "Print RFQ"
-msgstr "Распечатать Запрос предложений"
+msgstr "Распечатать Запрос цен"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order__priority
@@ -2199,12 +2204,12 @@ msgstr "Предупреждение о приобретении"
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.purchase_order_view_search
 msgid "Purchase orders that have been invoiced."
-msgstr "Заказы на поставку, на которые выставлен акт."
+msgstr "Заказы на поставку, на которые выставлен счет."
 
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.purchase_order_view_search
 msgid "Purchase orders that include lines not invoiced."
-msgstr "Заказы на поставку, которые имеют позиции, не указанные в актах."
+msgstr "Заказы на поставку, которые имеют позиции, без выставленных счетов."
 
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.res_config_settings_view_form_purchase
@@ -2935,7 +2940,7 @@ msgstr "К одобрению"
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_line__qty_to_invoice
 msgid "To Invoice Quantity"
-msgstr "Количество без акта"
+msgstr "Количество без счета"
 
 #. module: purchase
 #. odoo-javascript

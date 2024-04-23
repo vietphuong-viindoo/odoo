@@ -7,14 +7,15 @@
 # Duy BQ <duybq86@gmail.com>, 2022
 # Vo Thanh Thuy, 2022
 # Thi Huong Nguyen, 2023
-#
+# Thi Huong Nguyen, 2024
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-14 05:52+0000\n"
+"POT-Creation-Date: 2024-02-06 13:31+0000\n"
 "PO-Revision-Date: 2022-09-22 05:52+0000\n"
-"Last-Translator: Thi Huong Nguyen, 2023\n"
+"Last-Translator: Thi Huong Nguyen, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -59,7 +60,6 @@ msgstr ""
 "vấn này từ tất cả các ứng viên đăng ký làm việc này"
 
 #. module: hr_recruitment_survey
-#: model_terms:ir.ui.view,arch_db:hr_recruitment_survey.hr_job_survey_inherit
 #: model_terms:ir.ui.view,arch_db:hr_recruitment_survey.view_hr_job_kanban_inherit
 msgid "Display Interview Form"
 msgstr "Hiển thị mẫu phỏng vẫn"
@@ -163,8 +163,8 @@ msgid ""
 "Please answer those questions to help recruitment officers to preprocess "
 "your application."
 msgstr ""
-"Xin hãy trả lời các câu hỏi dưới đây đê giúp quản lý tuyển dụng xử lý trước "
-"ứng tuyển của bạn."
+"Vui lòng trả lời các câu hỏi sau để giúp nhà tuyển dụng sơ tuyển hồ sơ của "
+"bạn."
 
 #. module: hr_recruitment_survey
 #: model_terms:survey.question,description:hr_recruitment_survey.survey_recruitment_form_p1
@@ -180,7 +180,8 @@ msgstr ""
 #: model_terms:survey.question,description:hr_recruitment_survey.survey_recruitment_form_p1_q5
 msgid ""
 "Please summarize your education history: schools, location, diplomas, ..."
-msgstr "Xin hãy tóm tắt lịch sử học tập của bạn: trường, địa điểm, bằng cấp, ..."
+msgstr ""
+"Vui lòng tóm tắt quá trình học tập của bạn: trường, nơi học, chứng chỉ,..."
 
 #. module: hr_recruitment_survey
 #: model_terms:survey.question,description:hr_recruitment_survey.survey_recruitment_form_p1_q7

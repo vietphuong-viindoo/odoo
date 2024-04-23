@@ -307,7 +307,7 @@
         <div
           t-foreach="getClickableCells()"
           t-as="clickableCell"
-          t-key="clickableCell.cell.id"
+          t-key="clickableCell_index"
           class="o-dashboard-clickable-cell"
           t-on-click="() => this.selectClickableCell(clickableCell)"
           t-on-contextmenu.prevent=""
@@ -3239,7 +3239,7 @@ https://fontawesome.com/license -->
   </t>
 </odoo>
 <!--
-  __info__.version = '16.0.37';
-  __info__.date = '2024-04-05T14:11:34.497Z';
-  __info__.hash = 'e95827b';
+  __info__.version = '16.0.39';
+  __info__.date = '2024-04-18T16:53:41.980Z';
+  __info__.hash = 'ea5a526';
 -->
