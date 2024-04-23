@@ -293,7 +293,7 @@ msgstr ""
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.view_pos_session_form
 msgid "<span class=\"o_stat_text\">Cash Register</span>"
-msgstr ""
+msgstr "<span class=\"o_stat_text\">Máy tính tiền</span>"
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.view_pos_session_form
@@ -8386,6 +8386,9 @@ msgid ""
 "You have selected orderlines from multiple invoiced orders. To proceed "
 "refund, please select orderlines from the same invoiced order."
 msgstr ""
+"Bạn đã chọn các dòng đơn hàng từ nhiều đơn hàng đã được lập hóa đơn. Để tiến"
+" hành hoàn tiền, vui lòng chọn các dòng đặt hàng từ cùng một đơn hàng đã "
+"được lập hoá đơn."
 
 #. module: point_of_sale
 #. odoo-javascript
