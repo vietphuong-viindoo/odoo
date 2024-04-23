@@ -7,6 +7,7 @@
 # Dung Nguyen Thi <dungnt@trobz.com>, 2021
 # Trần Hà <tranthuha13590@gmail.com>, 2021
 # Hoàng Tiến Dũng, 2022
+# Thi Huong Nguyen, 2024
 # 
 msgid ""
 msgstr ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-12 07:50+0000\n"
 "PO-Revision-Date: 2021-09-14 12:22+0000\n"
-"Last-Translator: Hoàng Tiến Dũng, 2022\n"
+"Last-Translator: Thi Huong Nguyen, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -76,11 +77,11 @@ msgstr "Khoá bí mật"
 #. module: google_recaptcha
 #: model:ir.model.fields,help:google_recaptcha.field_res_config_settings__recaptcha_min_score
 msgid ""
-"Should be between 0.0 and 1.0.\n"
+"By default, should be one of 0.1, 0.3, 0.7, 0.9.\n"
 "1.0 is very likely a good interaction, 0.0 is very likely a bot"
 msgstr ""
-"Phải từ 0.0 đến 1.0.\n"
-"1.0 rất có thể là sự tương tác tốt, 0.0 rất có thể là bot"
+"Theo mặc định, phải là một trong 0.1, 0.3, 0.7, 0.9.\n"
+"1.0 khả năng cao đạt mức tương tác tốt, 0.0 rất có thể là bot"
 
 #. module: google_recaptcha
 #: model:ir.model.fields,field_description:google_recaptcha.field_res_config_settings__recaptcha_public_key
