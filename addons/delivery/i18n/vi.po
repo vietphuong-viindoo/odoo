@@ -1117,7 +1117,7 @@ msgid ""
 "You cannot delete the deliveries product category as it is used on the "
 "delivery carriers products."
 msgstr ""
-"Bạn không thể xóa danh mục sản phẩm vận chuyển vì nó được sử dụng cho các "
+"Bạn không thể xóa nhóm sản phẩm vận chuyển vì nó được sử dụng cho các "
 "sản phẩm của đơn vị vận chuyển."
 
 #. module: delivery

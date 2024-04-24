@@ -16219,6 +16219,8 @@ msgid ""
 "You can't register payments for both inbound and outbound moves at the same "
 "time."
 msgstr ""
+"Bạn không thể đăng ký thanh toán cho các bút toán toàn bộ đều là dạng gửi "
+"đi, hoặc là dạng nhận về."
 
 #. module: account
 #: code:addons/account/models/account_analytic_line.py:0
@@ -16358,7 +16360,7 @@ msgid ""
 "You cannot delete this report (%s), it is used by the accounting PDF "
 "generation engine."
 msgstr ""
-"Bạn không thể xóa báo cáo (%s) này, vì công cụ tạo PDF kế toán đang sử dụng "
+"Bạn không thể xóa báo cáo (%s), vì công cụ tạo PDF kế toán đang sử dụng "
 "nó."
 
 #. module: account
