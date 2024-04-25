@@ -362,7 +362,7 @@ msgstr ""
 #. module: survey
 #: model_terms:ir.ui.view,arch_db:survey.survey_button_form_view
 msgid "<i class=\"fa fa-fw fa-arrow-right\"/>Edit Survey"
-msgstr ""
+msgstr "<i class=\"fa fa-fw fa-arrow-right\"/>Sửa Khảo sát"
 
 #. module: survey
 #: model_terms:ir.ui.view,arch_db:survey.survey_fill_form_done
