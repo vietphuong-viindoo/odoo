@@ -3424,7 +3424,7 @@ msgstr "Chọn một chủ đề"
 #. module: survey
 #: model_terms:ir.ui.view,arch_db:survey.question_result_choice
 msgid "Pie Graph"
-msgstr "Pie Graph"
+msgstr "Đồ thị Hình bánh"
 
 #. module: survey
 #: model:survey.question.answer,value:survey.survey_demo_quiz_p4_q1_sug1
@@ -3434,7 +3434,7 @@ msgstr "Họ thông"
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_question__question_placeholder
 msgid "Placeholder"
-msgstr "Trình giữ chỗ"
+msgstr "Gợi ý ô nhập liệu"
 
 #. module: survey
 #. odoo-python
@@ -3689,7 +3689,7 @@ msgstr "Gửi lại thư mời"
 #. module: survey
 #: model_terms:ir.ui.view,arch_db:survey.survey_page_statistics_question
 msgid "Responded"
-msgstr ""
+msgstr "Phản hồi"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_survey__user_id
