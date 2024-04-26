@@ -38765,7 +38765,7 @@ msgstr "tháng"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_mrp_subcontracting
 msgid "mrp_subcontracting"
-msgstr "Thuê Gian công cho Sản xuất"
+msgstr "Thuê Gia công cho Sản xuất"
 
 #. module: base
 #. odoo-python
