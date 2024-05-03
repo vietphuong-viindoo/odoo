@@ -391,7 +391,7 @@ msgstr "Chi tiết thanh toán"
 #. module: website_payment
 #: model:ir.model,name:website_payment.model_payment_provider
 msgid "Payment Provider"
-msgstr "Nhà cung cấp thanh toán"
+msgstr "Nhà cung cấp dịch vụ thanh toán"
 
 #. module: website_payment
 #: model:ir.model,name:website_payment.model_payment_transaction

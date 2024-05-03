@@ -1248,7 +1248,7 @@ msgstr "Phương thức thanh toán"
 #. module: payment
 #: model:ir.model,name:payment.model_payment_provider
 msgid "Payment Provider"
-msgstr "Nhà cung cấp thanh toán"
+msgstr "Nhà cung cấp dịch vụ thanh toán"
 
 #. module: payment
 #: model:ir.actions.act_window,name:payment.action_payment_provider

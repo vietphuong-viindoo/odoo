@@ -9264,7 +9264,7 @@ msgid ""
 "SEPA Direct Debit: Get paid in the SEPA zone thanks to a mandate your partner will have granted to you. Module account_sepa is necessary.\n"
 msgstr ""
 "Thủ công: Nhận thanh toán bằng bất kỳ phương thức nào bên ngoài Odoo.\n"
-"Nhà cung cấp thanh toán: Mỗi nhà cung cấp thanh toán có Phương thức thanh toán riêng. Yêu cầu giao dịch trên/đến thẻ nhờ mã thông báo thanh toán được lưu bởi đối tác khi mua hoặc đăng ký trực tuyến.\n"
+"Nhà cung cấp dịch vụ thanh toán: Mỗi nhà cung cấp thanh toán có Phương thức thanh toán riêng. Yêu cầu giao dịch trên/đến thẻ nhờ mã thông báo thanh toán được lưu bởi đối tác khi mua hoặc đăng ký trực tuyến.\n"
 "Gửi tiền hàng loạt: Thu thập một số séc của khách hàng cùng một lúc tạo và gửi tiền gửi hàng loạt cho ngân hàng của bạn. Module account_batch_payment là cần thiết.\n"
 "SEPA Direct Debit: Được trả tiền trong khu vực SEPA nhờ nhiệm vụ mà đối tác của bạn sẽ cấp cho bạn. Module account_sepa là cần thiết.\n"
 

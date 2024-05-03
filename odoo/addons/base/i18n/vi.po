@@ -29758,12 +29758,12 @@ msgstr "Nhà cung cấp Dịch vụ Thanh toán: Alipay"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_payment_aps
 msgid "Payment Provider: Amazon Payment Services"
-msgstr "Nhà cung cấp thanh toán: Dịch vụ thanh toán của Amazon"
+msgstr "Nhà cung cấp dịch vụ thanh toán: Dịch vụ thanh toán của Amazon"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_payment_asiapay
 msgid "Payment Provider: AsiaPay"
-msgstr "Nhà cung cấp thanh toán: AsiaPay"
+msgstr "Nhà cung cấp dịch vụ thanh toán: AsiaPay"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_payment_authorize
@@ -29788,12 +29788,12 @@ msgstr "Nhà cung cấp Dịch vụ Thanh toán: Demo"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_payment_flutterwave
 msgid "Payment Provider: Flutterwave"
-msgstr "Nhà cung cấp thanh toán: Flutterwave"
+msgstr "Nhà cung cấp dịch vụ thanh toán: Flutterwave"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_payment_mercado_pago
 msgid "Payment Provider: Mercado Pago"
-msgstr "Nhà cung cấp thanh toán: Mercado Pago"
+msgstr "Nhà cung cấp dịch vụ thanh toán: Mercado Pago"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_payment_mollie
@@ -29823,12 +29823,12 @@ msgstr "Nhà cung cấp Dịch vụ Thanh toán: Paypal"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_payment_razorpay
 msgid "Payment Provider: Razorpay"
-msgstr "Nhà cung cấp thanh toán: Razorpay"
+msgstr "Nhà cung cấp dịch vụ thanh toán: Razorpay"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_payment_sepa_direct_debit
 msgid "Payment Provider: Sepa Direct Debit"
-msgstr "Nhà cung cấp thanh toán: Ghi nợ trực tiếp Sepa"
+msgstr "Nhà cung cấp dịch vụ thanh toán: Ghi nợ trực tiếp Sepa"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_payment_stripe

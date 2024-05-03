@@ -2697,7 +2697,7 @@ msgstr "Biểu tượng Thanh toán"
 #. module: website_sale
 #: model:ir.model,name:website_sale.model_payment_provider
 msgid "Payment Provider"
-msgstr "Nhà cung cấp thanh toán"
+msgstr "Nhà cung cấp dịch vụ thanh toán"
 
 #. module: website_sale
 #: model:ir.ui.menu,name:website_sale.menu_ecommerce_payment_providers
