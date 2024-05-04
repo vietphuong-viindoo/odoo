@@ -4,15 +4,15 @@
 #
 # Translators:
 # Wil Odoo, 2023
-# Thi Huong Nguyen, 2023
-#
+# Thi Huong Nguyen, 2024
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-05 12:32+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
-"Last-Translator: Thi Huong Nguyen, 2023\n"
+"Last-Translator: Thi Huong Nguyen, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
@@ -7887,7 +7887,7 @@ msgstr "Chỉ mục của cột được trả về từ trong dải ô tham chi
 msgid ""
 "The index of the row to be returned from within the reference range of "
 "cells."
-msgstr "Chỉ mục của dòng được trả về từ trong dải ô tham chiếu."
+msgstr "Chỉ mục của hàng được trả về từ trong dải ô tham chiếu."
 
 #. module: spreadsheet
 #. odoo-javascript
