@@ -701,14 +701,9 @@ Or send your receipts at <a href="mailto:%(email)s?subject=Lunch%%20with%%20cust
     @api.model
     def message_new(self, msg_dict, custom_values=None):
         email_address = email_split(msg_dict.get('email_from', False))[0]
+        employee = self._get_employee_from_email(email_address)
 
-        employee = self.env['hr.employee'].search([
-            '|',
-            ('work_email', 'ilike', email_address),
-            ('user_id.email', 'ilike', email_address)
-        ]).filtered(lambda e: e.company_id == e.user_id.company_id)
-
-        if len(employee) != 1:
+        if not employee:
             return super().message_new(msg_dict, custom_values=custom_values)
 
         expense_description = msg_dict.get('subject', '')
@@ -749,6 +744,29 @@ Or send your receipts at <a href="mailto:%(email)s?subject=Lunch%%20with%%20cust
         return expense
 
     @api.model
+    def _get_employee_from_email(self, email_address):
+        employee = self.env['hr.employee'].search([
+            ('user_id', '!=', False),
+            '|',
+            ('work_email', 'ilike', email_address),
+            ('user_id.email', 'ilike', email_address),
+        ])
+
+        if len(employee) > 1:
+            # Several employees can be linked to the same user.
+            # In that case, we only keep the employee that matched the user's company.
+            return employee.filtered(lambda e: e.company_id == e.user_id.company_id)
+
+        if not employee:
+            # An employee does not always have a user.
+            return self.env['hr.employee'].search([
+                ('user_id', '=', False),
+                ('work_email', 'ilike', email_address),
+            ], limit=1)
+
+        return employee
+
+    @api.model
     def _parse_product(self, expense_description):
         """
         Parse the subject to find the product.
@@ -765,13 +783,13 @@ Or send your receipts at <a href="mailto:%(email)s?subject=Lunch%%20with%%20cust
     @api.model
     def _parse_price(self, expense_description, currencies):
         """ Return price, currency and updated description """
-        symbols, symbols_pattern, float_pattern = [], '', '[+-]?(\d+[.,]?\d*)'
+        symbols, symbols_pattern, float_pattern = [], '', r'[+-]?(\d+[.,]?\d*)'
         price = 0.0
         for currency in currencies:
             symbols.append(re.escape(currency.symbol))
             symbols.append(re.escape(currency.name))
         symbols_pattern = '|'.join(symbols)
-        price_pattern = "((%s)?\s?%s\s?(%s)?)" % (symbols_pattern, float_pattern, symbols_pattern)
+        price_pattern = r"((%s)?\s?%s\s?(%s)?)" % (symbols_pattern, float_pattern, symbols_pattern)
         matches = re.findall(price_pattern, expense_description)
         currency = currencies and currencies[0]
         if matches:
