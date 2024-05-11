@@ -373,11 +373,14 @@ class SaleOrder(models.Model):
             if not order.partner_id:
                 order.fiscal_position_id = False
                 continue
+            fpos_id_before = order.fiscal_position_id.id
             key = (order.company_id.id, order.partner_id.id, order.partner_shipping_id.id)
             if key not in cache:
                 cache[key] = self.env['account.fiscal.position'].with_company(
                     order.company_id
-                )._get_fiscal_position(order.partner_id, order.partner_shipping_id)
+                )._get_fiscal_position(order.partner_id, order.partner_shipping_id).id
+            if fpos_id_before != cache[key] and order.order_line:
+                order.show_update_fpos = True
             order.fiscal_position_id = cache[key]
 
     @api.depends('partner_id')
@@ -630,16 +633,11 @@ class SaleOrder(models.Model):
                 order.amount_to_invoice = 0.0
                 return
 
-            order.amount_to_invoice = order.amount_total
-            for invoice in order.invoice_ids.filtered(lambda x: x.state == 'posted'):
-                prices = sum(invoice.line_ids.filtered(lambda x: order in x.sale_line_ids.order_id).mapped('price_total'))
-                invoice_amount_currency = invoice.currency_id._convert(
-                    prices * -invoice.direction_sign,
-                    order.currency_id,
-                    invoice.company_id,
-                    invoice.date,
-                )
-                order.amount_to_invoice -= invoice_amount_currency
+            invoices = order.invoice_ids.filtered(lambda x: x.state == 'posted')
+            # Note: A negative amount can happen, since we can invoice more than the sales order amount.
+            # Care has to be taken when summing amount_to_invoice of multiple orders.
+            # E.g. consider one invoiced order with -100 and one uninvoiced order of 100: 100 + -100 = 0
+            order.amount_to_invoice = order.amount_total - invoices._get_sale_order_invoiced_amount(order)
 
     @api.depends('amount_total', 'amount_to_invoice')
     def _compute_amount_invoiced(self):
@@ -1098,6 +1096,7 @@ class SaleOrder(models.Model):
     def action_update_taxes(self):
         self.ensure_one()
 
+        self._recompute_prices()
         self._recompute_taxes()
 
         if self.partner_id:
