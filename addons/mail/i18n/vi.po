@@ -8409,7 +8409,7 @@ msgstr "Tìm kiếm phiên RTC"
 #: code:addons/mail/static/src/models/emoji_search_bar_view.js:0
 #, python-format
 msgid "Search an emoji"
-msgstr ""
+msgstr "Tìm kiếm biểu tượng cảm xúc"
 
 #. module: mail
 #. odoo-javascript
@@ -36248,77 +36248,77 @@ msgstr "{{ object.partner_id.lang }}"
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "“acceptable”"
-msgstr "“acceptable”"
+msgstr "“có thể chấp nhận”"
 
 #. module: mail
 #. odoo-javascript
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "“application”"
-msgstr "“application”"
+msgstr "“ứng dụng”"
 
 #. module: mail
 #. odoo-javascript
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "“bargain”"
-msgstr "“bargain”"
+msgstr "“mặc cả”"
 
 #. module: mail
 #. odoo-javascript
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "“congratulations”"
-msgstr "“congratulations”"
+msgstr "“chúc mừng”"
 
 #. module: mail
 #. odoo-javascript
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "“discount”"
-msgstr "“discount”"
+msgstr "“giảm giá”"
 
 #. module: mail
 #. odoo-javascript
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "“free of charge”"
-msgstr "“free of charge”"
+msgstr "“miễn phí”"
 
 #. module: mail
 #. odoo-javascript
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "“here”"
-msgstr "“here”"
+msgstr "“ở đây”"
 
 #. module: mail
 #. odoo-javascript
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "“monthly amount”"
-msgstr "“monthly amount”"
+msgstr "“số tiền hàng tháng”"
 
 #. module: mail
 #. odoo-javascript
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "“no vacancy”"
-msgstr "“no vacancy”"
+msgstr "“không còn chỗ trống”"
 
 #. module: mail
 #. odoo-javascript
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "“not free of charge”"
-msgstr "“not free of charge”"
+msgstr "“không miễn phí”"
 
 #. module: mail
 #. odoo-javascript
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "“open for business”"
-msgstr "“open for business”"
+msgstr "“mở cho doanh nghiệp”"
 
 #. module: mail
 #. odoo-javascript
