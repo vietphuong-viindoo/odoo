@@ -3912,7 +3912,7 @@ msgstr "Xin nghỉ"
 #. module: hr_holidays
 #: model:res.groups,name:hr_holidays.group_hr_holidays_responsible
 msgid "Time Off Responsible"
-msgstr "Nghỉ có lương"
+msgstr "Duyệt nghỉ"
 
 #. module: hr_holidays
 #: model:mail.activity.type,name:hr_holidays.mail_act_leave_second_approval
