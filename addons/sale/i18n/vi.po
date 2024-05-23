@@ -30,7 +30,7 @@ msgstr " Dữ liệu đã được nạp"
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_crm_team__sale_order_count
 msgid "# Sale Orders"
-msgstr "SL Đơn bán"
+msgstr "Mã số Đơn bán"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_report__nbr
@@ -40,7 +40,7 @@ msgstr "SL dòng"
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_payment_transaction__sale_order_ids_nbr
 msgid "# of Sales Orders"
-msgstr "SL Đơn bán"
+msgstr "Mã số Đơn bán"
 
 #. module: sale
 #. odoo-python
@@ -2877,7 +2877,7 @@ msgstr "Đơn bán"
 #: model:ir.model.fields,field_description:sale.field_sale_report__order_id
 #: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
 msgid "Order #"
-msgstr "SL Đơn bán"
+msgstr "Mã số Đơn bán"
 
 #. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.sale_onboarding_order_confirmation_step
