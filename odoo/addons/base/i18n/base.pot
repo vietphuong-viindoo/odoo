@@ -32804,3 +32804,9 @@ msgstr ""
 #: model:res.country,name:base.ax
 msgid "Åland Islands"
 msgstr ""
+
+#. module: base
+#: model:res.currency,currency_unit_label:base.VND
+msgid "Dong"
+msgstr ""
+
