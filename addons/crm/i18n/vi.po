@@ -2279,12 +2279,12 @@ msgstr "Mất"
 #: code:addons/crm/wizard/crm_lead_lost.py:0
 #, python-format
 msgid "Lost Comment"
-msgstr "Bình luận về mất"
+msgstr "Bình luận về thất bại"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_lead_scoring_frequency__lost_count
 msgid "Lost Count"
-msgstr "Số lượng mất"
+msgstr "Số lượng thất bại"
 
 #. module: crm
 #: model:ir.actions.act_window,name:crm.crm_lead_lost_action
