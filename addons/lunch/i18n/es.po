@@ -4,6 +4,7 @@
 # 
 # Translators:
 # Wil Odoo, 2023
+# Pedro M. Baeza <pedro.baeza@tecnativa.com>, 2024
 # Larissa Manderfeld, 2024
 # 
 msgid ""
@@ -268,7 +269,7 @@ msgstr ""
 "        <t t-set=\"order\" t-value=\"ctx.get('order')\"></t>\n"
 "        <t t-set=\"currency\" t-value=\"user.env['res.currency'].browse(order.get('currency_id'))\"></t>\n"
 "        <p>\n"
-"        Apreciable <t t-out=\"order.get('supplier_name', '')\">Laurie Poiret</t>,\n"
+"        Estimado/a <t t-out=\"order.get('supplier_name', '')\">Laurie Poiret</t>,\n"
 "        </p><p>\n"
 "        Aquí está su pedido de hoy para <t t-out=\"order.get('company_name', '')\">LunchCompany</t>:\n"
 "        </p>\n"
@@ -516,17 +517,17 @@ msgstr "Disponible hoy"
 #. module: lunch
 #: model:ir.model.fields,field_description:lunch.field_lunch_order__available_toppings_1
 msgid "Available Toppings 1"
-msgstr "Aderezos Disponibles 1"
+msgstr "Extras disponibles 1"
 
 #. module: lunch
 #: model:ir.model.fields,field_description:lunch.field_lunch_order__available_toppings_2
 msgid "Available Toppings 2"
-msgstr "Aderezos Disponibles 2"
+msgstr "Extras disponibles 2"
 
 #. module: lunch
 #: model:ir.model.fields,field_description:lunch.field_lunch_order__available_toppings_3
 msgid "Available Toppings 3"
-msgstr "Aderezos Disponibles 3"
+msgstr "Extras disponibles 3"
 
 #. module: lunch
 #: model:lunch.product,name:lunch.product_bacon
@@ -538,13 +539,13 @@ msgstr "Tocino"
 #: model_terms:lunch.product,description:lunch.product_bacon
 #: model_terms:lunch.product,description:lunch.product_bacon_0
 msgid "Beef, Bacon, Salad, Cheddar, Fried Onion, BBQ Sauce"
-msgstr "Res, tocino, ensalada, queso cheddar, cebolla frita, salsa BBQ "
+msgstr "Ternera, tocino, ensalada, queso cheddar, cebolla frita, salsa BBQ "
 
 #. module: lunch
 #: model_terms:lunch.product,description:lunch.product_cheese_burger_0
 #: model_terms:lunch.product,description:lunch.product_cheeseburger
 msgid "Beef, Cheddar, Salad, Fried Onions, BBQ Sauce"
-msgstr "Res, queso cheddar, ensalada, cebollas fritas, salsa BBQ"
+msgstr "Ternera, queso cheddar, ensalada, cebollas fritas, salsa BBQ"
 
 #. module: lunch
 #: model:lunch.product,name:lunch.product_Bolognese
@@ -588,13 +589,13 @@ msgstr "Cancelado"
 #: code:addons/lunch/models/lunch_supplier.py:0
 #, python-format
 msgid "Cannot send an email to this supplier!"
-msgstr "No se puede enviar un correo electrónico a este proveedor"
+msgstr "No es posible enviar un correo electrónico a este proveedor."
 
 #. module: lunch
 #: model:ir.actions.act_window,name:lunch.lunch_cashmove_action_payment
 #: model:ir.ui.menu,name:lunch.lunch_cashmove_report_menu_payment
 msgid "Cash Moves"
-msgstr "Movimientos de Caja"
+msgstr "Movimientos de efectivo"
 
 #. module: lunch
 #: model:ir.model,name:lunch.model_lunch_cashmove_report
@@ -866,17 +867,17 @@ msgstr "Correo electrónico"
 #. module: lunch
 #: model:ir.model.fields.selection,name:lunch.selection__lunch_alert__recipients__last_month
 msgid "Employee who ordered last month"
-msgstr "Empleado que ordenó el mes pasado"
+msgstr "Empleado que hizo el pedido el mes pasado"
 
 #. module: lunch
 #: model:ir.model.fields.selection,name:lunch.selection__lunch_alert__recipients__last_week
 msgid "Employee who ordered last week"
-msgstr "Empleado que ordenó la semana pasada"
+msgstr "Empleado que hizo el pedido la semana pasada"
 
 #. module: lunch
 #: model:ir.model.fields.selection,name:lunch.selection__lunch_alert__recipients__last_year
 msgid "Employee who ordered last year"
-msgstr "Empleado que ordenó el año pasado"
+msgstr "Empleado que hizo el pedido el año pasado"
 
 #. module: lunch
 #: model:ir.model.fields.selection,name:lunch.selection__lunch_alert__recipients__everyone

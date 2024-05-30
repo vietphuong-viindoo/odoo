@@ -1,11 +1,11 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* mail_bot
-#
+# 
 # Translators:
 # Wil Odoo, 2023
 # Thi Huong Nguyen, 2024
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
@@ -14,10 +14,10 @@ msgstr ""
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
 "Last-Translator: Thi Huong Nguyen, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
-"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
+"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: mail_bot
@@ -82,8 +82,9 @@ msgstr "Ừm..."
 #, python-format
 msgid ""
 "I am a simple bot, but if that's a dog, he is the cutest 😊 "
-"<br/>Congratulations, you finished this tour. You can now <b>close this chat"
-" window</b>. Enjoy discovering Odoo."
+"<br/>Congratulations, you finished this tour. You can now <b>close this "
+"conversation</b> or start the tour again with typing <span "
+"class=\"o_odoobot_command\">start the tour</span>. Enjoy discovering Odoo!"
 msgstr ""
 "Tôi là một bot đơn giản, nhưng nếu đó đúng thật là một chú cún thì nó thật "
 "dễ thương 😊 <br/>Chúc mừng, bạn đã kết thúc cuộc đi dạo. Giờ bạn có thể "

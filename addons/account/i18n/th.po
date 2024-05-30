@@ -535,6 +535,8 @@ msgid ""
 "<br/>\n"
 "                            on this account:"
 msgstr ""
+"<br/>\n"
+"                            ในบัญชีนี้:"
 
 #. module: account
 #: model:mail.template,body_html:account.email_template_edi_credit_note
@@ -2422,6 +2424,7 @@ msgstr "ความสัมพันธ์ตามสัญญาทั้ง
 #, python-format
 msgid "All selected moves for reversal must belong to the same company."
 msgstr ""
+"การเคลื่อนไหวที่เลือกทั้งหมดสำหรับการกลับรายการต้องเป็นของบริษัทเดียวกัน"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_res_config_settings__module_product_margin
@@ -6066,17 +6069,6 @@ msgid "Duplicated Ref"
 msgstr "การอ้างอิงที่ซ้ำกัน"
 
 #. module: account
-#. odoo-python
-#: code:addons/account/models/account_move.py:0
-#, python-format
-msgid ""
-"Duplicated vendor reference detected. You probably encoded twice the same "
-"vendor bill/credit note."
-msgstr ""
-"ตรวจพบการอ้างอิงผู้จำหน่ายที่ซ้ำกัน "
-"คุณอาจเข้ารหัสสองครั้งในใบเรียกเก็บเงิน/ใบลดหนี้ของผู้จำหน่ายรายเดียวกัน"
-
-#. module: account
 #: model:ir.model.fields,field_description:account.field_res_config_settings__module_account_reports
 msgid "Dynamic Reports"
 msgstr "รายงานแบบไดนามิก"
@@ -6191,7 +6183,7 @@ msgstr "อีเมลตามค่าเริ่มต้น"
 #. module: account
 #: model:ir.model.fields,help:account.field_account_journal__alias_domain
 msgid "Email domain e.g. 'example.com' in 'odoo@example.com'"
-msgstr ""
+msgstr "โดเมนอีเมล เช่น 'example.com' ใน 'odoo@example.com'"
 
 #. module: account
 #: model:account.account,name:account.1_employee_payroll_taxes
@@ -6346,6 +6338,7 @@ msgstr "ส่วนของเจ้าของ"
 #, python-format
 msgid "Error importing attachment '%s' as invoice (decoder=%s)"
 msgstr ""
+"เกิดข้อผิดพลาดในการนำเข้าเอกสารแนบ '%s' เป็นใบแจ้งหนี้ (ตัวถอดรหัส=%s)"
 
 #. module: account
 #. odoo-python
@@ -10297,13 +10290,6 @@ msgstr "Oops"
 #, python-format
 msgid "Open"
 msgstr "เปิด"
-
-#. module: account
-#. odoo-python
-#: code:addons/account/models/account_move.py:0
-#, python-format
-msgid "Open list"
-msgstr "เปิดรายการ"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_account__opening_balance
@@ -16331,7 +16317,7 @@ msgstr "เขียน <b>ที่อยู่อีเมลของคุ�
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_payment_register__writeoff_is_exchange_account
 msgid "Writeoff Is Exchange Account"
-msgstr ""
+msgstr "การตัดบัญชีเป็นบัญชี Exchange"
 
 #. module: account
 #: model:ir.model.constraint,message:account.constraint_account_move_line_check_credit_debit
@@ -16650,6 +16636,7 @@ msgid ""
 "You can't register payments for both inbound and outbound moves at the same "
 "time."
 msgstr ""
+"คุณไม่สามารถลงทะเบียนการชำระเงิน สำหรับการย้ายทั้งขาเข้าและขาออกพร้อมกันได้"
 
 #. module: account
 #. odoo-python
@@ -16740,7 +16727,7 @@ msgstr ""
 #: code:addons/account/models/account_account.py:0
 #, python-format
 msgid "You cannot create recursive groups."
-msgstr ""
+msgstr "คุณไม่สามารถสร้างกลุ่มแบบเรียกซ้ำได้"
 
 #. module: account
 #. odoo-python
@@ -16790,6 +16777,7 @@ msgid ""
 "You cannot delete this report (%s), it is used by the accounting PDF "
 "generation engine."
 msgstr ""
+"คุณไม่สามารถลบรายงานนี้ (%s) ได้ รายงานนี้ถูกใช้โดยกลไกการสร้าง PDF ทางบัญชี"
 
 #. module: account
 #. odoo-python

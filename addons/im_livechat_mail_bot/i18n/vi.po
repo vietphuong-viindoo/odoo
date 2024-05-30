@@ -1,7 +1,7 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* im_livechat_mail_bot
-#
+# 
 # Translators:
 # Wil Odoo, 2023
 # Thi Huong Nguyen, 2024
@@ -14,10 +14,10 @@ msgstr ""
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
 "Last-Translator: Thi Huong Nguyen, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
-"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
+"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: im_livechat_mail_bot
@@ -26,8 +26,9 @@ msgstr ""
 #, python-format
 msgid ""
 "Good, you can customize canned responses in the live chat "
-"application.<br/><br/><b>It's the end of this overview</b>, enjoy "
-"discovering Odoo!"
+"application.<br/><br/><b>It's the end of this overview</b>, you can now "
+"<b>close this conversation</b> or start the tour again with typing <span "
+"class=\"o_odoobot_command\">start the tour</span>. Enjoy discovering Odoo!"
 msgstr ""
 "Tốt, bạn có thể tùy biến các câu trả lời mẫu ở ứng dụng chat trực "
 "tuyến.<br/><br/><b>Nó sẽ xuất hiện ở cuối quá trình tổng quan này</b>, chúc "
@@ -63,8 +64,8 @@ msgstr "Onboarding mẫu trả lời"
 #. odoo-python
 #: code:addons/im_livechat_mail_bot/models/mail_bot.py:0
 #, python-format
-msgid "That's me! 🎉<br/>Try typing %s to use canned responses."
-msgstr "Tuyệt vời! 🎉<br/>Thử nhập %s để sử dụng câu trả lời soạn sẵn."
+msgid "Wonderful! 😇<br/>Try typing %s to use canned responses."
+msgstr "Tuyệt vời! 😇<br/>Thử gõ %s để sử dụng câu trả lời soạn trước."
 
 #. module: im_livechat_mail_bot
 #: model:ir.model,name:im_livechat_mail_bot.model_res_users

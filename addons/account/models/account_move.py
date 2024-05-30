@@ -1064,7 +1064,7 @@ class AccountMove(models.Model):
 
     @api.depends('invoice_payment_term_id', 'invoice_date', 'currency_id', 'amount_total_in_currency_signed', 'invoice_date_due')
     def _compute_needed_terms(self):
-        for invoice in self:
+        for invoice in self.with_context(bin_size=False):
             is_draft = invoice.id != invoice._origin.id
             invoice.needed_terms = {}
             invoice.needed_terms_dirty = True
@@ -1957,25 +1957,6 @@ class AccountMove(models.Model):
                 raise ValidationError(_("Cannot create a purchase document in a non purchase journal"))
             if move.is_sale_document(include_receipts=True) and move.journal_id.type != 'sale':
                 raise ValidationError(_("Cannot create a sale document in a non sale journal"))
-
-    @api.constrains('ref', 'move_type', 'partner_id', 'journal_id', 'invoice_date', 'state')
-    def _check_duplicate_supplier_reference(self):
-        """ Assert the move which is about to be posted isn't a duplicated move from another posted entry"""
-        move_to_duplicate_moves = self.filtered(lambda m: m.state == 'posted')._fetch_duplicate_supplier_reference(only_posted=True)
-        if any(duplicate_move for duplicate_move in move_to_duplicate_moves.values()):
-            duplicate_move_ids = list(set(
-                move_id
-                for move_ids in (move.ids + duplicate.ids for move, duplicate in move_to_duplicate_moves.items() if duplicate)
-                for move_id in move_ids
-            ))
-            action = self.env['ir.actions.actions']._for_xml_id('account.action_move_line_form')
-            action['domain'] = [('id', 'in', duplicate_move_ids)]
-            action['views'] = [((view_id, 'list') if view_type == 'tree' else (view_id, view_type)) for view_id, view_type in action['views']]
-            raise RedirectWarning(
-                message=_("Duplicated vendor reference detected. You probably encoded twice the same vendor bill/credit note."),
-                action=action,
-                button_text=_("Open list"),
-            )
 
     @api.constrains('line_ids', 'fiscal_position_id', 'company_id')
     def _validate_taxes_country(self):
