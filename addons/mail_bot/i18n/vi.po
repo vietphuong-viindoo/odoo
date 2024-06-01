@@ -1,7 +1,7 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* mail_bot
-#
+# 
 # Translators:
 # Martin Trigaux, 2022
 # Thi Huong Nguyen, 2024
@@ -83,12 +83,15 @@ msgstr "Ừm..."
 #, python-format
 msgid ""
 "I am a simple bot, but if that's a dog, he is the cutest 😊 "
-"<br/>Congratulations, you finished this tour. You can now <b>close this chat"
-" window</b>. Enjoy discovering Odoo."
+"<br/>Congratulations, you finished this tour. You can now <b>close this "
+"conversation</b> or start the tour again with typing <span "
+"class=\"o_odoobot_command\">start the tour</span>. Enjoy discovering Odoo!"
 msgstr ""
 "Tôi là một bot đơn giản, nhưng nếu đó đúng thật là một chú cún thì nó thật "
-"dễ thương 😊 <br/>Chúc mừng, bạn đã kết thúc cuộc đi dạo. Giờ bạn có thể "
-"<b>đóng cửa sổ chat</b>. Hãy tận hưởng trải nghiệm khám phá phần mềm."
+"dễ thương 😊 <br/>Chúc mừng, bạn đã kết thúc chuyến tham quan. Giờ bạn có thể "
+"<b>đóng cửa sổ chat</b> hoặc bắt đầu lại chuyến tham quan bằng cách nhập <span"
+" class=\"o_odoobot_command\">bắt đầu chuyến tham quan</span>. Hãy tận hưởng "
+"trải nghiệm khám phá phần mềm."
 
 #. module: mail_bot
 #: code:addons/mail_bot/models/mail_bot.py:0

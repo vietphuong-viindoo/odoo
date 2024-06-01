@@ -1668,7 +1668,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:website.view_view_qweb
 #, python-format
 msgid "All Websites"
-msgstr ""
+msgstr "تمام وب‌سایت‌ها"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_big_icons_subtitles
@@ -2316,7 +2316,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:website.s_tabs_options
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "Buttons"
-msgstr ""
+msgstr "دکمه‌ها"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_res_config_settings__cdn_url
@@ -2854,7 +2854,7 @@ msgstr "تماس با ما"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.website_visitor_view_search
 msgid "Connected"
-msgstr ""
+msgstr "متصل"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_process_steps_options
@@ -5019,6 +5019,13 @@ msgstr "پنهان"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_popup_options
 msgid "Hide For"
+msgstr ""
+
+#. module: website
+#. odoo-javascript
+#: code:addons/website/static/src/snippets/s_popup/000.js:0
+#, python-format
+msgid "Hide the cookies bar"
 msgstr ""
 
 #. module: website
@@ -7511,7 +7518,7 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_website_form_options
 msgid "Placeholder"
-msgstr ""
+msgstr "مکان‌نما"
 
 #. module: website
 #. odoo-javascript
@@ -7613,7 +7620,7 @@ msgstr ""
 #. odoo-javascript
 #: code:addons/website/static/src/components/fullscreen_indication/fullscreen_indication.js:0
 #, python-format
-msgid "Press %(key)s to exit full string"
+msgid "Press %(key)s to exit full screen"
 msgstr ""
 
 #. module: website
@@ -8650,6 +8657,13 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.view_view_form_extend
 msgid "Show site map"
+msgstr ""
+
+#. module: website
+#. odoo-javascript
+#: code:addons/website/static/src/snippets/s_popup/000.js:0
+#, python-format
+msgid "Show the cookies bar"
 msgstr ""
 
 #. module: website
@@ -9875,7 +9889,7 @@ msgstr "حساب تویتر"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.external_snippets
 msgid "Twitter Scroller"
-msgstr ""
+msgstr "Twitter Scroller"
 
 #. module: website
 #. odoo-javascript
@@ -11365,7 +11379,7 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.website_search_box
 msgid "found)"
-msgstr ""
+msgstr "یافت شد)"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.brand_promotion
@@ -11458,7 +11472,7 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.template_footer_links
 msgid "info@yourcompany.com"
-msgstr ""
+msgstr "info@yourcompany.com"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.footer_custom
