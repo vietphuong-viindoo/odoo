@@ -5308,6 +5308,13 @@ msgstr "Piilota seuraavilta"
 
 #. module: website
 #. openerp-web
+#: code:addons/website/static/src/snippets/s_popup/000.js:0
+#, python-format
+msgid "Hide the cookies bar"
+msgstr ""
+
+#. module: website
+#. openerp-web
 #: code:addons/website/static/src/xml/website.pageProperties.xml:0
 #, python-format
 msgid "Hide this page from search results"
@@ -5557,6 +5564,9 @@ msgid ""
 "If you need to add analytics or marketing tags, inject code in your <head> "
 "or <body> instead. The option is in the \"Theme\" tab."
 msgstr ""
+"Jos sinun on lisättävä analytiikka- tai markkinointitunnisteita, lisää koodi"
+" sen sijaan <head> tai <body> -elementtiin. Vaihtoehto on "
+"\"Teema\"-välilehdellä."
 
 #. module: website
 #. openerp-web
@@ -8929,6 +8939,13 @@ msgid "Show reCaptcha Policy"
 msgstr "Näytä reCaptcha-käytänteet"
 
 #. module: website
+#. openerp-web
+#: code:addons/website/static/src/snippets/s_popup/000.js:0
+#, python-format
+msgid "Show the cookies bar"
+msgstr ""
+
+#. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "Sidebar"
 msgstr "Sivupalkki"
@@ -9546,6 +9563,14 @@ msgstr "Valittu nimi on jo olemassa"
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
 msgid "The company this website belongs to"
 msgstr "Tämä verkkosivu kuuluu yritykselle"
+
+#. module: website
+#: code:addons/website/wizard/portal_wizard.py:0
+#, python-format
+msgid ""
+"The contact \"%s\" has the same email as an existing user (%s) and has "
+"access to the same website."
+msgstr ""
 
 #. module: website
 #. openerp-web

@@ -1168,22 +1168,22 @@ msgstr "آواتار"
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_guest__avatar_1024
 msgid "Avatar 1024"
-msgstr ""
+msgstr "آواتار 1024"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_guest__avatar_128
 msgid "Avatar 128"
-msgstr ""
+msgstr "آواتار 128"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_guest__avatar_256
 msgid "Avatar 256"
-msgstr ""
+msgstr "آواتار 256"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_guest__avatar_512
 msgid "Avatar 512"
-msgstr ""
+msgstr "آواتار 512"
 
 #. module: mail
 #. openerp-web
@@ -1523,6 +1523,8 @@ msgid ""
 "Chat is private and unique between 2 persons. Group is private among invited"
 " persons. Channel can be freely joined (depending on its configuration)."
 msgstr ""
+"گفتگو خصوصی و منحصر به 2 نفر است. گروه مختص چند عضو دعوت شده است. می‌توان "
+"آزادانه به کانال ملحق شد (بسته به پیکربندی آن). "
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_mail__child_ids
@@ -2683,7 +2685,7 @@ msgstr ""
 #: code:addons/mail/static/src/components/rtc_option_list/rtc_option_list.xml:0
 #, python-format
 msgid "Exit full screen"
-msgstr ""
+msgstr "خروج از حالت نمایش تمام صفحه"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.view_mail_search
@@ -3038,7 +3040,7 @@ msgstr ""
 #. module: mail
 #: model:ir.ui.menu,name:mail.mail_guest_menu
 msgid "Guests"
-msgstr ""
+msgstr "مهمانان"
 
 #. module: mail
 #: model:ir.model,name:mail.model_ir_http
@@ -3508,7 +3510,7 @@ msgstr ""
 #: code:addons/mail/static/src/components/channel_invitation_form/channel_invitation_form.xml:0
 #, python-format
 msgid "Invitation Link"
-msgstr ""
+msgstr "لینک دعوت"
 
 #. module: mail
 #: code:addons/mail/wizard/mail_wizard_invite.py:0
@@ -3585,7 +3587,7 @@ msgstr "دنبال می کند"
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_channel__is_member
 msgid "Is Member"
-msgstr ""
+msgstr "آیا عضو است"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_notification__is_read
@@ -7777,7 +7779,9 @@ msgstr ""
 #. module: mail
 #: code:addons/mail/models/ir_attachment.py:0
 #, python-format
-msgid "You may not unlink attachments from other people's messages"
+msgid ""
+"You may not unlink or modify the content of attachments from other people's "
+"messages"
 msgstr ""
 
 #. module: mail
@@ -8244,7 +8248,7 @@ msgstr ""
 #. module: mail
 #: model:mail.channel,name:mail.channel_1
 msgid "sales"
-msgstr ""
+msgstr "حراجی"
 
 #. module: mail
 #. openerp-web
@@ -8322,7 +8326,7 @@ msgstr "استفاده كردن"
 #: code:addons/mail/static/src/xml/many2one_avatar_user.xml:0
 #, python-format
 msgid "value"
-msgstr ""
+msgstr "ارزش"
 
 #. module: mail
 #: model:ir.model.fields.selection,name:mail.selection__mail_activity_type__delay_unit__weeks

@@ -3,11 +3,11 @@
 # 	* mail
 # 
 # Translators:
-# Martin Trigaux, 2021
 # Braulio D. López Vázquez <bdl@odoo.com>, 2022
 # Lucia Pacheco, 2023
 # Iran Villalobos López, 2023
 # Patricia Gutiérrez Capetillo <pagc@odoo.com>, 2024
+# Martin Trigaux, 2024
 # Fernanda Alvarez, 2024
 # 
 msgid ""
@@ -697,7 +697,7 @@ msgstr "Actividad"
 #: model:ir.model.fields,field_description:mail.field_res_partner__activity_exception_decoration
 #: model:ir.model.fields,field_description:mail.field_res_users__activity_exception_decoration
 msgid "Activity Exception Decoration"
-msgstr "Decoración de actividad de excepción"
+msgstr "Decoración de la actividad de excepción"
 
 #. module: mail
 #: model:ir.model,name:mail.model_mail_activity_mixin
@@ -764,7 +764,7 @@ msgstr "Añadir lista negra de correo electrónico"
 #: model_terms:ir.ui.view,arch_db:mail.mail_wizard_invite_form
 #, python-format
 msgid "Add Followers"
-msgstr "Añadir seguidores"
+msgstr "Agregar seguidores"
 
 #. module: mail
 #: code:addons/mail/models/ir_actions_server.py:0
@@ -3427,8 +3427,8 @@ msgid ""
 "If set, this content will automatically be sent out to unauthorized users "
 "instead of the default message."
 msgstr ""
-"Si esta opción está activada, este contenido se enviará automáticamente a "
-"usuarios no autorizados en lugar del mensaje predeterminado."
+"Si se establece, este contenido se enviará en automático a los usuarios no "
+"autorizados en vez del mensaje predeterminado."
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_thread_blacklist__is_blacklisted
@@ -4031,7 +4031,7 @@ msgstr "Registrar una nota"
 #: model_terms:ir.ui.view,arch_db:mail.mail_activity_view_form_popup
 #: model_terms:ir.ui.view,arch_db:mail.view_server_action_form_template
 msgid "Log a note..."
-msgstr "Registrar una nota..."
+msgstr "Registre una nota..."
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.mail_activity_view_form_popup
@@ -6170,14 +6170,14 @@ msgstr "Agendar"
 #: code:addons/mail/static/src/models/chatter/chatter.js:0
 #, python-format
 msgid "Schedule Activity"
-msgstr "Agendar actividad"
+msgstr "Programar actividad"
 
 #. module: mail
 #. openerp-web
 #: code:addons/mail/static/src/xml/web_kanban_activity.xml:0
 #, python-format
 msgid "Schedule activities to help you get things done."
-msgstr "Agendar actividades que te ayuden a terminar tus pendientes."
+msgstr "Programe actividades que le ayuden a terminar sus pendientes."
 
 #. module: mail
 #. openerp-web
@@ -6185,13 +6185,13 @@ msgstr "Agendar actividades que te ayuden a terminar tus pendientes."
 #: code:addons/mail/static/src/xml/activity_view.xml:0
 #, python-format
 msgid "Schedule activity"
-msgstr "Agendar actividad"
+msgstr "Programar actividad"
 
 #. module: mail
 #: code:addons/mail/models/mail_activity.py:0
 #, python-format
 msgid "Schedule an Activity"
-msgstr "Agendar una actividad"
+msgstr "Programar una actividad"
 
 #. module: mail
 #. openerp-web
@@ -6199,7 +6199,7 @@ msgstr "Agendar una actividad"
 #: code:addons/mail/static/src/xml/web_kanban_activity.xml:0
 #, python-format
 msgid "Schedule an activity"
-msgstr "Agendar una actividad"
+msgstr "Programar una actividad"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_template__scheduled_date
@@ -8070,9 +8070,12 @@ msgstr ""
 #. module: mail
 #: code:addons/mail/models/ir_attachment.py:0
 #, python-format
-msgid "You may not unlink attachments from other people's messages"
+msgid ""
+"You may not unlink or modify the content of attachments from other people's "
+"messages"
 msgstr ""
-"No puede desvincular los archivos adjuntos de los mensajes de otras personas"
+"No puede desvincular o modificar el contenido de los archivos adjuntos de "
+"los mensajes de otras personas"
 
 #. module: mail
 #. openerp-web

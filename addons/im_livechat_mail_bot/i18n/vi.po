@@ -1,13 +1,13 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* im_livechat_mail_bot
-#
+# 
 # Translators:
 # Martin Trigaux, 2021
 # Minh Nguyen <ndminh210994@gmail.com>, 2021
 # Trinh Tran Thi Phuong <trinhttp@trobz.com>, 2021
 # Trần Hà <tranthuha13590@gmail.com>, 2021
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~14.4\n"
@@ -27,12 +27,15 @@ msgstr ""
 #, python-format
 msgid ""
 "Good, you can customize canned responses in the live chat "
-"application.<br/><br/><b>It's the end of this overview</b>, enjoy "
-"discovering Odoo!"
+"application.<br/><br/><b>It's the end of this overview</b>, you can now "
+"<b>close this conversation</b> or start the tour again with typing <span "
+"class=\"o_odoobot_command\">start the tour</span>. Enjoy discovering Odoo!"
 msgstr ""
-"Tốt, bạn có thể tùy biến các câu trả lời mẫu ở ứng dụng chat trực "
-"tuyến.<br/><br/><b>Nó sẽ xuất hiện ở cuối quá trình tổng quan này</b>, chúc "
-"bạn khám phá thành công Viindoo!"
+"Tốt, bạn có thể tùy chỉnh các câu trả lời soạn trước trong ứng dụng trò "
+"chuyện trực tiếp.<br/><br/><b>Phần tổng quan này đã kết thúc</b>, bây giờ "
+"bạn có thể <b>đóng đoạn hội thoại này</b> hoặc bắt đầu lại chuyến tham quan"
+" bằng cách nhập <span class=\"o_odoobot_command\">bắt đầu chuyến tham quan "
+"</span>."
 
 #. module: im_livechat_mail_bot
 #: model:ir.model,name:im_livechat_mail_bot.model_mail_bot
@@ -65,7 +68,7 @@ msgstr "Onboarding mẫu trả lời"
 #: code:addons/im_livechat_mail_bot/models/mail_bot.py:0
 #, python-format
 msgid ""
-"That's me! 🎉<br/>Try typing <span class=\"o_odoobot_command\">:</span> to "
+"Wonderful! 😇<br/>Try typing <span class=\"o_odoobot_command\">:</span> to "
 "use canned responses."
 msgstr ""
 "Chính tôi đây! 🎉<br/>Hãy thử gõ <span class=\"o_odoobot_command\">:</span> "

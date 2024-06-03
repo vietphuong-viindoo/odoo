@@ -48,7 +48,7 @@ msgstr "“來源網址”不可留空。"
 #: code:addons/website/models/website_rewrite.py:0
 #, python-format
 msgid "\"URL to\" can not be empty."
-msgstr "\"網址到\" 不能為空."
+msgstr "「前往網址」不可留空。"
 
 #. module: website
 #: code:addons/website/models/website_rewrite.py:0
@@ -4450,7 +4450,7 @@ msgstr "特色"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_dynamic_snippet_options_template
 msgid "Fetched elements"
-msgstr "Fetched elements"
+msgstr "已讀取元素"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website_snippet_filter__field_names
@@ -5228,6 +5228,13 @@ msgstr "隱藏"
 #: model_terms:ir.ui.view,arch_db:website.s_popup_options
 msgid "Hide For"
 msgstr "Hide For"
+
+#. module: website
+#. openerp-web
+#: code:addons/website/static/src/snippets/s_popup/000.js:0
+#, python-format
+msgid "Hide the cookies bar"
+msgstr ""
 
 #. module: website
 #. openerp-web
@@ -7184,7 +7191,7 @@ msgstr "請留意，某些第三方服務可能會在你的瀏覽器安裝額外
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.show_website_info
 msgid "Note: To hide this page, uncheck it from the top Customize menu."
-msgstr "注意: 要隱藏此頁面，可從上方自訂選單取消勾選."
+msgstr "註：要隱藏此頁面，請在頂部的「自訂」選單中取消選取它。"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_countdown_options
@@ -8806,6 +8813,13 @@ msgid "Show reCaptcha Policy"
 msgstr "顯示 reCaptcha 策略"
 
 #. module: website
+#. openerp-web
+#: code:addons/website/static/src/snippets/s_popup/000.js:0
+#, python-format
+msgid "Show the cookies bar"
+msgstr ""
+
+#. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "Sidebar"
 msgstr "側邊欄"
@@ -9410,6 +9424,14 @@ msgstr "所選名稱已存在"
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
 msgid "The company this website belongs to"
 msgstr "這個網站的所屬公司"
+
+#. module: website
+#: code:addons/website/wizard/portal_wizard.py:0
+#, python-format
+msgid ""
+"The contact \"%s\" has the same email as an existing user (%s) and has "
+"access to the same website."
+msgstr ""
 
 #. module: website
 #. openerp-web
@@ -10129,7 +10151,7 @@ msgstr "符合這些篩選條件的網址會用 CDN 根網址改寫"
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website_rewrite__url_to
 msgid "URL to"
-msgstr "網址到"
+msgstr "前往網址"
 
 #. module: website
 #. openerp-web

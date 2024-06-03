@@ -780,7 +780,7 @@ msgstr "Actividades"
 #: model:ir.model.fields,field_description:stock.field_stock_picking__activity_exception_decoration
 #: model:ir.model.fields,field_description:stock.field_stock_production_lot__activity_exception_decoration
 msgid "Activity Exception Decoration"
-msgstr "Decoración de actividad de excepción"
+msgstr "Decoración de la actividad de excepción"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking__activity_state
@@ -3046,8 +3046,8 @@ msgid ""
 "Give to the more specialized category, a higher priority to have them in top"
 " of the list."
 msgstr ""
-"Dele a la categoría más especializada una prioridad más alta para tenerla en"
-" lo alto de la lista."
+"Proporciónele mayor prioridad a la categoría más especializada para que "
+"aparezca en la parte superior de la lista."
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_warehouse__sequence
@@ -3688,7 +3688,7 @@ msgstr "Conjunto de cantidades de inventario"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.stock_inventory_adjustment_name_form_view
 msgid "Inventory Reference / Reason"
-msgstr "Referencia/razón de inventario"
+msgstr "Referencia/motivo de inventario"
 
 #. module: stock
 #: model:ir.ui.menu,name:stock.menu_valuation
@@ -4260,7 +4260,7 @@ msgstr "Número de lote/de serie (ZPL)"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_move_line__lot_name
 msgid "Lot/Serial Number Name"
-msgstr "Nombre del número de lote/de serie"
+msgstr "Nombre del número de serie o lote"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.product_form_view_procurement_button
@@ -4271,7 +4271,7 @@ msgstr "Números de lote/de serie"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_res_config_settings__group_stock_production_lot
 msgid "Lots & Serial Numbers"
-msgstr "Números de lote y de serie"
+msgstr "Números de serie y lote"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
@@ -4882,7 +4882,7 @@ msgstr "Número de acciones"
 #: model:ir.model.fields,field_description:stock.field_stock_assign_serial__next_serial_count
 #: model:ir.model.fields,field_description:stock.field_stock_move__next_serial_count
 msgid "Number of SN"
-msgstr "Cantidad de NS"
+msgstr "Cantidad de números de serie"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking__message_has_error_counter
@@ -4995,7 +4995,7 @@ msgstr "Tipos de operación"
 #: code:addons/stock/models/stock_quant.py:0
 #, python-format
 msgid "Operation not supported"
-msgstr "Operación no permitida"
+msgstr "Operación incompatible"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_move_line__picking_type_id
@@ -7305,7 +7305,7 @@ msgstr "Origen"
 #: model:ir.model.fields,field_description:stock.field_stock_scrap__origin
 #: model_terms:ir.ui.view,arch_db:stock.view_picking_internal_search
 msgid "Source Document"
-msgstr "Documento de origen"
+msgstr "Documento origen"
 
 #. module: stock
 #: code:addons/stock/models/stock_rule.py:0

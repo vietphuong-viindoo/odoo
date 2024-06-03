@@ -1670,10 +1670,7 @@ export class OdooEditor extends EventTarget {
      */
     _applyRawCommand(method, ...args) {
         const sel = this.document.getSelection();
-        if (
-            !this.editable.contains(sel.anchorNode) ||
-            (sel.anchorNode !== sel.focusNode && !this.editable.contains(sel.focusNode))
-        ) {
+        if (!this.isSelectionInEditable(sel)) {
             // Do not apply commands out of the editable area.
             return false;
         }
@@ -1716,6 +1713,7 @@ export class OdooEditor extends EventTarget {
      * @returns {?}
      */
     _applyCommand(...args) {
+        this._checkStepUnbreakable = true;
         this._recordHistorySelection(true);
         const result = this._protect(() => this._applyRawCommand(...args));
         this.historyStep();
@@ -2682,7 +2680,7 @@ export class OdooEditor extends EventTarget {
         // inserting the printed representation of the character.
         if (/^.$/u.test(ev.key) && !ev.ctrlKey && !ev.metaKey && (isMacOS() || !ev.altKey)) {
             const selection = this.document.getSelection();
-            if (selection && !selection.isCollapsed) {
+            if (selection && !selection.isCollapsed && this.isSelectionInEditable(selection)) {
                 this.deleteRange(selection);
             }
         }
