@@ -1,7 +1,7 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* account
-#
+# 
 # Translators:
 # Nancy Momoland <thanh.np2502@gmail.com>, 2023
 # Tâm Doãn Bắc, 2024
@@ -16,10 +16,10 @@ msgstr ""
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
 "Last-Translator: Thi Huong Nguyen, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
-"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
+"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: account
@@ -172,7 +172,7 @@ msgstr "%s - %s; %s Hóa đơn đã xuất, %s Giao hàng tại %s mỗi lần"
 #: code:addons/account/models/product.py:0
 #, python-format
 msgid "%s Excl. Taxes"
-msgstr "%s không kèm. Thuế"
+msgstr "%s Chưa bao gồm thuế"
 
 #. module: account
 #. odoo-python
@@ -10406,13 +10406,6 @@ msgid "Open"
 msgstr "Mở"
 
 #. module: account
-#. odoo-python
-#: code:addons/account/models/account_move.py:0
-#, python-format
-msgid "Open list"
-msgstr "Mở danh sách"
-
-#. module: account
 #: model:ir.model.fields,field_description:account.field_account_account__opening_balance
 msgid "Opening Balance"
 msgstr "Số dư đầu kỳ"
@@ -16506,7 +16499,7 @@ msgstr "Viết vào đây <b>địa chỉ email của bạn</b> để chạy th�
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_payment_register__writeoff_is_exchange_account
 msgid "Writeoff Is Exchange Account"
-msgstr ""
+msgstr "Writeoff Is Exchange Account"
 
 #. module: account
 #: model:ir.model.constraint,message:account.constraint_account_move_line_check_credit_debit
