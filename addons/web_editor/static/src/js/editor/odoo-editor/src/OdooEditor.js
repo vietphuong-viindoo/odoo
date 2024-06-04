@@ -2182,7 +2182,7 @@ export class OdooEditor extends EventTarget {
                         ancestor = ancestor.parentElement;
                     }
                     if (!hiliteColor) {
-                        hiliteColor = computedStyle.backgroundColor;
+                        hiliteColor = this.document.queryCommandValue('backColor');
                     }
                 }
             }
@@ -2222,12 +2222,7 @@ export class OdooEditor extends EventTarget {
      */
     _applyRawCommand(method, ...args) {
         const sel = this.document.getSelection();
-        if (
-            !(SELECTIONLESS_COMMANDS.includes(method) && args.length) && (
-                !this.editable.contains(sel.anchorNode) ||
-                (sel.anchorNode !== sel.focusNode && !this.editable.contains(sel.focusNode))
-            )
-        ) {
+        if (!(SELECTIONLESS_COMMANDS.includes(method) && args.length) && !this.isSelectionInEditable(sel)) {
             // Do not apply commands out of the editable area.
             return false;
         }
@@ -2443,8 +2438,11 @@ export class OdooEditor extends EventTarget {
      * @param {Range} range
      */
     _selectTableCells(range) {
-        this.observerUnactive('_selectTableCells');
         const table = closestElement(range.commonAncestorContainer, 'table');
+        if (!table) {
+            return;
+        }
+        this.observerUnactive('_selectTableCells');
         const alreadyHadSelection = table.classList.contains('o_selected_table');
         this.deselectTable(); // Undo previous selection.
         table.classList.toggle('o_selected_table', true);
@@ -3660,7 +3658,7 @@ export class OdooEditor extends EventTarget {
         // inserting the printed representation of the character.
         if (/^.$/u.test(ev.key) && !ev.ctrlKey && !ev.metaKey && (isMacOS() || !ev.altKey)) {
             const selection = this.document.getSelection();
-            if (selection && !selection.isCollapsed) {
+            if (selection && !selection.isCollapsed && this.isSelectionInEditable(selection)) {
                 this.deleteRange(selection);
             }
         }
@@ -4328,7 +4326,6 @@ export class OdooEditor extends EventTarget {
 
             if (isMouseInsideCheckboxBox) {
                 toggleClass(node, 'o_checked');
-                ev.preventDefault();
                 this.historyStep();
                 if (!document.getSelection().isCollapsed) {
                     this._updateToolbar(true);
@@ -4463,7 +4460,8 @@ export class OdooEditor extends EventTarget {
         }
     }
 
-    _onDocumentMouseup() {
+    _onDocumentMouseup(ev) {
+        this._currentMouseState = ev.type;
         if (this.toolbar) {
             this.toolbar.style.pointerEvents = 'auto';
         }

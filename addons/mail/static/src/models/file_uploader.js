@@ -72,7 +72,7 @@ registerModel({
          * @param {Thread} param0.thread
          * @returns {Attachment}
          */
-        _onAttachmentUploaded({ attachmentData, composer, thread }) {
+        async _onAttachmentUploaded({ attachmentData, composer, thread }) {
             if (attachmentData.error || !attachmentData.id) {
                 this.messaging.notify({
                     type: 'danger',
@@ -80,11 +80,11 @@ registerModel({
                 });
                 return;
             }
-            return (composer || thread).messaging.models['Attachment'].insert({
+            return {
                 composer: composer,
                 originThread: (!composer && thread) ? thread : undefined,
                 ...attachmentData,
-            });
+            };
         },
         /**
          * @private
@@ -118,6 +118,7 @@ registerModel({
                 }));
             }
             const attachments = [];
+            const uploadedAttachments = [];
             for (const file of files) {
                 const uploadingAttachment = uploadingAttachments.get(file);
                 if (!uploadingAttachment.exists()) {
@@ -144,13 +145,19 @@ registerModel({
                     if ((composer && !composer.exists()) || (thread && !thread.exists())) {
                         return;
                     }
-                    const attachment = this._onAttachmentUploaded({ attachmentData, composer, thread });
-                    attachments.push(attachment);
+                    const attachment = await this._onAttachmentUploaded({ attachmentData, composer, thread });
+                    if (attachment) {
+                        uploadedAttachments.push(attachment);
+                    }
                 } catch (e) {
                     if (e.name !== 'AbortError') {
                         throw e;
                     }
                 }
+            }
+            for (const data of uploadedAttachments) {
+                const attachment = (composer || thread).messaging.models['Attachment'].insert(data);
+                attachments.push(attachment);
             }
             if (activity && activity.exists()) {
                 await activity.markAsDone({ attachments });
