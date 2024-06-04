@@ -6,8 +6,8 @@
 # Martin Trigaux, 2023
 # micheledic, 2023
 # Wil Odoo, 2024
-# Sergio Zanchetta <primes2h@gmail.com>, 2024
 # Marianna Ciofani, 2024
+# Sergio Zanchetta <primes2h@gmail.com>, 2024
 # 
 msgid ""
 msgstr ""
@@ -15,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-26 12:42+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
-"Last-Translator: Marianna Ciofani, 2024\n"
+"Last-Translator: Sergio Zanchetta <primes2h@gmail.com>, 2024\n"
 "Language-Team: Italian (https://app.transifex.com/odoo/teams/41243/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2321,9 +2321,9 @@ msgid ""
 "This module allows to generate a project/task from sales orders.\n"
 msgstr ""
 "\n"
-"Consente di creare lavori da un ordine di vendita\n"
+"Consente di creare attività da un ordine di vendita\n"
 "==================================================\n"
-"Modulo che consente di generare un progetto/lavoro da ordini di vendita.\n"
+"Modulo che consente di generare un progetto/attività da ordini di vendita.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_sale_service
@@ -34377,7 +34377,7 @@ msgstr "Generazione lavori dagli ordini di vendita"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_timesheet
 msgid "Task Logs"
-msgstr "Registri lavoro"
+msgstr "Registri attività"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_company__vat
@@ -34419,7 +34419,7 @@ msgstr "Dati tecnici"
 #. module: base
 #: model:res.groups,name:base.group_no_one
 msgid "Technical Features"
-msgstr "Specifiche tecniche"
+msgstr "Funzionalità tecniche"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_module_module__name

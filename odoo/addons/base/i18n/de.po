@@ -22002,7 +22002,7 @@ msgstr "Hongkong"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_hk
 msgid "Hong Kong - Accounting"
-msgstr "Hong Kong - Buchhaltung"
+msgstr "Hongkong - Buchhaltung"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_hk_hr_payroll
@@ -26448,7 +26448,7 @@ msgstr "Nichtrelationales Feld %(field)r in Pfad %(field_path)r in %(use)s)"
 #: code:addons/base/models/ir_model.py:0
 #, python-format
 msgid "Non-relational field %r in dependency %r"
-msgstr "Nicht-relationales Feld %r in Abhängigkeit %r"
+msgstr "Nichtrelationales Feld %r in Abhängigkeit %r"
 
 #. module: base
 #. odoo-python
