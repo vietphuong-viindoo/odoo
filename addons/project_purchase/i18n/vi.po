@@ -30,7 +30,7 @@ msgstr "# Đơn mua hàng"
 #: code:addons/project_purchase/models/project.py:0
 #, python-format
 msgid "Other Costs"
-msgstr "Other Costs"
+msgstr "Chi phí khác"
 
 #. module: project_purchase
 #: model:ir.model,name:project_purchase.model_project_project
