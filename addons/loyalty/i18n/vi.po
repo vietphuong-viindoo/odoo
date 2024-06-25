@@ -125,7 +125,7 @@ msgstr "Phiếu giảm giá 10%"
 #: model:loyalty.reward,description:loyalty.10_percent_coupon_reward
 #: model:loyalty.reward,description:loyalty.10_percent_with_code_reward
 msgid "10% on your order"
-msgstr "10% cho đơn hàng của bạn"
+msgstr "10% cho đơn của bạn"
 
 #. module: loyalty
 #. odoo-python
@@ -669,7 +669,7 @@ msgstr "Mã"
 #. module: loyalty
 #: model:loyalty.program,name:loyalty.10_percent_with_code
 msgid "Code for 10% on orders"
-msgstr "Mã giảm giá 10% cho đơn hàng"
+msgstr "Mã giảm giá 10% cho đơn"
 
 #. module: loyalty
 #: model:ir.model.fields,field_description:loyalty.field_loyalty_program__communication_plan_ids
@@ -826,7 +826,7 @@ msgstr "Biểu tượng tiền tệ, được sử dụng khi in tổng tiền."
 #. module: loyalty
 #: model:ir.model.fields.selection,name:loyalty.selection__loyalty_program__applies_on__both
 msgid "Current & Future orders"
-msgstr "Đơn hàng hiện tại & tương lai"
+msgstr "Đơn hiện tại & tương lai"
 
 #. module: loyalty
 #: model:ir.model.fields.selection,name:loyalty.selection__loyalty_program__applies_on__current
@@ -867,7 +867,7 @@ msgstr "Mô tả"
 #. module: loyalty
 #: model_terms:ir.ui.view,arch_db:loyalty.loyalty_reward_view_form
 msgid "Description on order"
-msgstr "Mô tả theo đơn hàng"
+msgstr "Mô tả trên đơn hàng"
 
 #. module: loyalty
 #: model:ir.model.fields,field_description:loyalty.field_loyalty_reward__discount

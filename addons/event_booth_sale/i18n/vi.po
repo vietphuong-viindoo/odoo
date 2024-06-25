@@ -244,7 +244,7 @@ msgstr "Đồng ý"
 #. module: event_booth_sale
 #: model:ir.model.fields,field_description:event_booth_sale.field_event_booth__sale_order_id
 msgid "Order Reference"
-msgstr "Mã đơn hàng"
+msgstr "Mã đơn"
 
 #. module: event_booth_sale
 #: model_terms:ir.ui.view,arch_db:event_booth_sale.event_booth_view_form_from_event
@@ -315,7 +315,7 @@ msgstr "Đăng ký"
 #: code:addons/event_booth_sale/models/sale_order_line.py:0
 #, python-format
 msgid "Registrations from the same Order Line must belong to a single event."
-msgstr "Đăng ký trong cùng một dòng đơn hàng phải thuộc về cùng một sự kiện."
+msgstr "Đăng ký trong cùng một dòng đơn bán phải thuộc về cùng một sự kiện."
 
 #. module: event_booth_sale
 #: model:ir.model.fields,field_description:event_booth_sale.field_event_booth__sale_order_line_registration_ids
@@ -398,4 +398,4 @@ msgstr "Bạn phải chọn ít nhất một gian hàng."
 msgid ""
 "Your order has been cancelled because the following booths have been "
 "reserved"
-msgstr "Đơn hàng của bạn đã bị hủy vì các gian hàng sau đã được đặt trước"
+msgstr "Đơn của bạn đã bị hủy vì các gian hàng sau đã được đặt trước"

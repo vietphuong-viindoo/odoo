@@ -445,7 +445,7 @@ msgstr "Ngày đặt hàng"
 #. module: event_sale
 #: model_terms:ir.ui.view,arch_db:event_sale.event_report_template_full_page_ticket_inherit_sale
 msgid "Order Ref"
-msgstr "Tham chiếu đơn hàng"
+msgstr "Tham chiếu đơn bán"
 
 #. module: event_sale
 #: model:ir.model.fields,field_description:event_sale.field_registration_editor_line__registration_id
@@ -596,7 +596,7 @@ msgstr "Đơn bán"
 #. module: event_sale
 #: model:ir.model.fields,field_description:event_sale.field_event_sale_report__sale_order_line_id
 msgid "Sale Order Line"
-msgstr "Chi tiết đơn hàng"
+msgstr "Chi tiết đơn bán"
 
 #. module: event_sale
 #: model:ir.model.fields,field_description:event_sale.field_event_sale_report__sale_order_state

@@ -7225,7 +7225,7 @@ msgstr "Lịch sử"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
 msgid "How total tax amount is computed in orders and invoices"
-msgstr "Cách thức mà giá trị thuế được tính toán trên các đơn hàng và hoá đơn"
+msgstr "Cách thức mà giá trị thuế được tính toán theo thứ tự và hoá đơn"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_account__id
@@ -13055,7 +13055,7 @@ msgid ""
 " for the entire order, regardless of the products on the different lines."
 msgstr ""
 "Chỉ định một giá trị tùy ý sẽ được tích lũy vào         tài khoản mặc định "
-"cho toàn bộ đơn hàng, bất kể sản phẩm thuộc các dòng khác nhau."
+"cho toàn bộ đơn, bất kể sản phẩm thuộc các dòng khác nhau."
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_bank_statement_line__auto_post
@@ -15016,7 +15016,7 @@ msgid ""
 "There doesn't appear to be anything to invoice for the selected order. "
 "However, you can use the amount field to force an accrual entry."
 msgstr ""
-"Không có bất kỳ thứ gì để xuất hóa đơn cho đơn hàng đã chọn. Tuy nhiên, bạn "
+"Không có bất kỳ thứ gì để xuất hóa đơn cho đơn đã chọn. Tuy nhiên, bạn "
 "có thể sử dụng trường số tiền để thực hiện một bút toán dồn tích."
 
 #. module: account
