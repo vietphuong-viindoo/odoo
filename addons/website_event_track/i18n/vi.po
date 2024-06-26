@@ -483,7 +483,7 @@ msgstr "Tiểu sử"
 #: model:event.track.stage,legend_blocked:website_event_track.event_track_stage5
 #, python-format
 msgid "Blocked"
-msgstr "Đã chặn"
+msgstr "Bị chặn"
 
 #. module: website_event_track
 #: model_terms:ir.ui.view,arch_db:website_event_track.registration_complete
@@ -2197,7 +2197,7 @@ msgstr "Link bài / Khách"
 #. module: website_event_track
 #: model:mail.message.subtype,name:website_event_track.mt_track_blocked
 msgid "Track Blocked"
-msgstr "Bài đã chặn"
+msgstr "Bài Bị chặn"
 
 #. module: website_event_track
 #: model:ir.model.fields,field_description:website_event_track.field_event_event__track_count
@@ -2298,7 +2298,7 @@ msgstr ""
 #. module: website_event_track
 #: model:mail.message.subtype,description:website_event_track.mt_track_blocked
 msgid "Track blocked"
-msgstr "Bài đã chặn"
+msgstr "Bài Bị chặn"
 
 #. module: website_event_track
 #: model:ir.model.fields,help:website_event_track.field_event_track__duration
