@@ -2787,12 +2787,12 @@ msgstr "Mời Mọi người"
 #. module: project
 #: model:ir.model.fields.selection,name:project.selection__project_project__privacy_visibility__followers
 msgid "Invited internal users"
-msgstr "Tài khoản nội bộ đã mời"
+msgstr "Người dùng nội bộ được mời"
 
 #. module: project
 #: model:ir.model.fields.selection,name:project.selection__project_project__privacy_visibility__portal
 msgid "Invited portal users and all internal users"
-msgstr "Người dùng cổng thông tin và tất cả người dùng nội bộ được mời"
+msgstr "Người dùng cổng thông tin được mời và tất cả người dùng nội bộ"
 
 #. module: project
 #. odoo-javascript
@@ -2804,17 +2804,17 @@ msgstr "Đã xuất hóa đơn"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__is_analytic_account_id_changed
 msgid "Is Analytic Account Manually Changed"
-msgstr ""
+msgstr "Tài khoản quản trị đã được thay đổi thủ công"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__is_blocked
 msgid "Is Blocked"
-msgstr ""
+msgstr "Bị chặn"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_milestone__is_deadline_exceeded
 msgid "Is Deadline Exceeded"
-msgstr "Là Đã quá Hạn"
+msgstr "Đã quá Hạn"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_milestone__is_deadline_future
