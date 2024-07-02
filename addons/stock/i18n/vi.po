@@ -270,7 +270,7 @@ msgid ""
 "* Transit Location: Counterpart location that should be used in inter-company or inter-warehouses operations"
 msgstr ""
 "* Vị trí nhà cung cấp: Vị trí ảo đại diện cho vị trí nguồn của các sản phẩm đến từ nhà cung cấp của bạn\n"
-"* Xem: Vị trí ảo được sử dụng để tạo cấu trúc phân cấp cho kho hàng, tổng hợp các vị trí con của nó và không thể trực tiếp chứa sản phẩm\n"
+"* Chỉ xem: Vị trí ảo được sử dụng để tạo cấu trúc phân cấp cho kho hàng, tổng hợp các vị trí con của nó và không thể trực tiếp chứa sản phẩm\n"
 "* Vị trí nội bộ: Vị trí thực trong kho của bạn\n"
 "* Vị trí khách hàng: Vị trí ảo đại diện cho vị trí đích của các sản phẩm được gửi tới khách hàng của bạn\n"
 "* Mất tồn kho: Vị trí ảo đóng vai trò là đối ứng cho các hoạt động tồn kho được sử dụng để điều chỉnh lượng hàng tồn kho (Tồn kho thực)\n"
@@ -956,8 +956,8 @@ msgid ""
 "Add and customize route operations to process product moves in your warehouse(s): e.g. unload > quality control > stock for incoming products, pick > pack > ship for outgoing products. \n"
 " You can also set putaway strategies on warehouse locations in order to send incoming products into specific child locations straight away (e.g. specific bins, racks)."
 msgstr ""
-"Thêm và tùy chỉnh các bộ định tuyến để xử lý luân chuẩn hàng hoá trong (các) kho của bạn: ví dụ: dỡ hàng > kiểm soát chất lượng > dự trữ cho các lô hàng về, lấy hàng > đóng gói > bàn giao đối với các lô hàng đi.\n"
-" Bạn cũng có thể đặt chiến lược sắp xếp đối với các địa điểm kho để gửi hàng hoá trong các lô hàng nhận đến các vị trí con cụ thể ngay lập tức (ví dụ: thùng cụ thể nào đó, giá, kệ)."
+"Thêm và tùy chỉnh các tuyến để xử lý luân chuẩn hàng hoá trong (các) kho của bạn: ví dụ: dỡ hàng > kiểm soát chất lượng > dự trữ cho các lô hàng về, lấy hàng > đóng gói > bàn giao đối với các lô hàng đi.\n"
+" Bạn cũng có thể thiết lập chiến lược sắp xếp đối với các địa điểm kho để gửi hàng hoá trong các lô hàng nhận đến các vị trí con cụ thể ngay lập tức (ví dụ: thùng, giá, kệ cụ thể)."
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
@@ -968,12 +968,12 @@ msgid ""
 "strategies on warehouse locations in order to send incoming products into "
 "specific child locations straight away (e.g. specific bins, racks)."
 msgstr ""
-"Thêm và tùy chỉnh hoạt động tuyến đường để xử lý các chuyển động sản phẩm "
+"Thêm và tùy chỉnh hoạt động theo tuyến để xử lý các dịch chuyển sản phẩm "
 "trong (các) nhà kho của bạn: ví dụ: dỡ hàng > kiểm soát chất lượng > dự trữ "
-"đối với lô hàng đến, lấy hàng > đóng gói > bàn giao đối với lô hàng đi. Bạn "
-"cũng có thể đặt chiến lược sắp xếp đối với các địa điểm kho để gửi hàng hoá "
-"trong các lô hàng nhận đến các vị trí con cụ thể ngay lập tức (ví dụ: thùng "
-"cụ thể nào đó, giá, kệ)."
+"đối với lô hàng đến, lấy hàng > đóng gói > giao hàng đối với lô hàng đi. Bạn "
+"cũng có thể thiết lập chiến lược sắp xếp đối với các địa điểm kho để gửi hàng hoá "
+"trong các lô hàng nhận đến các vị trí con cụ thể ngay lập tức (ví dụ: thùng, "
+"giá, kệ cụ thể)."
 
 #. module: stock
 #. odoo-javascript
@@ -1115,7 +1115,7 @@ msgid ""
 "Another parent/sub replenish location %s exists, if you wish to change it, "
 "uncheck it first"
 msgstr ""
-"Một vị trí bổ sung cha/phụ %s khác đang tồn tại, nếu bạn muốn thay đổi, "
+"Một vị trí bổ sung chính/phụ %s khác đang tồn tại, nếu bạn muốn thay đổi, "
 "trước tiên hãy bỏ chọn vị trí này "
 
 #. module: stock
@@ -2206,8 +2206,8 @@ msgid ""
 msgstr ""
 "Số lượng hiện tại của sản phẩm.\n"
 "Trong ngữ cảnh với một Địa điểm Kho, nó bao gồm hàng hoá được lưu trữ tại địa điểm này, hoặc bất kỳ địa điểm con nào của nó.\n"
-"Trong ngữ cảnh với một Nhà kho, nó bao gồm hàng hoá được lưu trữ trong Địa điểm Kho của Nhà kho này, hoặc bất kỳ địa điểm con nào của nó.\n"
-"được lưu trữ trong Địa điểm Kho của Nhà kho của Của hàng này, hoặc bất kỳ địa điểm con nào của nó.\n"
+"Trong ngữ cảnh với một Kho hàng, nó bao gồm hàng hoá được lưu trữ trong Địa điểm Kho của Kho hàng này, hoặc bất kỳ địa điểm con nào của nó.\n"
+"được lưu trữ trong Địa điểm Kho của Kho hàng của Cửa hàng này, hoặc bất kỳ địa điểm con nào của nó.\n"
 "Nếu không, nó bao gồm hàng hoá được lưu trữ trong bất kỳ Địa điểm Kho nào có kiểu là 'Nội bộ'."
 
 #. module: stock
@@ -2521,7 +2521,7 @@ msgid ""
 "Closet location: products/lots closest to the target location will be moved out first.\n"
 "FEFO: products/lots with the closest removal date will be moved out first (the availability of this method depends on the \"Expiration Dates\" setting)."
 msgstr ""
-"Xác định phương pháp mặc định được sử dụng để đề xuất nơi chính xác (kệ) để lấy sản phẩm từ đâu, lô hàng nào,... cho địa điểm này. Phương pháp này có thể được thực hiện ở cấp độ danh mục sản phẩm và dự phòng được thực hiện trên các vị trí cha nếu không có vị trí nào được thiết lập ở đây.\n"
+"Xác định phương pháp mặc định được sử dụng để đề xuất nơi chính xác (kệ) để lấy sản phẩm từ đâu, lô hàng nào,... cho địa điểm này. Phương pháp này có thể được thực hiện ở cấp độ danh mục sản phẩm và dự phòng được thực hiện trên các vị trí chính nếu không có vị trí nào được thiết lập ở đây.\n"
 "\n"
 "FIFO: sản phẩm/lô hàng nhập kho trước sẽ được xuất kho trước.\n"
 "LIFO: sản phẩm/lô được nhập kho sau cùng sẽ được xuất kho trước.\n"
@@ -3297,9 +3297,9 @@ msgid ""
 "In a context with a single Warehouse, this includes goods stored in the Stock Location of this Warehouse, or any of its children.\n"
 "Otherwise, this includes goods stored in any Stock Location with 'internal' type."
 msgstr ""
-"Số lượng dự kiến (được tính bằng Số lượng thực tế - Số lượng sẽ xuất + Số lượng sắp về)\n"
+"Số lượng dự báo (được tính bằng Số lượng thực tế - Số lượng sắp xuất + Số lượng sắp nhập)\n"
 "Trong ngữ cảnh một Địa điểm Kho, nó bao gồm số lượng được lưu trữ trong địa điểm này, hoặc các địa điểm con của nó.\n"
-"Trong ngữ cảnh một Nhà kho, nó bao gồm số lượng được lưu trữ trong Địa điểm Kho của Nhà kho này, hoặc các địa điểm con của nó.\n"
+"Trong ngữ cảnh một Kho hàng, nó bao gồm số lượng được lưu trữ trong Địa điểm Kho của Kho hàng này, hoặc các địa điểm con của nó.\n"
 "Nếu không, nó bao gồm số lượng được lữu trữ trong bất kỳ Địa điểm Kho nào có kiểu là 'Nội bộ'."
 
 #. module: stock
@@ -3310,10 +3310,10 @@ msgid ""
 "In a context with a single Warehouse, this includes goods stored in the Stock Location of this Warehouse, or any of its children.\n"
 "Otherwise, this includes goods stored in any Stock Location with 'internal' type."
 msgstr ""
-"Số lượng dự kiến (được tính bằng Số lượng hiện có - Số lượng dự trữ)\n"
-"Đối với một Vị trí tồn kho, số lượng này bao gồm số lượng được lưu trữ trong vị trí này, hoặc các vị trí con của nó.\n"
-"Đối với một Kho hàng, số lượng này bao gồm số lượng được lưu trữ trong Vị trí tồn kho của Kho hàng này, hoặc các vị trí con của nó.\n"
-"Nếu không, số lượng này bao gồm số lượng được lữu trữ trong bất kỳ Vị trí tồn kho nào có loại là 'nội bộ'."
+"Số lượng dự báo (được tính bằng Số lượng hiện có - Số lượng dự trữ)\n"
+"Đối với một Địa điểm kho, số lượng này bao gồm số lượng được lưu trữ trong địa điểm này, hoặc các địa điểm con của nó.\n"
+"Đối với một Kho hàng, số lượng này bao gồm số lượng được lưu trữ trong địa điểm kho của Kho hàng này, hoặc các địa điểm của nó.\n"
+"Nếu không, số lượng này bao gồm số lượng được lữu trữ trong bất kỳ địa điểm kho nào có loại là 'Nội bộ'."
 
 #. module: stock
 #. odoo-javascript
@@ -6158,7 +6158,7 @@ msgstr "Địa điểm Cha"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_location__parent_path
 msgid "Parent Path"
-msgstr "Tuyến cha"
+msgstr "Tuyến chính"
 
 #. module: stock
 #: model:ir.model.fields.selection,name:stock.selection__procurement_group__move_type__direct
@@ -6989,8 +6989,8 @@ msgid ""
 "Otherwise, this includes goods arriving to any Stock Location with 'internal' type."
 msgstr ""
 "Số lượng sản phẩm sắp nhập theo kế hoạch. \n"
-"Đối với một Vị trí tồn kho, số lượng này bao gồm số lượng hàng về vị trí này, hoặc các vị trí con của nó.\n"
-"Đối với một Kho hàng, số lượng này bao gồm số lượng hàng về Vị trí tồn kho của Kho hàng này, hoặc các vị trí con của nó.\n"
+"Đối với một Vị trí tồn kho, số lượng này bao gồm số lượng hàng về vị trí này, hoặc các vị trí phụ của nó.\n"
+"Đối với một Kho hàng, số lượng này bao gồm số lượng hàng về Vị trí tồn kho của Kho hàng này, hoặc các vị trí phụ của nó.\n"
 "Nếu không, số lượng này bao gồm số lượng hàng về bất kỳ Vị trí tồn kho nào có loại là 'nội bộ'."
 
 #. module: stock
@@ -7002,8 +7002,8 @@ msgid ""
 "Otherwise, this includes goods leaving any Stock Location with 'internal' type."
 msgstr ""
 "Số lượng sản phẩm sắp xuất theo kế hoạch. \n"
-"Đối với một Vị trí tồn kho, số lượng này bao gồm số lượng hàng xuất khỏi vị trí này, hoặc các vị trí con của nó.\n"
-"Đối với một Kho hàng, số lượng này bao gồm số lượng hàng xuất khỏi Vị trí tồn kho của Kho hàng này, hoặc các vị trí con của nó.\n"
+"Đối với một Vị trí tồn kho, số lượng này bao gồm số lượng hàng xuất khỏi vị trí này, hoặc các vị trí phụ của nó.\n"
+"Đối với một Kho hàng, số lượng này bao gồm số lượng hàng xuất khỏi Vị trí tồn kho của Kho hàng này, hoặc các vị trí phụ của nó.\n"
 "Nếu không, số lượng này bao gồm số lượng hàng xuất khỏi bất kỳ Vị trí tồn kho nào có loại là 'nội bộ'."
 
 #. module: stock
@@ -8888,8 +8888,8 @@ msgid ""
 "The parent location that includes this location. Example : The 'Dispatch "
 "Zone' is the 'Gate 1' parent location."
 msgstr ""
-"Vị trí cha chứa vị trí này. Ví dụ: 'Dispatch Zone' là vị trí cha của 'Gate "
-"1'."
+"Vị trí chính chứa vị trí này. Ví dụ: 'Dispatch Zone' là vị trí chính của "
+"'Gate 1'."
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_warehouse_orderpoint__qty_multiple
@@ -8974,14 +8974,14 @@ msgstr "Tên viết tắt của kho hàng trong mỗi công ty phải là duy nh
 #: model:ir.model.fields,help:stock.field_res_users__property_stock_customer
 msgid ""
 "The stock location used as destination when sending goods to this contact."
-msgstr "Vị trí kho được dùng làm kho đến khi giao hàng tới liên hệ này."
+msgstr "Địa điểm kho được dùng làm kho đến khi giao hàng tới liên hệ này."
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_res_partner__property_stock_supplier
 #: model:ir.model.fields,help:stock.field_res_users__property_stock_supplier
 msgid ""
 "The stock location used as source when receiving goods from this contact."
-msgstr "Vị trí kho được sử dụng làm kho nguồn khi nhận hàng từ đối tác này"
+msgstr "Địa điểm kho được sử dụng làm kho nguồn khi nhận hàng từ đối tác này"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_move_line__picking_id
@@ -10556,7 +10556,7 @@ msgid ""
 "You can't deactivate the multi-location if you have more than once warehouse"
 " by company"
 msgstr ""
-"Bạn không thể hủy kích hoạt đa vị trí kho nếu bạn có nhiều hơn một kho hàng "
+"Bạn không thể hủy kích hoạt đa địa điểm kho nếu bạn có nhiều hơn một kho hàng "
 "cho mỗi công ty"
 
 #. module: stock

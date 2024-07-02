@@ -3330,8 +3330,8 @@ msgid ""
 "Whether the employee is a member of the active user's department or one of "
 "it's child department."
 msgstr ""
-"Cho dù nhân viên là thành viên của bộ phận người dùng đang hoạt động hay một"
-" trong những bộ phận con của nó."
+"Cho dù nhân viên là thành viên của phòng ban của người dùng đang hoạt động "
+"hay một trong những phòng ban cấp dưới của nó."
 
 #. module: hr
 #: model:ir.model.fields.selection,name:hr.selection__hr_employee__marital__widower

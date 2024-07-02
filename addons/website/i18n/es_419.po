@@ -530,7 +530,7 @@ msgstr ""
 #: code:addons/website/static/src/js/tours/tour_utils.js:0
 #, python-format
 msgid "<b>Add</b> the selected image."
-msgstr "<b>Agregar</b> la imagen seleccionada."
+msgstr "<b>Agregue</b> la imagen seleccionada."
 
 #. module: website
 #. odoo-javascript
@@ -4539,7 +4539,7 @@ msgstr "Dona"
 msgid ""
 "Drag the <b>%s</b> building block and drop it at the bottom of the page."
 msgstr ""
-"Arrastre el <b>%s</b> bloque de creación y suéltelo al final de su página."
+"Arrastre el bloque de creación <b>%s</b> y suéltelo al final de su página."
 
 #. module: website
 #. odoo-javascript
@@ -5186,7 +5186,7 @@ msgstr "Tabla de funciones"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_dynamic_snippet_options_template
 msgid "Fetched elements"
-msgstr "Elementos recolectados"
+msgstr "Elementos obtenidos"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website_snippet_filter__field_names
@@ -6081,7 +6081,7 @@ msgstr "Ocultar para"
 #: code:addons/website/static/src/snippets/s_popup/000.js:0
 #, python-format
 msgid "Hide the cookies bar"
-msgstr ""
+msgstr "Ocultar la barra de cookies"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.website_page_properties_view_form
@@ -7592,7 +7592,7 @@ msgstr "Márgenes"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_website_form_options
 msgid "Mark Text"
-msgstr "Marcar texto"
+msgstr "Indicador de texto"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_website_form_options
@@ -8403,8 +8403,8 @@ msgid ""
 "Note: To embed code in this specific page, use the \"Embed Code\" building "
 "block"
 msgstr ""
-"Nota: Para insertar código en esta página específica, utilice el bloque de "
-"construcción \"Insertar código\"."
+"Nota: use el bloque de creación \"Insertar código\" para agregar código en "
+"esta página en específico."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.show_website_info
@@ -8545,7 +8545,7 @@ msgstr "Cuando se desliza"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_website_form_options
 msgid "On Success"
-msgstr "Éxito"
+msgstr "Al enviar"
 
 #. module: website
 #: model:ir.model.fields.selection,name:website.selection__website__auth_signup_uninvited__b2b
@@ -8630,9 +8630,9 @@ msgstr ""
 "la vista primaria más cercana (via inherit_id), y luego se aplica a todas las vistas\n"
 "que hereden de ella\n"
 "* Si es primaria, la vista primaria más cercana se resuelve completamente (incluso si utiliza un\n"
-"modelo diferente a este), y más tarde se aplican las especificaciones de herencia\n"
+"modelo diferente a este), las especificaciones de herencia se aplican después \n"
 "(<xpath/>) y el resultado se utiliza como si fuera la arquitectura real\n"
-"de la vista.\n"
+"de esta vista.\n"
 
 #. module: website
 #. odoo-javascript
@@ -10114,7 +10114,7 @@ msgstr "Zona de desplazamiento"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "Scroll down button"
-msgstr "Botón inferior de desplazamiento"
+msgstr "Botón para desplazarse hacia abajo"
 
 #. module: website
 #. odoo-javascript
@@ -10535,7 +10535,7 @@ msgstr "Mostrar mapa del sitio"
 #: code:addons/website/static/src/snippets/s_popup/000.js:0
 #, python-format
 msgid "Show the cookies bar"
-msgstr ""
+msgstr "Mostrar la barra de cookies"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -11386,7 +11386,7 @@ msgstr ""
 #: code:addons/website/models/website.py:0
 #, python-format
 msgid "The homepage URL should be relative and start with '/'."
-msgstr "La URL de la página de inicio debe ser relativo e iniciar con '/'."
+msgstr "La URL de la página de inicio debe ser relativa e iniciar con '/'."
 
 #. module: website
 #. odoo-javascript
@@ -11434,8 +11434,8 @@ msgstr "El mensaje será visible cuando el contador termine"
 msgid ""
 "The name is used to generate the URL and is shown in the browser title bar"
 msgstr ""
-"El nombre se utiliza para generar la URL y se muestra en la barra de título "
-"del navegador"
+"El nombre se utiliza para generar la URL y aparece en la barra de título del"
+" navegador"
 
 #. module: website
 #: model:ir.model.fields,help:website.field_website_controller_page__name_slugified
@@ -11526,7 +11526,7 @@ msgstr "Vista de interfaz del tema"
 #. module: website
 #: model:ir.model,name:website.model_theme_utils
 msgid "Theme Utils"
-msgstr "Utilidades del tema"
+msgstr "Herramientas del tema"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.list_website_public_pages
@@ -11669,8 +11669,8 @@ msgid ""
 "This field will save the current `arch_db` before writing on it.\n"
 "                                                                         Useful to (soft) reset a broken view."
 msgstr ""
-"Este campo guarda el `arch_db` actual antes de escribir en él.\n"
-"                                                                         Es útil para hacer un soft reset de una vista rota."
+"Este campo almacenará la `arch_db` actual antes de escribir en ella.\n"
+"                                                                         Es útil para restablecer (de forma parcial) una vista con errores."
 
 #. module: website
 #. odoo-javascript
@@ -12134,7 +12134,7 @@ msgstr "Tipo"
 #: code:addons/website/static/src/xml/web_editor.xml:0
 #, python-format
 msgid "Type '"
-msgstr "Tipo \""
+msgstr "Escriba \""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.qweb_500
@@ -12848,8 +12848,8 @@ msgid ""
 "We monitor your progress meticulously, adjusting your plan as needed to "
 "ensure continuous improvement and results."
 msgstr ""
-"Llevamos un seguimiento meticuloso de su progreso, ajustando su plan según "
-"sea necesario para garantizar una mejora y unos resultados constantes."
+"Monitoreamos su progreso de forma meticulosa y ajustamos su plan según sea "
+"necesario para garantizar mejoras y resultados constantes."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_cards
@@ -13129,10 +13129,9 @@ msgid ""
 "the User by this site. The User may configure his / her browser to notify "
 "and reject the installation of the cookies sent by us."
 msgstr ""
-"El Sitio web puede utilizar cookies para personalizar y facilitar al máximo "
-"la navegación del usuario en el mismo. El usuario puede configurar su "
-"navegador para notificar y rechazar la instalación de las cookies enviadas "
-"por nosotros."
+"Es posible que el sitio web use cookies para personalizar y facilitar al "
+"máximo la navegación del usuario. El usuario puede configurar su navegador "
+"para notificar y rechazar la instalación de las cookies que enviamos."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.menu_tree
@@ -13145,7 +13144,7 @@ msgstr "Menú del sitio web"
 #: model:ir.model.fields,field_description:website.field_website_page__website_meta_description
 #: model:ir.model.fields,field_description:website.field_website_seo_metadata__website_meta_description
 msgid "Website meta description"
-msgstr "Descripción meta del sitio web"
+msgstr "Meta descripción del sitio web"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_ir_ui_view__website_meta_keywords
@@ -13161,7 +13160,7 @@ msgstr "Palabras clave meta del sitio web"
 #: model:ir.model.fields,field_description:website.field_website_page__website_meta_title
 #: model:ir.model.fields,field_description:website.field_website_seo_metadata__website_meta_title
 msgid "Website meta title"
-msgstr "Título  meta del sitio web"
+msgstr "Meta título del sitio web"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_ir_ui_view__website_meta_og_img
@@ -13232,7 +13231,7 @@ msgstr ""
 #: code:addons/website/static/src/client_actions/website_preview/website_preview.xml:0
 #, python-format
 msgid "Welcome to your"
-msgstr "Bienvenido a su"
+msgstr "Le damos la bienvenida a su"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_services_0_s_three_columns
@@ -13644,7 +13643,7 @@ msgstr "Su título"
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website__social_youtube
 msgid "Youtube Account"
-msgstr "Cuenta de Youtube"
+msgstr "Cuenta de YouTube"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_google_map_options

@@ -142,11 +142,12 @@ class StockMoveLine(models.Model):
         for record in self:
             if not record.quant_id or record.quantity:
                 continue
-            origin_move = record.move_id._origin
-            if float_compare(record.move_id.product_qty, origin_move.quantity, precision_rounding=record.move_id.product_uom.rounding) > 0:
-                record.quantity = max(0, min(record.quant_id.available_quantity, record.move_id.product_qty - origin_move.quantity))
+            if float_compare(record.move_id.product_qty, record.quantity, precision_rounding=record.move_id.product_uom.rounding) > 0:
+                qty = max(0, min(record.quant_id.available_quantity, record.move_id.product_qty - record.move_id.quantity))
+                record.quantity = record.product_id.uom_id._compute_quantity(qty, record.product_uom_id)
             else:
-                record.quantity = max(0, record.quant_id.available_quantity)
+                qty = max(0, record.quant_id.available_quantity)
+                record.quantity = record.product_id.uom_id._compute_quantity(qty, record.product_uom_id)
 
     @api.depends('quantity', 'product_uom_id')
     def _compute_quantity_product_uom(self):
@@ -331,6 +332,8 @@ class StockMoveLine(models.Model):
 
         move_to_recompute_state = self.env['stock.move']
         for move_line in mls:
+            if move_line.state == 'done':
+                continue
             location = move_line.location_id
             product = move_line.product_id
             move = move_line.move_id
@@ -616,7 +619,7 @@ class StockMoveLine(models.Model):
             return 0, False
         if action == "available":
             available_qty, in_date = self.env['stock.quant']._update_available_quantity(self.product_id, location, quantity, lot_id=lot, package_id=package, owner_id=owner, in_date=in_date)
-        elif action == "reserved" and not self.move_id._should_bypass_reservation():
+        elif action == "reserved" and not self.move_id._should_bypass_reservation(location):
             self.env['stock.quant']._update_reserved_quantity(self.product_id, location, quantity, lot_id=lot, package_id=package, owner_id=owner)
         if available_qty < 0 and lot:
             # see if we can compensate the negative quants with some untracked quants
@@ -914,8 +917,8 @@ class StockMoveLine(models.Model):
 
     def action_put_in_pack(self):
         for picking in self.picking_id:
-            picking.action_put_in_pack()
-        return self.picking_id.action_detailed_operations()
+            picking.with_context(move_lines_to_pack_ids=self.ids).action_put_in_pack()
+        return True
 
     def _get_revert_inventory_move_values(self):
         self.ensure_one()

@@ -29,7 +29,7 @@ msgid ""
 "                  Dashboard\""
 msgstr ""
 "\"Thêm vào\n"
-"                  Dashboard\""
+"                  Bảng thông tin\""
 
 #. module: board
 #. odoo-javascript
@@ -79,7 +79,7 @@ msgstr "Không thể thêm bộ lọc vào bảng thông tin"
 #: code:addons/board/static/src/add_to_board/add_to_board.xml:0
 #, python-format
 msgid "Dashboard"
-msgstr "Trang tổng quan"
+msgstr "Trang chủ"
 
 #. module: board
 #: model:ir.model.fields,field_description:board.field_board_board__id
@@ -123,7 +123,7 @@ msgid ""
 "To add your first report into this dashboard, go to any\n"
 "                  menu, switch to list or graph view, and click"
 msgstr ""
-"Để thêm báo cáo đầu tiên của bạn tới dashboard này, hãy đi\n"
+"Để thêm báo cáo đầu tiên của bạn tới bảng thông tin này, hãy đi\n"
 "                  đến menu bất kỳ, chuyển dạng hiển thị sang danh sách hoặc biểu đồ, và bấm"
 
 #. module: board
@@ -135,7 +135,7 @@ msgid ""
 "                  dashboard using the search options."
 msgstr ""
 "Bạn có thể lọc và nhóm các dữ liệu trước khi thêm nó vào\n"
-"                  dashboard để dùng cho tùy chọn tìm kiếm."
+"                  bảng thông tin để dùng cho tùy chọn tìm kiếm."
 
 #. module: board
 #. odoo-javascript

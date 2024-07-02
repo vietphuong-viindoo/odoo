@@ -1484,7 +1484,7 @@ msgstr ""
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_category__child_id
 msgid "Children Categories"
-msgstr "Danh mục con"
+msgstr "Danh mục phụ"
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.res_config_settings_view_form
@@ -7338,7 +7338,7 @@ msgid ""
 msgstr ""
 "Một người dùng khác đã đóng phiên. Tất cả doanh số bán hàng hoàn thành đã "
 "được lưu trong một phiên khôi phục, phiên này có thể được xem xét lại bất kỳ"
-" lúc nào và được ghi sổ vào Kế toán từ trang tổng quan của điểm bán hàng."
+" lúc nào và được ghi sổ vào Kế toán từ trang chủ của điểm bán hàng."
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.view_pos_config_kanban

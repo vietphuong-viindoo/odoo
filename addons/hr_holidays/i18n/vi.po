@@ -1708,7 +1708,7 @@ msgstr "Hàng ngày"
 #: model:ir.actions.act_window,name:hr_holidays.hr_leave_action_new_request
 #: model:ir.ui.menu,name:hr_holidays.hr_leave_menu_new_request
 msgid "Dashboard"
-msgstr "Bảng thông tin"
+msgstr "Trang chủ"
 
 #. module: hr_holidays
 #: model_terms:ir.ui.view,arch_db:hr_holidays.hr_leave_view_form
@@ -3131,7 +3131,7 @@ msgstr "Nghỉ có lương"
 #: model:ir.model.fields,field_description:hr_holidays.field_hr_leave__parent_id
 #: model:ir.model.fields,field_description:hr_holidays.field_hr_leave_allocation__parent_id
 msgid "Parent"
-msgstr "Cấp cha"
+msgstr "Cha"
 
 #. module: hr_holidays
 #: model:hr.leave.type,name:hr_holidays.hr_holiday_status_dv
@@ -3772,10 +3772,10 @@ msgid ""
 "The status is 'Refused', when time off request is refused by manager.\n"
 "The status is 'Approved', when time off request is approved by manager."
 msgstr ""
-"Trạng thái được đặt thành 'Cần Duyệt', khi yêu cầu thời gian nghỉ được tạo.\n"
-"Trạng thái là 'Cần Phê duyệt', khi yêu cầu thời gian nghỉ được người dùng xác nhận.\n"
+"Trạng thái được đặt thành 'Cần Duyệt', khi yêu cầu nghỉ được tạo.\n"
+"Trạng thái là 'Cần Phê duyệt', khi yêu cầu nghỉ được người dùng xác nhận.\n"
 "Trạng thái là 'Bị từ chối', khi yêu cầu nghỉ việc bị người quản lý từ chối.\n"
-"Trạng thái là 'Đã phê duyệt', khi yêu cầu thời gian nghỉ được người quản lý chấp thuận."
+"Trạng thái là 'Đã phê duyệt', khi yêu cầu nghỉ được người quản lý chấp thuận."
 
 #. module: hr_holidays
 #: model:ir.model.fields,help:hr_holidays.field_hr_leave_allocation__state
@@ -4245,7 +4245,7 @@ msgid ""
 "to create allocation/time off request. Total based on all the time off types"
 " without overriding limit."
 msgstr ""
-"Tổng số thời gian đã nghỉ được cấp phát cho nhân viên này, hãy thay đổi giá "
+"Tổng số thời gian đã nghỉ có lương được cấp phát cho nhân viên này, hãy thay đổi giá "
 "trị này để tạo yêu cầu cấp phát / thời gian nghỉ. Tổng số dựa trên tất cả "
 "các loại thời gian nghỉ mà không có giới hạn ghi đè."
 

@@ -1350,7 +1350,7 @@ msgstr "Nhãn Nút"
 #, python-format
 msgid "By using the <b>Breadcrumb</b>, you can navigate back to the overview."
 msgstr ""
-"Bằng việc sử dụng <b>Breadcrumb</b>, bạn có thể điều hướng ngược trở về tổng"
+"Bằng cách sử dụng <b>Breadcrumb</b>, bạn có thể điều hướng ngược trở về tổng"
 " quan."
 
 #. module: mass_mailing

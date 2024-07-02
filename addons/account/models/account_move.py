@@ -2180,7 +2180,7 @@ class AccountMove(models.Model):
     def _sync_dynamic_line(self, existing_key_fname, needed_vals_fname, needed_dirty_fname, line_type, container):
         def existing():
             return {
-                line[existing_key_fname]: line
+                line: line[existing_key_fname]
                 for line in container['records'].line_ids
                 if line[existing_key_fname]
             }
@@ -2225,9 +2225,9 @@ class AccountMove(models.Model):
             return dirty_recs, dirty_fname
 
         def filter_trivial(mapping):
-            return {k: v for k, v in mapping.items() if 'id' not in k}
+            return {k: v for k, v in mapping.items() if 'id' not in v}
 
-        existing_before = existing()
+        inv_existing_before = existing()
         needed_before = needed()
         dirty_recs_before, dirty_fname = dirty()
         dirty_recs_before[dirty_fname] = False
@@ -2235,7 +2235,7 @@ class AccountMove(models.Model):
         dirty_recs_after, dirty_fname = dirty()
         if not dirty_recs_after:  # TODO improve filter
             return
-        existing_after = existing()
+        inv_existing_after = existing()
         needed_after = needed()
 
         # Filter out deleted lines from `needed_before` to not recompute lines if not necessary or wanted
@@ -2243,8 +2243,6 @@ class AccountMove(models.Model):
         needed_before = {k: v for k, v in needed_before.items() if 'id' not in k or k['id'] in line_ids}
 
         # old key to new key for the same line
-        inv_existing_before = {v: k for k, v in existing_before.items()}
-        inv_existing_after = {v: k for k, v in existing_after.items()}
         before2after = {
             before: inv_existing_after[bline]
             for bline, before in inv_existing_before.items()
@@ -2253,19 +2251,22 @@ class AccountMove(models.Model):
 
         if needed_after == needed_before:
             return  # do not modify user input if nothing changed in the needs
-        if not needed_before and (filter_trivial(existing_after) != filter_trivial(existing_before)):
+        if not needed_before and (filter_trivial(inv_existing_after) != filter_trivial(inv_existing_before)):
             return  # do not modify user input if already created manually
 
+        existing_after = defaultdict(list)
+        for k, v in inv_existing_after.items():
+            existing_after[v].append(k)
         to_delete = [
             line.id
-            for key, line in existing_before.items()
+            for line, key in inv_existing_before.items()
             if key not in needed_after
             and key in existing_after
             and before2after[key] not in needed_after
         ]
         to_delete_set = set(to_delete)
         to_delete.extend(line.id
-            for key, line in existing_after.items()
+            for line, key in inv_existing_after.items()
             if key not in needed_after and line.id not in to_delete_set
         )
         to_create = {
@@ -2274,11 +2275,11 @@ class AccountMove(models.Model):
             if key not in existing_after
         }
         to_write = {
-            existing_after[key]: values
+            line: values
             for key, values in needed_after.items()
-            if key in existing_after
-            and any(
-                self.env['account.move.line']._fields[fname].convert_to_write(existing_after[key][fname], self)
+            for line in existing_after[key]
+            if any(
+                self.env['account.move.line']._fields[fname].convert_to_write(line[fname], self)
                 != values[fname]
                 for fname in values
             )
@@ -2471,7 +2472,7 @@ class AccountMove(models.Model):
                 raise UserError(_('You cannot overwrite the values ensuring the inalterability of the accounting.'))
             if (move.posted_before and 'journal_id' in vals and move.journal_id.id != vals['journal_id']):
                 raise UserError(_('You cannot edit the journal of an account move if it has been posted once.'))
-            if (move.name and move.name != '/' and move.sequence_number not in (0, 1) and 'journal_id' in vals and move.journal_id.id != vals['journal_id']):
+            if (move.name and move.name != '/' and move.sequence_number not in (0, 1) and 'journal_id' in vals and move.journal_id.id != vals['journal_id'] and not move.quick_edit_mode):
                 raise UserError(_('You cannot edit the journal of an account move if it already has a sequence number assigned.'))
 
             # You can't change the date or name of a move being inside a locked period.
@@ -2552,16 +2553,17 @@ class AccountMove(models.Model):
         If a user is a Billing Administrator/Accountant or if fidu mode is activated, we show a warning,
         but they can delete the moves even if it creates a sequence gap.
         """
-        if not (
-            self.user_has_groups('account.group_account_manager')
-            or self.company_id.quick_edit_mode
-            or self._context.get('force_delete')
-            or self.check_move_sequence_chain()
-        ):
-            raise UserError(_(
-                "You cannot delete this entry, as it has already consumed a sequence number and is not the last one in the chain. "
-                "You should probably revert it instead."
-            ))
+        for record in self:
+            if not (
+                record.user_has_groups('account.group_account_manager')
+                or record.company_id.quick_edit_mode
+                or record._context.get('force_delete')
+                or record.check_move_sequence_chain()
+            ):
+                raise UserError(_(
+                    "You cannot delete this entry, as it has already consumed a sequence number and is not the last one in the chain. "
+                    "You should probably revert it instead."
+                ))
 
     def unlink(self):
         self = self.with_context(skip_invoice_sync=True, dynamic_unlink=True)  # no need to sync to delete everything
@@ -3101,6 +3103,8 @@ class AccountMove(models.Model):
                    - new: whether the invoice is newly created
                    returns True if was able to process the invoice
         """
+        if file_data['type'] in ('pdf', 'binary'):
+            return lambda *args: False
         return
 
     def _extend_with_attachments(self, attachments, new=False):
@@ -3125,20 +3129,26 @@ class AccountMove(models.Model):
             passed_file_data_list.append(file_data)
             attachment = file_data.get('attachment') or file_data.get('originator_pdf')
             if attachment:
-                if attachments_by_invoice[attachment]:
+                if attachments_by_invoice.get(attachment):
                     attachments_by_invoice[attachment] |= invoice
                 else:
                     attachments_by_invoice[attachment] = invoice
 
         file_data_list = attachments._unwrap_edi_attachments()
-        attachments_by_invoice = {
-            attachment: None
-            for attachment in attachments
-        }
+        attachments_by_invoice = {}
         invoices = self
         current_invoice = self
         passed_file_data_list = []
         for file_data in file_data_list:
+
+            # Rogue binaries from mail alias are skipped and unlinked.
+            if (
+                file_data['type'] == 'binary'
+                and self._context.get('from_alias')
+                and not attachments_by_invoice.get(file_data['attachment'])
+            ):
+                close_file(file_data)
+                continue
 
             # The invoice has already been decoded by an embedded file.
             if attachments_by_invoice.get(file_data['attachment']):
@@ -3162,6 +3172,10 @@ class AccountMove(models.Model):
                 close_file(file_data)
                 continue
 
+            extend_with_existing_lines = file_data.get('process_if_existing_lines', False)
+            if current_invoice.invoice_line_ids and not extend_with_existing_lines:
+                continue
+
             decoder = (current_invoice or current_invoice.new(self.default_get(['move_type', 'journal_id'])))._get_edi_decoder(file_data, new=new)
             if decoder:
                 try:
@@ -3175,6 +3189,8 @@ class AccountMove(models.Model):
                             invoices |= invoice
                             current_invoice = self.env['account.move']
                             add_file_data_results(file_data, invoice)
+                        if extend_with_existing_lines:
+                            return attachments_by_invoice
 
                 except RedirectWarning:
                     raise
@@ -3759,9 +3775,9 @@ class AccountMove(models.Model):
                 to_reverse += move
             else:
                 to_unlink += move
-        to_reverse._reverse_moves(cancel=True)
         to_unlink.filtered(lambda m: m.state in ('posted', 'cancel')).button_draft()
         to_unlink.filtered(lambda m: m.state == 'draft').unlink()
+        return to_reverse._reverse_moves(cancel=True)
 
     def _post(self, soft=True):
         """Post/Validate the documents.
@@ -4706,14 +4722,8 @@ class AccountMove(models.Model):
             return res
 
         odoobot = self.env.ref('base.partner_root')
-        if attachments and self.state != 'draft':
+        if self.state != 'draft':
             self.message_post(body=_('The invoice is not a draft, it was not updated from the attachment.'),
-                              message_type='comment',
-                              subtype_xmlid='mail.mt_note',
-                              author_id=odoobot.id)
-            return res
-        if attachments and self.invoice_line_ids:
-            self.message_post(body=_('The invoice already contains lines, it was not updated from the attachment.'),
                               message_type='comment',
                               subtype_xmlid='mail.mt_note',
                               author_id=odoobot.id)
@@ -4721,12 +4731,24 @@ class AccountMove(models.Model):
 
         # As we are coming from the mail, we assume that ONE of the attachments
         # will enhance the invoice thanks to EDI / OCR / .. capabilities
+        has_existing_lines = bool(self.invoice_line_ids)
         results = self._extend_with_attachments(attachments, new=bool(self._context.get('from_alias')))
+        if has_existing_lines and not results:
+            self.message_post(body=_('The invoice already contains lines, it was not updated from the attachment.'),
+                              message_type='comment',
+                              subtype_xmlid='mail.mt_note',
+                              author_id=odoobot.id)
+            return res
         attachments_per_invoice = defaultdict(self.env['ir.attachment'].browse)
+        attachments_in_invoices = self.env['ir.attachment']
         for attachment, invoices in results.items():
+            attachments_in_invoices += attachment
             invoices = invoices or self
             for invoice in invoices:
                 attachments_per_invoice[invoice] |= attachment
+
+        # Unlink the unused attachments
+        (attachments - attachments_in_invoices).unlink()
 
         for invoice, attachments in attachments_per_invoice.items():
             if invoice == self:

@@ -99,14 +99,14 @@ msgstr "Khoá riêng tư reCaptcha không hợp lệ."
 #: code:addons/google_recaptcha/models/ir_http.py:0
 #, python-format
 msgid "The reCaptcha token is invalid."
-msgstr "reCaptcha token không hợp lệ."
+msgstr "Token của reCaptcha không hợp lệ."
 
 #. module: google_recaptcha
 #. odoo-javascript
 #: code:addons/google_recaptcha/static/src/js/recaptcha.js:0
 #, python-format
 msgid "The recaptcha site key is invalid."
-msgstr "Khoá recaptcha không hợp lệ."
+msgstr "Khoá reCaptcha không hợp lệ."
 
 #. module: google_recaptcha
 #. odoo-python

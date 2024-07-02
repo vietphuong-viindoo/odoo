@@ -474,7 +474,7 @@ msgstr "Không có đơn bán hàng"
 #: model_terms:ir.ui.view,arch_db:sale_project.project_milestone_view_tree
 #: model_terms:ir.ui.view,arch_db:sale_project.view_sale_project_inherit_form
 msgid "Non-billable"
-msgstr "Không thể xuất hoá đơn"
+msgstr "Không thể tính phí"
 
 #. module: sale_project
 #: model_terms:ir.ui.view,arch_db:sale_project.portal_tasks_list_inherit
@@ -678,7 +678,7 @@ msgid ""
 msgstr ""
 "Hạng mục đơn bán hàng mà thời gian dành cho nhiệm vụ này sẽ được cộng vào để lập hóa đơn cho khách hàng của bạn.\n"
 "Theo mặc định, hạng mục đơn bán hàng thiết lập trên dự án sẽ được chọn. Trong trường hợp không có, hạng mục đơn bán hàng trả trước cuối cùng còn thời gian sẽ được sử dụng.\n"
-"Xóa hạng mục đơn bán hàng để ngăn việc lập hoá đơn thanh toán cho nhiệm vụ này. Bạn cũng có thể thay đổi hoặc xóa hạng mục đơn bán hàng của từng mục nhập bảng chấm công riêng lẻ."
+"Xóa hạng mục đơn bán hàng để không tính phí nhiệm vụ này. Bạn cũng có thể thay đổi hoặc xóa hạng mục đơn bán hàng của từng mục nhập bảng chấm công."
 
 #. module: sale_project
 #. odoo-python

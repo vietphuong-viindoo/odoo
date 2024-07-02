@@ -91,7 +91,7 @@ msgstr "chứng nhận %s đã đạt"
 #: code:addons/survey/models/survey_survey.py:0
 #, python-format
 msgid "%s challenge certification"
-msgstr "Chứng nhận thử thách %s"
+msgstr "chứng nhận thử thách %s"
 
 #. module: survey
 #: model:ir.actions.report,print_report_name:survey.certification_report
@@ -5233,7 +5233,7 @@ msgstr "Thêm chút hài hước và pha trò"
 #: code:addons/survey/static/src/js/tours/survey_tour.js:0
 #, python-format
 msgid "Use the breadcrumbs to quickly go back to the dashboard."
-msgstr "Sử dụng thanh điều hướng để nhanh chóng quay lại trang tổng quan."
+msgstr "Sử dụng thanh điều hướng để nhanh chóng quay lại trang chủ."
 
 #. module: survey
 #: model:ir.model.fields,help:survey.field_survey_question__description

@@ -59,7 +59,7 @@ class TestStockEwaybill(AccountTestInvoicingCommon):
         self.assertRecordValues(ewaybill, [{
             'state': 'pending',
             'display_name': _('Pending'),
-            'fiscal_position_id': self.env['account.fiscal.position'],
+            'fiscal_position_id': self.env['account.chart.template'].ref('fiscal_position_in_inter_state').id,
         }])
         ewaybill.fiscal_position_id = self.env['account.chart.template'].ref('fiscal_position_in_inter_state')
         self.assertEqual(ewaybill.move_ids[0].ewaybill_tax_ids, self.env['account.chart.template'].ref('igst_sale_5'))
@@ -108,7 +108,10 @@ class TestStockEwaybill(AccountTestInvoicingCommon):
         self.assertDictEqual(ewaybill._ewaybill_generate_direct_json(), expected_json)
 
     @freeze_time('2024-04-26')
-    def test_ewaybill_stock_sub_type_other(self):
+    def test_ewaybill_stock_test_2(self):
+        """
+        Ewaybill challan type other test with description
+        """
         delivery_picking = self._create_stock_picking()
         ewaybill = self.env['l10n.in.ewaybill'].create({
             'picking_id': delivery_picking.id,
@@ -152,17 +155,46 @@ class TestStockEwaybill(AccountTestInvoicingCommon):
               'quantity': 5.0,
               'qtyUnit': 'UNT',
               'taxableAmount': 2500.0,
-              'sgstRate': 2.5,
-              'cgstRate': 2.5
+              'igstRate': 5.0
             }
           ],
           'totalValue': 2500.0,
-          'cgstValue': 62.5,
-          'sgstValue': 62.5,
-          'igstValue': 0.0,
+          'cgstValue': 0.0,
+          'sgstValue': 0.0,
+          'igstValue': 125.0,
           'cessValue': 0.0,
           'cessNonAdvolValue': 0.0,
           'otherValue': 0.0,
           'totInvValue': 2625.0
         }
         self.assertDictEqual(ewaybill._ewaybill_generate_direct_json(), expected_json)
+
+    @freeze_time('2024-04-26')
+    def test_ewaybill_stock_test_3(self):
+        """
+        Ewaybill Zero distance test
+        """
+        delivery_picking = self._create_stock_picking()
+        ewaybill = self.env['l10n.in.ewaybill'].create({
+            'type_id': self.env.ref('l10n_in_ewaybill_stock.type_delivery_challan_sub_others').id,
+            'type_description': "Other reasons",
+            'picking_id': delivery_picking.id,
+            'transporter_id': self.partner_a.id,
+            'mode': '2',
+            'distance': 0,
+            'transportation_doc_no': 123456789,
+            'transportation_doc_date': '2024-04-26'
+        })
+        expected_distance = 118
+        response = {
+            'status_cd': '1',
+            'status_desc': 'EWAYBILL request succeeds',
+            'data': {
+                'ewayBillNo': 123456789012,
+                'ewayBillDate': '26/02/2024 12:09:43 PM',
+                'validUpto': '27/02/2024 12:09:43 PM',
+                "alert": ", Distance between these two pincodes is 118, "
+            }
+        }
+        ewaybill._l10n_in_ewaybill_stock_handle_zero_distance_alert_if_present(response)
+        self.assertEqual(ewaybill.distance, expected_distance)
