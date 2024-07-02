@@ -29,6 +29,7 @@
 # Matija Gudlin, 2023
 # Carlo Štefanac, 2023
 # etoimene, 2024
+# Gordana Bilas, 2024
 # Vladimir Vrgoč, 2024
 # 
 msgid ""
@@ -9884,6 +9885,8 @@ msgid ""
 "Banks are the financial institutions at which you and your contacts have "
 "their accounts."
 msgstr ""
+"Banke su financijske institucije u kojima vi i vaši kontakti imate svoje "
+"račune."
 
 #. module: base
 #: model:res.country,name:base.bb
@@ -14968,6 +14971,11 @@ msgstr "Francuska - računovodstvo"
 #: model:ir.module.module,shortdesc:base.module_l10n_fr_reports
 msgid "France - Accounting Reports"
 msgstr "Francuska - računovodstvena izvješća"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_fr_invoice_addr
+msgid "France - Adding Mandatory Invoice Mentions (Decree no. 2022-1299)"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_fr_fec
@@ -22227,7 +22235,7 @@ msgstr "Stjecatelj plaćanja"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_followup
 msgid "Payment Follow-up Management"
-msgstr ""
+msgstr "Upravljanje obavjestima o plaćanjima"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_payment
@@ -24894,7 +24902,7 @@ msgstr "Postavite podatke vaše Tvrtke"
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.onboarding_company_step
 msgid "Set your company's data for documents header/footer."
-msgstr ""
+msgstr "Postavite podatke svoje tvrtke za zaglavlje/podnožje dokumenata."
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_actions_act_url__binding_model_id
@@ -25118,7 +25126,7 @@ msgstr "Regularna pošta"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_snailmail_account_followup
 msgid "Snail Mail Follow-Up"
-msgstr ""
+msgstr "Snail mail obavjestio plaćanjima"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_marketing_social
