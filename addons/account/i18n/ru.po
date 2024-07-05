@@ -58,9 +58,9 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"Ход (%s) не сбалансирован.\n"
+"Движение средств (%s) не сбалансировано.\n"
 "Сумма дебетов равна %s, а сумма кредитов равна %s.\n"
-"Возможно, вы захотите указать счет по умолчанию в журнале \"%s\", чтобы автоматически балансировать каждый ход."
+"Возможно, вы захотите указать счет по умолчанию в журнале \"%s\", чтобы автоматически сбалансировать каждое движение средств."
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_tax__amount_type
@@ -552,14 +552,13 @@ msgstr ""
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_payment_register_form
-msgid "<b>Early Payment Discount applied.</b>"
-msgstr "<b>Применяется скидка за раннюю оплату.</b>"
+msgid ""
+"<b>Early Payment Discount of %(payment_reference) has been applied.</b>"
+msgstr ""
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.report_invoice_document
-msgid ""
-"<br/>\n"
-"                            on this account:"
+msgid "<br/> on this account:"
 msgstr ""
 
 #. module: account
@@ -4528,7 +4527,7 @@ msgstr "Код страны"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_fiscal_position__country_group_id
 msgid "Country Group"
-msgstr "Страновая группа"
+msgstr "Группы стран"
 
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_report__availability_condition__country
@@ -5626,7 +5625,7 @@ msgstr "Демонстрационный счет продажи земли"
 #. module: account
 #: model:account.account.tag,name:account.demo_stock_account
 msgid "Demo Stock Account"
-msgstr "Демо-счет акций"
+msgstr "Демо-счет (Стоимость заказов на складе)"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_account__deprecated
@@ -8068,8 +8067,10 @@ msgstr "Недействительный"
 #. odoo-python
 #: code:addons/account/models/partner.py:0
 #, python-format
-msgid "Invalid \"Zip Range\", please configure it properly."
-msgstr "Неверный \"Zip Range\", пожалуйста, настройте его правильно."
+msgid ""
+"Invalid \"Zip Range\", You have to configure both \"From\" and \"To\" values"
+" for the zip range and \"To\" should be greater than \"From\"."
+msgstr ""
 
 #. module: account
 #. odoo-python
@@ -11750,7 +11751,7 @@ msgstr "Валюта расписки"
 #: model:ir.ui.menu,name:account.menu_action_move_in_receipt_type
 #: model:ir.ui.menu,name:account.menu_action_move_out_receipt_type
 msgid "Receipts"
-msgstr "Квитанции"
+msgstr "Приемка"
 
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_account__account_type__asset_receivable
@@ -13373,17 +13374,18 @@ msgstr "Шаг выполнен!"
 #. module: account
 #: model:account.account,name:account.1_stock_out
 msgid "Stock Interim (Delivered)"
-msgstr "Промежуточный запас (с поставкой)"
+msgstr "Зарезервированный запас на складе (для доставки клиенту) "
 
 #. module: account
 #: model:account.account,name:account.1_stock_in
 msgid "Stock Interim (Received)"
-msgstr "Промежуточные (полученные) акции"
+msgstr ""
+"Зарезервированные запасы на складе (для получения товаров от поставщика) "
 
 #. module: account
 #: model:account.account,name:account.1_stock_valuation
 msgid "Stock Valuation"
-msgstr "Оценка стоимости акций"
+msgstr "Стоимость запасов на складе"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
@@ -13943,6 +13945,13 @@ msgstr "Условия и положения"
 #: model:ir.model.fields,field_description:account.field_account_report_external_value__text_value
 msgid "Text Value"
 msgstr "Значение текста"
+
+#. module: account
+#. odoo-javascript
+#: code:addons/account/static/src/components/document_state/document_state_field.js:0
+#, python-format
+msgid "Text copied"
+msgstr "Текст скопирован"
 
 #. module: account
 #: model:ir.model.fields,help:account.field_res_company__account_opening_date
@@ -15464,7 +15473,7 @@ msgstr "Проверить"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_invoice_report_search
 msgid "To Invoice"
-msgstr "Оставшуюся сумма для выставления счета"
+msgstr "Еще не выставленные счета"
 
 #. module: account
 #. odoo-python
@@ -16828,7 +16837,7 @@ msgstr ""
 
 #. module: account
 #. odoo-python
-#: code:addons/account/models/account_payment_method.py:0
+#: code:addons/account/models/account_journal.py:0
 #, python-format
 msgid ""
 "You can't have two payment method lines of the same payment type (%s) and "
@@ -17518,7 +17527,7 @@ msgstr "не отображаются в предварительном прос
 #: code:addons/account/static/src/components/account_payment_field/account_payment.xml:0
 #, python-format
 msgid "assign to invoice"
-msgstr "назначить на счет-фактуру"
+msgstr "назначить на выставление счета"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_move_form

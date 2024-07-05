@@ -3107,7 +3107,7 @@ msgstr "Menu Con"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_menus_logos
 msgid "Children"
-msgstr "Trẻ em"
+msgstr "Con"
 
 #. module: website
 #. odoo-javascript
@@ -7990,9 +7990,9 @@ msgid ""
 msgstr ""
 "Giám sát khách truy cập của bạn khi họ đang duyệt trang web của bạn bằng ứng"
 " dụng Odoo Social. Tương tác với họ chỉ bằng một cú nhấp chuột bằng cách sử "
-"dụng yêu cầu trò chuyện trực tiếp hoặc thông báo đẩy. Nếu họ đã hoàn thành "
-"một trong các biểu mẫu của bạn, bạn có thể gửi SMS cho họ hoặc gọi cho họ "
-"ngay trong khi họ đang duyệt trang web của bạn."
+"dụng yêu cầu livechat hoặc thông báo đẩy. Nếu họ đã hoàn thành một trong các"
+" biểu mẫu của bạn, bạn có thể gửi SMS cho họ hoặc gọi cho họ ngay trong khi "
+"họ đang duyệt trang web của bạn."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
@@ -9070,7 +9070,7 @@ msgstr "Parallax"
 #. module: website
 #: model:ir.model.fields,field_description:website.field_theme_website_menu__parent_id
 msgid "Parent"
-msgstr "Cha"
+msgstr "Chính"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website_menu__parent_id
@@ -13179,7 +13179,7 @@ msgstr "Website: Phân tích"
 #. module: website
 #: model:ir.actions.server,name:website.ir_actions_server_website_dashboard
 msgid "Website: Dashboard"
-msgstr "Website: Bảng tin"
+msgstr "Website: Bảng tổng hợp"
 
 #. module: website
 #: model:ir.actions.act_window,name:website.action_website_list

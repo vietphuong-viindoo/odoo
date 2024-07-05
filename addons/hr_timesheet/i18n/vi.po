@@ -309,7 +309,7 @@ msgid ""
 "                Evaluate which part is billable and what costs it represents."
 msgstr ""
 "Phân tích các dự án và nhiệm vụ mà nhân viên của bạn làm.<br>\n"
-"                Đánh giá phần nào phải thanh toán và chi phí tương ứng là gì."
+"                Đánh giá xem phần nào có thể tính phí và chi phí tương ứng là gì."
 
 #. module: hr_timesheet
 #: model:ir.model.fields,field_description:hr_timesheet.field_res_config_settings__reminder_allow
@@ -796,7 +796,7 @@ msgstr "Làm ngoài giờ"
 #: model:ir.model.fields,field_description:hr_timesheet.field_timesheets_analysis_report__parent_task_id
 #: model_terms:ir.ui.view,arch_db:hr_timesheet.hr_timesheet_line_search
 msgid "Parent Task"
-msgstr "Nhiệm vụ cha"
+msgstr "Nhiệm vụ chính"
 
 #. module: hr_timesheet
 #: model:ir.model.fields,field_description:hr_timesheet.field_account_analytic_line__partner_id

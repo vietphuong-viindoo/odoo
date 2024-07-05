@@ -2112,7 +2112,7 @@ msgstr "Nhóm Cha"
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_category__parent_path
 msgid "Parent Path"
-msgstr "Tuyến cha"
+msgstr "Tuyến chính"
 
 #. module: product
 #: model:product.template,name:product.product_product_9_product_template
@@ -2911,7 +2911,7 @@ msgid ""
 "to this category or its children categories. Keep empty otherwise."
 msgstr ""
 "Xác định một danh mục sản phẩm nếu quy tắc này chỉ áp dụng cho sản phẩm "
-"thuộc danh mục này hoặc danh mục con của nó. Nếu không hãy để trống."
+"thuộc danh mục này hoặc danh mục phụ của nó. Nếu không hãy để trống."
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_pricelist_item__product_id
@@ -3105,7 +3105,7 @@ msgstr "Biên độ tối thiểu phải nhỏ hơn biên độ tối đa."
 msgid ""
 "The number of products under this category (Does not consider the children "
 "categories)"
-msgstr "Số lượng sản phẩm trong danh mục này (Không bao gồm danh mục con)"
+msgstr "Số lượng sản phẩm trong danh mục này (Không bao gồm danh mục phụ)"
 
 #. module: product
 #. odoo-python

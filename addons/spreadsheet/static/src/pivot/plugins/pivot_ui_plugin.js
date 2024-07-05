@@ -79,7 +79,10 @@ export class PivotUIPlugin extends spreadsheet.UIPlugin {
                 const { col, row } = event.anchor.cell;
                 const cell = this.getters.getCell({ sheetId, col, row });
                 if (cell !== undefined && cell.content.startsWith("=ODOO.PIVOT.HEADER(")) {
-                    const filters = this._getFiltersMatchingPivot(cell.compiledFormula.tokens);
+                    const filters = this._getFiltersMatchingPivot(
+                        sheetId,
+                        cell.compiledFormula.tokens
+                    );
                     this.dispatch("SET_MANY_GLOBAL_FILTER_VALUE", { filters });
                 }
                 break;
@@ -198,7 +201,10 @@ export class PivotUIPlugin extends spreadsheet.UIPlugin {
     getPivotIdFromPosition(position) {
         const cell = this.getters.getCorrespondingFormulaCell(position);
         if (cell && cell.isFormula) {
-            const pivotFunction = this.getters.getFirstPivotFunction(cell.compiledFormula.tokens);
+            const pivotFunction = this.getters.getFirstPivotFunction(
+                position.sheetId,
+                cell.compiledFormula.tokens
+            );
             if (pivotFunction && pivotFunction.args[0]) {
                 return pivotFunction.args[0].toString();
             }
@@ -206,7 +212,11 @@ export class PivotUIPlugin extends spreadsheet.UIPlugin {
         return undefined;
     }
 
-    getFirstPivotFunction(tokens) {
+    /**
+     * @param {string} sheetId sheet id on which the formula tokens are
+     * @param {import("@odoo/o-spreadsheet").Token[]} tokens
+     */
+    getFirstPivotFunction(sheetId, tokens) {
         const pivotFunction = getFirstPivotFunction(tokens);
         if (!pivotFunction) {
             return undefined;
@@ -223,7 +233,7 @@ export class PivotUIPlugin extends spreadsheet.UIPlugin {
                 return argAst.value;
             }
             const argsString = astToFormula(argAst);
-            return this.getters.evaluateFormula(this.getters.getActiveSheetId(), argsString);
+            return this.getters.evaluateFormula(sheetId, argsString);
         });
         return { functionName, args: evaluatedArgs };
     }
@@ -255,6 +265,7 @@ export class PivotUIPlugin extends spreadsheet.UIPlugin {
         }
         const mainPosition = this.getters.getCellPosition(cell.id);
         const { args, functionName } = this.getters.getFirstPivotFunction(
+            position.sheetId,
             cell.compiledFormula.tokens
         );
         if (functionName === "ODOO.PIVOT.TABLE") {
@@ -364,12 +375,13 @@ export class PivotUIPlugin extends spreadsheet.UIPlugin {
 
     /**
      * Get the filter impacted by a pivot formula's argument
-     * @param {Token[]} tokens Formula of the pivot cell
+     * @param {string} sheetId sheet id on which the formula tokens are
+     * @param {import("@odoo/o-spreadsheet").Token[]} tokens Formula of the pivot cell
      *
      * @returns {Array<Object>}
      */
-    _getFiltersMatchingPivot(tokens) {
-        const functionDescription = this.getters.getFirstPivotFunction(tokens);
+    _getFiltersMatchingPivot(sheetId, tokens) {
+        const functionDescription = this.getters.getFirstPivotFunction(sheetId, tokens);
         if (!functionDescription) {
             return [];
         }
@@ -406,9 +418,16 @@ export class PivotUIPlugin extends spreadsheet.UIPlugin {
                 switch (filter.type) {
                     case "date":
                         if (filter.rangeType === "fixedPeriod" && time) {
-                            transformedValue = pivotPeriodToFilterValue(time, value);
-                            if (JSON.stringify(transformedValue) === JSON.stringify(currentValue)) {
+                            if (value === "false") {
                                 transformedValue = undefined;
+                            } else {
+                                transformedValue = pivotPeriodToFilterValue(time, value);
+                                if (
+                                    JSON.stringify(transformedValue) ===
+                                    JSON.stringify(currentValue)
+                                ) {
+                                    transformedValue = undefined;
+                                }
                             }
                         } else {
                             continue;

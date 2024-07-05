@@ -54,14 +54,14 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"    - Nhóm thuế: Thuế được dùng là tập hợp của các loại thuế con.\n"
-"    - Cố định: Số tiền tính thuế luôn bằng nhau dù giá có thay đổi.\n"
-"    - Phần trăm giá: Số tiền tính thuế theo % giá:\n"
-"        e.g 100 * 10% = 110 (chưa bao gồm giá)\n"
-"        e.g 110 / (1 + 10%) = 100 (đã gồm giá)\n"
+"    - Nhóm thuế: Thuế được dùng là tập hợp của các loại thuế phụ.\n"
+"    - Cố định: Số tiền thuế luôn không đổi dù giá có thay đổi.\n"
+"    - Phần trăm giá: Số tiền thuế được tính theo % giá:\n"
+"        VD: 100 * (1 + 10%) = 110 (chưa bao gồm trong giá)\n"
+"        VD: 110 / (1 + 10%) = 100 (đã gồm trong giá)\n"
 "    - Phần trăm của giá đã bao gồm thuế: Tiền thuế là khoản tiền được chia ra từ giá:\n"
-"        e.g 180 / (1 - 10%) = 200 (chưa bao gồm giá)\n"
-"        e.g 200 * (1 - 10%) = 180 (đã gồm giá)\n"
+"        VD: 180 / (1 - 10%) = 200 (chưa bao gồm trong giá)\n"
+"        VD: 200 * (1 - 10%) = 180 (đã bao gồm trong giá)\n"
 "        "
 
 #. module: account
@@ -526,17 +526,14 @@ msgstr ""
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_payment_register_form
-msgid "<b>Early Payment Discount applied.</b>"
-msgstr "<b>Đã áp dụng chiết khấu thanh toán sớm.</b>"
+msgid ""
+"<b>Early Payment Discount of %(payment_reference) has been applied.</b>"
+msgstr "<b>Đã áp dụng chiết khấu thanh toán sớm cho %(payment_reference).</b>"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.report_invoice_document
-msgid ""
-"<br/>\n"
-"                            on this account:"
-msgstr ""
-"<br/>\n"
-"                            trên tài khoản này:"
+msgid "<br/> on this account:"
+msgstr "<br/> trên tài khoản này:"
 
 #. module: account
 #: model:mail.template,body_html:account.email_template_edi_credit_note
@@ -1631,7 +1628,7 @@ msgstr "Tiền tệ Tài khoản"
 #. module: account
 #: model:onboarding.onboarding,name:account.onboarding_onboarding_account_dashboard
 msgid "Account Dashboard Onboarding"
-msgstr "Hướng dẫn Trang tổng quan kế toán"
+msgstr "Hướng dẫn Trang chủ kế toán"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.account_move_view_activity
@@ -1959,7 +1956,7 @@ msgstr "Kế toán"
 #. module: account
 #: model:ir.actions.act_window,name:account.open_account_journal_dashboard_kanban
 msgid "Accounting Dashboard"
-msgstr "Bảng thông tin kế toán"
+msgstr "Bảng thông tin Kế toán"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_journal__accounting_date
@@ -7171,7 +7168,7 @@ msgstr "Nhận cảnh báo khi xuất hoá đơn cho một khách hàng nào đ�
 #: code:addons/account/static/src/js/tours/account.js:0
 #, python-format
 msgid "Go back"
-msgstr "Quay lại"
+msgstr "Trở lại"
 
 #. module: account
 #. odoo-python
@@ -8052,8 +8049,12 @@ msgstr "Không hợp lệ"
 #. odoo-python
 #: code:addons/account/models/partner.py:0
 #, python-format
-msgid "Invalid \"Zip Range\", please configure it properly."
-msgstr "\"Phạm vi Zip\" không hợp lệ, vui lòng cầu hình đúng."
+msgid ""
+"Invalid \"Zip Range\", You have to configure both \"From\" and \"To\" values"
+" for the zip range and \"To\" should be greater than \"From\"."
+msgstr ""
+"\"Phạm vi Zip\" không hợp lệ, Bạn phải cấu hình cả hai giá trị \"Từ\" và "
+"\"Đến\" cho phạm vi zip và \"Đến\" phải lớn hơn \"Từ\"."
 
 #. module: account
 #. odoo-python
@@ -10294,8 +10295,8 @@ msgid ""
 "Once installed, set 'Bank Feeds' to 'File Import' in bank account "
 "settings.This adds a button to import from the Accounting dashboard."
 msgstr ""
-"Một khi được cài, thiết lập 'Phí ngân hàng' để 'Import file' trong phần "
-"thiết lập tài khoản ngân hàng.Nó sẽ thêm một nút để import trong phần bảng "
+"Sau khi được cài, thiết lập 'Phí ngân hàng' khi 'Nhập tệp' trong phần "
+"thiết lập tài khoản ngân hàng. Nó sẽ thêm một nút để nhập trong phần bảng "
 "thông tin kế toán."
 
 #. module: account
@@ -13910,6 +13911,13 @@ msgid "Text Value"
 msgstr "Giá trị văn bản"
 
 #. module: account
+#. odoo-javascript
+#: code:addons/account/static/src/components/document_state/document_state_field.js:0
+#, python-format
+msgid "Text copied"
+msgstr "Văn bản đã được sao chép"
+
+#. module: account
 #: model:ir.model.fields,help:account.field_res_company__account_opening_date
 msgid "That is the date of the opening entry."
 msgstr "Đây là ngày của bút toán đầu kỳ."
@@ -16763,7 +16771,7 @@ msgstr ""
 
 #. module: account
 #. odoo-python
-#: code:addons/account/models/account_payment_method.py:0
+#: code:addons/account/models/account_journal.py:0
 #, python-format
 msgid ""
 "You can't have two payment method lines of the same payment type (%s) and "
@@ -17631,7 +17639,7 @@ msgstr "phần trăm"
 #: code:addons/account/wizard/account_move_send.py:0
 #, python-format
 msgid "invoices"
-msgstr "hóa đơn"
+msgstr "hoá đơn"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_partner_bank_form_inherit_account
