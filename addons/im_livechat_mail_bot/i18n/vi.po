@@ -1,11 +1,11 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* im_livechat_mail_bot
-# 
+#
 # Translators:
 # Wil Odoo, 2023
 # Thi Huong Nguyen, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
@@ -30,9 +30,11 @@ msgid ""
 "<b>close this conversation</b> or start the tour again with typing <span "
 "class=\"o_odoobot_command\">start the tour</span>. Enjoy discovering Odoo!"
 msgstr ""
-"Tốt, bạn có thể tùy biến các câu trả lời mẫu ở ứng dụng chat trực "
-"tuyến.<br/><br/><b>Nó sẽ xuất hiện ở cuối quá trình tổng quan này</b>, chúc "
-"bạn khám phá thành công Viindoo!"
+"Tốt, bạn có thể tùy chỉnh các câu trả lời soạn trước trong ứng dụng trò "
+"chuyện trực tiếp.<br/><br/><b>Phần tổng quan này đã kết thúc</b>, bây giờ "
+"bạn có thể <b>đóng đoạn hội thoại này</b> hoặc bắt đầu lại chuyến tham quan "
+"bằng cách nhập <span class=\"o_odoobot_command\">bắt đầu chuyến tham quan "
+"</span>."
 
 #. module: im_livechat_mail_bot
 #: model:ir.model,name:im_livechat_mail_bot.model_mail_bot

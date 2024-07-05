@@ -5,7 +5,7 @@
 # Translators:
 # Wil Odoo, 2023
 # Thi Huong Nguyen, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
@@ -14,10 +14,10 @@ msgstr ""
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
 "Last-Translator: Thi Huong Nguyen, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
-"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
+"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: website_event_track
@@ -143,7 +143,7 @@ msgstr ""
 #. module: website_event_track
 #: model_terms:ir.ui.view,arch_db:website_event_track.track_card
 msgid "<i class=\"fa fa-ban me-2\"/>Unpublished"
-msgstr "<i class=\"fa fa-ban me-2\"/>Đã huỷ đăng"
+msgstr "<i class=\"fa fa-ban me-2\"/>Bỏ công khai"
 
 #. module: website_event_track
 #: model_terms:ir.ui.view,arch_db:website_event_track.tracks_search
@@ -222,7 +222,7 @@ msgstr ""
 #. module: website_event_track
 #: model_terms:ir.ui.view,arch_db:website_event_track.agenda_topbar
 msgid "<span id=\"search_number\" class=\"me-1\">0</span>Results"
-msgstr "<span id=\"search_number\" class=\"me-1\">0</span>kết quả"
+msgstr "<span id=\"search_number\" class=\"me-1\">0</span>Kết quả"
 
 #. module: website_event_track
 #: model_terms:ir.ui.view,arch_db:website_event_track.event_track_content
@@ -314,7 +314,7 @@ msgstr "Thêm giai đoạn mới vào chu trình nhiệm vụ"
 #: model_terms:ir.actions.act_window,help:website_event_track.action_event_track_tag
 msgid ""
 "Add tags to your tracks to help your attendees browse your event web pages."
-msgstr "Thêm thẻ vào nội dung để giúp người tham dự duyệt trang web sự kiện. "
+msgstr "Thêm thẻ vào bài để giúp người tham dự duyệt trang web sự kiện. "
 
 #. module: website_event_track
 #: model:event.track,name:website_event_track.event_track19
@@ -395,8 +395,8 @@ msgid ""
 "As key track cannot be un-favorited, this field store the partner choice to "
 "remove the reminder for key tracks."
 msgstr ""
-"Vì không thể hủy yêu thích nội dung chính, nên trường này chứa lựa chọn xóa "
-"bỏ nhắc nhở cho các nội dung chính của đối tác. "
+"Vì bài chính không thể bị hủy yêu thích nên trường này chứa các lựa chọn đối"
+" tác để xóa bỏ nhắc nhở cho các bài chính. "
 
 #. module: website_event_track
 #: model_terms:event.track,description:website_event_track.event_7_track_17
@@ -449,7 +449,7 @@ msgstr "Tiểu sử"
 #: model:event.track.stage,legend_blocked:website_event_track.event_track_stage5
 #, python-format
 msgid "Blocked"
-msgstr "Đã chặn"
+msgstr "Bị chặn"
 
 #. module: website_event_track
 #: model_terms:ir.ui.view,arch_db:website_event_track.registration_complete
@@ -680,7 +680,7 @@ msgstr "Tạo nhãn giải thích quản lý trạng thái ở kanban. "
 #. module: website_event_track
 #: model:ir.model.fields,help:website_event_track.field_event_track_location__sequence
 msgid "Define the order in which the location will appear on \"Agenda\" page"
-msgstr "Xác định thứ tự mà vị trí sẽ xuất hiện trên trang \"Chương trình\""
+msgstr "Xác định thứ tự vị trí sẽ xuất hiện trên trang \"Chương trình nghị sự\""
 
 #. module: website_event_track
 #: model_terms:ir.actions.act_window,help:website_event_track.event_track_stage_action
@@ -863,13 +863,13 @@ msgstr "Danh mục thẻ của bài sự kiện"
 #: model_terms:ir.ui.view,arch_db:website_event_track.view_event_track_calendar
 #: model_terms:ir.ui.view,arch_db:website_event_track.view_event_track_search
 msgid "Event Tracks"
-msgstr "Nội dung sự kiện"
+msgstr "Theo vết Sự kiện"
 
 #. module: website_event_track
 #: model:ir.model.fields,field_description:website_event_track.field_event_event__track_menu_ids
 #: model:ir.model.fields.selection,name:website_event_track.selection__website_event_menu__menu_type__track
 msgid "Event Tracks Menus"
-msgstr "Menu nội dung sự kiện"
+msgstr "Menu bài sự kiện"
 
 #. module: website_event_track
 #: model:event.track,name:website_event_track.event_7_track_21
@@ -879,7 +879,7 @@ msgstr "Tổng kết sự kiện"
 #. module: website_event_track
 #: model:mail.template,name:website_event_track.mail_template_data_track_confirmation
 msgid "Event: Track Confirmation"
-msgstr "Sự kiện: Xác nhận nội dung"
+msgstr "Sự kiện: Theo dõi xác nhận"
 
 #. module: website_event_track
 #: model:ir.model.fields,field_description:website_event_track.field_res_config_settings__events_app_name
@@ -1097,9 +1097,7 @@ msgstr "Biểu tượng để chỉ ra một hoạt động ngoại lệ."
 msgid ""
 "If checked, automatically publish tracks so that access links to customers "
 "are provided."
-msgstr ""
-"Nếu chọn, tự động đăng nội dung để cung cấp liên kết truy cập tới khách "
-"hàng. "
+msgstr "Nếu chọn, tự động đăng bài có cung cấp link truy cập cho khách hàng. "
 
 #. module: website_event_track
 #: model:ir.model.fields,help:website_event_track.field_event_track__message_needaction
@@ -1115,7 +1113,7 @@ msgstr "Nếu có đánh dấu, một số thông điệp đã có lỗi gửi �
 #. module: website_event_track
 #: model:ir.model.fields,help:website_event_track.field_event_track_stage__is_visible_in_agenda
 msgid "If checked, the related tracks will be visible in the frontend."
-msgstr "Nếu chọn, các nội dung liên quan sẽ hiển thị ở giao diện frontend. "
+msgstr "Nếu chọn, các bài liên quan sẽ hiển thị ở giao diện frontend. "
 
 #. module: website_event_track
 #: model:ir.model.fields,help:website_event_track.field_event_track_stage__mail_template_id
@@ -1410,7 +1408,8 @@ msgid ""
 "Manage from here the places where you organize your tracks (e.g. Rooms, "
 "Channels, ...)."
 msgstr ""
-"Từ đây, bạn có thể quản lý nơi tổ chức nội dung (VD: Phòng, Kênh,...). "
+"Đây là nơi quản lý nơi bạn sẽ tổ chức các bài phát biểu (vd. Phòng, Kênh, "
+"...). "
 
 #. module: website_event_track
 #: model:ir.model.fields.selection,name:website_event_track.selection__event_track__priority__1
@@ -1475,7 +1474,7 @@ msgstr "Giới thiệu toàn cầu của My Company"
 #. module: website_event_track
 #: model_terms:ir.ui.view,arch_db:website_event_track.view_event_track_search
 msgid "My Tracks"
-msgstr "Nội dung của tôi"
+msgstr "Bài của tôi"
 
 #. module: website_event_track
 #: model:ir.model.fields,field_description:website_event_track.field_event_track__partner_name
@@ -1788,8 +1787,7 @@ msgid ""
 "Sent to speakers whose track proposal is accepted (set the template on the "
 "right stage)"
 msgstr ""
-"Gửi tới các diễn giả có đề xuất nội dung được chấp nhận (thiết lập mẫu ở "
-"đúng giai đoạn)"
+"Gửi tới diễn giả có đề xuất bài được chấp nhận (chọn mẫu ở phía bên phải)"
 
 #. module: website_event_track
 #: model:ir.model.fields,field_description:website_event_track.field_event_track__seo_name
@@ -1826,7 +1824,7 @@ msgstr "Hiển thị tất cả dữ liệu có ngày xử lý tiếp theo trư�
 #. module: website_event_track
 #: model_terms:ir.ui.view,arch_db:website_event_track.event_event_view_form
 msgid "Showcase Tracks"
-msgstr "Hiển thị nội dung"
+msgstr "Trưng bày bài"
 
 #. module: website_event_track
 #: model_terms:ir.ui.view,arch_db:website_event_track.view_event_track_form
@@ -2101,7 +2099,7 @@ msgstr "Bước này đã xong. Bấm để chặn hoặc đặt là đang tiế
 #. module: website_event_track
 #: model_terms:ir.ui.view,arch_db:website_event_track.event_track_content
 msgid "This track does not have a description."
-msgstr "Nội dung này không có mô tả."
+msgstr "Bài này không có mô tả."
 
 #. module: website_event_track
 #: model_terms:ir.ui.view,arch_db:website_event_track.event_track_proposal
@@ -2156,7 +2154,7 @@ msgstr "Link bài / Khách"
 #. module: website_event_track
 #: model:mail.message.subtype,name:website_event_track.mt_track_blocked
 msgid "Track Blocked"
-msgstr "Bài đã chặn"
+msgstr "Bài Bị chặn"
 
 #. module: website_event_track
 #: model:ir.model.fields,field_description:website_event_track.field_event_event__track_count
@@ -2251,13 +2249,13 @@ msgid ""
 "Track Visitors store statistics on your events, including how many times "
 "tracks have been wishlisted."
 msgstr ""
-"Mục Khách truy cập nội dung chứa thống kê sự kiện, bao gồm số lần nội dung "
-"được thêm vào danh sách yêu thích. "
+"Khách xem bài chứa thống kê sự kiện, bao gồm số lần bài đã được thêm vào "
+"wishlist. "
 
 #. module: website_event_track
 #: model:mail.message.subtype,description:website_event_track.mt_track_blocked
 msgid "Track blocked"
-msgstr "Bài đã chặn"
+msgstr "Bài Bị chặn"
 
 #. module: website_event_track
 #: model:ir.model.fields,field_description:website_event_track.field_event_event__track_ids
@@ -2267,17 +2265,17 @@ msgstr "Bài đã chặn"
 #: model_terms:ir.ui.view,arch_db:website_event_track.view_event_track_graph
 #: model_terms:ir.ui.view,arch_db:website_event_track.website_visitor_view_form
 msgid "Tracks"
-msgstr "Nội dung"
+msgstr "Vết"
 
 #. module: website_event_track
 #: model_terms:ir.ui.view,arch_db:website_event_track.event_type_view_form_inherit_track
 msgid "Tracks Menu Item"
-msgstr "Mục menu nội dung"
+msgstr "Mục menu bài"
 
 #. module: website_event_track
 #: model:ir.model.fields,field_description:website_event_track.field_event_type__website_track_proposal
 msgid "Tracks Proposals on Website"
-msgstr "Đề xuất nội dung trên trang web"
+msgstr "Đề xuất bài trên website"
 
 #. module: website_event_track
 #: model_terms:ir.actions.act_window,help:website_event_track.action_event_track
@@ -2286,14 +2284,14 @@ msgid ""
 "Tracks define your event schedule. They can be talks, workshops or any "
 "similar activity."
 msgstr ""
-"Nội dung xác định lộ trình của sự kiện. Nội dung có thể là các bài diễn "
-"thuyết, hội thảo ngắn hay bất kỳ hoạt động nào tương tự. "
+"Các bài xác định lịch trình của sự kiện. Bài có thể là các buổi diễn thuyết,"
+" hội thảo hay bất kỳ hoạt động tương tự. "
 
 #. module: website_event_track
 #: model:ir.model.fields,field_description:website_event_track.field_event_event__website_track
 #: model:ir.model.fields,field_description:website_event_track.field_event_type__website_track
 msgid "Tracks on Website"
-msgstr "Nội dung trên trang web"
+msgstr "Bài trên website"
 
 #. module: website_event_track
 #: model:ir.model.fields,help:website_event_track.field_event_track__activity_exception_decoration
@@ -2521,7 +2519,7 @@ msgstr "Lượt yêu thích"
 #: model:ir.actions.act_window,name:website_event_track.event_track_action_from_visitor
 #: model:ir.model.fields,field_description:website_event_track.field_website_visitor__event_track_wishlisted_ids
 msgid "Wishlisted Tracks"
-msgstr "Nội dung trong danh sách yêu thích"
+msgstr "Bài đã yêu thích"
 
 #. module: website_event_track
 #: model_terms:ir.ui.view,arch_db:website_event_track.snippet_options
@@ -2547,7 +2545,8 @@ msgstr "Bạn không thể truy cập trang này. "
 msgid ""
 "You have to enable push notifications to get reminders for your favorite "
 "tracks."
-msgstr "Bạn phải bật thông báo đẩy để được nhắc nhở về nội dung yêu thích. "
+msgstr ""
+"Bạn phải bật thông báo push để nhận nhắc nhở về bài yêu thích của bạn. "
 
 #. module: website_event_track
 #: model_terms:ir.ui.view,arch_db:website_event_track.pwa_offline
@@ -2557,7 +2556,7 @@ msgstr "Bạn đang offline!"
 #. module: website_event_track
 #: model_terms:ir.ui.view,arch_db:website_event_track.event_track_content
 msgid "a few seconds"
-msgstr "vài giây"
+msgstr "một vài giây"
 
 #. module: website_event_track
 #: model_terms:ir.ui.view,arch_db:website_event_track.track_card
@@ -2567,7 +2566,7 @@ msgstr "trước"
 #. module: website_event_track
 #: model_terms:ir.ui.view,arch_db:website_event_track.view_event_track_form
 msgid "e.g. \"John Doe was born in...\""
-msgstr "VD: \"John Doe được sinh ra ở...\""
+msgstr "ví dụ: \"John Doe sinh ra năm...\""
 
 #. module: website_event_track
 #: model_terms:ir.ui.view,arch_db:website_event_track.view_event_location_tree
@@ -2631,4 +2630,4 @@ msgstr "bắt đầu vào"
 #. module: website_event_track
 #: model_terms:ir.ui.view,arch_db:website_event_track.agenda_main
 msgid "tracks"
-msgstr "nội dung"
+msgstr "bài"

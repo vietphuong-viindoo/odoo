@@ -5,7 +5,7 @@
 # Translators:
 # Wil Odoo, 2023
 # Thi Huong Nguyen, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
@@ -14,10 +14,10 @@ msgstr ""
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
 "Last-Translator: Thi Huong Nguyen, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
-"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
+"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: google_recaptcha
@@ -45,7 +45,7 @@ msgstr "Điểm tối thiểu"
 #: code:addons/google_recaptcha/static/src/js/recaptcha.js:0
 #, python-format
 msgid "No recaptcha site key set."
-msgstr "Không có khoá recaptcha nào được thiết lập"
+msgstr "Không có khoá trang recaptcha nào được thiết lập"
 
 #. module: google_recaptcha
 #. odoo-javascript
@@ -99,14 +99,14 @@ msgstr "Khoá riêng tư reCaptcha không hợp lệ."
 #: code:addons/google_recaptcha/models/ir_http.py:0
 #, python-format
 msgid "The reCaptcha token is invalid."
-msgstr "Token của reCaptcha không hợp lệ."
+msgstr "reCaptcha token không hợp lệ."
 
 #. module: google_recaptcha
 #. odoo-javascript
 #: code:addons/google_recaptcha/static/src/js/recaptcha.js:0
 #, python-format
 msgid "The recaptcha site key is invalid."
-msgstr "Khoá reCaptcha không hợp lệ."
+msgstr "Khoá trang recaptcha không hợp lệ"
 
 #. module: google_recaptcha
 #. odoo-python

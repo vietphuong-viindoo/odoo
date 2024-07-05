@@ -1,13 +1,13 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* account
-# 
+#
 # Translators:
 # Nancy Momoland <thanh.np2502@gmail.com>, 2023
 # Tâm Doãn Bắc, 2024
 # Wil Odoo, 2024
 # Thi Huong Nguyen, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
@@ -54,14 +54,14 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"    - Nhóm thuế: Thuế được dùng là tập hợp của các loại thuế phụ.\n"
-"    - Cố định: Số tiền thuế luôn không đổi dù giá có thay đổi.\n"
-"    - Phần trăm giá: Số tiền thuế được tính theo % giá:\n"
-"        VD: 100 * (1 + 10%) = 110 (chưa bao gồm trong giá)\n"
-"        VD: 110 / (1 + 10%) = 100 (đã gồm trong giá)\n"
+"    - Nhóm thuế: Thuế được dùng là tập hợp của các loại thuế con.\n"
+"    - Cố định: Số tiền tính thuế luôn bằng nhau dù giá có thay đổi.\n"
+"    - Phần trăm giá: Số tiền tính thuế theo % giá:\n"
+"        e.g 100 * 10% = 110 (chưa bao gồm giá)\n"
+"        e.g 110 / (1 + 10%) = 100 (đã gồm giá)\n"
 "    - Phần trăm của giá đã bao gồm thuế: Tiền thuế là khoản tiền được chia ra từ giá:\n"
-"        VD: 180 / (1 - 10%) = 200 (chưa bao gồm trong giá)\n"
-"        VD: 200 * (1 - 10%) = 180 (đã bao gồm trong giá)\n"
+"        e.g 180 / (1 - 10%) = 200 (chưa bao gồm giá)\n"
+"        e.g 200 * (1 - 10%) = 180 (đã gồm giá)\n"
 "        "
 
 #. module: account
@@ -172,7 +172,7 @@ msgstr "%s - %s; %s Hóa đơn đã xuất, %s Giao hàng tại %s mỗi lần"
 #: code:addons/account/models/product.py:0
 #, python-format
 msgid "%s Excl. Taxes"
-msgstr "%s Chưa bao gồm thuế"
+msgstr "%s không kèm. Thuế"
 
 #. module: account
 #. odoo-python
@@ -1956,7 +1956,7 @@ msgstr "Kế toán"
 #. module: account
 #: model:ir.actions.act_window,name:account.open_account_journal_dashboard_kanban
 msgid "Accounting Dashboard"
-msgstr "Bảng thông tin Kế toán"
+msgstr "Bảng thông tin kế toán"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_journal__accounting_date
@@ -7362,7 +7362,7 @@ msgstr "Cao nhất"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
 msgid "How total tax amount is computed in orders and invoices"
-msgstr "Cách thức mà giá trị thuế được tính toán trên các đơn hàng và hoá đơn"
+msgstr "Cách thức mà giá trị thuế được tính toán theo thứ tự và hoá đơn"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_account__id
@@ -9349,7 +9349,7 @@ msgid ""
 "SEPA Direct Debit: Get paid in the SEPA zone thanks to a mandate your partner will have granted to you. Module account_sepa is necessary.\n"
 msgstr ""
 "Thủ công: Nhận thanh toán bằng bất kỳ phương thức nào bên ngoài Odoo.\n"
-"Nhà cung cấp thanh toán: Mỗi nhà cung cấp thanh toán có Phương thức thanh toán riêng. Yêu cầu giao dịch trên/đến thẻ nhờ mã thông báo thanh toán được lưu bởi đối tác khi mua hoặc đăng ký trực tuyến.\n"
+"Nhà cung cấp dịch vụ thanh toán: Mỗi nhà cung cấp thanh toán có Phương thức thanh toán riêng. Yêu cầu giao dịch trên/đến thẻ nhờ mã thông báo thanh toán được lưu bởi đối tác khi mua hoặc đăng ký trực tuyến.\n"
 "Gửi tiền hàng loạt: Thu thập một số séc của khách hàng cùng một lúc tạo và gửi tiền gửi hàng loạt cho ngân hàng của bạn. Module account_batch_payment là cần thiết.\n"
 "SEPA Direct Debit: Được trả tiền trong khu vực SEPA nhờ nhiệm vụ mà đối tác của bạn sẽ cấp cho bạn. Module account_sepa là cần thiết.\n"
 
@@ -10295,8 +10295,8 @@ msgid ""
 "Once installed, set 'Bank Feeds' to 'File Import' in bank account "
 "settings.This adds a button to import from the Accounting dashboard."
 msgstr ""
-"Sau khi được cài, thiết lập 'Phí ngân hàng' khi 'Nhập tệp' trong phần "
-"thiết lập tài khoản ngân hàng. Nó sẽ thêm một nút để nhập trong phần bảng "
+"Một khi được cài, thiết lập 'Phí ngân hàng' để 'Import file' trong phần "
+"thiết lập tài khoản ngân hàng.Nó sẽ thêm một nút để import trong phần bảng "
 "thông tin kế toán."
 
 #. module: account
@@ -13198,7 +13198,7 @@ msgid ""
 " for the entire order, regardless of the products on the different lines."
 msgstr ""
 "Chỉ định một giá trị tùy ý sẽ được tích lũy vào         tài khoản mặc định "
-"cho toàn bộ đơn hàng, bất kể sản phẩm thuộc các dòng khác nhau."
+"cho toàn bộ đơn, bất kể sản phẩm thuộc các dòng khác nhau."
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_bank_statement_line__auto_post
@@ -15010,8 +15010,8 @@ msgid ""
 "There doesn't appear to be anything to invoice for the selected order. "
 "However, you can use the amount field to force an accrual entry."
 msgstr ""
-"Không có bất kỳ thứ gì để xuất hóa đơn cho đơn hàng đã chọn. Tuy nhiên, bạn "
-"có thể sử dụng trường số tiền để thực hiện một bút toán dồn tích."
+"Không có bất kỳ thứ gì để xuất hóa đơn cho đơn đã chọn. Tuy nhiên, bạn có "
+"thể sử dụng trường số tiền để thực hiện một bút toán dồn tích."
 
 #. module: account
 #. odoo-python
@@ -16832,8 +16832,8 @@ msgid ""
 "You can't register payments for both inbound and outbound moves at the same "
 "time."
 msgstr ""
-"Bạn không thể ghi nhận thanh toán cho cả bút toán là dạng gửi "
-"đi, hoặc là dạng nhận về cùng một lúc."
+"Bạn không thể ghi nhận thanh toán cho cả bút toán nhận về và gửi đi cùng một"
+" lúc."
 
 #. module: account
 #. odoo-python

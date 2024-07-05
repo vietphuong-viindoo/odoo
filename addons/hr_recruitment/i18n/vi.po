@@ -5,7 +5,7 @@
 # Translators:
 # Wil Odoo, 2024
 # Thi Huong Nguyen, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
@@ -14,10 +14,10 @@ msgstr ""
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
 "Last-Translator: Thi Huong Nguyen, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
-"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
+"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: hr_recruitment
@@ -1657,7 +1657,7 @@ msgid ""
 "ID of the parent record holding the alias (example: project holding the task"
 " creation alias)"
 msgstr ""
-"ID của dữ liệu gốc mà chứa bí danh (ví dụ: dự án chứa bí danh để tạo "
+"ID của tập dữ liệu cha mà chứa bí danh (ví dụ: dự án chứa bí danh để tạo "
 "nhiệm vụ)"
 
 #. module: hr_recruitment
@@ -2030,7 +2030,7 @@ msgstr "Bây giờ, hãy tạo nhân viên mới này."
 #: code:addons/hr_recruitment/static/src/js/tours/hr_recruitment.js:0
 #, python-format
 msgid "Let’s go back to the dashboard."
-msgstr "Hãy quay lại trang chủ."
+msgstr "Hãy quay lại trang tổng quan."
 
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant__linkedin_profile
@@ -2363,12 +2363,12 @@ msgstr "Hồ sơ ứng tuyển khác"
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_job__alias_parent_model_id
 msgid "Parent Model"
-msgstr "Mô hình chính"
+msgstr "Mô hình cha"
 
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_job__alias_parent_thread_id
 msgid "Parent Record Thread ID"
-msgstr "ID luồng dữ liệu gốc"
+msgstr "ID luồng hồ sơ gốc"
 
 #. module: hr_recruitment
 #: model:ir.model.fields,help:hr_recruitment.field_hr_job__alias_parent_model_id
@@ -2377,7 +2377,7 @@ msgid ""
 " necessarily the model given by alias_model_id (example: project "
 "(parent_model) and task (model))"
 msgstr ""
-"Model chính giữ bí danh. Model giữ tham chiếu bí danh không nhất thiết là "
+"Parent model giữ bí danh. Model giữ tham chiếu bí danh không nhất thiết là "
 "model được đưa ra bởi alias_model_id (ví dụ: project (parent_model) và task "
 "(model))"
 

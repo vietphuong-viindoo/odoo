@@ -14,10 +14,10 @@ msgstr ""
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
 "Last-Translator: Thi Huong Nguyen, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
-"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
+"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: payment_stripe
@@ -243,8 +243,9 @@ msgid ""
 "The refund did not go through. Please log into your Stripe Dashboard to get "
 "more information on that matter, and address any accounting discrepancies."
 msgstr ""
-"Hoàn tiền không được thực hiện. Vui lòng đăng nhập vào Trang chủ Stripe của "
-"bạn để biết thêm thông tin về vấn đề đó và xử lý các chênh lệch về kế toán."
+"Hoàn tiền không được thực hiện. Vui lòng đăng nhập vào Trang tổng quan "
+"Stripe của bạn để biết thêm thông tin về vấn đề đó và xử lý các chênh lệch "
+"về kế toán."
 
 #. module: payment_stripe
 #: model:ir.model.fields,help:payment_stripe.field_payment_provider__code

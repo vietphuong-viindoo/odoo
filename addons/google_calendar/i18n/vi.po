@@ -5,7 +5,7 @@
 # Translators:
 # Wil Odoo, 2023
 # Thi Huong Nguyen, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
@@ -14,10 +14,10 @@ msgstr ""
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
 "Last-Translator: Thi Huong Nguyen, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
-"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
+"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: google_calendar
@@ -314,8 +314,8 @@ msgid ""
 "Last Calendar ID who has been synchronized. If it is changed, we remove all "
 "links between GoogleID and Odoo Google Internal ID"
 msgstr ""
-"ID của Lịch cuối cùng được đồng bộ hóa. Nếu bị thay đổi, chúng tôi sẽ xóa bỏ"
-" tất cả liên kết giữa Google ID và Google ID nội bộ trong hệ thống"
+"ID Calendar cuối cùng được đồng bộ hóa. Nếu bị thay đổi, chúng tôi sẽ xóa bỏ"
+" tất cả liên kết giữa Google ID và Google ID nội bộ trong Odoo"
 
 #. module: google_calendar
 #: model:ir.model.fields,field_description:google_calendar.field_google_calendar_account_reset__write_uid

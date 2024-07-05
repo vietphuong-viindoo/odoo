@@ -5,7 +5,7 @@
 # Translators:
 # Wil Odoo, 2023
 # Thi Huong Nguyen, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
@@ -14,10 +14,10 @@ msgstr ""
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
 "Last-Translator: Thi Huong Nguyen, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
-"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
+"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: hr
@@ -892,12 +892,12 @@ msgstr "Thêm phòng ban mới"
 #. module: hr
 #: model_terms:ir.actions.act_window,help:hr.hr_contract_type_action
 msgid "Create a new employment type"
-msgstr "Tạo một loại hình công việc mới"
+msgstr "Tạo kiểu việc làm mới"
 
 #. module: hr
 #: model_terms:ir.actions.act_window,help:hr.hr_work_location_action
 msgid "Create a new work location"
-msgstr "Tạo một vị trí làm việc mới"
+msgstr "Tạo địa điểm làm việc mới"
 
 #. module: hr
 #: model_terms:hr.job,website_description:hr.job_ceo
@@ -3268,7 +3268,7 @@ msgstr "Xem hồ sơ"
 #: model:ir.model.fields,field_description:hr.field_hr_employee__visa_expire
 #: model:ir.model.fields,field_description:hr.field_res_users__visa_expire
 msgid "Visa Expiration Date"
-msgstr "Ngày hết hạn Visa"
+msgstr "Ngày hết Hạn Visa"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__visa_no
@@ -3330,8 +3330,8 @@ msgid ""
 "Whether the employee is a member of the active user's department or one of "
 "it's child department."
 msgstr ""
-"Cho dù nhân viên là thành viên của phòng ban của người dùng đang hoạt động "
-"hay một trong những phòng ban cấp dưới của nó."
+"Cho dù nhân viên là thành viên của bộ phận người dùng đang hoạt động hay một"
+" trong những bộ phận con của nó."
 
 #. module: hr
 #: model:ir.model.fields.selection,name:hr.selection__hr_employee__marital__widower
