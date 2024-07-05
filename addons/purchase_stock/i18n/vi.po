@@ -14,10 +14,10 @@ msgstr ""
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
 "Last-Translator: Thi Huong Nguyen, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
-"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
+"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: purchase_stock
@@ -144,7 +144,7 @@ msgstr "Liên hệ"
 #: code:addons/purchase_stock/models/purchase_order.py:0
 #, python-format
 msgid "Corresponding receipt not found."
-msgstr "Không tìm thấy phiếu nhập kho tương ứng."
+msgstr "Không tìm thấy phiếu nhận hàng tương ứng."
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_move__created_purchase_line_ids
@@ -167,7 +167,7 @@ msgstr "Mô tả tùy chỉnh"
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.res_config_settings_view_form_stock
 msgid "Days needed to confirm a PO"
-msgstr "Số ngày cần để xác nhận đơn mua hàng"
+msgstr "Số ngày cần để xác nhận đơn mua"
 
 #. module: purchase_stock
 #: model:ir.model.fields,help:purchase_stock.field_res_company__days_to_purchase
@@ -545,7 +545,7 @@ msgstr "Thời gian mua hàng an toàn"
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_warehouse_orderpoint__purchase_visibility_days
 msgid "Purchase Visibility Days"
-msgstr "Ngày khả năng hiển thị mua hàng"
+msgstr "Số ngày dự báo có hàng khi mua"
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_lot__purchase_order_count
@@ -680,7 +680,7 @@ msgstr "Báo cáo quy tắc kho"
 #. module: purchase_stock
 #: model:ir.model,name:purchase_stock.model_stock_replenishment_info
 msgid "Stock supplier replenishment information"
-msgstr "Thông tin bổ sung nhà cung cấp tồn kho"
+msgstr "Thông tin tái cung ứng nhà cung cấp sản phẩm"
 
 #. module: purchase_stock
 #: model:ir.model,name:purchase_stock.model_stock_replenishment_option
@@ -853,7 +853,7 @@ msgstr "Nhà cung cấp"
 #. module: purchase_stock
 #: model:ir.model.fields,help:purchase_stock.field_stock_warehouse_orderpoint__purchase_visibility_days
 msgid "Visibility Days applied on the purchase routes."
-msgstr "Ngày khả năng hiển thị áp dụng cho tuyến mua hàng."
+msgstr "Số ngày dự báo có hàng áp dụng cho tuyến mua."
 
 #. module: purchase_stock
 #: model:ir.model,name:purchase_stock.model_stock_warehouse

@@ -14,10 +14,10 @@ msgstr ""
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
 "Last-Translator: Thi Huong Nguyen, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
-"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
+"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: website_forum
@@ -598,7 +598,7 @@ msgid ""
 "label=\"Negative votes\" title=\"Negative votes\"/>"
 msgstr ""
 "<i class=\"fa fa-thumbs-down text-danger ms-3\" role=\"img\" aria-"
-"label=\"Bình chọn phản đối\" title=\"Bình chọn phản đối\"/>"
+"label=\"Phiếu phản đối\" title=\"Phiếu phản đối\"/>"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.user_profile_content
@@ -606,8 +606,8 @@ msgid ""
 "<i class=\"fa fa-thumbs-up text-success\" role=\"img\" aria-label=\"Positive"
 " votes\" title=\"Positive votes\"/>"
 msgstr ""
-"<i class=\"fa fa-thumbs-up text-success\" role=\"img\" aria-label=\"Bình "
-"chọn ủng hộ\" title=\"Bình chọn ủng hộ\"/>"
+"<i class=\"fa fa-thumbs-up text-success\" role=\"img\" aria-label=\"Bầu chọn"
+" tích cực votes\" title=\"Bầu chọn tích cực\"/>"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.post_description_full
@@ -671,7 +671,7 @@ msgstr "<i class=\"oi oi-chevron-left small\"/> Quay lại"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.user_profile_content
 msgid "<small class=\"fw-bold\">Votes</small>"
-msgstr "<small class=\"fw-bold\">Bình chọn</small>"
+msgstr "<small class=\"fw-bold\">Phiếu bầu</small>"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.user_sidebar_body
@@ -887,12 +887,12 @@ msgstr "Bài trả lời được chấp thuận"
 #. module: website_forum
 #: model_terms:gamification.badge,description:website_forum.badge_a_6
 msgid "Answer accepted with 15 or more votes"
-msgstr "Câu trả lời được chấp nhận với từ 15 lượt bình chọn trở lên"
+msgstr "Trả lời được chấp thuận với 15 hoặc nhiều hơn bầu chọn"
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_forum__karma_gen_answer_downvote
 msgid "Answer downvoted"
-msgstr "Câu trả lời bị phản đối"
+msgstr "Trả lời bị phản đối"
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_forum__karma_gen_answer_flagged
@@ -907,27 +907,27 @@ msgstr "Trả lời các câu hỏi"
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_forum__karma_gen_answer_upvote
 msgid "Answer upvoted"
-msgstr "Câu trả lời được ủng hộ"
+msgstr "Trả lời được bầu chọn tán thành"
 
 #. module: website_forum
 #: model_terms:gamification.badge,description:website_forum.badge_a_4
 msgid "Answer voted up 15 times"
-msgstr "Câu trả lời được ủng hộ 15 lần"
+msgstr "Trả lời được bầu chọn 15 lần"
 
 #. module: website_forum
 #: model_terms:gamification.badge,description:website_forum.badge_a_2
 msgid "Answer voted up 4 times"
-msgstr "Câu trả lời được ủng hộ 4 lần"
+msgstr "Trả lời được bầu chọn 4 lần"
 
 #. module: website_forum
 #: model_terms:gamification.badge,description:website_forum.badge_a_3
 msgid "Answer voted up 6 times"
-msgstr "Câu trả lời được ủng hộ 6 lần"
+msgstr "Trả lời được bầu chọn 6 lần"
 
 #. module: website_forum
 #: model_terms:gamification.badge,description:website_forum.badge_a_5
 msgid "Answer was accepted with 3 or more votes"
-msgstr "Câu trả lời được chấp nhận với từ 3 lượt bình chọn trở lên"
+msgstr "Trả lời được chấp thuận với 3 bầu chọn hoặc nhiều hơn"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.moderation_queue
@@ -957,7 +957,7 @@ msgstr "Đã trả lời vào"
 #. module: website_forum
 #: model_terms:gamification.badge,description:website_forum.badge_a_8
 msgid "Answered own question with at least 4 up votes"
-msgstr "Trả lời câu hỏi của chính mình với ít nhất 4 lượt ủng hộ"
+msgstr "Trả lời câu hỏi của chính mình với ít nhất 4 bầu chọn lên"
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_post__child_count
@@ -1040,7 +1040,7 @@ msgstr "Đã đặt một câu hỏi có ít nhất 500 lượt xem"
 #. module: website_forum
 #: model_terms:gamification.badge,description:website_forum.badge_q_7
 msgid "Asked first question with at least one up vote"
-msgstr "Đã đặt câu hỏi đầu tiên với ít nhất một lượt ủng hộ"
+msgstr "Đã hỏi câu hỏi đầu tiên có ít nhất một bầu chọn lên"
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_post__create_date
@@ -1183,7 +1183,7 @@ msgstr "Có thể Chuyển đổi thành Bình luận"
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_post__can_downvote
 msgid "Can Downvote"
-msgstr "Có thể phản đối"
+msgstr "Có thể Bầu chọn Phản đối"
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_post__can_edit
@@ -1208,7 +1208,7 @@ msgstr "Có thể Xoá"
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_post__can_upvote
 msgid "Can Upvote"
-msgstr "Có thể ủng hộ"
+msgstr "Có thể Bầu chọn Tán thành"
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_post__can_use_full_editor
@@ -1525,12 +1525,12 @@ msgstr "Đã xóa"
 #. module: website_forum
 #: model_terms:gamification.badge,description:website_forum.badge_23
 msgid "Deleted own post with 3 or more downvotes"
-msgstr "Xoá các bài của chính mình mà có 3 lượt phản đối trở lên"
+msgstr "Xoá các bài của chính mình mà có 3 hoặc nhiều hơn bầu chọn phản đối"
 
 #. module: website_forum
 #: model_terms:gamification.badge,description:website_forum.badge_6
 msgid "Deleted own post with 3 or more upvotes"
-msgstr "Xoá các bài của chính mình mà có 3 lượt ủng hộ trở lên"
+msgstr "Xoá các bài của chính mình mà có 3 hoặc nhiều hơn bầu chọn tán thành"
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_forum__description
@@ -1756,7 +1756,7 @@ msgstr "Thông số liên quan đầu tiên"
 #. module: website_forum
 #: model_terms:gamification.badge,description:website_forum.badge_5
 msgid "First downvote"
-msgstr "Lượt phản đối đầu tiên"
+msgstr "Lần bầu chọn phản đối đầu tiên"
 
 #. module: website_forum
 #: model_terms:gamification.badge,description:website_forum.badge_7
@@ -1766,7 +1766,7 @@ msgstr "Sửa lần đầu"
 #. module: website_forum
 #: model_terms:gamification.badge,description:website_forum.badge_31
 msgid "First upvote"
-msgstr "Lượt ủng hộ đầu tiên"
+msgstr "Bình chọn tán thành đầu tiên"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.post_dropdown
@@ -2192,14 +2192,14 @@ msgstr "Tiểu sử của tác giả có thể nhìn thấy từ bài viết c�
 #: code:addons/website_forum/models/forum_post_vote.py:0
 #, python-format
 msgid "It is not allowed to modify someone else's vote."
-msgstr "Không được phép chỉnh sửa bình chọn của người khác. "
+msgstr "Không cho phép điều chỉnh bầu chọn của người khác."
 
 #. module: website_forum
 #. odoo-python
 #: code:addons/website_forum/models/forum_post_vote.py:0
 #, python-format
 msgid "It is not allowed to vote for its own post."
-msgstr "Không được phép tự bình chọn bài viết của mình."
+msgstr "Nó không được phép bỏ phiếu cho bài viết của mình."
 
 #. module: website_forum
 #. odoo-javascript
@@ -2303,13 +2303,13 @@ msgstr "Đánh dấu là Câu trả lời Tốt nhất"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.show_flag_validator
 msgid "Mark as Offensive"
-msgstr "Đánh dấu là phản cảm"
+msgstr "Đánh dấu là xúc phạm"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.mark_as_offensive
 #: model_terms:ir.ui.view,arch_db:website_forum.moderation_queue
 msgid "Mark as offensive"
-msgstr "Đánh dấu là phản cảm "
+msgstr "Đánh dấu là xúc phạm"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.moderation_queue
@@ -2420,7 +2420,7 @@ msgstr "Tên"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.user_votes
 msgid "Negative vote"
-msgstr "Bình chọn phản đối"
+msgstr "Bình chọn tiêu cực"
 
 #. module: website_forum
 #: model:mail.message.subtype,description:website_forum.mt_answer_new
@@ -2636,7 +2636,7 @@ msgstr "Câu hỏi Phổ biến (500)"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.user_votes
 msgid "Positive vote"
-msgstr "Bình chọn ủng hộ"
+msgstr "Bình chọn tích cực"
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_post_vote__post_id
@@ -2672,7 +2672,7 @@ msgstr "Số bài viết"
 #. module: website_forum
 #: model:ir.model,name:website_forum.model_forum_post_vote
 msgid "Post Vote"
-msgstr "Bình chọn bài viết"
+msgstr "Bình chọn bài đăng"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.new_question
@@ -2823,22 +2823,22 @@ msgstr "Không được để trống câu hỏi"
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_forum__karma_gen_question_upvote
 msgid "Question upvoted"
-msgstr "Câu hỏi được ủng hộ"
+msgstr "Câu hỏi được bầu chọn tán thành"
 
 #. module: website_forum
 #: model_terms:gamification.badge,description:website_forum.badge_q_10
 msgid "Question voted up 15 times"
-msgstr "Câu hỏi được ủng hộ 15 lần"
+msgstr "Câu hỏi được bầu chọn lên 15 lần"
 
 #. module: website_forum
 #: model_terms:gamification.badge,description:website_forum.badge_q_8
 msgid "Question voted up 4 times"
-msgstr "Câu hỏi được ủng hộ 4 lần"
+msgstr "Câu hỏi được bầu chọn lên 4 lần"
 
 #. module: website_forum
 #: model_terms:gamification.badge,description:website_forum.badge_q_9
 msgid "Question voted up 6 times"
-msgstr "Câu hỏi được ủng hộ 6 lần"
+msgstr "Câu hỏi được bầu chọn lên 6 lần"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.moderation_queue
@@ -2918,7 +2918,8 @@ msgstr "Lý do"
 #. module: website_forum
 #: model_terms:gamification.badge,description:website_forum.badge_a_1
 msgid "Received at least 3 upvote for an answer for the first time"
-msgstr "Lần đầu tiên nhận được ít nhất 3 lượt ủng hộ cho 1 câu trả lời"
+msgstr ""
+"Đã nhận ít nhất 3 bầu chọn tán thành cho một câu trả lời ngay lần đầu tiên"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.moderation_queue
@@ -3202,7 +3203,7 @@ msgstr ""
 #: code:addons/website_forum/static/src/js/website_forum.js:0
 #, python-format
 msgid "Sorry, you cannot vote for your own posts"
-msgstr "Rất tiếc, bạn không thể bình chọn bài viết của chính mình"
+msgstr "Xin lỗi, bạn không thể bình chọn bài đăng của chính mình"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.moderation_queue
@@ -3395,9 +3396,9 @@ msgid ""
 "represents number of votes for a post, and 'days' is number of days since "
 "the post creation"
 msgstr ""
-"Công thức này được sử dụng để sắp xếp theo mức độ liên quan. Biến số 'bình "
-"chọn' biểu thị số lượt bình chọn cho một bài viết và 'ngày' là số ngày kể từ"
-" khi tạo bài viết"
+"Công thức này được sử dụng để sắp xếp theo mức độ liên quan. Biến số 'phiếu "
+"bầu' biểu thị số phiếu bầu cho một bài đăng và 'ngày' là số ngày kể từ khi "
+"tạo bài đăng"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.header
@@ -3527,7 +3528,7 @@ msgstr "Tổng lượt xem"
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_post__vote_count
 msgid "Total Votes"
-msgstr "Tổng lượt bình chọn"
+msgstr "Tổng Bầu chọn"
 
 #. module: website_forum
 #: model:ir.model,name:website_forum.model_gamification_karma_tracking
@@ -3567,7 +3568,7 @@ msgstr "Bỏ đánh dấu là Bài trả lời tốt nhất"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_model_nav
 msgid "Unsolved"
-msgstr "Chưa xử lý"
+msgstr "Chưa giải quyết"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_model_nav
@@ -3593,27 +3594,27 @@ msgstr "Cập nhật vào"
 #: model:ir.model.fields,field_description:website_forum.field_forum_forum__karma_upvote
 #: model_terms:ir.ui.view,arch_db:website_forum.vote
 msgid "Upvote"
-msgstr "Ủng hộ"
+msgstr "Bầu chọn Tán thành"
 
 #. module: website_forum
 #: model:gamification.goal.definition,name:website_forum.definition_student
 msgid "Upvoted question (1)"
-msgstr "Câu hỏi được ủng hộ (1)"
+msgstr "Câu hỏi được bầu chọn tán thành (1)"
 
 #. module: website_forum
 #: model:gamification.goal.definition,name:website_forum.definition_great_question
 msgid "Upvoted question (15)"
-msgstr "Câu hỏi được ủng hộ (15)"
+msgstr "Câu hỏi được bầu chọn tán thành (15)"
 
 #. module: website_forum
 #: model:gamification.goal.definition,name:website_forum.definition_nice_question
 msgid "Upvoted question (4)"
-msgstr "Câu hỏi được ủng hộ (4)"
+msgstr "Câu hỏi được bầu chọn tán thành (4)"
 
 #. module: website_forum
 #: model:gamification.goal.definition,name:website_forum.definition_good_question
 msgid "Upvoted question (6)"
-msgstr "Câu hỏi được ủng hộ (6)"
+msgstr "Câu hỏi được bầu chọn tán thành (6)"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.edit_post
@@ -3682,7 +3683,7 @@ msgstr "Ngôn ngữ bạo lực"
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_post_vote__vote
 msgid "Vote"
-msgstr "Bình chọn"
+msgstr "Bầu chọn"
 
 #. module: website_forum
 #: model:ir.model.constraint,message:website_forum.constraint_forum_post_vote_vote_uniq
@@ -3693,7 +3694,7 @@ msgstr "Bình chọn đã tồn tại!"
 #: model:ir.model.fields,field_description:website_forum.field_forum_post__vote_ids
 #: model_terms:ir.ui.view,arch_db:website_forum.user_profile_content
 msgid "Votes"
-msgstr "Bình chọn"
+msgstr "Bầu chọn"
 
 #. module: website_forum
 #: model:ir.model.fields.selection,name:website_forum.selection__forum_post__state__pending
@@ -4004,7 +4005,7 @@ msgstr "VD: Khi nào tôi nên trồng cà chua?"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.faq_karma
 msgid "edit any post, view offensive flags"
-msgstr "chỉnh sửa bất kỳ bài nào, xem bài bị đánh dấu phản cảm"
+msgstr "sửa bất kỳ bài nào, xem bài bị đánh dấu phản cảm"
 
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help
@@ -4016,7 +4017,7 @@ msgstr ""
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.faq_karma
 msgid "flag offensive, close own questions"
-msgstr "gắn cờ nội dung phản cảm, đóng câu hỏi của chính bạn"
+msgstr "gắn cờ tiêu cực, đóng câu hỏi của chính bạn"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.post_description_full
@@ -4206,7 +4207,7 @@ msgstr ""
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.faq_karma
 msgid "upvote, add comments"
-msgstr "ủng hộ, thêm bình luận"
+msgstr "bầu chọn lên, thêm bình luận"
 
 #. module: website_forum
 #. odoo-python

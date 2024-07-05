@@ -14,10 +14,10 @@ msgstr ""
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
 "Last-Translator: Thi Huong Nguyen, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
-"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
+"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: sale_project
@@ -474,7 +474,7 @@ msgstr "Không có đơn bán hàng"
 #: model_terms:ir.ui.view,arch_db:sale_project.project_milestone_view_tree
 #: model_terms:ir.ui.view,arch_db:sale_project.view_sale_project_inherit_form
 msgid "Non-billable"
-msgstr "Không thể tính phí"
+msgstr "Không thể xuất hoá đơn"
 
 #. module: sale_project
 #: model_terms:ir.ui.view,arch_db:sale_project.portal_tasks_list_inherit
@@ -678,7 +678,7 @@ msgid ""
 msgstr ""
 "Hạng mục đơn bán hàng mà thời gian dành cho nhiệm vụ này sẽ được cộng vào để lập hóa đơn cho khách hàng của bạn.\n"
 "Theo mặc định, hạng mục đơn bán hàng thiết lập trên dự án sẽ được chọn. Trong trường hợp không có, hạng mục đơn bán hàng trả trước cuối cùng còn thời gian sẽ được sử dụng.\n"
-"Xóa hạng mục đơn bán hàng để không tính phí nhiệm vụ này. Bạn cũng có thể thay đổi hoặc xóa hạng mục đơn bán hàng của từng mục nhập bảng chấm công."
+"Xóa hạng mục đơn bán hàng để ngăn việc lập hoá đơn thanh toán cho nhiệm vụ này. Bạn cũng có thể thay đổi hoặc xóa hạng mục đơn bán hàng của từng mục nhập bảng chấm công riêng lẻ."
 
 #. module: sale_project
 #. odoo-python

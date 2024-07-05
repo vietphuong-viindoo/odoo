@@ -5,7 +5,7 @@
 # Translators:
 # Wil Odoo, 2023
 # Thi Huong Nguyen, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
@@ -14,10 +14,10 @@ msgstr ""
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
 "Last-Translator: Thi Huong Nguyen, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
-"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
+"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: hr_timesheet
@@ -309,7 +309,7 @@ msgid ""
 "                Evaluate which part is billable and what costs it represents."
 msgstr ""
 "Phân tích các dự án và nhiệm vụ mà nhân viên của bạn làm.<br>\n"
-"                Đánh giá xem phần nào có thể tính phí và chi phí tương ứng là gì."
+"                Đánh giá phần nào phải thanh toán và chi phí tương ứng là gì."
 
 #. module: hr_timesheet
 #: model:ir.model.fields,field_description:hr_timesheet.field_res_config_settings__reminder_allow
@@ -998,7 +998,7 @@ msgstr "Tổng số giờ hiệu lực của nhiệm vụ phụ"
 #: model_terms:ir.ui.view,arch_db:hr_timesheet.project_sharing_inherit_project_task_view_form
 #: model_terms:ir.ui.view,arch_db:hr_timesheet.view_task_form2_inherited
 msgid "Sub-tasks Hours Spent"
-msgstr "Số giờ đã dành cho nhiệm vụ con"
+msgstr "Số giờ đã dành cho nhiệm vụ phụ"
 
 #. module: hr_timesheet
 #. odoo-python

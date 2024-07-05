@@ -1,11 +1,11 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* hr_skills_slides
-# 
+#
 # Translators:
 # Wil Odoo, 2023
 # Thi Huong Nguyen, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
@@ -42,7 +42,7 @@ msgstr "Khóa học"
 #. module: hr_skills_slides
 #: model:ir.model.fields,field_description:hr_skills_slides.field_hr_resume_line__course_url
 msgid "Course Url"
-msgstr "URL khóa học"
+msgstr "Đường dẫn khóa học"
 
 #. module: hr_skills_slides
 #: model_terms:ir.ui.view,arch_db:hr_skills_slides.hr_employee_view_form
@@ -52,7 +52,7 @@ msgstr "Khóa học"
 #. module: hr_skills_slides
 #: model:ir.model.fields,field_description:hr_skills_slides.field_hr_employee__courses_completion_text
 msgid "Courses Completion Text"
-msgstr "Văn bản hoàn thành khoá học"
+msgstr "Văn bản hoàn thành khóa học"
 
 #. module: hr_skills_slides
 #: model:ir.model.fields,field_description:hr_skills_slides.field_hr_resume_line__display_type

@@ -6,7 +6,7 @@
 # Martin Trigaux, 2023
 # Wil Odoo, 2024
 # Thi Huong Nguyen, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
@@ -15,10 +15,10 @@ msgstr ""
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
 "Last-Translator: Thi Huong Nguyen, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
-"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
+"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: hr_holidays
@@ -1613,8 +1613,8 @@ msgid ""
 "Count of allocations for this time off type (approved or waiting for "
 "approbation) with a validity period starting this year."
 msgstr ""
-"Số lượng phân bổ cho kiểu nghỉ này (đã phê duyệt hoặc đang chờ phê "
-"duyệt) có thời hạn hiệu lực bắt đầu từ năm nay."
+"Số lượng phân bổ cho kiểu nghỉ này (đã phê duyệt hoặc đang chờ phê duyệt) có"
+" thời hạn hiệu lực bắt đầu từ năm nay."
 
 #. module: hr_holidays
 #: model_terms:ir.ui.view,arch_db:hr_holidays.edit_holiday_status_form
@@ -1627,8 +1627,8 @@ msgid ""
 "Count of time off requests for this time off type (approved or waiting for "
 "approbation) with a start date in the current year."
 msgstr ""
-"Số lượng đề nghị xin nghỉ cho kiểu nghỉ này (đã phê duyệt hoặc đang "
-"chờ phê duyệt) có ngày bắt đầu trong năm nay."
+"Số lượng đề nghị xin nghỉ cho kiểu nghỉ này (đã phê duyệt hoặc đang chờ phê "
+"duyệt) có ngày bắt đầu trong năm nay."
 
 #. module: hr_holidays
 #: model:ir.model.fields,field_description:hr_holidays.field_hr_leave_type__icon_id
@@ -1708,7 +1708,7 @@ msgstr "Hàng ngày"
 #: model:ir.actions.act_window,name:hr_holidays.hr_leave_action_new_request
 #: model:ir.ui.menu,name:hr_holidays.hr_leave_menu_new_request
 msgid "Dashboard"
-msgstr "Trang chủ"
+msgstr "Bảng thông tin"
 
 #. module: hr_holidays
 #: model_terms:ir.ui.view,arch_db:hr_holidays.hr_leave_view_form
@@ -3131,7 +3131,7 @@ msgstr "Nghỉ có lương"
 #: model:ir.model.fields,field_description:hr_holidays.field_hr_leave__parent_id
 #: model:ir.model.fields,field_description:hr_holidays.field_hr_leave_allocation__parent_id
 msgid "Parent"
-msgstr "Cha"
+msgstr "Cấp cha"
 
 #. module: hr_holidays
 #: model:hr.leave.type,name:hr_holidays.hr_holiday_status_dv
@@ -3772,10 +3772,10 @@ msgid ""
 "The status is 'Refused', when time off request is refused by manager.\n"
 "The status is 'Approved', when time off request is approved by manager."
 msgstr ""
-"Trạng thái được đặt thành 'Cần Duyệt', khi yêu cầu nghỉ được tạo.\n"
-"Trạng thái là 'Cần Phê duyệt', khi yêu cầu nghỉ được người dùng xác nhận.\n"
+"Trạng thái được đặt thành 'Cần Duyệt', khi yêu cầu thời gian nghỉ được tạo.\n"
+"Trạng thái là 'Cần Phê duyệt', khi yêu cầu thời gian nghỉ được người dùng xác nhận.\n"
 "Trạng thái là 'Bị từ chối', khi yêu cầu nghỉ việc bị người quản lý từ chối.\n"
-"Trạng thái là 'Đã phê duyệt', khi yêu cầu nghỉ được người quản lý chấp thuận."
+"Trạng thái là 'Đã phê duyệt', khi yêu cầu thời gian nghỉ được người quản lý chấp thuận."
 
 #. module: hr_holidays
 #: model:ir.model.fields,help:hr_holidays.field_hr_leave_allocation__state
@@ -4010,7 +4010,7 @@ msgstr "Xin nghỉ"
 #. module: hr_holidays
 #: model:res.groups,name:hr_holidays.group_hr_holidays_responsible
 msgid "Time Off Responsible"
-msgstr "Nghỉ có lương"
+msgstr "Duyệt nghỉ"
 
 #. module: hr_holidays
 #: model:mail.activity.type,name:hr_holidays.mail_act_leave_second_approval
@@ -4245,7 +4245,7 @@ msgid ""
 "to create allocation/time off request. Total based on all the time off types"
 " without overriding limit."
 msgstr ""
-"Tổng số thời gian đã nghỉ có lương được cấp phát cho nhân viên này, hãy thay đổi giá "
+"Tổng số thời gian đã nghỉ được cấp phát cho nhân viên này, hãy thay đổi giá "
 "trị này để tạo yêu cầu cấp phát / thời gian nghỉ. Tổng số dựa trên tất cả "
 "các loại thời gian nghỉ mà không có giới hạn ghi đè."
 
@@ -4665,8 +4665,8 @@ msgid ""
 "You must either be a Time off Officer or Time off Manager to approve this "
 "leave"
 msgstr ""
-"Bạn phải là Người phụ trách nghỉ hoặc Quản lý nghỉ để phê duyệt "
-"đơn xin nghỉ này"
+"Bạn phải là Người phụ trách nghỉ hoặc Quản lý nghỉ để phê duyệt đơn xin nghỉ"
+" này"
 
 #. module: hr_holidays
 #: model:ir.model.constraint,message:hr_holidays.constraint_hr_leave_accrual_level_added_value_greater_than_zero

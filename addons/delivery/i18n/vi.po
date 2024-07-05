@@ -1,12 +1,12 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* delivery
-# 
+#
 # Translators:
 # Wil Odoo, 2023
 # Thi Huong Nguyen, 2024
 # Thang Nguyen, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
@@ -84,7 +84,7 @@ msgstr ""
 #. module: delivery
 #: model_terms:ir.ui.view,arch_db:delivery.delivery_report_saleorder_document
 msgid "<strong>Shipping Description:</strong>"
-msgstr "<strong>Mô tả vận chuyển:</strong>"
+msgstr "<strong>Nội dung vận chuyển:</strong>"
 
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_delivery_carrier__carrier_description
@@ -118,12 +118,12 @@ msgstr "Thêm"
 #: code:addons/delivery/wizard/choose_delivery_carrier.py:0
 #, python-format
 msgid "Add a shipping method"
-msgstr "Thêm phương thức vận chuyển"
+msgstr "Thêm phương thức giao hàng"
 
 #. module: delivery
 #: model_terms:ir.ui.view,arch_db:delivery.view_order_form_with_carrier
 msgid "Add shipping"
-msgstr "Thêm vận chuyển"
+msgstr "Thêm nhà vận chuyển"
 
 #. module: delivery
 #: model_terms:ir.ui.view,arch_db:delivery.view_delivery_carrier_form
@@ -133,7 +133,7 @@ msgstr "Phí bổ sung"
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier__amount
 msgid "Amount"
-msgstr "Số tiền"
+msgstr "Giá trị"
 
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_delivery_carrier__amount
@@ -141,8 +141,8 @@ msgid ""
 "Amount of the order to benefit from a free shipping, expressed in the "
 "company currency"
 msgstr ""
-"Tổng giá trị của đơn hàng để được hưởng vận chuyển miễn phí, tính theo "
-"tiền tệ công ty"
+"Tổng giá trị của đơn hàng để có vận chuyển miễn phí, tính theo tiền tệ công "
+"ty"
 
 #. module: delivery
 #: model_terms:ir.ui.view,arch_db:delivery.view_delivery_carrier_form
@@ -153,7 +153,7 @@ msgstr "Đã lưu trữ"
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_choose_delivery_carrier__available_carrier_ids
 msgid "Available Carriers"
-msgstr "Đơn vị vận chuyển khả dụng"
+msgstr "Nhà Vận chuyển khả dụng"
 
 #. module: delivery
 #: model:ir.model.fields.selection,name:delivery.selection__delivery_carrier__delivery_type__base_on_rule
@@ -163,7 +163,7 @@ msgstr "Dựa trên Quy tắc"
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier__can_generate_return
 msgid "Can Generate Return"
-msgstr "Có thể sinh Phiếu trả hàng"
+msgstr "Có thể sinh phiếu trả hàng"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_price_rule__carrier_id
@@ -171,7 +171,7 @@ msgstr "Có thể sinh Phiếu trả hàng"
 #: model_terms:ir.ui.view,arch_db:delivery.view_delivery_carrier_search
 #: model_terms:ir.ui.view,arch_db:delivery.view_delivery_carrier_tree
 msgid "Carrier"
-msgstr "Đơn vị vận chuyển"
+msgstr "Nhà vận chuyển"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier__carrier_description
@@ -280,7 +280,7 @@ msgstr "Phương thức giao hàng"
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_choose_delivery_carrier__delivery_price
 msgid "Delivery Price"
-msgstr "Phí vận chuyển"
+msgstr "Giá vận chuyển"
 
 #. module: delivery
 #: model:ir.model,name:delivery.model_delivery_price_rule
@@ -372,7 +372,7 @@ msgstr "Môi trường"
 #: code:addons/delivery/models/delivery_carrier.py:0
 #, python-format
 msgid "Error: this delivery method is not available for this address."
-msgstr "Lỗi: phương thức vận chuyển không khả dụng ở địa chỉ này."
+msgstr "Lỗi: phương thức vận chuyển không hỗ trợ địa chỉ này."
 
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_delivery_carrier__invoice_policy
@@ -384,7 +384,7 @@ msgstr "Phí ước tính: khách hàng sẽ được lập hóa đơn phí vậ
 #. module: delivery
 #: model:ir.model.fields.selection,name:delivery.selection__delivery_carrier__invoice_policy__estimated
 msgid "Estimated cost"
-msgstr "Phí ước tính"
+msgstr "Phí dự kiến"
 
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_sale_order__carrier_id

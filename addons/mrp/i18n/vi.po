@@ -1,11 +1,11 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* mrp
-# 
+#
 # Translators:
 # Wil Odoo, 2024
 # Thi Huong Nguyen, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
@@ -110,7 +110,7 @@ msgstr "%s (mới) %s"
 #: code:addons/mrp/models/mrp_production.py:0
 #, python-format
 msgid "%s Child MO's"
-msgstr "%s LSX phụ"
+msgstr "%s LSX con"
 
 #. module: mrp
 #. odoo-python
@@ -289,7 +289,7 @@ msgstr "<span class=\"o_stat_text\">Tổng quan ĐMNL</span>"
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_production_form_view
 msgid "<span class=\"o_stat_text\">Child MO</span>"
-msgstr "<span class=\"o_stat_text\">LSX phụ</span>"
+msgstr "<span class=\"o_stat_text\">LSX con</span>"
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_workcenter_view
@@ -488,7 +488,7 @@ msgstr "<strong>Sản phẩm:</strong><br/>"
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.report_mrporder
 msgid "<strong>Quantity Producing:</strong><br/>"
-msgstr "<strong>Số lượng sản xuất:</strong><br/>"
+msgstr "<strong>Số lượng đang sản xuất:</strong><br/>"
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.report_mrp_workorder
@@ -1818,10 +1818,10 @@ msgid ""
 "Otherwise, this includes goods stored in any Stock Location with 'internal' type."
 msgstr ""
 "Số lượng hiện tại của sản phẩm.\n"
-"Trong ngữ cảnh với một Địa điểm kho, số lượng này bao gồm hàng hoá được lưu trữ tại địa điểm này, hoặc bất kỳ địa điểm con nào.\n"
-"Trong ngữ cảnh với một Kho hàng, số lượng này bao gồm hàng hoá được lưu trữ trong địa điểm kho của Kho hàng này, hoặc bất kỳ địa điểm con nào.\n"
-"được lưu trữ trong địa điểm kho của Kho hàng của Cửa hàng này, hoặc bất kỳ vị trí con nào.\n"
-"Nếu không, số lượng này bao gồm hàng hoá được lưu trữ trong bất kỳ địa điểm kho nào có loại 'Nội bộ'. "
+"Trong ngữ cảnh với một Vị trí kho, số lượng bao gồm hàng hoá được lưu trữ tại vị trí này, hoặc bất kỳ vị trí còn nào.\n"
+"Trong ngữ cảnh với một Nhà kho, số lượng bao gồm hàng hoá được lưu trữ trong Vị trí kho của Nhà kho này, hoặc bất kỳ vị trí con nào.\n"
+"được lưu trữ trong Vị trí kho của Nhà kho của Cửa hàng này, hoặc bất kỳ vị trí con nào.\n"
+"Nếu không, số lượng bao gồm hàng hoá được lưu trữ trong bất kỳ Vị trí kho nào có loại 'nội bộ'. "
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_workorder__qty_producing
@@ -1950,7 +1950,7 @@ msgstr ""
 "  * Được phép: Cho phép tất cả người thực hiện sản xuất.\n"
 "  * Được phép kèm cảnh báo: cho phép tất cả người dùng thực hiện sản xuất kèm theo tóm tắt chênh lệch lượng sử dụng khi đóng lệnh sản xuất.\n"
 "  Lưu ý rằng trong trường hợp Lượng sử dụng thủ công, khi lượng sử dụng được ghi nhận riêng theo cách thủ công, các cảnh báo lượng sử dụng cũng sẽ được đưa ra khi thích hợp.\n"
-"  * Đã chặn: chỉ quản lý mới có thể đóng đơn sản xuất khi lượng sử dụng ĐMNL khác với kế hoạch. "
+"  * Bị chặn: chỉ quản lý mới có thể đóng đơn sản xuất khi lượng sử dụng ĐMNL khác với kế hoạch. "
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_production__delay_alert_date
@@ -2388,10 +2388,10 @@ msgid ""
 "In a context with a single Warehouse, this includes goods stored in the Stock Location of this Warehouse, or any of its children.\n"
 "Otherwise, this includes goods stored in any Stock Location with 'internal' type."
 msgstr ""
-"Số lượng dự báo (được tính bằng Số lượng hiện có - Số lượng sắp xuất + Số lượng sắp nhập)\n"
-"Trong ngữ cảnh chỉ có một kho, số lượng này bao gồm hàng hóa được lưu trữ trong địa điểm này, hoặc bất kỳ địa điểm con nào.\n"
-"Trong ngữ cảnh chỉ có một kho, số lượng này bao gồm hàng hóa được trữ trong địa điểm kho của nhà kho, hoặc bất kỳ địa điểm con nào.\n"
-"Nếu không, số lượng này bao gồm hàng hoá được lưu trữ trong bất kỳ địa điểm kho nào có loại 'Nội bộ'. "
+"Số lượng dự báo (được tính bằng Số lượng hiện có - Số lượng xuất + Số lượng nhập)\n"
+"Trong ngữ cảnh chỉ có một kho, số lượng bao gồm hàng hóa được lưu trữ trong vị trí này, hoặc bất kỳ vị trí con nào.\n"
+"Trong ngữ cảnh chỉ có một nhà kho, số lượng bao gồm hàng hóa được trữ trong vị trí kho của nhà kho, hoặc bất kỳ vị trí con nào.\n"
+"Nếu không, số lượng bao gồm hàng hoá được lưu trữ trong bất kỳ Vị trí kho nào có loại 'nội bộ'. "
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_production_workorder_form_view_inherit
@@ -3989,7 +3989,7 @@ msgstr "Mã vạch kiện hàng"
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_bom_line__bom_id
 msgid "Parent BoM"
-msgstr "ĐMNL chính"
+msgstr "ĐMNL cha"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_bom_line__parent_product_tmpl_id
@@ -3999,7 +3999,7 @@ msgstr "Mẫu Sản phẩm Cha"
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_consumption_warning_line__mrp_consumption_warning_id
 msgid "Parent Wizard"
-msgstr "Tính năng chính"
+msgstr "Công cụ cha"
 
 #. module: mrp
 #: model:ir.model.fields,help:mrp.field_mrp_routing_workcenter__worksheet_google_slide
@@ -5190,8 +5190,8 @@ msgid ""
 "Some of your components are tracked, you have to specify a manufacturing "
 "order in order to retrieve the correct components."
 msgstr ""
-"Một số nguyên liệu được kích hoạt tính năng theo vết, bạn phải xác định "
-"một lệnh sản xuất để có thể nhận đúng các nguyên liệu một cách chính xác."
+"Một số các thành phần được kích hoạt tính năng theo vết, bạn phải xác định "
+"một lệnh sản xuất để có thể nhận đúng các thành phần một cách chính xác."
 
 #. module: mrp
 #. odoo-python

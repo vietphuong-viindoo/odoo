@@ -5,7 +5,7 @@
 # Translators:
 # Wil Odoo, 2023
 # Thi Huong Nguyen, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
@@ -14,10 +14,10 @@ msgstr ""
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
 "Last-Translator: Thi Huong Nguyen, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
-"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
+"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: digest
@@ -465,7 +465,7 @@ msgid ""
 "Type \"@\" to notify someone in a message, or \"#\" to link to a channel. "
 "Try to notify @OdooBot to test the feature."
 msgstr ""
-"Gõ \"@\" để thông báo cho ai đó trong tin nhắn, hoặc \"#\" để liên kết đến một "
+"Gõ \"@\" để thông báo ai đó trong tin nhắn, hoặc \"#\" để liên kết đến một "
 "kênh. Thử thông báo @OdooBot để kiểm thử tính năng."
 
 #. module: digest
@@ -518,9 +518,9 @@ msgid ""
 "This is useful when computing a margin or a discount on a quotation, sale "
 "order or invoice."
 msgstr ""
-"Khi sửa số, bạn có thể sử dụng công thức bằng cách gõ ký tự `=`. Tính năng này "
+"Khi sửa số, bạn có thể sử dụng công thức bằng cách gõ ký tự `=`. Điều này "
 "hữu ích khi tính toán biên lợi nhuận hoặc chiết khấu trên báo giá, đơn "
-"bán hoặc hóa đơn."
+"bánhoặc hóa đơn."
 
 #. module: digest
 #: model_terms:digest.tip,tip_description:digest.digest_tip_digest_4
