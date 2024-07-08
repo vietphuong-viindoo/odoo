@@ -375,7 +375,7 @@ msgstr "Báo cáo hành động"
 #. module: account_edi
 #: model_terms:ir.ui.view,arch_db:account_edi.view_move_form_inherit
 msgid "Request EDI Cancellation"
-msgstr "Yêu cầu EDI hủy"
+msgstr "Yêu cầu Hủy EDI"
 
 #. module: account_edi
 #: model_terms:ir.ui.view,arch_db:account_edi.view_move_form_inherit
