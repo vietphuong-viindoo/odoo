@@ -4,6 +4,9 @@ import logging
 from odoo import MIN_PY_VERSION
 from shutil import copyfileobj
 from types import CodeType
+from werkzeug.datastructures import FileStorage
+from werkzeug.routing import Rule
+from werkzeug.wrappers import Request, Response
 
 _logger = logging.getLogger(__name__)
 
@@ -14,9 +17,19 @@ except ImportError:
     _logger.warning("num2words is not available, Arabic number to words conversion will not work")
     num2words = None
 
-from werkzeug.datastructures import FileStorage
-from werkzeug.routing import Rule
-from werkzeug.wrappers import Request, Response
+try:
+    from stdnum import util
+except ImportError as e:
+    util = None
+    _logger.warning("Failed to import stdnum library: %s", e)
+
+try:
+    from zeep import CachingClient
+    from zeep.transports import Transport
+except ImportError as e:
+    CachingClient = None
+    Transport = None
+    _logger.warning("Failed to import zeep library: %s", e)
 
 from .json import scriptsafe
 
@@ -79,3 +92,22 @@ if MIN_PY_VERSION >= (3, 12):
 
 if num2words:
     num2words.CONVERTER_CLASSES["ar"] = Num2Word_AR_Fixed()
+
+_soap_clients = {}
+
+
+def new_get_soap_client(wsdlurl, timeout=30):
+    # stdnum library does not set the timeout for the zeep Transport class correctly
+    # (timeout is is to fetch the wsdl and operation_timeout is to perform the call),
+    # requiring us to monkey patch the get_soap_client function.
+    # Can be removed when https://github.com/arthurdejong/python-stdnum/issues/444 is
+    # resolved and the version of the dependency is updated
+    if (wsdlurl, timeout) not in _soap_clients:
+        transport = Transport(operation_timeout=timeout, timeout=timeout)
+        client = CachingClient(wsdlurl, transport=transport).service
+        _soap_clients[(wsdlurl, timeout)] = client
+    return _soap_clients[(wsdlurl, timeout)]
+
+
+if util:
+    util.get_soap_client = new_get_soap_client

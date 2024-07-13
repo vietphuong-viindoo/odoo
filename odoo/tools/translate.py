@@ -176,6 +176,7 @@ TRANSLATED_ATTRS.update(
 )
 
 avoid_pattern = re.compile(r"\s*<!DOCTYPE", re.IGNORECASE | re.MULTILINE | re.UNICODE)
+space_pattern = re.compile(r"[\s\uFEFF]*")  # web_editor uses \uFEFF as ZWNBSP
 
 
 def translate_xml_node(node, callback, parse, serialize):
@@ -189,7 +190,7 @@ def translate_xml_node(node, callback, parse, serialize):
 
     def nonspace(text):
         """ Return whether ``text`` is a string with non-space characters. """
-        return bool(text) and not text.isspace()
+        return bool(text) and not space_pattern.fullmatch(text)
 
     def translatable(node):
         """ Return whether the given node can be translated as a whole. """
@@ -744,7 +745,7 @@ class PoFileWriter:
     def write_rows(self, rows):
         # we now group the translations by source. That means one translation per source.
         grouped_rows = {}
-        modules = set([])
+        modules = set()
         for module, type, name, res_id, src, trad, comments in rows:
             row = grouped_rows.setdefault(src, {})
             row.setdefault('modules', set()).add(module)
@@ -760,7 +761,7 @@ class PoFileWriter:
                 row['translation'] = ''
             elif not row.get('translation'):
                 row['translation'] = ''
-            self.add_entry(row['modules'], sorted(row['tnrs']), src, row['translation'], row['comments'])
+            self.add_entry(sorted(row['modules']), sorted(row['tnrs']), src, row['translation'], sorted(row['comments']))
 
         import odoo.release as release
         self.po.header = "Translation of %s.\n" \
