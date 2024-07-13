@@ -13,7 +13,11 @@ from odoo.addons.hw_drivers.tools import helpers
 _logger = logging.getLogger(__name__)
 websocket.enableTrace(True, level=logging.getLevelName(_logger.getEffectiveLevel()))
 
+
 def send_to_controller(print_id, device_identifier):
+    """
+    Send back to odoo's server the completion of the operation
+    """
     server = helpers.get_odoo_server_url()
     try:
         urllib3.disable_warnings()
@@ -25,6 +29,7 @@ def send_to_controller(print_id, device_identifier):
                 {'params': {
                     'print_id': print_id,
                     'device_identifier': device_identifier,
+                    'iot_mac': helpers.get_mac_address(),
                     }}).encode('utf8'),
             headers={
                 'Content-type': 'application/json',
@@ -42,7 +47,7 @@ def on_message(ws, messages):
     """
     messages = json.loads(messages)
     for document in messages:
-        if (document['message']['type'] == 'print'):
+        if (document['message']['type'] in ['print', 'iot_action']):
             payload = document['message']['payload']
             if helpers.get_mac_address() in payload['iotDevice']['iotIdentifiers']:
                 #send box confirmation
