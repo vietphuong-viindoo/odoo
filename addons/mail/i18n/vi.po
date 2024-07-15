@@ -10719,12 +10719,12 @@ msgstr ""
 #: code:addons/mail/models/mail_thread.py:0
 #, python-format
 msgid "You have been assigned to %s"
-msgstr "Bạn đã được giao cho %s"
+msgstr "Bạn đã được phân công cho %s"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.message_user_assigned
 msgid "You have been assigned to the"
-msgstr "Bạn đã được phân công/gán cho"
+msgstr "Bạn đã được phân công cho"
 
 #. module: mail
 #. odoo-javascript
