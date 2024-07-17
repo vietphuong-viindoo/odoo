@@ -1256,7 +1256,9 @@ class HrExpenseSheet(models.Model):
         move_lines = []
         for expense in self.expense_line_ids:
             expense_amount = expense.total_amount_company if self.is_multiple_currency else expense.total_amount
-            tax_data = self.env['account.tax']._compute_taxes([
+            tax_data = self.env['account.tax'].with_context(
+                caba_no_transition_account=expense.payment_mode == 'company_account',
+            )._compute_taxes([
                 expense._convert_to_tax_base_line_dict(price_unit=expense_amount, currency=currency)
             ])
             rate = abs(expense_amount / expense.total_amount_company)
@@ -1419,6 +1421,7 @@ class HrExpenseSheet(models.Model):
         for line in self.expense_line_ids:
             line._validate_distribution(**{
                 'account': line.account_id.id,
+                'product': line.product_id.id,
                 'business_domain': 'expense',
                 'company_id': line.company_id.id,
             })
