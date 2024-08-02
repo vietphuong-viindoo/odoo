@@ -457,7 +457,7 @@ msgstr "Tìm kiếm Thời gian làm việc"
 #. module: resource
 #: model:ir.model.fields.selection,name:resource.selection__resource_calendar_attendance__week_type__1
 msgid "Second"
-msgstr "Giây"
+msgstr "Thứ hai"
 
 #. module: resource
 #: code:addons/resource/models/resource.py:0

@@ -4844,7 +4844,7 @@ msgstr "Tìm kiếm trong Trạng thái"
 #: model:ir.model.fields.selection,name:project.selection__project_task__repeat_week__second
 #: model:ir.model.fields.selection,name:project.selection__project_task_recurrence__repeat_week__second
 msgid "Second"
-msgstr "Giây"
+msgstr "Thứ hai"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__access_token
