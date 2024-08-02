@@ -1601,7 +1601,7 @@ msgstr "Phản hồi: %(feedback)s"
 #: model:ir.model.fields.selection,name:calendar.selection__calendar_event__byday__1
 #: model:ir.model.fields.selection,name:calendar.selection__calendar_recurrence__byday__1
 msgid "First"
-msgstr "Đầu tiên"
+msgstr "Thứ nhất"
 
 #. module: calendar
 #. odoo-python

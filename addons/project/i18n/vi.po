@@ -2315,7 +2315,7 @@ msgstr "Tài liệu cuối cùng"
 #: model:ir.model.fields.selection,name:project.selection__project_task__repeat_week__first
 #: model:ir.model.fields.selection,name:project.selection__project_task_recurrence__repeat_week__first
 msgid "First"
-msgstr "Đầu tiên"
+msgstr "Thứ nhất"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project_stage__fold

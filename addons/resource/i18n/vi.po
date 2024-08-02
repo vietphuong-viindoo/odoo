@@ -181,7 +181,7 @@ msgstr "Giải thích"
 #. module: resource
 #: model:ir.model.fields.selection,name:resource.selection__resource_calendar_attendance__week_type__0
 msgid "First"
-msgstr "Đầu tiên"
+msgstr "Thứ nhất"
 
 #. module: resource
 #: code:addons/resource/models/resource.py:0
