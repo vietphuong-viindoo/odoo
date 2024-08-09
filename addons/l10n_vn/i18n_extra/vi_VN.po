@@ -1290,3 +1290,8 @@ msgstr "Quỹ phúc lợi đã hình thành TSCĐ"
 #: model:account.account.template,name:l10n_vn.chart1361
 msgid "Working capital provided to sub-units"
 msgstr "Vốn kinh doanh ở các đơn vị trực thuộc"
+
+#. module: l10n_vn
+#: model:account.report,name:l10n_vn.tax_report
+msgid "Tax Report"
+msgstr "Báo cáo Thuế"

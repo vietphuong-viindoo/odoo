@@ -1285,3 +1285,8 @@ msgstr ""
 #: model:account.account.template,name:l10n_vn.chart1361
 msgid "Working capital provided to sub-units"
 msgstr ""
+
+#. module: l10n_vn
+#: model:account.report,name:l10n_vn.tax_report
+msgid "Tax Report"
+msgstr ""
