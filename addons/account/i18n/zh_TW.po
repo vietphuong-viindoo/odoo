@@ -615,7 +615,7 @@ msgstr ""
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_reconcile_model_form
 msgid "<span class=\"o_form_label o_td_label\">Match Invoice/bill with</span>"
-msgstr ""
+msgstr "<span class=\"o_form_label o_td_label\">將發票/賬單配對至</span>"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_reconcile_model_line_form
@@ -2054,7 +2054,7 @@ msgstr "{link}的調整分錄：{percent:.2f}%的{amount}在{new_date}上確認"
 #: code:addons/account/wizard/account_automatic_entry_wizard.py:0
 #, python-format
 msgid "Adjusting Entry of {date} ({percent:.2f}% recognized on {new_date})"
-msgstr ""
+msgstr "調整記項，日期：{date}（已實現 {percent:.2f}%，日期：{new_date}）"
 
 #. module: account
 #: code:addons/account/wizard/account_automatic_entry_wizard.py:0
@@ -6167,7 +6167,7 @@ msgstr "由"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.report_journal
 msgid "From :"
-msgstr ""
+msgstr "從："
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_move_line_filter
@@ -8694,6 +8694,12 @@ msgstr "抵消稅金平衡"
 #: model:ir.model.fields,help:account.field_account_payment__amount_signed
 msgid "Negative value of amount field if payment_type is outbound"
 msgstr "如果payment_type 為支出金額欄位的負值"
+
+#. module: account
+#: code:addons/account/models/account_tax.py:0
+#, python-format
+msgid "Nested group of taxes are not allowed."
+msgstr ""
 
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_bank_statement__state__open
@@ -13274,6 +13280,14 @@ msgid "The company this distribution line belongs to."
 msgstr "該分銷明細所屬的公司."
 
 #. module: account
+#: code:addons/account/models/partner.py:0
+#, python-format
+msgid ""
+"The country of the foreign VAT number could not be detected. Please assign a"
+" country to the fiscal position or set a country group"
+msgstr "未能偵測該外國增值稅號碼所在的國家/地區。請為相關財務規則設定一個國家/地區，或國家/地區組別。"
+
+#. module: account
 #: model:ir.model.fields,help:account.field_account_tax_group__country_id
 msgid "The country for which this tax group is applicable."
 msgstr "此稅組適用的國家/地區."
@@ -15547,6 +15561,14 @@ msgid ""
 "You cannot change the owner company of an account that already contains "
 "journal items."
 msgstr "不能更改已經包含日記帳項目的所屬公司."
+
+#. module: account
+#: code:addons/account/models/partner.py:0
+#, python-format
+msgid ""
+"You cannot create a fiscal position with a country outside of the selected "
+"country group."
+msgstr "你不可使用所選國家/地區組別以外的國家/地區，建立財務規則。"
 
 #. module: account
 #: code:addons/account/models/partner.py:0
