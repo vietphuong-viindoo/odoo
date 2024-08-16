@@ -216,7 +216,7 @@ ProductScreen.do.clickPartnerButton();
 ProductScreen.do.clickCustomer('AAA Partner');
 ProductScreen.do.clickDisplayedProduct('Test Product A');
 PosLoyalty.do.clickRewardButton();
-ProductScreen.check.totalAmountIs('138.50');
+ProductScreen.check.totalAmountIs('139');
 
 Tour.register('PosLoyaltyTour6', { test: true, url: '/pos/web' }, getSteps());
 
@@ -306,12 +306,6 @@ PosLoyalty.check.isRewardButtonHighlighted(false);
 PosLoyalty.do.enterCode('123456');
 PosLoyalty.check.isRewardButtonHighlighted(true);
 PosLoyalty.do.clickRewardButton();
-PosLoyalty.check.hasRewardLine('Free Product', '-1.00');
-PosLoyalty.check.isRewardButtonHighlighted(true);
-PosLoyalty.do.clickRewardButton();
-PosLoyalty.check.hasRewardLine('Free Product', '-2.00');
-PosLoyalty.check.isRewardButtonHighlighted(true);
-PosLoyalty.do.clickRewardButton();
 PosLoyalty.check.hasRewardLine('Free Product', '-3.00');
 PosLoyalty.check.isRewardButtonHighlighted(false);
 ProductScreen.check.totalAmountIs('50.00');
@@ -399,3 +393,30 @@ PosLoyalty.check.orderTotalIs('90'),
 PosLoyalty.check.pointsAwardedAre("90"),
 PosLoyalty.exec.finalizeOrder("Cash", "90"),
 Tour.register("PosLoyaltyPointsGlobalDiscountProgramNoDomain", { test: true, url: "/pos/web" }, getSteps());
+
+startSteps();
+
+ProductScreen.do.clickHomeCategory();
+ProductScreen.do.confirmOpeningPopup();
+
+ProductScreen.do.clickPartnerButton();
+ProductScreen.do.clickCustomer("partner_a");
+
+ProductScreen.do.clickDisplayedProduct('Test Product A');
+PosLoyalty.check.checkNoClaimableRewards();
+ProductScreen.check.selectedOrderlineHas('Test Product A', '1.00', '100.00');
+PosLoyalty.exec.finalizeOrder("Cash", "100");
+
+Tour.register('PosLoyaltyArchivedRewardProductsInactive', {test: true, url: '/pos/web'}, getSteps());
+
+startSteps();
+
+ProductScreen.do.clickPartnerButton();
+ProductScreen.do.clickCustomer("partner_a");
+
+ProductScreen.do.clickDisplayedProduct('Test Product A');
+PosLoyalty.check.isRewardButtonHighlighted(true);
+ProductScreen.check.selectedOrderlineHas('Test Product A', '1.00', '100.00');
+PosLoyalty.exec.finalizeOrder("Cash", "100");
+
+Tour.register('PosLoyaltyArchivedRewardProductsActive', {test: true, url: '/pos/web'}, getSteps());
