@@ -616,7 +616,7 @@ msgid ""
 "                        </span>"
 msgstr ""
 "<span class=\"o_stat_text\">\n"
-"                            Nghỉ\n"
+"                            Toàn cục\n"
 "                        </span>"
 
 #. module: hr_holidays
@@ -3196,7 +3196,7 @@ msgstr "Cung cấp lý do để xóa đơn nghỉ phép đã phê duyệt"
 #. module: hr_holidays
 #: model_terms:ir.ui.view,arch_db:hr_holidays.resource_calendar_form_inherit
 msgid "Public"
-msgstr "Public"
+msgstr "Nghỉ"
 
 #. module: hr_holidays
 #. odoo-javascript

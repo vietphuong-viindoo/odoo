@@ -215,7 +215,7 @@ msgstr "Giải thích"
 #. module: resource
 #: model:ir.model.fields.selection,name:resource.selection__resource_calendar_attendance__week_type__0
 msgid "First"
-msgstr "Đầu tiên"
+msgstr "Tuần đầu tiên"
 
 #. module: resource
 #. odoo-python
@@ -234,21 +234,21 @@ msgstr "Thứ sáu"
 #: code:addons/resource/models/resource_calendar.py:0
 #, python-format
 msgid "Friday Afternoon"
-msgstr "Chiều Thứ Sáu"
+msgstr "Chiều thứ sáu"
 
 #. module: resource
 #. odoo-python
 #: code:addons/resource/models/resource_calendar.py:0
 #, python-format
 msgid "Friday Lunch"
-msgstr "Bữa trưa thứ 6"
+msgstr "Bữa trưa thứ sáu"
 
 #. module: resource
 #. odoo-python
 #: code:addons/resource/models/resource_calendar.py:0
 #, python-format
 msgid "Friday Morning"
-msgstr "Sáng Thứ Sáu"
+msgstr "Sáng thứ sáu"
 
 #. module: resource
 #: model:ir.model.fields,help:resource.field_resource_calendar_attendance__sequence
@@ -347,28 +347,28 @@ msgstr "Nguyên liệu/Máy móc"
 #. module: resource
 #: model:ir.model.fields.selection,name:resource.selection__resource_calendar_attendance__dayofweek__0
 msgid "Monday"
-msgstr "Thứ Hai"
+msgstr "Thứ hai"
 
 #. module: resource
 #. odoo-python
 #: code:addons/resource/models/resource_calendar.py:0
 #, python-format
 msgid "Monday Afternoon"
-msgstr "Chiều Thứ Hai"
+msgstr "Chiều thứ hai"
 
 #. module: resource
 #. odoo-python
 #: code:addons/resource/models/resource_calendar.py:0
 #, python-format
 msgid "Monday Lunch"
-msgstr "Bữa trưa thứ 2"
+msgstr "Bữa trưa thứ hai"
 
 #. module: resource
 #. odoo-python
 #: code:addons/resource/models/resource_calendar.py:0
 #, python-format
 msgid "Monday Morning"
-msgstr "Sáng Thứ Hai"
+msgstr "Sáng thứ hai"
 
 #. module: resource
 #: model:ir.model.fields.selection,name:resource.selection__resource_calendar_attendance__day_period__morning
@@ -472,7 +472,7 @@ msgstr ""
 #. module: resource
 #: model:ir.model.fields.selection,name:resource.selection__resource_calendar_attendance__dayofweek__5
 msgid "Saturday"
-msgstr "Thứ Bảy"
+msgstr "Thứ bảy"
 
 #. module: resource
 #: model_terms:ir.ui.view,arch_db:resource.view_resource_resource_search
@@ -492,7 +492,7 @@ msgstr "Tìm kiếm Thời gian làm việc"
 #. module: resource
 #: model:ir.model.fields.selection,name:resource.selection__resource_calendar_attendance__week_type__1
 msgid "Second"
-msgstr "Giây"
+msgstr "Tuần thứ hai"
 
 #. module: resource
 #. odoo-python
@@ -567,7 +567,7 @@ msgstr "Trường kỹ thuật cho mục đích UX."
 #: code:addons/resource/models/resource_calendar.py:0
 #, python-format
 msgid "The current week (from %s to %s) correspond to the  %s one."
-msgstr "Tuần hiện tại (từ %s đến %s) tương ứng với tuần %s."
+msgstr "Tuần hiện tại (từ %s đến %s) tương ứng với %s."
 
 #. module: resource
 #. odoo-python
@@ -608,21 +608,21 @@ msgstr "Thứ năm"
 #: code:addons/resource/models/resource_calendar.py:0
 #, python-format
 msgid "Thursday Afternoon"
-msgstr "Chiều Thứ năm"
+msgstr "Chiều thứ năm"
 
 #. module: resource
 #. odoo-python
 #: code:addons/resource/models/resource_calendar.py:0
 #, python-format
 msgid "Thursday Lunch"
-msgstr "Bữa trưa thứ 5"
+msgstr "Bữa trưa thứ năm"
 
 #. module: resource
 #. odoo-python
 #: code:addons/resource/models/resource_calendar.py:0
 #, python-format
 msgid "Thursday Morning"
-msgstr "Sáng Thứ Năm"
+msgstr "Sáng thứ năm"
 
 #. module: resource
 #: model:ir.model.fields,field_description:resource.field_resource_calendar__leave_ids
@@ -661,28 +661,28 @@ msgstr "Múi giờ chênh lệch"
 #. module: resource
 #: model:ir.model.fields.selection,name:resource.selection__resource_calendar_attendance__dayofweek__1
 msgid "Tuesday"
-msgstr "Thứ Ba"
+msgstr "Thứ ba"
 
 #. module: resource
 #. odoo-python
 #: code:addons/resource/models/resource_calendar.py:0
 #, python-format
 msgid "Tuesday Afternoon"
-msgstr "Chiều Thứ Ba"
+msgstr "Chiều thứ ba"
 
 #. module: resource
 #. odoo-python
 #: code:addons/resource/models/resource_calendar.py:0
 #, python-format
 msgid "Tuesday Lunch"
-msgstr "Bữa trưa thứ 3"
+msgstr "Bữa trưa thứ ba"
 
 #. module: resource
 #. odoo-python
 #: code:addons/resource/models/resource_calendar.py:0
 #, python-format
 msgid "Tuesday Morning"
-msgstr "Sáng Thứ Ba"
+msgstr "Sáng thứ ba"
 
 #. module: resource
 #: model:ir.model.fields,field_description:resource.field_resource_resource__resource_type
@@ -700,28 +700,28 @@ msgstr "Người dùng"
 #. module: resource
 #: model:ir.model.fields.selection,name:resource.selection__resource_calendar_attendance__dayofweek__2
 msgid "Wednesday"
-msgstr "Thứ Tư"
+msgstr "Thứ tư"
 
 #. module: resource
 #. odoo-python
 #: code:addons/resource/models/resource_calendar.py:0
 #, python-format
 msgid "Wednesday Afternoon"
-msgstr "Chiều Thứ Tư"
+msgstr "Chiều thứ tư"
 
 #. module: resource
 #. odoo-python
 #: code:addons/resource/models/resource_calendar.py:0
 #, python-format
 msgid "Wednesday Lunch"
-msgstr "Bữa trưa thứ 4"
+msgstr "Bữa trưa thứ tư"
 
 #. module: resource
 #. odoo-python
 #: code:addons/resource/models/resource_calendar.py:0
 #, python-format
 msgid "Wednesday Morning"
-msgstr "Sáng Thứ Tư"
+msgstr "Sáng thứ tư"
 
 #. module: resource
 #: model:ir.model.fields,field_description:resource.field_resource_calendar_attendance__week_type
@@ -797,7 +797,7 @@ msgstr "Bạn không thể xóa phiên giữa các tuần."
 #: code:addons/resource/models/resource_calendar.py:0
 #, python-format
 msgid "first"
-msgstr "thứ nhất"
+msgstr "tuần đầu tiên"
 
 #. module: resource
 #. odoo-python
@@ -811,7 +811,7 @@ msgstr "tuần khác"
 #: code:addons/resource/models/resource_calendar.py:0
 #, python-format
 msgid "second"
-msgstr "giây"
+msgstr "tuần thứ hai"
 
 #. module: resource
 #. odoo-python
