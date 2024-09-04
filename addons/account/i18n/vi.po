@@ -14215,7 +14215,7 @@ msgid ""
 "The Journal Entry will be accounted on %(invoice_date)s upon posting."
 msgstr ""
 "Ngày được đặt trước ngày %(lock_type)s khóa %(lock_date)s. Bút toán này được"
-" hạch toán vào sổ ngày %(accounting_date)s."
+" hạch toán vào sổ ngày %(invoice_date)s."
 
 #. module: account
 #. odoo-python
