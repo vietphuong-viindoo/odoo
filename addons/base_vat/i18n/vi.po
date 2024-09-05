@@ -208,6 +208,8 @@ msgid ""
 "The country detected for this foreign VAT number does not match any of the "
 "countries composing the country group set on this fiscal position."
 msgstr ""
+"Quốc gia được phát hiện cho mã số thuế GTGT không khớp với quốc gia được "
+"thiết lập trên vị thế tài chính này."
 
 #. module: base_vat
 #: code:addons/base_vat/models/account_fiscal_position.py:0
@@ -216,6 +218,8 @@ msgid ""
 "The country of the foreign VAT number could not be detected. Please assign a"
 " country to the fiscal position or set a country group"
 msgstr ""
+"Không thể nhận diện quốc gia với VAT nước ngoài. Vui lòng thiết lập"
+" một quốc gia cho vị thế tài chính hoặc thiết lập một nhóm quốc gia."
 
 #. module: base_vat
 #. odoo-python
