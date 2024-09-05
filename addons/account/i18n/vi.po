@@ -9011,7 +9011,7 @@ msgstr "Giá trị âm của trường số tiền nếu loại thanh toán là 
 #: code:addons/account/models/account_tax.py:0
 #, python-format
 msgid "Nested group of taxes are not allowed."
-msgstr ""
+msgstr "Không cho phép nhóm thuế lồng nhau."
 
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_bank_statement__state__open
@@ -13819,14 +13819,6 @@ msgstr ""
 #: model:ir.model.fields,help:account.field_account_tax_repartition_line__company_id
 msgid "The company this distribution line belongs to."
 msgstr "Công ty mà dòng phân bổ này thuộc về."
-
-#. module: account
-#: code:addons/account/models/partner.py:0
-#, python-format
-msgid ""
-"The country of the foreign VAT number could not be detected. Please assign a"
-" country to the fiscal position or set a country group"
-msgstr ""
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_tax_group__country_id
