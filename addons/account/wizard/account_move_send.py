@@ -290,7 +290,7 @@ class AccountMoveSend(models.TransientModel):
     def _compute_mail_partner_ids(self):
         for wizard in self:
             if wizard.mode == 'invoice_single' and wizard.mail_template_id:
-                wizard.mail_partner_ids = self._get_default_mail_partner_ids(self.move_ids, wizard.mail_template_id, wizard.mail_lang)
+                wizard.mail_partner_ids = wizard._get_default_mail_partner_ids(wizard.move_ids, wizard.mail_template_id, wizard.mail_lang)
             else:
                 wizard.mail_partner_ids = None
 
@@ -476,7 +476,8 @@ class AccountMoveSend(models.TransientModel):
 
         # Prevent duplicated attachments linked to the invoice.
         new_message.attachment_ids.invalidate_recordset(['res_id', 'res_model'], flush=False)
-        self.env.cr.execute("UPDATE ir_attachment SET res_id = NULL WHERE id IN %s", [tuple(new_message.attachment_ids.ids)])
+        if new_message.attachment_ids.ids:
+            self.env.cr.execute("UPDATE ir_attachment SET res_id = NULL WHERE id IN %s", [tuple(new_message.attachment_ids.ids)])
         new_message.attachment_ids.write({
             'res_model': new_message._name,
             'res_id': new_message.id,
