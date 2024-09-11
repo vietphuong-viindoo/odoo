@@ -17,14 +17,15 @@
 # Trần Hà <tranthuha13590@gmail.com>, 2021
 # Vo Thanh Thuy, 2022
 # Thi Huong Nguyen, 2023
+# Wil Odoo, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-01 17:39+0000\n"
+"POT-Creation-Date: 2024-08-14 15:42+0000\n"
 "PO-Revision-Date: 2021-09-14 12:23+0000\n"
-"Last-Translator: Thi Huong Nguyen, 2023\n"
+"Last-Translator: Wil Odoo, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -172,8 +173,8 @@ msgstr "800px"
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_call_to_action
-msgid "<b>50,000+ companies</b> run Odoo to grow their businesses."
-msgstr "<b>Hơn 50,000 công ty</b> dùng Odoo để tăng trưởng kinh doanh. "
+msgid "<b>50,000+ companies</b> run Odoo."
+msgstr ""
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_alert
@@ -1359,11 +1360,6 @@ msgstr ""
 "tượng để tạo khối tuỳ ý. "
 
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.snippet_options
-msgid "Colors"
-msgstr "Màu"
-
-#. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_mail_block_three_cols
 msgid "Column Title"
 msgstr "Tiêu đề Cột"
@@ -1578,6 +1574,13 @@ msgstr "An ninh mạng"
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_mail_block_comparison_table
 msgid "DEFAULT"
 msgstr "MẶC ĐỊNH"
+
+#. module: mass_mailing
+#. openerp-web
+#: code:addons/mass_mailing/static/src/js/mass_mailing_widget.js:0
+#, python-format
+msgid "DRAG BUILDING BLOCKS HERE"
+msgstr "THẢ KHỐI TẠI ĐÂY"
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_alert_options
@@ -2745,11 +2748,6 @@ msgstr "Thiếu địa chỉ email"
 #: model:ir.model,name:mass_mailing.model_ir_model
 msgid "Models"
 msgstr "Mô hình"
-
-#. module: mass_mailing
-#: model:mailing.mailing,sms_subject:mass_mailing.mass_mail_1
-msgid "Monthly Newsletter"
-msgstr "Thư tin hàng tháng"
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_comparisons
@@ -4179,12 +4177,6 @@ msgid "Unsubscription Date"
 msgstr "Ngày Ngừng theo dõi"
 
 #. module: mass_mailing
-#: code:addons/mass_mailing/models/mailing.py:0
-#, python-format
-msgid "Unsupported mass mailing model %s"
-msgstr "Đối tượng %s không hỗ trợ gửi thư hàng loạt"
-
-#. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.unsubscribe
 msgid "Update my subscriptions"
 msgstr "Cập nhật các đăng ký của tôi"
@@ -4531,11 +4523,6 @@ msgid ""
 msgstr ""
 "Bạn vẫn đã đăng ký cho các thư tin đó. Bạn sẽ không nhận bất cứ tin gì từ "
 "chúng nữa:"
-
-#. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.s_mail_block_header_social
-msgid "Your Logo"
-msgstr "Logo của Bạn"
 
 #. module: mass_mailing
 #. openerp-web
