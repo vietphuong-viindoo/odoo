@@ -8,8 +8,8 @@
 # Dao Nguyen <trucdao.uel@gmail.com>, 2022
 # Martin Trigaux, 2023
 # Wil Odoo, 2024
-# Thi Huong Nguyen, 2024
 # Nancy Momoland <thanh.np2502@gmail.com>, 2024
+# Thi Huong Nguyen, 2024
 # 
 msgid ""
 msgstr ""
@@ -17,7 +17,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-06 13:31+0000\n"
 "PO-Revision-Date: 2022-09-22 05:44+0000\n"
-"Last-Translator: Nancy Momoland <thanh.np2502@gmail.com>, 2024\n"
+"Last-Translator: Thi Huong Nguyen, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2073,7 +2073,7 @@ msgstr "Cần có Hành động"
 #. module: account
 #: model:ir.ui.menu,name:account.menu_finance_entries_actions
 msgid "Actions"
-msgstr "Hành động"
+msgstr "Tác vụ"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
@@ -3016,7 +3016,7 @@ msgstr "Mã tự động"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_report__availability_condition
 msgid "Availability"
-msgstr "Khả dụng"
+msgstr "Trạng thái khả dụng"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_move_reversal__available_journal_ids
@@ -5018,7 +5018,7 @@ msgstr "Các thanh toán của khách hàng"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_report_column__custom_audit_action_id
 msgid "Custom Audit Action"
-msgstr "Hành động kiểm tra tùy chỉnh"
+msgstr "Tác vụ kiểm tra tùy chỉnh"
 
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_report_expression__engine__custom
@@ -9468,7 +9468,7 @@ msgstr "Thông báo gửi đi gặp lỗi"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_invoice_send__record_name
 msgid "Message Record Name"
-msgstr "Tên tập dữ liệu thông điệp"
+msgstr "Tên bản ghi thông điệp"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_res_partner__invoice_warn_msg
@@ -9836,7 +9836,7 @@ msgstr ""
 #: code:addons/account/wizard/account_automatic_entry_wizard.py:0
 #, python-format
 msgid "No possible action found with the selected lines."
-msgstr "Không tìm thấy hành động khả thi nào với các dòng đã chọn."
+msgstr "Không tìm thấy tác vụ khả thi nào với các dòng đã chọn."
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_position_form
@@ -11122,7 +11122,7 @@ msgstr "Phần trăm của số dư"
 #. module: account
 #: model:ir.model.fields,help:account.field_account_automatic_entry_wizard__percentage
 msgid "Percentage of each line to execute the action on."
-msgstr "Phần trăm của mỗi dòng để thực hiện hành động trên."
+msgstr "Phần trăm của mỗi dòng để thực hiện tác vụ trên."
 
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_reconcile_model_line__amount_type__percentage_st_line
@@ -11934,7 +11934,7 @@ msgstr "Báo cáo"
 #. module: account
 #: model:ir.model,name:account.model_ir_actions_report
 msgid "Report Action"
-msgstr "Báo cáo hành động"
+msgstr "Báo cáo tác vụ"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_move_line_filter
@@ -12677,7 +12677,7 @@ msgid ""
 "payment action"
 msgstr ""
 "Được gửi thủ công cho khách hàng khi nhấp vào 'Gửi biên nhận qua email' "
-"trong hành động thanh toán"
+"trong tác vụ thanh toán"
 
 #. module: account
 #: model:mail.template,description:account.email_template_edi_credit_note
@@ -12819,8 +12819,8 @@ msgid ""
 "Setting this field will turn the line into a link, executing the action when"
 " clicked."
 msgstr ""
-"Đặt trường này sẽ biến dòng thành liên kết, thực hiện hành động khi được "
-"nhấp vào."
+"Đặt trường này sẽ biến dòng thành liên kết, thực hiện tác vụ khi được nhấp "
+"vào."
 
 #. module: account
 #: model:ir.actions.act_window,name:account.action_account_config
@@ -14126,6 +14126,17 @@ msgstr ""
 #: model:ir.model.fields,help:account.field_account_tax_repartition_line__company_id
 msgid "The company this distribution line belongs to."
 msgstr "Công ty mà dòng phân bổ này thuộc về."
+
+#. module: account
+#: code:addons/account/models/partner.py:0
+#, python-format
+msgid ""
+"The country of the foreign VAT number could not be detected. Please assign a"
+" country to the fiscal position or set a country group"
+msgstr ""
+"Không thể phát hiện quốc gia của mã số thuế GTGT nước ngoài. Vui lòng chỉ "
+"định quốc gia cho vị trí tài chính hoặc thiết lập nhóm quốc gia"
+>>>>>>> refs/remotes/odoo/16.0
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_tax_group__country_id

@@ -732,7 +732,7 @@ msgstr "Thêm: %s"
 #: code:addons/web/static/src/legacy/js/components/action_menus.js:0
 #, python-format
 msgid "Additionnal actions"
-msgstr "Các hành động bổ sung"
+msgstr "Các tác vụ bổ sung"
 
 #. module: web
 #. odoo-javascript
@@ -940,7 +940,7 @@ msgstr ""
 #: code:addons/web/static/src/views/calendar/calendar_controller.js:0
 #, python-format
 msgid "Are you sure you want to delete this record ?"
-msgstr "Bạn có chắc muốn xoá tập dữ liệu này?"
+msgstr "Bạn có chắc muốn xoá bản ghi này?"
 
 #. module: web
 #. odoo-javascript
@@ -1678,7 +1678,7 @@ msgstr "Tạo và sửa..."
 #: code:addons/web/static/src/views/fields/x2many/x2many_field.xml:0
 #, python-format
 msgid "Create record"
-msgstr "Tạo tập dữ liệu"
+msgstr "Tạo bản ghi"
 
 #. module: web
 #. odoo-javascript
@@ -1983,7 +1983,7 @@ msgstr "Loại bỏ những thay đổi"
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #, python-format
 msgid "Discard record"
-msgstr "Hủy tập dữ liệu"
+msgstr "Hủy bản ghi"
 
 #. module: web
 #: model:ir.model.fields,field_description:web.field_base_document_layout__display_name
@@ -3111,7 +3111,7 @@ msgstr "MailDeliveryException"
 #: code:addons/web/static/src/views/pivot/pivot_controller.xml:0
 #, python-format
 msgid "Main actions"
-msgstr "Hành động chính"
+msgstr "Tác vụ chính"
 
 #. module: web
 #. odoo-javascript
@@ -3171,7 +3171,7 @@ msgstr "Khớp"
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #, python-format
 msgid "Match records with"
-msgstr "Kết hợp các tập dữ liệu với"
+msgstr "Kết hợp các bản ghi với"
 
 #. module: web
 #. odoo-javascript
@@ -3575,7 +3575,7 @@ msgstr "Không đúng dữ liệu để lưu"
 #: code:addons/web/static/src/webclient/actions/action_service.js:0
 #, python-format
 msgid "No view of type '%s' could be found in the current action."
-msgstr "Không có dạng xem nào '%s' được tìm thấy trong hành động hiện tại."
+msgstr "Không có dạng xem nào '%s' được tìm thấy trong tác vụ hiện tại."
 
 #. module: web
 #. odoo-javascript
@@ -3771,7 +3771,7 @@ msgstr ""
 #: code:addons/web/static/src/legacy/js/views/list/list_controller.js:0
 #, python-format
 msgid "Only the first %d records have been deleted (out of %d selected)"
-msgstr "Chỉ có dữ liệu %d đầu tiên được phép xóa (ngoài %d đã chọn)"
+msgstr "Chỉ có dữ liệu %d đầu tiên được phép xóa (trong số %d đã chọn)"
 
 #. module: web
 #. odoo-javascript
@@ -3997,7 +3997,7 @@ msgstr "Chọn một màu sắc"
 #: code:addons/web/static/src/views/graph/graph_controller.xml:0
 #, python-format
 msgid "Pie Chart"
-msgstr "Biểu đồ bánh"
+msgstr "Biểu đồ tròn"
 
 #. module: web
 #. odoo-javascript
@@ -4717,7 +4717,7 @@ msgstr "Lưu thủ công"
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #, python-format
 msgid "Save record"
-msgstr "Lưu tập dữ liệu"
+msgstr "Lưu bản ghi"
 
 #. module: web
 #. odoo-javascript
@@ -4782,7 +4782,7 @@ msgstr "Tìm kiếm menu..."
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #, python-format
 msgid "Search for records"
-msgstr "Tìm kiếm tập dữ liệu"
+msgstr "Tìm kiếm bản ghi"
 
 #. module: web
 #. odoo-javascript
@@ -4895,6 +4895,13 @@ msgstr "Chọn tất cả"
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/legacy/xml/base.xml:0
+#, python-format
+msgid "Select all records matching the search"
+msgstr ""
+
+#. module: web
+#. openerp-web
+#: code:addons/web/static/src/legacy/xml/base.xml:0
 #: code:addons/web/static/src/views/view_dialogs/export_data_dialog.xml:0
 #, python-format
 msgid "Select field"
@@ -4905,7 +4912,7 @@ msgstr "Chọn trường"
 #: code:addons/web/static/src/views/fields/relational_utils.js:0
 #, python-format
 msgid "Select records"
-msgstr "Chọn tập dữ liệu"
+msgstr "Chọn bản ghi"
 
 #. module: web
 #. odoo-javascript
@@ -4914,7 +4921,7 @@ msgstr "Chọn tập dữ liệu"
 #: code:addons/web/static/src/views/fields/properties/property_definition.js:0
 #, python-format
 msgid "Selected records"
-msgstr "Các tập dữ liệu được chọn"
+msgstr "Các bản ghi được chọn"
 
 #. module: web
 #. odoo-javascript
@@ -5311,7 +5318,7 @@ msgid ""
 "There are too many rows (%s rows, limit: %s) to export as Excel 2007-2013 "
 "(.xlsx) format. Consider splitting the export."
 msgstr ""
-"Có quá nhiều dòng (%s dòng, giới hạn: %s) để xuất dưới định dạng Excel "
+"Có quá nhiều hàng (%s hàng, giới hạn: %s) để xuất dưới định dạng Excel "
 "2007-2013 (.xlsx). Xem xét chia việc xuất ra nhiều lần."
 
 #. module: web
@@ -5421,7 +5428,7 @@ msgstr "Thẻ này đã có sẵn"
 #: code:addons/web/static/src/views/list/list_confirmation_dialog.xml:0
 #, python-format
 msgid "This update will only consider the records of the current page."
-msgstr "Bản cập nhật này sẽ chỉ xem xét các tập dữ liệu của trang hiện tại."
+msgstr "Bản cập nhật này sẽ chỉ xem xét các bản ghi của trang hiện tại."
 
 #. module: web
 #. odoo-javascript
@@ -5525,7 +5532,7 @@ msgid ""
 "Try to add some records, or make sure that there is no\n"
 "                    active filter in the search bar."
 msgstr ""
-"Cố gắng thêm một số tập dữ liệu hoặc đảm bảo rằng không có tập dữ liệu nào\n"
+"Cố gắng thêm một số bản ghi hoặc đảm bảo rằng không có bản ghi nào\n"
 "                    không có bộ lọc đang hoạt động nào trong thanh tìm kiếm."
 
 #. module: web
@@ -5921,6 +5928,7 @@ msgstr "Xem bộ chuyển đổi giao diện"
 #: code:addons/web/static/src/legacy/js/views/list/list_controller.js:0
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #: code:addons/web/static/src/legacy/xml/base.xml:0
+#: code:addons/web/static/src/legacy/xml/control_panel.xml:0
 #: code:addons/web/static/src/search/favorite_menu/favorite_menu.js:0
 #: code:addons/web/static/src/views/fields/domain/domain_field.xml:0
 #: code:addons/web/static/src/views/fields/domain/domain_field.xml:0
@@ -6754,7 +6762,7 @@ msgstr "query"
 #: code:addons/web/static/src/views/fields/properties/property_definition.xml:0
 #, python-format
 msgid "record(s)"
-msgstr "tập dữ liệu"
+msgstr "bản ghi"
 
 #. module: web
 #. odoo-javascript

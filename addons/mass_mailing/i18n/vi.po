@@ -762,7 +762,7 @@ msgid ""
 msgstr ""
 "Điều chỉnh ba cột này để phù hợp với nhu cầu thiết kế của bạn. Để sao chép, "
 "xóa hoặc di chuyển cột, hãy chọn cột và sử dụng các biểu tượng trên cùng để "
-"thực hiện tác vụ. "
+"thực hiện tác vụ."
 
 #. module: mass_mailing
 #. odoo-javascript
@@ -1187,7 +1187,7 @@ msgid ""
 "issues, ...). Check each record to see what went wrong."
 msgstr ""
 "Trả về xảy ra khi không thể gửi thư (địa chỉ giả, sự cố máy chủ,...). Hãy "
-"kiểm tra từng tập dữ liệu để xem điều gì đã xảy ra."
+"kiểm tra từng bản ghi để xem điều gì đã xảy ra."
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_mailing__bounced
@@ -1240,7 +1240,7 @@ msgstr "Ngày Lên lịch"
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
 msgid "Call to Action"
-msgstr "Nút hành động"
+msgstr "Kêu gọi hành động"
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_trace__campaign_id
@@ -2297,7 +2297,7 @@ msgid ""
 msgstr ""
 "ID của mail_mail liên quan. Trường này là trường số nguyên vì mail_mail có "
 "liên quan có thể bị xóa tách biệt khỏi thống kê của nó. Tuy nhiên ID là cần "
-"thiết cho một số hành động và bộ điều khiển."
+"thiết cho một số tác vụ và bộ điều khiển."
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_mailing__activity_exception_icon
@@ -4623,7 +4623,7 @@ msgstr "Tổng trả về"
 #. module: mass_mailing
 #: model:ir.model.constraint,message:mass_mailing.constraint_mailing_trace_check_res_id_is_set
 msgid "Traces have to be linked to records with a not null res_id."
-msgstr "Theo dõi phải được liên kết với các tập dữ liệu có res_id không rỗng."
+msgstr "Theo dõi phải được liên kết với các bản ghi có res_id không rỗng."
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
@@ -4974,7 +4974,7 @@ msgstr "Bạn có thể chỉnh màu và hình nền để làm nổi bật các
 #: code:addons/mass_mailing/wizard/mailing_list_merge.py:0
 #, python-format
 msgid "You can only apply this action from Mailing Lists."
-msgstr "Bạn chỉ có thể áp dụng hành động này từ Danh sách gửi thư."
+msgstr "Bạn chỉ có thể áp dụng tác vụ này từ Danh sách gửi thư."
 
 #. module: mass_mailing
 #. odoo-python
