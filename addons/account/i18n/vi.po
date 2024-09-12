@@ -14136,7 +14136,6 @@ msgid ""
 msgstr ""
 "Không thể phát hiện quốc gia của mã số thuế GTGT nước ngoài. Vui lòng chỉ "
 "định quốc gia cho vị trí tài chính hoặc thiết lập nhóm quốc gia"
->>>>>>> refs/remotes/odoo/16.0
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_tax_group__country_id
