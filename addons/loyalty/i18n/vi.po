@@ -510,7 +510,7 @@ msgstr ""
 #. module: loyalty
 #: model:ir.model.fields,field_description:loyalty.field_loyalty_card__message_needaction
 msgid "Action Needed"
-msgstr "Hành động cần thiết"
+msgstr "Tác vụ cần thiết"
 
 #. module: loyalty
 #: model:ir.model.fields,field_description:loyalty.field_loyalty_mail__active
@@ -1449,7 +1449,7 @@ msgstr "Không thấy chương trình nào."
 #. module: loyalty
 #: model:ir.model.fields,field_description:loyalty.field_loyalty_card__message_needaction_counter
 msgid "Number of Actions"
-msgstr "Số lượng hành động"
+msgstr "Số lượng tác vụ"
 
 #. module: loyalty
 #: model:ir.model.fields,field_description:loyalty.field_loyalty_card__message_has_error_counter
@@ -1959,7 +1959,7 @@ msgstr "Bạn không thể xóa một chương trình ở trạng thái hoạt �
 #: code:addons/loyalty/models/loyalty_reward.py:0
 #, python-format
 msgid "The reward description field cannot be empty."
-msgstr ""
+msgstr "Không được để trống trường mô tả phần thưởng."
 
 #. module: loyalty
 #. odoo-python

@@ -3435,6 +3435,8 @@ msgid ""
 "Some of the accrual plans you're trying to delete are linked to an existing "
 "allocation. Delete or cancel them first."
 msgstr ""
+"بعض خطط الاستحقاق التي تحاول حذفها مرتبطة بمخصصات موجودة. قم بحذف تلك "
+"المخصصات أو إلغائها أولاً. "
 
 #. module: hr_holidays
 #: model:ir.model.fields,help:hr_holidays.field_hr_leave_accrual_plan__time_off_type_id
@@ -3599,6 +3601,14 @@ msgstr "تم أخذها "
 #: model:ir.model.fields,field_description:hr_holidays.field_hr_leave_allocation__taken_leave_ids
 msgid "Taken Leave"
 msgstr "الإجازة المأخوذة "
+
+#. module: hr_holidays
+#. odoo-python
+#: code:addons/hr_holidays/models/hr_leave_allocation.py:0
+#, python-format
+msgid ""
+"The Start Date of the Validity Period must be anterior to the End Date."
+msgstr "يجب أن يكون تاريخ بدء فترة الصلاحية قبل تاريخ الانتهاء. "
 
 #. module: hr_holidays
 #: model:ir.model.fields,help:hr_holidays.field_hr_leave_accrual_level__start_count

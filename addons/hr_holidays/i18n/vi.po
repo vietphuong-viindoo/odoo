@@ -7,7 +7,7 @@
 # Duy BQ <duybq86@gmail.com>, 2022
 # Trinh Tran Thi Phuong <trinhttp@trobz.com>, 2022
 # Martin Trigaux, 2023
-# Wil Odoo, 2023
+# Wil Odoo, 2024
 # Thi Huong Nguyen, 2024
 # 
 msgid ""
@@ -1223,7 +1223,7 @@ msgstr "Nghỉ đã lưu trữ"
 #: code:addons/hr_holidays/static/src/views/calendar/calendar_controller.js:0
 #, python-format
 msgid "Are you sure you want to delete this record ?"
-msgstr "Bạn có chắc muốn xoá tập dữ liệu này?"
+msgstr "Bạn có chắc muốn xoá bản ghi này?"
 
 #. module: hr_holidays
 #: model:ir.model.fields,field_description:hr_holidays.field_hr_leave_accrual_level__action_with_unused_accruals
@@ -3440,6 +3440,8 @@ msgid ""
 "Some of the accrual plans you're trying to delete are linked to an existing "
 "allocation. Delete or cancel them first."
 msgstr ""
+"Một số kế hoạch tích lũy mà bạn muốn xóa được liên kết với một phân bổ đang "
+"tồn tại. Trước tiên, hãy xóa hoặc hủy chúng."
 
 #. module: hr_holidays
 #: model:ir.model.fields,help:hr_holidays.field_hr_leave_accrual_plan__time_off_type_id
@@ -3605,6 +3607,14 @@ msgstr "Đã nghỉ"
 #: model:ir.model.fields,field_description:hr_holidays.field_hr_leave_allocation__taken_leave_ids
 msgid "Taken Leave"
 msgstr "Nghỉ đã sử dụng"
+
+#. module: hr_holidays
+#. odoo-python
+#: code:addons/hr_holidays/models/hr_leave_allocation.py:0
+#, python-format
+msgid ""
+"The Start Date of the Validity Period must be anterior to the End Date."
+msgstr "Ngày bắt đầu của Thời hạn hiệu lực phải trước Ngày kết thúc."
 
 #. module: hr_holidays
 #: model:ir.model.fields,help:hr_holidays.field_hr_leave_accrual_level__start_count
@@ -4174,8 +4184,8 @@ msgid ""
 "Try to add some records, or make sure that there is no active filter in the "
 "search bar."
 msgstr ""
-"Hãy thử thêm một số tập dữ liệu hoặc đảm bảo rằng không có bộ lọc đang hoạt "
-"động nào trên thanh tìm kiếm."
+"Hãy thử thêm một số bản ghi hoặc đảm bảo rằng không có bộ lọc đang hoạt động"
+" nào trên thanh tìm kiếm."
 
 #. module: hr_holidays
 #: model:ir.model.fields.selection,name:hr_holidays.selection__hr_leave_accrual_level__week_day__tue

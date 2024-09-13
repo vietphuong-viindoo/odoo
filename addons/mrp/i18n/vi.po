@@ -1139,6 +1139,8 @@ msgid ""
 "Cannot compute days to prepare due to missing route info for at least 1 "
 "component or for the final product."
 msgstr ""
+"Không thể tính toán số ngày để chuẩn bị do thiếu thông tin quy trình của ít "
+"nhất 1 nguyên liệu hoặc của sản phẩm cuối cùng."
 
 #. module: mrp
 #. odoo-python
@@ -5446,7 +5448,7 @@ msgstr "Kiểu Hoạt động"
 #: model:ir.model.fields,help:mrp.field_mrp_production__activity_exception_decoration
 #: model:ir.model.fields,help:mrp.field_mrp_unbuild__activity_exception_decoration
 msgid "Type of the exception activity on record."
-msgstr "Loại hoạt động ngoại lệ trên tập dữ liệu."
+msgstr "Loại hoạt động ngoại lệ trên bản ghi."
 
 #. module: mrp
 #. odoo-python

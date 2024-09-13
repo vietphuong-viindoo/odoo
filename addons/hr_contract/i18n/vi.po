@@ -829,8 +829,7 @@ msgstr "Đặt ngày kết thúc cho hợp đồng hiện tại."
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_search
 msgid "Show all records which have a next action date before today"
 msgstr ""
-"Hiển thị tất cả các tập dữ liệu có ngày hành động tiếp theo trước ngày hôm "
-"nay"
+"Hiển thị tất cả các bản ghi có ngày tác vụ tiếp theo trước ngày hôm nay"
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__date_start
