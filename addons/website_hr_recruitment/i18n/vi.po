@@ -25,6 +25,31 @@ msgstr ""
 
 #. module: website_hr_recruitment
 #. odoo-python
+#: code:addons/website_hr_recruitment/models/hr_job.py:0
+#, python-format
+msgid ""
+"\n"
+"            <span class=\"text-muted small\">Time to Answer</span>\n"
+"            <h6>2 open days</h6>\n"
+"            <span class=\"text-muted small\">Process</span>\n"
+"            <h6>1 Phone Call</h6>\n"
+"            <h6>1 Onsite Interview</h6>\n"
+"            <span class=\"text-muted small\">Days to get an Offer</span>\n"
+"            <h6>4 Days after Interview</h6>\n"
+"        "
+msgstr ""
+"\n"
+"            <span class=\"text-muted small\">Thời gian trả lời</span>\n"
+"            <h6>2 ngày chờ phản hồi</h6>\n"
+"            <span class=\"text-muted small\">Quy trình</span>\n"
+"            <h6>1 cuộc gọi điện thoại</h6>\n"
+"            <h6>1 buổi phỏng vấn trực tiếp</h6>\n"
+"            <span class=\"text-muted small\">Thời gian nhận được đề nghị</span>\n"
+"            <h6>4 ngày sau khi phỏng vấn</h6>\n"
+"        "
+
+#. module: website_hr_recruitment
+#. odoo-python
 #: code:addons/website_hr_recruitment/models/hr_recruitment.py:0
 #, python-format
 msgid "%s's Application"
@@ -39,13 +64,13 @@ msgstr "12 ngày/năm, bao gồm <br/>6 ngày tự chọn."
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.thankyou_ir_ui_view
 msgid "<br/><i class=\"fa fa-phone\" role=\"img\" aria-label=\"Phone\" title=\"Phone\"/>"
 msgstr ""
-"<br/><i class=\"fa fa-phone\" role=\"img\" aria-label=\"Phone\" title=\"Điện"
+"<br/><i class=\"fa fa-phone\" role=\"img\" aria-label=\"Điện thoại\" title=\"Điện"
 " thoại\"/>"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.apply
 msgid "<i class=\"fa fa-arrow-left\"/> Job Description"
-msgstr ""
+msgstr "<i class=\"fa fa-arrow-left\"/> Mô tả công việc"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.thankyou_ir_ui_view
@@ -58,8 +83,8 @@ msgid ""
 "<i class=\"fa fa-fw fa-clock-o\" title=\"Publication date\" role=\"img\" "
 "aria-label=\"Publication date\"/>"
 msgstr ""
-"<i class=\"fa fa-fw fa-clock-o\" title=\"Ngày đăng \" role=\"img\" aria-"
-"label=\"Publication date\"/>"
+"<i class=\"fa fa-fw fa-clock-o\" title=\"Ngày đăng\" role=\"img\" aria-"
+"label=\"Ngày đăng\"/>"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.view_hr_job_kanban_referal_extends
@@ -76,6 +101,8 @@ msgid ""
 "<i class=\"fa fa-fw fa-suitcase\" title=\"Employment type\" role=\"img\" "
 "aria-label=\"Employment type\"/>"
 msgstr ""
+"<i class=\"fa fa-fw fa-suitcase\" title=\"Kiểu nhân viên\" role=\"img\" "
+"aria-label=\"Kiểu nhân viên\"/>"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.job_pages_kanban_view
@@ -90,7 +117,7 @@ msgstr "<small><b>ĐỌC</b></small>"
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.hr_job_website_inherit
 msgid "<span class=\"bg-odoo\">Published</span>"
-msgstr ""
+msgstr "<span class=\"bg-odoo\">Đã đăng</span>"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.apply
@@ -98,6 +125,8 @@ msgid ""
 "<span class=\"d-none text-muted\" style=\"margin-left: 200px; font-size: "
 "0.8rem\">The resume is optional if you have a Linkedin profile</span>"
 msgstr ""
+"<span class=\"d-none text-muted\" style=\"margin-left: 200px; font-size: "
+"0.8rem\">Sơ yếu lý lịch là tùy chọn nếu bạn có hồ sơ Linkedin</span>"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.apply
@@ -117,7 +146,7 @@ msgstr "<span class=\"s_website_form_label_content\">Hồ sơ LinkedIn</span>"
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.apply
 msgid "<span class=\"s_website_form_label_content\">Resume</span>"
-msgstr "<span class=\"s_website_form_label_content\">Lí lịch</span>"
+msgstr "<span class=\"s_website_form_label_content\">Lý lịch</span>"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.apply
@@ -177,6 +206,8 @@ msgid ""
 "<span class=\"text-muted\" style=\"font-size: 0.8rem\">Optional if you "
 "provided a Linkedin profile</span>"
 msgstr ""
+"<span class=\"text-muted\" style=\"font-size: 0.8rem\">tùy chọn nếu ban "
+"đã cung cấp hồ sơ Linkedin</span>"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.thankyou_ir_ui_view
@@ -229,7 +260,7 @@ msgstr "Tất cả Phòng ban"
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.job_filter_by_employment_type
 msgid "All Employment Types"
-msgstr ""
+msgstr "Tất cả kiểu nhân viên"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.job_filter_by_offices
