@@ -12000,7 +12000,7 @@ msgid ""
 msgstr ""
 "Để gửi lời mời trong chế độ B2B, hãy mở một số liên lạc hoặc chọn một số "
 "người trong giao diện danh sách và nhấp vào tùy chọn 'Quản lý truy cập cổng "
-"thông tin' trong menu thả xuống * Hành động *."0
+"thông tin' trong menu thả xuống * Hành động *."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
