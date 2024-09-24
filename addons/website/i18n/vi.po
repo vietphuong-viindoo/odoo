@@ -4,16 +4,16 @@
 #
 # Translators:
 # Martin Trigaux, 2024
-# Thi Huong Nguyen, 2024
 # Wil Odoo, 2024
+# Thi Huong Nguyen, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-29 10:44+0000\n"
+"POT-Creation-Date: 2024-08-13 10:26+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
-"Last-Translator: Wil Odoo, 2024\n"
+"Last-Translator: Thi Huong Nguyen, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -243,12 +243,12 @@ msgstr "+ Website mới"
 #: model_terms:ir.ui.view,arch_db:website.template_footer_descriptive
 #: model_terms:ir.ui.view,arch_db:website.template_footer_headline
 msgid "+1 555-555-5556"
-msgstr ""
+msgstr "+1 555-555-5556"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.template_footer_links
 msgid "+1 555-555-5556\""
-msgstr ""
+msgstr "+1 555-555-5556\""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.searchbar_input_snippet_options
@@ -292,6 +292,8 @@ msgstr ""
 "...và chuyển đổi nội dung dòng thời gian để phù hợp với nhu cầu của bạn."
 
 #. module: website
+#: model:website,contact_us_button_url:website.default_website
+#: model:website,contact_us_button_url:website.website2
 #: model_terms:ir.ui.view,arch_db:website.layout
 #: model_terms:ir.ui.view,arch_db:website.snippets
 msgid "/contactus"
@@ -728,6 +730,8 @@ msgid ""
 "<i class=\"fa fa-1x fa-fw fa-phone me-1\"/>\n"
 "                        <span class=\"o_force_ltr\"><small>+1 555-555-5556</small></span>"
 msgstr ""
+"<i class=\"fa fa-1x fa-fw fa-phone me-1\"/>\n"
+"                        <span class=\"o_force_ltr\"><small>+1 555-555-5556</small></span>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.header_text_element
@@ -827,6 +831,8 @@ msgid ""
 "<i class=\"fa fa-phone fa-fw me-2\"/><span class=\"o_force_ltr\">+1 "
 "555-555-5556</span>"
 msgstr ""
+"<i class=\"fa fa-phone fa-fw me-2\"/><span class=\"o_force_ltr\">+1 "
+"555-555-5556</span>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
@@ -1193,7 +1199,7 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.header_text_element
 msgid "<span class=\"o_force_ltr\">+1 555-555-5556</span>"
-msgstr ""
+msgstr "<span class=\"o_force_ltr\">+1 555-555-5556</span>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.website_visitor_view_form
@@ -1515,10 +1521,10 @@ msgid ""
 "field as True to allow users to run this action. If it is set to False the "
 "action cannot be run through the website."
 msgstr ""
-"Một hành động máy chủ mã có thể được thực hiện từ trang web, sử dụng một bộ "
+"Một tác vụ máy chủ mã có thể được thực hiện từ trang web, sử dụng một bộ "
 "điều khiển chuyên dụng. Địa chỉ là <base>/ website / action /<website_path>."
 " Đặt trường này là \"Đúng\" để cho phép người dùng chạy tác vụ này. Nếu nó "
-"được đặt thành \"Sai\" thì hành động không thể chạy qua trang web."
+"được đặt thành \"Sai\" thì tác vụ không thể chạy qua trang web."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_color_blocks_2
@@ -1699,7 +1705,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:website.field_website_rewrite__redirect_type
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
 msgid "Action"
-msgstr "Hành động"
+msgstr "Tác vụ"
 
 #. module: website
 #. odoo-javascript
@@ -1736,7 +1742,7 @@ msgid ""
 msgstr ""
 "Điều chỉnh ba cột này để phù hợp với nhu cầu thiết kế của bạn. Để sao chép, "
 "xóa hoặc di chuyển cột, hãy chọn cột và sử dụng các biểu tượng trên cùng để "
-"thực hiện hành động của bạn."
+"thực hiện tác vụ của bạn."
 
 #. module: website
 #. odoo-javascript
@@ -1797,7 +1803,7 @@ msgstr "Thêm Sản phẩm"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_chart_options
 msgid "Add Row"
-msgstr "Thêm dòng"
+msgstr "Thêm hàng"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_chart_options
@@ -2865,7 +2871,7 @@ msgstr "CTA"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippets
 msgid "Call to Action"
-msgstr "Nút hành động"
+msgstr "Kêu gọi hành động"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.template_footer_contact
@@ -2875,7 +2881,7 @@ msgstr "Gọi cho chúng tôi"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "Call-to-action"
-msgstr "Nút CTA"
+msgstr "Nút gọi đến hành động"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
@@ -4696,7 +4702,7 @@ msgstr "Vẫn chỉnh sửa HTML"
 #: code:addons/website/static/src/components/edit_head_body_dialog/edit_head_body_dialog.xml:0
 #, python-format
 msgid "Edit Head and Body Code"
-msgstr ""
+msgstr "Chỉnh sửa mã đầu và mã thân"
 
 #. module: website
 #. odoo-javascript
@@ -6300,7 +6306,7 @@ msgstr "ID"
 #: model:ir.model.fields,help:website.field_ir_actions_server__xml_id
 #: model:ir.model.fields,help:website.field_ir_cron__xml_id
 msgid "ID of the action if defined in a XML file"
-msgstr "ID của hành động nếu được xác định trong tệp XML"
+msgstr "ID của tác vụ nếu được xác định trong tệp XML"
 
 #. module: website
 #: model:ir.model.fields,help:website.field_website_controller_page__xml_id
@@ -7025,6 +7031,7 @@ msgstr "Giữ trống để sử dụng giá trị mặc định"
 #. module: website
 #: model:ir.model.fields,field_description:website.field_ir_asset__key
 #: model:ir.model.fields,field_description:website.field_ir_attachment__key
+#: model:ir.model.fields,field_description:website.field_product_document__key
 #: model:ir.model.fields,field_description:website.field_theme_ir_asset__key
 #: model:ir.model.fields,field_description:website.field_theme_ir_attachment__key
 #: model:ir.model.fields,field_description:website.field_theme_ir_ui_view__key
@@ -7129,7 +7136,7 @@ msgstr "7 ngày qua"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.website_visitor_view_kanban
 msgid "Last Action"
-msgstr "Hành động cuối cùng"
+msgstr "Tác vụ cuối cùng"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website_visitor__last_connection_datetime
@@ -7199,7 +7206,7 @@ msgstr "Trang được truy cập lần cuối"
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website_visitor__time_since_last_action
 msgid "Last action"
-msgstr "Hành động cuối cùng"
+msgstr "Tác vụ cuối cùng"
 
 #. module: website
 #. odoo-python
@@ -7548,7 +7555,7 @@ msgstr "Menu Chính"
 #: code:addons/website/static/src/components/views/theme_preview.xml:0
 #, python-format
 msgid "Main actions"
-msgstr "Hành động chính"
+msgstr "Tác vụ chính"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
@@ -8335,7 +8342,7 @@ msgstr "Không tùy chỉnh"
 #: code:addons/website/static/src/xml/website_form_editor.xml:0
 #, python-format
 msgid "No matching record!"
-msgstr "Không có tập dữ liệu phù hợp!"
+msgstr "Không có bản ghi phù hợp!"
 
 #. module: website
 #: model_terms:ir.actions.act_window,help:website.website_visitor_page_action
@@ -8386,6 +8393,12 @@ msgstr "Không có miền trang web nào được cấu hình cho trang web này
 #: model_terms:ir.ui.view,arch_db:website.snippet_options_shadow_widgets
 msgid "None"
 msgstr "Không có"
+
+#. module: website
+#: model:website,prevent_zero_price_sale_text:website.default_website
+#: model:website,prevent_zero_price_sale_text:website.website2
+msgid "Not Available For Sale"
+msgstr "Không có sẵn để bán"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.website_pages_kanban_view
@@ -9797,7 +9810,7 @@ msgstr "Gỡ"
 #: code:addons/website/static/src/snippets/s_chart/options.js:0
 #, python-format
 msgid "Remove Row"
-msgstr "Gỡ dòng"
+msgstr "Gỡ hàng"
 
 #. module: website
 #. odoo-javascript
@@ -11422,7 +11435,7 @@ msgstr "URL đầy đủ để truy cập tài liệu thông qua website."
 #: model:ir.model.fields,help:website.field_ir_actions_server__website_url
 #: model:ir.model.fields,help:website.field_ir_cron__website_url
 msgid "The full URL to access the server action through the website."
-msgstr "URL đầy đủ để truy cập hành động máy chủ thông qua trang web."
+msgstr "URL đầy đủ để truy cập tác vụ máy chủ thông qua trang web."
 
 #. module: website
 #. odoo-python
@@ -11557,6 +11570,7 @@ msgstr "Màu sắc chủ đề"
 #: model:ir.model.fields,field_description:website.field_ir_asset__theme_template_id
 #: model:ir.model.fields,field_description:website.field_ir_attachment__theme_template_id
 #: model:ir.model.fields,field_description:website.field_ir_ui_view__theme_template_id
+#: model:ir.model.fields,field_description:website.field_product_document__theme_template_id
 #: model:ir.model.fields,field_description:website.field_website_controller_page__theme_template_id
 #: model:ir.model.fields,field_description:website.field_website_menu__theme_template_id
 #: model:ir.model.fields,field_description:website.field_website_page__theme_template_id
@@ -11646,7 +11660,7 @@ msgstr "Menu thứ ba"
 #: code:addons/website/static/src/components/dialog/page_properties.xml:0
 #, python-format
 msgid "This URL is contained in the “%(field)s” of the following “%(model)s”"
-msgstr ""
+msgstr "URL này được chứa trong “%(field)s” của “%(model)s” sau đây"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_services_0_s_three_columns
@@ -11829,7 +11843,7 @@ msgid ""
 "in url. Keep it empty to use the default name of the record."
 msgstr ""
 "Giá trị này sẽ được thoát để phù hợp với tất cả các trình duyệt chính và "
-"được sử dụng trong url. Giữ trống để sử dụng tên mặc định của tập dữ liệu."
+"được sử dụng trong url. Giữ trống để sử dụng tên mặc định của bản ghi."
 
 #. module: website
 #. odoo-javascript
@@ -12861,7 +12875,7 @@ msgstr ""
 #: code:addons/website/static/src/snippets/s_facebook_page/options.js:0
 #, python-format
 msgid "We couldn't find the Facebook page"
-msgstr ""
+msgstr "Chúng tôi không thể tìm thấy trang Facebook này"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.cookie_policy
@@ -12971,6 +12985,7 @@ msgstr "Khách truy cập web"
 #: model:ir.model.fields,field_description:website.field_ir_asset__website_id
 #: model:ir.model.fields,field_description:website.field_ir_attachment__website_id
 #: model:ir.model.fields,field_description:website.field_ir_ui_view__website_id
+#: model:ir.model.fields,field_description:website.field_product_document__website_id
 #: model:ir.model.fields,field_description:website.field_res_company__website_id
 #: model:ir.model.fields,field_description:website.field_res_partner__website_id
 #: model:ir.model.fields,field_description:website.field_res_users__website_id
@@ -13524,7 +13539,7 @@ msgstr "Bạn không thể nhân bản trường này."
 #: code:addons/website/static/src/snippets/s_facebook_page/options.js:0
 #, python-format
 msgid "You didn't provide a valid Facebook link"
-msgstr ""
+msgstr "Bạn chưa cung cấp liên kết Facebook hợp lệ"
 
 #. module: website
 #. odoo-python
@@ -14240,7 +14255,7 @@ msgstr "kết quả"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_website_form_options
 msgid "rows"
-msgstr "dòng"
+msgstr "hàng"
 
 #. module: website
 #. odoo-javascript

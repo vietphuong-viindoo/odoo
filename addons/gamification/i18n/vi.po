@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-26 21:56+0000\n"
+"POT-Creation-Date: 2024-08-13 10:28+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
 "Last-Translator: Thi Huong Nguyen, 2024\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
@@ -810,7 +810,7 @@ msgstr "Danh mục người dùng được chọn"
 #. module: gamification
 #: model:ir.model.fields,field_description:gamification.field_gamification_goal_definition__action_id
 msgid "Action"
-msgstr "Hành động"
+msgstr "Tác vụ"
 
 #. module: gamification
 #: model:ir.model.fields,field_description:gamification.field_gamification_badge__message_needaction
@@ -1293,7 +1293,8 @@ msgid ""
 msgstr ""
 "Miền để lọc các bản ghi. Quy tắc chung, không liên quan đến một người dùng "
 "(user) cụ thể nào, vd: [('state', '=', 'done')]. Biểu thức có thể chứa tham "
-"chiếu đến 'user' mà là user hiện hành nếu không phải ở batch mode."
+"chiếu đến 'user' mà là user hiện hành nếu không phải ở ở chế độ "
+"hàng loạt."
 
 #. module: gamification
 #: model:ir.model.fields.selection,name:gamification.selection__gamification_challenge__state__done
