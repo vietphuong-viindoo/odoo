@@ -26,7 +26,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:snailmail.field_snailmail_letter_format_error__snailmail_cover
 #: model_terms:ir.ui.view,arch_db:snailmail.snailmail_letter_format_error
 msgid "Add a Cover Page"
-msgstr "Add a cover page"
+msgstr "Thêm trang bìa"
 
 #. module: snailmail
 #: model_terms:ir.ui.view,arch_db:snailmail.snailmail_letter_missing_required_fields
@@ -94,7 +94,7 @@ msgstr "Both sides"
 #: code:addons/snailmail/static/src/components/snailmail_error/snailmail_error.xml:0
 #, python-format
 msgid "Buy credits"
-msgstr "Buy credits"
+msgstr "Mua tín dụng"
 
 #. module: snailmail
 #: model:ir.model.fields.selection,name:snailmail.selection__snailmail_letter__error_code__credit_error
@@ -427,7 +427,7 @@ msgstr "Vui lòng sử dụng định dạng trang giấy A4."
 #. module: snailmail
 #: model:ir.model.fields,field_description:snailmail.field_res_config_settings__snailmail_duplex
 msgid "Print Both sides"
-msgstr "Print both sides"
+msgstr "In cả hai mặt"
 
 #. module: snailmail
 #: model:ir.model.fields,field_description:snailmail.field_res_config_settings__snailmail_color

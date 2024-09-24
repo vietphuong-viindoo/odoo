@@ -145,7 +145,7 @@ msgstr "Tên dịch vụ"
 #: code:addons/iap/static/src/js/insufficient_credit_error_handler.js:0
 #, python-format
 msgid "Start a Trial at Odoo"
-msgstr "Start a Trial at Odoo"
+msgstr "Bắt đầu thử nghiệm"
 
 #. module: iap
 #. odoo-python
@@ -155,8 +155,8 @@ msgid ""
 "The url that this service requested returned an error. Please contact the "
 "author of the app. The url it tried to contact was %s"
 msgstr ""
-"The url that this service requested returned an error. Please contact the "
-"author of the app. The url it tried to contact was %s"
+"Dữ liệu từ URL mà dịch vụ này yêu cầu đã trả về một lỗi. Vui lòng liên hệ tác giả của "
+"ứng dụng. URL bị lỗi là %s"
 
 #. module: iap
 #. odoo-javascript
@@ -165,9 +165,9 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:iap.res_config_settings_view_form
 #, python-format
 msgid "View My Services"
-msgstr "View My Services"
+msgstr "Xem dịch vụ của tôi"
 
 #. module: iap
 #: model_terms:ir.ui.view,arch_db:iap.res_config_settings_view_form
 msgid "View your IAP Services and recharge your credits"
-msgstr "View your IAP Services and recharge your credits"
+msgstr "Xem dịch vụ IAP của bạn và nạp thêm tín dụng"

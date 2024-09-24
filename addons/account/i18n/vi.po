@@ -5386,7 +5386,7 @@ msgstr "Tài khoản doanh thu mặc định"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
 msgid "Default Incoterm of your company"
-msgstr "Điều khoản Incoterm mặc định của công ty bạn"
+msgstr "Incoterm mặc định của công ty"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_report__default_opening_date_filter
