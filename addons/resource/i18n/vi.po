@@ -181,7 +181,8 @@ msgstr "Giải thích"
 #. module: resource
 #: model:ir.model.fields.selection,name:resource.selection__resource_calendar_attendance__week_type__0
 msgid "First"
-msgstr "Thứ nhất"
+msgstr "Tuần đầu tiên"
+
 
 #. module: resource
 #: code:addons/resource/models/resource.py:0
@@ -457,7 +458,7 @@ msgstr "Tìm kiếm thời gian làm việc"
 #. module: resource
 #: model:ir.model.fields.selection,name:resource.selection__resource_calendar_attendance__week_type__1
 msgid "Second"
-msgstr "Thứ hai"
+msgstr "Tuần thứ hai"
 
 #. module: resource
 #: code:addons/resource/models/resource.py:0
@@ -529,7 +530,7 @@ msgstr "Trường kỹ thuật cho mục đích UX."
 #: code:addons/resource/models/resource.py:0
 #, python-format
 msgid "The current week (from %s to %s) correspond to the  %s one."
-msgstr "Tuần hiện tại (từ %s đến %s) tương ứng với tuần %s."
+msgstr "Tuần hiện tại (từ %s đến %s) tương ứng với %s."
 
 #. module: resource
 #: code:addons/resource/models/resource.py:0
@@ -728,7 +729,7 @@ msgstr "Bạn không thể xóa phiên giữa các tuần."
 #: code:addons/resource/models/resource.py:0
 #, python-format
 msgid "first"
-msgstr "thứ nhất"
+msgstr "tuần thứ nhất"
 
 #. module: resource
 #: code:addons/resource/models/resource.py:0
@@ -740,7 +741,7 @@ msgstr "tuần khác"
 #: code:addons/resource/models/resource.py:0
 #, python-format
 msgid "second"
-msgstr "giây"
+msgstr "tuần thứ hai"
 
 #. module: resource
 #: code:addons/resource/models/resource.py:0

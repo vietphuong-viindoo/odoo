@@ -620,7 +620,6 @@ msgstr ""
 
 #. module: hr_holidays
 #: model_terms:ir.ui.view,arch_db:hr_holidays.res_users_view_form
-#: model_terms:ir.ui.view,arch_db:hr_holidays.resource_calendar_form_inherit
 #: model_terms:ir.ui.view,arch_db:hr_holidays.view_employee_form_leave_inherit
 msgid ""
 "<span class=\"o_stat_text\">\n"
@@ -629,6 +628,17 @@ msgid ""
 msgstr ""
 "<span class=\"o_stat_text\">\n"
 "                            Nghỉ\n"
+"                        </span>"
+
+#. module: hr_holidays
+#: model_terms:ir.ui.view,arch_db:hr_holidays.resource_calendar_form_inherit
+msgid ""
+"<span class=\"o_stat_text\">\n"
+"                            Time Off\n"
+"                        </span>"
+msgstr ""
+"<span class=\"o_stat_text\">\n"
+"                            Toàn cục\n"
 "                        </span>"
 
 #. module: hr_holidays
@@ -3105,7 +3115,7 @@ msgstr "Cung cấp nguyên nhân hủy yêu cầu nghỉ đã được duyệt"
 #. module: hr_holidays
 #: model_terms:ir.ui.view,arch_db:hr_holidays.resource_calendar_form_inherit
 msgid "Public"
-msgstr "Public"
+msgstr "Nghỉ"
 
 #. module: hr_holidays
 #. odoo-javascript
