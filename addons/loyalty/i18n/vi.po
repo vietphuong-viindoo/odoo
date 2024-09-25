@@ -1026,7 +1026,7 @@ msgstr "Thẻ khách hàng thân thiết"
 #: code:addons/loyalty/models/loyalty_program.py:0
 #, python-format
 msgid "Fill in your eWallet, and use it to pay future orders."
-msgstr ""
+msgstr "Nạp vào ví điện tử của bạn và sử dụng nó để thanh toán các đơn hàng trong tương lai."
 
 #. module: loyalty
 #: model:ir.model.fields,field_description:loyalty.field_loyalty_card__message_follower_ids
