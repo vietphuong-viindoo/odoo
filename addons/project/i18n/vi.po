@@ -684,7 +684,7 @@ msgstr ""
 #: code:addons/project/models/project.py:0
 #, python-format
 msgid "A new task will be created on the following dates:"
-msgstr ""
+msgstr "Một nhiệm vụ mới sẽ được tạo vào các ngày sau:"
 
 #. module: project
 #. odoo-python
@@ -961,7 +961,7 @@ msgstr "Phân tích tiến độ dự án và hiệu quả làm việc của nh�
 #: model_terms:ir.ui.view,arch_db:project.view_task_project_user_search
 #: model_terms:ir.ui.view,arch_db:project.view_task_search_form
 msgid "Ancestor Task"
-msgstr ""
+msgstr "Nhiệm vụ gốc"
 
 #. module: project
 #: model:ir.model.fields.selection,name:project.selection__project_task__repeat_month__april
@@ -1043,7 +1043,7 @@ msgstr "Phân công người phụ trách nhiệm vụ của bạn"
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.res_config_settings_view_form
 msgid "Assign each new project to this plan"
-msgstr ""
+msgstr "Gán mỗi dự án mới vào kế hoạch này"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.project_sharing_project_task_view_form
@@ -1823,6 +1823,8 @@ msgid ""
 "Date on which the stage of your task has last been modified.\n"
 "Based on this information you can identify tasks that are stalling and get statistics on the time it usually takes to move tasks from one stage to another."
 msgstr ""
+"Ngày mà giai đoạn của nhiệm vụ được chỉnh sửa lần cuối.\n"
+"Dựa trên thông tin này, bạn có thể xác định các nhiệm vụ đang bị trễ và có được thống kê về thời gian để chuyển nhiệm vụ từ giai đoạn này sang giai đoạn khác."
 
 #. module: project
 #: model:ir.model.fields,help:project.field_project_project__date
@@ -2612,6 +2614,9 @@ msgid ""
 "your tasks. Tasks in a folded stage are considered as closed (not applicable"
 " to personal stages)."
 msgstr ""
+"Nếu được kích hoạt, giai đoạn này sẽ được hiển thị dưới dạng thu gọn trong "
+"giao diện Kanban của nhiệm vụ. Các nhiệm vụ trong giai đoạn thu "
+"gọn được xem như đã đóng (không áp dụng cho các giai đoạn cá nhân)."
 
 #. module: project
 #: model:ir.model.fields,help:project.field_project_task_type__rating_template_id
@@ -2887,6 +2892,7 @@ msgstr "Có vẻ như nhiệm vụ này thuộc nhóm định kỳ."
 msgid ""
 "It seems that this task is recurrent. Would you like to stop its recurrence?"
 msgstr ""
+"Có vẻ như nhiệm vụ này đang lặp lại. Bạn có muốn dừng việc lặp lại của nó không?"
 
 #. module: project
 #: model:ir.model.fields.selection,name:project.selection__project_task__repeat_month__january
@@ -3641,12 +3647,12 @@ msgstr "Không có"
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_task_search_form
 msgid "Not Blocked"
-msgstr ""
+msgstr "Không bị chặn"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_task_search_form
 msgid "Not Blocking"
-msgstr ""
+msgstr "Không chặn"
 
 #. module: project
 #. odoo-python
@@ -4402,7 +4408,7 @@ msgstr "Đánh giá hình ảnh mới nhất"
 #. module: project
 #: model:ir.model.fields,field_description:project.field_report_project_task_user__rating_last_text
 msgid "Rating Last Text"
-msgstr ""
+msgstr "Đánh giá văn bản mới nhất"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__rating_last_value
@@ -4962,7 +4968,7 @@ msgstr "Chia sẻ chỉ đọc"
 #: code:addons/project/models/project_task_recurrence.py:0
 #, python-format
 msgid "Should repeat at least once"
-msgstr ""
+msgstr "Nên lặp lại ít nhất một lần"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__is_favorite
@@ -5472,6 +5478,7 @@ msgid ""
 "The end date should be after the day of the month or the last day of the "
 "month"
 msgstr ""
+"Ngày kết thúc phải sau ngày đã chọn trong tháng hoặc phải là ngày cuối cùng của tháng."
 
 #. module: project
 #. odoo-python
@@ -5586,7 +5593,7 @@ msgstr "Hiện tại không có cảm nhận."
 #: code:addons/project/models/project.py:0
 #, python-format
 msgid "There are no more occurrences."
-msgstr ""
+msgstr "Không có nhiệm vụ mới được tạo ra."
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.portal_my_projects
@@ -6301,7 +6308,7 @@ msgstr ""
 #: code:addons/project/models/project_task_recurrence.py:0
 #, python-format
 msgid "You should select a least one day"
-msgstr ""
+msgstr "Bạn cần chọn ít nhất một ngày"
 
 #. module: project
 #. odoo-javascript
