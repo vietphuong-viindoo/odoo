@@ -1351,7 +1351,7 @@ msgstr "Hướng dẫn đóng phiên"
 #: code:addons/point_of_sale/static/src/js/models.js:0
 #, python-format
 msgid "Close anyway"
-msgstr ""
+msgstr "Đóng tất cả"
 
 #. module: point_of_sale
 #: model:ir.model.fields.selection,name:point_of_sale.selection__pos_session__state__closed
@@ -2173,7 +2173,7 @@ msgstr "Bạn có muốn mở danh sách khách hàng để chọn khách hàng 
 #: code:addons/point_of_sale/static/src/js/Misc/AbstractReceiptScreen.js:0
 #, python-format
 msgid "Do you want to print using the web printer?"
-msgstr ""
+msgstr "Bạn có muốn in bằng máy in web không?"
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.res_config_settings_view_form
@@ -3710,14 +3710,14 @@ msgstr "Số thông điệp có lỗi khi gửi đi"
 #: code:addons/point_of_sale/models/pos_config.py:0
 #, python-format
 msgid "Number of partners loaded can not be 0"
-msgstr ""
+msgstr "Số lượng đối tác đã tải phải lớn hơn 0"
 
 #. module: point_of_sale
 #. odoo-python
 #: code:addons/point_of_sale/models/pos_config.py:0
 #, python-format
 msgid "Number of product loaded can not be 0"
-msgstr ""
+msgstr "Số lượng sản phẩm đã tải phải lớn hơn 0"
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -6351,6 +6351,10 @@ msgid ""
 "from the point of sale has been saved in the attachments.<br/>Please contact"
 " your support service to assist you on restoring it"
 msgstr ""
+"Đơn bán POS với mã tham chiếu %s đã được nhận bởi máy chủ, "
+"nhưng việc xử lý đơn bán đã thất bại.<br/>Dữ liệu đã nhận từ điểm bán lẻ "
+"đã được lưu trữ trong phần đính kèm.<br/>Vui lòng liên hệ dịch vụ hỗ trợ của bạn để "
+"được hỗ trợ trong việc khôi phục nó"
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -6760,6 +6764,8 @@ msgid ""
 "There is at least one pending electronic payment.\n"
 "Please finish the payment with the terminal or cancel it then remove the payment line."
 msgstr ""
+"Có ít nhất một thanh toán điện tử chưa được xử lý.\n"
+"Vui lòng hoàn tất thanh toán với thiết bị đầu cuối hoặc hủy thanh toán và sau đó xóa dòng thanh toán."
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.pos_config_view_form
@@ -7317,7 +7323,7 @@ msgstr "Sử dụng mã vạch để quét sản phẩm, thẻ khách hàng, v.v
 #: model_terms:ir.ui.view,arch_db:point_of_sale.res_config_settings_view_form
 msgid "Use fiscal positions to get different taxes by order"
 msgstr ""
-"Sử dụng vị trí tài chính để có được các loại thuế khác nhau theo đơn hàng"
+"Sử dụng vị thế tài chính để áp dụng các các loại thuế khác nhau cho từng đơn hàng"
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.res_config_settings_view_form
