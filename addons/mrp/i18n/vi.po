@@ -815,9 +815,10 @@ msgid ""
 " which components should be sent to the subcontractor."
 msgstr ""
 "Thời gian sản xuất trung bình tính bằng ngày để sản xuất sản phẩm này. Trong"
-" trường hợp ĐMNVL đa cấp, sẽ cộng thêm thời gian sản xuất các nguyên liệu. "
-"Trong trường hợp sản phẩm được ký hợp đồng phụ, thời gian này có thể được sử"
-" dụng để xác định ngày mà các nguyên liệu sẽ được gửi cho nhà thầu phụ."
+" trường hợp ĐMNL đa cấp, sẽ cộng thêm thời gian sản xuất các nguyên liệu. "
+"Trong trường hợp sản phẩm được ký gia công, thời gian này có thể được sử "
+"dụng để xác định ngày mà các nguyên liệu sẽ được gửi cho đơn vị gia công."
+
 
 #. module: mrp
 #: model:ir.model,name:mrp.model_report_mrp_report_bom_structure
@@ -2438,7 +2439,7 @@ msgstr "Sản xuất ngay lập tức?"
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.exception_on_mo
 msgid "Impacted Transfer(s):"
-msgstr "(Các) điều chuyển bị ảnh hưởng"
+msgstr "(Các) dịch chuyển bị ảnh hưởng"
 
 #. module: mrp
 #. odoo-python
@@ -4878,7 +4879,7 @@ msgstr "ĐMNVL thứ cấp"
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.res_config_settings_view_form
 msgid "Subcontract the production of some products"
-msgstr "Cho phép thiết lập thuê gia công trong qui trình sản xuất sản phẩm"
+msgstr "Gia công cho sản xuất một số sản phẩm "
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_res_config_settings__module_mrp_subcontracting
@@ -5427,12 +5428,12 @@ msgstr "Truy vết"
 #. module: mrp
 #: model:ir.model,name:mrp.model_stock_picking
 msgid "Transfer"
-msgstr "Dịch chuyển"
+msgstr "Lệch chuyển hàng"
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_production_form_view
 msgid "Transfers"
-msgstr "Điều chuyển"
+msgstr "Lệch chuyển hàng"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_document__type
@@ -6463,7 +6464,7 @@ msgstr "thời lượng dự kiến"
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.stock_warn_insufficient_qty_unbuild_form_view
 msgid "from location"
-msgstr "từ vị trí"
+msgstr "từ địa điểm"
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.view_assign_serial_numbers_production

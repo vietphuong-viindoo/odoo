@@ -825,7 +825,7 @@ msgid ""
 "be use to correct a specific transfer."
 msgstr ""
 "Giá trị của lớp định giá tồn kho không thể là số âm. Chi phí nhập kho có thể"
-" được sử dụng để điều chỉnh một điều chuyển cụ thể."
+" được sử dụng để điều chỉnh một lệnh chuyển hàng cụ thể."
 
 #. module: stock_account
 #: model_terms:ir.actions.act_window,help:stock_account.stock_valuation_layer_action
@@ -859,7 +859,7 @@ msgstr "Tổng giá trị"
 #. module: stock_account
 #: model:ir.model,name:stock_account.model_stock_picking
 msgid "Transfer"
-msgstr "Điều chuyển"
+msgstr "Lệnh chuyển hàng"
 
 #. module: stock_account
 #: model:ir.model.fields,help:stock_account.field_stock_move__to_refund
