@@ -1334,7 +1334,7 @@ msgstr "Báo cáo truy nguyên"
 #. module: repair
 #: model:ir.model,name:repair.model_stock_picking
 msgid "Transfer"
-msgstr "Lệnh chuyển hàng"
+msgstr "Điều chuyển"
 
 #. module: repair
 #: model:ir.model.fields,help:repair.field_repair_order__is_returned

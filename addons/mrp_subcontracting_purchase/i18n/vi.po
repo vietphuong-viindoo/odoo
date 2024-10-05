@@ -76,4 +76,4 @@ msgstr "Dịch chuyển kho"
 #. module: mrp_subcontracting_purchase
 #: model:ir.model,name:mrp_subcontracting_purchase.model_stock_picking
 msgid "Transfer"
-msgstr "Lệnh chuyển hàng"
+msgstr "Điều chuyển"

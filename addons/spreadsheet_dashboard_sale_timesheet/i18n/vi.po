@@ -25,21 +25,21 @@ msgstr ""
 #: code:addons/spreadsheet_dashboard_sale_timesheet/data/files/timesheet_dashboard.json:0
 #, python-format
 msgid "Billable Hours"
-msgstr "Số giờ có thể tính phí"
+msgstr "Số giờ có thể lập hoá đơn"
 
 #. module: spreadsheet_dashboard_sale_timesheet
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_sale_timesheet/data/files/timesheet_dashboard.json:0
 #, python-format
 msgid "Billable Rate"
-msgstr "Tỷ lệ có thể tính phí"
+msgstr "Tỷ lệ có thể lập hoá đơn"
 
 #. module: spreadsheet_dashboard_sale_timesheet
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_sale_timesheet/data/files/timesheet_dashboard.json:0
 #, python-format
 msgid "Billable hours"
-msgstr "Giờ có thể tính phí"
+msgstr "Giờ có thể lập hoá đơn"
 
 #. module: spreadsheet_dashboard_sale_timesheet
 #. odoo-javascript
@@ -50,21 +50,21 @@ msgstr "Giờ có thể tính phí"
 #: code:addons/spreadsheet_dashboard_sale_timesheet/data/files/timesheet_dashboard.json:0
 #, python-format
 msgid "Billable rate"
-msgstr "Tỷ lệ có thể tính phí"
+msgstr "Tỷ lệ có thể lập hoá đơn"
 
 #. module: spreadsheet_dashboard_sale_timesheet
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_sale_timesheet/data/files/timesheet_dashboard.json:0
 #, python-format
 msgid "Billed fixed price"
-msgstr "Đã tính phí giá cố định"
+msgstr "Đã lập hoá đơn giá cố định"
 
 #. module: spreadsheet_dashboard_sale_timesheet
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_sale_timesheet/data/files/timesheet_dashboard.json:0
 #, python-format
 msgid "Billed manually"
-msgstr "Đã tính phí thủ công"
+msgstr "Đã lập hoá đơn thủ công"
 
 #. module: spreadsheet_dashboard_sale_timesheet
 #. odoo-javascript
@@ -112,7 +112,7 @@ msgstr "Tổng cộng"
 #: code:addons/spreadsheet_dashboard_sale_timesheet/data/files/timesheet_dashboard.json:0
 #, python-format
 msgid "Hours billed"
-msgstr "Giờ đã tính phí"
+msgstr "Giờ đã lập hoá đơn"
 
 #. module: spreadsheet_dashboard_sale_timesheet
 #. odoo-javascript
@@ -136,14 +136,14 @@ msgstr "KPI"
 #: code:addons/spreadsheet_dashboard_sale_timesheet/data/files/timesheet_dashboard.json:0
 #, python-format
 msgid "Non-billable Hours"
-msgstr "Giờ không thể tính phí"
+msgstr "Giờ không thể lập hoá đơn"
 
 #. module: spreadsheet_dashboard_sale_timesheet
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_sale_timesheet/data/files/timesheet_dashboard.json:0
 #, python-format
 msgid "Non-billable hours"
-msgstr "Giờ không thể tính phí"
+msgstr "Giờ không thể lập hoá đơn"
 
 #. module: spreadsheet_dashboard_sale_timesheet
 #. odoo-javascript
@@ -181,7 +181,7 @@ msgstr "Công việc"
 #: code:addons/spreadsheet_dashboard_sale_timesheet/data/files/timesheet_dashboard.json:0
 #, python-format
 msgid "Time Billed by Week"
-msgstr "Thời gian đã tính phí theo tuần"
+msgstr "Thời gian đã lập hoá đơn theo tuần"
 
 #. module: spreadsheet_dashboard_sale_timesheet
 #. odoo-javascript

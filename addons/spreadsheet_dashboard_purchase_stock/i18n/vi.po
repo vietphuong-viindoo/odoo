@@ -347,14 +347,14 @@ msgstr "Tổng tiền trước thuế"
 #: code:addons/spreadsheet_dashboard_purchase_stock/data/files/purchase_dashboard.json:0
 #, python-format
 msgid "Transfer"
-msgstr "Lệnh chuyển hàng"
+msgstr "Điều chuyển"
 
 #. module: spreadsheet_dashboard_purchase_stock
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_purchase_stock/data/files/purchase_dashboard.json:0
 #, python-format
 msgid "Transfers by Creation Date"
-msgstr "Lệnh chuyển hàng theo ngày tạo"
+msgstr "Điều chuyển theo ngày tạo"
 
 #. module: spreadsheet_dashboard_purchase_stock
 #. odoo-javascript

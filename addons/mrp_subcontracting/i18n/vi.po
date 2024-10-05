@@ -175,7 +175,7 @@ msgstr ""
 #. module: mrp_subcontracting
 #: model_terms:ir.ui.view,arch_db:mrp_subcontracting.mrp_production_subcontracting_filter
 msgid "Incoming transfer"
-msgstr "Lệnh nhập hàng"
+msgstr "Điều chuyển nhập hàng"
 
 #. module: mrp_subcontracting
 #: model:ir.model,name:mrp_subcontracting.model_stock_location
@@ -609,7 +609,7 @@ msgstr "Tổng đã tiêu thụ"
 #: model:ir.model,name:mrp_subcontracting.model_stock_picking
 #: model:ir.model.fields,field_description:mrp_subcontracting.field_mrp_production__incoming_picking
 msgid "Transfer"
-msgstr "Lệnh chuyển hàng"
+msgstr "Điều chuyển"
 
 #. module: mrp_subcontracting
 #: model:ir.model.fields,help:mrp_subcontracting.field_mrp_production__subcontractor_id
@@ -663,7 +663,7 @@ msgstr "Bạn không thể ghi lên trường %s trong mrp.production."
 #, python-format
 msgid "You might want to update the locations of this transfer's operations"
 msgstr ""
-"Có thể bạn cần cập nhật địa điểm của các hoạt động lệnh chuyển hàng này"
+"Có thể bạn cần cập nhật địa điểm của các hoạt động điều chuyển này"
 
 #. module: mrp_subcontracting
 #. odoo-python

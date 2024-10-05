@@ -1276,7 +1276,7 @@ msgstr "Tổng:"
 #: code:addons/pos_restaurant/static/src/xml/Screens/ProductScreen/ControlButtons/TransferOrderButton.xml:0
 #, python-format
 msgid "Transfer"
-msgstr "Lệnh chuyển hàng"
+msgstr "Điều chuyển"
 
 #. module: pos_restaurant
 #. odoo-javascript

@@ -397,7 +397,7 @@ msgstr "Không có hạng mục đơn bán hàng nào"
 #: model_terms:ir.ui.view,arch_db:sale_project.project_milestone_view_form
 #: model_terms:ir.ui.view,arch_db:sale_project.project_milestone_view_tree
 msgid "Non-billable"
-msgstr "Không thể tính phí"
+msgstr "Không thể xuất hoá đơn"
 
 #. module: sale_project
 #: model:ir.model.fields.selection,name:sale_project.selection__product_template__service_tracking__no

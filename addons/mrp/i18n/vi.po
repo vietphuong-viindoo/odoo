@@ -2439,7 +2439,7 @@ msgstr "Sản xuất ngay lập tức?"
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.exception_on_mo
 msgid "Impacted Transfer(s):"
-msgstr "(Các) dịch chuyển bị ảnh hưởng"
+msgstr "(Các) điều chuyển chuyển bị ảnh hưởng"
 
 #. module: mrp
 #. odoo-python
@@ -5428,12 +5428,12 @@ msgstr "Truy vết"
 #. module: mrp
 #: model:ir.model,name:mrp.model_stock_picking
 msgid "Transfer"
-msgstr "Lệch chuyển hàng"
+msgstr "Điều chuyển"
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_production_form_view
 msgid "Transfers"
-msgstr "Lệch chuyển hàng"
+msgstr "Điều chuyển"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_document__type

@@ -513,7 +513,7 @@ msgstr "<span class=\"o_stat_text\">Hoạt động</span>"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_production_lot_form
 msgid "<span class=\"o_stat_text\">Transfers</span>"
-msgstr "<span class=\"o_stat_text\">Lệnh chuyển hàng</span>"
+msgstr "<span class=\"o_stat_text\">Điều chuyển</span>"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.report_mrp_line
@@ -891,7 +891,7 @@ msgstr ""
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
 msgid "Add quality checks to your transfer operations"
-msgstr "Thêm kiểm tra chất lượng vào hoạt động lệnh chuyển hàng của bạn"
+msgstr "Thêm kiểm tra chất lượng vào hoạt động điều chuyển của bạn"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_picking_form
@@ -2181,7 +2181,7 @@ msgstr "Ngày mà hoạt động bổ sung hàng sẽ diễn ra."
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_picking__date_done
 msgid "Date at which the transfer has been processed or cancelled."
-msgstr "Ngày mà lệnh chuyển hàng đã được xử lý hoặc hủy bỏ."
+msgstr "Ngày mà điều chuyển đã được xử lý hoặc hủy bỏ."
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_location__next_inventory_date
@@ -3296,7 +3296,7 @@ msgstr "Nhóm theo..."
 #: model:ir.model.fields,help:stock.field_res_config_settings__group_stock_picking_wave
 msgid "Group your move operations in wave transfer to process them together"
 msgstr ""
-"Nhóm các hoạt động dịch chuyển của bạn trong lệnh chuyển hàng theo đợt để xử"
+"Nhóm các hoạt động dịch chuyển của bạn trong điều chuyển theo đợt để xử"
 " lý chúng cùng nhau"
 
 #. module: stock
@@ -3636,12 +3636,12 @@ msgstr "Dịch chuyển ngay"
 #. module: stock
 #: model:ir.model,name:stock.model_stock_immediate_transfer_line
 msgid "Immediate Transfer Line"
-msgstr "Dòng lệnh chuyển hàng ngay"
+msgstr "Dòng điều chuyển ngay"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_immediate_transfer__immediate_transfer_line_ids
 msgid "Immediate Transfer Lines"
-msgstr "Chi tiết lệnh chuyển hàng ngay"
+msgstr "Chi tiết điều chuyển ngay"
 
 #. module: stock
 #. odoo-python
@@ -5032,7 +5032,7 @@ msgstr "Ngày nên đếm Số lượng hiện có tiếp theo."
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.exception_on_picking
 msgid "Next transfer(s) impacted:"
-msgstr "(Các) lệnh chuyển hàng tiếp theo bị ảnh hưởng:"
+msgstr "(Các) điều chuyển tiếp theo bị ảnh hưởng:"
 
 #. module: stock
 #. odoo-python
@@ -5086,7 +5086,7 @@ msgstr "Không có hoạt động liên quan đến lô này."
 #. module: stock
 #: model_terms:ir.actions.act_window,help:stock.action_get_picking_type_operations
 msgid "No operations found. Let's create a transfer !"
-msgstr "Không tìm thấy hoạt động nào. Hãy tạo một lệnh chuyển hàng!"
+msgstr "Không tìm thấy hoạt động nào. Hãy tạo một điều chuyển!"
 
 #. module: stock
 #: model_terms:ir.actions.act_window,help:stock.product_template_action_product
@@ -5153,7 +5153,7 @@ msgstr "Không có tồn kho để hiển thị"
 #: model_terms:ir.actions.act_window,help:stock.stock_picking_action_picking_type
 msgid "No transfer found. Let's create one!"
 msgstr ""
-"Không tìm thấy lệnh chuyển hàng hàng nào. Hãy tạo một lệnh chuyển hàng mới!"
+"Không tìm thấy điều chuyển hàng nào. Hãy tạo một điều chuyển mới!"
 
 #. module: stock
 #: model:ir.model.fields.selection,name:stock.selection__stock_move__priority__0
@@ -5278,7 +5278,7 @@ msgid ""
 "On hand quantity which hasn't been reserved on a transfer, in the default "
 "unit of measure of the product"
 msgstr ""
-"Số lượng hiện có chưa được dự trữ trong một lệnh chuyển hàng, theo đơn vị đo"
+"Số lượng hiện có chưa được dự trữ trong một điều chuyển, theo đơn vị đo"
 " lường mặc định của sản phẩm"
 
 #. module: stock
@@ -5732,7 +5732,7 @@ msgid ""
 "Packages are usually created via transfers (during pack operation) and can contain different products.\n"
 "                Once created, the whole package can be moved at once, or products can be unpacked and moved as single units again."
 msgstr ""
-"Kiện hàng thường được tạo thông qua lệnh chuyển hàng hàng (trong hoạt động đóng gói) và có thể chứa các sản phẩm khác nhau.\n"
+"Kiện hàng thường được tạo thông qua điều chuyển hàng (trong hoạt động đóng gói) và có thể chứa các sản phẩm khác nhau.\n"
 "                Sau khi được tạo, cả kiện hàng có thể được dịch chuyển cùng lúc hoặc huỷ đóng gói để dịch chuyển từng sản phẩm riêng biệt."
 
 #. module: stock
@@ -6007,12 +6007,12 @@ msgstr "Xử lý các hoạt động nhanh hơn với mã vạch"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
 msgid "Process operations in wave transfers"
-msgstr "Xử lý hoạt động trong lệnh chuyển hàng theo đợt"
+msgstr "Xử lý hoạt động trong điều chuyển theo đợt"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
 msgid "Process transfers in batch per worker"
-msgstr "Xử lý lệnh chuyển hàng hàng loạt theo từng nhân viên"
+msgstr "Xử lý điều chuyển hàng loạt theo từng nhân viên"
 
 #. module: stock
 #: model:ir.model,name:stock.model_procurement_group
@@ -6300,7 +6300,7 @@ msgid ""
 "Products will be reserved first for the transfers with the highest "
 "priorities."
 msgstr ""
-"Sản phẩm sẽ được dự trữ cho lệnh chuyển hàng có mức độ ưu tiên cao nhất đầu "
+"Sản phẩm sẽ được dự trữ cho điều chuyển có mức độ ưu tiên cao nhất đầu "
 "tiên."
 
 #. module: stock
@@ -7096,12 +7096,12 @@ msgid ""
 "        Disposable boxes aren't reused, when scanning a disposable box in the barcode application, the contained products are added to the transfer."
 msgstr ""
 "Hộp có thể tái sử dụng được dùng trong lấy hàng hàng loạt và bỏ hàng ra sau đó để tái sử dụng. Trong ứng dụng mã vạch, việc quét hộp có thể tái sử dụng sẽ thêm các sản phẩm có trong hộp này.\n"
-"        Hộp dùng một lần không được tái sử dụng, khi quét hộp dùng một lần trong ứng dụng mã vạch, các sản phẩm chứa trong đó sẽ được thêm vào lệnh chuyển hàng."
+"        Hộp dùng một lần không được tái sử dụng, khi quét hộp dùng một lần trong ứng dụng mã vạch, các sản phẩm chứa trong đó sẽ được thêm vào điều chuyển."
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.act_stock_return_picking
 msgid "Reverse Transfer"
-msgstr "Đảo lại lệnh chuyển hàng"
+msgstr "Đảo lại điều chuyển"
 
 #. module: stock
 #: model:ir.actions.server,name:stock.action_revert_inventory_adjustment
@@ -7710,7 +7710,7 @@ msgstr "Hiển thị nút Thiết lập SL"
 #: model:ir.model.fields,field_description:stock.field_stock_backorder_confirmation__show_transfers
 #: model:ir.model.fields,field_description:stock.field_stock_immediate_transfer__show_transfers
 msgid "Show Transfers"
-msgstr "Hiển thị lệnh chuyển hàng hàng"
+msgstr "Hiển thị điều chuyển hàng"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking__show_validate
@@ -8295,7 +8295,7 @@ msgid ""
 "The expected date of the created transfer will be computed based on this "
 "lead time."
 msgstr ""
-"Ngày dự kiến của lệnh chuyển hàng hàng đã tạo sẽ được tính dựa trên thời "
+"Ngày dự kiến của điều chuyển hàng đã tạo sẽ được tính dựa trên thời "
 "gian giao hàng này."
 
 #. module: stock
@@ -8315,7 +8315,7 @@ msgstr "Tồn kho dự kiến vào"
 #: code:addons/stock/models/stock_orderpoint.py:0
 #, python-format
 msgid "The inter-warehouse transfers have been generated"
-msgstr "Phiếu lệnh chuyển hàng liên kho đã được tạo"
+msgstr "Phiếu điều chuyển liên kho đã được tạo"
 
 #. module: stock
 #. odoo-python
@@ -8970,17 +8970,17 @@ msgstr "Dòng theo dõi"
 #: model_terms:ir.ui.view,arch_db:stock.view_picking_form
 #: model_terms:ir.ui.view,arch_db:stock.view_picking_internal_search
 msgid "Transfer"
-msgstr "Lệnh chuyển hàng"
+msgstr "Điều chuyển"
 
 #. module: stock
 #: model:ir.model.fields.selection,name:stock.selection__product_label_layout__picking_quantity__picking
 msgid "Transfer Quantities"
-msgstr "Số lượng lệnh chuyển hàng"
+msgstr "Số lượng điều chuyển"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_production_lot_tree
 msgid "Transfer to"
-msgstr "Lệnh chuyển hàng tới"
+msgstr "Điều chuyển tới"
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_picking_tree_all
@@ -8991,14 +8991,14 @@ msgstr "Lệnh chuyển hàng tới"
 #: model_terms:ir.ui.view,arch_db:stock.stock_picking_type_kanban
 #: model_terms:ir.ui.view,arch_db:stock.view_production_lot_form
 msgid "Transfers"
-msgstr "Lệch chuyển hàng"
+msgstr "Điều chuyển"
 
 #. module: stock
 #. odoo-python
 #: code:addons/stock/models/stock_picking.py:0
 #, python-format
 msgid "Transfers %s: Please add some items to move."
-msgstr "Lệnh chuyển hàng %s: Vui lòng thêm một số sản phẩm để dịch chuyển."
+msgstr "Điều chuyển %s: Vui lòng thêm một số sản phẩm để dịch chuyển."
 
 #. module: stock
 #: model_terms:ir.actions.act_window,help:stock.action_get_picking_type_operations
@@ -9017,14 +9017,14 @@ msgstr ""
 #. module: stock
 #: model:ir.actions.act_window,name:stock.do_view_pickings
 msgid "Transfers for Groups"
-msgstr "Lệnh chuyển hàng Nhóm"
+msgstr "Điều chuyển nhóm"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_picking_internal_search
 msgid ""
 "Transfers that are late on scheduled time or one of pickings will be late"
 msgstr ""
-"Các lệnh chuyển hàng hàng bị trễ so với thời gian theo kế hoạch hoặc một "
+"Các điều chuyển hàng bị trễ so với thời gian theo kế hoạch hoặc một "
 "trong các phiếu kho sẽ bị trễ"
 
 #. module: stock
@@ -9064,7 +9064,7 @@ msgstr "Kích hoạt thủ công"
 #: code:addons/stock/static/src/stock_forecasted/stock_forecasted.js:0
 #, python-format
 msgid "Try to add some incoming or outgoing transfers."
-msgstr "Cố gắng thêm một số lệnh chuyển hàng nhập hàng hoặc xuất hàng."
+msgstr "Cố gắng thêm một số điều chuyển nhập hàng hoặc xuất hàng."
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_barcode_rule__type
@@ -9418,7 +9418,7 @@ msgstr "Chờ dịch chuyển"
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_picking_tree_waiting
 msgid "Waiting Transfers"
-msgstr "Chờ lệnh chuyển hàng"
+msgstr "Chờ điều chuyển"
 
 #. module: stock
 #: model:ir.model,name:stock.model_stock_warehouse
@@ -9569,7 +9569,7 @@ msgstr "Cảnh báo tồn kho"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_res_config_settings__group_stock_picking_wave
 msgid "Wave Transfers"
-msgstr "Lệnh chuyển hàng theo đợt"
+msgstr "Điều chuyển theo đợt"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_lot__website_message_ids
@@ -9727,7 +9727,7 @@ msgid ""
 " * Always: a backorder is automatically created for the remaining products\n"
 " * Never: remaining products are cancelled"
 msgstr ""
-"Khi xác nhận một lệnh chuyển hàng:\n"
+"Khi xác nhận một điều chuyển:\n"
 "* Hỏi: người dùng được chọn nếu họ muốn tạo đơn hàng tồn đọng cho các sản phẩm còn lại\n"
 "* Luôn luôn: đơn hàng tồn đọng được tạo tự động cho các sản phẩm còn lại\n"
 "* Không bao giờ: các sản phẩm còn lại sẽ bị hủy"
@@ -9972,7 +9972,7 @@ msgstr ""
 #, python-format
 msgid "You cannot change the Scheduled Date on a done or cancelled transfer."
 msgstr ""
-"Bạn không thể thay đổi Ngày theo kế hoạch trong một lệnh chuyển hàng đã hoàn"
+"Bạn không thể thay đổi Ngày theo kế hoạch trong một điều chuyển đã hoàn"
 " tất hoặc bị hủy."
 
 #. module: stock
@@ -10156,8 +10156,8 @@ msgid ""
 "You cannot validate a transfer if no quantities are reserved nor done. To "
 "force the transfer, switch in edit mode and encode the done quantities."
 msgstr ""
-"Bạn không thể xác nhận một lệnh chuyển hàng nếu không có số lượng được dự "
-"trữ cũng như không được hoàn tất. Để bắt buộc lệnh chuyển hàng, hãy bật chế "
+"Bạn không thể xác nhận một điều chuyển nếu không có số lượng được dự "
+"trữ cũng như không được hoàn tất. Để bắt buộc điều chuyển, hãy bật chế "
 "độ chỉnh sửa và nhập số lượng đã hoàn tất."
 
 #. module: stock

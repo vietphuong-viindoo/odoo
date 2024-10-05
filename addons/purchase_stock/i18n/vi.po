@@ -807,7 +807,7 @@ msgstr "Tổng số lượng"
 #. module: purchase_stock
 #: model:ir.model,name:purchase_stock.model_stock_picking
 msgid "Transfer"
-msgstr "Lệnh chuyển hàng"
+msgstr "Điều chuyển"
 
 #. module: purchase_stock
 #. odoo-python
